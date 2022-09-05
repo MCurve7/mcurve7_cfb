@@ -1,0 +1,789 @@
+Extra graphs: Penalty graphs, now with averages
+
+<p>
+
+</p>
+
+<p>
+Looking at the raw penalty numbers, 
+it is hard to to see the signal under the noise.
+krnxprs had a great suggestion on a layout and I think the following implements it.
+One thing that isn't in the data are the penalties not called.
+Well really the egregious missed penalties since there are always penalties that could be called and aren't.
+Another data point that I don't think gets recorded is penalties that are called,
+but declined. 
+You will have to determine the amount of sodium you wish to ingest as you read what follows.
+</p>
+<p>
+I added the mean for the SEC (dashed line) and the mean +/- the SEC standard deviation (dot-dash line).
+Also this dataset includes the SECCG data.
+</p>
+
+<h2>All SEC teams</h2>
+<p>
+This first graph is the average by game for each team.
+Well, 
+we aren't the most penalized SEC team.
+That is Ole Miss' honor.
+We are above the SEC average (6.342) at 7.333 though.
+What stood out to me was LSU being below average (in average penalties)
+and only Kentucky had a lower average.
+<br/><br/>
+<a href='https://postimg.cc/vDPhF93D' target='_blank'><img src='https://i.postimg.cc/4NGScQcv/SEC-2021-Avg-04-penalties-bar.png' border='0' alt='SEC-2021-Avg-04-penalties-bar'/></a>
+<table border='1'>
+<caption>SEC average penalties: 2021</caption>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Team </th>
+   <th style="text-align:left;"> Avg </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> 7.333 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Arkansas </td>
+   <td style="text-align:left;"> 7.875 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Auburn </td>
+   <td style="text-align:left;"> 5.750 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Florida </td>
+   <td style="text-align:left;"> 7.375 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Georgia </td>
+   <td style="text-align:left;"> 5.111 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Kentucky </td>
+   <td style="text-align:left;"> 4.250 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LSU </td>
+   <td style="text-align:left;"> 4.500 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Mississippi State </td>
+   <td style="text-align:left;"> 7.625 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Missouri </td>
+   <td style="text-align:left;"> 7.375 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Ole Miss </td>
+   <td style="text-align:left;"> 8.375 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> South Carolina </td>
+   <td style="text-align:left;"> 5.500 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Tennessee </td>
+   <td style="text-align:left;"> 6.000 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Texas A&amp;M </td>
+   <td style="text-align:left;"> 7.125 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Vanderbilt </td>
+   <td style="text-align:left;"> 4.625 </td>
+  </tr>
+</tbody>
+</table>
+</p>
+
+<h2>Away games</h2>
+<p>
+Next I figured that I would divide the games by home vs away (and one neutral site).
+Let's look at the away games first.
+Three of our away games had an above average number of penalties: Florida, Texas A&amp;M, and Auburn.
+Mississippi State was the lone away game with a below average number of penalties
+(despite their infernal bells).
+I'd imagine crowd noise had an effect,
+but without knowing what penalties were called its hard to make a definitive statement on that.
+Eventaully I hope to be able to pull the penalties and the penalty types out of the dataset
+and maybe then it will be possible to gauge the effect of crowd noise... somewhat.
+I was surprised that we weren't that far above average against Texas A&amp;M.
+<br/><br/>
+<a href="https://postimg.cc/JGFGL7fb" target="_blank"><img src="https://i.postimg.cc/FHrc07Gn/Alabama-Texas-A-M-Avg-2021-03-penalty-avg-bar.png" alt="Alabama-Texas-A-M-Avg-2021-03-penalty-avg-bar"/></a><br/><br/>
+<table border='1'>
+<caption>Penalties for Texas A&M (6), Alabama (8): 2021, wk06</caption>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Team </th>
+   <th style="text-align:left;"> Type </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> Defensive Holding </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> Defensive Pass Interference </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> Defensive Pass Interference </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> False Start </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> False Start </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> Offensive Holding </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> Offensive Holding </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> Personal Foul </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Texas A&amp;M </td>
+   <td style="text-align:left;"> Defensive Holding </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Texas A&amp;M </td>
+   <td style="text-align:left;"> Delay Of Game </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Texas A&amp;M </td>
+   <td style="text-align:left;"> Delay Of Game </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Texas A&amp;M </td>
+   <td style="text-align:left;"> False Start </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Texas A&amp;M </td>
+   <td style="text-align:left;"> Offensive Holding </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Texas A&amp;M </td>
+   <td style="text-align:left;"> Personal Foul </td>
+  </tr>
+</tbody>
+</table>
+</p>
+<p>
+It turns out that Auburn was the only away opponent to have an above average number of penalties when playing us. 
+But they were still well below the number of penalties called on us 
+and just above the SEC average.
+<br/><br/>
+<a href="https://postimg.cc/4KkyYLNy" target="_blank"><img src="https://i.postimg.cc/FK1Ln8My/Alabama-Auburn-Avg-2021-03-penalty-avg-bar.png" alt="Alabama-Auburn-Avg-2021-03-penalty-avg-bar"/></a><br/><br/>
+<table border='1'>
+<caption>Penalties for Auburn (7), Alabama (11): 2021, wk13</caption>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Team </th>
+   <th style="text-align:left;"> Type </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> Delay Of Game </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> Delay Of Game </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> Face Mask </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> Face Mask </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> Holding </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> Illegal Block </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> Illegal Block </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> Pass Interference </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> Personal Foul </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> Roughing Passer </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> Targeting </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Auburn </td>
+   <td style="text-align:left;"> Delay Of Game </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Auburn </td>
+   <td style="text-align:left;"> False Start </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Auburn </td>
+   <td style="text-align:left;"> False Start </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Auburn </td>
+   <td style="text-align:left;"> Ineligible Downfield On Pass </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Auburn </td>
+   <td style="text-align:left;"> Offensive Holding </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Auburn </td>
+   <td style="text-align:left;"> Offensive Holding </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Auburn </td>
+   <td style="text-align:left;"> Personal Foul </td>
+  </tr>
+</tbody>
+</table>
+<a href="https://postimg.cc/VSq6nqdR" target="_blank"><img src="https://i.postimg.cc/FKqLtGv2/Alabama-Florida-Avg-2021-03-penalty-avg-bar.png" alt="Alabama-Florida-Avg-2021-03-penalty-avg-bar"/></a><br/><br/>
+<table border='1'>
+<caption>Penalties for Florida (7), Alabama (11): 2021, wk03</caption>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Team </th>
+   <th style="text-align:left;"> Type </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> Defensive Offside </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> Defensive Offside </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> Defensive Pass Interference </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> Defensive Pass Interference </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> Delay Of Game </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> False Start </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> False Start </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> False Start </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> False Start </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> Illegal Block </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> Intentional Grounding </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Florida </td>
+   <td style="text-align:left;"> Defensive Pass Interference </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Florida </td>
+   <td style="text-align:left;"> Defensive Pass Interference </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Florida </td>
+   <td style="text-align:left;"> Defensive Pass Interference </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Florida </td>
+   <td style="text-align:left;"> Defensive Pass Interference </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Florida </td>
+   <td style="text-align:left;"> False Start </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Florida </td>
+   <td style="text-align:left;"> Offensive Holding </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Florida </td>
+   <td style="text-align:left;"> Substitution Infraction </td>
+  </tr>
+</tbody>
+</table>
+<a href="https://postimg.cc/BPQXqjZC" target="_blank"><img src="https://i.postimg.cc/4yptQcrj/Alabama-Mississippi-State-Avg-2021-03-penalty-avg-bar.png" alt="Alabama-Mississippi-State-Avg-2021-03-penalty-avg-bar"/></a><br/><br/>
+<table border='1'>
+<caption>Penalties for Mississippi State (6), Alabama (6): 2021, wk07</caption>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Team </th>
+   <th style="text-align:left;"> Type </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> Defensive Offside </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> Illegal Block </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> Illegal Formation </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> Offensive Holding </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> Pass Interference </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> Unnecessary Roughness </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Mississippi State </td>
+   <td style="text-align:left;"> False Start </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Mississippi State </td>
+   <td style="text-align:left;"> False Start </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Mississippi State </td>
+   <td style="text-align:left;"> False Start </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Mississippi State </td>
+   <td style="text-align:left;"> Holding </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Mississippi State </td>
+   <td style="text-align:left;"> Intentional Grounding </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Mississippi State </td>
+   <td style="text-align:left;"> Intentional Grounding </td>
+  </tr>
+</tbody>
+</table>
+</p>
+
+<h2>Home games</h2>
+<p>
+The results were reversed for the home games.
+We were below average against three of our home opponents: Arkanasas, Ole Miss, and Tennessee.
+Versus LSU we were above our season average,
+but so were they.
+And both teams were above their averages by about the same amount.
+So I guess I'd call that a wash.
+</p>
+<a href="https://postimg.cc/PC8NrsH0" target="_blank"><img src="https://i.postimg.cc/FHTSpNBF/Alabama-LSU-Avg-2021-03-penalty-avg-bar.png" alt="Alabama-LSU-Avg-2021-03-penalty-avg-bar"/></a><br/><br/>
+<table border='1'>
+<caption>Penalties for LSU (6), Alabama (9): 2021, wk10</caption>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Team </th>
+   <th style="text-align:left;"> Type </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> Defensive Holding </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> Delay Of Game </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> Delay Of Game </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> False Start </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> Illegal Formation </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> Intentional Grounding </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> Offensive Holding </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> Personal Foul </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> Personal Foul </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LSU </td>
+   <td style="text-align:left;"> Delay Of Game </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LSU </td>
+   <td style="text-align:left;"> False Start </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LSU </td>
+   <td style="text-align:left;"> Illegal Formation </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LSU </td>
+   <td style="text-align:left;"> Ineligible Downfield On Pass </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LSU </td>
+   <td style="text-align:left;"> Intentional Grounding </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LSU </td>
+   <td style="text-align:left;"> Offensive Holding </td>
+  </tr>
+</tbody>
+</table>
+<p>
+The one graph that stands out to me is Tennessee.
+Their season average was just below the SEC average.
+When they played us,
+not only were their number of penalties above their average,
+but they had twice as many penalties against us than their season average.
+In fact they were above two standard deviations not just of their season average,
+but also the SEC average.
+I guess what I am saying is that Tennessee had a whole slew of penalties when they played us!
+<br/><br/>
+<a href="https://postimg.cc/mh8PmyVp" target="_blank"><img src="https://i.postimg.cc/jdryd8fT/Alabama-Tennessee-Avg-2021-03-penalty-avg-bar.png" alt="Alabama-Tennessee-Avg-2021-03-penalty-avg-bar"/></a><br/><br/>
+<table border='1'>
+<caption>Penalties for Tennessee (12), Alabama (4): 2021, wk08</caption>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Team </th>
+   <th style="text-align:left;"> Type </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> Delay Of Game </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> False Start </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> False Start </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> Roughing The Kicker </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Tennessee </td>
+   <td style="text-align:left;"> Delay Of Game </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Tennessee </td>
+   <td style="text-align:left;"> False Start </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Tennessee </td>
+   <td style="text-align:left;"> False Start </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Tennessee </td>
+   <td style="text-align:left;"> False Start </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Tennessee </td>
+   <td style="text-align:left;"> False Start </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Tennessee </td>
+   <td style="text-align:left;"> False Start </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Tennessee </td>
+   <td style="text-align:left;"> Illegal Formation </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Tennessee </td>
+   <td style="text-align:left;"> Illegal Forward Pass </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Tennessee </td>
+   <td style="text-align:left;"> Pass Interference </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Tennessee </td>
+   <td style="text-align:left;"> Personal Foul </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Tennessee </td>
+   <td style="text-align:left;"> Personal Foul </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Tennessee </td>
+   <td style="text-align:left;"> Personal Foul </td>
+  </tr>
+</tbody>
+</table>
+<a href="https://postimg.cc/Ln5nwgb9" target="_blank"><img src="https://i.postimg.cc/ncYBsvKD/Alabama-Arkansas-Avg-2021-03-penalty-avg-bar.png" alt="Alabama-Arkansas-Avg-2021-03-penalty-avg-bar"/></a><br/><br/>
+<table border='1'>
+<caption>Penalties for Arkansas (6), Alabama (5): 2021, wk12</caption>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Team </th>
+   <th style="text-align:left;"> Type </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> Defensive Pass Interference </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> False Start </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> Offensive Holding </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> Offensive Holding </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> Offensive Holding </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Arkansas </td>
+   <td style="text-align:left;"> Delay Of Game </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Arkansas </td>
+   <td style="text-align:left;"> False Start </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Arkansas </td>
+   <td style="text-align:left;"> False Start </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Arkansas </td>
+   <td style="text-align:left;"> False Start </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Arkansas </td>
+   <td style="text-align:left;"> Intentional Grounding </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Arkansas </td>
+   <td style="text-align:left;"> Kickoff Out Of Bounds </td>
+  </tr>
+</tbody>
+</table>
+<a href="https://postimg.cc/t7X1dMdV" target="_blank"><img src="https://i.postimg.cc/05SpvgbZ/Alabama-Ole-Miss-Avg-2021-03-penalty-avg-bar.png" alt="Alabama-Ole-Miss-Avg-2021-03-penalty-avg-bar"/></a><br/><br/>
+<table border='1'>
+<caption>Penalties for Ole Miss (7), Alabama (5): 2021, wk05</caption>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Team </th>
+   <th style="text-align:left;"> Type </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> 12 Men On The Field </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> False Start </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> Pass Interference </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> Pass Interference </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> Personal Foul </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Ole Miss </td>
+   <td style="text-align:left;"> False Start </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Ole Miss </td>
+   <td style="text-align:left;"> False Start </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Ole Miss </td>
+   <td style="text-align:left;"> Holding </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Ole Miss </td>
+   <td style="text-align:left;"> Holding </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Ole Miss </td>
+   <td style="text-align:left;"> Holding </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Ole Miss </td>
+   <td style="text-align:left;"> Holding </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Ole Miss </td>
+   <td style="text-align:left;"> Pass Interference </td>
+  </tr>
+</tbody>
+</table>
+</p>
+
+<h2>Neutral game</h2>
+<p>
+There is not much to say here.
+We were below average and they were above average,
+but we were still called for one more penalty than they were.
+<br/><br/>
+<a href="https://postimg.cc/CBwKNR8V" target="_blank"><img src="https://i.postimg.cc/gJZ6GRkr/Alabama-Georgia-Avg-2021-03-penalty-avg-bar.png" alt="Alabama-Georgia-Avg-2021-03-penalty-avg-bar"/></a><br/><br/>
+<table border='1'>
+<caption>Penalties for Georgia (6), Alabama (7): 2021, wk14</caption>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Team </th>
+   <th style="text-align:left;"> Type </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> False Start </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> Holding </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> Holding </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> Pass Interference </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> Pass Interference </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> Pass Interference </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Alabama </td>
+   <td style="text-align:left;"> Personal Foul </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Georgia </td>
+   <td style="text-align:left;"> False Start </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Georgia </td>
+   <td style="text-align:left;"> False Start </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Georgia </td>
+   <td style="text-align:left;"> False Start </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Georgia </td>
+   <td style="text-align:left;"> Offensive Holding </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Georgia </td>
+   <td style="text-align:left;"> Pass Interference </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Georgia </td>
+   <td style="text-align:left;"> Pass Interference </td>
+  </tr>
+</tbody>
+</table>
+</p>
+
+<h2>Conclusion</h2>
+<p>
+Given the data we can't claim that we always get penalized more than the other SEC teams.
+On the other hand, 
+keeping in mind the caveats at the start of this piece (uncalled penalties, declined penalties) it is possible that reality is closer to our subjective feelings.
+Data analysis can only be as good as the data it starts with.
+The one exception to this,
+Auburn and you know why...
+</p>
+
+<p>
+Maybe in the future I can rewrite my code so that we can look at all SEC games 
+and compare the number of penalties vs the average for the home and away teams.
+</p>

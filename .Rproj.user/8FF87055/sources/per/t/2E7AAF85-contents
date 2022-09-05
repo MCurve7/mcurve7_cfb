@@ -1,0 +1,16 @@
+library(rjson)
+
+year <- 2021
+
+for(year in 2014:2021)
+{
+  teams.json <- fromJSON(file =  paste0("./data/FBS-teams-",year,".json"))
+  teams <- c()
+  for(i in 1:length(teams.json))
+  {
+    #print(teams.json[[i]]$school)
+    teams[i] = teams.json[[i]]$school
+  }
+  
+  write.csv(teams,file = paste0("./data/teams-fbs-",year,".csv"), row.names=FALSE)
+}

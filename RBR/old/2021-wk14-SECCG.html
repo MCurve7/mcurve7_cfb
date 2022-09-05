@@ -1,0 +1,439 @@
+Extra graphs week 14 SECCG vs Georgia 2021 (Plus bonus Penalty graphs)
+
+<p>As always this is an addendum to balloons' 
+<a href="https://www.rollbamaroll.com/2021/12/5/22818612/graphing-the-tide-vs-georgia-long-bombs-turnovers-and-critical-situations" target="_blank">Graphing the Tide vs. Georgia: long bombs, turnovers, and critical situations</a></p>
+
+<p>
+Wow! 
+I was hopeful that we could play like this, 
+but until I saw our offensive line play like that I just couldn't allow myself to believe we would do it. 
+Add in a banged up BRob and we had the hosses to win yet another SEC championship!
+</p>
+
+<p>
+I have a couple of observations about this game and then about penalties in the SEC below the usual graphs.
+How much did losing Metchie at the end of the first half hurt us? 
+I don't know, but look at the <b>Offensive drives by drive</b> graph and note that our last play of the first half on offense was play number 45.
+So from Drive 7 on we were Metchieless.<br/><br/>
+<a href="https://postimg.cc/mh20PD5P" target="_blank"><img src="https://i.postimg.cc/8khDnfdm/Alabama-2021-wk14-Georgia-02-drive-fac-down.png" alt="Alabama-2021-wk14-Georgia-02-drive-fac-down"/></a><br/><br/>
+It looks like our production really dropped off.
+Was this because of Metchie's injury or did Georgia make good adjustments during the half?
+Those of you who have more knowledge about the technical details of offense/defense might be able to enlighten me. 
+</p>
+
+<p>
+One other observation from this game.
+On second downs we had a success rate of 11/23 = 0.478.
+Looking at the <b>Yards to success vs Yards gained by down</b>:<br/><br/>
+<a href="https://postimg.cc/DSXV7MY5" target="_blank"><img src="https://i.postimg.cc/NjNQkh8h/Alabama-2021-wk14-Georgia-05-all4-downs-fac-noscale.png" alt="Alabama-2021-wk14-Georgia-05-all4-downs-fac-noscale"/></a><br/><br/>
+most of those successful plays weren't just successful,
+but resulted in a first down/TD.
+So we had a... mega-success rate, ultra-success rate, lol... of 9/23 = 0.391.
+Or another way of looking at this is that of the successful plays on 2nd down, 9/11 = 0.818 of them resulted in a 1st down/TD.
+I am not sure what this rate is for our other games or for other teams so I am not sure exactly how to interpret this,
+but I think I am going to add some code to start calculating this.
+</p>
+
+<h2>Alabama:</h2>
+<p><img height="100" src="http://a.espncdn.com/i/teamlogos/ncaa/500/333.png" /><br /> 
+
+<a href="https://postimg.cc/kBD3p4Q0" target="_blank"><img src="https://i.postimg.cc/RVLSqJNZ/Alabama-2021-wk14-Georgia-01-success-drive-bar.png" alt="Alabama-2021-wk14-Georgia-01-success-drive-bar"/></a><br/><br/>
+<table border='1'>
+<caption>Alabama, 2021, wk14, Success rate by drive table vs Georgia</caption>
+ <thead>
+  <tr>
+   <th style="text-align:right;"> Drive </th>
+   <th style="text-align:right;"> Total </th>
+   <th style="text-align:right;"> Successful </th>
+   <th style="text-align:right;"> Unsuccessful </th>
+   <th style="text-align:right;"> Success rate </th>
+   <th style="text-align:left;"> Scoring drive </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 0.2500000 </td>
+   <td style="text-align:left;"> FALSE </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 8 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 0.3750000 </td>
+   <td style="text-align:left;"> FALSE </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0.6666667 </td>
+   <td style="text-align:left;"> TRUE </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 0.6666667 </td>
+   <td style="text-align:left;"> TRUE </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 11 </td>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 0.6363636 </td>
+   <td style="text-align:left;"> FALSE </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:right;"> 9 </td>
+   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 0.6666667 </td>
+   <td style="text-align:left;"> TRUE </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0.8000000 </td>
+   <td style="text-align:left;"> TRUE </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 8 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 0.2500000 </td>
+   <td style="text-align:left;"> FALSE </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 9 </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 0.2000000 </td>
+   <td style="text-align:left;"> FALSE </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 10 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 0.0000000 </td>
+   <td style="text-align:left;"> FALSE </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 11 </td>
+   <td style="text-align:right;"> 11 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> 0.3636364 </td>
+   <td style="text-align:left;"> FALSE </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 12 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0.0000000 </td>
+   <td style="text-align:left;"> FALSE </td>
+  </tr>
+</tbody>
+</table><br/><br/>
+<a href="https://postimg.cc/mh20PD5P" target="_blank"><img src="https://i.postimg.cc/8khDnfdm/Alabama-2021-wk14-Georgia-02-drive-fac-down.png" alt="Alabama-2021-wk14-Georgia-02-drive-fac-down"/></a><br/><br/>
+<a href="https://postimg.cc/9R1Kx5rX" target="_blank"><img src="https://i.postimg.cc/6qNKpBKZ/Alabama-2021-wk14-Georgia-03-drive.png" alt="Alabama-2021-wk14-Georgia-03-drive"/></a><br/><br/>
+<a href="https://postimg.cc/3d655T9d" target="_blank"><img src="https://i.postimg.cc/fRWwdW9j/Alabama-2021-wk14-Georgia-04-all4-downs-fac.png" alt="Alabama-2021-wk14-Georgia-04-all4-downs-fac"/></a><br/><br/>
+<a href="https://postimg.cc/DSXV7MY5" target="_blank"><img src="https://i.postimg.cc/NjNQkh8h/Alabama-2021-wk14-Georgia-05-all4-downs-fac-noscale.png" alt="Alabama-2021-wk14-Georgia-05-all4-downs-fac-noscale"/></a><br/><br/>
+<table border='1'>
+<caption>Alabama, 2021, wk14, Success by down table vs Georgia</caption>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Down </th>
+   <th style="text-align:right;"> Total </th>
+   <th style="text-align:right;"> Successful </th>
+   <th style="text-align:right;"> Unsuccessful </th>
+   <th style="text-align:right;"> TD/1st </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> 1 </td>
+   <td style="text-align:right;"> 33 </td>
+   <td style="text-align:right;"> 15 </td>
+   <td style="text-align:right;"> 18 </td>
+   <td style="text-align:right;"> 7 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2 </td>
+   <td style="text-align:right;"> 23 </td>
+   <td style="text-align:right;"> 11 </td>
+   <td style="text-align:right;"> 12 </td>
+   <td style="text-align:right;"> 9 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 3 </td>
+   <td style="text-align:right;"> 14 </td>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> 7 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 4 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+</tbody>
+</table><br/><br/><a href="https://postimg.cc/xkDw83wQ" target="_blank"><img src="https://i.postimg.cc/1zfsWWM8/Alabama-2021-wk14-Georgia-06-yards-success-gained.png" alt="Alabama-2021-wk14-Georgia-06-yards-success-gained"/></a><br/><br/>
+<a href="https://postimg.cc/N9QZ7fGP" target="_blank"><img src="https://i.postimg.cc/63ZwKykw/Alabama-2021-wk14-Georgia-07-drive-extra-yards-gained.png" alt="Alabama-2021-wk14-Georgia-07-drive-extra-yards-gained"/></a><br/><br/>
+<a href="https://postimg.cc/jWHG7JT7" target="_blank"><img src="https://i.postimg.cc/bvW84QF3/Alabama-2021-wk14-Georgia-08-drive-yards-to-success.png" alt="Alabama-2021-wk14-Georgia-08-drive-yards-to-success"/></a><br/><br/>
+<a href="https://postimg.cc/sGX8q6hY" target="_blank"><img src="https://i.postimg.cc/1XcQgbRj/Alabama-2021-wk14-Georgia-09-fac-yards-to-success.png" alt="Alabama-2021-wk14-Georgia-09-fac-yards-to-success"/></a><br/><br/>
+<a href="https://postimg.cc/KKDHzS77" target="_blank"><img src="https://i.postimg.cc/LscKxmnW/Alabama-2021-wk14-Georgia-e5-drive-success-play.png" alt="Alabama-2021-wk14-Georgia-e5-drive-success-play"/></a><br/><br/>
+<a href="https://postimg.cc/SjTHChBD" target="_blank"><img src="https://i.postimg.cc/YqMkc2bK/Alabama-2021-wk14-Georgia-e6-success-drive-bar-down.png" alt="Alabama-2021-wk14-Georgia-e6-success-drive-bar-down"/></a><br/><br/>
+<a href="https://postimg.cc/jLDmh1KK" target="_blank"><img src="https://i.postimg.cc/PryHdGRL/Alabama-2021-wk14-Georgia-e7-success-drive-bar-down2.png" alt="Alabama-2021-wk14-Georgia-e7-success-drive-bar-down2"/></a><br/><br/>
+<a href="https://postimg.cc/xJdt1k1Y" target="_blank"><img src="https://i.postimg.cc/tT3fDW01/Alabama-2021-wk14-Georgia-e8-success-drive-down-bar-yards-to-goal-fac.png" alt="Alabama-2021-wk14-Georgia-e8-success-drive-down-bar-yards-to-goal-fac"/></a><br/><br/>
+</p>
+
+
+
+
+
+
+
+<h2>Georgia:</h2>
+<p><img height="100" src="http://a.espncdn.com/i/teamlogos/ncaa/500/61.png" /><br /> 
+<a href="https://postimg.cc/w7nP4kTN" target="_blank"><img src="https://i.postimg.cc/8zCS5y2Z/Georgia-2021-wk14-Alabama-01-success-drive-bar.png" alt="Georgia-2021-wk14-Alabama-01-success-drive-bar"/></a><br/><br/>
+<table border='1'>
+<caption>Georgia, 2021, wk14, Success rate by drive table vs Alabama</caption>
+ <thead>
+  <tr>
+   <th style="text-align:right;"> Drive </th>
+   <th style="text-align:right;"> Total </th>
+   <th style="text-align:right;"> Successful </th>
+   <th style="text-align:right;"> Unsuccessful </th>
+   <th style="text-align:right;"> Success rate </th>
+   <th style="text-align:left;"> Scoring drive </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 0.2500000 </td>
+   <td style="text-align:left;"> FALSE </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 10 </td>
+   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 0.6000000 </td>
+   <td style="text-align:left;"> FALSE </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 8 </td>
+   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 0.7500000 </td>
+   <td style="text-align:left;"> TRUE </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 0.3333333 </td>
+   <td style="text-align:left;"> FALSE </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 0.3333333 </td>
+   <td style="text-align:left;"> FALSE </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0.6666667 </td>
+   <td style="text-align:left;"> TRUE </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0.0000000 </td>
+   <td style="text-align:left;"> FALSE </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 8 </td>
+   <td style="text-align:right;"> 11 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> 0.3636364 </td>
+   <td style="text-align:left;"> FALSE </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 9 </td>
+   <td style="text-align:right;"> 12 </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> 0.4166667 </td>
+   <td style="text-align:left;"> FALSE </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 10 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0.6666667 </td>
+   <td style="text-align:left;"> FALSE </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 11 </td>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0.8571429 </td>
+   <td style="text-align:left;"> TRUE </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 12 </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 0.4000000 </td>
+   <td style="text-align:left;"> FALSE </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 13 </td>
+   <td style="text-align:right;"> 8 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:right;"> 0.2500000 </td>
+   <td style="text-align:left;"> FALSE </td>
+  </tr>
+</tbody>
+</table><br/><br/>
+<a href="https://postimg.cc/R6CbJsGk" target="_blank"><img src="https://i.postimg.cc/508cGDz2/Georgia-2021-wk14-Alabama-02-drive-fac-down.png" alt="Georgia-2021-wk14-Alabama-02-drive-fac-down"/></a><br/><br/>
+<a href="https://postimg.cc/GBCfdhDh" target="_blank"><img src="https://i.postimg.cc/FKdXbYsc/Georgia-2021-wk14-Alabama-03-drive.png" alt="Georgia-2021-wk14-Alabama-03-drive"/></a><br/><br/>
+<a href="https://postimg.cc/XrFPRypz" target="_blank"><img src="https://i.postimg.cc/GmS1sFrd/Georgia-2021-wk14-Alabama-04-all4-downs-fac.png" alt="Georgia-2021-wk14-Alabama-04-all4-downs-fac"/></a><br/><br/>
+<a href="https://postimg.cc/S2Z166vJ" target="_blank"><img src="https://i.postimg.cc/4yZCTwvb/Georgia-2021-wk14-Alabama-05-all4-downs-fac-noscale.png" alt="Georgia-2021-wk14-Alabama-05-all4-downs-fac-noscale"/></a><br/><br/>
+<table border='1'>
+<caption>Georgia, 2021, wk14, Success by down table vs Alabama</caption>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Down </th>
+   <th style="text-align:right;"> Total </th>
+   <th style="text-align:right;"> Successful </th>
+   <th style="text-align:right;"> Unsuccessful </th>
+   <th style="text-align:right;"> TD/1st </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> 1 </td>
+   <td style="text-align:right;"> 37 </td>
+   <td style="text-align:right;"> 19 </td>
+   <td style="text-align:right;"> 18 </td>
+   <td style="text-align:right;"> 10 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2 </td>
+   <td style="text-align:right;"> 25 </td>
+   <td style="text-align:right;"> 14 </td>
+   <td style="text-align:right;"> 11 </td>
+   <td style="text-align:right;"> 12 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 3 </td>
+   <td style="text-align:right;"> 12 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 9 </td>
+   <td style="text-align:right;"> 3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 4 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 2 </td>
+  </tr>
+</tbody>
+</table><br/><br/><a href="https://postimg.cc/bSsC3Z7L" target="_blank"><img src="https://i.postimg.cc/7hNFP7mv/Georgia-2021-wk14-Alabama-06-yards-success-gained.png" alt="Georgia-2021-wk14-Alabama-06-yards-success-gained"/></a><br/><br/>
+<a href="https://postimg.cc/nMPwM1mW" target="_blank"><img src="https://i.postimg.cc/KvGXqq8m/Georgia-2021-wk14-Alabama-07-drive-extra-yards-gained.png" alt="Georgia-2021-wk14-Alabama-07-drive-extra-yards-gained"/></a><br/><br/>
+<a href="https://postimg.cc/bZXC9N3H" target="_blank"><img src="https://i.postimg.cc/pLrwxmj7/Georgia-2021-wk14-Alabama-08-drive-yards-to-success.png" alt="Georgia-2021-wk14-Alabama-08-drive-yards-to-success"/></a><br/><br/>
+<a href="https://postimg.cc/V56VYhJM" target="_blank"><img src="https://i.postimg.cc/QNkGqGs6/Georgia-2021-wk14-Alabama-09-fac-yards-to-success.png" alt="Georgia-2021-wk14-Alabama-09-fac-yards-to-success"/></a><br/><br/>
+<a href="https://postimg.cc/B8pm35sM" target="_blank"><img src="https://i.postimg.cc/RF5ycGY5/Georgia-2021-wk14-Alabama-e5-drive-success-play.png" alt="Georgia-2021-wk14-Alabama-e5-drive-success-play"/></a><br/><br/>
+<a href="https://postimg.cc/hX9CyWYF" target="_blank"><img src="https://i.postimg.cc/HkNfLT4L/Georgia-2021-wk14-Alabama-e6-success-drive-bar-down.png" alt="Georgia-2021-wk14-Alabama-e6-success-drive-bar-down"/></a><br/><br/>
+<a href="https://postimg.cc/bGpm4VXZ" target="_blank"><img src="https://i.postimg.cc/CKf9B9ms/Georgia-2021-wk14-Alabama-e7-success-drive-bar-down2.png" alt="Georgia-2021-wk14-Alabama-e7-success-drive-bar-down2"/></a><br/><br/>
+<a href="https://postimg.cc/gXB4XYxh" target="_blank"><img src="https://i.postimg.cc/Vvzhhv1K/Georgia-2021-wk14-Alabama-e8-success-drive-down-bar-yards-to-goal-fac.png" alt="Georgia-2021-wk14-Alabama-e8-success-drive-down-bar-yards-to-goal-fac"/></a><br/><br/>
+</p>
+
+
+<h2>
+Penalties in the SEC
+</h2>
+
+<p>
+There have been lots of discussion about penalties, 
+well every season.
+Other teams think we get all the breaks
+and we think other teams get the benefit of the universally agreed upon bad SEC officiating.
+There is no good way (currently) to measure calls not made,
+but the data for called penalties is out there.
+And since the rare night of insomnia can have occasional benefits,
+I hand cobbled together the data for all the teams in the SEC this season. 
+I am working on  some code to pull the penalty data out of the data I use for my other graphs,
+but it is located in the Play Text so its not as easy as I'd like it to be.
+But I do have an idea of how to do it and need time to work out the bugs (I hope).
+I spot checked the data, 
+but as always if you notice any errors let me know.
+</p>
+
+<p>
+First let us look at the SEC as a whole (I don't think I included the SECCG data to this).<br/><br/>
+<a href="https://postimg.cc/B85779XL" target="_blank"><img src="https://i.postimg.cc/8Cx85TGH/SEC-2021-01-penalties-bar.png" alt="SEC-2021-01-penalties-bar"/></a><br/><br/>
+Four teams had more penalties than us this season: Arkansas, Florida, Mississippi State, and Ole Miss.
+</p>
+
+<p>
+These next graphs are just the Alabama games vs SEC opponents including the SECCG vs Georgia.
+Looking at the overall penalties and the penalties when playing us:
+Florida had fewer vs Alabama and Tennessee had more vs Alabama as compared to the whole season.
+This is a rough overview,
+but I think it is interesting that 5 out of the 9 teams Alabama played had fewer penalties and Mississippi State had the same number.<br/><br/>
+<a href="https://postimg.cc/zLYPkXXY" target="_blank"><img src="https://i.postimg.cc/k523qB0G/Alabama-Arkansas-2021-02-penalty-bar.png" alt="Alabama-Arkansas-2021-02-penalty-bar"/></a><br/><br/>
+<a href="https://postimg.cc/0zwBmJvC" target="_blank"><img src="https://i.postimg.cc/y8Q4MFr2/Alabama-Auburn-2021-02-penalty-bar.png" alt="Alabama-Auburn-2021-02-penalty-bar"/></a><br/><br/>
+<a href="https://postimg.cc/jwZgKH6R" target="_blank"><img src="https://i.postimg.cc/SRpw6VJY/Alabama-Florida-2021-02-penalty-bar.png" alt="Alabama-Florida-2021-02-penalty-bar"/></a><br/><br/>
+<a href='https://postimg.cc/30rz4zsG' target='_blank'><img src='https://i.postimg.cc/4ypGMgwW/Alabama-Georgia-2021-02-penalty-bar.png' border='0' alt='Alabama-Georgia-2021-02-penalty-bar'/></a>
+<a href="https://postimg.cc/fSRP02W3" target="_blank"><img src="https://i.postimg.cc/4y6Rqqr1/Alabama-LSU-2021-02-penalty-bar.png" alt="Alabama-LSU-2021-02-penalty-bar"/></a><br/><br/>
+<a href="https://postimg.cc/SjS35sLy" target="_blank"><img src="https://i.postimg.cc/44VGYHmh/Alabama-Mississippi-State-2021-02-penalty-bar.png" alt="Alabama-Mississippi-State-2021-02-penalty-bar"/></a><br/><br/>
+<a href="https://postimg.cc/9rzSmnNK" target="_blank"><img src="https://i.postimg.cc/8PbVH8dp/Alabama-Ole-Miss-2021-02-penalty-bar.png" alt="Alabama-Ole-Miss-2021-02-penalty-bar"/></a><br/><br/>
+<a href="https://postimg.cc/VdThdWx6" target="_blank"><img src="https://i.postimg.cc/7ZYrtBXg/Alabama-Tennessee-2021-02-penalty-bar.png" alt="Alabama-Tennessee-2021-02-penalty-bar"/></a><br/><br/>
+<a href="https://postimg.cc/QVfwr3Sc" target="_blank"><img src="https://i.postimg.cc/Yq7HY2WD/Alabama-Texas-A-M-2021-02-penalty-bar.png" alt="Alabama-Texas-A-M-2021-02-penalty-bar"/></a><br/><br/>
+</p>
+
+
+<p>
+What a season this has been.
+Hopefully there will be two more games to practice making/interpreting graphs 
+and that they will be even more enjoyable than this game was to do.
+</p>

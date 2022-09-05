@@ -1,0 +1,189 @@
+library(tidyverse)
+library(gghighlight)
+library(latex2exp)
+#library(data.table)
+library(openxlsx)
+#library(ggtext)
+library(DT)
+library(knitr)
+library(kableExtra)
+library(rmarkdown)
+library(ggrepel)
+library(here)
+library(Dict)
+library(data.table)
+
+
+################################################################################
+
+my_colors_score <- c("TRUE" = "lawngreen", "FALSE" = "black")
+theme.background.fill = "gray90"
+theme.line.color = "gray80"
+
+all.plays <- tibble(Offense = character(), 
+                        Defense = character(), 
+                        Drive.id = double(), 
+                        Drive.number = integer(),
+                        Play.number = integer(),
+                        Down = integer(),
+                        Play.type = character(), 
+                        Distance = integer(), 
+                        Yards.gained = integer(), 
+                        Scoring = logical())
+
+# Set Team/Year/Week ###########################################################
+{ #Set all at once
+  #Determines which team file to grab
+  team_data <- "Alabama"
+  #team_data <- "Georgia"
+  #Get the directory of the script
+  script_dir <- here()
+  #Set the year of interest
+  year=2019
+  #Set the working directory
+  #setwd(paste0(script_dir,"\\",year,"\\",team_data))
+  #getwd()
+  
+  #Determine the part of season of interest: regular, postseason, both
+  seasontype = "regular"
+  #seasontype = "postseason"
+  
+  #Set the week of interest if you are not looping over multiple weeks
+  week="wk07"
+  
+  #Set the team of interest if not looping over both teams
+  team <- team_data
+  #team <- "Alabama"
+  #team <- "Texas A&M"
+}
+
+
+# Loop season ##################################################################
+#Sets the weeks that data exists (need to automate) stored in the year directory
+# and then loops over those weeks.
+wk <- 1:7
+wk <- wk[!wk %in% c(6,10)]
+for(n in wk)
+{
+  if(n < 10)
+  {
+    week = paste0("wk0",n)
+  }
+  else
+  {
+    week = paste0("wk",n)
+  }
+  
+    #Gets the play data based on the settings above
+  plays <- read.csv(paste0("C:/Users/DanielSmith/Dropbox/programs/R/CFB/data/", team_data,"_",year,"_",week,"_",seasontype,".csv"))
+
+all.plays <- all.plays %>%  union(plays %>% select("Offense",
+                                                           "Defense",
+                                                           "Drive.id",
+                                                           "Drive.number",
+                                                           "Play.number",
+                                                           "Down",
+                                                           "Play.type",
+                                                           "Distance",
+                                                           "Yards.gained",
+                                                           "Scoring"))
+
+}
+
+success.rates <- all.plays %>% mutate(Yards.to.success = case_when(Down == 1 ~ .5*Distance,
+                                                                       Down == 2 ~ .7*Distance,
+                                                                       TRUE ~ 1.0*Distance)) %>% 
+  mutate(Success = case_when(Play.type == "Passing Touchdown" ~ "Successful",
+                             Play.type == "Penalty" ~ "Penalty",
+                             Play.type == "Punt" ~ "Punt",
+                             Play.type == "Field Goal Good" ~ "Field Goal Good",
+                             Play.type == "Field Goal Missed" ~ "Field Goal Missed",
+                             Play.type == "Pass Interception Return" ~ "Unsuccessful",
+                             Play.type == "Fumble Recovery (Opponent)" ~ "Fumble Recovery (Opponent)",
+                             Down == 1 ~ if_else(Yards.gained >= .5*Distance,"Successful","Unsuccessful"),
+                             Down == 2 ~ if_else(Yards.gained >= .7*Distance,"Successful","Unsuccessful"),
+                             TRUE ~ if_else(Yards.gained >= Distance,"Successful","Unsuccessful"))) %>%  
+  mutate(TD.first = if_else(Scoring == "True" & 
+                              Play.type != "Field Goal Good" &
+                              Play.type != "Kickoff Return Touchdown" &
+                              Play.type != "Blocked Punt" &
+                              Play.type != "Interception Return Touchdown" &
+                              Play.type != "Blocked Punt Touchdown",
+                            TRUE, FALSE) | if_else(Yards.gained >= Distance, TRUE, FALSE)) %>%  
+  mutate(Scoring.TD = if_else(Play.type == "Rushing Touchdown" | Play.type == "Passing Touchdown", TRUE, FALSE)) %>% 
+  filter(!(Play.type == "Kickoff" | Play.type == "End of Half" | Play.type == "Field Goal Good" | Play.type == "Field Goal Missed" | Play.type == "End Period" |
+             Play.type == "Timeout" | Play.type == "Punt" | Play.type == "End of Game" | Play.type == "Kickoff Return (Offense)" |
+             Play.type == "Kickoff Return Touchdown" | Play.type == "Penalty" | Play.type == "Fumble Recovery (Opponent)" | Play.type == "Blocked Punt"))
+
+score_drive_fcn <- function(n)
+{
+  if("TRUE" %in% pull(success.rates %>% filter(Drive.id == n) %>% select(Scoring.TD)))
+  {
+    TRUE
+  } 
+  else
+  {
+    FALSE
+  }
+}
+
+success.rates <- success.rates %>% add_column(Scoring.drive = sapply(success.rates$Drive.id, score_drive_fcn))
+
+
+
+# teamOsucc <- success.rates %>%  filter(!(Play.type == "Kickoff" | Play.type == "End of Half" | Play.type == "Field Goal Good" | Play.type == "Field Goal Missed" | Play.type == "End Period" |
+#                                    Play.type == "Timeout" | Play.type == "Punt" | Play.type == "End of Game" | Play.type == "Kickoff Return (Offense)" |
+#                                    Play.type == "Kickoff Return Touchdown" | Play.type == "Penalty" | Play.type == "Pass Interception Return" | Play.type == "Fumble Recovery (Opponent)"))
+
+
+
+################################################################################
+tbl.success.drive <- success.rates %>% group_by(Drive.id, Success) %>% summarise(Count = n()) %>% pivot_wider(names_from = Success, values_from = Count)
+#tbl.success.drive
+tbl.success.drive <- tbl.success.drive %>% ungroup()
+#tbl.success.drive
+tbl.success.drive[is.na(tbl.success.drive)] <- 0
+#tbl.success.drive
+# tbl.success.drive <- tbl.success.drive %>% 
+#   mutate(Total = Successful + Unsuccessful, Success.rate = Successful/Total) %>% 
+#   select(Drive.id, Total, Successful, Unsuccessful, Success.rate) %>% 
+#   mutate(Score.drive = score_drive_succ_fcn(Drive.id))
+tbl.success.drive <- tbl.success.drive %>% 
+  mutate(Total = Successful + Unsuccessful, Success.rate = Successful/Total) %>% 
+  select(Drive.id, Total, Successful, Unsuccessful, Success.rate) 
+
+score_drive = c()
+for(n in 1:length(tbl.success.drive$Drive.id))
+{
+  score_drive[[n]] <- score_drive_fcn(tbl.success.drive$Drive.id[n])
+}
+
+tbl.success.drive <- tbl.success.drive %>% 
+   add_column(Scoring.drive = score_drive)
+tbl.success.drive
+
+
+openxlsx::write.xlsx(tbl.success.drive, "tbl.success.drive.xlsx", overwrite = TRUE)
+openxlsx::write.xlsx(all.plays, "all.plays.xlsx", overwrite = TRUE)
+
+min.success <- tbl.success.drive %>% filter(Scoring.drive == TRUE) 
+
+
+tbl.success.drive.td.rate <- tbl.success.drive %>% 
+  group_by(Success.rate, Scoring.drive) %>% 
+  summarise(Count = n()) %>% 
+  pivot_wider(names_from = Success.rate, values_from = Count, values_fill = 0)
+
+temp.cols <- t(as.matrix(tbl.success.drive.td.rate))[-1,]
+temp.names <- as.double(colnames(tbl.success.drive.td.rate)[-1])
+tbl.success.drive.td.rate <- cbind(temp.names, temp.cols)
+colnames(tbl.success.drive.td.rate)
+tbl.success.drive.td.rate <- as.tibble(tbl.success.drive.td.rate) 
+names(tbl.success.drive.td.rate) <- c("Success.rate", "Non.TD", "TD")
+
+tbl.success.drive.td.rate <- tbl.success.drive.td.rate %>% mutate(Total = Non.TD + TD, TD.rate = TD/Total)
+
+tbl.success.drive.td.rate
+
+ggplot(tbl.success.drive.td.rate, aes(x=Success.rate, y=TD.rate)) +
+  geom_point()

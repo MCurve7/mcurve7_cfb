@@ -1,0 +1,679 @@
+Extra graphs week 10 vs LSU 2021
+
+<p>As always this is an addendum to balloons All graphs post</p>
+
+<p>On drive 11 the Play.type was recorded as a sack, but the Play.text says "Bryce Young sacked by Cameron Lewis for a loss of 12 yards to the Alab 42 Bryce Young fumbled, forced by Cameron Lewis, recovered by LSU Jaquelin Roy , return for 0 yards". So that is something I need to alter in my dataframe since the fumble is more important in terms of the play chart style graphs. </p>
+
+<b>Alabama:</b><br/>
+<img src="http://a.espncdn.com/i/teamlogos/ncaa/500/333.png" height="100"><br/>
+<a href="https://postimg.cc/McQMZKW1" target="_blank"><img src="https://i.postimg.cc/JhTbqGvY/Alabama-2021-wk10-LSU-01-success-drive-bar.png" alt="Alabama-2021-wk10-LSU-01-success-drive-bar"/></a><br/><br/>
+<table border='1'>
+<caption>Alabama, 2021, wk10, Success rate by drive table vs LSU</caption>
+ <thead>
+  <tr>
+   <th style="text-align:right;"> Drive </th>
+   <th style="text-align:right;"> Total </th>
+   <th style="text-align:right;"> Successful </th>
+   <th style="text-align:right;"> Unsuccessful </th>
+   <th style="text-align:right;"> Success rate </th>
+   <th style="text-align:left;"> Scoring drive </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 0.4285714 </td>
+   <td style="text-align:left;"> FALSE </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 0.0000000 </td>
+   <td style="text-align:left;"> FALSE </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 0.2000000 </td>
+   <td style="text-align:left;"> FALSE </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 9 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 0.4444444 </td>
+   <td style="text-align:left;"> FALSE </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 12 </td>
+   <td style="text-align:right;"> 9 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 0.7500000 </td>
+   <td style="text-align:left;"> TRUE </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 0.6000000 </td>
+   <td style="text-align:left;"> TRUE </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0.5000000 </td>
+   <td style="text-align:left;"> TRUE </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 8 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 0.0000000 </td>
+   <td style="text-align:left;"> FALSE </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 9 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 0.0000000 </td>
+   <td style="text-align:left;"> FALSE </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 10 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 0.3333333 </td>
+   <td style="text-align:left;"> FALSE </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 11 </td>
+   <td style="text-align:right;"> 8 </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 0.6250000 </td>
+   <td style="text-align:left;"> FALSE </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 12 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 0.0000000 </td>
+   <td style="text-align:left;"> FALSE </td>
+  </tr>
+</tbody>
+</table><br/><br/>
+<a href="https://postimg.cc/BXnjLCSS" target="_blank"><img src="https://i.postimg.cc/zXnKQd4g/Alabama-2021-wk10-LSU-02-drive-fac.png" alt="Alabama-2021-wk10-LSU-02-drive-fac"/></a><br/><br/>
+<a href="https://postimg.cc/3kyW9J0z" target="_blank"><img src="https://i.postimg.cc/vZh9Y4Y8/Alabama-2021-wk10-LSU-03-drive.png" alt="Alabama-2021-wk10-LSU-03-drive"/></a><br/><br/>
+<a href="https://postimg.cc/rKftQPnR" target="_blank"><img src="https://i.postimg.cc/MpSbKk15/Alabama-2021-wk10-LSU-04-all4-downs-fac.png" alt="Alabama-2021-wk10-LSU-04-all4-downs-fac"/></a><br/><br/>
+<a href="https://postimg.cc/hQSf0LV0" target="_blank"><img src="https://i.postimg.cc/zvhK8pB4/Alabama-2021-wk10-LSU-05-all4-downs-fac-noscale.png" alt="Alabama-2021-wk10-LSU-05-all4-downs-fac-noscale"/></a><br/><br/>
+<table border='1'>
+<caption>Alabama, 2021, wk10, Success by down table vs LSU</caption>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Down </th>
+   <th style="text-align:right;"> Total </th>
+   <th style="text-align:right;"> Successful </th>
+   <th style="text-align:right;"> Unsuccessful </th>
+   <th style="text-align:right;"> TD/1st </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> 1 </td>
+   <td style="text-align:right;"> 27 </td>
+   <td style="text-align:right;"> 11 </td>
+   <td style="text-align:right;"> 16 </td>
+   <td style="text-align:right;"> 5 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2 </td>
+   <td style="text-align:right;"> 22 </td>
+   <td style="text-align:right;"> 12 </td>
+   <td style="text-align:right;"> 10 </td>
+   <td style="text-align:right;"> 9 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 3 </td>
+   <td style="text-align:right;"> 13 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 9 </td>
+   <td style="text-align:right;"> 4 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 4 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+</tbody>
+</table><br/><br/>
+<a href="https://postimg.cc/wy51JfRv" target="_blank"><img src="https://i.postimg.cc/26Mhsgz4/Alabama-2021-wk10-LSU-06-yards-success-gained.png" alt="Alabama-2021-wk10-LSU-06-yards-success-gained"/></a><br/><br/>
+<a href="https://postimg.cc/jDG210z2" target="_blank"><img src="https://i.postimg.cc/pddjpPrf/Alabama-2021-wk10-LSU-07-drive-extra-yards-gained.png" alt="Alabama-2021-wk10-LSU-07-drive-extra-yards-gained"/></a><br/><br/>
+<a href="https://postimg.cc/0bXbpJjp" target="_blank"><img src="https://i.postimg.cc/cL0wGRN5/Alabama-2021-wk10-LSU-08-drive-yards-to-success.png" alt="Alabama-2021-wk10-LSU-08-drive-yards-to-success"/></a><br/><br/>
+<a href="https://postimg.cc/DWL0kjgg" target="_blank"><img src="https://i.postimg.cc/7LQ2zjJp/Alabama-2021-wk10-LSU-09-fac-yards-to-success.png" alt="Alabama-2021-wk10-LSU-09-fac-yards-to-success"/></a><br/><br/>
+<a href="https://postimg.cc/HjBxg7Qf" target="_blank"><img src="https://i.postimg.cc/28fBnQ38/Alabama-2021-wk10-LSU-e1-drive-yards-to-goal-fac.png" alt="Alabama-2021-wk10-LSU-e1-drive-yards-to-goal-fac"/></a><br/><br/>
+<a href="https://postimg.cc/fJybTTCk" target="_blank"><img src="https://i.postimg.cc/fTjSCV07/Alabama-2021-wk10-LSU-e5-drive-success-play.png" alt="Alabama-2021-wk10-LSU-e5-drive-success-play"/></a><br/><br/>
+<a href="https://postimg.cc/G94pzpVG" target="_blank"><img src="https://i.postimg.cc/FFZJrdxW/Alabama-2021-wk10-LSU-e6-success-drive-bar-down.png" alt="Alabama-2021-wk10-LSU-e6-success-drive-bar-down"/></a><br/><br/>
+<a href="https://postimg.cc/mhKgnsWq" target="_blank"><img src="https://i.postimg.cc/5N2Q647x/Alabama-2021-wk10-LSU-e7-success-drive-bar-down2.png" alt="Alabama-2021-wk10-LSU-e7-success-drive-bar-down2"/></a><br/><br/>
+<a href="https://postimg.cc/dLdVPxq0" target="_blank"><img src="https://i.postimg.cc/TYNLbzFn/Alabama-2021-wk10-LSU-e8-success-drive-down-bar-yards-to-goal-fac.png" alt="Alabama-2021-wk10-LSU-e8-success-drive-down-bar-yards-to-goal-fac"/></a><br/><br/>
+
+
+
+<b>LSU:</b><br/>
+<img src="http://a.espncdn.com/i/teamlogos/ncaa/500/99.png" height="100"><br/>
+<a href="https://postimg.cc/GHfmBwgK" target="_blank"><img src="https://i.postimg.cc/XYjGznwR/LSU-2021-wk10-Alabama-01-success-drive-bar.png" alt="LSU-2021-wk10-Alabama-01-success-drive-bar"/></a><br/><br/>
+<table border='1'>
+<caption>LSU, 2021, wk10, Success rate by drive table vs Alabama</caption>
+ <thead>
+  <tr>
+   <th style="text-align:right;"> Drive </th>
+   <th style="text-align:right;"> Total </th>
+   <th style="text-align:right;"> Successful </th>
+   <th style="text-align:right;"> Unsuccessful </th>
+   <th style="text-align:right;"> Success rate </th>
+   <th style="text-align:left;"> Scoring drive </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 8 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 0.5000000 </td>
+   <td style="text-align:left;"> TRUE </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 0.0000000 </td>
+   <td style="text-align:left;"> FALSE </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 0.0000000 </td>
+   <td style="text-align:left;"> FALSE </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 0.3333333 </td>
+   <td style="text-align:left;"> FALSE </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 0.3333333 </td>
+   <td style="text-align:left;"> FALSE </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 0.0000000 </td>
+   <td style="text-align:left;"> FALSE </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 0.3333333 </td>
+   <td style="text-align:left;"> FALSE </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 8 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 0.0000000 </td>
+   <td style="text-align:left;"> FALSE </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 9 </td>
+   <td style="text-align:right;"> 14 </td>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> 0.5000000 </td>
+   <td style="text-align:left;"> TRUE </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 10 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 0.0000000 </td>
+   <td style="text-align:left;"> FALSE </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 11 </td>
+   <td style="text-align:right;"> 14 </td>
+   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:right;"> 8 </td>
+   <td style="text-align:right;"> 0.4285714 </td>
+   <td style="text-align:left;"> FALSE </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 12 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 0.0000000 </td>
+   <td style="text-align:left;"> FALSE </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 13 </td>
+   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 0.3333333 </td>
+   <td style="text-align:left;"> FALSE </td>
+  </tr>
+</tbody>
+</table><br/><br/>
+<a href="https://postimg.cc/LJZ6LCrp" target="_blank"><img src="https://i.postimg.cc/Z5wBkXHC/LSU-2021-wk10-Alabama-02-drive-fac.png" alt="LSU-2021-wk10-Alabama-02-drive-fac"/></a><br/><br/>
+<a href="https://postimg.cc/R6vSrMqS" target="_blank"><img src="https://i.postimg.cc/wvm7mMpm/LSU-2021-wk10-Alabama-03-drive.png" alt="LSU-2021-wk10-Alabama-03-drive"/></a><br/><br/>
+<a href="https://postimg.cc/Ff5FZb4J" target="_blank"><img src="https://i.postimg.cc/0Nr69ZXZ/LSU-2021-wk10-Alabama-04-all4-downs-fac.png" alt="LSU-2021-wk10-Alabama-04-all4-downs-fac"/></a><br/><br/>
+<a href="https://postimg.cc/2qQkXqk9" target="_blank"><img src="https://i.postimg.cc/pd7mr8gv/LSU-2021-wk10-Alabama-05-all4-downs-fac-noscale.png" alt="LSU-2021-wk10-Alabama-05-all4-downs-fac-noscale"/></a><br/><br/>
+<table border='1'>
+<caption>LSU, 2021, wk10, Success by down table vs Alabama</caption>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Down </th>
+   <th style="text-align:right;"> Total </th>
+   <th style="text-align:right;"> Successful </th>
+   <th style="text-align:right;"> Unsuccessful </th>
+   <th style="text-align:right;"> TD/1st </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> 1 </td>
+   <td style="text-align:right;"> 26 </td>
+   <td style="text-align:right;"> 8 </td>
+   <td style="text-align:right;"> 18 </td>
+   <td style="text-align:right;"> 4 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2 </td>
+   <td style="text-align:right;"> 21 </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 16 </td>
+   <td style="text-align:right;"> 2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 3 </td>
+   <td style="text-align:right;"> 18 </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 13 </td>
+   <td style="text-align:right;"> 5 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 4 </td>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 5 </td>
+  </tr>
+</tbody>
+</table><br/><br/>
+<a href="https://postimg.cc/5YpxbZFw" target="_blank"><img src="https://i.postimg.cc/d3cDmFsS/LSU-2021-wk10-Alabama-06-yards-success-gained.png" alt="LSU-2021-wk10-Alabama-06-yards-success-gained"/></a><br/><br/>
+<a href="https://postimg.cc/xNC9CtKB" target="_blank"><img src="https://i.postimg.cc/C5C5c2dM/LSU-2021-wk10-Alabama-07-drive-extra-yards-gained.png" alt="LSU-2021-wk10-Alabama-07-drive-extra-yards-gained"/></a><br/><br/>
+<a href="https://postimg.cc/bdNy3NKL" target="_blank"><img src="https://i.postimg.cc/3r2krk9M/LSU-2021-wk10-Alabama-08-drive-yards-to-success.png" alt="LSU-2021-wk10-Alabama-08-drive-yards-to-success"/></a><br/><br/>
+<a href="https://postimg.cc/7bsxcr44" target="_blank"><img src="https://i.postimg.cc/TYGpKTHK/LSU-2021-wk10-Alabama-09-fac-yards-to-success.png" alt="LSU-2021-wk10-Alabama-09-fac-yards-to-success"/></a><br/><br/>
+<a href="https://postimg.cc/FfVvV2p2" target="_blank"><img src="https://i.postimg.cc/1zLzsSq5/LSU-2021-wk10-Alabama-e1-drive-yards-to-goal-fac.png" alt="LSU-2021-wk10-Alabama-e1-drive-yards-to-goal-fac"/></a><br/><br/>
+<a href="https://postimg.cc/MMs8hVh5" target="_blank"><img src="https://i.postimg.cc/902FwBb6/LSU-2021-wk10-Alabama-e5-drive-success-play.png" alt="LSU-2021-wk10-Alabama-e5-drive-success-play"/></a><br/><br/>
+<a href="https://postimg.cc/mhY5vYvs" target="_blank"><img src="https://i.postimg.cc/tRwGVDDY/LSU-2021-wk10-Alabama-e6-success-drive-bar-down.png" alt="LSU-2021-wk10-Alabama-e6-success-drive-bar-down"/></a><br/><br/>
+<a href="https://postimg.cc/y3yp0Kmd" target="_blank"><img src="https://i.postimg.cc/2yspR834/LSU-2021-wk10-Alabama-e7-success-drive-bar-down2.png" alt="LSU-2021-wk10-Alabama-e7-success-drive-bar-down2"/></a><br/><br/>
+<a href="https://postimg.cc/jLRFtWTJ" target="_blank"><img src="https://i.postimg.cc/FsS5bcnG/LSU-2021-wk10-Alabama-e8-success-drive-down-bar-yards-to-goal-fac.png" alt="LSU-2021-wk10-Alabama-e8-success-drive-down-bar-yards-to-goal-fac"/></a><br/><br/>
+
+
+<b>Technical question</b><br/>
+<p>Hey balloons. I hate to keep bothering you with these questions, but I haven't played with CSS/javascript in over 10 years I think. I have been looking at your code to see if I can understand how to embed my Plotly.js graphs here instead of using png files since Plotly.js is built on top of d3.js and it looks like you still have your D3 code up. I don't actually need to write any Plotly code since there is a function that converts my ggplot2 graphs into Plotly graphs. The converted to Plotly output is (I had to hand layout the json data since I can't recall the command that gives it nicely formatted right now so hopefully it is semireadable and I killed a few deciaml places here and there):</p>
+<pre>
+&lt;!DOCTYPE html&gt;<br/>
+&lt;html lang="en"&gt;<br/>
+&lt;head&gt;<br/>
+&lt;meta charset="utf-8"/&gt;<br/>
+&lt;style&gt;body{background-color:white;}&lt;/style&gt;<br/>
+
+&lt;script src="lib/htmlwidgets-1.5.4/htmlwidgets.js"&gt;&lt;/script&gt;<br/>
+&lt;script src="lib/plotly-binding-4.10.0/plotly.js"&gt;&lt;/script&gt;<br/>
+&lt;script src="lib/typedarray-0.1/typedarray.min.js"&gt;&lt;/script&gt;<br/>
+&lt;script src="lib/jquery-3.5.1/jquery.min.js"&gt;&lt;/script&gt;<br/>
+&lt;link href="lib/crosstalk-1.1.1/css/crosstalk.css" rel="stylesheet" /&gt;<br/>
+&lt;script src="lib/crosstalk-1.1.1/js/crosstalk.min.js"&gt;&lt;/script&gt;<br/>
+&lt;link href="lib/plotly-htmlwidgets-css-2.5.1/plotly-htmlwidgets.css" rel="stylesheet" /&gt;<br/>
+&lt;script src="lib/plotly-main-2.5.1/plotly-latest.min.js"&gt;&lt;/script&gt;<br/>
+
+  &lt;title&gt;plotly&lt;/title&gt;<br/>
+&lt;/head&gt;<br/>
+&lt;body&gt;<br/>
+&lt;div id="htmlwidget_container"&gt;<br/>
+  &lt;div id="htmlwidget-153992d7d34569f8e25e" style="width:100%;height:400px;" class="plotly html-widget"&gt;&lt;/div&gt;<br/>
+&lt;/div&gt;<br/>
+&lt;script type="application/json" data-for="htmlwidget-153992d7d34569f8e25e"&gt;<br/> 
+{
+"x":
+{
+ "data":
+ [{
+  "orientation":"v",
+  "width":[0.9,0.9,0.9,0.9,0.899,0.899,0.899,0.899,0.899],
+  "base":[0,0,0,0,0,0,0,0,0],
+  "x":[1,2,3,4,8,9,10,11,12],
+  "y":[0.429,0,0.2,0.444,0,0,0.333,0.625,0],
+  "text":[
+   "O.drive.number: 1&lt;br /&gt;Success.rate: 0.429&lt;br /&gt;Score.drive: FALSE",
+   "O.drive.number: 2&lt;br /&gt;Success.rate: 0.000&lt;br /&gt;Score.drive: FALSE",
+   "O.drive.number: 3&lt;br /&gt;Success.rate: 0.200&lt;br /&gt;Score.drive: FALSE",
+   "O.drive.number: 4&lt;br /&gt;Success.rate: 0.444&lt;br /&gt;Score.drive: FALSE",
+   "O.drive.number: 8&lt;br /&gt;Success.rate: 0.000&lt;br /&gt;Score.drive: FALSE",
+   "O.drive.number: 9&lt;br /&gt;Success.rate: 0.000&lt;br /&gt;Score.drive: FALSE",
+   "O.drive.number: 10&lt;br /&gt;Success.rate:0.333&lt;br /&gt;Score.drive: FALSE",
+   "O.drive.number: 11&lt;br /&gt;Success.rate:0.625&lt;br /&gt;Score.drive: FALSE",
+   "O.drive.number: 12&lt;br /&gt;Success.rate:0.000&lt;br /&gt;Score.drive:FALSE"
+  ],
+  "type":"bar",
+  "textposition":"none",
+  "marker":{
+    "autocolorscale":false,
+	"color":"rgba(130,138,143,1)",
+	"line":{"width":1.889,"color":"transparent"}
+  },
+  "name":"FALSE",
+  "legendgroup":"FALSE",
+  "showlegend":true,
+  "xaxis":"x",
+  "yaxis":"y",
+  "hoverinfo":"text","frame":null
+ },
+ {
+  "orientation":"v",
+  "width":[0.9,0.9,0.9],
+  "base":[0,0,0],
+  "x":[5,6,7],
+  "y":[0.75,0.6,0.5],
+  "text":[
+   "O.drive.number:  5&lt;br /&gt;Success.rate: 0.750&lt;br /&gt;Score.drive:  TRUE",
+   "O.drive.number:  6&lt;br /&gt;Success.rate: 0.600&lt;br /&gt;Score.drive:  TRUE",
+   "O.drive.number:  7&lt;br /&gt;Success.rate: 0.500&lt;br /&gt;Score.drive:  TRUE"
+   ],
+  "type":"bar",
+  "textposition":"none",
+  "marker":{
+   "autocolorscale":false,
+   "color":"rgba(158,27,50,1)",
+   "line":{"width":1.889,"color":"transparent"}
+  },
+  "name":"TRUE", 
+  "legendgroup":"TRUE", 
+  "showlegend":true, 
+  "xaxis":"x", 
+  "yaxis":"y", 
+  "hoverinfo":"text", 
+  "frame":null
+ },
+ {
+  "visible":false,
+  "showlegend":false,
+  "xaxis":"x",
+  "yaxis":"y",
+  "hoverinfo":"text",
+  "frame":null
+ },
+ {
+  "x":[1,2,3,4,5,6,7,8,9,10,11,12],
+  "y":[0.429,0,0.2,0.444,0.75,0.6,0.5,0,0,0.333,0.625,0],
+  "text":[7,3,5,9,12,5,2,3,3,3,8,3],
+  "hovertext":[
+   "O.drive.number:  1&lt;br /&gt;Success.rate: 0.429&lt;br /&gt;Total:  7",
+   "O.drive.number:  2&lt;br /&gt;Success.rate: 0.000&lt;br /&gt;Total:  3",
+   "O.drive.number:  3&lt;br /&gt;Success.rate: 0.200&lt;br /&gt;Total:  5",
+   "O.drive.number:  4&lt;br /&gt;Success.rate: 0.444&lt;br /&gt;Total:  9",
+   "O.drive.number:  5&lt;br /&gt;Success.rate: 0.750&lt;br /&gt;Total: 12",
+   "O.drive.number:  6&lt;br /&gt;Success.rate: 0.600&lt;br /&gt;Total:  5",
+   "O.drive.number:  7&lt;br /&gt;Success.rate: 0.500&lt;br /&gt;Total:  2",
+   "O.drive.number:  8&lt;br /&gt;Success.rate: 0.000&lt;br /&gt;Total:  3",
+   "O.drive.number:  9&lt;br /&gt;Success.rate: 0.000&lt;br /&gt;Total:  3",
+   "O.drive.number: 10&lt;br /&gt;Success.rate: 0.333&lt;br /&gt;Total:  3",
+   "O.drive.number: 11&lt;br /&gt;Success.rate: 0.625&lt;br /&gt;Total:  8",
+   "O.drive.number: 12&lt;br /&gt;Success.rate: 0.000&lt;br /&gt;Total:  3"
+   ],
+  "textfont":{
+  "size":14.6645669291339,
+  "color":"rgba(0,0,0,1)"},
+  "type":"scatter",
+  "mode":"text",
+  "hoveron":"points",
+  "showlegend":false,
+  "xaxis":"x",
+  "yaxis":"y",
+  "hoverinfo":"text","frame":null
+ }],
+ "layout":{
+  "margin":{
+    "t":49.2984745689469, 
+	"r":7.30593607305936, 
+	"b":45.7185658931478, 
+	"l":43.1050228310502
+  },
+  "plot_bgcolor":"rgba(229,229,229,1)",
+  "paper_bgcolor":"rgba(255,255,255,1)",
+  "font":{
+    "color":"rgba(0,0,0,1)",
+	"family":"",
+	"size":14.6118721461187
+  },
+  "title":{
+    "text":"Alabama[20]: Success rate by Drive with TD drive indicated and number of plays per drive",
+    "font":{
+	  "color":"rgba(0,0,0,1)",
+	  "family":"",
+	  "size":17.5342465753425
+	},
+	"x":0,
+	"xref":"paper"
+  },
+  "xaxis":{
+    "domain":[0,1],
+    "automargin":true,
+    "type":"linear",
+	"autorange":false,
+	"range":[-0.0449,13.045],
+	"tickmode":"array",
+	"ticktext":["0","1","2","3","4","5","6","7","8","9","10","11","12"],
+	"tickvals":[0,1,2,3,4,5,6,7,8,9,10,11,12],
+	"categoryorder":"array",
+	"categoryarray":["0","1","2","3","4","5","6","7","8","9","10","11","12"],
+	"nticks":null,
+	"ticks":"outside",
+	"tickcolor":"rgba(51,51,51,1)",
+	"ticklen":3.65296803652968,
+	"tickwidth":0.66417600664176,
+	"showticklabels":true,
+	"tickfont":{
+      "color":"rgba(77,77,77,1)",
+	  "family":"",
+	  "size":11.689497716895
+   },
+	"tickangle":-0,
+	"showline":false,
+	"linecolor":null,
+	"linewidth":0,
+	"showgrid":true,
+	"gridcolor":"rgba(204,204,204,1)",
+	"gridwidth":0.66417600664176,
+	"zeroline":false,
+	"anchor":"y",
+	"title":{
+	  "text":"Drive number",
+	  "font":{
+	    "color":"rgba(0,0,0,1)",
+	    "family":"",
+	    "size":14.6118721461187
+	  }
+    },
+    "hoverformat":".2f"
+  },
+  "yaxis":{
+   "domain":[0,1],
+   "automargin":true,
+   "type":"linear",
+   "autorange":false,
+   "range":[-0.05,1.05],
+   "tickmode":"array",
+   "ticktext":["0.0","0.1","0.2","0.3","0.4","0.5","0.6","0.7","0.8","0.9","1.0"],
+   "tickvals":[0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1],
+   "categoryorder":"array",
+   "categoryarray":["0.0","0.1","0.2","0.3","0.4","0.5","0.6","0.7","0.8","0.9","1.0"],
+   "nticks":null,
+   "ticks":"outside",
+   "tickcolor":"rgba(51,51,51,1)",
+   "ticklen":3.65296803652968,
+   "tickwidth":0.66417600664176,
+   "showticklabels":true,
+   "tickfont":{
+	"color":"rgba(77,77,77,1)",
+	"family":"",
+	"size":11.689497716895
+   },
+   "tickangle":-0,
+   "showline":false,
+   "linecolor":null,
+   "linewidth":0,
+   "showgrid":true,
+   "gridcolor":"rgba(204,204,204,1)",
+   "gridwidth":0.66417600664176,
+   "zeroline":false,
+   "anchor":"x",
+   "title":{
+	"text":"Success rate",
+	"font":{
+		"color":"rgba(0,0,0,1)",
+		"family":"",
+		"size":14.6118721461187
+	}
+   },
+   "hoverformat":".2f"}, 
+   "shapes":[{
+    "type":"rect",
+    "fillcolor":null,
+    "line":{"color":null,"width":0,"linetype":[]},
+    "yref":"paper",
+    "xref":"paper",
+    "x0":0,
+    "x1":1,
+    "y0":0,
+    "y1":1}],
+   "showlegend":true,
+   "legend":{
+    "bgcolor":"rgba(255,255,255,1)",
+    "bordercolor":"transparent",
+    "borderwidth":1.88976377952756,
+    "font":{
+     "color":"rgba(0,0,0,1)",
+     "family":"",
+     "size":11.689497716895
+    },
+    "title":{
+		"text":"TD",
+		"font":{
+			"color":"rgba(0,0,0,1)",
+			"family":"",
+			"size":14.6118721461187
+		}
+	}
+   },
+   "hovermode":"closest",
+   "barmode":"relative"
+  },
+  "config":{
+	"doubleClick":"reset",
+	"modeBarButtonsToAdd":["hoverclosest","hovercompare"],
+	"showSendToCloud":false
+  },
+  "source":"A",
+  "attrs":{
+	 "1de4147212e2":{"x":{},"y":{},"fill":{},"type":"bar"},
+	 "1de425882da7":{"y":{}},
+	 "1de465c55bd7":{"x":{},"y":{},"label":{}}
+	},
+  "cur_data":"1de4147212e2",
+  "visdat":{
+	"1de4147212e2":["function (y) ","x"],
+	"1de425882da7":["function (y) ","x"],
+	"1de465c55bd7":["function (y) ","x"]
+  },
+  "highlight":{
+	"on":"plotly_click",
+	"persistent":false,
+	"dynamic":false,
+	"selectize":false,
+	"opacityDim":0.2,
+	"selected":{"opacity":1},
+	"debounce":0
+  },
+  "shinyEvents":[
+	"plotly_hover",
+	"plotly_click",
+	"plotly_selected",
+	"plotly_relayout",
+	"plotly_brushed",
+	"plotly_brushing",
+	"plotly_clickannotation",
+	"plotly_doubleclick",
+	"plotly_deselect",
+	"plotly_afterplot",
+	"plotly_sunburstclick"
+  ],
+  "base_url":"https://plot.ly"
+ },
+ "evals":[],
+ "jsHooks":[]
+}
+&lt;/script&gt;<br/>
+&lt;script type="application/htmlwidget-sizing" 
+           data-for="htmlwidget-153992d7d34569f8e25e"&gt;
+		   {
+			"viewer":{
+				"width":"100%", "height":400, "padding":0, "fill":true
+			},
+			"browser":{
+				"width":"100%", "height":400, "padding":0, "fill":true
+				}
+			}
+&lt;/script&gt;<br/>
+&lt;/body&gt;<br/>
+&lt;/html&gt;<br/>
+</pre>
+<p>Obviously if it will take too much time to answer I fully understand.</p>
+
+<p>PS (balloons) I think I forgot to respond to a comment you made a while ago. I have been reading Few and Tufte is definitely in my infinite queue of infinite queues of things to read. Are you familiar with the Wilkinson's Grammar of Graphics or more specificly Wickham's Layered Grammar of Graphics?</p>

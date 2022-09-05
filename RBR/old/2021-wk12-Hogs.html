@@ -1,0 +1,1674 @@
+Extra graphs week 12 vs Arkansas 2021
+
+<p>As always this is an addendum to balloons' 
+<a href="https://www.rollbamaroll.com/2021/11/21/22795385/all-the-graphs-from-alabama-vs-arkansas" target="_blank">All the Graphs from Alabama vs. Arkansas</a></p>
+<h3>Newish graph</h3>
+<p>
+While thinking about our early season high SRs on 3rd as balloons has pointed out,  
+I started thinking about what those numbers mean. 
+One thing that occurred to me is that there are likely to be more 1st downs than 2nd and more 2nd downs than 3rd, 
+hence the difference between the SR by Drive by Down calculated by Down 
+and SR by Drive by Down calculated by Drive. 
+(I really need to rename those!)
+Looking at the tables (added at the bottom of this post in case anyone wants to look at them) didn't help...
+</p>
+<p>
+So I decided to add an annotation to an existing chart. 
+I took the Offensive Drives by Drive and added the down for each play. 
+Now looking at the SR by Drive by Down calculated by Down (reproduced below) 
+we can see that on Drive 3 we are at a SR of 1.0 for both 2nd and 3rd downs 
+and 0.6 for 1st downs. 
+But looking at the Offensive Drives by Drive annotated with Downs below, 
+we can see that there were 5 first downs, 3 second downs, and only 1 third down.  
+So I looked back at my charts with this in mind and only looked at the drives with a SR of 1.0.
+The table below has only has four teams because I haven't had time to write code to collect this data and I had to eyeball it.
+But I think it is a pretty good represenataive sample of our games:
+<table border="1">
+<thead>
+  <tr>
+    <th>Team</th>
+    <th>Drive</th>
+    <th># 1st</th>
+    <th># 2nd</th>
+    <th># 3rd</th>
+    <th># 4th</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Miami</td>
+    <td>1</td>
+    <td>4</td>
+    <td>2</td>
+    <td>1</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>3</td>
+    <td>5</td>
+    <td>4</td>
+    <td>1</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>5</td>
+    <td>4</td>
+    <td>2</td>
+    <td>1</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>7</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>8</td>
+    <td>2</td>
+    <td>2</td>
+    <td>1</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>Florida</td>
+    <td>1</td>
+    <td>4</td>
+    <td>3</td>
+    <td>1</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>2</td>
+    <td>3</td>
+    <td>3</td>
+    <td>1</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>3</td>
+    <td>3</td>
+    <td>2</td>
+    <td>1</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>8</td>
+    <td>5</td>
+    <td>4</td>
+    <td>3</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>TAMU</td>
+    <td>1</td>
+    <td>4</td>
+    <td>3</td>
+    <td>3</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>11</td>
+    <td>4</td>
+    <td>3</td>
+    <td>2</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>TN</td>
+    <td>1</td>
+    <td>5</td>
+    <td>4</td>
+    <td>3</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>3</td>
+    <td>3</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>4</td>
+    <td>4</td>
+    <td>2</td>
+    <td>1</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>5</td>
+    <td>6</td>
+    <td>4</td>
+    <td>2</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>10</td>
+    <td>5</td>
+    <td>4</td>
+    <td>2</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>11</td>
+    <td>2</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>12</td>
+    <td>2</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>13</td>
+    <td>2</td>
+    <td>2</td>
+    <td>1</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>14</td>
+    <td>2</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+  </tr>
+</tbody>
+</table><br />
+The pattern seems to continue for all of our games.
+I'm not sure that this proves anything,
+but I thought it was interesting
+and I need time to sort the data out.
+</p><br />
+<h5>Alabama:</h5>
+<p><a target="_blank" href="https://postimg.cc/0z9k2L2Q"><img alt="Alabama-2021-wk12-Arkansas-e9-drive-fac-down" src="https://i.postimg.cc/L81nvpcz/Alabama-2021-wk12-Arkansas-e9-drive-fac-down.png" /></a><br /><br /> <a target="_blank" href="https://postimg.cc/219KmVwj"><img alt="Alabama-2021-wk12-Arkansas-e6-success-drive-bar-down" src="https://i.postimg.cc/g0GFVhLh/Alabama-2021-wk12-Arkansas-e6-success-drive-bar-down.png" /></a><br /></p>
+<h5>Arkansas:</h5>
+<p><a target="_blank" href="https://postimg.cc/rDg8dQK9"><img alt="Arkansas-2021-wk12-Alabama-e9-drive-fac-down" src="https://i.postimg.cc/SKbjvP4H/Arkansas-2021-wk12-Alabama-e9-drive-fac-down.png" /></a><br /></p>
+<p>&nbsp;</p>
+<p>Here are the rest of the extra graphs.</p>
+<h2>Alabama:</h2>
+<p><img height="100" src="http://a.espncdn.com/i/teamlogos/ncaa/500/333.png" /><br /> <a target="_blank" href="https://postimg.cc/bZy7qXfg"><img alt="Alabama-2021-wk12-Arkansas-01-success-drive-bar" src="https://i.postimg.cc/2ShrFmHs/Alabama-2021-wk12-Arkansas-01-success-drive-bar.png" /></a><br /></p>
+<table border="1">
+<caption>Alabama, 2021, wk12, Success rate by drive table vs Arkansas</caption> <thead> 
+<tr>
+<th style="text-align:right;"> Drive </th> <th style="text-align:right;"> Total </th> <th style="text-align:right;"> Successful </th> <th style="text-align:right;"> Unsuccessful </th> <th style="text-align:right;"> Success rate </th> <th style="text-align:left;"> Scoring drive </th>
+</tr>
+</thead> 
+<tbody>
+<tr>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">11</td>
+<td style="text-align:right;">4</td>
+<td style="text-align:right;">7</td>
+<td style="text-align:right;">0.3636364</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">3</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">3</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">3</td>
+<td style="text-align:right;">9</td>
+<td style="text-align:right;">7</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">0.7777778</td>
+<td style="text-align:left;">TRUE</td>
+</tr>
+<tr>
+<td style="text-align:right;">4</td>
+<td style="text-align:right;">6</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">4</td>
+<td style="text-align:right;">0.3333333</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">5</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0.5000000</td>
+<td style="text-align:left;">TRUE</td>
+</tr>
+<tr>
+<td style="text-align:right;">6</td>
+<td style="text-align:right;">6</td>
+<td style="text-align:right;">5</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0.8333333</td>
+<td style="text-align:left;">TRUE</td>
+</tr>
+<tr>
+<td style="text-align:right;">7</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">1.0000000</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">8</td>
+<td style="text-align:right;">9</td>
+<td style="text-align:right;">7</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">0.7777778</td>
+<td style="text-align:left;">TRUE</td>
+</tr>
+<tr>
+<td style="text-align:right;">9</td>
+<td style="text-align:right;">8</td>
+<td style="text-align:right;">3</td>
+<td style="text-align:right;">5</td>
+<td style="text-align:right;">0.3750000</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">10</td>
+<td style="text-align:right;">8</td>
+<td style="text-align:right;">4</td>
+<td style="text-align:right;">4</td>
+<td style="text-align:right;">0.5000000</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">11</td>
+<td style="text-align:right;">7</td>
+<td style="text-align:right;">4</td>
+<td style="text-align:right;">3</td>
+<td style="text-align:right;">0.5714286</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">12</td>
+<td style="text-align:right;">4</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">0.5000000</td>
+<td style="text-align:left;">TRUE</td>
+</tr>
+<tr>
+<td style="text-align:right;">13</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+</tbody>
+</table>
+<p><br /><br /> <a target="_blank" href="https://postimg.cc/bSf5MWRQ"><img alt="Alabama-2021-wk12-Arkansas-02-drive-fac" src="https://i.postimg.cc/90Dj4jRN/Alabama-2021-wk12-Arkansas-02-drive-fac.png" /></a><br /><br /> <a target="_blank" href="https://postimg.cc/GTPf1KM6"><img alt="Alabama-2021-wk12-Arkansas-03-drive" src="https://i.postimg.cc/Vv2PnHXs/Alabama-2021-wk12-Arkansas-03-drive.png" /></a><br /><br /> <a target="_blank" href="https://postimg.cc/BLKym42S"><img alt="Alabama-2021-wk12-Arkansas-04-all4-downs-fac" src="https://i.postimg.cc/1tCQ5ztq/Alabama-2021-wk12-Arkansas-04-all4-downs-fac.png" /></a><br /><br /> <a target="_blank" href="https://postimg.cc/LnTWCyg1"><img alt="Alabama-2021-wk12-Arkansas-05-all4-downs-fac-noscale" src="https://i.postimg.cc/t4QHgwX2/Alabama-2021-wk12-Arkansas-05-all4-downs-fac-noscale.png" /></a><br /></p>
+<table border="1">
+<caption>Alabama, 2021, wk12, Success by down table vs Arkansas</caption> <thead> 
+<tr>
+<th style="text-align:left;"> Down </th> <th style="text-align:right;"> Total </th> <th style="text-align:right;"> Successful </th> <th style="text-align:right;"> Unsuccessful </th> <th style="text-align:right;"> TD/1st </th>
+</tr>
+</thead> 
+<tbody>
+<tr>
+<td style="text-align:left;">1</td>
+<td style="text-align:right;">37</td>
+<td style="text-align:right;">17</td>
+<td style="text-align:right;">20</td>
+<td style="text-align:right;">9</td>
+</tr>
+<tr>
+<td style="text-align:left;">2</td>
+<td style="text-align:right;">27</td>
+<td style="text-align:right;">17</td>
+<td style="text-align:right;">10</td>
+<td style="text-align:right;">15</td>
+</tr>
+<tr>
+<td style="text-align:left;">3</td>
+<td style="text-align:right;">11</td>
+<td style="text-align:right;">6</td>
+<td style="text-align:right;">5</td>
+<td style="text-align:right;">6</td>
+</tr>
+<tr>
+<td style="text-align:left;">4</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0</td>
+</tr>
+</tbody>
+</table>
+<p><br /><br /> <a target="_blank" href="https://postimg.cc/WDKCmhFY"><img alt="Alabama-2021-wk12-Arkansas-06-yards-success-gained" src="https://i.postimg.cc/sXDzrWVz/Alabama-2021-wk12-Arkansas-06-yards-success-gained.png" /></a><br /><br /> <a target="_blank" href="https://postimg.cc/svy8JFxz"><img alt="Alabama-2021-wk12-Arkansas-07-drive-extra-yards-gained" src="https://i.postimg.cc/CLfgSSVR/Alabama-2021-wk12-Arkansas-07-drive-extra-yards-gained.png" /></a><br /><br /> <a target="_blank" href="https://postimg.cc/JtjvJ71K"><img alt="Alabama-2021-wk12-Arkansas-08-drive-yards-to-success" src="https://i.postimg.cc/WpyvBtxR/Alabama-2021-wk12-Arkansas-08-drive-yards-to-success.png" /></a><br /><br /> <a target="_blank" href="https://postimg.cc/ts4MLhFm"><img alt="Alabama-2021-wk12-Arkansas-09-fac-yards-to-success" src="https://i.postimg.cc/Dwr3460F/Alabama-2021-wk12-Arkansas-09-fac-yards-to-success.png" /></a><br /><br /> <a target="_blank" href="https://postimg.cc/yJJrNsQm"><img alt="Alabama-2021-wk12-Arkansas-e5-drive-success-play" src="https://i.postimg.cc/N0bhp0Rz/Alabama-2021-wk12-Arkansas-e5-drive-success-play.png" /></a><br /><br /> <a target="_blank" href="https://postimg.cc/219KmVwj"><img alt="Alabama-2021-wk12-Arkansas-e6-success-drive-bar-down" src="https://i.postimg.cc/g0GFVhLh/Alabama-2021-wk12-Arkansas-e6-success-drive-bar-down.png" /></a><br /><br /> <a target="_blank" href="https://postimg.cc/Mch3MNNh"><img alt="Alabama-2021-wk12-Arkansas-e7-success-drive-bar-down2" src="https://i.postimg.cc/HxLqKC2s/Alabama-2021-wk12-Arkansas-e7-success-drive-bar-down2.png" /></a><br /><br /> <a target="_blank" href="https://postimg.cc/B8GMJHF0"><img alt="Alabama-2021-wk12-Arkansas-e8-success-drive-down-bar-yards-to-goal-fac" src="https://i.postimg.cc/wB1PckT7/Alabama-2021-wk12-Arkansas-e8-success-drive-down-bar-yards-to-goal-fac.png" /></a><br /></p>
+<h2>Arkansas:</h2>
+<p><img height="100" src="http://a.espncdn.com/i/teamlogos/ncaa/500/8.png" /><br /> <a target="_blank" href="https://postimg.cc/ftm2x5hk"><img alt="Arkansas-2021-wk12-Alabama-01-success-drive-bar" src="https://i.postimg.cc/wvbCYbf5/Arkansas-2021-wk12-Alabama-01-success-drive-bar.png" /></a><br /></p>
+<table border="1">
+<caption>Arkansas, 2021, wk12, Success rate by drive table vs Alabama</caption> <thead> 
+<tr>
+<th style="text-align:right;"> Drive </th> <th style="text-align:right;"> Total </th> <th style="text-align:right;"> Successful </th> <th style="text-align:right;"> Unsuccessful </th> <th style="text-align:right;"> Success rate </th> <th style="text-align:left;"> Scoring drive </th>
+</tr>
+</thead> 
+<tbody>
+<tr>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">5</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">4</td>
+<td style="text-align:right;">0.2000000</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">3</td>
+<td style="text-align:right;">8</td>
+<td style="text-align:right;">3</td>
+<td style="text-align:right;">5</td>
+<td style="text-align:right;">0.3750000</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">4</td>
+<td style="text-align:right;">3</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">3</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">5</td>
+<td style="text-align:right;">13</td>
+<td style="text-align:right;">8</td>
+<td style="text-align:right;">5</td>
+<td style="text-align:right;">0.6153846</td>
+<td style="text-align:left;">TRUE</td>
+</tr>
+<tr>
+<td style="text-align:right;">6</td>
+<td style="text-align:right;">7</td>
+<td style="text-align:right;">6</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0.8571429</td>
+<td style="text-align:left;">TRUE</td>
+</tr>
+<tr>
+<td style="text-align:right;">7</td>
+<td style="text-align:right;">5</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">3</td>
+<td style="text-align:right;">0.4000000</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">8</td>
+<td style="text-align:right;">3</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0.6666667</td>
+<td style="text-align:left;">TRUE</td>
+</tr>
+<tr>
+<td style="text-align:right;">9</td>
+<td style="text-align:right;">3</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">3</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">10</td>
+<td style="text-align:right;">10</td>
+<td style="text-align:right;">5</td>
+<td style="text-align:right;">5</td>
+<td style="text-align:right;">0.5000000</td>
+<td style="text-align:left;">TRUE</td>
+</tr>
+<tr>
+<td style="text-align:right;">11</td>
+<td style="text-align:right;">3</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">3</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">12</td>
+<td style="text-align:right;">12</td>
+<td style="text-align:right;">6</td>
+<td style="text-align:right;">6</td>
+<td style="text-align:right;">0.5000000</td>
+<td style="text-align:left;">TRUE</td>
+</tr>
+</tbody>
+</table>
+<p><br /><br /> <a target="_blank" href="https://postimg.cc/Wt6jVwJ2"><img alt="Arkansas-2021-wk12-Alabama-02-drive-fac" src="https://i.postimg.cc/nVNLvdFQ/Arkansas-2021-wk12-Alabama-02-drive-fac.png" /></a><br /><br /> <a target="_blank" href="https://postimg.cc/RJmPGfMd"><img alt="Arkansas-2021-wk12-Alabama-03-drive" src="https://i.postimg.cc/mkz0LNJv/Arkansas-2021-wk12-Alabama-03-drive.png" /></a><br /><br /> <a target="_blank" href="https://postimg.cc/kRyTH4Gm"><img alt="Arkansas-2021-wk12-Alabama-04-all4-downs-fac" src="https://i.postimg.cc/WzBxhqPh/Arkansas-2021-wk12-Alabama-04-all4-downs-fac.png" /></a><br /><br /> <a target="_blank" href="https://postimg.cc/HJyDhwg1"><img alt="Arkansas-2021-wk12-Alabama-05-all4-downs-fac-noscale" src="https://i.postimg.cc/HLSYjzvn/Arkansas-2021-wk12-Alabama-05-all4-downs-fac-noscale.png" /></a><br /></p>
+<table border="1">
+<caption>Arkansas, 2021, wk12, Success by down table vs Alabama</caption> <thead> 
+<tr>
+<th style="text-align:left;"> Down </th> <th style="text-align:right;"> Total </th> <th style="text-align:right;"> Successful </th> <th style="text-align:right;"> Unsuccessful </th> <th style="text-align:right;"> TD/1st </th>
+</tr>
+</thead> 
+<tbody>
+<tr>
+<td style="text-align:left;">1</td>
+<td style="text-align:right;">29</td>
+<td style="text-align:right;">10</td>
+<td style="text-align:right;">19</td>
+<td style="text-align:right;">3</td>
+</tr>
+<tr>
+<td style="text-align:left;">2</td>
+<td style="text-align:right;">25</td>
+<td style="text-align:right;">13</td>
+<td style="text-align:right;">12</td>
+<td style="text-align:right;">8</td>
+</tr>
+<tr>
+<td style="text-align:left;">3</td>
+<td style="text-align:right;">16</td>
+<td style="text-align:right;">7</td>
+<td style="text-align:right;">9</td>
+<td style="text-align:right;">7</td>
+</tr>
+<tr>
+<td style="text-align:left;">4</td>
+<td style="text-align:right;">3</td>
+<td style="text-align:right;">3</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">3</td>
+</tr>
+</tbody>
+</table>
+<p><br /><br /> <a target="_blank" href="https://postimg.cc/zyMY7d4k"><img alt="Arkansas-2021-wk12-Alabama-06-yards-success-gained" src="https://i.postimg.cc/Pqfft940/Arkansas-2021-wk12-Alabama-06-yards-success-gained.png" /></a><br /><br /> <a target="_blank" href="https://postimg.cc/3dSsrSrH"><img alt="Arkansas-2021-wk12-Alabama-07-drive-extra-yards-gained" src="https://i.postimg.cc/2SrrwMP3/Arkansas-2021-wk12-Alabama-07-drive-extra-yards-gained.png" /></a><br /><br /> <a target="_blank" href="https://postimg.cc/rDDvD1zR"><img alt="Arkansas-2021-wk12-Alabama-08-drive-yards-to-success" src="https://i.postimg.cc/x15YFg25/Arkansas-2021-wk12-Alabama-08-drive-yards-to-success.png" /></a><br /><br /> <a target="_blank" href="https://postimg.cc/LhTdw4r5"><img alt="Arkansas-2021-wk12-Alabama-09-fac-yards-to-success" src="https://i.postimg.cc/qMfktzws/Arkansas-2021-wk12-Alabama-09-fac-yards-to-success.png" /></a><br /><br /> <a target="_blank" href="https://postimg.cc/xXBBMXbx"><img alt="Arkansas-2021-wk12-Alabama-e5-drive-success-play" src="https://i.postimg.cc/7LLDv7Pk/Arkansas-2021-wk12-Alabama-e5-drive-success-play.png" /></a><br /><br /> <a target="_blank" href="https://postimg.cc/NLYqd2CZ"><img alt="Arkansas-2021-wk12-Alabama-e6-success-drive-bar-down" src="https://i.postimg.cc/Y2Lrq162/Arkansas-2021-wk12-Alabama-e6-success-drive-bar-down.png" /></a><br /><br /> <a target="_blank" href="https://postimg.cc/4mxCgkg5"><img alt="Arkansas-2021-wk12-Alabama-e7-success-drive-bar-down2" src="https://i.postimg.cc/3Jg32YfP/Arkansas-2021-wk12-Alabama-e7-success-drive-bar-down2.png" /></a><br /><br /> <a target="_blank" href="https://postimg.cc/QHwfnRxV"><img alt="Arkansas-2021-wk12-Alabama-e8-success-drive-down-bar-yards-to-goal-fac" src="https://i.postimg.cc/FHsw14Mb/Arkansas-2021-wk12-Alabama-e8-success-drive-down-bar-yards-to-goal-fac.png" /></a><br /></p>
+<table id="srDriveDownDown" border="1">
+<caption>Alabama, 2021, wk12, Success rate by drive each Down success calculated seperately table vs Arkansas</caption> <thead> 
+<tr>
+<th style="text-align:right;"> Drive </th> <th style="text-align:left;"> Down </th> <th style="text-align:right;"> Total </th> <th style="text-align:right;"> Total for Drive </th> <th style="text-align:right;"> Successful </th> <th style="text-align:right;"> Unsuccessful </th> <th style="text-align:right;"> Success rate by Down </th> <th style="text-align:right;"> Success rate </th> <th style="text-align:left;"> Scoring drive </th>
+</tr>
+</thead> 
+<tbody>
+<tr>
+<td style="text-align:right;">1</td>
+<td style="text-align:left;">1</td>
+<td style="text-align:right;">4</td>
+<td style="text-align:right;">11</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">3</td>
+<td style="text-align:right;">0.2500000</td>
+<td style="text-align:right;">0.3636364</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">1</td>
+<td style="text-align:left;">2</td>
+<td style="text-align:right;">4</td>
+<td style="text-align:right;">11</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">0.5000000</td>
+<td style="text-align:right;">0.3636364</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">1</td>
+<td style="text-align:left;">3</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">11</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0.5000000</td>
+<td style="text-align:right;">0.3636364</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">1</td>
+<td style="text-align:left;">4</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">11</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:right;">0.3636364</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">2</td>
+<td style="text-align:left;">1</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">3</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">2</td>
+<td style="text-align:left;">2</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">3</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">2</td>
+<td style="text-align:left;">3</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">3</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">2</td>
+<td style="text-align:left;">4</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">3</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">NaN</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">3</td>
+<td style="text-align:left;">1</td>
+<td style="text-align:right;">5</td>
+<td style="text-align:right;">9</td>
+<td style="text-align:right;">3</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">0.6000000</td>
+<td style="text-align:right;">0.7777778</td>
+<td style="text-align:left;">TRUE</td>
+</tr>
+<tr>
+<td style="text-align:right;">3</td>
+<td style="text-align:left;">2</td>
+<td style="text-align:right;">3</td>
+<td style="text-align:right;">9</td>
+<td style="text-align:right;">3</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">1.0000000</td>
+<td style="text-align:right;">0.7777778</td>
+<td style="text-align:left;">TRUE</td>
+</tr>
+<tr>
+<td style="text-align:right;">3</td>
+<td style="text-align:left;">3</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">9</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">1.0000000</td>
+<td style="text-align:right;">0.7777778</td>
+<td style="text-align:left;">TRUE</td>
+</tr>
+<tr>
+<td style="text-align:right;">3</td>
+<td style="text-align:left;">4</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">9</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">NaN</td>
+<td style="text-align:right;">0.7777778</td>
+<td style="text-align:left;">TRUE</td>
+</tr>
+<tr>
+<td style="text-align:right;">4</td>
+<td style="text-align:left;">1</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">6</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0.5000000</td>
+<td style="text-align:right;">0.3333333</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">4</td>
+<td style="text-align:left;">2</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">6</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:right;">0.3333333</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">4</td>
+<td style="text-align:left;">3</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">6</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0.5000000</td>
+<td style="text-align:right;">0.3333333</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">4</td>
+<td style="text-align:left;">4</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">6</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">NaN</td>
+<td style="text-align:right;">0.3333333</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">5</td>
+<td style="text-align:left;">1</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:right;">0.5000000</td>
+<td style="text-align:left;">TRUE</td>
+</tr>
+<tr>
+<td style="text-align:right;">5</td>
+<td style="text-align:left;">2</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">1.0000000</td>
+<td style="text-align:right;">0.5000000</td>
+<td style="text-align:left;">TRUE</td>
+</tr>
+<tr>
+<td style="text-align:right;">5</td>
+<td style="text-align:left;">3</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">NaN</td>
+<td style="text-align:right;">0.5000000</td>
+<td style="text-align:left;">TRUE</td>
+</tr>
+<tr>
+<td style="text-align:right;">5</td>
+<td style="text-align:left;">4</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">NaN</td>
+<td style="text-align:right;">0.5000000</td>
+<td style="text-align:left;">TRUE</td>
+</tr>
+<tr>
+<td style="text-align:right;">6</td>
+<td style="text-align:left;">1</td>
+<td style="text-align:right;">4</td>
+<td style="text-align:right;">6</td>
+<td style="text-align:right;">3</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0.7500000</td>
+<td style="text-align:right;">0.8333333</td>
+<td style="text-align:left;">TRUE</td>
+</tr>
+<tr>
+<td style="text-align:right;">6</td>
+<td style="text-align:left;">2</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">6</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">1.0000000</td>
+<td style="text-align:right;">0.8333333</td>
+<td style="text-align:left;">TRUE</td>
+</tr>
+<tr>
+<td style="text-align:right;">6</td>
+<td style="text-align:left;">3</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">6</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">NaN</td>
+<td style="text-align:right;">0.8333333</td>
+<td style="text-align:left;">TRUE</td>
+</tr>
+<tr>
+<td style="text-align:right;">6</td>
+<td style="text-align:left;">4</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">6</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">NaN</td>
+<td style="text-align:right;">0.8333333</td>
+<td style="text-align:left;">TRUE</td>
+</tr>
+<tr>
+<td style="text-align:right;">7</td>
+<td style="text-align:left;">1</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">1.0000000</td>
+<td style="text-align:right;">1.0000000</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">7</td>
+<td style="text-align:left;">2</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">NaN</td>
+<td style="text-align:right;">1.0000000</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">7</td>
+<td style="text-align:left;">3</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">NaN</td>
+<td style="text-align:right;">1.0000000</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">7</td>
+<td style="text-align:left;">4</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">NaN</td>
+<td style="text-align:right;">1.0000000</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">8</td>
+<td style="text-align:left;">1</td>
+<td style="text-align:right;">5</td>
+<td style="text-align:right;">9</td>
+<td style="text-align:right;">3</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">0.6000000</td>
+<td style="text-align:right;">0.7777778</td>
+<td style="text-align:left;">TRUE</td>
+</tr>
+<tr>
+<td style="text-align:right;">8</td>
+<td style="text-align:left;">2</td>
+<td style="text-align:right;">3</td>
+<td style="text-align:right;">9</td>
+<td style="text-align:right;">3</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">1.0000000</td>
+<td style="text-align:right;">0.7777778</td>
+<td style="text-align:left;">TRUE</td>
+</tr>
+<tr>
+<td style="text-align:right;">8</td>
+<td style="text-align:left;">3</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">9</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">1.0000000</td>
+<td style="text-align:right;">0.7777778</td>
+<td style="text-align:left;">TRUE</td>
+</tr>
+<tr>
+<td style="text-align:right;">8</td>
+<td style="text-align:left;">4</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">9</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">NaN</td>
+<td style="text-align:right;">0.7777778</td>
+<td style="text-align:left;">TRUE</td>
+</tr>
+<tr>
+<td style="text-align:right;">9</td>
+<td style="text-align:left;">1</td>
+<td style="text-align:right;">3</td>
+<td style="text-align:right;">8</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">3</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:right;">0.3750000</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">9</td>
+<td style="text-align:left;">2</td>
+<td style="text-align:right;">3</td>
+<td style="text-align:right;">8</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0.6666667</td>
+<td style="text-align:right;">0.3750000</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">9</td>
+<td style="text-align:left;">3</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">8</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0.5000000</td>
+<td style="text-align:right;">0.3750000</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">9</td>
+<td style="text-align:left;">4</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">8</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">NaN</td>
+<td style="text-align:right;">0.3750000</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">10</td>
+<td style="text-align:left;">1</td>
+<td style="text-align:right;">4</td>
+<td style="text-align:right;">8</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">0.5000000</td>
+<td style="text-align:right;">0.5000000</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">10</td>
+<td style="text-align:left;">2</td>
+<td style="text-align:right;">3</td>
+<td style="text-align:right;">8</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0.6666667</td>
+<td style="text-align:right;">0.5000000</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">10</td>
+<td style="text-align:left;">3</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">8</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:right;">0.5000000</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">10</td>
+<td style="text-align:left;">4</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">8</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">NaN</td>
+<td style="text-align:right;">0.5000000</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">11</td>
+<td style="text-align:left;">1</td>
+<td style="text-align:right;">4</td>
+<td style="text-align:right;">7</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">0.5000000</td>
+<td style="text-align:right;">0.5714286</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">11</td>
+<td style="text-align:left;">2</td>
+<td style="text-align:right;">3</td>
+<td style="text-align:right;">7</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0.6666667</td>
+<td style="text-align:right;">0.5714286</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">11</td>
+<td style="text-align:left;">3</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">7</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">NaN</td>
+<td style="text-align:right;">0.5714286</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">11</td>
+<td style="text-align:left;">4</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">7</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">NaN</td>
+<td style="text-align:right;">0.5714286</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">12</td>
+<td style="text-align:left;">1</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">4</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0.5000000</td>
+<td style="text-align:right;">0.5000000</td>
+<td style="text-align:left;">TRUE</td>
+</tr>
+<tr>
+<td style="text-align:right;">12</td>
+<td style="text-align:left;">2</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">4</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:right;">0.5000000</td>
+<td style="text-align:left;">TRUE</td>
+</tr>
+<tr>
+<td style="text-align:right;">12</td>
+<td style="text-align:left;">3</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">4</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">1.0000000</td>
+<td style="text-align:right;">0.5000000</td>
+<td style="text-align:left;">TRUE</td>
+</tr>
+<tr>
+<td style="text-align:right;">12</td>
+<td style="text-align:left;">4</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">4</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">NaN</td>
+<td style="text-align:right;">0.5000000</td>
+<td style="text-align:left;">TRUE</td>
+</tr>
+<tr>
+<td style="text-align:right;">13</td>
+<td style="text-align:left;">1</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">13</td>
+<td style="text-align:left;">2</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">13</td>
+<td style="text-align:left;">3</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">NaN</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">13</td>
+<td style="text-align:left;">4</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">NaN</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+</tbody>
+</table>
+<p><br /></p>
+<table id="srDriveDownDrive" border="1">
+<caption>Alabama, 2021, wk12, Success rate by drive each Down success calculated together table {2} vs Arkansas</caption> <thead> 
+<tr>
+<th style="text-align:right;"> Drive </th> <th style="text-align:left;"> Down </th> <th style="text-align:right;"> Total </th> <th style="text-align:right;"> Total for Drive </th> <th style="text-align:right;"> Successful </th> <th style="text-align:right;"> Unsuccessful </th> <th style="text-align:right;"> Success rate by Down </th> <th style="text-align:right;"> Success rate </th> <th style="text-align:left;"> Scoring drive </th>
+</tr>
+</thead> 
+<tbody>
+<tr>
+<td style="text-align:right;">1</td>
+<td style="text-align:left;">1</td>
+<td style="text-align:right;">4</td>
+<td style="text-align:right;">11</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">3</td>
+<td style="text-align:right;">0.0909091</td>
+<td style="text-align:right;">0.0909091</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">1</td>
+<td style="text-align:left;">2</td>
+<td style="text-align:right;">4</td>
+<td style="text-align:right;">11</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">0.1818182</td>
+<td style="text-align:right;">0.0909091</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">1</td>
+<td style="text-align:left;">3</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">11</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0.0909091</td>
+<td style="text-align:right;">0.0909091</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">1</td>
+<td style="text-align:left;">4</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">11</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:right;">0.0909091</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">2</td>
+<td style="text-align:left;">1</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">3</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">2</td>
+<td style="text-align:left;">2</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">3</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">2</td>
+<td style="text-align:left;">3</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">3</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">2</td>
+<td style="text-align:left;">4</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">3</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">3</td>
+<td style="text-align:left;">1</td>
+<td style="text-align:right;">5</td>
+<td style="text-align:right;">9</td>
+<td style="text-align:right;">3</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">0.3333333</td>
+<td style="text-align:right;">0.1944444</td>
+<td style="text-align:left;">TRUE</td>
+</tr>
+<tr>
+<td style="text-align:right;">3</td>
+<td style="text-align:left;">2</td>
+<td style="text-align:right;">3</td>
+<td style="text-align:right;">9</td>
+<td style="text-align:right;">3</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0.3333333</td>
+<td style="text-align:right;">0.1944444</td>
+<td style="text-align:left;">TRUE</td>
+</tr>
+<tr>
+<td style="text-align:right;">3</td>
+<td style="text-align:left;">3</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">9</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0.1111111</td>
+<td style="text-align:right;">0.1944444</td>
+<td style="text-align:left;">TRUE</td>
+</tr>
+<tr>
+<td style="text-align:right;">3</td>
+<td style="text-align:left;">4</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">9</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:right;">0.1944444</td>
+<td style="text-align:left;">TRUE</td>
+</tr>
+<tr>
+<td style="text-align:right;">4</td>
+<td style="text-align:left;">1</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">6</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0.1666667</td>
+<td style="text-align:right;">0.0833333</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">4</td>
+<td style="text-align:left;">2</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">6</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:right;">0.0833333</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">4</td>
+<td style="text-align:left;">3</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">6</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0.1666667</td>
+<td style="text-align:right;">0.0833333</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">4</td>
+<td style="text-align:left;">4</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">6</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:right;">0.0833333</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">5</td>
+<td style="text-align:left;">1</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:right;">0.1250000</td>
+<td style="text-align:left;">TRUE</td>
+</tr>
+<tr>
+<td style="text-align:right;">5</td>
+<td style="text-align:left;">2</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0.5000000</td>
+<td style="text-align:right;">0.1250000</td>
+<td style="text-align:left;">TRUE</td>
+</tr>
+<tr>
+<td style="text-align:right;">5</td>
+<td style="text-align:left;">3</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:right;">0.1250000</td>
+<td style="text-align:left;">TRUE</td>
+</tr>
+<tr>
+<td style="text-align:right;">5</td>
+<td style="text-align:left;">4</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:right;">0.1250000</td>
+<td style="text-align:left;">TRUE</td>
+</tr>
+<tr>
+<td style="text-align:right;">6</td>
+<td style="text-align:left;">1</td>
+<td style="text-align:right;">4</td>
+<td style="text-align:right;">6</td>
+<td style="text-align:right;">3</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0.5000000</td>
+<td style="text-align:right;">0.2083333</td>
+<td style="text-align:left;">TRUE</td>
+</tr>
+<tr>
+<td style="text-align:right;">6</td>
+<td style="text-align:left;">2</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">6</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0.3333333</td>
+<td style="text-align:right;">0.2083333</td>
+<td style="text-align:left;">TRUE</td>
+</tr>
+<tr>
+<td style="text-align:right;">6</td>
+<td style="text-align:left;">3</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">6</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:right;">0.2083333</td>
+<td style="text-align:left;">TRUE</td>
+</tr>
+<tr>
+<td style="text-align:right;">6</td>
+<td style="text-align:left;">4</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">6</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:right;">0.2083333</td>
+<td style="text-align:left;">TRUE</td>
+</tr>
+<tr>
+<td style="text-align:right;">7</td>
+<td style="text-align:left;">1</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">1.0000000</td>
+<td style="text-align:right;">0.2500000</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">7</td>
+<td style="text-align:left;">2</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:right;">0.2500000</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">7</td>
+<td style="text-align:left;">3</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:right;">0.2500000</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">7</td>
+<td style="text-align:left;">4</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:right;">0.2500000</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">8</td>
+<td style="text-align:left;">1</td>
+<td style="text-align:right;">5</td>
+<td style="text-align:right;">9</td>
+<td style="text-align:right;">3</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">0.3333333</td>
+<td style="text-align:right;">0.1944444</td>
+<td style="text-align:left;">TRUE</td>
+</tr>
+<tr>
+<td style="text-align:right;">8</td>
+<td style="text-align:left;">2</td>
+<td style="text-align:right;">3</td>
+<td style="text-align:right;">9</td>
+<td style="text-align:right;">3</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0.3333333</td>
+<td style="text-align:right;">0.1944444</td>
+<td style="text-align:left;">TRUE</td>
+</tr>
+<tr>
+<td style="text-align:right;">8</td>
+<td style="text-align:left;">3</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">9</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0.1111111</td>
+<td style="text-align:right;">0.1944444</td>
+<td style="text-align:left;">TRUE</td>
+</tr>
+<tr>
+<td style="text-align:right;">8</td>
+<td style="text-align:left;">4</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">9</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:right;">0.1944444</td>
+<td style="text-align:left;">TRUE</td>
+</tr>
+<tr>
+<td style="text-align:right;">9</td>
+<td style="text-align:left;">1</td>
+<td style="text-align:right;">3</td>
+<td style="text-align:right;">8</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">3</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:right;">0.0937500</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">9</td>
+<td style="text-align:left;">2</td>
+<td style="text-align:right;">3</td>
+<td style="text-align:right;">8</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0.2500000</td>
+<td style="text-align:right;">0.0937500</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">9</td>
+<td style="text-align:left;">3</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">8</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0.1250000</td>
+<td style="text-align:right;">0.0937500</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">9</td>
+<td style="text-align:left;">4</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">8</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:right;">0.0937500</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">10</td>
+<td style="text-align:left;">1</td>
+<td style="text-align:right;">4</td>
+<td style="text-align:right;">8</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">0.2500000</td>
+<td style="text-align:right;">0.1250000</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">10</td>
+<td style="text-align:left;">2</td>
+<td style="text-align:right;">3</td>
+<td style="text-align:right;">8</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0.2500000</td>
+<td style="text-align:right;">0.1250000</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">10</td>
+<td style="text-align:left;">3</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">8</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:right;">0.1250000</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">10</td>
+<td style="text-align:left;">4</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">8</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:right;">0.1250000</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">11</td>
+<td style="text-align:left;">1</td>
+<td style="text-align:right;">4</td>
+<td style="text-align:right;">7</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">0.2857143</td>
+<td style="text-align:right;">0.1428571</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">11</td>
+<td style="text-align:left;">2</td>
+<td style="text-align:right;">3</td>
+<td style="text-align:right;">7</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0.2857143</td>
+<td style="text-align:right;">0.1428571</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">11</td>
+<td style="text-align:left;">3</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">7</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:right;">0.1428571</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">11</td>
+<td style="text-align:left;">4</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">7</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:right;">0.1428571</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">12</td>
+<td style="text-align:left;">1</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">4</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0.2500000</td>
+<td style="text-align:right;">0.1250000</td>
+<td style="text-align:left;">TRUE</td>
+</tr>
+<tr>
+<td style="text-align:right;">12</td>
+<td style="text-align:left;">2</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">4</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:right;">0.1250000</td>
+<td style="text-align:left;">TRUE</td>
+</tr>
+<tr>
+<td style="text-align:right;">12</td>
+<td style="text-align:left;">3</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">4</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0.2500000</td>
+<td style="text-align:right;">0.1250000</td>
+<td style="text-align:left;">TRUE</td>
+</tr>
+<tr>
+<td style="text-align:right;">12</td>
+<td style="text-align:left;">4</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">4</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:right;">0.1250000</td>
+<td style="text-align:left;">TRUE</td>
+</tr>
+<tr>
+<td style="text-align:right;">13</td>
+<td style="text-align:left;">1</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">13</td>
+<td style="text-align:left;">2</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">13</td>
+<td style="text-align:left;">3</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right;">13</td>
+<td style="text-align:left;">4</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:right;">0.0000000</td>
+<td style="text-align:left;">FALSE</td>
+</tr>
+</tbody>
+</table>
+<p><br /></p>

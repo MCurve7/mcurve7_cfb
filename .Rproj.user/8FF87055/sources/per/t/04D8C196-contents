@@ -1,0 +1,1766 @@
+{# Run once
+library(tidyverse)
+library(gghighlight)
+library(latex2exp)
+#library(data.table)
+library(openxlsx)
+#library(ggtext)
+library(DT)
+library(knitr)
+library(kableExtra)
+library(rmarkdown)
+library(ggrepel)
+library(here)
+library(rjson)
+library(patchwork)
+library(gridExtra)
+#library(cowplot)
+#library(shiny)
+library(plotly)
+library(jsonlite)
+library(reticulate)
+}
+
+# Choose output types ##########################################################
+{
+  output.png = FALSE
+  output.plotly = TRUE
+}
+
+# Constants ####################################################################
+{# Eval all constances
+#Defines successful for graphs
+succ <- data.frame(Down = c(1,2,3,4), yint = c(0,0,0,0), slope = c(.5, .7, 1, 1))
+
+#fun_color_range <- colorRampPalette(c("red", "blue"))   
+#my_colors <- fun_color_range(Drive.max)  
+## run grDevices::colors() for list of colors
+
+#Defines colors for graphing
+my_colors <- c("Successful" = "darkgreen", "Unsuccessful" = "firebrick4", "Penalty" = "magenta", "Pass Interception Return" = "magenta", 
+               "Fumble Recovery (Opponent)" = "magenta")
+my_colors_s.u <- c("Successful" = "darkgreen", "Unsuccessful" = "firebrick4")
+
+#Defines theme colors for graphing
+theme.background.fill = "gray90"
+theme.line.color = "gray80"
+theme.line.color.minor = "lavender"
+# theme.background.fill = "snow3"
+# theme.line.color = "snow2"
+
+rgb_dist <- function(rgb1, rgb2)
+{
+  sqrt((rgb1[1]-rgb2[1])^2+(rgb1[2]-rgb2[2])^2+(rgb1[2]-rgb2[2])^2)
+}
+col_dist <- function(col1, col2)
+{
+  rgb_dist(col2rgb(col1),col2rgb(col2))
+}
+color_max_dist <- function(col1, col2)
+{
+  rgb.cube=list("black", "red", "green", "blue", "magenta", "yellow", "cyan", "white")
+  max.color=""
+  max.dist=0
+  for(c in rgb.cube)
+  {
+    d <- col_dist(c,team.color1)+col_dist(c,team.color2)
+    if(d > max.dist)
+    {
+      max.color <- c
+      max.dist <- d
+    }
+  }
+  max.color
+}
+desat <- function(cols, sat=0.5) {
+  X <- diag(c(1, sat, 1)) %*% rgb2hsv(col2rgb(cols))
+  hsv(X[1,], X[2,], X[3,])
+}
+
+# rgb2col = function(rgbmat){
+#   ProcessColumn = function(col){
+#     rgb(rgbmat[1, col], 
+#         rgbmat[2, col], 
+#         rgbmat[3, col], 
+#         maxColorValue = 255)
+#   }
+#   sapply(1:ncol(rgbmat), ProcessColumn)
+# }
+# 
+# comp2color <- function(hex1, hex2)
+# {
+#   rgb2col(255-(col2rgb(hex1)+col2rgb(hex2))/2)
+# }
+# #comp2color("#9e1b32", "#828a8f")
+# 
+
+
+# *  Color calculations --------------------------------------------------------
+# rgb_max_face <- function(rgb)
+# {
+#   faces <- c()
+#   
+#   R0 <- "F1"
+#   R1 <- "F3"
+#   G0 <- "F0"
+#   G1 <- "F5"
+#   B0 <- "F2"
+#   B1 <- "F4"
+#   
+#   if(rgb[1] <= 126)
+#   {
+#     faces[[1]] <- R1
+#   }else{
+#     faces[[1]] <- R0
+#   }
+#   if(rgb[2] <= 126)
+#   {
+#     faces[[2]] <- G1
+#   }else{
+#     faces[[2]] <- G0
+#   }
+#   if(rgb[3] <= 126)
+#   {
+#     faces[[3]] <- B1
+#   }else{
+#     faces[[3]] <- B0
+#   }
+#   faces
+# }
+# face1 <- rgb_max_face(col2rgb(team.color1))
+# face2 <- rgb_max_face(col2rgb(team.color2))
+# face1
+# face2
+# intersect(face1,face2)
+# 
+# rgb_octant <- function(rgb)
+# {
+#   octants <- c()
+#   
+#   R0 <- c(1,4,5,8)
+#   R1 <- c(2,3.6,7)
+#   G0 <- c(1,2,3,4)
+#   G1 <- c(5,6,7,8)
+#   B0 <- c(1,2,5,6)
+#   B1 <- c(3,4,7,8)
+#   
+#   if(rgb[1] <= 126)
+#   {
+#     octants[[1]] <- R0
+#   }else{
+#     octants[[1]] <- R1
+#   }
+#   if(rgb[2] <= 126)
+#   {
+#     octants[[2]] <- G0
+#   }else{
+#     octants[[2]] <- G1
+#   }
+#   if(rgb[3] <= 126)
+#   {
+#     octants[[3]] <- B0
+#   }else{
+#     octants[[3]] <- B1
+#   }
+#   Reduce(intersect, octants)
+# }
+# rgb_octant(col2rgb(team.color1))
+# rgb_octant(col2rgb(team.color2))
+# 
+# 
+# col2rgb(team.color2)/256
+rgb2vector.space <- function(rgb)
+{
+  (rgb-127.5)/256
+}
+col2vector.space <- function(col) rgb2vector.space(col2rgb(col))
+col.vector.space2rgb <- function(vs)
+{
+  256*vs+127.5
+}
+
+
+CrossProduct3D <- function(x, y, i=1:3) {
+  # Project inputs into 3D, since the cross product only makes sense in 3D.
+  To3D <- function(x) head(c(x, rep(0, 3)), 3)
+  x <- To3D(x)
+  y <- To3D(y)
+  
+  # Indices should be treated cyclically (i.e., index 4 is "really" index 1, and
+  # so on).  Index3D() lets us do that using R's convention of 1-based (rather
+  # than 0-based) arrays.
+  Index3D <- function(i) (i - 1) %% 3 + 1
+  
+  # The i'th component of the cross product is:
+  # (x[i + 1] * y[i + 2]) - (x[i + 2] * y[i + 1])
+  # as long as we treat the indices cyclically.
+  return (x[Index3D(i + 1)] * y[Index3D(i + 2)] -
+            x[Index3D(i + 2)] * y[Index3D(i + 1)])
+}
+CrossProduct3D(c(1,0,0),c(0,1,0))
+
+
+angle2rgb <- function(theta)
+{
+  #red
+  if((theta >= 0 & theta <= 60) | (theta >=300))
+  {
+    r=255
+  }
+  else if(theta >= 120 & theta <= 240) {
+    r=0
+  }
+  else if(theta < 120){
+    r=-255/60*(theta-120)
+  }else{
+    r=255/60*(theta-240)
+  }
+  #green
+  if(theta >= 60 & theta <= 180)
+  {
+    g=255
+  }
+  else if(theta >= 240) {
+    g=0
+  }
+  else if(theta > 180){
+    g=-255/60*(theta-240)
+  }else{
+    g=255/60*(theta)
+  }
+  #blue
+  if(theta <= 120)
+  {
+    b=0
+  }
+  else if(theta >= 180 & theta <= 300) {
+    b=255
+  }
+  else if(theta > 120 & theta < 180){
+    b=255/60*(theta-120)
+  }else{
+    b=-255/60*(theta-360)
+  }
+  #c(r,g,b)
+  rgb(r/255, g/255, b/255)
+}
+
+rgb2angle <- function(rgb)
+{
+  r=rgb[[1]]
+  g=rgb[[2]]
+  b=rgb[[3]]
+  
+  if(r == 255 & b == 0)#0-60
+  {
+    #print("0-60")
+    theta <- 60/255*g
+  }
+  else if(r == 255 & g == 0){#300-360
+    #print("300-360")
+    theta <- -60/255*b+360
+  }else if(g == 255 & r == 0){#120-180
+    #print("120-180")
+    theta <- 60/255*b+120
+  }else if(b == 255 & r == 0){#180-240 error
+    #print("180-240")
+    theta <- -60/255*g+240
+  }else if(b == 255 & g == 0){#240-300
+    #print("240-300")
+    theta <- 60/255*r+240
+  }else if(g == 255 & b == 0){#60-120
+    #print("60-120")
+    theta <- -60/255*r+120
+  }else{#120-180
+    #print("120-180")
+    theta <- 60/255*b+120
+  }
+  theta
+}
+# rgb2angle(col2rgb("red"))
+# rgb2angle(col2rgb("#FF8000"))
+# rgb2angle(col2rgb("yellow"))
+# rgb2angle(col2rgb("#80FF00"))
+# rgb2angle(col2rgb("green"))
+# rgb2angle(col2rgb("#00FF80"))
+# rgb2angle(col2rgb("cyan"))
+# rgb2angle(col2rgb("#0080FF"))
+# rgb2angle(col2rgb("blue"))
+# rgb2angle(col2rgb("#8000FF"))
+# rgb2angle(col2rgb("magenta"))
+# rgb2angle(col2rgb("#FF0080"))
+# rgb2angle(col2rgb("#FFFFFF"))
+# 
+# angle2rgb(((rgb2angle(col2rgb(team.color1))+rgb2angle(col2rgb(team.color2))/2) +180) %% 360)
+
+
+# * * Convert to VS --------------------------------------------------------------
+color1 <- "red"
+color2 <- "yellow"
+
+(col2rgb("red")-127.5)/127.5
+
+
+
+
+
+#Defines shapes used for each play type in graphing
+play_shape = c('Rush' = 16, 'Rushing Touchdown' = 10, 'Fumble Recovery (Own)' = 16, "Fumble Recovery (Opponent)" = 1, 
+               'Pass Reception' = 17, 'Pass Incompletion' = 2, 'Sack' = 6, "Pass Interception Return" = 3, "Interception Return Touchdown" = 9, 'Passing Touchdown' = 14, 
+               "Punt" = 18, "Blocked Punt" = 5, "Blocked Punt Touchdown" = 7, "Punt Return Touchdown" = 8, 
+               "Field Goal Good" = 12, "Field Goal Missed" = 127, 
+               "Penalty" = 11, "Kickoff" = 18)
+#Defines the legend for graphs
+play.type.legend = c("Rush", "Fumble Recovery (Own)", "Rushing Touchdown", "Fumble Recovery (Opponent)", "Pass Reception", "Pass Incompletion", "Passing Touchdown", "Sack", 
+                     "Pass Interception Return", "Interception Return Touchdown", "Field Goal Good", "Field Goal Missed", "Penalty", 
+                     "Punt", "Blocked Punt", "Blocked Punt Touchdown", "Punt Return Touchdown", "Kickoff")
+
+#Defines the colors used for each team: custom made
+school_colors <- read.xlsx("C:/Users/DanielSmith/Dropbox/programs/R/CFB test/school_colors/school_colors.xlsx")#read.csv("school_colors.csv", header = TRUE, stringsAsFactors=F)
+}
+
+# * Plotly ---------------------------------------------------------------------
+# Sys.setenv("plotly_username"="MCurve7")
+# Sys.setenv("plotly_api_key"="i9a5vdVEKu3kQwzTmol7")
+
+
+# # plotly.dir <- paste0(script_dir,"/html")
+# options(browser = 'false')
+# plotly.success.drive.bar <- ggplotly(success.drive.bar.notable)
+# api_create(plotly.success.drive.bar, filename = paste0(file.prefix,"-01-success.drive.bar")) 
+
+ggplot2ggplotly_subtitle <- function(gg, xanchor = "left", xpos = 0)
+{
+  ggplotly(gg) %>% 
+    layout(title = list(text = paste0(gg$labels$title,"<br> <sup>", gg$labels$subtitle, "</sup>"), xanchor = xanchor, x = xpos))
+    
+  
+}
+
+ggplot2plotly_json <- function(gg, filename)
+{
+  ggp <- ggplot2ggplotly_subtitle(gg)
+  json <- plotly_json(ggp, FALSE)
+  json <- str_replace(json, '"data"','data')
+  json <- str_replace(json, '"layout"','layout')
+  json <- str_replace(json, '"config"','config')
+  json <- str_replace(json, '"source"','source')
+  json <- str_replace(json, '"attrs"','attrs')
+  json <- str_replace(json, '"cur_data"','cur_data')
+  json <- str_replace(json, '"visdat"','visdat')
+  json <- str_replace(json, '"highlight"','highlight')
+  json <- str_replace(json, '"shinyEvents"','shinyEvents')
+  json <- str_replace(json, '"base_url"','base_url')
+  
+  
+  fileConn<-file(paste0(filename,".json"))
+  writeLines(json, fileConn)
+  close(fileConn)
+  
+}
+
+# Set Team/Year/Week ###########################################################
+{ #Set all at once
+#Determines which team file to grab
+team_data <- "Alabama"
+#team_data <- "Georgia"
+#Get the directory of the script
+script_dir <- here()
+#Set the year of interest
+year=2021
+#Set the working directory
+setwd(paste0(script_dir,"\\",year,"\\",team_data))
+#getwd()
+
+#Determine the part of season of interest: regular, postseason, both
+seasontype = "regular"
+#seasontype = "postseason"
+
+#Set the week of interest if you are not looping over multiple weeks
+week="wk08"
+
+#Set the team of interest if not looping over both teams
+team <- team_data
+#team <- "Alabama"
+#team <- "Texas A&M"
+}
+
+
+# Loop season ##################################################################
+#Sets the weeks that data exists (need to automate) stored in the year directory
+# and then loops over those weeks.
+wk <- 1:7
+#wk <- wk[!wk %in% c(6,10)]
+for(n in wk)
+{
+  if(n < 10)
+  {
+    week = paste0("wk0",n)
+  }
+  else
+  {
+    week = paste0("wk",n)
+  }
+
+  #Get Data ####################################################################
+  {
+  #Gets the play data based on the settings above
+  plays <- read.csv(paste0(script_dir,"/data/", team_data,"_",year,"_",week,"_",seasontype,".csv"))
+  #Sets the opponent for the looping below
+  opp <- if_else(plays$Home[1] == team_data, toString(plays$Away[1]), toString(plays$Home[1]))
+  }
+  
+  #Loop Team/Opp ###############################################################
+  #Loops over the team of interest and their opponent
+  for(team in c(team_data, opp))
+  {
+
+    # Single run----------------------------------------------------------------
+    {
+    #Sets the opponent of the currect "team"
+    opponent <- if_else(plays$Home[1] == team, toString(plays$Away[1]), toString(plays$Home[1]))
+  
+    # Make Tibbles #############################################################
+    #Gets the final scores and stores them for use in the graphs
+    end.of.game <- plays %>% filter(Play.type == "End of Game") %>% select("Offense", "Offense.score", "Defense", "Defense.score")
+    #end.of.game
+    
+    #Get final scores
+    if(team == end.of.game$Offense)
+    {
+      team.score.final = end.of.game$Offense.score
+      opponent.score.final = end.of.game$Defense.score
+    }else
+    {
+      team.score.final = end.of.game$Defense.score
+      opponent.score.final = end.of.game$Offense.score
+    }
+    # team.score.final
+    # opponent.score.final
+    
+    # * Tibble plays -----------------------------------------------------------
+    #Sets Down amd Quarter as factors
+    plays <- mutate_at(plays, "Down", factor)
+    plays <- mutate_at(plays, "Quarter", factor)
+    #plays <- mutate_at(plays, "Play.number", factor)
+    
+    #Define new variable so that pick-6 doesn't count towards the offense scoring (add fumbles, etc)
+    plays <- plays %>% mutate(O.scoring = case_when(Play.type == "Interception Return Touchdown" ~ FALSE,
+                                                    Scoring == "True" | Scoring == "TRUE" ~ TRUE,
+                                                    TRUE ~ FALSE))#add fumble score defense
+    
+    #Define new variables: Yards to success, Success, TD.first = if that play resulted in a TD/1st down
+    plays <- plays %>% mutate(Yards.to.success = case_when(Down == 1 ~ .5*Distance,
+                                                           Down == 2 ~ .7*Distance,
+                                                           TRUE ~ 1.0*Distance)) %>% 
+      mutate(Success = case_when(Play.type == "Passing Touchdown" ~ "Successful",
+                                 Play.type == "Penalty" ~ "Penalty",
+                                 Play.type == "Punt" ~ "Punt",
+                                 Play.type == "Blocked Punt" ~ "Blocked Punt",
+                                 Play.type == "Field Goal Good" ~ "Field Goal Good",
+                                 Play.type == "Field Goal Missed" ~ "Field Goal Missed",
+                                 Play.type == "Pass Interception Return" ~ "Unsuccessful",
+                                 Play.type == "Interception Return Touchdown" ~ "Unsuccessful",
+                                 Play.type == "Fumble Recovery (Opponent)" ~ "Fumble Recovery (Opponent)",
+                                 Down == 1 ~ if_else(Yards.gained >= .5*Distance,"Successful","Unsuccessful"),
+                                 Down == 2 ~ if_else(Yards.gained >= .7*Distance,"Successful","Unsuccessful"),
+                                 TRUE ~ if_else(Yards.gained >= Distance,"Successful","Unsuccessful"))) %>%  
+      mutate(TD.first = if_else(O.scoring == "True", TRUE, FALSE) | if_else(Yards.gained >= Distance, TRUE, FALSE))
+    #Finds the Drive and Play number that marks the end of the quarters
+    quarter.drive.play <- c(unlist(plays %>% filter(Play.text == "End of 1st Quarter") %>% select(Drive.number, Play.number)),
+                          unlist(plays %>% filter(Play.text == "End of 2nd Quarter") %>% select(Drive.number, Play.number)),
+                          unlist(plays %>% filter(Play.text == "End of 3rd Quarter") %>% select(Drive.number, Play.number)))
+    
+    # * Find TD drives ---------------------------------------------------------
+    #Finds which drives resulted in TDs
+    score_drive <- c()
+    for( n in 1:length(unique(pull(plays %>% select(Drive.number))))) #loop over drives
+    {
+      if(length(unique(pull(plays %>% filter(Drive.number == n) %>% select(O.scoring)))) ==2) #if Scoring for a drive has two values (T/F) then it was a scoring drive, provided # of plays>1
+      {
+        #print(n)
+        score_drive[[n]] <- TRUE
+      } 
+      else
+      {
+        #print(n)
+        if("True" == unique(pull(plays %>% filter(Drive.number == n) %>% select(O.scoring)))[1]) #if a drive has a single scoring play, also set to T
+        {
+          score_drive[[n]] <- TRUE
+        }
+        else
+        {
+          score_drive[[n]] <- FALSE
+        }
+      }
+    }
+    #score_drive
+
+    #Define score_drive_fcn for making variable Score.drive
+    score_drive_fcn <- function(n)
+    {
+      score_drive[n]
+    }
+    plays <- plays %>% mutate(Score.drive = score_drive_fcn(Drive.number))
+    
+    # * Tibble: teamO ----------------------------------------------------------
+    #Make data.frame for the offensive team of interest, remove certain types of plays, add variables Yards to goal and Extra yards gained
+    teamO <- plays %>% select("Offense", "Defense", "Quarter", "Down", "Drive.number", "Play.number", "Play.type", 
+                              "Yard.line", "Distance", "Yards.gained", "Yards.to.goal", "O.scoring", "Offense.score", "Defense.score", 
+                              "Success", "Yards.to.success", "TD.first", "Score.drive") %>% 
+      filter(Offense == team, !(Play.type == "Kickoff"  | 
+                                  Play.type == "Timeout" | 
+                                  Play.type == "End of Game" | 
+                                  Play.type == "Kickoff Return (Offense)" | 
+                                  Play.type == "End Period" | 
+                                  Play.type == "End of Half" | 
+                                  Play.type == "Kickoff Return Touchdown")) %>% 
+      mutate(Yards.from.goal = 100 - Yards.to.goal) %>% 
+      mutate(Extra.yards.gained = Yards.gained - case_when(Down == 1 ~ .5*Distance,
+                                                           Down == 2 ~ .7*Distance,
+                                                           TRUE ~ 1.0*Distance)) 
+
+    #Make new drive numbers
+    drive.numbers.teamO <- unique(pull(teamO %>% select(Drive.number))) #Get the drive numbers
+    #drive.numbers
+    new.drive.length.teamO <- length(drive.numbers.teamO) #Get the number of drive numbers
+    #new.drive.length
+    new.drive.numbers.teamO <- 1:new.drive.length.teamO #Make a vector of length of drive numbers
+    #new.drive.numbers
+    #Given the drive number return the new drive number
+    new.drive.teamO <- function(n)
+    {
+      new.drive.numbers.teamO[match(n, drive.numbers.teamO)]
+    }
+
+
+    teamO <- teamO %>% mutate(O.drive.number = new.drive.teamO(Drive.number)) %>% 
+      mutate(Offense.play.count = row_number()) %>% 
+      group_by(Drive.number) %>% 
+      mutate(First.play.number = min(Play.number)) %>% 
+      ungroup() %>% 
+      mutate(Start.drive = if_else(Play.number == First.play.number, TRUE, FALSE)) %>% 
+      select(-Offense.play.count, Offense.play.count)
+
+
+    quarters.end <- c(unlist(teamO[teamO$Quarter==2,][length(teamO[teamO$Quarter==2,])])[1]-.5,
+                      unlist(teamO[teamO$Quarter==3,][length(teamO[teamO$Quarter==2,])])[1]-.5,
+                      unlist(teamO[teamO$Quarter==4,][length(teamO[teamO$Quarter==2,])])[1]-.5)#16
+
+    
+    
+    # * Tibble team0succ -------------------------------------------------------
+    #Data.frame for scatter type graphs showing successful vs unsuccessful plays.
+    # So need to remove play types that don't have a (un)success value.
+    ####### May need revision
+    teamOsucc <- plays %>%  filter(Offense == team,
+                                   !(Play.type == "Kickoff" | Play.type == "End of Half" | Play.type == "Field Goal Good" | Play.type == "Field Goal Missed" | Play.type == "End Period" |
+                                       Play.type == "Timeout" | Play.type == "Punt" | Play.type == "End of Game" | Play.type == "Kickoff Return (Offense)" | Play.type == "Blocked Punt" |
+                                       Play.type == "Kickoff Return Touchdown" | Play.type == "Penalty" | Play.type == "Fumble Recovery (Opponent)"))
+    
+    #Add O.drive.number which is a set of sequential drive numbers for "team"
+    drive.numbers.teamOsucc <- unique(pull(teamOsucc %>% select(Drive.number)))
+    #drive.numbers
+    #new.drive.length.teamOsucc <- length(drive.numbers.teamOsucc)
+    #new.drive.length
+    new.drive.numbers.teamOsucc <- 1:length(drive.numbers.teamOsucc)
+    #new.drive.numbers
+    #new.drive.teamOsucc gets the new drive number given the Drive.number from the data set
+    new.drive.teamOsucc <- function(n)
+    {
+      new.drive.numbers.teamOsucc[match(n, drive.numbers.teamOsucc)]
+    }
+    #Add the new drive number and a play count variable (pretty sure Offense.play.count must be at the end of the data.frame)
+    teamOsucc <- teamOsucc %>% mutate(O.drive.number = new.drive.teamOsucc(Drive.number)) %>% 
+      mutate(Offense.play.count = row_number())
+    
+    # * Tibble tbl.success.down ------------------------------------------------
+    #Make a table consisting of Down, Total # of plays then how many are: Successful, Unsuccessful; # of TDs/1st downs
+    tbl.success.down <- teamOsucc %>% group_by(Down,Success) %>% summarise(Count = n())
+    tbl.success.down <- tbl.success.down %>% pivot_wider(names_from = Success, values_from = Count)
+    tbl.success.down  <- tbl.success.down %>% ungroup()
+    if(length(pull(tbl.success.down %>% select(Down))) < 4)
+    {
+      tbl.success.down <- rbind(tbl.success.down, data.frame(Down = "4", Successful = 0, Unsuccessful = 0))
+    }
+    tbl.success.down[is.na(tbl.success.down)] <- 0
+    tbl.success.down <- tbl.success.down %>% mutate(Total = Successful + Unsuccessful) %>% select(Down, Total, Successful, Unsuccessful)
+    tbl.success.down <- tbl.success.down %>% add_column(TD.1st = unlist(c(teamOsucc %>% filter(Down == "1", TD.first == TRUE) %>% summarise(n = n()),
+                                                                          teamOsucc %>% filter(Down == "2", TD.first == TRUE) %>% summarise(n = n()),
+                                                                          teamOsucc %>% filter(Down == "3", TD.first == TRUE) %>% summarise(n = n()),
+                                                                          teamOsucc %>% filter(Down == "4", TD.first == TRUE) %>% summarise(n = n()))))
+    #tbl.success.down
+    
+    #Success rate table
+    tbl.success <- teamOsucc %>% group_by(Success) %>% summarise(Count = n()) %>% mutate(Rate = Count/sum(Count))
+    #tbl.success
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    #Determine which drives result in a TD (TRUE) or not (FALSE)
+    score_drive_succ <- c()
+    for( n in 1:length(unique(pull(teamOsucc %>% select(O.drive.number)))))
+    {
+      if(length(unique(pull(teamOsucc %>% filter(O.drive.number == n) %>% select(O.scoring)))) == 2)
+      {
+        score_drive_succ[[n]] <- TRUE
+      } 
+      else
+      {
+        if("True" == unique(pull(teamOsucc %>% filter(O.drive.number == n) %>% select(O.scoring)))[1] | "TRUE" == unique(pull(teamOsucc %>% filter(O.drive.number == n) %>% select(O.scoring)))[1])
+        {
+          score_drive_succ[[n]] <- TRUE
+        }
+        else
+        {
+          score_drive_succ[[n]] <- FALSE
+        }
+      }
+    }
+    #score_drive_succ
+    #Takes a O.drive.number and returns whether it resulted in a TD or not (T/F)
+    score_drive_succ_fcn <- function(n)
+    {
+      score_drive_succ[n]
+    }
+    
+    # * Tibble tbl.success.drive -----------------------------------------------
+    #Make a table of: O.drive.number, Total, Successful, Unsuccessful, Success.rate, Score.drive
+    tbl.success.drive <- teamOsucc %>% 
+      group_by(O.drive.number, Success) %>% 
+      summarise(Count = n()) %>% 
+      pivot_wider(names_from = Success, values_from = Count)
+    tbl.success.drive <- tbl.success.drive %>% ungroup()
+    tbl.success.drive[is.na(tbl.success.drive)] <- 0
+    tbl.success.drive <- tbl.success.drive %>% 
+      mutate(Total = Successful + Unsuccessful, Success.rate = Successful/Total) %>% 
+      select(O.drive.number, Total, Successful, Unsuccessful, Success.rate) %>% 
+      mutate(Score.drive = score_drive_succ_fcn(O.drive.number))
+    #tbl.success.drive
+    
+    # * Tibble tbl.success.drive.down ------------------------------------------
+    #Make a table of: O.drive.number, Total, Successful, Unsuccessful, Success.rate, Score.drive, downs
+    #tbl.success.drive.down: where the success rate is calculated for each down of the drive so Total = Successful[drive, down] + Unsuccessful[drive,down]
+    #tbl.success.drive.down2: where the success rate is calculated for each drive so Total = Successful[drive] + Unsuccessful[drive]
+    tbl.success.drive.down <- teamOsucc %>% group_by(O.drive.number, Success, Down) %>% summarise(Count = n()) %>% pivot_wider(names_from = Success, values_from = Count)
+    tbl.success.drive.down <- tbl.success.drive.down %>% ungroup()
+    tbl.success.drive.down[is.na(tbl.success.drive.down)] <- 0
+    for(i in tbl.success.drive.down$O.drive.number)
+    {
+      number.downs <- tbl.success.drive.down %>% filter(O.drive.number == i) %>% select(Down)
+      missing.downs <- c(1,2,3,4)
+      if(length(pull(number.downs)) < 4)
+      {
+        for(n in missing.downs[! missing.downs %in% pull(tbl.success.drive.down %>% filter(O.drive.number == i) %>% select(Down))])
+        {
+          tbl.success.drive.down <- rbind(tbl.success.drive.down, data.frame(O.drive.number = i, Down = toString(n), Successful = 0, Unsuccessful = 0 ))
+        }
+      }
+    }
+    tbl.success.drive.down <- tbl.success.drive.down %>% 
+      mutate(Total = Successful + Unsuccessful)
+    total.drive <- c()
+    for(i in tbl.success.drive.down$O.drive.number)
+    {
+      total.drive[[i]] <- sum(pull(tbl.success.drive.down %>% filter(O.drive.number == i) %>% select(Total)))
+    }
+    total.drive.fcn <- function(n)
+    {
+      total.drive[n]
+    }
+    tbl.success.drive.down <- tbl.success.drive.down %>% group_by(O.drive.number) %>% mutate(Total.drive = total.drive.fcn(O.drive.number))
+    
+    #
+    tbl.success.drive.down2 <- tbl.success.drive.down
+    tbl.success.drive.down <- tbl.success.drive.down %>% 
+      mutate(Success.rate.down = Successful/Total) %>% 
+      select(O.drive.number, Down, Total, Total.drive, Successful, Unsuccessful, Success.rate.down) #%>% 
+    #   mutate(Score.drive = score_drive_succ_fcn(O.drive.number))
+    
+    #tbl.success.drive.down
+    
+    tbl.success.drive.down <- tbl.success.drive.down %>% 
+      group_by(O.drive.number) %>% 
+      mutate(Success.rate = sum(Successful)/sum(Total)) %>% 
+      mutate(Score.drive = score_drive_succ_fcn(O.drive.number))
+    #Experiment for graphing: change the constant to chage the height of teh bar chart in the mixed bar chart graph
+    success.scale.factor <- 1
+    success.max <- max(tbl.success.drive.down$Success.rate)
+    tbl.success.drive.down <- tbl.success.drive.down %>% group_by(O.drive.number) %>% mutate(Success.rate = Success.rate/(success.scale.factor*success.max)) %>% arrange(O.drive.number, Down)
+    #Experiment
+    
+    # * Tibble tbl.success.drive.down2 -----------------------------------------
+    drive.down.total <- c()
+    for(i in tbl.success.drive.down2$O.drive.number)
+    {
+      drive.down.total[[i]] <-  sum(pull(tbl.success.drive.down2 %>% filter(O.drive.number == i) %>% select(Total)))
+    }
+    drive.down.total.fcn <- function(n)
+    {
+      drive.down.total[n]
+    }
+    tbl.success.drive.down2 <- tbl.success.drive.down2 %>% 
+      mutate(Success.rate.down = Successful/drive.down.total.fcn(O.drive.number)) %>% 
+      select(O.drive.number, Down, Total, Total.drive, Successful, Unsuccessful, Success.rate.down) #%>% 
+    #   mutate(Score.drive = score_drive_succ_fcn(O.drive.number))
+    
+    #tbl.success.drive.down2
+    
+    tbl.success.drive.down2 <- tbl.success.drive.down2 %>% 
+      group_by(O.drive.number) %>% 
+      mutate(Success.rate = sum(Successful)/sum(Total)) %>% 
+      mutate(Score.drive = score_drive_succ_fcn(O.drive.number))
+    #Experiment
+    success.max <- max(tbl.success.drive.down2$Success.rate)
+    tbl.success.drive.down2 <- tbl.success.drive.down2 %>% group_by(O.drive.number) %>% mutate(Success.rate = Success.rate/(4*success.max)) %>% arrange(O.drive.number, Down)
+    #Experiment
+    
+    #tbl.success.drive.down
+    #tbl.success.drive.down2
+    #tbl.success.drive$Success.rate[1]
+    
+    
+    
+    # * Tibble game.chart.df ---------------------------------------------------
+    #data.frame for game.chart
+    game.chart.df <- plays %>% mutate(Game.play.number = row_number()-1)
+    
+    
+    
+    # Save tables ##############################################################
+    #Save tables (tbl.success.down, tbl.success.drive) to working directory
+    file_name <- paste0(team,"-",year,"-",week,"-", opponent,"-success-by-down-table.txt")
+    # kable(tbl.success.down,
+    #       "html",
+    #       col.names = c("Down", "Total", "Successful", "Unsuccessful", "TD/1st"),
+    #       caption = paste0(team,", ",year,", ",week,", Success table vs ",opponent),
+    #       table.attr = "border='1'") %>% 
+    #   save_kable(file_name)
+    my_table_down <- kable(tbl.success.down,
+          "html",
+          col.names = c("Down", "Total", "Successful", "Unsuccessful", "TD/1st"),
+          caption = paste0(team,", ",year,", ",week,", Success by down table vs ",opponent),
+          table.attr = "border='1'")
+    cat(my_table_down, file = file_name)
+    
+    file_name <- paste0(team,"-",year,"-",week,"-", opponent,"-success-by-drive-table.txt")
+    my_table_drive <- kable(tbl.success.drive,
+                      "html",
+                      col.names = c("Drive", "Total", "Successful", "Unsuccessful", "Success rate", "Scoring drive"),
+                      caption = paste0(team,", ",year,", ",week,", Success rate by drive table vs ",opponent),
+                      table.attr = "border='1'")
+    cat(my_table_drive, file = file_name)
+    
+    
+    
+    file_name <- paste0(team,"-",year,"-",week,"-", opponent,"-success-by-drive-by-down-table.txt")
+    my_table_drive <- kable(tbl.success.drive.down,
+                            "html",
+                            col.names = c("Drive", "Down", "Total", "Total for Drive", "Successful", "Unsuccessful", "Success rate by Down", "Success rate", "Scoring drive"),
+                            caption = paste0(team,", ",year,", ",week,", Success rate by drive each Down success calculated seperately table vs ",opponent),
+                            table.attr = "border='1'")
+    cat(my_table_drive, file = file_name)
+    
+    file_name <- paste0(team,"-",year,"-",week,"-", opponent,"-success-by-drive-by-down-table2.txt")
+    my_table_drive <- kable(tbl.success.drive.down2,
+                            "html",
+                            col.names = c("Drive", "Down", "Total", "Total for Drive", "Successful", "Unsuccessful", "Success rate by Down", "Success rate", "Scoring drive"),
+                            caption = paste0(team,", ",year,", ",week,", Success rate by drive each Down success calculated together table {2} vs ",opponent),
+                            table.attr = "border='1'")
+    cat(my_table_drive, file = file_name)
+    
+    #tbl.success.drive
+
+
+
+
+
+
+
+
+# Graphs #######################################################################
+# * Helper data ----------------------------------------------------------------
+subtitle <- paste0(year,": ",week, " vs ", opponent,"[",opponent.score.final,"]")
+
+# * * Constants used in graphs -------------------------------------------------
+Dist.max <- max(teamOsucc$Distance)+1
+Drive.max <- max(teamOsucc$Drive.number)
+Yards.min <- min(teamOsucc$Yards.gained)-(5 + min(teamOsucc$Yards.gained) %% 5)
+Yards.max <- max(teamOsucc$Yards.gained)+(5 - max(teamOsucc$Yards.gained) %% 5)
+YardsO.min <- min(teamO$Yards.gained)-(5 + min(teamO$Yards.gained) %% 5)
+YardsO.max <- max(teamO$Yards.gained)+(5 - max(teamO$Yards.gained) %% 5)
+Yards.extra.min <- min(teamO$Extra.yards.gained)-(5 + min(teamO$Extra.yards.gained) %% 5)
+Yards.extra.max <- max(teamO$Extra.yards.gained)+(5 - max(teamO$Extra.yards.gained) %% 5)
+
+
+Yards.to.success.min <- min(teamO$Yards.to.success)-(5 + min(teamO$Yards.to.success) %% 5)
+Yards.to.success.max <- max(teamO$Yards.to.success)+(5 - max(teamO$Yards.to.success) %% 5)
+
+Yards.togo.max <- max(teamO$Yards.from.goal)+(5 - max(teamO$Yards.from.goal) %% 5)
+Yards.togo.min <- min(teamO$Yards.from.goal)-(5 - min(teamO$Yards.from.goal) %% 5)
+
+explosive <- 15
+explosive.color <- "firebrick1"
+negative.color <- "grey60"
+
+# used for all4.downs.fac
+down_label <- c("1" = paste0("1st Down \nTotal: ",tbl.success.down$Total[1], " = Suc: ", tbl.success.down$Successful[1]," + Unsuc: ",tbl.success.down$Unsuccessful[1], ", TD/1st: ",tbl.success.down$TD.1st[1]),
+                "2" = paste0("2nd Down \nTotal: ",tbl.success.down$Total[2], " = Suc: ", tbl.success.down$Successful[2]," + Unsuc: ",tbl.success.down$Unsuccessful[2], ", TD/1st: ",tbl.success.down$TD.1st[2]),
+                "3" = paste0("3rd Down \nTotal: ",tbl.success.down$Total[3], " = Suc: ", tbl.success.down$Successful[3]," + Unsuc: ",tbl.success.down$Unsuccessful[3], ", TD/1st: ",tbl.success.down$TD.1st[3]),
+                "4" = paste0("4th Down \nTotal: ",tbl.success.down$Total[4], " = Suc: ", tbl.success.down$Successful[4]," + Unsuc: ",tbl.success.down$Unsuccessful[4], ", TD/1st: ",tbl.success.down$TD.1st[4]))
+
+down_label.table <- c("1" = paste0("1st Down"),
+                      "2" = paste0("2nd Down"),
+                      "3" = paste0("3rd Down"),
+                      "4" = paste0("4th Down"))
+
+#Used for graphing to show the start of a drive in the drive type graphs
+drive.start.yards.gained <- teamO %>% 
+  select(Start.drive, Offense.play.count, Yards.gained, O.drive.number) %>% 
+  filter(Start.drive == TRUE, !(Yards.gained == 0))
+drive.start.yards.gained <- drive.start.yards.gained %>% 
+  add_column(y0 = rep(0, length(pull(drive.start.yards.gained %>% select(O.drive.number)))))
+offset.yards.gained = 0.25
+drive.start.yards.gained <- drive.start.yards.gained %>% 
+  mutate(Yards.gained = if_else(Yards.gained > 0, Yards.gained-offset.yards.gained,Yards.gained+offset.yards.gained))
+drive.start.yards.gained
+
+#
+drive.start <- teamO %>% select(Offense.play.count, Yards.gained, Start.drive, Yards.to.goal, O.drive.number) %>% filter(Start.drive == TRUE)
+
+#
+drive.number <- c()
+for(n in unique(teamO$O.drive.number))
+{
+  drive.number[n] <-  paste0("Drive: ",n)
+}
+drive.number <- setNames(drive.number, unique(teamO$O.drive.number))
+#drive.number
+
+#
+last.play <- max(game.chart.df$Game.play.number)
+
+
+
+my_colors_score.down <- c("TRUE" = team.color1[[1]], "FALSE" = team.color2[[1]], "1" = "cyan4", "2" = "cyan3", "3" = "cyan2", "4" = "cyan1")
+#c1 <- color_max_dist(team.color1, team.color2)
+# c1 <- angle2rgb(((rgb2angle(col2rgb(team.color1))+rgb2angle(col2rgb(team.color2))/2) +180) %% 360)
+# my_colors_score.down <- c("TRUE" = team.color1[[1]], "FALSE" = team.color2[[1]], 
+#                           "1" = c1, 
+#                           "2" = desat(c1, .66),
+#                           "3" = desat(c1, .33),
+#                           "4" = desat(c1, .1))
+
+
+# * Colors for drives ----------------------------------------------------------
+#Attach colors to the drive type charts for the drive numbers...
+team.color1 <- unlist(school_colors %>%  filter(school == team))[2]
+team.color2 <- unlist(school_colors %>%  filter(school == team))[3]
+drive_colors.teamO <- my_colors
+
+for(n in new.drive.numbers.teamO)
+{
+  if(n %% 2 == 0)
+  {
+    drive_colors.teamO <- c(drive_colors.teamO,setNames(team.color2[[1]], toString(n)))
+  }
+  else
+  {
+    drive_colors.teamO <- c(drive_colors.teamO,setNames(team.color1[[1]], toString(n)))
+  }
+}
+#and colors for if a drive results in a TD or not
+my_colors_score <- c("TRUE" = team.color1[[1]], "FALSE" = team.color2[[1]])
+
+# * Colors: json, failure ------------------------------------------------------
+#Attempt to use colors from the json file, but they were ugly.
+# 
+# for(n in new.drive.numbers.teamO)
+# {
+#   if(n %% 2 == 0)
+#   {
+#     drive_colors.teamO <- c(drive_colors.teamO, setNames(school_colors[2], toString(n)))
+#   }
+#   else
+#   {
+#     drive_colors.teamO <- c(drive_colors.teamO, setNames(school_colors[1], toString(n)))
+#   }
+# }
+
+
+    }# End single run-----------------------------------------------------------
+
+# * success.drive.bar ----------------------------------------------------------
+success.drive.bar <- ggplot(tbl.success.drive, aes(x=O.drive.number, y=Success.rate)) +
+  geom_bar(stat = "identity", aes(fill = Score.drive)) +
+  scale_fill_manual(values = my_colors_score, name = "TD") +
+  scale_x_continuous(breaks = seq(0, tbl.success.drive$O.drive.number[length(tbl.success.drive$O.drive.number)], by = 1)) +
+  scale_y_continuous(breaks = seq(0, 1, by = .1), minor_breaks = seq(0,1, by = .025)) +
+  theme(panel.background = element_rect(fill = theme.background.fill),
+        panel.grid.major = element_line(colour = theme.line.color),
+        panel.grid.minor = element_line(colour = theme.line.color.minor)) +
+  expand_limits(y=1) +
+  xlab("Drive number") +
+  ylab("Success rate") +
+  geom_text(aes(x=O.drive.number,y=Success.rate, label=Total), vjust=-1) +
+  ggtitle(paste0(team, "[",team.score.final,"]: Success rate by Drive with TD drive indicated and number of plays per drive"), subtitle = subtitle) +
+  gridExtra::tableGrob(tbl.success.drive %>% mutate(Success.rate = sprintf("%0.3f", Success.rate)) %>% select(-Score.drive), rows=NULL)
+# success.drive.bar
+# ggplotly(success.drive.bar)
+
+# * success.drive.bar.notable --------------------------------------------------
+success.drive.bar.notable <- ggplot(tbl.success.drive, aes(x=O.drive.number, y=Success.rate)) +
+  geom_bar(stat = "identity", aes(fill = Score.drive)) +
+  scale_fill_manual(values = my_colors_score, name = "TD") +
+  scale_x_continuous(breaks = seq(0, tbl.success.drive$O.drive.number[length(tbl.success.drive$O.drive.number)], by = 1)) +
+  scale_y_continuous(breaks = seq(0, 1, by = .1), minor_breaks = seq(0,1, by = .025)) +
+  theme(panel.background = element_rect(fill = theme.background.fill),
+        panel.grid.major = element_line(colour = theme.line.color),
+        panel.grid.minor = element_line(colour = theme.line.color.minor)) +
+  expand_limits(y=1) +
+  xlab("Drive number") +
+  ylab("Success rate") +
+  geom_text(aes(x=O.drive.number,y=Success.rate, label=Total), vjust=-1) +
+  ggtitle(paste0(team, "[",team.score.final,"]: Success rate by Drive with TD drive indicated and number of plays per drive"), subtitle = subtitle) #+
+  #gridExtra::tableGrob(tbl.success.drive %>% mutate(Success.rate = sprintf("%0.3f", Success.rate)) %>% select(-Score.drive), rows=NULL)
+  success.drive.bar.notable
+  ggplotly(success.drive.bar.notable)
+
+# * all ------------------------------------------------------------------------
+# all <- ggplot(teamOsucc, aes(x=Distance, y=Yards.gained, col=Down, shape = Play.type)) +
+#   geom_abline(intercept = c(0,0,0), slope = c(.5, .7, 1), color = c("darkgreen", "blue", "red")) +
+#   geom_vline(xintercept = 10, linetype = 2) +
+#   #geom_hline(yintercept = 0, color = negative.color) +
+#   geom_point(color = "white", size=0) +
+#   geom_jitter(size = 3, width = .2, height = 0) +
+#   annotate("rect", xmin = -Inf, xmax = Inf, ymin = explosive, ymax = Inf, alpha = .2, fill = explosive.color) +
+#   annotate("rect", xmin = -Inf, xmax = Inf, ymin = -Inf, ymax = 0, alpha = .2, fill = negative.color) +
+#   scale_color_manual(values = c("1" = "darkgreen",
+#                                 "2" = "blue",
+#                                 "3" = "red",
+#                                 "4" = "red")) +
+#   scale_x_continuous(breaks = seq(0, Dist.max, by = 1)) +
+#   scale_y_continuous(breaks = seq(Yards.min, Yards.max, by = 5)) +
+#   scale_shape_manual(values = play_shape, breaks = play.type.legend, name="Play type") +
+#   ggtitle(TeX(paste0(team,": All 4 downs with $y=.5x$ (G), $y=.7x$ (B), and $y=x$ (R) success rate lines."))) #+
+# #  gghighlight(Yards.gained >20,label_key = Yardline)
+# all
+
+# * yards.success.gained -------------------------------------------------------
+yards.success.gained <- ggplot(teamOsucc, aes(x=Yards.to.success, y=Yards.gained, shape = Play.type)) +
+  geom_abline(intercept = 0, slope = 1) +
+  #geom_vline(xintercept = 10, linetype = 2) +
+  #geom_hline(yintercept = 0, color = negative.color) +
+  theme(panel.background = element_rect(fill = theme.background.fill),
+        panel.grid.major = element_line(colour = theme.line.color),
+        panel.grid.minor = element_line(colour = theme.line.color.minor)) +
+  geom_jitter(aes(color=Success),size = 3, width = .2, height = 0) +
+  scale_color_manual(values = my_colors_s.u) +
+  annotate("rect", xmin = -Inf, xmax = Inf, ymin = explosive, ymax = Inf, alpha = .2, fill = explosive.color) +
+  annotate("rect", xmin = -Inf, xmax = Inf, ymin = -Inf, ymax = 0, alpha = .3, fill = negative.color) +
+  scale_x_continuous(breaks = seq(0, Dist.max, by = 1)) +
+  scale_y_continuous(breaks = seq(Yards.min, Yards.max, by = 5), minor_breaks = seq(Yards.min, Yards.max, by = 1)) +
+  scale_shape_manual(values = play_shape, breaks = play.type.legend, name="Play type") +
+  xlab("Yards to success") +
+  ylab("Yards gained") +
+  ggtitle(paste0(team, "[",team.score.final,"]: Yards to Success vs Yards gained"), subtitle = subtitle)
+# yards.success.gained
+# ggplotly(yards.success.gained)
+
+# * yards.success.gained.downs -------------------------------------------------
+# yards.success.gained.downs <- ggplot(teamOsucc, aes(x=Yards.to.success, y=Yards.gained, shape = Play.type, color = Down)) +
+#   geom_abline(intercept = 0, slope = 1) +
+#   #geom_vline(xintercept = 10, linetype = 2) +
+#   #geom_hline(yintercept = 0, color = negative.color) +
+#   geom_point(color = "white", size=0) +
+#   geom_jitter(size = 3, width = .2, height = 0) +
+#   annotate("rect", xmin = -Inf, xmax = Inf, ymin = explosive, ymax = Inf, alpha = .2, fill = explosive.color) +
+#   annotate("rect", xmin = -Inf, xmax = Inf, ymin = -Inf, ymax = 0, alpha = .2, fill = negative.color) +
+#   scale_color_manual(values = c("1" = "darkgreen",
+#                                 "2" = "blue",
+#                                 "3" = "red",
+#                                 "4" = "red")) +
+#   scale_x_continuous(breaks = seq(0, Dist.max, by = 1)) +
+#   scale_y_continuous(breaks = seq(Yards.min, Yards.max, by = 5)) +
+#   scale_shape_manual(values = play_shape, breaks = play.type.legend, name="Play type") +
+#   xlab("Yards to success") +
+#   ylab("Yards gained") +
+#   ggtitle(paste0(team, "[",team.score.final,"]: Yards to Success vs Yards gained: ", week, " vs ", opponent)) #+
+#  gghighlight(Yards.gained >20,label_key = Yardline)
+#yards.success.gained.downs
+
+# * d1st -----------------------------------------------------------------------
+# d1st <- ggplot(teamOsucc1st, aes(x=Distance, y=Yards.gained, shape = Play.type)) +
+#   geom_abline(intercept = 0, slope = .5, color = "darkgreen") +
+#   geom_abline(intercept = 0, slope = 1, linetype = "dotdash") +
+#   geom_vline(xintercept = 10, linetype = 2) +
+#   #geom_hline(yintercept = 0, color = negative.color) +
+#   geom_point(color="white", size=0) +
+#   geom_jitter(size = 3, width = .1, height = 0, color = "darkgreen") +
+#   annotate("rect", xmin = -Inf, xmax = Inf, ymin = explosive, ymax = Inf, alpha = .2, fill = explosive.color) +
+#   annotate("rect", xmin = -Inf, xmax = Inf, ymin = -Inf, ymax = 0, alpha = .2, fill = negative.color) +
+#   scale_x_continuous(breaks = seq(0, Dist.max, by = 1)) +
+#   scale_y_continuous(breaks = seq(Yards.min, Yards.max, by = 5)) +
+#   scale_shape_manual(values = play_shape, breaks = play.type.legend, name="Play type") +
+#   ggtitle(TeX(paste0(team, "[",team.score.final,"]: Just 1st downs with $y=.5x$ success rate line.")) #+
+# d1st
+
+# * d2nd -----------------------------------------------------------------------
+# d2nd <- ggplot(teamOsucc2nd, aes(x=Distance, y=Yards.gained, shape = Play.type)) +
+#   geom_abline(intercept = 0, slope = .7, color = "blue") +
+#   geom_abline(intercept = 0, slope = 1, linetype = "dotdash") +
+#   geom_vline(xintercept = 10, linetype = 2) +
+#   #geom_hline(yintercept = 0, color = negative.color) +
+#   geom_point(color="white", size=0) +
+#   geom_jitter(size = 3, width = .1, height = 0, color = "blue") +
+#   annotate("rect", xmin = -Inf, xmax = Inf, ymin = explosive, ymax = Inf, alpha = .2, fill = explosive.color) +
+#   annotate("rect", xmin = -Inf, xmax = Inf, ymin = -Inf, ymax = 0, alpha = .2, fill = negative.color) +
+#   scale_x_continuous(breaks = seq(0, Dist.max, by = 1)) +
+#   scale_y_continuous(breaks = seq(Yards.min, Yards.max, by = 5)) +
+#   scale_shape_manual(values = play_shape, breaks = play.type.legend, name="Play type") +
+#   ggtitle(TeX(paste0(team, "[",team.score.final,"]: Just 2nd down with $y=.7x$ success rate line.")) #+
+# d2nd
+
+# * d3rd -----------------------------------------------------------------------
+# d3rd <- ggplot(teamOsucc3rd, aes(x=Distance, y=Yards.gained, shape = Play.type)) +
+#   geom_abline(intercept = 0, slope = 1, color = "purple") +
+#   geom_abline(intercept = 0, slope = 1, linetype = "dotdash") +
+#   geom_vline(xintercept = 10, linetype = 2) +
+#   #geom_hline(yintercept = 0, color = negative.color) +
+#   geom_point(color="white", size=0) +
+#   geom_jitter(size = 3, width = .1, height = 0, color = "purple") +
+#   annotate("rect", xmin = -Inf, xmax = Inf, ymin = explosive, ymax = Inf, alpha = .2, fill = explosive.color) +
+#   annotate("rect", xmin = -Inf, xmax = Inf, ymin = -Inf, ymax = 0, alpha = .2, fill = negative.color) +
+#   scale_x_continuous(breaks = seq(0, Dist.max, by = 1)) +
+#   scale_y_continuous(breaks = seq(Yards.min, Yards.max, by = 5)) +
+#   scale_shape_manual(values = play_shape, breaks = play.type.legend, name="Play type") +
+#   ggtitle(TeX(paste0(team, "[",team.score.final,"]: Just 3rd and 4th downs with $y=x$ success rate line.")) #+
+# d3rd
+
+
+# * all4.downs.fac -------------------------------------------------------------
+all4.downs.fac <- ggplot(teamOsucc, aes(x=Distance, y=Yards.gained, shape = Play.type)) +
+  geom_vline(xintercept = 10, linetype = 2) +
+  geom_abline(intercept = 0, slope = 1, linetype = "dotdash") +
+  geom_abline(aes(intercept = yint, slope = slope), succ, color = c("darkgreen", "blue", "purple", "purple")) +
+  theme(panel.background = element_rect(fill = theme.background.fill),
+        panel.grid.major = element_line(colour = theme.line.color),
+        panel.grid.minor = element_line(colour = theme.line.color.minor)) +
+  geom_jitter(aes(color = Success), size = 3, width = .4, height = .3) +
+  annotate("rect", xmin = -Inf, xmax = Inf, ymin = explosive, ymax = Inf, alpha = .2, fill = explosive.color) +
+  annotate("rect", xmin = -Inf, xmax = Inf, ymin = -Inf, ymax = 0, alpha = .2, fill = negative.color) +
+  scale_color_manual(values = my_colors_s.u) +
+  scale_x_continuous(breaks = seq(0, Dist.max, by = 2)) +
+  scale_y_continuous(breaks = seq(Yards.min, Yards.max, by = 5), minor_breaks = seq(Yards.min, Yards.max, by = 1)) +
+  scale_shape_manual(values = play_shape, breaks = play.type.legend, name="Play type") +
+  xlab("Distance to 1st down or TD") +
+  ylab("Yards gained") +
+  ggtitle(paste0(team, "[",team.score.final,"]: Yards to be Successful vs Yards gained by Down  (Color lines = success, Dot-dash line = 1st down)"), subtitle = subtitle) +
+  facet_wrap( ~ Down, nrow = 1, labeller = labeller(Down = down_label))
+# all4.downs.fac
+# ggplotly(all4.downs.fac)
+
+# * all4.downs.fac.noscale -----------------------------------------------------
+all4.downs.fac.noscale <- ggplot(teamOsucc, aes(x=Distance, y=Yards.gained, shape = Play.type)) +
+  geom_vline(xintercept = 10, linetype = 2) +
+  geom_abline(intercept = 0, slope = 1, linetype = "dotdash") +
+  geom_abline(aes(intercept = yint, slope = slope), succ, color = c("darkgreen", "blue", "purple", "purple")) +
+  theme(panel.background = element_rect(fill = theme.background.fill),
+        panel.grid.major = element_line(colour = theme.line.color),
+        panel.grid.minor = element_line(colour = theme.line.color.minor)) +
+  geom_jitter(aes(color = Success), size = 3, width = .4, height = .3) +
+  annotate("rect", xmin = -Inf, xmax = Inf, ymin = explosive, ymax = Inf, alpha = .2, fill = explosive.color) +
+  annotate("rect", xmin = -Inf, xmax = Inf, ymin = -Inf, ymax = 0, alpha = .2, fill = negative.color) +
+  scale_color_manual(values = my_colors_s.u) +
+  scale_x_continuous(breaks = seq(0, Dist.max, by = 2)) +
+  scale_y_continuous(breaks = seq(Yards.min, Yards.max, by = 5), minor_breaks = seq(Yards.min, Yards.max, by = 1)) +
+  scale_shape_manual(values = play_shape, breaks = play.type.legend, name="Play type") +
+  xlab("Distance to 1st down or TD") +
+  ylab("Yards gained") +
+  ggtitle(paste0(team, "[",team.score.final,"]: Yards to be Successful vs Yards gained by Down  (Color lines = success, Dot-dash line = 1st down)"), subtitle = subtitle) +
+  facet_wrap( ~ Down, nrow = 1, labeller = labeller(Down = down_label), scales = "free")
+# all4.downs.fac.noscale
+# ggplotly(all4.downs.fac.noscale)
+
+# * all4.downs.fac.table -------------------------------------------------------
+all4.downs.fac.table <- ggplot(teamOsucc, aes(x=Distance, y=Yards.gained, shape = Play.type)) +
+  geom_vline(xintercept = 10, linetype = 2) +
+  geom_abline(intercept = 0, slope = 1, linetype = "dotdash") +
+  geom_abline(aes(intercept = yint, slope = slope), succ, color = c("darkgreen", "blue", "purple", "purple")) +
+  theme(panel.background = element_rect(fill = theme.background.fill),
+        panel.grid.major = element_line(colour = theme.line.color),
+        panel.grid.minor = element_line(colour = theme.line.color.minor)) +
+  geom_jitter(aes(color = Success), size = 3, width = .4, height = .3) +
+  annotate("rect", xmin = -Inf, xmax = Inf, ymin = explosive, ymax = Inf, alpha = .2, fill = explosive.color) +
+  annotate("rect", xmin = -Inf, xmax = Inf, ymin = -Inf, ymax = 0, alpha = .2, fill = negative.color) +
+  scale_color_manual(values = my_colors_s.u) +
+  scale_x_continuous(breaks = seq(0, Dist.max, by = 2)) +
+  scale_y_continuous(breaks = seq(Yards.min, Yards.max, by = 5), minor_breaks = seq(Yards.min, Yards.max, by = 1)) +
+  scale_shape_manual(values = play_shape, breaks = play.type.legend, name="Play type") +
+  xlab("Distance to 1st down or TD") +
+  ylab("Yards gained") +
+  ggtitle(paste0(team, "[",team.score.final,"]: Yards to be Successful vs Yards gained by Down  (Color lines = success, Dot-dash line = 1st down)"), subtitle = subtitle) +
+  facet_wrap( ~ Down, nrow = 1, labeller = labeller(Down = down_label.table)) +
+  gridExtra::tableGrob(tbl.success.down, rows=NULL)
+#all4.downs.fac.table
+
+
+# * all4.downs.fac.noscale.table -----------------------------------------------
+all4.downs.fac.noscale.table <- ggplot(teamOsucc, aes(x=Distance, y=Yards.gained, shape = Play.type)) +
+  geom_vline(xintercept = 10, linetype = 2) +
+  geom_abline(intercept = 0, slope = 1, linetype = "dotdash") +
+  geom_abline(aes(intercept = yint, slope = slope), succ, color = c("darkgreen", "blue", "purple", "purple")) +
+  theme(panel.background = element_rect(fill = theme.background.fill),
+        panel.grid.major = element_line(colour = theme.line.color),
+        panel.grid.minor = element_line(colour = theme.line.color.minor)) +
+  geom_jitter(aes(color = Success), size = 3, width = .4, height = .3) +
+  annotate("rect", xmin = -Inf, xmax = Inf, ymin = explosive, ymax = Inf, alpha = .2, fill = explosive.color) +
+  annotate("rect", xmin = -Inf, xmax = Inf, ymin = -Inf, ymax = 0, alpha = .2, fill = negative.color) +
+  scale_color_manual(values = my_colors_s.u) +
+  scale_x_continuous(breaks = seq(0, Dist.max, by = 2)) +
+  scale_y_continuous(breaks = seq(Yards.min, Yards.max, by = 5), minor_breaks = seq(Yards.min, Yards.max, by = 1)) +
+  scale_shape_manual(values = play_shape, breaks = play.type.legend, name="Play type") +
+  xlab("Distance to 1st down or TD") +
+  ylab("Yards gained") +
+  ggtitle(paste0(team, "[",team.score.final,"]: Yards to be Successful vs Yards gained by Down  (Color lines = success, Dot-dash line = 1st down)"), subtitle = subtitle) +
+  facet_wrap( ~ Down, nrow = 1, labeller = labeller(Down = down_label.table), scales = "free") +
+  gridExtra::tableGrob(tbl.success.down, rows=NULL)
+#all4.downs.fac.noscale.table
+
+# * fac.yards.to.success -------------------------------------------------------
+fac.yards.to.success <- ggplot(teamOsucc, aes(x=Yards.to.success, y=Yards.gained, shape = Play.type)) +#, color = Down)) +
+  geom_abline(aes(intercept = yint, slope = 1), succ) + #, color = c("darkgreen", "blue", "purple", "purple")) +
+  theme(panel.background = element_rect(fill = theme.background.fill),
+        panel.grid.major = element_line(colour = theme.line.color),
+        panel.grid.minor = element_line(colour = theme.line.color.minor)) +
+  geom_jitter(aes(color = Success), size = 3, width = .4, height = .3) +
+  annotate("rect", xmin = -Inf, xmax = Inf, ymin = explosive, ymax = Inf, alpha = .2, fill = explosive.color) +
+  annotate("rect", xmin = -Inf, xmax = Inf, ymin = -Inf, ymax = 0, alpha = .2, fill = negative.color) +
+  scale_color_manual(values = my_colors_s.u) +
+  scale_x_continuous(breaks = seq(0, Dist.max, by = 2)) +
+  scale_y_continuous(breaks = seq(Yards.min, Yards.max, by = 5), minor_breaks = seq(Yards.min, Yards.max, by = 1)) +
+  scale_shape_manual(values = play_shape, breaks = play.type.legend, name="Play type") +
+  #scale_fill_discrete(breaks = play.type.legend) +
+  xlab("Yards to Success") +
+  ylab("Yards gained") +
+  ggtitle(paste0(team, "[",team.score.final,"]: Yards needed to be Successful vs Yards Gained by Down"), subtitle = subtitle) +
+  facet_wrap( ~ Down, nrow = 1, labeller = labeller(Down = down_label))
+# fac.yards.to.success
+# ggplotly(fac.yards.to.success)
+
+
+# * drive ----------------------------------------------------------------------
+drive <- ggplot(teamO, aes(x = Offense.play.count, y = Yards.gained)) +
+  annotate("rect", xmin = -Inf, xmax = Inf, ymin = explosive, ymax = Inf, alpha = .2, fill = explosive.color) +
+  annotate("rect", xmin = -Inf, xmax = Inf, ymin = -Inf, ymax = 0, alpha = .5, fill = negative.color) +
+  geom_hline(yintercept = 0, alpha = .2) +
+  geom_vline(xintercept = quarters.end, linetype = c(2,1,2)) +
+  geom_segment(aes(x=Offense.play.count, y=y0, xend=Offense.play.count, yend=Yards.gained),
+               data = drive.start.yards.gained,
+               size=1,
+               #color = "deeppink",
+               #linetype="dotdash",
+               arrow = arrow(length = unit(0.25,"cm"))) +
+  theme(panel.background = element_rect(fill = theme.background.fill),
+        panel.grid.major = element_line(colour = theme.line.color),
+        panel.grid.minor = element_line(colour = theme.line.color.minor)) +
+  # annotate("text", x=quarters.end[1]-.75, y=Yards.max ,label="Q1") +
+  # annotate("text", x=quarters.end[2]-.75, y=Yards.max ,label="Q2") +
+  # annotate("text", x=quarters.end[3]-.75, y=Yards.max ,label="Q3") +
+  geom_line(aes(color = factor(O.drive.number)), size = 1) +
+  geom_point(aes(shape = Play.type, color = Success), size = 4) +
+  scale_colour_manual(values = drive_colors.teamO, name = "Success/Drive number") +
+  scale_shape_manual(values = play_shape, breaks = play.type.legend, name="Play type") +
+  scale_x_continuous(breaks = seq(0, 110, by = 5), minor_breaks = seq(0, 110, by = 1)) +
+  scale_y_continuous(breaks = seq(YardsO.min, YardsO.max, by = 5), minor_breaks = seq(YardsO.min, YardsO.max, by = 1)) +
+  xlab("Offensive play count including penalties")+
+  ylab("Yards gained (non-cumulative)") +
+  ggtitle(paste0(team, "[",team.score.final,"]: Offense drives"), subtitle = subtitle)
+ # drive
+ # ggplotly(drive)
+
+# * drive.fac ------------------------------------------------------------------
+drive.fac <- ggplot(teamO, aes(x = Offense.play.count, y = Yards.gained)) +
+  annotate("rect", xmin = -Inf, xmax = Inf, ymin = explosive, ymax = Inf, alpha = .2, fill = explosive.color) +
+  annotate("rect", xmin = -Inf, xmax = Inf, ymin = -Inf, ymax = 0, alpha = .5, fill = negative.color) +
+  # geom_hline(yintercept = 0, alpha = .2) +
+  # geom_vline(xintercept = quarters.end, linetype = c(2,1,2)) +
+  geom_segment(aes(x=Offense.play.count, y=y0, xend=Offense.play.count, yend=Yards.gained),
+               data = drive.start.yards.gained,
+               size=1,
+               #color = "deeppink",
+               #linetype="dotdash",
+               arrow = arrow(length = unit(0.25,"cm"))) +
+  theme(panel.background = element_rect(fill = theme.background.fill),
+        panel.grid.major = element_line(colour = theme.line.color),
+        panel.grid.minor.x = element_blank(),
+        panel.grid.minor = element_line(colour = theme.line.color.minor)) +
+  # annotate("text", x=quarters.end[1]-.75, y=Yards.max ,label="Q1") +
+  # annotate("text", x=quarters.end[2]-.75, y=Yards.max ,label="Q2") +
+  # annotate("text", x=quarters.end[3]-.75, y=Yards.max ,label="Q3") +
+  geom_line(aes(color = factor(O.drive.number)), size = 1) +
+  geom_point(aes(shape = Play.type, color = Success), size = 4) +
+  scale_colour_manual(values = drive_colors.teamO, name = "Success/Drive number") +
+  scale_shape_manual(values = play_shape, breaks = play.type.legend, name="Play type") +
+  scale_x_continuous(breaks = seq(0, 110, by = 1)) +
+  scale_y_continuous(breaks = seq(YardsO.min, YardsO.max, by = 5), minor_breaks = seq(YardsO.min, YardsO.max, by = 1)) +
+  xlab("Offensive play count including penalties")+
+  ylab("Yards gained (non-cumulative)") +
+  ggtitle(paste0(team, "[",team.score.final,"]: Offensive drives by drive"), subtitle = subtitle) +
+  facet_wrap(~ O.drive.number, scales = "free", labeller = labeller(O.drive.number = drive.number))#labeller(O.drive.number = paste0("Drive ", )))
+#drive.fac
+# ggplotly(drive.fac)
+
+# * drive.yards.to.goal --------------------------------------------------------
+# drive.yards.to.goal <- ggplot(teamO, aes(x = Offense.play.count, y = Yards.gained)) +
+#   annotate("rect", xmin = -Inf, xmax = Inf, ymin = explosive, ymax = Inf, alpha = .2, fill = explosive.color) +
+#   annotate("rect", xmin = -Inf, xmax = Inf, ymin = -Inf, ymax = 0, alpha = .5, fill = negative.color) +
+#   geom_hline(yintercept = 0, alpha = .2) +
+#   geom_vline(xintercept = quarters.end, linetype = c(2,1,2)) +
+#   # geom_segment(aes(x=Offense.play.count, y=y0, xend=Offense.play.count, yend=Yards.gained),
+#   #              data = drive.start.yards.gained,
+#   #              #size=1,
+#   #              #color = "deeppink",
+#   #              #linetype="dotdash",
+#   #              arrow = arrow(length = unit(0.25,"cm"))) +
+#   theme(panel.background = element_rect(fill = theme.background.fill),
+#         panel.grid.major = element_line(colour = theme.line.color)) +
+#   # annotate("text", x=quarters.end[1]-.75, y=Yards.max ,label="Q1") +
+#   # annotate("text", x=quarters.end[2]-.75, y=Yards.max ,label="Q2") +
+#   # annotate("text", x=quarters.end[3]-.75, y=Yards.max ,label="Q3") +
+#   geom_point(aes(shape = Play.type, color = Success), size = 3) +
+#   geom_line(aes(color = factor(O.drive.number))) +
+#   scale_colour_manual(values = drive_colors.teamO, name = "Success/Drive number") +
+#   scale_shape_manual(values = play_shape, breaks = play.type.legend, name="Play type") +
+#   scale_x_continuous(breaks = seq(0, 110, by = 5)) +
+#   scale_y_continuous(breaks = seq(YardsO.min, YardsO.max, by = 5)) +
+#   xlab("Offensive play count including penalties")+
+#   ylab("Yards gained (non-cumulative)") +
+#   geom_text_repel(data = drive.start, aes(label = Yards.to.goal), direction = "y", box.padding = 1.5) +
+#   ggtitle(paste0(team, "[",team.score.final,"]: Offense drives with Yards to Goal"), subtitle = subtitle)
+#drive.yards.to.goal
+
+# * drive.yards.to.goal.fac ----------------------------------------------------
+drive.yards.to.goal.fac <- ggplot(teamO, aes(x = Offense.play.count, y = Yards.gained)) +
+  annotate("rect", xmin = -Inf, xmax = Inf, ymin = explosive, ymax = Inf, alpha = .2, fill = explosive.color) +
+  annotate("rect", xmin = -Inf, xmax = Inf, ymin = -Inf, ymax = 0, alpha = .5, fill = negative.color) +
+  # geom_hline(yintercept = 0, alpha = .2) +
+  # geom_vline(xintercept = quarters.end, linetype = c(2,1,2)) +
+  # geom_segment(aes(x=Offense.play.count, y=y0, xend=Offense.play.count, yend=Yards.gained),
+  #              data = drive.start.yards.gained,
+  #              #size=1,
+  #              #color = "deeppink",
+  #              #linetype="dotdash",
+  #              arrow = arrow(length = unit(0.25,"cm"))) +
+  theme(panel.background = element_rect(fill = theme.background.fill),
+        panel.grid.major = element_line(colour = theme.line.color),
+        panel.grid.minor.x = element_blank(),
+        panel.grid.minor = element_line(colour = theme.line.color.minor)) +
+  # annotate("text", x=quarters.end[1]-.75, y=Yards.max ,label="Q1") +
+  # annotate("text", x=quarters.end[2]-.75, y=Yards.max ,label="Q2") +
+  # annotate("text", x=quarters.end[3]-.75, y=Yards.max ,label="Q3") +
+  geom_line(aes(color = factor(O.drive.number)), size = 1) +
+  geom_point(aes(shape = Play.type, color = Success), size = 4) +
+  scale_colour_manual(values = drive_colors.teamO, name = "Success/Drive number") +
+  scale_shape_manual(values = play_shape, breaks = play.type.legend, name="Play type") +
+  scale_x_continuous(breaks = seq(0, 110, by = 1)) +
+  scale_y_continuous(breaks = seq(YardsO.min, YardsO.max, by = 5), minor_breaks = seq(YardsO.min, YardsO.max, by = 1)) +
+  xlab("Offensive play count including penalties")+
+  ylab("Yards gained (non-cumulative)") +
+  geom_text_repel(data = drive.start, aes(label = Yards.to.goal),  box.padding = .5) +#, direction = "y") +
+  ggtitle(paste0(team, "[",team.score.final,"]: Offensive drives by Drive with Yards to Goal"), subtitle = subtitle) +
+  #facet_wrap(~ O.drive.number, scales = "free")
+  facet_wrap(~ O.drive.number, scales = "free", labeller = labeller(O.drive.number = drive.number))
+# drive.yards.to.goal.fac
+# ggplotly(drive.yards.to.goal.fac)
+
+# * drive.extra.yards.gained ---------------------------------------------------
+drive.extra.yards.gained <- ggplot(teamO, aes(x = Offense.play.count, y = Extra.yards.gained)) +
+  # annotate("rect", xmin = -Inf, xmax = Inf, ymin = explosive, ymax = Inf, alpha = .2, fill = explosive.color) +
+  # annotate("rect", xmin = -Inf, xmax = Inf, ymin = -Inf, ymax = 0, alpha = .2, fill = negative.color) +
+  geom_hline(yintercept = 0, alpha = .2) +
+  geom_vline(xintercept = quarters.end, linetype = c(2,1,2)) +
+  theme(panel.background = element_rect(fill = theme.background.fill),
+        panel.grid.major = element_line(colour = theme.line.color)) +
+  # annotate("text", x=quarters.end[1]-.75, y=Yards.max ,label="Q1") +
+  # annotate("text", x=quarters.end[2]-.75, y=Yards.max ,label="Q2") +
+  # annotate("text", x=quarters.end[3]-.75, y=Yards.max ,label="Q3") +
+  geom_point(aes(shape = Play.type, color = Success), size = 3) +
+  geom_line(aes(color = factor(O.drive.number))) +
+  scale_colour_manual(values = drive_colors.teamO, name = "Success/Drive number") +
+  scale_shape_manual(values = play_shape, breaks = play.type.legend, name="Play type") +
+  scale_x_continuous(breaks = seq(0, 110, by = 5), minor_breaks = seq(0,110,by = 1)) +
+  scale_y_continuous(breaks = seq(Yards.extra.min, Yards.extra.max, by = 5), minor_breaks = seq(Yards.extra.min, Yards.extra.max, by = 1)) +
+  xlab("Offensive play count including penalties") +
+  ylab("Extra yards gained") +
+  ggtitle(paste0(team, "[",team.score.final,"]: Extra yards gained = Yards gained - Yards to success"), subtitle = subtitle)
+# drive.extra.yards.gained
+# ggplotly(drive.extra.yards.gained)
+
+# * drive.yards.to.success -----------------------------------------------------
+drive.yards.to.success <- ggplot(teamO, aes(x = Offense.play.count, y = Yards.to.success)) +
+  ##annotate("rect", xmin = -Inf, xmax = Inf, ymin = explosive, ymax = Inf, alpha = .2, fill = explosive.color) +
+  #annotate("rect", xmin = -Inf, xmax = Inf, ymin = -Inf, ymax = 0, alpha = .2, fill = negative.color) +
+  geom_hline(yintercept = 0, alpha = .2) +
+  geom_vline(xintercept = quarters.end, linetype = c(2,1,2)) +
+  theme(panel.background = element_rect(fill = theme.background.fill),
+        panel.grid.major = element_line(colour = theme.line.color)) +
+  # annotate("text", x=quarters.end[1]-.75, y=Yards.to.success.max ,label="Q1") +
+  # annotate("text", x=quarters.end[2]-.75, y=Yards.to.success.max ,label="Q2") +
+  # annotate("text", x=quarters.end[3]-.75, y=Yards.to.success.max ,label="Q3") +
+  geom_point(aes(shape = Play.type, color = Success), size = 3) +
+  geom_line(aes(color = factor(O.drive.number))) +
+  scale_colour_manual(values = drive_colors.teamO, name = "Success/Drive number") +
+  scale_shape_manual(values = play_shape, breaks = play.type.legend, name="Play type") +
+  scale_x_continuous(breaks = seq(0, 110, by = 5), minor_breaks = seq(0,110, by=1)) +
+  scale_y_continuous(breaks = seq(Yards.to.success.min, Yards.to.success.max, by = 5), minor_breaks = seq(Yards.to.success.min, Yards.to.success.max, by = 1)) +
+  xlab("Offensive play count including penalties") +
+  ylab("Yards needed to be successful") +
+  ggtitle(paste0(team, "[",team.score.final,"]: Yards to success"), subtitle = subtitle)
+# drive.yards.to.success
+# ggplotly(drive.yards.to.success)
+
+# * drive.success.play ---------------------------------------------------------
+{
+# * * array success/drive charts -----------------------------------------------
+success.drive.bar.single <- c()
+for( n in unique(tbl.success.drive$O.drive.number))
+{
+  success.drive.bar.single[[n]] <- ggplot(tbl.success.drive %>% filter(O.drive.number == n), aes(x=O.drive.number, y=Success.rate)) +
+    geom_bar(stat = "identity", aes(fill = Score.drive)) +
+    scale_fill_manual(values = my_colors_score, name = "TD") +
+    scale_x_continuous(breaks = seq(0, tbl.success.drive$O.drive.number[length(tbl.success.drive$O.drive.number)], by = 1)) +
+    scale_y_continuous(breaks = seq(0, 1, by = .1), minor_breaks = seq(0,1, by = .025)) +
+    theme(panel.background = element_rect(fill = theme.background.fill),
+          panel.grid.major = element_line(colour = theme.line.color),
+          panel.grid.minor = element_line(colour = theme.line.color.minor),
+          legend.position="none",
+          axis.title.y=element_blank()) +
+    expand_limits(y=1) +
+    xlab("Drive number") +
+    ylab("Success rate") +
+    geom_text(aes(x=O.drive.number,y=Success.rate, label=Total), vjust=-1)
+  #ggtitle(paste0(team, "[",team.score.final,"]: Success rate by Drive with TD drive indicated and number of plays per drive"), subtitle = subtitle)
+}
+#success.drive.bar.single[1]
+
+# * * array Tibbles w/ ind drives ----------------------------------------------
+teamO.drives <- c()
+for( n in unique(teamO$O.drive.number))
+{
+  teamO.drives[[n]] <- teamO %>% filter(O.drive.number == n)
+}
+#teamO.drives[1]
+
+# * * array plays/drive charts -----------------------------------------------
+drive.yards.to.goal.fac.single <- c()
+for( n in unique(teamO$O.drive.number))
+{
+  drive.yards.to.goal.fac.single[[n]] <- ggplot(teamO.drives[[n]], aes(x = Offense.play.count, y = Yards.gained)) +
+    annotate("rect", xmin = -Inf, xmax = Inf, ymin = explosive, ymax = Inf, alpha = .2, fill = explosive.color) +
+    annotate("rect", xmin = -Inf, xmax = Inf, ymin = -Inf, ymax = 0, alpha = .5, fill = negative.color) +
+    theme(panel.background = element_rect(fill = theme.background.fill),
+          panel.grid.major = element_line(colour = theme.line.color),
+          panel.grid.minor.x = element_blank(),
+          panel.grid.minor = element_line(colour = theme.line.color.minor),
+          legend.position="none",
+          axis.title.x=element_blank(),
+          axis.title.y=element_blank()) +
+    geom_line(aes(color = factor(O.drive.number)), size = 1) +
+    geom_point(aes(shape = Play.type, color = Success), size = 4) +
+    scale_colour_manual(values = drive_colors.teamO, name = "Success/Drive number") +
+    scale_shape_manual(values = play_shape, breaks = play.type.legend, name="Play type") +
+    scale_x_continuous(breaks = seq(0, 110, by = 1)) +
+    scale_y_continuous(breaks = seq(YardsO.min, YardsO.max, by = 5), minor_breaks = seq(YardsO.min, YardsO.max, by = 1))  #+
+    #xlab("Play count")+
+    #ylab("Yards gained")
+  #geom_text_repel(data = drive.start, aes(label = Yards.to.goal),  box.padding = .5) +#, direction = "y") +
+  #ggtitle(paste0(team, "[",team.score.final,"]: Offensive drives by Drive with Yards to Goal"), subtitle = subtitle)
+}
+#drive.yards.to.goal.fac.single[1]
+
+# * * Gen layout of _/drive charts as string------------------------------------
+code_string <- ""
+max.drive <- max(teamO$O.drive.number)
+max.drive.quot <- max.drive %/% 2
+max.drive.rem <- max.drive %% 2
+for( n in 1:max.drive.quot-1)
+{
+  if(n == 1)
+  {
+    code_string <- paste0("((success.drive.bar.single[[1]] | drive.yards.to.goal.fac.single[[1]] | success.drive.bar.single[[2]] | drive.yards.to.goal.fac.single[[2]] )/")
+  }else{
+    code_string <- paste0(code_string,"(success.drive.bar.single[[",2*n-1,"]] | drive.yards.to.goal.fac.single[[",2*n-1,"]] | success.drive.bar.single[[",2*n,"]] | drive.yards.to.goal.fac.single[[",2*n,"]] )/")
+  }
+}
+if(max.drive.rem == 0)
+{
+  code_string <- paste0(code_string,"(success.drive.bar.single[[",2*max.drive.quot-1,"]] | drive.yards.to.goal.fac.single[[",2*max.drive.quot-1,"]] | success.drive.bar.single[[",2*max.drive.quot,"]] | drive.yards.to.goal.fac.single[[",2*max.drive.quot,"]] ))")
+}else{
+  code_string <- paste0(code_string,"(success.drive.bar.single[[",2*max.drive.quot-1,"]] | drive.yards.to.goal.fac.single[[",2*max.drive.quot-1,"]] | success.drive.bar.single[[",2*max.drive.quot,"]] | drive.yards.to.goal.fac.single[[",2*max.drive.quot,"]] )/(success.drive.bar.single[[",2*max.drive.quot+1,"]] | drive.yards.to.goal.fac.single[[",2*max.drive.quot+1,"]]))")
+}
+code_string <- paste0(code_string," + plot_annotation(title ='",team," [",team.score.final,"]: Success rate and Drive chart', subtitle = subtitle)")
+#code_string <- paste0(code_string," + plot_annotation(title ='Success rate and Drive chart', subtitle = subtitle)")
+#code_string
+
+# * * Convert string to code ---------------------------------------------------
+parsed.code_string <- parse(text = code_string)
+
+# * * Eval code for final chart ------------------------------------------------
+drive.success.play <- eval(parsed.code_string)
+#drive.success.play
+}
+
+{
+# * * Make plotly using subplot() ----------------------------------------------
+subplots <- list()
+for( n in 1:max.drive.quot)
+{
+  subplots[[n]] <- subplot(ggplotly(success.drive.bar.single[[2*n-1]]), 
+                             ggplotly(drive.yards.to.goal.fac.single[[2*n-1]]), 
+                             ggplotly(success.drive.bar.single[[2*n]]), 
+                             ggplotly(drive.yards.to.goal.fac.single[[2*n]]), nrows = 1)
+}
+if(max.drive.rem == 1)
+{
+  subplots[[max.drive.quot+1]] <- subplot(ggplotly(success.drive.bar.single[[2*max.drive.quot+1]]), 
+                           ggplotly(drive.yards.to.goal.fac.single[[2*max.drive.quot+1]]), 
+                           nrows = 1)
+}
+drive.success.play.plotly <-  subplot(subplots, nrows = max.drive.quot + ifelse(max.drive.rem == 0, 0, 1))
+}
+
+# New charts ###################################################################
+
+# * game.chart -----------------------------------------------------------------
+game.chart <- ggplot(game.chart.df, aes(x = Game.play.number, y = Yards.to.goal)) +
+  geom_hline(yintercept = 0, alpha = .2) +
+  geom_vline(xintercept = quarters.end, linetype = c(2,1,2)) +
+  theme(panel.background = element_rect(fill = theme.background.fill),
+        panel.grid.major = element_line(colour = theme.line.color),
+        panel.grid.minor = element_line(colour = theme.line.color.minor)) +
+  # annotate("text", x=quarters.end[1]-.75, y=Yards.max ,label="Q1") +
+  # annotate("text", x=quarters.end[2]-.75, y=Yards.max ,label="Q2") +
+  # annotate("text", x=quarters.end[3]-.75, y=Yards.max ,label="Q3") +
+  geom_line(aes(color = factor(Drive.number)), size = 1) +
+  geom_point(aes(shape = Play.type, color = Success), size = 4) +
+  scale_colour_manual(values = drive_colors.teamO, name = "Success/Drive number") +
+  scale_shape_manual(values = play_shape, breaks = play.type.legend, name="Play type") +
+  scale_x_continuous(breaks = seq(0, last.play, by = 5), minor_breaks = seq(0, last.play, by = 1)) +
+  scale_y_continuous(breaks = seq(0, 110, by = 10), minor_breaks = seq(0, 110, by = 1)) +
+  xlab("Offensive play count including penalties")+
+  ylab("Yards gained (non-cumulative)") +
+  ggtitle(paste0(team, "[",team.score.final,"]: Offense drives"), subtitle = subtitle)
+#game.chart
+
+# * yards.distance.gained.togo -------------------------------------------------
+alpha.togo <- .2
+yards.distance.gained.togo <- ggplot(teamOsucc, aes(x=Distance, y=Yards.gained, col=Down, shape = Play.type)) +
+  geom_abline(intercept = c(0,0,0), slope = c(.5, .7, 1), color = c("darkgreen", "blue", "red")) +
+  geom_vline(xintercept = 10, linetype = 2) +
+  #geom_hline(yintercept = 0, color = negative.color) +
+  theme(panel.background = element_rect(fill = theme.background.fill),
+        panel.grid.major = element_line(colour = theme.line.color)) +
+  annotate("rect", xmin = 0, xmax = 3.5, ymin = -Inf, ymax = Inf, alpha = alpha.togo, fill = "khaki") +
+  annotate("rect", xmin = 3.5, xmax = 6.5, ymin = -Inf, ymax = Inf, alpha = alpha.togo, fill = "lightblue") +
+  annotate("rect", xmin = 6.5, xmax = 9.5, ymin = -Inf, ymax = Inf, alpha = alpha.togo, fill = "lightpink") +
+  annotate("rect", xmin = 9.5, xmax = Inf, ymin = -Inf, ymax = Inf, alpha = alpha.togo, fill = "gold") +
+  geom_jitter(size = 3, width = .2, height = 0) +
+  # annotate("rect", xmin = -Inf, xmax = Inf, ymin = explosive, ymax = Inf, alpha = .2, fill = explosive.color) +
+  # annotate("rect", xmin = -Inf, xmax = Inf, ymin = -Inf, ymax = 0, alpha = .2, fill = negative.color) +
+  scale_color_manual(values = c("1" = "darkgreen",
+                                "2" = "blue",
+                                "3" = "red",
+                                "4" = "red")) +
+  scale_x_continuous(breaks = seq(0, Dist.max, by = 1)) +
+  scale_y_continuous(breaks = seq(Yards.min, Yards.max, by = 5)) +
+  scale_shape_manual(values = play_shape, breaks = play.type.legend, name="Play type") +
+  ggtitle(paste0(team, "[",team.score.final,"]: All 4 downs with $y=.5x$ (G), $y=.7x$ (B), and $y=x$ (R) success rate lines."), subtitle = subtitle)
+#yards.distance.gained.togo
+
+# * success.drive.bar.down -----------------------------------------------------
+success.drive.bar.down <- ggplot(tbl.success.drive.down, aes(x=O.drive.number, Success.rate.down)) +
+  geom_bar(aes(x=O.drive.number, y= Success.rate, fill = Score.drive), stat = "identity") +
+  geom_bar(stat = "identity", aes(fill = Down), position = 'dodge') +
+  scale_fill_manual(values = my_colors_score.down, name = "TD/Down") +
+  scale_x_continuous(breaks = seq(0, tbl.success.drive.down$O.drive.number[length(tbl.success.drive.down$O.drive.number)], by = 1)) +
+  geom_text(aes(x=O.drive.number,y=4*Success.rate, label=Total.drive), vjust=-1) +
+  scale_y_continuous("SR by Down", breaks = seq(0, 1, by = .1), minor_breaks = seq(0,1, by = .025),
+                     sec.axis = sec_axis(~ . * .25, name = "SR by Drive", breaks = seq(0, 1, by = .1))) +
+  theme(panel.background = element_rect(fill = theme.background.fill),
+        panel.grid.major = element_line(colour = theme.line.color),
+        panel.grid.minor = element_line(colour = theme.line.color.minor)) +
+  #expand_limits(y=1) +
+  #xlab("Drive number") +
+  #ylab("Success rate") #+
+#geom_text(aes(x=O.drive.number,y=Success.rate, label=Total), vjust=-1) +
+  ggtitle(paste0(team, "[",team.score.final,"]: Success rate by Drive broken down by Down with success calculated by Down"), subtitle = subtitle) #+
+  #gridExtra::tableGrob(tbl.success.drive %>% mutate(Success.rate = sprintf("%0.3f", Success.rate)) %>% select(-Score.drive), rows=NULL) 
+# success.drive.bar.down
+# ggplotly(success.drive.bar.down)
+
+# * success.drive.bar.down2 ----------------------------------------------------
+success.drive.bar.down2 <- ggplot(tbl.success.drive.down2, aes(x=O.drive.number, Success.rate.down)) +
+  geom_bar(aes(x=O.drive.number, y= Success.rate, fill = Score.drive), stat = "identity") +
+  geom_bar(stat = "identity", aes(fill = Down), position = 'dodge') +
+  scale_fill_manual(values = my_colors_score.down, name = "TD/Down") +
+  scale_x_continuous(breaks = seq(0, tbl.success.drive.down2$O.drive.number[length(tbl.success.drive.down2$O.drive.number)], by = 1)) +
+  geom_text(aes(x=O.drive.number,y=4*Success.rate, label=Total.drive), vjust=-1) +
+  scale_y_continuous("SR by Down", breaks = seq(0, 1, by = .1), minor_breaks = seq(0,1, by = .025)) +
+  theme(panel.background = element_rect(fill = theme.background.fill),
+        panel.grid.major = element_line(colour = theme.line.color),
+        panel.grid.minor = element_line(colour = theme.line.color.minor)) +
+  #expand_limits(y=1) +
+  #xlab("Drive number") +
+  #ylab("Success rate") #+
+  #geom_text(aes(x=O.drive.number,y=Success.rate, label=Total), vjust=-1) +
+  ggtitle(paste0(team, "[",team.score.final,"]: Success rate by Drive broken down by Down with success calculated by drive"), subtitle = subtitle) #+
+#  gridExtra::tableGrob(tbl.success.drive %>% mutate(Success.rate = sprintf("%0.3f", Success.rate)) %>% select(-Score.drive), rows=NULL) 
+# success.drive.bar.down2
+# ggplotly(success.drive.bar.down2)
+
+
+
+#tbl.success.drive.down
+
+#success.drive.down.bar.yards.to.goal.fac <-  (success.drive.bar.notable | success.drive.bar.down | drive.yards.to.goal.fac)
+success.drive.down.bar.yards.to.goal.fac <-  (success.drive.bar.down | drive.yards.to.goal.fac)
+#success.drive.down.bar.yards.to.goal.fac
+
+
+
+
+
+tbl.success.drive.rnded <- tbl.success.drive%>% mutate(Success.rate = sprintf("%0.3f", Success.rate))
+# drive.success.bar <- ggplot(tbl.success.drive.rnded, aes(x=O.drive.number, y=Total)) +
+#   geom_bar(stat = "identity", aes(fill = Score.drive)) +
+#   #geom_bar(stat = "identity", aes(fill = Success.rate)) +
+#   scale_fill_manual(values = my_colors_score, name = "TD") +
+#   scale_x_continuous(breaks = seq(0, tbl.success.drive.rnded$O.drive.number[length(tbl.success.drive.rnded$O.drive.number)], by = 1),
+#                      sec.axis = sec_axis(~ ., 
+#                                          name = "Success Rates", 
+#                                          breaks = seq(1, tbl.success.drive.rnded$O.drive.number[length(tbl.success.drive.rnded$O.drive.number)], by = 1),
+#                                          #labels = SRs
+#                                          labels = map(tbl.success.drive.rnded$Success.rate, toString)
+#                                          )) +
+#   scale_y_continuous(breaks = seq(0, 20, by = 1)) +
+#   theme(panel.background = element_rect(fill = theme.background.fill),
+#         panel.grid.major = element_line(colour = theme.line.color),
+#         panel.grid.minor = element_line(colour = theme.line.color.minor)) +
+#   expand_limits(y=1) +
+#   xlab("Drive number") +
+#   ylab("Number of Plays") +
+#   #geom_text(aes(x=O.drive.number,y=Total/2, label=Success.rate), hjust=-1) +
+#   ggtitle(paste0(team, "[",team.score.final,"]: Plays in Drive with TD drive indicated and SR"), subtitle = subtitle) +  
+#   coord_flip()
+drive.success.bar <- ggplot(tbl.success.drive.rnded, aes(x=O.drive.number, y=Total)) +
+  geom_bar(stat = "identity", aes(fill = Score.drive)) +
+  #geom_bar(stat = "identity", aes(fill = Success.rate)) +
+  scale_fill_manual(values = my_colors_score, name = "TD") +
+  scale_x_continuous(breaks = seq(0, tbl.success.drive.rnded$O.drive.number[length(tbl.success.drive.rnded$O.drive.number)], by = 1)) +
+  scale_y_continuous(breaks = seq(0, 20, by = 1)) +
+  theme(panel.background = element_rect(fill = theme.background.fill),
+        panel.grid.major = element_line(colour = theme.line.color),
+        panel.grid.minor = element_line(colour = theme.line.color.minor)) +
+  expand_limits(y=1) +
+  xlab("Drive number") +
+  ylab("Number of Plays") +
+  geom_text(aes(x=O.drive.number,y=Total/2, label=Success.rate), hjust=-1) +
+  ggtitle(paste0(team, "[",team.score.final,"]: Plays in Drive with TD drive indicated and SR"), subtitle = subtitle) +  
+  coord_flip()
+# drive.success.bar
+# ggplotly(drive.success.bar)
+
+
+#all
+#d1st
+#d2nd
+#d3rd
+#fac
+
+file.prefix <- paste0(team,"-",year,"-",week,"-",opponent)
+
+# Save graphs png ##############################################################
+if(output.png)
+{
+  ggsave(paste0(file.prefix,"-01-success.drive.bar.png"), plot = success.drive.bar, device = "png", units = "px", height = 2500, width = 4700)
+  ggsave(paste0(file.prefix,"-02-drive.fac.png"), plot = drive.fac, device = "png", units = "px", height = 3000, width = 4000)
+  ggsave(paste0(file.prefix,"-03-drive.png"), plot = drive, device = "png", units = "px", height = 3000, width = 4000)
+  ggsave(paste0(file.prefix,"-04-all4.downs.fac.png"), plot = all4.downs.fac, device = "png", units = "px", height = 2500, width = 4000)
+  ggsave(paste0(file.prefix,"-05-all4-downs-fac.noscale.png"), plot = all4.downs.fac.noscale, device = "png", units = "px", height = 2500, width = 4000)
+  ggsave(paste0(file.prefix,"-06-yards.success.gained.png"), plot = yards.success.gained, device = "png", units = "px", height = 3000, width = 4000)
+  ggsave(paste0(file.prefix,"-07-drive.extra.yards.gained.png"), plot = drive.extra.yards.gained, device = "png", units = "px", height = 3000, width = 4000)
+  ggsave(paste0(file.prefix,"-08-drive.yards.to.success.png"), plot = drive.yards.to.success, device = "png", units = "px", height = 3000, width = 4000)
+  ggsave(paste0(file.prefix,"-09-fac.yards.to.success.png"), plot = fac.yards.to.success, device = "png", units = "px", height = 2500, width = 4000)
+  #experimental
+  ggsave(paste0(file.prefix,"-e1-drive.yards.to.goal.fac.png"), plot = drive.yards.to.goal.fac, device = "png", units = "px", height = 3000, width = 4000)
+  ggsave(paste0(file.prefix,"-e2-yards.distance.gained.togo.png"), plot = yards.distance.gained.togo, device = "png", units = "px", height = 3000, width = 4000)
+  ggsave(paste0(file.prefix,"-e3-all4.downs.fac.table.png"), plot = all4.downs.fac.table, device = "png", units = "px", height = 2500, width = 4000)
+  ggsave(paste0(file.prefix,"-e4-all4-downs-fac.noscale.table.png"), plot = all4.downs.fac.noscale.table, device = "png", units = "px", height = 2500, width = 4000)
+  ggsave(paste0(file.prefix,"-e5-drive.success.play.png"), plot = drive.success.play, device = "png", units = "px", height = 4000, width = 3000)
+  ggsave(paste0(file.prefix,"-e6-success.drive.bar.down.png"), plot = success.drive.bar.down, device = "png", units = "px", height = 4000, width = 3000)
+  ggsave(paste0(file.prefix,"-e6-success.drive.bar.down2.png"), plot = success.drive.bar.down2, device = "png", units = "px", height = 4000, width = 3000)
+  ggsave(paste0(file.prefix,"-e7-success.drive.down.bar.yards.to.goal.fac.png"), plot = success.drive.down.bar.yards.to.goal.fac, device = "png", units = "px", height = 4000, width = 8000)
+  ggsave(paste0(file.prefix,"-e8-drive.success.bar.png"), plot = drive.success.bar, device = "png", units = "px", height = 4000, width = 6000)
+  
+  
+  
+  
+  #old
+  # ggsave(paste0(team,"-",year,"-",week,"-all4-downs.png"), plot = all, device = "png", units = "px", height = 3000, width = 2000)
+  # ggsave(paste0(team,"-",year,"-",week,"-1-down.png"), plot = d1st, device = "png", units = "px", height = 3000, width = 2000)
+  # ggsave(paste0(team,"-",year,"-",week,"-2-down.png"), plot = d2nd, device = "png", units = "px", height = 3000, width = 2000)
+  # ggsave(paste0(team,"-",year,"-",week,"-34-down.png"), plot = d3rd, device = "png", units = "px", height = 3000, width = 2000)
+  #ggsave(paste0(file.prefix,"-drive.yards.to.goal.png"), plot = drive.yards.to.goal, device = "png", units = "px", height = 3000, width = 4000)
+  #ggsave(paste0(file.prefix,"-yards.success.gained.downs.png"), plot = yards.success.gained.downs, device = "png", units = "px", height = 2500, width = 4000)
+}
+
+# Plotly JSON output valid plots ###############################################
+if(output.plotly)
+{
+  # output plotly.js files
+  all.graphs = c("success.drive.bar.notable", "drive.fac", "drive", "all4.downs.fac", "all4.downs.fac.noscale", "yards.success.gained", 
+                 "drive.extra.yards.gained", "drive.yards.to.success", "fac.yards.to.success", "drive.yards.to.goal.fac", 
+                 "success.drive.bar.down", "success.drive.bar.down2")
+  index = 1
+  for(gg in all.graphs)
+  {
+    graph <- eval(parse(text = gg))
+    ggplot2plotly_json(graph, paste0(file.prefix,"-",sprintf("%2.2i", index),"-",gg))
+    index <- index+1
+  }
+  ggplot2plotly_json(drive.success.play.plotly, paste0(file.prefix,"-13-","drive.success.play.plotly"))
+}
+
+
+#opponent
+} # } end team loop ------------------------------------------------------------
+
+} # } end season loop ----------------------------------------------------------
+
+
+
+
+
+
+#ggsave(paste0(file.prefix,"-01-success.drive.bar.svg"), plot = success.drive.bar, device = "svg", units = "px", height = 2500, width = 4700)
+
+temp <- ggplotly(success.drive.bar.notable)
+saveWidget(temp, paste0(file.prefix,"-success.drive.bar.notable.html"), selfcontained = F, libdir = "lib")
+
+
+#str(teamOsucc)
+
+
+# Experimental #################################################################
+# * drive.field ----------------------------------------------------------------
+# drive.field <- ggplot(teamO, aes(x = Offense.play.count, y = Yards.from.goal)) +
+#   #annotate("rect", xmin = -Inf, xmax = Inf, ymin = explosive, ymax = Inf, alpha = .2, fill = explosive.color) +
+#   #annotate("rect", xmin = -Inf, xmax = Inf, ymin = -Inf, ymax = 0, alpha = .2, fill = negative.color) +
+#   #geom_hline(yintercept = 0, alpha = .2) +
+#   geom_point(aes(shape = Play.type, color = Success), size = 3) +
+#   geom_line(aes(color = factor(Drive.number))) +
+#   #scale_colour_brewer(palette = "Set1") +
+#   scale_colour_manual(values = my_colors) +
+#   scale_shape_manual(values = c('Rush' = 16, 'Rushing Touchdown' = 10, 'Fumble Recovery (Own)' = 16, 'Pass Reception' = 17, "Punt" = 18,
+#                                 'Pass Incompletion' = 2, 'Sack' = 6, 'Passing Touchdown' = 14, "Field Goal Good" = 12, "Penalty" = 11, "Kickoff" = 18)) +
+#   scale_x_continuous(breaks = seq(0, 110, by = 5)) +
+#   scale_y_continuous(breaks = seq(0, Yards.togo.max, by = 5)) +
+#   ggtitle(paste("Bama offense drives:", week))
+# drive.field
+# ggsave(paste0("Bama-",week,"-drive-field.png"), plot = drive.field, device = "png", units = "px", height = 2000, width = 4000)
+
+# tab <- datatable(teamO)
+# datat
+
+
+
+
+
+
+
+# Shiny ----
+# set.seed(1014)
+# df <- data.frame(x = rnorm(100), y = rnorm(100))
+# ui <- fluidPage(
+#   plotOutput("plot", click = "plot_click", )
+# )
+# server <- function(input, output, session) {
+#   dist <- reactiveVal(rep(1, nrow(df)))
+#   observeEvent(input$plot_click,
+#                dist(nearPoints(df, input$plot_click, allRows = TRUE, addDist = TRUE)$dist_)  
+#   )
+#   
+#   output$plot <- renderPlot({
+#     drive.success.bar
+#     # df$dist <- dist()
+#     # ggplot(df, aes(x, y, size = dist)) + 
+#     #   geom_point() + 
+#     #   scale_size_area(limits = c(0, 1000), max_size = 10, guide = NULL)
+#   }, res = 96)
+# }
+# shinyApp(ui, server)
+# ui
+# server
+
+# Chart.js #####################################################################
+# color.bar.fcn <- function(bool)
+# {
+#   my_colors_score[toString(bool)]
+# }
+# 
+# {
+# setwd(script_dir)
+# fileConn<-file("output.txt")
+# 
+# #const labels = ["Jan", "feb", "Mar", "Apr", "May", "jun", "Jul"];
+# labels.chart.js <-  success.drive.bar.notable$data$O.drive.number
+# labels.chart.js.str <- paste(shQuote(labels.chart.js, type = "cmd"), collapse = ", ")
+# labels.chart.js.str <- paste0("const labels = [", labels.chart.js.str, "];")
+# 
+# #label: 'My First Dataset',
+# label.chart.js <- paste(success.drive.bar.notable$labels$title, success.drive.bar.notable$labels$subtitle)
+# label.chart.js
+# label.chart.js <- paste0("label: '", label.chart.js,"',")
+# 
+# 
+# #data: [65, 59, 80, 81, 56, 55, 40],
+# data.chart.js <- success.drive.bar.notable$data$Success.rate
+# data.chart.js <- round(data.chart.js, digits = 3)
+# data.chart.js <- paste0("data: [", paste(data.chart.js, collapse = ", "), "],")
+# 
+# # backgroundColor: [
+# #   'rgba(255, 99, 132, 0.2)',
+# #   'rgba(255, 159, 64, 0.2)',
+# #   'rgba(255, 205, 86, 0.2)',
+# #   'rgba(75, 192, 192, 0.2)',
+# #   'rgba(54, 162, 235, 0.2)',
+# #   'rgba(153, 102, 255, 0.2)',
+# #   'rgba(201, 203, 207, 0.2)'
+# # ],
+# success.drive.bar.notable$data$Score.drive
+# backgroundColor.chart.js <- unname(unlist(map(success.drive.bar.notable$data$Score.drive, color.bar.fcn)))
+# backgroundColor.chart.js <- paste(shQuote(backgroundColor.chart.js, type = "cmd"), collapse = ", ")
+# backgroundColor.chart.js <- paste0("backgroundColor: [",backgroundColor.chart.js,"],")
+# 
+# writeLines(c(labels.chart.js.str, label.chart.js, data.chart.js, backgroundColor.chart.js), fileConn)
+# close(fileConn)
+# setwd(paste0(script_dir,"\\",year,"\\",team_data))
+# }
+
+
+
+
+
+
+
+

@@ -1,0 +1,796 @@
+{
+  data: [
+    {
+      "x": [-2.7, 78.7],
+      "y": [0, 0],
+      "text": "yintercept: 0",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(0,0,0,0.2)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [36.5, 36.5],
+      "y": [-0.9, 18.9],
+      "text": "xintercept: 36.5",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(0,0,0,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [11.5, 11.5, null, 69.5, 69.5],
+      "y": [-0.9, 18.9, null, -0.9, 18.9],
+      "text": ["xintercept: 11.5", "xintercept: 11.5", null, "xintercept: 69.5", "xintercept: 69.5"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(0,0,0,1)",
+        "dash": "dash"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 2, 3, 4, 5, 6, 7],
+      "y": [5, 2.1, 5, 3.5, 7, 7, 7],
+      "text": ["Offense_play_count:  1<br />Yards_to_success:  5.0<br />factor(O_drive_number): 1", "Offense_play_count:  2<br />Yards_to_success:  2.1<br />factor(O_drive_number): 1", "Offense_play_count:  3<br />Yards_to_success:  5.0<br />factor(O_drive_number): 1", "Offense_play_count:  4<br />Yards_to_success:  3.5<br />factor(O_drive_number): 1", "Offense_play_count:  5<br />Yards_to_success:  7.0<br />factor(O_drive_number): 1", "Offense_play_count:  6<br />Yards_to_success:  7.0<br />factor(O_drive_number): 1", "Offense_play_count:  7<br />Yards_to_success:  7.0<br />factor(O_drive_number): 1"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(244,115,33,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "1",
+      "legendgroup": "1",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [8, 9, 10, 11],
+      "y": [5, 6.3, 8, 2],
+      "text": ["Offense_play_count:  8<br />Yards_to_success:  5.0<br />factor(O_drive_number): 2", "Offense_play_count:  9<br />Yards_to_success:  6.3<br />factor(O_drive_number): 2", "Offense_play_count: 10<br />Yards_to_success:  8.0<br />factor(O_drive_number): 2", "Offense_play_count: 11<br />Yards_to_success:  2.0<br />factor(O_drive_number): 2"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(0,80,48,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(2,1)",
+      "legendgroup": "(2,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [12, 13],
+      "y": [5, 5],
+      "text": ["Offense_play_count: 12<br />Yards_to_success:  5.0<br />factor(O_drive_number): 3", "Offense_play_count: 13<br />Yards_to_success:  5.0<br />factor(O_drive_number): 3"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(244,115,33,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(3,1)",
+      "legendgroup": "(3,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [14, 15, 16, 17],
+      "y": [5, 8.4, 10, 5],
+      "text": ["Offense_play_count: 14<br />Yards_to_success:  5.0<br />factor(O_drive_number): 4", "Offense_play_count: 15<br />Yards_to_success:  8.4<br />factor(O_drive_number): 4", "Offense_play_count: 16<br />Yards_to_success: 10.0<br />factor(O_drive_number): 4", "Offense_play_count: 17<br />Yards_to_success:  5.0<br />factor(O_drive_number): 4"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(0,80,48,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(4,1)",
+      "legendgroup": "(4,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [18, 19, 20, 21, 22, 23],
+      "y": [5, 2.8, 5, 9.8, 18, 12],
+      "text": ["Offense_play_count: 18<br />Yards_to_success:  5.0<br />factor(O_drive_number): 5", "Offense_play_count: 19<br />Yards_to_success:  2.8<br />factor(O_drive_number): 5", "Offense_play_count: 20<br />Yards_to_success:  5.0<br />factor(O_drive_number): 5", "Offense_play_count: 21<br />Yards_to_success:  9.8<br />factor(O_drive_number): 5", "Offense_play_count: 22<br />Yards_to_success: 18.0<br />factor(O_drive_number): 5", "Offense_play_count: 23<br />Yards_to_success: 12.0<br />factor(O_drive_number): 5"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(244,115,33,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(5,1)",
+      "legendgroup": "(5,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36],
+      "y": [5, 0.7, 5, 2.1, 1, 5, 7.5, 10.5, 15, 10, 5, 5, 7],
+      "text": ["Offense_play_count: 24<br />Yards_to_success:  5.0<br />factor(O_drive_number): 6", "Offense_play_count: 25<br />Yards_to_success:  0.7<br />factor(O_drive_number): 6", "Offense_play_count: 26<br />Yards_to_success:  5.0<br />factor(O_drive_number): 6", "Offense_play_count: 27<br />Yards_to_success:  2.1<br />factor(O_drive_number): 6", "Offense_play_count: 28<br />Yards_to_success:  1.0<br />factor(O_drive_number): 6", "Offense_play_count: 29<br />Yards_to_success:  5.0<br />factor(O_drive_number): 6", "Offense_play_count: 30<br />Yards_to_success:  7.5<br />factor(O_drive_number): 6", "Offense_play_count: 31<br />Yards_to_success: 10.5<br />factor(O_drive_number): 6", "Offense_play_count: 32<br />Yards_to_success: 15.0<br />factor(O_drive_number): 6", "Offense_play_count: 33<br />Yards_to_success: 10.0<br />factor(O_drive_number): 6", "Offense_play_count: 34<br />Yards_to_success:  5.0<br />factor(O_drive_number): 6", "Offense_play_count: 35<br />Yards_to_success:  5.0<br />factor(O_drive_number): 6", "Offense_play_count: 36<br />Yards_to_success:  7.0<br />factor(O_drive_number): 6"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(0,80,48,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(6,1)",
+      "legendgroup": "(6,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50],
+      "y": [5, 7.7, 6, 5, 4.9, 7, 5, 5, 4.9, 5, 4, 4.2, 6, 1],
+      "text": ["Offense_play_count: 37<br />Yards_to_success:  5.0<br />factor(O_drive_number): 7", "Offense_play_count: 38<br />Yards_to_success:  7.7<br />factor(O_drive_number): 7", "Offense_play_count: 39<br />Yards_to_success:  6.0<br />factor(O_drive_number): 7", "Offense_play_count: 40<br />Yards_to_success:  5.0<br />factor(O_drive_number): 7", "Offense_play_count: 41<br />Yards_to_success:  4.9<br />factor(O_drive_number): 7", "Offense_play_count: 42<br />Yards_to_success:  7.0<br />factor(O_drive_number): 7", "Offense_play_count: 43<br />Yards_to_success:  5.0<br />factor(O_drive_number): 7", "Offense_play_count: 44<br />Yards_to_success:  5.0<br />factor(O_drive_number): 7", "Offense_play_count: 45<br />Yards_to_success:  4.9<br />factor(O_drive_number): 7", "Offense_play_count: 46<br />Yards_to_success:  5.0<br />factor(O_drive_number): 7", "Offense_play_count: 47<br />Yards_to_success:  4.0<br />factor(O_drive_number): 7", "Offense_play_count: 48<br />Yards_to_success:  4.2<br />factor(O_drive_number): 7", "Offense_play_count: 49<br />Yards_to_success:  6.0<br />factor(O_drive_number): 7", "Offense_play_count: 50<br />Yards_to_success:  1.0<br />factor(O_drive_number): 7"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(244,115,33,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(7,1)",
+      "legendgroup": "(7,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [51, 52],
+      "y": [5, 7],
+      "text": ["Offense_play_count: 51<br />Yards_to_success:  5.0<br />factor(O_drive_number): 8", "Offense_play_count: 52<br />Yards_to_success:  7.0<br />factor(O_drive_number): 8"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(0,80,48,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(8,1)",
+      "legendgroup": "(8,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [53, 54, 55, 56, 57, 58, 59, 60],
+      "y": [5, 2.1, 5, 2.8, 5, 4.2, 6, 5],
+      "text": ["Offense_play_count: 53<br />Yards_to_success:  5.0<br />factor(O_drive_number): 9", "Offense_play_count: 54<br />Yards_to_success:  2.1<br />factor(O_drive_number): 9", "Offense_play_count: 55<br />Yards_to_success:  5.0<br />factor(O_drive_number): 9", "Offense_play_count: 56<br />Yards_to_success:  2.8<br />factor(O_drive_number): 9", "Offense_play_count: 57<br />Yards_to_success:  5.0<br />factor(O_drive_number): 9", "Offense_play_count: 58<br />Yards_to_success:  4.2<br />factor(O_drive_number): 9", "Offense_play_count: 59<br />Yards_to_success:  6.0<br />factor(O_drive_number): 9", "Offense_play_count: 60<br />Yards_to_success:  5.0<br />factor(O_drive_number): 9"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(244,115,33,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(9,1)",
+      "legendgroup": "(9,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [61, 62, 63, 64, 65, 66, 67, 68, 69],
+      "y": [5, 2.1, 1, 5, 4.2, 2.5, 3.5, 5, 11],
+      "text": ["Offense_play_count: 61<br />Yards_to_success:  5.0<br />factor(O_drive_number): 10", "Offense_play_count: 62<br />Yards_to_success:  2.1<br />factor(O_drive_number): 10", "Offense_play_count: 63<br />Yards_to_success:  1.0<br />factor(O_drive_number): 10", "Offense_play_count: 64<br />Yards_to_success:  5.0<br />factor(O_drive_number): 10", "Offense_play_count: 65<br />Yards_to_success:  4.2<br />factor(O_drive_number): 10", "Offense_play_count: 66<br />Yards_to_success:  2.5<br />factor(O_drive_number): 10", "Offense_play_count: 67<br />Yards_to_success:  3.5<br />factor(O_drive_number): 10", "Offense_play_count: 68<br />Yards_to_success:  5.0<br />factor(O_drive_number): 10", "Offense_play_count: 69<br />Yards_to_success: 11.0<br />factor(O_drive_number): 10"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(0,80,48,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(10,1)",
+      "legendgroup": "(10,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [70],
+      "y": [5],
+      "text": "Offense_play_count: 70<br />Yards_to_success:  5.0<br />factor(O_drive_number): 11",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(244,115,33,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(11,1)",
+      "legendgroup": "(11,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [71, 72, 73, 74],
+      "y": [5, 7.7, 11, 11],
+      "text": ["Offense_play_count: 71<br />Yards_to_success:  5.0<br />factor(O_drive_number): 12", "Offense_play_count: 72<br />Yards_to_success:  7.7<br />factor(O_drive_number): 12", "Offense_play_count: 73<br />Yards_to_success: 11.0<br />factor(O_drive_number): 12", "Offense_play_count: 74<br />Yards_to_success: 11.0<br />factor(O_drive_number): 12"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(0,80,48,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(12,1)",
+      "legendgroup": "(12,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [75],
+      "y": [5],
+      "text": "Offense_play_count: 75<br />Yards_to_success:  5.0<br />factor(O_drive_number): 13",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(244,115,33,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(13,1)",
+      "legendgroup": "(13,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [36, 69],
+      "y": [7, 11],
+      "text": ["Offense_play_count: 36<br />Yards_to_success:  7.0<br />Play_type: Field Goal Good<br />Success: Field Goal<br />Play_text: Andres Borregales 37 yd FG GOOD", "Offense_play_count: 69<br />Yards_to_success: 11.0<br />Play_type: Field Goal Good<br />Success: Field Goal<br />Play_text: Andres Borregales 28 yd FG GOOD"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(127,127,127,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "square-cross-open",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(127,127,127,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Field Goal,Field Goal Good)",
+      "legendgroup": "(Field Goal,Field Goal Good)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [4, 29, 34, 56, 65],
+      "y": [3.5, 5, 5, 2.8, 4.2],
+      "text": ["Offense_play_count:  4<br />Yards_to_success:  3.5<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: MIAMI FL Penalty, False Start (Zion Nelson) to the MiaFl 39", "Offense_play_count: 29<br />Yards_to_success:  5.0<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: MIAMI FL Penalty, False Start (-5 Yards) to the MiaFl 40", "Offense_play_count: 34<br />Yards_to_success:  5.0<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: King, D'Eriq pass incomplete to Rambo, Charleston, PENALTY ALABAMA pass interference (Wright, Daniel) 15 yards to the ALABAMA20, NO PLAY, 1ST DOWN MIAMI.", "Offense_play_count: 56<br />Yards_to_success:  2.8<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: King, D'Eriq pass incomplete to Restrepo, Xavier, PENALTY ALABAMA pass interference (Moore, Malachi) 15 yards to the ALABAMA44, NO PLAY, 1ST DOWN MIAMI.", "Offense_play_count: 65<br />Yards_to_success:  4.2<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: King, D'Eriq pass pass intended for Rambo, Charleston intercepted by Wright, Daniel at the ALABAMA0, Wright, Daniel return 0 yards to the ALABAMA0, PENALTY ALABAMA holding (Wright, Daniel) 6 yards to the ALABAMA5, NO PLAY, 1ST DOWN MIAMI."],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(255,0,255,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "hexagram-open",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(255,0,255,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "Penalty",
+      "legendgroup": "Penalty",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [7, 11, 17, 23, 74],
+      "y": [7, 2, 5, 12, 11],
+      "text": ["Offense_play_count:  7<br />Yards_to_success:  7.0<br />Play_type: Punt<br />Success: Punt<br />Play_text: Lou Hedley punt for 38 yds , Slade Bolden returns for 5 yds to the Alab 25", "Offense_play_count: 11<br />Yards_to_success:  2.0<br />Play_type: Punt<br />Success: Punt<br />Play_text: Lou Hedley punt for 47 yds, downed at the Alab 20", "Offense_play_count: 17<br />Yards_to_success:  5.0<br />Play_type: Punt<br />Success: Punt<br />Play_text: Lou Hedley punt for 54 yds , Slade Bolden returns for 10 yds to the Alab 26", "Offense_play_count: 23<br />Yards_to_success: 12.0<br />Play_type: Punt<br />Success: Punt<br />Play_text: Lou Hedley punt for 44 yds, downed at the MIAMI 12 MIAMI FL Penalty, Kick Catching Interference (Gurvan Hall Jr.) to the Alab 27", "Offense_play_count: 74<br />Yards_to_success: 11.0<br />Play_type: Punt<br />Success: Punt<br />Play_text: Lou Hedley punt for 53 yds , Slade Bolden returns for 5 yds to the Alab 32 ALABAMA Penalty, Offensive Holding (10 Yards) to the Alab 22"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(127,127,127,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "diamond",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(127,127,127,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "Punt",
+      "legendgroup": "Punt",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 2, 19, 24, 26, 33, 39, 42, 43, 53, 61],
+      "y": [5, 2.1, 2.8, 5, 5, 10, 6, 7, 5, 5, 5],
+      "text": ["Offense_play_count:  1<br />Yards_to_success:  5.0<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: D'Eriq King pass complete to Charleston Rambo for 7 yds to the MiaFl 32", "Offense_play_count:  2<br />Yards_to_success:  2.1<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: D'Eriq King pass complete to Will Mallory for 7 yds to the MiaFl 39 for a 1ST down", "Offense_play_count: 19<br />Yards_to_success:  2.8<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: D'Eriq King pass complete to Xavier Restrepo for 10 yds to the MiaFl 46 for a 1ST down", "Offense_play_count: 24<br />Yards_to_success:  5.0<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: D'Eriq King pass complete to Charleston Rambo for 9 yds to the MiaFl 29", "Offense_play_count: 26<br />Yards_to_success:  5.0<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: D'Eriq King pass complete to Key'Shawn Smith for 7 yds to the MiaFl 39", "Offense_play_count: 33<br />Yards_to_success: 10.0<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: D'Eriq King pass complete to Key'Shawn Smith for 20 yds to the Alab 35 for a 1ST down", "Offense_play_count: 39<br />Yards_to_success:  6.0<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: D'Eriq King pass complete to Mike Harley for 7 yds to the MiaFl 36 for a 1ST down", "Offense_play_count: 42<br />Yards_to_success:  7.0<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: D'Eriq King pass complete to Mike Harley for 17 yds to the Alab 44 for a 1ST down", "Offense_play_count: 43<br />Yards_to_success:  5.0<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: D'Eriq King pass complete to Xavier Restrepo for 16 yds to the Alab 28 for a 1ST down", "Offense_play_count: 53<br />Yards_to_success:  5.0<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: D'Eriq King pass complete to Charleston Rambo for 7 yds to the MiaFl 32", "Offense_play_count: 61<br />Yards_to_success:  5.0<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: D'Eriq King pass complete to Key'Shawn Smith for 7 yds to the Alab 18"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,100,0,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(0,100,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Successful,Pass Reception)",
+      "legendgroup": "(Successful,Pass Reception)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [60],
+      "y": [5],
+      "text": "Offense_play_count: 60<br />Yards_to_success:  5.0<br />Play_type: Passing Touchdown<br />Success: Successful<br />Play_text: D'Eriq King pass complete to Xavier Restrepo for 29 yds for a TD, (Andres Borregales KICK)",
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,100,0,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "square-open-dot",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(0,100,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Successful,Passing Touchdown)",
+      "legendgroup": "(Successful,Passing Touchdown)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [3, 12, 18, 25, 28, 46, 54, 55, 59, 63, 75],
+      "y": [5, 5, 5, 0.7, 1, 5, 2.1, 5, 6, 1, 5],
+      "text": ["Offense_play_count:  3<br />Yards_to_success:  5.0<br />Play_type: Rush<br />Success: Successful<br />Play_text: Cam'Ron Harris run for 5 yds to the MiaFl 44", "Offense_play_count: 12<br />Yards_to_success:  5.0<br />Play_type: Rush<br />Success: Successful<br />Play_text: D'Eriq King run for 11 yds to the MiaFl 36 for a 1ST down", "Offense_play_count: 18<br />Yards_to_success:  5.0<br />Play_type: Rush<br />Success: Successful<br />Play_text: Donald Chaney Jr. run for 6 yds to the MiaFl 36", "Offense_play_count: 25<br />Yards_to_success:  0.7<br />Play_type: Rush<br />Success: Successful<br />Play_text: Cam'Ron Harris run for 3 yds to the MiaFl 32 for a 1ST down", "Offense_play_count: 28<br />Yards_to_success:  1.0<br />Play_type: Rush<br />Success: Successful<br />Play_text: Cam'Ron Harris run for 4 yds to the MiaFl 45 for a 1ST down", "Offense_play_count: 46<br />Yards_to_success:  5.0<br />Play_type: Rush<br />Success: Successful<br />Play_text: Cam'Ron Harris run for 15 yds to the Alab 8 for a 1ST down", "Offense_play_count: 54<br />Yards_to_success:  2.1<br />Play_type: Rush<br />Success: Successful<br />Play_text: Donald Chaney Jr. run for 3 yds to the MiaFl 35 for a 1ST down", "Offense_play_count: 55<br />Yards_to_success:  5.0<br />Play_type: Rush<br />Success: Successful<br />Play_text: Donald Chaney Jr. run for 6 yds to the MiaFl 41", "Offense_play_count: 59<br />Yards_to_success:  6.0<br />Play_type: Rush<br />Success: Successful<br />Play_text: D'Eriq King run for 11 yds to the Alab 29 for a 1ST down", "Offense_play_count: 63<br />Yards_to_success:  1.0<br />Play_type: Rush<br />Success: Successful<br />Play_text: Donald Chaney Jr. run for 1 yd to the Alab 15 for a 1ST down", "Offense_play_count: 75<br />Yards_to_success:  5.0<br />Play_type: Rush<br />Success: Successful<br />Play_text: Tyler Van Dyke run for 18 yds to the Alab 32 for a 1ST down"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,100,0,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "circle",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(0,100,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Successful,Rush)",
+      "legendgroup": "(Successful,Rush)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [30, 31, 48, 51, 58, 66, 73],
+      "y": [7.5, 10.5, 4.2, 5, 4.2, 2.5, 11],
+      "text": ["Offense_play_count: 30<br />Yards_to_success:  7.5<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: D'Eriq King pass incomplete", "Offense_play_count: 31<br />Yards_to_success: 10.5<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: D'Eriq King pass incomplete to Mike Harley", "Offense_play_count: 48<br />Yards_to_success:  4.2<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: D'Eriq King pass incomplete", "Offense_play_count: 51<br />Yards_to_success:  5.0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: D'Eriq King pass incomplete to Xavier Restrepo", "Offense_play_count: 58<br />Yards_to_success:  4.2<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: D'Eriq King pass incomplete to Key'Shawn Smith", "Offense_play_count: 66<br />Yards_to_success:  2.5<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: D'Eriq King pass incomplete to Charleston Rambo", "Offense_play_count: 73<br />Yards_to_success: 11.0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Tyler Van Dyke pass incomplete to Key'Shawn Smith"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(139,26,26,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "triangle-up-open",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(139,26,26,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Unsuccessful,Pass Incompletion)",
+      "legendgroup": "(Unsuccessful,Pass Incompletion)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [52, 70],
+      "y": [7, 5],
+      "text": ["Offense_play_count: 52<br />Yards_to_success:  7.0<br />Play_type: Pass Interception Return<br />Success: Unsuccessful<br />Play_text: D'Eriq King pass intercepted Malachi Moore return for a loss of 1 yard to the MiaFl 35 ALABAMA Penalty, Illegal Block (10 Yards) to the MiaFl 45", "Offense_play_count: 70<br />Yards_to_success:  5.0<br />Play_type: Pass Interception Return<br />Success: Unsuccessful<br />Play_text: D'Eriq King pass intercepted Jaylen Moody return for 13 yds to the MiaFl 33 ALABAMA Penalty, Illegal Block (15 Yards) to the MiaFl 48"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(139,26,26,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "cross-thin-open",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(139,26,26,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Unsuccessful,Pass Interception Return)",
+      "legendgroup": "(Unsuccessful,Pass Interception Return)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [10, 14, 15, 22, 32, 37, 38, 40, 44, 57, 64],
+      "y": [8, 5, 8.4, 18, 15, 5, 7.7, 5, 5, 5, 5],
+      "text": ["Offense_play_count: 10<br />Yards_to_success:  8.0<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: D'Eriq King pass complete to Key'Shawn Smith for 6 yds to the MiaFl 33", "Offense_play_count: 14<br />Yards_to_success:  5.0<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: D'Eriq King pass complete to Charleston Rambo for a loss of 2 yards to the MiaFl 23", "Offense_play_count: 15<br />Yards_to_success:  8.4<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: D'Eriq King pass complete to Cam'Ron Harris for 2 yds to the MiaFl 25", "Offense_play_count: 22<br />Yards_to_success: 18.0<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: D'Eriq King pass complete to Cam'Ron Harris for 6 yds to the MiaFl 44", "Offense_play_count: 32<br />Yards_to_success: 15.0<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: D'Eriq King pass complete to Charleston Rambo for 5 yds to the MiaFl 45", "Offense_play_count: 37<br />Yards_to_success:  5.0<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: D'Eriq King pass complete to Mike Harley for a loss of 1 yard to the MiaFl 24", "Offense_play_count: 38<br />Yards_to_success:  7.7<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: D'Eriq King pass complete to Will Mallory for 5 yds to the MiaFl 29", "Offense_play_count: 40<br />Yards_to_success:  5.0<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: D'Eriq King pass complete to Charleston Rambo for 3 yds to the MiaFl 39", "Offense_play_count: 44<br />Yards_to_success:  5.0<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: D'Eriq King pass complete to Michael Redding III for 3 yds to the Alab 25", "Offense_play_count: 57<br />Yards_to_success:  5.0<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: D'Eriq King pass complete to Charleston Rambo for 4 yds to the Alab 40", "Offense_play_count: 64<br />Yards_to_success:  5.0<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: D'Eriq King pass complete to Donald Chaney Jr. for 4 yds to the Alab 11"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(139,26,26,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(139,26,26,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Unsuccessful,Pass Reception)",
+      "legendgroup": "(Unsuccessful,Pass Reception)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [5, 6, 8, 9, 16, 27, 35, 41, 45, 47, 49, 50, 62, 67, 71, 72],
+      "y": [7, 7, 5, 6.3, 10, 2.1, 5, 4.9, 4.9, 4, 6, 1, 2.1, 3.5, 5, 7.7],
+      "text": ["Offense_play_count:  5<br />Yards_to_success:  7.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Cam'Ron Harris run for 3 yds to the MiaFl 42", "Offense_play_count:  6<br />Yards_to_success:  7.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Cam'Ron Harris run for no gain to the MiaFl 42", "Offense_play_count:  8<br />Yards_to_success:  5.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Cam'Ron Harris run for 1 yd to the MiaFl 26", "Offense_play_count:  9<br />Yards_to_success:  6.3<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Cam'Ron Harris run for 1 yd to the MiaFl 27", "Offense_play_count: 16<br />Yards_to_success: 10.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: D'Eriq King run for 5 yds to the MiaFl 30", "Offense_play_count: 27<br />Yards_to_success:  2.1<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Cam'Ron Harris run for 2 yds to the MiaFl 41", "Offense_play_count: 35<br />Yards_to_success:  5.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: D'Eriq King run for no gain to the Alab 20", "Offense_play_count: 41<br />Yards_to_success:  4.9<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Cam'Ron Harris run for no gain to the MiaFl 39", "Offense_play_count: 45<br />Yards_to_success:  4.9<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Cam'Ron Harris run for 2 yds to the Alab 23", "Offense_play_count: 47<br />Yards_to_success:  4.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Cam'Ron Harris run for 2 yds to the Alab 6", "Offense_play_count: 49<br />Yards_to_success:  6.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Donald Chaney Jr. run for 5 yds to the Alab 1", "Offense_play_count: 50<br />Yards_to_success:  1.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: D'Eriq King run for no gain to the Alab 1", "Offense_play_count: 62<br />Yards_to_success:  2.1<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Donald Chaney Jr. run for 2 yds to the Alab 16", "Offense_play_count: 67<br />Yards_to_success:  3.5<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Donald Chaney Jr. run for no gain to the Alab 5", "Offense_play_count: 71<br />Yards_to_success:  5.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Tyler Van Dyke run for a loss of 1 yard to the MiaFl 20", "Offense_play_count: 72<br />Yards_to_success:  7.7<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Tyler Van Dyke run for no gain to the MiaFl 20"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(139,26,26,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "circle",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(139,26,26,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Unsuccessful,Rush)",
+      "legendgroup": "(Unsuccessful,Rush)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [13, 20, 21, 68],
+      "y": [5, 5, 9.8, 5],
+      "text": ["Offense_play_count: 13<br />Yards_to_success:  5.0<br />Play_type: Sack<br />Success: Unsuccessful<br />Play_text: D'Eriq King sacked by Christopher Allen for a loss of 3 yards to the MiaFl 33 D'Eriq King fumbled, forced by Christopher Allen, recovered by Alab Phidarian Mathis , return for 0 yards", "Offense_play_count: 20<br />Yards_to_success:  5.0<br />Play_type: Sack<br />Success: Unsuccessful<br />Play_text: D'Eriq King sacked by Christian Harris for a loss of 4 yards to the MiaFl 42", "Offense_play_count: 21<br />Yards_to_success:  9.8<br />Play_type: Sack<br />Success: Unsuccessful<br />Play_text: D'Eriq King sacked by Will Anderson Jr. for a loss of 4 yards to the MiaFl 38", "Offense_play_count: 68<br />Yards_to_success:  5.0<br />Play_type: Sack<br />Success: Unsuccessful<br />Play_text: D'Eriq King sacked by Phidarian Mathis for a loss of 6 yards to the Alab 11"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(139,26,26,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "triangle-down-open",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(139,26,26,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Unsuccessful,Sack)",
+      "legendgroup": "(Unsuccessful,Sack)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    }
+  ],
+  layout: {
+    "margin": {
+      "t": 43.2754946727549,
+      "r": 7.30593607305936,
+      "b": 39.6955859969559,
+      "l": 37.2602739726027
+    },
+    "plot_bgcolor": "rgba(229,229,229,1)",
+    "paper_bgcolor": "rgba(255,255,255,1)",
+    "font": {
+      "color": "rgba(0,0,0,1)",
+      "family": "",
+      "size": 14.6118721461187
+    },
+    "title": {
+      "text": "Miami[13]: Yards to success<br> <sup>2021: wk01 vs Alabama[44]<\/sup>",
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 17.5342465753425
+      },
+      "x": 0,
+      "xref": "paper",
+      "xanchor": "left"
+    },
+    "xaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [-2.7, 78.7],
+      "tickmode": "array",
+      "ticktext": ["0", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55", "60", "65", "70", "75"],
+      "tickvals": [-4.44089209850063e-16, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75],
+      "categoryorder": "array",
+      "categoryarray": ["0", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55", "60", "65", "70", "75"],
+      "nticks": null,
+      "ticks": "outside",
+      "tickcolor": "rgba(51,51,51,1)",
+      "ticklen": 3.65296803652968,
+      "tickwidth": 0.66417600664176,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "tickangle": -0,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": "rgba(204,204,204,1)",
+      "gridwidth": 0.66417600664176,
+      "zeroline": false,
+      "anchor": "y",
+      "title": {
+        "text": "Offensive play count including penalties",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "yaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [-0.9, 18.9],
+      "tickmode": "array",
+      "ticktext": ["0", "5", "10", "15"],
+      "tickvals": [0, 5, 10, 15],
+      "categoryorder": "array",
+      "categoryarray": ["0", "5", "10", "15"],
+      "nticks": null,
+      "ticks": "outside",
+      "tickcolor": "rgba(51,51,51,1)",
+      "ticklen": 3.65296803652968,
+      "tickwidth": 0.66417600664176,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "tickangle": -0,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": "rgba(204,204,204,1)",
+      "gridwidth": 0.66417600664176,
+      "zeroline": false,
+      "anchor": "x",
+      "title": {
+        "text": "Yards needed to be successful",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "shapes": [
+      {
+        "type": "rect",
+        "fillcolor": null,
+        "line": {
+          "color": null,
+          "width": 0,
+          "linetype": []
+        },
+        "yref": "paper",
+        "xref": "paper",
+        "x0": 0,
+        "x1": 1,
+        "y0": 0,
+        "y1": 1
+      }
+    ],
+    "showlegend": true,
+    "legend": {
+      "bgcolor": "rgba(255,255,255,1)",
+      "bordercolor": "transparent",
+      "borderwidth": 1.88976377952756,
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "title": {
+        "text": "Play type<br />Success/Drive number",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      }
+    },
+    "hovermode": "closest",
+    "barmode": "relative"
+  },
+  config: {
+    "doubleClick": "reset",
+    "modeBarButtonsToAdd": ["hoverclosest", "hovercompare"],
+    "showSendToCloud": false
+  },
+  source: "A",
+  attrs: {
+    "4c984aa82f5c": {
+      "yintercept": {},
+      "type": "scatter"
+    },
+    "4c9837597ab9": {
+      "xintercept": {}
+    },
+    "4c9823e062f3": {
+      "x": {},
+      "y": {},
+      "colour": {}
+    },
+    "4c9825e31d58": {
+      "x": {},
+      "y": {},
+      "shape": {},
+      "colour": {}
+    }
+  },
+  cur_data: "4c984aa82f5c",
+  visdat: {
+    "4c984aa82f5c": ["function (y) ", "x"],
+    "4c9837597ab9": ["function (y) ", "x"],
+    "4c9823e062f3": ["function (y) ", "x"],
+    "4c9825e31d58": ["function (y) ", "x"]
+  },
+  highlight: {
+    "on": "plotly_click",
+    "persistent": false,
+    "dynamic": false,
+    "selectize": false,
+    "opacityDim": 0.2,
+    "selected": {
+      "opacity": 1
+    },
+    "debounce": 0
+  },
+  shinyEvents: ["plotly_hover", "plotly_click", "plotly_selected", "plotly_relayout", "plotly_brushed", "plotly_brushing", "plotly_clickannotation", "plotly_doubleclick", "plotly_deselect", "plotly_afterplot", "plotly_sunburstclick"],
+  base_url: "https://plot.ly"
+}
