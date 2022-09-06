@@ -1,0 +1,585 @@
+<p>
+I rewrote all my code in a new language over the summer. 
+I'm sure I have everything as accurate as the old code, but if you notice anything weird let me know. 
+I spent a lot of time working on penalties, but the data source can be pretty bad.
+Looking at the Vandy week 0 game there is 0 (zero) penalties for Vandy despite them committing around 5 penalties.
+So I don't know how useful that work was, lol insert sad face emoji.
+</p>
+
+<p>
+I was playing with Plotly to make interactive graphs, but have no clue how to inbed/link to them given the tools in FanPosts (or really anywhere, lol). 
+I don't know if there is a to view them from GitHub, but here is the html I generated <a href="https://github.com/MCurve7/mcurve7_cfb/blob/main/RBR/Alabama_2022_regular_wk01_Utah%20State.html">https://github.com/MCurve7/mcurve7_cfb/blob/main/RBR/Alabama_2022_regular_wk01_Utah%20State.html</a>.
+Maybe that will be helpful to someone.
+</p>
+
+<p>
+Got the kung-flu over the weekend and about out of energy for this plus I've got to setup my home studio so I can teach online.
+So I have nothing to add this week.
+Feedback is always welcome, though it occurred to me that I didn't save the comments before CoralBeth wiped them out. 
+</p>
+
+<img src=http://a.espncdn.com/i/teamlogos/ncaa/500/333.png alt="Alabama logo" height="300">
+<a href="https://postimg.cc/xq2vJK4M" target="_blank"><img src="https://i.postimg.cc/1RgJdB0C/Alabama-2022-regular-wk01-Utah-State-01-success-drive-bar.png" alt="Alabama-2022-regular-wk01-Utah-State-01-success-drive-bar"/></a><br/><br/>
+<table>
+  <thead>
+    <tr class = "header headerLastRow">
+      <th style = "text-align: left;">Drive number</th>
+      <th style = "text-align: left;">Total</th>
+      <th style = "text-align: left;">Successful</th>
+      <th style = "text-align: left;">Unsuccessful</th>
+      <th style = "text-align: left;">Success rate</th>
+      <th style = "text-align: left;">Scoring drive</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">0.333333</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0.571429</td>
+      <td style = "text-align: left;">true</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">0.666667</td>
+      <td style = "text-align: left;">true</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">11</td>
+      <td style = "text-align: left;">8</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0.727273</td>
+      <td style = "text-align: left;">true</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">0.5</td>
+      <td style = "text-align: left;">true</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">10</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">0.5</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">0.6</td>
+      <td style = "text-align: left;">true</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">8</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">0.666667</td>
+      <td style = "text-align: left;">true</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">9</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">1.0</td>
+      <td style = "text-align: left;">true</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">10</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0.4</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">11</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">0.333333</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">12</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0.4</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">13</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">0.333333</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+<a href="https://postimg.cc/vgdVns3b" target="_blank"><img src="https://i.postimg.cc/50XqZ9zY/Alabama-2022-regular-wk01-Utah-State-02-drive-fac-down.png" alt="Alabama-2022-regular-wk01-Utah-State-02-drive-fac-down"/></a><br/><br/>
+<a href="https://postimg.cc/mtdC5K2y" target="_blank"><img src="https://i.postimg.cc/Cx07zV3X/Alabama-2022-regular-wk01-Utah-State-03-drive.png" alt="Alabama-2022-regular-wk01-Utah-State-03-drive"/></a><br/><br/>
+<a href="https://postimg.cc/2VjnTCm5" target="_blank"><img src="https://i.postimg.cc/gk84z0T3/Alabama-2022-regular-wk01-Utah-State-04-all4-downs-fac.png" alt="Alabama-2022-regular-wk01-Utah-State-04-all4-downs-fac"/></a><br/><br/>
+<a href="https://postimg.cc/BjkDqDF8" target="_blank"><img src="https://i.postimg.cc/zfXkFFXk/Alabama-2022-regular-wk01-Utah-State-05-all4-downs-fac-noscale.png" alt="Alabama-2022-regular-wk01-Utah-State-05-all4-downs-fac-noscale"/></a><br/><br/>
+<table>
+  <thead>
+    <tr class = "header headerLastRow">
+      <th style = "text-align: left;">Down</th>
+      <th style = "text-align: left;">Successful</th>
+      <th style = "text-align: left;">Unsuccessful</th>
+      <th style = "text-align: left;">Total</th>
+      <th style = "text-align: left;">TD/1st</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">23</td>
+      <td style = "text-align: left;">17</td>
+      <td style = "text-align: left;">40</td>
+      <td style = "text-align: left;">16</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">10</td>
+      <td style = "text-align: left;">12</td>
+      <td style = "text-align: left;">22</td>
+      <td style = "text-align: left;">11</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">10</td>
+      <td style = "text-align: left;">6</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">0</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+<a href="https://postimg.cc/fkfxxJGF" target="_blank"><img src="https://i.postimg.cc/8kqtgvt1/Alabama-2022-regular-wk01-Utah-State-06-yards-success-gained.png" alt="Alabama-2022-regular-wk01-Utah-State-06-yards-success-gained"/></a><br/><br/>
+<a href="https://postimg.cc/QB77Vtgf" target="_blank"><img src="https://i.postimg.cc/QM4J4KFZ/Alabama-2022-regular-wk01-Utah-State-07-drive-extra-yards-gained.png" alt="Alabama-2022-regular-wk01-Utah-State-07-drive-extra-yards-gained"/></a><br/><br/>
+<a href="https://postimg.cc/SnJCFVnF" target="_blank"><img src="https://i.postimg.cc/0yCfSBxQ/Alabama-2022-regular-wk01-Utah-State-08-drive-yards-to-success.png" alt="Alabama-2022-regular-wk01-Utah-State-08-drive-yards-to-success"/></a><br/><br/>
+<a href="https://postimg.cc/qhXCX55n" target="_blank"><img src="https://i.postimg.cc/0QhdxgGt/Alabama-2022-regular-wk01-Utah-State-09-fac-yards-to-success.png" alt="Alabama-2022-regular-wk01-Utah-State-09-fac-yards-to-success"/></a><br/><br/>
+<a href="https://postimg.cc/bSyS6975" target="_blank"><img src="https://i.postimg.cc/nr7Khd0n/Alabama-2022-regular-wk01-Utah-State-p01-penalties-bar.png" alt="Alabama-2022-regular-wk01-Utah-State-p01-penalties-bar"/></a><br/><br/>
+<a href="https://postimg.cc/QVh7xjFq" target="_blank"><img src="https://i.postimg.cc/rytNjmc7/Alabama-2022-regular-wk01-Utah-State-p02-penalties-bar-all.png" alt="Alabama-2022-regular-wk01-Utah-State-p02-penalties-bar-all"/></a><br/><br/>
+<table>
+  <thead>
+    <tr class = "header headerLastRow">
+      <th style = "text-align: left;">Penalty_team</th>
+      <th style = "text-align: left;">Penalty_type</th>
+      <th style = "text-align: left;">Penalty_status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Delay Of Game</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">False Start</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">False Start</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Defensive Offside</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Offensive Holding</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Illegal Block</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Utah State</td>
+      <td style = "text-align: left;">Face Mask</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Utah State</td>
+      <td style = "text-align: left;">Defensive Offside</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Utah State</td>
+      <td style = "text-align: left;">Pass Interference</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Utah State</td>
+      <td style = "text-align: left;">Defensive Offside</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Utah State</td>
+      <td style = "text-align: left;">Holding</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Utah State</td>
+      <td style = "text-align: left;">False Start</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Utah State</td>
+      <td style = "text-align: left;">Personal Foul</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Utah State</td>
+      <td style = "text-align: left;">False Start</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Utah State</td>
+      <td style = "text-align: left;">Illegal Block</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Utah State</td>
+      <td style = "text-align: left;">Offensive Holding</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Utah State</td>
+      <td style = "text-align: left;">Horse Collar Tackle</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+<a href="https://postimg.cc/rRjFK6Yn" target="_blank"><img src="https://i.postimg.cc/23Rq9rdD/Alabama-2022-regular-wk01-p03-penalties-line-season.png" alt="Alabama-2022-regular-wk01-p03-penalties-line-season"/></a><br/><br/>
+
+<a href="https://postimg.cc/NLDHKZTv" target="_blank"><img src="https://i.postimg.cc/SNF7vhxR/Alabama-2022-regular-wk01-Utah-State-e01-drive-success-play.png" alt="Alabama-2022-regular-wk01-Utah-State-e01-drive-success-play"/></a><br/><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img src=http://a.espncdn.com/i/teamlogos/ncaa/500/328.png alt="Alabama logo" height="300">
+<a href="https://postimg.cc/tYQm7VYb" target="_blank"><img src="https://i.postimg.cc/SNJ0T64n/Utah-State-2022-regular-wk01-Alabama-01-success-drive-bar.png" alt="Utah-State-2022-regular-wk01-Alabama-01-success-drive-bar"/></a><br/><br/>
+<table>
+  <thead>
+    <tr class = "header headerLastRow">
+      <th style = "text-align: left;">Drive number</th>
+      <th style = "text-align: left;">Total</th>
+      <th style = "text-align: left;">Successful</th>
+      <th style = "text-align: left;">Unsuccessful</th>
+      <th style = "text-align: left;">Success rate</th>
+      <th style = "text-align: left;">Scoring drive</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0.25</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0.0</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">0.0</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">0.333333</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0.0</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">0.333333</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0.0</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">8</td>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">0.0</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">9</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0.0</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">10</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0.0</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">11</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">0.333333</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">12</td>
+      <td style = "text-align: left;">12</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">0.416667</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">13</td>
+      <td style = "text-align: left;">8</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">0.25</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+<a href="https://postimg.cc/nj90hHxM" target="_blank"><img src="https://i.postimg.cc/C1mtJ16C/Utah-State-2022-regular-wk01-Alabama-02-drive-fac-down.png" alt="Utah-State-2022-regular-wk01-Alabama-02-drive-fac-down"/></a><br/><br/>
+<a href="https://postimg.cc/VJ477G4s" target="_blank"><img src="https://i.postimg.cc/KYhd8CMT/Utah-State-2022-regular-wk01-Alabama-03-drive.png" alt="Utah-State-2022-regular-wk01-Alabama-03-drive"/></a><br/><br/>
+<a href="https://postimg.cc/XXyzVgNx" target="_blank"><img src="https://i.postimg.cc/HWSD9SqG/Utah-State-2022-regular-wk01-Alabama-04-all4-downs-fac.png" alt="Utah-State-2022-regular-wk01-Alabama-04-all4-downs-fac"/></a><br/><br/>
+<a href="https://postimg.cc/HJh6mrff" target="_blank"><img src="https://i.postimg.cc/DZ2Hqs5y/Utah-State-2022-regular-wk01-Alabama-05-all4-downs-fac-noscale.png" alt="Utah-State-2022-regular-wk01-Alabama-05-all4-downs-fac-noscale"/></a><br/><br/>
+<table>
+  <thead>
+    <tr class = "header headerLastRow">
+      <th style = "text-align: left;">Down</th>
+      <th style = "text-align: left;">Successful</th>
+      <th style = "text-align: left;">Unsuccessful</th>
+      <th style = "text-align: left;">Total</th>
+      <th style = "text-align: left;">TD/1st</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">15</td>
+      <td style = "text-align: left;">20</td>
+      <td style = "text-align: left;">1</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">15</td>
+      <td style = "text-align: left;">18</td>
+      <td style = "text-align: left;">1</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">14</td>
+      <td style = "text-align: left;">17</td>
+      <td style = "text-align: left;">3</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">2</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+<a href="https://postimg.cc/t1TB83m3" target="_blank"><img src="https://i.postimg.cc/jj6BwvHF/Utah-State-2022-regular-wk01-Alabama-06-yards-success-gained.png" alt="Utah-State-2022-regular-wk01-Alabama-06-yards-success-gained"/></a><br/><br/>
+<a href="https://postimg.cc/mPTXyfY6" target="_blank"><img src="https://i.postimg.cc/nhDyZnCZ/Utah-State-2022-regular-wk01-Alabama-07-drive-extra-yards-gained.png" alt="Utah-State-2022-regular-wk01-Alabama-07-drive-extra-yards-gained"/></a><br/><br/>
+<a href="https://postimg.cc/RN7ptVHH" target="_blank"><img src="https://i.postimg.cc/DyD9tSfB/Utah-State-2022-regular-wk01-Alabama-08-drive-yards-to-success.png" alt="Utah-State-2022-regular-wk01-Alabama-08-drive-yards-to-success"/></a><br/><br/>
+<a href="https://postimg.cc/MXR9kKtF" target="_blank"><img src="https://i.postimg.cc/Y2DZWvFM/Utah-State-2022-regular-wk01-Alabama-09-fac-yards-to-success.png" alt="Utah-State-2022-regular-wk01-Alabama-09-fac-yards-to-success"/></a><br/><br/>
+<a href="https://postimg.cc/dZMn7zQ6" target="_blank"><img src="https://i.postimg.cc/RhhYYBjk/Utah-State-2022-regular-wk01-Alabama-p01-penalties-bar.png" alt="Utah-State-2022-regular-wk01-Alabama-p01-penalties-bar"/></a><br/><br/>
+<a href="https://postimg.cc/q68w2jzT" target="_blank"><img src="https://i.postimg.cc/VvhhQhwd/Utah-State-2022-regular-wk01-Alabama-p02-penalties-bar-all.png" alt="Utah-State-2022-regular-wk01-Alabama-p02-penalties-bar-all"/></a><br/><br/>
+<table>
+  <thead>
+    <tr class = "header headerLastRow">
+      <th style = "text-align: left;">Penalty_team</th>
+      <th style = "text-align: left;">Penalty_type</th>
+      <th style = "text-align: left;">Penalty_status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Delay Of Game</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">False Start</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">False Start</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Defensive Offside</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Offensive Holding</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Illegal Block</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Utah State</td>
+      <td style = "text-align: left;">Face Mask</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Utah State</td>
+      <td style = "text-align: left;">Defensive Offside</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Utah State</td>
+      <td style = "text-align: left;">Pass Interference</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Utah State</td>
+      <td style = "text-align: left;">Defensive Offside</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Utah State</td>
+      <td style = "text-align: left;">Holding</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Utah State</td>
+      <td style = "text-align: left;">False Start</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Utah State</td>
+      <td style = "text-align: left;">Personal Foul</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Utah State</td>
+      <td style = "text-align: left;">False Start</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Utah State</td>
+      <td style = "text-align: left;">Illegal Block</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Utah State</td>
+      <td style = "text-align: left;">Offensive Holding</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Utah State</td>
+      <td style = "text-align: left;">Horse Collar Tackle</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+
+<a href="https://postimg.cc/LnpNmKb6" target="_blank"><img src="https://i.postimg.cc/DyWDd7Qs/Utah-State-2022-regular-wk01-Alabama-e01-drive-success-play.png" alt="Utah-State-2022-regular-wk01-Alabama-e01-drive-success-play"/></a><br/><br/>
+
+
+
+
+
+<hr />
+Data: @CFB_Data or collegefootballdata.com
