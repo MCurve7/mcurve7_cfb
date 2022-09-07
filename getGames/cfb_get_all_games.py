@@ -44,7 +44,7 @@ else:
 #seasontype = "both"
 
 
-csvfile='./teams/teams-fbs-'+str(year_get)+'.csv'
+csvfile='../school_colors/teams-fbs-'+str(year_get)+'.csv'
 with open(csvfile, mode = 'r') as file:
     teams = csv.reader(file)
     

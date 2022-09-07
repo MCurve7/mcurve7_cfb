@@ -43,18 +43,27 @@ api_instance = cfbd.TeamsApi(cfbd.ApiClient(configuration))
 teams = api_instance.get_fbs_teams(year = year_get)
 
 header = ["ID", "School", "Mascot", "Abbreviation", "Alt_name_1", "Alt_name_2", "Alt_name_3", "Classification", "Conference", "Division", "Color", "Alt_color", "Logo1", "Logo2", "Venue_id", "Name", "City", "State", "Zip", "Country_code", "Timezone", "Latitude", "Longitude", "Elevation", "Capacity", "Year_constructed", "Grass", "Dome"]
+header_team = ["School"]
 data = []
+data_team = []
 for t in teams:
     data.append([t.id, t.school, t.mascot, t.abbreviation, t.alt_name_1, t.alt_name_2, t.alt_name_3, t.classification, t.conference, t.division, t.color, t.alt_color, t.logos[0], t.logos[1], t.location['venue_id'], t.location['name'], t.location['city'], t.location['state'], t.location['zip'], t.location['country_code'], t.location['timezone'], 
     t.location['latitude'], t.location['longitude'], t.location['elevation'], t.location['capacity'], t.location['year_constructed'], t.location['grass'], t.location['dome']])
+    data_team.append(t.school)
 
-f = open ("D:/Dropbox/program_project/data/FBS/FBS-teams-"+str(year_get)+'.csv', 'w', newline='')
+f = open ("../school_colors/FBS-info/FBS-teams-"+str(year_get)+'.csv', 'w', newline='')
 writer = csv.writer(f)
 writer.writerow(header)
 writer.writerows(data)
 f.close()
 print(data)    
 
+f = open ("../school_colors/teams-fbs-"+str(year_get)+'.csv', 'w', newline='')
+writer = csv.writer(f)
+writer.writerow(header_team)
+writer.writerows(data_team)
+f.close()
+print(data_team)
 
 '''
 id	integer
