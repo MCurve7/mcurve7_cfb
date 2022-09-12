@@ -1,0 +1,830 @@
+{
+  data: [
+    {
+      "x": [null, null, null, null, null],
+      "y": [15, null, null, 15, 15],
+      "text": "",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "transparent",
+        "dash": "solid"
+      },
+      "fill": "toself",
+      "fillcolor": "rgba(255,48,48,0.2)",
+      "hoveron": "fills",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [null, null, null, null, null],
+      "y": [null, 0, 0, null, null],
+      "text": "",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "transparent",
+        "dash": "solid"
+      },
+      "fill": "toself",
+      "fillcolor": "rgba(153,153,153,0.2)",
+      "hoveron": "fills",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [-3.3, 91.3],
+      "y": [0, 0],
+      "text": "yintercept: 0",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(0,0,0,0.2)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [47.5, 47.5],
+      "y": [-24.2, 46.2],
+      "text": "xintercept: 47.5",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(0,0,0,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [22.5, 22.5, null, 70.5, 70.5],
+      "y": [-24.2, 46.2, null, -24.2, 46.2],
+      "text": ["xintercept: 22.5", "xintercept: 22.5", null, "xintercept: 70.5", "xintercept: 70.5"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(0,0,0,1)",
+        "dash": "dash"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
+      "y": [3, 3, -12, 14, 0, -4, 0, 3, -5, 1, 2, 9, -4, -6, -8, 18],
+      "text": ["Offense_play_count:  1<br />Extra_yards_gained:   3<br />factor(O_drive_number): 1", "Offense_play_count:  2<br />Extra_yards_gained:   3<br />factor(O_drive_number): 1", "Offense_play_count:  3<br />Extra_yards_gained: -12<br />factor(O_drive_number): 1", "Offense_play_count:  4<br />Extra_yards_gained:  14<br />factor(O_drive_number): 1", "Offense_play_count:  5<br />Extra_yards_gained:   0<br />factor(O_drive_number): 1", "Offense_play_count:  6<br />Extra_yards_gained:  -4<br />factor(O_drive_number): 1", "Offense_play_count:  7<br />Extra_yards_gained:   0<br />factor(O_drive_number): 1", "Offense_play_count:  8<br />Extra_yards_gained:   3<br />factor(O_drive_number): 1", "Offense_play_count:  9<br />Extra_yards_gained:  -5<br />factor(O_drive_number): 1", "Offense_play_count: 10<br />Extra_yards_gained:   1<br />factor(O_drive_number): 1", "Offense_play_count: 11<br />Extra_yards_gained:   2<br />factor(O_drive_number): 1", "Offense_play_count: 12<br />Extra_yards_gained:   9<br />factor(O_drive_number): 1", "Offense_play_count: 13<br />Extra_yards_gained:  -4<br />factor(O_drive_number): 1", "Offense_play_count: 14<br />Extra_yards_gained:  -6<br />factor(O_drive_number): 1", "Offense_play_count: 15<br />Extra_yards_gained:  -8<br />factor(O_drive_number): 1", "Offense_play_count: 16<br />Extra_yards_gained:  18<br />factor(O_drive_number): 1"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 3.77952755905512,
+        "color": "rgba(191,87,0,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "1",
+      "legendgroup": "1",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [17, 18, 19, 20, 21, 22, 23],
+      "y": [-3, 1, 16, 43, 0, 0, 0],
+      "text": ["Offense_play_count: 17<br />Extra_yards_gained:  -3<br />factor(O_drive_number): 2", "Offense_play_count: 18<br />Extra_yards_gained:   1<br />factor(O_drive_number): 2", "Offense_play_count: 19<br />Extra_yards_gained:  16<br />factor(O_drive_number): 2", "Offense_play_count: 20<br />Extra_yards_gained:  43<br />factor(O_drive_number): 2", "Offense_play_count: 21<br />Extra_yards_gained:   0<br />factor(O_drive_number): 2", "Offense_play_count: 22<br />Extra_yards_gained:   0<br />factor(O_drive_number): 2", "Offense_play_count: 23<br />Extra_yards_gained:   0<br />factor(O_drive_number): 2"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 3.77952755905512,
+        "color": "rgba(51,63,72,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(2,1)",
+      "legendgroup": "(2,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [24, 25, 26, 27, 28, 29, 30, 31],
+      "y": [-10, 0, 3, -7, -10, -13, -18, -18],
+      "text": ["Offense_play_count: 24<br />Extra_yards_gained: -10<br />factor(O_drive_number): 3", "Offense_play_count: 25<br />Extra_yards_gained:   0<br />factor(O_drive_number): 3", "Offense_play_count: 26<br />Extra_yards_gained:   3<br />factor(O_drive_number): 3", "Offense_play_count: 27<br />Extra_yards_gained:  -7<br />factor(O_drive_number): 3", "Offense_play_count: 28<br />Extra_yards_gained: -10<br />factor(O_drive_number): 3", "Offense_play_count: 29<br />Extra_yards_gained: -13<br />factor(O_drive_number): 3", "Offense_play_count: 30<br />Extra_yards_gained: -18<br />factor(O_drive_number): 3", "Offense_play_count: 31<br />Extra_yards_gained: -18<br />factor(O_drive_number): 3"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 3.77952755905512,
+        "color": "rgba(191,87,0,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(3,1)",
+      "legendgroup": "(3,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [32, 33, 34, 35, 36],
+      "y": [10, -5, -6, -21, -21],
+      "text": ["Offense_play_count: 32<br />Extra_yards_gained:  10<br />factor(O_drive_number): 4", "Offense_play_count: 33<br />Extra_yards_gained:  -5<br />factor(O_drive_number): 4", "Offense_play_count: 34<br />Extra_yards_gained:  -6<br />factor(O_drive_number): 4", "Offense_play_count: 35<br />Extra_yards_gained: -21<br />factor(O_drive_number): 4", "Offense_play_count: 36<br />Extra_yards_gained: -21<br />factor(O_drive_number): 4"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 3.77952755905512,
+        "color": "rgba(51,63,72,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(4,1)",
+      "legendgroup": "(4,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47],
+      "y": [0, 2, -2, 13, -10, 34, -4, -2, 8, -1, 19],
+      "text": ["Offense_play_count: 37<br />Extra_yards_gained:   0<br />factor(O_drive_number): 5", "Offense_play_count: 38<br />Extra_yards_gained:   2<br />factor(O_drive_number): 5", "Offense_play_count: 39<br />Extra_yards_gained:  -2<br />factor(O_drive_number): 5", "Offense_play_count: 40<br />Extra_yards_gained:  13<br />factor(O_drive_number): 5", "Offense_play_count: 41<br />Extra_yards_gained: -10<br />factor(O_drive_number): 5", "Offense_play_count: 42<br />Extra_yards_gained:  34<br />factor(O_drive_number): 5", "Offense_play_count: 43<br />Extra_yards_gained:  -4<br />factor(O_drive_number): 5", "Offense_play_count: 44<br />Extra_yards_gained:  -2<br />factor(O_drive_number): 5", "Offense_play_count: 45<br />Extra_yards_gained:   8<br />factor(O_drive_number): 5", "Offense_play_count: 46<br />Extra_yards_gained:  -1<br />factor(O_drive_number): 5", "Offense_play_count: 47<br />Extra_yards_gained:  19<br />factor(O_drive_number): 5"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 3.77952755905512,
+        "color": "rgba(191,87,0,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(5,1)",
+      "legendgroup": "(5,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [48, 49, 50, 51],
+      "y": [-9, -10, -7, -7],
+      "text": ["Offense_play_count: 48<br />Extra_yards_gained:  -9<br />factor(O_drive_number): 6", "Offense_play_count: 49<br />Extra_yards_gained: -10<br />factor(O_drive_number): 6", "Offense_play_count: 50<br />Extra_yards_gained:  -7<br />factor(O_drive_number): 6", "Offense_play_count: 51<br />Extra_yards_gained:  -7<br />factor(O_drive_number): 6"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 3.77952755905512,
+        "color": "rgba(51,63,72,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(6,1)",
+      "legendgroup": "(6,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [52, 53, 54, 55],
+      "y": [-5, -2, -5, -5],
+      "text": ["Offense_play_count: 52<br />Extra_yards_gained:  -5<br />factor(O_drive_number): 7", "Offense_play_count: 53<br />Extra_yards_gained:  -2<br />factor(O_drive_number): 7", "Offense_play_count: 54<br />Extra_yards_gained:  -5<br />factor(O_drive_number): 7", "Offense_play_count: 55<br />Extra_yards_gained:  -5<br />factor(O_drive_number): 7"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 3.77952755905512,
+        "color": "rgba(191,87,0,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(7,1)",
+      "legendgroup": "(7,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [56, 57, 58, 59, 60, 61],
+      "y": [1, 7, -1, 0, -2, 31],
+      "text": ["Offense_play_count: 56<br />Extra_yards_gained:   1<br />factor(O_drive_number): 8", "Offense_play_count: 57<br />Extra_yards_gained:   7<br />factor(O_drive_number): 8", "Offense_play_count: 58<br />Extra_yards_gained:  -1<br />factor(O_drive_number): 8", "Offense_play_count: 59<br />Extra_yards_gained:   0<br />factor(O_drive_number): 8", "Offense_play_count: 60<br />Extra_yards_gained:  -2<br />factor(O_drive_number): 8", "Offense_play_count: 61<br />Extra_yards_gained:  31<br />factor(O_drive_number): 8"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 3.77952755905512,
+        "color": "rgba(51,63,72,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(8,1)",
+      "legendgroup": "(8,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74],
+      "y": [8, -14, 7, -2, 0, 0, 0, -2, 16, 0, -4, -4, 20],
+      "text": ["Offense_play_count: 62<br />Extra_yards_gained:   8<br />factor(O_drive_number): 9", "Offense_play_count: 63<br />Extra_yards_gained: -14<br />factor(O_drive_number): 9", "Offense_play_count: 64<br />Extra_yards_gained:   7<br />factor(O_drive_number): 9", "Offense_play_count: 65<br />Extra_yards_gained:  -2<br />factor(O_drive_number): 9", "Offense_play_count: 66<br />Extra_yards_gained:   0<br />factor(O_drive_number): 9", "Offense_play_count: 67<br />Extra_yards_gained:   0<br />factor(O_drive_number): 9", "Offense_play_count: 68<br />Extra_yards_gained:   0<br />factor(O_drive_number): 9", "Offense_play_count: 69<br />Extra_yards_gained:  -2<br />factor(O_drive_number): 9", "Offense_play_count: 70<br />Extra_yards_gained:  16<br />factor(O_drive_number): 9", "Offense_play_count: 71<br />Extra_yards_gained:   0<br />factor(O_drive_number): 9", "Offense_play_count: 72<br />Extra_yards_gained:  -4<br />factor(O_drive_number): 9", "Offense_play_count: 73<br />Extra_yards_gained:  -4<br />factor(O_drive_number): 9", "Offense_play_count: 74<br />Extra_yards_gained:  20<br />factor(O_drive_number): 9"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 3.77952755905512,
+        "color": "rgba(191,87,0,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(9,1)",
+      "legendgroup": "(9,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [75, 76, 77, 78],
+      "y": [-5, -6, -9, -13],
+      "text": ["Offense_play_count: 75<br />Extra_yards_gained:  -5<br />factor(O_drive_number): 10", "Offense_play_count: 76<br />Extra_yards_gained:  -6<br />factor(O_drive_number): 10", "Offense_play_count: 77<br />Extra_yards_gained:  -9<br />factor(O_drive_number): 10", "Offense_play_count: 78<br />Extra_yards_gained: -13<br />factor(O_drive_number): 10"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 3.77952755905512,
+        "color": "rgba(51,63,72,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(10,1)",
+      "legendgroup": "(10,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [79, 80, 81, 82, 83, 84, 85, 86],
+      "y": [-4, 5, -2, 24, 1, -2, -10, 39],
+      "text": ["Offense_play_count: 79<br />Extra_yards_gained:  -4<br />factor(O_drive_number): 11", "Offense_play_count: 80<br />Extra_yards_gained:   5<br />factor(O_drive_number): 11", "Offense_play_count: 81<br />Extra_yards_gained:  -2<br />factor(O_drive_number): 11", "Offense_play_count: 82<br />Extra_yards_gained:  24<br />factor(O_drive_number): 11", "Offense_play_count: 83<br />Extra_yards_gained:   1<br />factor(O_drive_number): 11", "Offense_play_count: 84<br />Extra_yards_gained:  -2<br />factor(O_drive_number): 11", "Offense_play_count: 85<br />Extra_yards_gained: -10<br />factor(O_drive_number): 11", "Offense_play_count: 86<br />Extra_yards_gained:  39<br />factor(O_drive_number): 11"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 3.77952755905512,
+        "color": "rgba(191,87,0,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(11,1)",
+      "legendgroup": "(11,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [87],
+      "y": [25],
+      "text": "Offense_play_count: 87<br />Extra_yards_gained:  25<br />factor(O_drive_number): 12",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 3.77952755905512,
+        "color": "rgba(51,63,72,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(12,1)",
+      "legendgroup": "(12,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [16, 61, 74, 86],
+      "y": [18, 31, 20, 39],
+      "text": ["Offense_play_count: 16<br />Extra_yards_gained:  18<br />Play_type: Field Goal Good<br />Success: Field Goal<br />Play_text: Bert Auburn 26 Yd Field Goal ", "Offense_play_count: 61<br />Extra_yards_gained:  31<br />Play_type: Field Goal Good<br />Success: Field Goal<br />Play_text: Bert Auburn 33 Yd Field Goal ", "Offense_play_count: 74<br />Extra_yards_gained:  20<br />Play_type: Field Goal Good<br />Success: Field Goal<br />Play_text: Bert Auburn 24 Yd Field Goal ", "Offense_play_count: 86<br />Extra_yards_gained:  39<br />Play_type: Field Goal Good<br />Success: Field Goal<br />Play_text: Bert Auburn 49 yd FG GOOD"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(127,127,127,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "square-cross-open",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(127,127,127,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Field Goal,Field Goal Good)",
+      "legendgroup": "(Field Goal,Field Goal Good)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [47],
+      "y": [19],
+      "text": "Offense_play_count: 47<br />Extra_yards_gained:  19<br />Play_type: Field Goal Missed<br />Success: Field Goal<br />Play_text: Bert Auburn 20 yd FG MISSED",
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(127,127,127,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "127",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(127,127,127,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Field Goal,Field Goal Missed)",
+      "legendgroup": "(Field Goal,Field Goal Missed)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [5, 8, 21, 24, 30, 38, 41, 44, 45, 68],
+      "y": [0, 3, 0, -10, -18, 2, -10, -2, 8, 0],
+      "text": ["Offense_play_count:  5<br />Extra_yards_gained:   0<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: ALABAMA Penalty, Defensive Offside (5 Yards) to the Alab 43", "Offense_play_count:  8<br />Extra_yards_gained:   3<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: ALABAMA Penalty, Defensive Offside (5 Yards) to the Alab 35 for a 1ST down", "Offense_play_count: 21<br />Extra_yards_gained:   0<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: Ewers, Quinn pass incomplete, PENALTY ALABAMA roughing passer (Turner, Dallas) 0 yards to the ALABAMA1, NO PLAY, 1ST DOWN TEXAS.", "Offense_play_count: 24<br />Extra_yards_gained: -10<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: Robinson, Bijan rush for 4 yards to the TEXAS19, PENALTY TEXAS illegal formation 5 yards to the TEXAS10, NO PLAY.", "Offense_play_count: 30<br />Extra_yards_gained: -18<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: TEXAS Penalty, False Start (-5 Yards) to the Texas 18", "Offense_play_count: 38<br />Extra_yards_gained:   2<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: ALABAMA Penalty, Defensive Offside (Will Anderson Jr.) to the Texas 22 for a 1ST down", "Offense_play_count: 41<br />Extra_yards_gained: -10<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: TEXAS Penalty, False Start (Cole Hutson) to the Texas 38", "Offense_play_count: 44<br />Extra_yards_gained:  -2<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: Card, Hudson pass incomplete to Cain, Casey, PENALTY ALABAMA pass interference (McKinstry, Kool-Aid) 4 yards to the ALABAMA15, NO PLAY, 1ST DOWN TEXAS.", "Offense_play_count: 45<br />Extra_yards_gained:   8<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: Card, Hudson pass incomplete to Sanders, Ja'Tavion, PENALTY ALABAMA pass interference (McKinstry, Kool-Aid) 13 yards to the ALABAMA2, NO PLAY, 1ST DOWN TEXAS.", "Offense_play_count: 68<br />Extra_yards_gained:   0<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: Card, Hudson pass incomplete to Robinson, Bijan, PENALTY ALABAMA offside 5 yards to the ALABAMA32, NO PLAY."],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(255,0,255,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "hexagram-open",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(255,0,255,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "Penalty",
+      "legendgroup": "Penalty",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [31, 36, 51, 55, 78],
+      "y": [-18, -21, -7, -5, -13],
+      "text": ["Offense_play_count: 31<br />Extra_yards_gained: -18<br />Play_type: Punt<br />Success: Punt<br />Play_text: Daniel Trejo punt for 37 yds , Kool-Aid McKinstry returns for no gain to the Alab 45", "Offense_play_count: 36<br />Extra_yards_gained: -21<br />Play_type: Punt<br />Success: Punt<br />Play_text: Daniel Trejo punt for 36 yds, fair catch by Kool-Aid McKinstry at the Alab 45", "Offense_play_count: 51<br />Extra_yards_gained:  -7<br />Play_type: Punt<br />Success: Punt<br />Play_text: Daniel Trejo punt for 61 yds, downed at the Alab 21", "Offense_play_count: 55<br />Extra_yards_gained:  -5<br />Play_type: Punt<br />Success: Punt<br />Play_text: Daniel Trejo punt for 50 yds, downed at the Alab 1", "Offense_play_count: 78<br />Extra_yards_gained: -13<br />Play_type: Punt<br />Success: Punt<br />Play_text: Daniel Trejo punt for 48 yds , Kool-Aid McKinstry returns for a loss of 4 yards to the Alab 22"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(127,127,127,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "diamond",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(127,127,127,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "Punt",
+      "legendgroup": "Punt",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 4, 10, 11, 12, 18, 19, 20, 32, 42, 56, 57, 62, 70, 71, 80, 82, 87],
+      "y": [3, 14, 1, 2, 9, 1, 16, 43, 10, 34, 1, 7, 8, 16, 0, 5, 24, 25],
+      "text": ["Offense_play_count:  1<br />Extra_yards_gained:   3<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Quinn Ewers pass complete to Ja'Tavion Sanders for 8 yds to the Texas 33", "Offense_play_count:  4<br />Extra_yards_gained:  14<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Quinn Ewers pass complete to Xavier Worthy for 22 yds to the Alab 48 for a 1ST down", "Offense_play_count: 10<br />Extra_yards_gained:   1<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Quinn Ewers pass complete to Jordan Whittington for 8 yds to the Alab 27", "Offense_play_count: 11<br />Extra_yards_gained:   2<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Quinn Ewers pass complete to Jordan Whittington for 4 yds to the Alab 23 for a 1ST down", "Offense_play_count: 12<br />Extra_yards_gained:   9<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Quinn Ewers pass complete to Jordan Whittington for 14 yds to the Alab 9 for a 1ST down", "Offense_play_count: 18<br />Extra_yards_gained:   1<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Quinn Ewers pass complete to Jordan Whittington for 7 yds to the Texas 34", "Offense_play_count: 19<br />Extra_yards_gained:  16<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Quinn Ewers pass complete to Jordan Whittington for 17 yds to the Alab 49 for a 1ST down", "Offense_play_count: 20<br />Extra_yards_gained:  43<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Quinn Ewers pass complete to Xavier Worthy for 46 yds to the Alab 3 for a 1ST down ALABAMA Penalty, Personal Foul (Khyree Jackson) to the Alab 1 for a 1ST down", "Offense_play_count: 32<br />Extra_yards_gained:  10<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Hudson Card pass complete to Xavier Worthy for 15 yds to the Texas 30 for a 1ST down", "Offense_play_count: 42<br />Extra_yards_gained:  34<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Hudson Card pass complete to Bijan Robinson for 42 yds to the Alab 20 for a 1ST down", "Offense_play_count: 56<br />Extra_yards_gained:   1<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Hudson Card pass complete to Xavier Worthy for 6 yds to the Alab 33", "Offense_play_count: 57<br />Extra_yards_gained:   7<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Hudson Card pass complete to Ja'Tavion Sanders for a loss of 5 yards to the Alab 38 for a 1ST down ALABAMA Penalty, Personal Foul (Will Anderson Jr.) to the Alab 23 for a 1ST down", "Offense_play_count: 62<br />Extra_yards_gained:   8<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Hudson Card pass complete to Jordan Whittington for 13 yds to the Texas 42 for a 1ST down", "Offense_play_count: 70<br />Extra_yards_gained:  16<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Hudson Card pass complete to Xavier Worthy for 8 yds to the Alab 24 for a 1ST down ALABAMA Penalty, Personal Foul (12 Yards) to the Alab 12 for a 1ST down", "Offense_play_count: 71<br />Extra_yards_gained:   0<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Hudson Card pass complete to Keilan Robinson for 5 yds to the Alab 7", "Offense_play_count: 80<br />Extra_yards_gained:   5<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Hudson Card pass complete to Roschon Johnson for 11 yds to the Texas 37 for a 1ST down", "Offense_play_count: 82<br />Extra_yards_gained:  24<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Hudson Card pass complete to Casey Cain for 29 yds to the Alab 31 for a 1ST down", "Offense_play_count: 87<br />Extra_yards_gained:  25<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Hudson Card pass complete to Bijan Robinson for 30 yds to the Alab 46 for a 1ST down"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,100,0,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(0,100,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Successful,Pass Reception)",
+      "legendgroup": "(Successful,Pass Reception)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2, 7, 26, 37, 40, 64, 66, 67, 83],
+      "y": [3, 0, 3, 0, 13, 7, 0, 0, 1],
+      "text": ["Offense_play_count:  2<br />Extra_yards_gained:   3<br />Play_type: Rush<br />Success: Successful<br />Play_text: Bijan Robinson run for 4 yds to the Texas 37 for a 1ST down", "Offense_play_count:  7<br />Extra_yards_gained:   0<br />Play_type: Rush<br />Success: Successful<br />Play_text: Bijan Robinson run for 5 yds to the Alab 40", "Offense_play_count: 26<br />Extra_yards_gained:   3<br />Play_type: Rush<br />Success: Successful<br />Play_text: Hudson Card run for 9 yds to the Texas 26 for a 1ST down", "Offense_play_count: 37<br />Extra_yards_gained:   0<br />Play_type: Rush<br />Success: Successful<br />Play_text: Bijan Robinson run for 5 yds to the Texas 17", "Offense_play_count: 40<br />Extra_yards_gained:  13<br />Play_type: Rush<br />Success: Successful<br />Play_text: Bijan Robinson run for 18 yds to the Texas 43 for a 1ST down", "Offense_play_count: 64<br />Extra_yards_gained:   7<br />Play_type: Rush<br />Success: Successful<br />Play_text: Hudson Card run for 20 yds to the Alab 47 for a 1ST down", "Offense_play_count: 66<br />Extra_yards_gained:   0<br />Play_type: Rush<br />Success: Successful<br />Play_text: Bijan Robinson run for 5 yds to the Alab 39", "Offense_play_count: 67<br />Extra_yards_gained:   0<br />Play_type: Rush<br />Success: Successful<br />Play_text: Bijan Robinson run for 2 yds to the Alab 37 for a 1ST down", "Offense_play_count: 83<br />Extra_yards_gained:   1<br />Play_type: Rush<br />Success: Successful<br />Play_text: Roschon Johnson run for 6 yds to the Alab 25"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,100,0,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "circle",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(0,100,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Successful,Rush)",
+      "legendgroup": "(Successful,Rush)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [23],
+      "y": [0],
+      "text": "Offense_play_count: 23<br />Extra_yards_gained:   0<br />Play_type: Rushing Touchdown<br />Success: Successful<br />Play_text: Bijan Robinson 1 Yd Run (Bert Auburn Kick)",
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,100,0,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "circle-cross-open",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(0,100,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Successful,Rushing Touchdown)",
+      "legendgroup": "(Successful,Rushing Touchdown)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [9, 14, 15, 33, 46, 49, 52, 54, 69, 75, 77],
+      "y": [-5, -6, -8, -5, -1, -10, -5, -5, -2, -5, -9],
+      "text": ["Offense_play_count:  9<br />Extra_yards_gained:  -5<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Quinn Ewers pass incomplete to Austin Jordan", "Offense_play_count: 14<br />Extra_yards_gained:  -6<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Quinn Ewers pass incomplete to Ja'Tavion Sanders", "Offense_play_count: 15<br />Extra_yards_gained:  -8<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Quinn Ewers pass incomplete to Ja'Tavion Sanders", "Offense_play_count: 33<br />Extra_yards_gained:  -5<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Hudson Card pass incomplete to Xavier Worthy", "Offense_play_count: 46<br />Extra_yards_gained:  -1<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Hudson Card pass incomplete to Xavier Worthy", "Offense_play_count: 49<br />Extra_yards_gained: -10<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Hudson Card pass incomplete to Bijan Robinson", "Offense_play_count: 52<br />Extra_yards_gained:  -5<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Hudson Card pass incomplete to Jordan Whittington", "Offense_play_count: 54<br />Extra_yards_gained:  -5<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Hudson Card pass incomplete to Jordan Whittington", "Offense_play_count: 69<br />Extra_yards_gained:  -2<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Hudson Card pass incomplete", "Offense_play_count: 75<br />Extra_yards_gained:  -5<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Hudson Card pass incomplete", "Offense_play_count: 77<br />Extra_yards_gained:  -9<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Hudson Card pass incomplete"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(139,26,26,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "triangle-up-open",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(139,26,26,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Unsuccessful,Pass Incompletion)",
+      "legendgroup": "(Unsuccessful,Pass Incompletion)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [3, 29, 43, 73, 76],
+      "y": [-12, -13, -4, -4, -6],
+      "text": ["Offense_play_count:  3<br />Extra_yards_gained: -12<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Quinn Ewers pass complete to Roschon Johnson for 8 yds to the Texas 45 TEXAS Penalty, Personal Foul (-15 Yards) to the Texas 30", "Offense_play_count: 29<br />Extra_yards_gained: -13<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Hudson Card pass complete to Roschon Johnson for 1 yd to the Texas 23", "Offense_play_count: 43<br />Extra_yards_gained:  -4<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Hudson Card pass complete to Ja'Tavion Sanders for 1 yd to the Alab 19", "Offense_play_count: 73<br />Extra_yards_gained:  -4<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Hudson Card pass complete to Bijan Robinson for 1 yd to the Alab 6", "Offense_play_count: 76<br />Extra_yards_gained:  -6<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Hudson Card pass complete to Jordan Whittington for 1 yd to the Texas 26"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(139,26,26,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(139,26,26,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Unsuccessful,Pass Reception)",
+      "legendgroup": "(Unsuccessful,Pass Reception)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [6, 13, 17, 22, 25, 27, 28, 34, 39, 48, 50, 53, 58, 59, 60, 65, 72, 79, 81, 84],
+      "y": [-4, -4, -3, 0, 0, -7, -10, -6, -2, -9, -7, -2, -1, 0, -2, -2, -4, -4, -2, -2],
+      "text": ["Offense_play_count:  6<br />Extra_yards_gained:  -4<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Bijan Robinson run for a loss of 2 yards to the Alab 45", "Offense_play_count: 13<br />Extra_yards_gained:  -4<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Bijan Robinson run for 1 yd to the Alab 8", "Offense_play_count: 17<br />Extra_yards_gained:  -3<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Bijan Robinson run for 2 yds to the Texas 27", "Offense_play_count: 22<br />Extra_yards_gained:   0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Bijan Robinson run for no gain to the Alab 1", "Offense_play_count: 25<br />Extra_yards_gained:   0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Bijan Robinson run for 7 yds to the Texas 17", "Offense_play_count: 27<br />Extra_yards_gained:  -7<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Keilan Robinson run for a loss of 2 yards to the Texas 24", "Offense_play_count: 28<br />Extra_yards_gained: -10<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Roschon Johnson run for a loss of 2 yards to the Texas 22", "Offense_play_count: 34<br />Extra_yards_gained:  -6<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Bijan Robinson run for 1 yd to the Texas 31", "Offense_play_count: 39<br />Extra_yards_gained:  -2<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Bijan Robinson run for 3 yds to the Texas 25", "Offense_play_count: 48<br />Extra_yards_gained:  -9<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Bijan Robinson run for a loss of 4 yards to the Texas 11", "Offense_play_count: 50<br />Extra_yards_gained:  -7<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Hudson Card run for 7 yds to the Texas 18", "Offense_play_count: 53<br />Extra_yards_gained:  -2<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Roschon Johnson run for 5 yds to the Texas 49", "Offense_play_count: 58<br />Extra_yards_gained:  -1<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Bijan Robinson run for 4 yds to the Alab 19", "Offense_play_count: 59<br />Extra_yards_gained:   0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Roschon Johnson run for 4 yds to the Alab 15", "Offense_play_count: 60<br />Extra_yards_gained:  -2<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Bijan Robinson run for no gain to the Alab 15", "Offense_play_count: 65<br />Extra_yards_gained:  -2<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Roschon Johnson run for 3 yds to the Alab 44", "Offense_play_count: 72<br />Extra_yards_gained:  -4<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Bijan Robinson run for no gain to the Alab 7", "Offense_play_count: 79<br />Extra_yards_gained:  -4<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Bijan Robinson run for 1 yd to the Texas 26", "Offense_play_count: 81<br />Extra_yards_gained:  -2<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Bijan Robinson run for 3 yds to the Texas 40", "Offense_play_count: 84<br />Extra_yards_gained:  -2<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Bijan Robinson run for 1 yd to the Alab 24"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(139,26,26,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "circle",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(139,26,26,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Unsuccessful,Rush)",
+      "legendgroup": "(Unsuccessful,Rush)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [35, 63, 85],
+      "y": [-21, -14, -10],
+      "text": ["Offense_play_count: 35<br />Extra_yards_gained: -21<br />Play_type: Sack<br />Success: Unsuccessful<br />Play_text: Hudson Card sacked by Kool-Aid McKinstry for a loss of 12 yards to the Texas 19 TEXAS Penalty, Intentional Grounding (Hudson Card) to the Texas 19", "Offense_play_count: 63<br />Extra_yards_gained: -14<br />Play_type: Sack<br />Success: Unsuccessful<br />Play_text: Hudson Card sacked by Jaylen Moody for a loss of 9 yards to the Texas 33", "Offense_play_count: 85<br />Extra_yards_gained: -10<br />Play_type: Sack<br />Success: Unsuccessful<br />Play_text: Hudson Card sacked by Will Anderson Jr. for a loss of 7 yards to the Alab 31"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(139,26,26,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "triangle-down-open",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(139,26,26,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Unsuccessful,Sack)",
+      "legendgroup": "(Unsuccessful,Sack)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    }
+  ],
+  layout: {
+    "margin": {
+      "t": 43.2754946727549,
+      "r": 7.30593607305936,
+      "b": 39.6955859969559,
+      "l": 43.1050228310502
+    },
+    "plot_bgcolor": "rgba(229,229,229,1)",
+    "paper_bgcolor": "rgba(255,255,255,1)",
+    "font": {
+      "color": "rgba(0,0,0,1)",
+      "family": "",
+      "size": 14.6118721461187
+    },
+    "title": {
+      "text": "Texas[19]: Extra yards gained = Yards gained - Yards to success<br> <sup>2022: wk02 vs Alabama[20]<\/sup>",
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 17.5342465753425
+      },
+      "x": 0,
+      "xref": "paper",
+      "xanchor": "left"
+    },
+    "xaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [-3.3, 91.3],
+      "tickmode": "array",
+      "ticktext": ["0", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55", "60", "65", "70", "75", "80", "85", "90"],
+      "tickvals": [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90],
+      "categoryorder": "array",
+      "categoryarray": ["0", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55", "60", "65", "70", "75", "80", "85", "90"],
+      "nticks": null,
+      "ticks": "outside",
+      "tickcolor": "rgba(51,51,51,1)",
+      "ticklen": 3.65296803652968,
+      "tickwidth": 0.66417600664176,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "tickangle": -0,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": "rgba(204,204,204,1)",
+      "gridwidth": 0.66417600664176,
+      "zeroline": false,
+      "anchor": "y",
+      "title": {
+        "text": "Offensive play count including penalties",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "yaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [-24.2, 46.2],
+      "tickmode": "array",
+      "ticktext": ["-20", "-15", "-10", "-5", "0", "5", "10", "15", "20", "25", "30", "35", "40", "45"],
+      "tickvals": [-20, -15, -10, -5, 0, 5, 10, 15, 20, 25, 30, 35, 40, 45],
+      "categoryorder": "array",
+      "categoryarray": ["-20", "-15", "-10", "-5", "0", "5", "10", "15", "20", "25", "30", "35", "40", "45"],
+      "nticks": null,
+      "ticks": "outside",
+      "tickcolor": "rgba(51,51,51,1)",
+      "ticklen": 3.65296803652968,
+      "tickwidth": 0.66417600664176,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "tickangle": -0,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": "rgba(204,204,204,1)",
+      "gridwidth": 0.66417600664176,
+      "zeroline": false,
+      "anchor": "x",
+      "title": {
+        "text": "Extra yards gained",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "shapes": [
+      {
+        "type": "rect",
+        "fillcolor": null,
+        "line": {
+          "color": null,
+          "width": 0,
+          "linetype": []
+        },
+        "yref": "paper",
+        "xref": "paper",
+        "x0": 0,
+        "x1": 1,
+        "y0": 0,
+        "y1": 1
+      }
+    ],
+    "showlegend": true,
+    "legend": {
+      "bgcolor": "rgba(255,255,255,1)",
+      "bordercolor": "transparent",
+      "borderwidth": 1.88976377952756,
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "title": {
+        "text": "Success/Drive number<br />Play type",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      }
+    },
+    "hovermode": "closest",
+    "barmode": "relative"
+  },
+  config: {
+    "doubleClick": "reset",
+    "modeBarButtonsToAdd": ["hoverclosest", "hovercompare"],
+    "showSendToCloud": false
+  },
+  source: "A",
+  attrs: {
+    "84102abb3bff": {
+      "xmin": {},
+      "xmax": {},
+      "ymin": {},
+      "ymax": {},
+      "type": "scatter"
+    },
+    "8410328c5fc9": {
+      "xmin": {},
+      "xmax": {},
+      "ymin": {},
+      "ymax": {}
+    },
+    "841018664371": {
+      "yintercept": {}
+    },
+    "84101532590d": {
+      "xintercept": {}
+    },
+    "841052137066": {
+      "x": {},
+      "y": {},
+      "colour": {}
+    },
+    "841051d22ca5": {
+      "x": {},
+      "y": {},
+      "shape": {},
+      "colour": {}
+    }
+  },
+  cur_data: "84102abb3bff",
+  visdat: {
+    "84102abb3bff": ["function (y) ", "x"],
+    "8410328c5fc9": ["function (y) ", "x"],
+    "841018664371": ["function (y) ", "x"],
+    "84101532590d": ["function (y) ", "x"],
+    "841052137066": ["function (y) ", "x"],
+    "841051d22ca5": ["function (y) ", "x"]
+  },
+  highlight: {
+    "on": "plotly_click",
+    "persistent": false,
+    "dynamic": false,
+    "selectize": false,
+    "opacityDim": 0.2,
+    "selected": {
+      "opacity": 1
+    },
+    "debounce": 0
+  },
+  shinyEvents: ["plotly_hover", "plotly_click", "plotly_selected", "plotly_relayout", "plotly_brushed", "plotly_brushing", "plotly_clickannotation", "plotly_doubleclick", "plotly_deselect", "plotly_afterplot", "plotly_sunburstclick"],
+  base_url: "https://plot.ly"
+}
