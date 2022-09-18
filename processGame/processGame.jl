@@ -35,6 +35,9 @@ I think U = unsportsmanlike conduct
 # DEBUG_PENALTY = true
 DEBUG_PENALTY = false
 
+# DEBUG_PLAY_INFO = true
+DEBUG_PLAY_INFO = false
+
 # Global variables
 name_regex = "((?:(?:[A-Z\\p{Lu}'-][a-z\\p{Ll}A-Z&\\p{Lu}'\\.-]+|(?:de))|(?:[A-Z\\p{Lu}-]\\.?)?\\s?)+)" #most general name regex
 name_simple_regex = "((?:[A-Z\\p{Lu}'-][a-z\\p{Ll}A-Z&\\p{Lu}'\\.-]+ ?)+)"

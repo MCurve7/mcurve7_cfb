@@ -14,6 +14,8 @@ function play_info(cols)
         play_text = replace(play_text, "\xc9" => "É")
         play_text = replace(play_text, "\xe9" => "é")
         # println("Play text after:\n$(play_text)")
+    else
+        play_text = ""
     end
 
     school_colors = CSV.File("../school_colors/school_colors.csv", delim=';') |> DataFrame
@@ -57,6 +59,8 @@ function play_info(cols)
     fumbler = missing # Player name
     timeout_team = missing # Team name taking timeout
     timeout_time = missing # Time of timeout
+
+    if DEBUG_PLAY_INFO println("play_info: $play_text") end
 
     if play_type == "Rushing Touchdown"
         runner, PAT_kicker,  PAT_type, two_point, two_point_type, two_point_runner, two_point_passer, two_point_receiver = play_rush_td(play_text)
@@ -632,8 +636,10 @@ function play_interception_returned(cols)
     interceptor_regex = Regex("intercepted(?:\\.|,)? $(name_regex)(?:return|at)")
     receiver_regex = Regex("intended for $(name_regex)\\.")
     
+    
     play_text = replace(play_text, r"\s+-\s+"=>" ")
     play_text = replace(play_text, r"N/A"=>"No Data")
+    
 
     if occursin(r"incomplete", play_text)
         passer = "ERROR in DATA"
@@ -748,7 +754,8 @@ function play_sack(cols)
     tackler_specialcase3_regex = Regex("(?:rush|run) for a loss of \\d+ yards to the")
     tackler_regex = Regex("sacked by $(name_regex)")
         
-    if ismissing(play_text)
+    # if ismissing(play_text)
+    if play_text == ""
         passer ="No Data"
     else
         play_text = replace(play_text, r"N/A"=>"No Data")
