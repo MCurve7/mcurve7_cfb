@@ -1,0 +1,293 @@
+{
+  data: [
+    {
+      "x": [0.9, 3.1],
+      "y": [5, 5],
+      "text": "yintercept: 5",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 3.77952755905512,
+        "color": "rgba(253,185,19,1)",
+        "dash": "dashdot"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [0.9, 3.1],
+      "y": [4.66666666666667, 4.66666666666667],
+      "text": "yintercept: 4.666667",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 3.77952755905512,
+        "color": "rgba(132,0,41,1)",
+        "dash": "dash"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 2, 3],
+      "y": [8, 4, 3],
+      "text": ["Game_number: 1<br />Opponent: Texas<br />Penalty_all_count: 8", "Game_number: 2<br />Opponent: Nicholls<br />Penalty_all_count: 4", "Game_number: 3<br />Opponent: Alabama<br />Penalty_all_count: 3"],
+      "type": "scatter",
+      "mode": "lines+markers",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(253,185,19,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(253,185,19,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "circle",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(253,185,19,1)"
+        }
+      },
+      "frame": null
+    },
+    {
+      "x": [1, 2, 3],
+      "y": [7, 4, 3],
+      "text": ["Game_number: 1<br />Opponent: Texas<br />Penalty_enforced_count: 7", "Game_number: 2<br />Opponent: Nicholls<br />Penalty_enforced_count: 4", "Game_number: 3<br />Opponent: Alabama<br />Penalty_enforced_count: 3"],
+      "type": "scatter",
+      "mode": "lines+markers",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(132,0,41,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(132,0,41,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "circle",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(132,0,41,1)"
+        }
+      },
+      "frame": null
+    }
+  ],
+  layout: {
+    "margin": {
+      "t": 43.2754946727549,
+      "r": 7.30593607305936,
+      "b": 39.6955859969559,
+      "l": 31.4155251141553
+    },
+    "plot_bgcolor": "rgba(235,235,235,1)",
+    "paper_bgcolor": "rgba(255,255,255,1)",
+    "font": {
+      "color": "rgba(0,0,0,1)",
+      "family": "",
+      "size": 14.6118721461187
+    },
+    "title": {
+      "text": "Louisiana Monroe penalties for 2022; Average: enforced = 4.67 (primary team color), all = 5.00 (secondary team color)<br> <sup><\/sup>",
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 17.5342465753425
+      },
+      "x": 0,
+      "xref": "paper",
+      "xanchor": "left"
+    },
+    "xaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [0.9, 3.1],
+      "tickmode": "array",
+      "ticktext": ["Texas", "Nicholls", "Alabama"],
+      "tickvals": [1, 2, 3],
+      "categoryorder": "array",
+      "categoryarray": ["Texas", "Nicholls", "Alabama"],
+      "nticks": null,
+      "ticks": "outside",
+      "tickcolor": "rgba(51,51,51,1)",
+      "ticklen": 3.65296803652968,
+      "tickwidth": 0.66417600664176,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "tickangle": -0,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": "rgba(255,255,255,1)",
+      "gridwidth": 0.66417600664176,
+      "zeroline": false,
+      "anchor": "y",
+      "title": {
+        "text": "Opponent",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "yaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [2.75, 8.25],
+      "tickmode": "array",
+      "ticktext": ["3", "4", "5", "6", "7", "8"],
+      "tickvals": [3, 4, 5, 6, 7, 8],
+      "categoryorder": "array",
+      "categoryarray": ["3", "4", "5", "6", "7", "8"],
+      "nticks": null,
+      "ticks": "outside",
+      "tickcolor": "rgba(51,51,51,1)",
+      "ticklen": 3.65296803652968,
+      "tickwidth": 0.66417600664176,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "tickangle": -0,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": "rgba(255,255,255,1)",
+      "gridwidth": 0.66417600664176,
+      "zeroline": false,
+      "anchor": "x",
+      "title": {
+        "text": "Penalty Count: all (dotdashed line), enforced (dashed line)",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "shapes": [
+      {
+        "type": "rect",
+        "fillcolor": null,
+        "line": {
+          "color": null,
+          "width": 0,
+          "linetype": []
+        },
+        "yref": "paper",
+        "xref": "paper",
+        "x0": 0,
+        "x1": 1,
+        "y0": 0,
+        "y1": 1
+      }
+    ],
+    "showlegend": false,
+    "legend": {
+      "bgcolor": "rgba(255,255,255,1)",
+      "bordercolor": "transparent",
+      "borderwidth": 1.88976377952756,
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 11.689497716895
+      }
+    },
+    "hovermode": "closest",
+    "barmode": "relative"
+  },
+  config: {
+    "doubleClick": "reset",
+    "modeBarButtonsToAdd": ["hoverclosest", "hovercompare"],
+    "showSendToCloud": false
+  },
+  source: "A",
+  attrs: {
+    "450048cb60b3": {
+      "yintercept": {},
+      "type": "scatter"
+    },
+    "450062665230": {
+      "yintercept": {}
+    },
+    "45004036183f": {
+      "x": {},
+      "label": {},
+      "y": {}
+    },
+    "4500750a34ff": {
+      "x": {},
+      "label": {},
+      "y": {}
+    },
+    "450067b66c6a": {
+      "x": {},
+      "label": {},
+      "y": {}
+    },
+    "45007f5979bc": {
+      "x": {},
+      "label": {},
+      "y": {}
+    }
+  },
+  cur_data: "450048cb60b3",
+  visdat: {
+    "450048cb60b3": ["function (y) ", "x"],
+    "450062665230": ["function (y) ", "x"],
+    "45004036183f": ["function (y) ", "x"],
+    "4500750a34ff": ["function (y) ", "x"],
+    "450067b66c6a": ["function (y) ", "x"],
+    "45007f5979bc": ["function (y) ", "x"]
+  },
+  highlight: {
+    "on": "plotly_click",
+    "persistent": false,
+    "dynamic": false,
+    "selectize": false,
+    "opacityDim": 0.2,
+    "selected": {
+      "opacity": 1
+    },
+    "debounce": 0
+  },
+  shinyEvents: ["plotly_hover", "plotly_click", "plotly_selected", "plotly_relayout", "plotly_brushed", "plotly_brushing", "plotly_clickannotation", "plotly_doubleclick", "plotly_deselect", "plotly_afterplot", "plotly_sunburstclick"],
+  base_url: "https://plot.ly"
+}
