@@ -240,6 +240,14 @@ i = 2080566
 package_foul([penalties.Play_text[i], penalties.Offense[i], penalties.Defense[i]])
 
 penalties_regex_txt = "(?:Penalty|PENALTY)"
+
+
+############################################################################################################################################################################
+penalties = CSV.read("../../data/Alabama_2022_wk04_regular-processed.csv", DataFrame)
+i = 114
+penalties.Play_text[i]
+
+foul_analysis([penalties.Play_text[i], penalties.Offense[i], penalties.Defense[i]])
 ############################################################################################################################################################################
 penalties = CSV.read("../../data/all_games/all_penalties.csv", DataFrame)
 # penalties_enforced = CSV.read("../../data/all_games/all_penalties_enforced.csv", DataFrame)

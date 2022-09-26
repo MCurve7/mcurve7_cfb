@@ -1624,7 +1624,7 @@ function points_after(cols)
             end
         end
     elseif occursin(kick_regex, play_text)
-        if occursin("( KICK)", play_text)
+        if occursin("( KICK)", play_text) || occursin("( Kick)", play_text)
             PAT_kicker = "Not recorded"
             PAT_type = "made"
         else

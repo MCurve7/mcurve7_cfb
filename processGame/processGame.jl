@@ -81,7 +81,7 @@ penalties_regex_txt = "(?:Penalty|PENALTY)"
 
 function process_game(game)
     df = CSV.read(game, DataFrame; normalizenames=true)
-    select!(df, Not(:PPA))
+    df = select(df, Not(:PPA))
     # Need to process the play_text and replace unicode "\xc9" => "É" and "\xe9" => "é".
 
     #Move to end and add new variables

@@ -50,7 +50,7 @@ function run_game(n)
 end
 dirContents = readdir("../../data/unprocessed", join=true)
 dirContents[187]
-dirContents[299]
+dirContents[310]
 
-dirContents[11462]
-@time run_game(11462)
+dirContents[10254]
+@time run_game(310)
