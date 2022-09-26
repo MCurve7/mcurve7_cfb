@@ -1,0 +1,576 @@
+<title>Extra graphs week 04 vs Vanderbilt</title>
+
+<p>
+A quite enjoyable game
+and it seems like Jordan Rogers enjoys reliving the Mark Barron hit that stole his soul.
+I had never heard him mention talking to the priest before.
+I wonder if the announcers and crew puts in extra time to come up with topics of conversation before games like this
+and how much of it they just wing.
+Also even though he can be a Barner on occasion on social media,
+I really enjoy having Cublic on the sidelines.
+Dude knows his line play and does a great job explaining it.
+I wish more announcers would spend more time explaining the game and less whatever the usually do.
+Anyway on to the graphs.
+</p>
+
+<p>
+I don't really have much to say about the graphs this week.
+Basically they look like what they should when one team dominates another.
+Looking at the Sucess rate by drive Bama graph there were two drives (7 and 8) with a above 0.5 SR that didn't end in a touchdown.
+Drive 7 started just 33 seconds before the half and 80 yards to go.
+We were able to get it down to 22 yards to go and could have scored a TD and had to take the FG instead.
+</p>
+
+<p>
+Drive 8 started with 88 yards to go and after a penalty near then end of the drive that set us back to 17 yards to go we had to settle for a FG.
+We were still able to get it down to 4 yards to go and had two chances to punch it in so who knows what would have happened if we hadn't had that penalty.
+</p>
+
+<p>
+I've reordered the graphs so that the Extra yards gained, Offense drives (Yards gained), and Yards to success are adjacent. 
+That feels like a more logical ordering.
+This lead me to thinking about a 3D line graph with something like Play count along the x-axis, 
+Yards gained along the y-axis,
+and Yards to success along the z-axis.
+But this is not really 3D data (in my brain).
+So maybe Play count along the x-axis and either Yards gained along the y-axis and size of icon to represent Yards to success or visa versa.
+If feels like there is something to be gained by combining these graphs...
+in a way different than the Extra yards gained graph
+or my exhaustion/possible brain fog is tricking me.
+I can't verbalize what is tickling my brain.
+OTOH it could be a false trail.
+</p>
+
+<p>
+Looks like I'm going to have to think about how to handle week 0 penalties for the Penatlies line graph,
+but that's for the future.
+</p>
+
+<p>
+Roll Tide!
+</p>
+
+<img src=http://a.espncdn.com/i/teamlogos/ncaa/500/333.png alt="Alabama logo" height="300">
+<a href="https://postimg.cc/qzGTxnrr" target="_blank"><img src="https://i.postimg.cc/X7RY3cDr/Alabama-2022-regular-wk04-Vanderbilt-01-success-drive-bar.png" alt="Alabama-2022-regular-wk04-Vanderbilt-01-success-drive-bar"/></a><br/><br/>
+<table>
+  <thead>
+    <tr class = "header headerLastRow">
+      <th style = "text-align: left;">Drive number</th>
+      <th style = "text-align: left;">Total</th>
+      <th style = "text-align: left;">Successful</th>
+      <th style = "text-align: left;">Unsuccessful</th>
+      <th style = "text-align: left;">Success rate</th>
+      <th style = "text-align: left;">Scoring drive</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0.4</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">1.0</td>
+      <td style = "text-align: left;">true</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">10</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">0.5</td>
+      <td style = "text-align: left;">true</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">1.0</td>
+      <td style = "text-align: left;">true</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">0.2</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">9</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0.666667</td>
+      <td style = "text-align: left;">true</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">0.666667</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">8</td>
+      <td style = "text-align: left;">11</td>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">0.636364</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">9</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">0.666667</td>
+      <td style = "text-align: left;">true</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">10</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0.0</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">11</td>
+      <td style = "text-align: left;">15</td>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">8</td>
+      <td style = "text-align: left;">0.466667</td>
+      <td style = "text-align: left;">true</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">12</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0.4</td>
+      <td style = "text-align: left;">true</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+<a href="https://postimg.cc/WqLvXwtN" target="_blank"><img src="https://i.postimg.cc/zv3GDdrg/Alabama-2022-regular-wk04-Vanderbilt-02-drive-fac-down.png" alt="Alabama-2022-regular-wk04-Vanderbilt-02-drive-fac-down"/></a><br/><br/>
+<a href="https://postimg.cc/XZq4JvTb" target="_blank"><img src="https://i.postimg.cc/43bdW7Pm/Alabama-2022-regular-wk04-Vanderbilt-07-drive-extra-yards-gained.png" alt="Alabama-2022-regular-wk04-Vanderbilt-07-drive-extra-yards-gained"/></a><br/><br/>
+<a href="https://postimg.cc/xcG0phKW" target="_blank"><img src="https://i.postimg.cc/Pr9PJkNr/Alabama-2022-regular-wk04-Vanderbilt-03-drive.png" alt="Alabama-2022-regular-wk04-Vanderbilt-03-drive"/></a><br/><br/>
+<a href="https://postimg.cc/s1hf7v1f" target="_blank"><img src="https://i.postimg.cc/ZYf9kNSN/Alabama-2022-regular-wk04-Vanderbilt-08-drive-yards-to-success.png" alt="Alabama-2022-regular-wk04-Vanderbilt-08-drive-yards-to-success"/></a><br/><br/>
+<table>
+  <thead>
+    <tr class = "header headerLastRow">
+      <th style = "text-align: left;">Down</th>
+      <th style = "text-align: left;">Successful</th>
+      <th style = "text-align: left;">Unsuccessful</th>
+      <th style = "text-align: left;">Total</th>
+      <th style = "text-align: left;">TD/1st</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">23</td>
+      <td style = "text-align: left;">18</td>
+      <td style = "text-align: left;">41</td>
+      <td style = "text-align: left;">15</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">10</td>
+      <td style = "text-align: left;">12</td>
+      <td style = "text-align: left;">22</td>
+      <td style = "text-align: left;">10</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">12</td>
+      <td style = "text-align: left;">7</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">1</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+<a href="https://postimg.cc/GHnLQdsF" target="_blank"><img src="https://i.postimg.cc/m2tPTrL5/Alabama-2022-regular-wk04-Vanderbilt-04-all4-downs-fac.png" alt="Alabama-2022-regular-wk04-Vanderbilt-04-all4-downs-fac"/></a><br/><br/>
+<a href="https://postimg.cc/XrQn451L" target="_blank"><img src="https://i.postimg.cc/25fydF4s/Alabama-2022-regular-wk04-Vanderbilt-05-all4-downs-fac-noscale.png" alt="Alabama-2022-regular-wk04-Vanderbilt-05-all4-downs-fac-noscale"/></a><br/><br/>
+<a href="https://postimg.cc/mPbTvjjh" target="_blank"><img src="https://i.postimg.cc/g2hr6B6y/Alabama-2022-regular-wk04-Vanderbilt-06-yards-success-gained.png" alt="Alabama-2022-regular-wk04-Vanderbilt-06-yards-success-gained"/></a><br/><br/>
+<a href="https://postimg.cc/QK1X3nvK" target="_blank"><img src="https://i.postimg.cc/x8FqLwR5/Alabama-2022-regular-wk04-Vanderbilt-09-fac-yards-to-success.png" alt="Alabama-2022-regular-wk04-Vanderbilt-09-fac-yards-to-success"/></a><br/><br/>
+<a href="https://postimg.cc/cg8WRbxk" target="_blank"><img src="https://i.postimg.cc/PxSqkgBH/Alabama-2022-regular-wk04-Vanderbilt-p01-penalties-bar.png" alt="Alabama-2022-regular-wk04-Vanderbilt-p01-penalties-bar"/></a><br/><br/>
+<a href="https://postimg.cc/D4rKD4bq" target="_blank"><img src="https://i.postimg.cc/qqYMN8JZ/Alabama-2022-regular-wk04-Vanderbilt-p02-penalties-bar-all.png" alt="Alabama-2022-regular-wk04-Vanderbilt-p02-penalties-bar-all"/></a><br/><br/>
+<table>
+  <thead>
+    <tr class = "header headerLastRow">
+      <th style = "text-align: left;">Penalty_team</th>
+      <th style = "text-align: left;">Penalty_type</th>
+      <th style = "text-align: left;">Penalty_status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Holding</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Offensive Holding</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Defensive Offside</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">False Start</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Pass Interference</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Defensive Holding</td>
+      <td style = "text-align: left;">off-setting</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Holding</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Vanderbilt</td>
+      <td style = "text-align: left;">False Start</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Vanderbilt</td>
+      <td style = "text-align: left;">Pass Interference</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Vanderbilt</td>
+      <td style = "text-align: left;">Illegal Use Of Hands</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Vanderbilt</td>
+      <td style = "text-align: left;">Face Mask</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Vanderbilt</td>
+      <td style = "text-align: left;">Pass Interference</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Vanderbilt</td>
+      <td style = "text-align: left;">Intentional Grounding</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Vanderbilt</td>
+      <td style = "text-align: left;">Face Mask</td>
+      <td style = "text-align: left;">off-setting</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+<a href="https://postimg.cc/xqMYqhFc" target="_blank"><img src="https://i.postimg.cc/MZrG387b/Alabama-2022-regular-wk04-p03-penalties-line-season.png" alt="Alabama-2022-regular-wk04-p03-penalties-line-season"/></a><br/><br/>
+
+<a href="https://postimg.cc/QHDD7mRS" target="_blank"><img src="https://i.postimg.cc/X7GYTDxM/Alabama-2022-regular-wk04-Vanderbilt-e01-drive-success-play.png" alt="Alabama-2022-regular-wk04-Vanderbilt-e01-drive-success-play"/></a><br/><br/>
+
+
+
+<img src=http://a.espncdn.com/i/teamlogos/ncaa/500/238.png alt="Alabama logo" height="300">
+<a href="https://postimg.cc/75VtRMtH" target="_blank"><img src="https://i.postimg.cc/VNQydKjC/Vanderbilt-2022-regular-wk04-Alabama-01-success-drive-bar.png" alt="Vanderbilt-2022-regular-wk04-Alabama-01-success-drive-bar"/></a><br/><br/>
+<table>
+  <thead>
+    <tr class = "header headerLastRow">
+      <th style = "text-align: left;">Drive number</th>
+      <th style = "text-align: left;">Total</th>
+      <th style = "text-align: left;">Successful</th>
+      <th style = "text-align: left;">Unsuccessful</th>
+      <th style = "text-align: left;">Success rate</th>
+      <th style = "text-align: left;">Scoring drive</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">0.333333</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">10</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">0.5</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0.25</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0.0</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0.0</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0.0</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0.25</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">8</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0.4</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">9</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">0.0</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">10</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0.0</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">11</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0.4</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">12</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">0.5</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">13</td>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">1.0</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+<a href="https://postimg.cc/6yxH51D6" target="_blank"><img src="https://i.postimg.cc/kXBLs0sS/Vanderbilt-2022-regular-wk04-Alabama-02-drive-fac-down.png" alt="Vanderbilt-2022-regular-wk04-Alabama-02-drive-fac-down"/></a><br/><br/>
+<a href="https://postimg.cc/qhtmzfJq" target="_blank"><img src="https://i.postimg.cc/gJs1td1V/Vanderbilt-2022-regular-wk04-Alabama-07-drive-extra-yards-gained.png" alt="Vanderbilt-2022-regular-wk04-Alabama-07-drive-extra-yards-gained"/></a><br/><br/>
+<a href="https://postimg.cc/t1vSqRH8" target="_blank"><img src="https://i.postimg.cc/hjcH0hZ4/Vanderbilt-2022-regular-wk04-Alabama-03-drive.png" alt="Vanderbilt-2022-regular-wk04-Alabama-03-drive"/></a><br/><br/>
+<a href="https://postimg.cc/S2wg9ZRr" target="_blank"><img src="https://i.postimg.cc/5ytTZTMZ/Vanderbilt-2022-regular-wk04-Alabama-08-drive-yards-to-success.png" alt="Vanderbilt-2022-regular-wk04-Alabama-08-drive-yards-to-success"/></a><br/><br/>
+<table>
+  <thead>
+    <tr class = "header headerLastRow">
+      <th style = "text-align: left;">Down</th>
+      <th style = "text-align: left;">Successful</th>
+      <th style = "text-align: left;">Unsuccessful</th>
+      <th style = "text-align: left;">Total</th>
+      <th style = "text-align: left;">TD/1st</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">9</td>
+      <td style = "text-align: left;">13</td>
+      <td style = "text-align: left;">22</td>
+      <td style = "text-align: left;">4</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">11</td>
+      <td style = "text-align: left;">16</td>
+      <td style = "text-align: left;">3</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">12</td>
+      <td style = "text-align: left;">13</td>
+      <td style = "text-align: left;">1</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">missing</td>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">missing</td>
+      <td style = "text-align: left;">0</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+<a href="https://postimg.cc/kDb1CdYh" target="_blank"><img src="https://i.postimg.cc/448rzf6Z/Vanderbilt-2022-regular-wk04-Alabama-04-all4-downs-fac.png" alt="Vanderbilt-2022-regular-wk04-Alabama-04-all4-downs-fac"/></a><br/><br/>
+<a href="https://postimg.cc/jnPZ4zJr" target="_blank"><img src="https://i.postimg.cc/L50wRD9h/Vanderbilt-2022-regular-wk04-Alabama-05-all4-downs-fac-noscale.png" alt="Vanderbilt-2022-regular-wk04-Alabama-05-all4-downs-fac-noscale"/></a><br/><br/>
+<a href="https://postimg.cc/7CZtrGjg" target="_blank"><img src="https://i.postimg.cc/6QdkRC01/Vanderbilt-2022-regular-wk04-Alabama-06-yards-success-gained.png" alt="Vanderbilt-2022-regular-wk04-Alabama-06-yards-success-gained"/></a><br/><br/>
+<a href="https://postimg.cc/hXpMs4hh" target="_blank"><img src="https://i.postimg.cc/tgHfXYjd/Vanderbilt-2022-regular-wk04-Alabama-09-fac-yards-to-success.png" alt="Vanderbilt-2022-regular-wk04-Alabama-09-fac-yards-to-success"/></a><br/><br/>
+<a href="https://postimg.cc/PLJyRG8y" target="_blank"><img src="https://i.postimg.cc/YSfPjMr5/Vanderbilt-2022-regular-wk04-Alabama-p01-penalties-bar.png" alt="Vanderbilt-2022-regular-wk04-Alabama-p01-penalties-bar"/></a><br/><br/>
+<a href="https://postimg.cc/jL6MW4bH" target="_blank"><img src="https://i.postimg.cc/5NTTRsKR/Vanderbilt-2022-regular-wk04-Alabama-p02-penalties-bar-all.png" alt="Vanderbilt-2022-regular-wk04-Alabama-p02-penalties-bar-all"/></a><br/><br/>
+<table>
+  <thead>
+    <tr class = "header headerLastRow">
+      <th style = "text-align: left;">Penalty_team</th>
+      <th style = "text-align: left;">Penalty_type</th>
+      <th style = "text-align: left;">Penalty_status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Holding</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Offensive Holding</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Defensive Offside</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">False Start</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Pass Interference</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Defensive Holding</td>
+      <td style = "text-align: left;">off-setting</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Holding</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Vanderbilt</td>
+      <td style = "text-align: left;">False Start</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Vanderbilt</td>
+      <td style = "text-align: left;">Pass Interference</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Vanderbilt</td>
+      <td style = "text-align: left;">Illegal Use Of Hands</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Vanderbilt</td>
+      <td style = "text-align: left;">Face Mask</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Vanderbilt</td>
+      <td style = "text-align: left;">Pass Interference</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Vanderbilt</td>
+      <td style = "text-align: left;">Intentional Grounding</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Vanderbilt</td>
+      <td style = "text-align: left;">Face Mask</td>
+      <td style = "text-align: left;">off-setting</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+<a href="https://postimg.cc/SnyDcYSw" target="_blank"><img src="https://i.postimg.cc/2SWMRnP8/Vanderbilt-2022-regular-wk04-p03-penalties-line-season.png" alt="Vanderbilt-2022-regular-wk04-p03-penalties-line-season"/></a><br/><br/>
+
+<a href="https://postimg.cc/mcnjxdYs" target="_blank"><img src="https://i.postimg.cc/76HW2dbf/Vanderbilt-2022-regular-wk04-Alabama-e01-drive-success-play.png" alt="Vanderbilt-2022-regular-wk04-Alabama-e01-drive-success-play"/></a><br/><br/>
+
+
+
+<hr />
+<h2>All SEC teams</h2>
+<a href="https://postimg.cc/VrQRS6Dh" target="_blank"><img src="https://i.postimg.cc/263XKLvC/2022-regular-wk04-p04-penalties-SECv-FBS-all.png" alt="2022-regular-wk04-p04-penalties-SECv-FBS-all"/></a><br/><br/>
+<a href="https://postimg.cc/5YBm8Vr2" target="_blank"><img src="https://i.postimg.cc/TwSHM2qg/2022-regular-wk04-p05-penalties-SECv-SEC-all.png" alt="2022-regular-wk04-p05-penalties-SECv-SEC-all"/></a><br/><br/>
+<a href="https://postimg.cc/w3z2g1ty" target="_blank"><img src="https://i.postimg.cc/ry0PGWMJ/2022-regular-wk04-p06-penalties-SECv-FBS-enforced.png" alt="2022-regular-wk04-p06-penalties-SECv-FBS-enforced"/></a><br/><br/>
+<a href="https://postimg.cc/BPJBgzWc" target="_blank"><img src="https://i.postimg.cc/prFc2Nq7/2022-regular-wk04-p07-penalties-SECv-SEC-enforced.png" alt="2022-regular-wk04-p07-penalties-SECv-SEC-enforced"/></a><br/><br/>
+
+
+<hr />
+<p>Data: @CFB_Data or collegefootballdata.com</p>
