@@ -1,0 +1,43 @@
+Avatar for krnxprs
+I disagree that our efficiency by down chart was at all reminiscent of last year's over all trend, which was just like Clemson's chart this week: high success on 3rd down despite poor success on 1st and 2nd down.
+
+This week we had high success on 3rd down because of high success on early downs. We only ran 12 3rd down plays across 12 full possessions and 75 plays. This is how you reliably sustain drives and score points. That Clemson chart is the picture of offensive dysfunction riding a unicorn to 13+ wins.
+
+Last year I mentioned a half-baked idea for a sort of "drive peril" stat that would be a ratio of 3rd and long plays to first down plays; or maybe total 3rd down yards to go divided by total offensive yards or number of possessions. It's not really in keeping with the theme of this article, but it could be a decent sanity check.
+
+Oh, I think I have it: ratio of total 3rd down yards to go and total ideal 3rd down yards to go, i.e. the yards to go in each series had you stayed perfectly on schedule on 1st and 2nd down, which could be approximated by number of 1st down plays times 1.5(?).
+Avatar for CarrotTop4
+Huh? "Ideal" 3rd down yards to go is zero.
+
+I guess maybe you're saying if 1st and 2nd down were both "successful"? I forget, are we using 40% on first down, 60% on second, and 100% on third as the success metric? If so, then for a 1st and 10, that would be 4 yards to get to 2nd and 6. Then 3.6 yards on second down gets you to 3rd and 2.4 yards to go.
+
+So you're saying take the average distance that a team faced on 3rd down and divide by 2.4?
+Avatar for MCurve7
+1st = 50%, 2nd = 70%, and 3rd/4th = 100%
+(Edited)
+Avatar for krnxprs
+the yards to go in each series had you stayed perfectly on schedule on 1st and 2nd down
+I think the current thresholds are 50% on 1st (5 yds) and 70% (3.5 yds) on second. And you wouldn't simply divide by 1.5 (or 2.4 in your case) because that would make it a per 3rd-down stat. It should be a per series-of-downs stat. The number of 1st down plays run basically equals the number of series of downs you got, excepting some turnovers and end of half scenarios.
+
+I'm waffling on whether that's the best way to convey the idea, though. Imagine you score on the first play of every drive for 9 drives plus one drive where you go 3-and-out after a 3rd and 15. That's a total of 10 series of downs. You'd have a drive peril score of 15 / (10 * 1.5) = 1.0.
+
+Now imagine you methodically gained 5 yards every play on those 9 scoring drives. You never run a 3rd down play on those drives but average 7 series of downs per drive. You'd have a drive peril score of 15 / (64 * 1.5) = 0.16. That's much better, but it doesn't make sense that this stat should have different values for these two scenarios.
+
+Without making it too complicated, a good denominator might be (total_yards / 10) * 1.5, where total_yards/10 approximates the number of series of downs you'd have had if you were perfectly successful on every play up to the last series of each possession.
+Avatar for krnxprs
+I put it in practice by hand for our game.
+
+3rd downs: 7 of 12 (58%)
+total 3rd down yards to go: 88
+total yards: 628
+drive peril: 88 / (62.8 * 1.5) = 0.93
+
+You can interpret that as requiring 93% of the 3rd down yards we would have needed if we had been perfectly efficient. That's not exactly true since if we'd been perfectly efficient we would have finished all our drives with touchdowns and, thus, had more total yards. But that aside, you could say we were better than perfectly efficient on early downs.
+
+
+By contrast, here's Clemson.
+
+3rd downs: 17 of 24 (71%)
+total 3rd down yards to go: 159
+total yards: 559
+drive peril: 159 / (55.9 * 1.5) = 1.90

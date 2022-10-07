@@ -8,6 +8,7 @@ function run_all_games()
     processed_directory = "..\\..\\data\\"
 
     overwrite = false
+    # overwrite = true
     
     for game in dirContents
         game_split = split(game, r"[\\/]")

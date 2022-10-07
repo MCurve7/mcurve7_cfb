@@ -505,7 +505,7 @@
     {
       "x": [15, 19, 30, 34, 54, 61],
       "y": [5, 9, 2, 14, 8, 17],
-      "text": ["Offense_play_count: 15<br />Yards_gained:  5<br />Play_type: Passing Touchdown<br />Success: Successful<br />Play_text: Bryce Young pass complete to Jermaine Burton for 5 yds for a TD (Will Reichard KICK)", "Offense_play_count: 19<br />Yards_gained:  9<br />Play_type: Passing Touchdown<br />Success: Successful<br />Play_text: Bryce Young pass complete to Traeshon Holden for 9 yds for a TD (Will Reichard KICK)", "Offense_play_count: 30<br />Yards_gained:  2<br />Play_type: Passing Touchdown<br />Success: Successful<br />Play_text: Bryce Young pass complete to Jermaine Burton for 2 yds for a TD (Will Reichard KICK)", "Offense_play_count: 34<br />Yards_gained: 14<br />Play_type: Passing Touchdown<br />Success: Successful<br />Play_text: Bryce Young pass complete to Traeshon Holden for 14 yds for a TD (Will Reichard KICK)", "Offense_play_count: 54<br />Yards_gained:  8<br />Play_type: Passing Touchdown<br />Success: Successful<br />Play_text: Bryce Young pass complete to Jase McClellan for 8 yds for a TD (Will Reichard KICK)", "Offense_play_count: 61<br />Yards_gained: 17<br />Play_type: Passing Touchdown<br />Success: Successful<br />Play_text: Jalen Milroe pass complete to Jase McClellan for 17 yds for a TD (Will Reichard KICK)"],
+      "text": ["Offense_play_count: 15<br />Yards_gained:  5<br />Play_type: Passing Touchdown<br />Success: Successful<br />Play_text: Bryce Young pass complete to Jermaine Burton for 5 yds for a TD, (Will Reichard KICK)", "Offense_play_count: 19<br />Yards_gained:  9<br />Play_type: Passing Touchdown<br />Success: Successful<br />Play_text: Bryce Young pass complete to Traeshon Holden for 9 yds for a TD, (Will Reichard KICK)", "Offense_play_count: 30<br />Yards_gained:  2<br />Play_type: Passing Touchdown<br />Success: Successful<br />Play_text: Bryce Young pass complete to Jermaine Burton for 2 yds for a TD, (Will Reichard KICK)", "Offense_play_count: 34<br />Yards_gained: 14<br />Play_type: Passing Touchdown<br />Success: Successful<br />Play_text: Bryce Young pass complete to Traeshon Holden for 14 yds for a TD, (Will Reichard KICK)", "Offense_play_count: 54<br />Yards_gained:  8<br />Play_type: Passing Touchdown<br />Success: Successful<br />Play_text: Bryce Young pass complete to Jase McClellan for 8 yds for a TD, (Will Reichard KICK)", "Offense_play_count: 61<br />Yards_gained: 17<br />Play_type: Passing Touchdown<br />Success: Successful<br />Play_text: Jalen Milroe pass complete to Jase McClellan for 17 yds for a TD, (Will Reichard KICK)"],
       "type": "scatter",
       "mode": "markers",
       "marker": {
@@ -557,7 +557,7 @@
     {
       "x": [57],
       "y": [4],
-      "text": "Offense_play_count: 57<br />Yards_gained:  4<br />Play_type: Rushing Touchdown<br />Success: Successful<br />Play_text: Bryce Young run for 4 yds for a TD (Will Reichard KICK)",
+      "text": "Offense_play_count: 57<br />Yards_gained:  4<br />Play_type: Rushing Touchdown<br />Success: Successful<br />Play_text: Bryce Young run for 4 yds for a TD, (Will Reichard KICK)",
       "type": "scatter",
       "mode": "markers",
       "marker": {
@@ -864,52 +864,52 @@
   },
   source: "A",
   attrs: {
-    "6aa446e9254a": {
+    "85702fc27f03": {
       "xmin": {},
       "xmax": {},
       "ymin": {},
       "ymax": {},
       "type": "scatter"
     },
-    "6aa463cd42cd": {
+    "857037f36a9e": {
       "xmin": {},
       "xmax": {},
       "ymin": {},
       "ymax": {}
     },
-    "6aa446715df6": {
+    "8570251966a9": {
       "yintercept": {}
     },
-    "6aa46c3a7cce": {
+    "85701ae91dfd": {
       "xintercept": {}
     },
-    "6aa4ccfa3": {
+    "85703ebd20d2": {
       "x": {},
       "y": {},
       "xend": {},
       "yend": {}
     },
-    "6aa456477c5": {
+    "857058624f8": {
       "x": {},
       "y": {},
       "colour": {}
     },
-    "6aa467293a34": {
+    "8570760e708d": {
       "x": {},
       "y": {},
       "shape": {},
       "colour": {}
     }
   },
-  cur_data: "6aa446e9254a",
+  cur_data: "85702fc27f03",
   visdat: {
-    "6aa446e9254a": ["function (y) ", "x"],
-    "6aa463cd42cd": ["function (y) ", "x"],
-    "6aa446715df6": ["function (y) ", "x"],
-    "6aa46c3a7cce": ["function (y) ", "x"],
-    "6aa4ccfa3": ["function (y) ", "x"],
-    "6aa456477c5": ["function (y) ", "x"],
-    "6aa467293a34": ["function (y) ", "x"]
+    "85702fc27f03": ["function (y) ", "x"],
+    "857037f36a9e": ["function (y) ", "x"],
+    "8570251966a9": ["function (y) ", "x"],
+    "85701ae91dfd": ["function (y) ", "x"],
+    "85703ebd20d2": ["function (y) ", "x"],
+    "857058624f8": ["function (y) ", "x"],
+    "8570760e708d": ["function (y) ", "x"]
   },
   highlight: {
     "on": "plotly_click",

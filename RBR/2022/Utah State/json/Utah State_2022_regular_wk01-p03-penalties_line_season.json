@@ -1,0 +1,275 @@
+{
+  data: [
+    {
+      "x": [-0.25, 5.25],
+      "y": [8.8, 8.8],
+      "text": "yintercept: 8.8",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 3.77952755905512,
+        "color": "rgba(0,38,58,1)",
+        "dash": "dash"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [0, 1, 2, 4, 5],
+      "y": [6, 11, 11, 8, 8],
+      "text": ["Game_number: 0<br />Opponent: Connecticut<br />Penalty_all_count:  6", "Game_number: 1<br />Opponent: Alabama<br />Penalty_all_count: 11", "Game_number: 2<br />Opponent: Weber State<br />Penalty_all_count: 11", "Game_number: 4<br />Opponent: UNLV<br />Penalty_all_count:  8", "Game_number: 5<br />Opponent: BYU<br />Penalty_all_count:  8"],
+      "type": "scatter",
+      "mode": "lines+markers",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(138,141,143,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(138,141,143,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "circle",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(138,141,143,1)"
+        }
+      },
+      "frame": null
+    },
+    {
+      "x": [0, 1, 2, 4, 5],
+      "y": [6, 11, 11, 8, 8],
+      "text": ["Game_number: 0<br />Opponent: Connecticut<br />Penalty_enforced_count:  6", "Game_number: 1<br />Opponent: Alabama<br />Penalty_enforced_count: 11", "Game_number: 2<br />Opponent: Weber State<br />Penalty_enforced_count: 11", "Game_number: 4<br />Opponent: UNLV<br />Penalty_enforced_count:  8", "Game_number: 5<br />Opponent: BYU<br />Penalty_enforced_count:  8"],
+      "type": "scatter",
+      "mode": "lines+markers",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(0,38,58,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,38,58,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "circle",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(0,38,58,1)"
+        }
+      },
+      "frame": null
+    }
+  ],
+  layout: {
+    "margin": {
+      "t": 43.2754946727549,
+      "r": 7.30593607305936,
+      "b": 39.6955859969559,
+      "l": 37.2602739726027
+    },
+    "plot_bgcolor": "rgba(235,235,235,1)",
+    "paper_bgcolor": "rgba(255,255,255,1)",
+    "font": {
+      "color": "rgba(0,0,0,1)",
+      "family": "",
+      "size": 14.6118721461187
+    },
+    "title": {
+      "text": "Utah State penalties for 2022; Average: enforced = 8.80 (primary team color), all = 8.80 (secondary team color)<br> <sup><\/sup>",
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 17.5342465753425
+      },
+      "x": 0,
+      "xref": "paper",
+      "xanchor": "left"
+    },
+    "xaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [-0.25, 5.25],
+      "tickmode": "array",
+      "ticktext": ["Connecticut", "Alabama", "Weber State", "UNLV", "BYU"],
+      "tickvals": [1, 2, 3, 4, 5],
+      "categoryorder": "array",
+      "categoryarray": ["Connecticut", "Alabama", "Weber State", "UNLV", "BYU"],
+      "nticks": null,
+      "ticks": "outside",
+      "tickcolor": "rgba(51,51,51,1)",
+      "ticklen": 3.65296803652968,
+      "tickwidth": 0.66417600664176,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "tickangle": -0,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": "rgba(255,255,255,1)",
+      "gridwidth": 0.66417600664176,
+      "zeroline": false,
+      "anchor": "y",
+      "title": {
+        "text": "Opponent",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "yaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [5.75, 11.25],
+      "tickmode": "array",
+      "ticktext": ["6", "7", "8", "9", "10", "11"],
+      "tickvals": [6, 7, 8, 9, 10, 11],
+      "categoryorder": "array",
+      "categoryarray": ["6", "7", "8", "9", "10", "11"],
+      "nticks": null,
+      "ticks": "outside",
+      "tickcolor": "rgba(51,51,51,1)",
+      "ticklen": 3.65296803652968,
+      "tickwidth": 0.66417600664176,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "tickangle": -0,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": "rgba(255,255,255,1)",
+      "gridwidth": 0.66417600664176,
+      "zeroline": false,
+      "anchor": "x",
+      "title": {
+        "text": "Penalty Count: all (dotdashed line), enforced (dashed line)",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "shapes": [
+      {
+        "type": "rect",
+        "fillcolor": null,
+        "line": {
+          "color": null,
+          "width": 0,
+          "linetype": []
+        },
+        "yref": "paper",
+        "xref": "paper",
+        "x0": 0,
+        "x1": 1,
+        "y0": 0,
+        "y1": 1
+      }
+    ],
+    "showlegend": false,
+    "legend": {
+      "bgcolor": "rgba(255,255,255,1)",
+      "bordercolor": "transparent",
+      "borderwidth": 1.88976377952756,
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 11.689497716895
+      }
+    },
+    "hovermode": "closest",
+    "barmode": "relative"
+  },
+  config: {
+    "doubleClick": "reset",
+    "modeBarButtonsToAdd": ["hoverclosest", "hovercompare"],
+    "showSendToCloud": false
+  },
+  source: "A",
+  attrs: {
+    "8570198f750f": {
+      "yintercept": {},
+      "type": "scatter"
+    },
+    "85702b4e7726": {
+      "yintercept": {}
+    },
+    "85707ab45d7c": {
+      "x": {},
+      "label": {},
+      "y": {}
+    },
+    "85706af368b3": {
+      "x": {},
+      "label": {},
+      "y": {}
+    },
+    "85706ca767e6": {
+      "x": {},
+      "label": {},
+      "y": {}
+    },
+    "857027b21787": {
+      "x": {},
+      "label": {},
+      "y": {}
+    }
+  },
+  cur_data: "8570198f750f",
+  visdat: {
+    "8570198f750f": ["function (y) ", "x"],
+    "85702b4e7726": ["function (y) ", "x"],
+    "85707ab45d7c": ["function (y) ", "x"],
+    "85706af368b3": ["function (y) ", "x"],
+    "85706ca767e6": ["function (y) ", "x"],
+    "857027b21787": ["function (y) ", "x"]
+  },
+  highlight: {
+    "on": "plotly_click",
+    "persistent": false,
+    "dynamic": false,
+    "selectize": false,
+    "opacityDim": 0.2,
+    "selected": {
+      "opacity": 1
+    },
+    "debounce": 0
+  },
+  shinyEvents: ["plotly_hover", "plotly_click", "plotly_selected", "plotly_relayout", "plotly_brushed", "plotly_brushing", "plotly_clickannotation", "plotly_doubleclick", "plotly_deselect", "plotly_afterplot", "plotly_sunburstclick"],
+  base_url: "https://plot.ly"
+}

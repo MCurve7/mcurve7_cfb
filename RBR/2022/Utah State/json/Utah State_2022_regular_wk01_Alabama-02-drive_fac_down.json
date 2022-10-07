@@ -2163,6 +2163,240 @@
       "yaxis": "y13",
       "hoverinfo": "text",
       "frame": null
+    },
+    {
+      "x": [1, 2, 3, 4, 5],
+      "y": [25.3, 0.3, 3.3, 5.3, 2.3],
+      "text": [1, 1, 2, 3, 4],
+      "hovertext": ["Offense_play_count:  1<br />Yards_gained:  23<br />Down: 1", "Offense_play_count:  2<br />Yards_gained:  -2<br />Down: 1", "Offense_play_count:  3<br />Yards_gained:   1<br />Down: 2", "Offense_play_count:  4<br />Yards_gained:   3<br />Down: 3", "Offense_play_count:  5<br />Yards_gained:   0<br />Down: 4"],
+      "textfont": {
+        "size": 14.6645669291339,
+        "color": "rgba(0,0,0,1)"
+      },
+      "type": "scatter",
+      "mode": "text",
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [6, 7, 8, 9],
+      "y": [1.9, 0.9, 0.9, 9.9],
+      "text": [1, 2, 3, 4],
+      "hovertext": ["Offense_play_count:  6<br />Yards_gained:   1<br />Down: 1", "Offense_play_count:  7<br />Yards_gained:   0<br />Down: 2", "Offense_play_count:  8<br />Yards_gained:   0<br />Down: 3", "Offense_play_count:  9<br />Yards_gained:   9<br />Down: 4"],
+      "textfont": {
+        "size": 14.6645669291339,
+        "color": "rgba(0,0,0,1)"
+      },
+      "type": "scatter",
+      "mode": "text",
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x2",
+      "yaxis": "y2",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [10, 11, 12, 13],
+      "y": [0.6, 3.6, 6.6, 0.6],
+      "text": [1, 2, 3, 4],
+      "hovertext": ["Offense_play_count: 10<br />Yards_gained:   0<br />Down: 1", "Offense_play_count: 11<br />Yards_gained:   3<br />Down: 2", "Offense_play_count: 12<br />Yards_gained:   6<br />Down: 3", "Offense_play_count: 13<br />Yards_gained:   0<br />Down: 4"],
+      "textfont": {
+        "size": 14.6645669291339,
+        "color": "rgba(0,0,0,1)"
+      },
+      "type": "scatter",
+      "mode": "text",
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [14, 15, 16, 17],
+      "y": [-3, 11, 1, 1],
+      "text": [1, 2, 3, 4],
+      "hovertext": ["Offense_play_count: 14<br />Yards_gained:  -4<br />Down: 1", "Offense_play_count: 15<br />Yards_gained:  10<br />Down: 2", "Offense_play_count: 16<br />Yards_gained:   0<br />Down: 3", "Offense_play_count: 17<br />Yards_gained:   0<br />Down: 4"],
+      "textfont": {
+        "size": 14.6645669291339,
+        "color": "rgba(0,0,0,1)"
+      },
+      "type": "scatter",
+      "mode": "text",
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [18, 19, 20, 21],
+      "y": [0, 0, 0, 0],
+      "text": [1, 2, 3, 4],
+      "hovertext": ["Offense_play_count: 18<br />Yards_gained:   0<br />Down: 1", "Offense_play_count: 19<br />Yards_gained:   0<br />Down: 2", "Offense_play_count: 20<br />Yards_gained:   0<br />Down: 3", "Offense_play_count: 21<br />Yards_gained:   0<br />Down: 4"],
+      "textfont": {
+        "size": 14.6645669291339,
+        "color": "rgba(0,0,0,1)"
+      },
+      "type": "scatter",
+      "mode": "text",
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x5",
+      "yaxis": "y5",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [22, 23, 24, 25, 26, 27, 28],
+      "y": [-1.1, 3.9, 9.9, 7.9, 0.9, 0.9, 0.9],
+      "text": [1, 2, 3, 1, 2, 3, 4],
+      "hovertext": ["Offense_play_count: 22<br />Yards_gained:  -2<br />Down: 1", "Offense_play_count: 23<br />Yards_gained:   3<br />Down: 2", "Offense_play_count: 24<br />Yards_gained:   9<br />Down: 3", "Offense_play_count: 25<br />Yards_gained:   7<br />Down: 1", "Offense_play_count: 26<br />Yards_gained:   0<br />Down: 2", "Offense_play_count: 27<br />Yards_gained:   0<br />Down: 3", "Offense_play_count: 28<br />Yards_gained:   0<br />Down: 4"],
+      "textfont": {
+        "size": 14.6645669291339,
+        "color": "rgba(0,0,0,1)"
+      },
+      "type": "scatter",
+      "mode": "text",
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x6",
+      "yaxis": "y6",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [29, 30, 31, 32, 33],
+      "y": [0.9, -1.1, -4.1, 2.9, 9.9],
+      "text": [1, 2, 3, 3, 4],
+      "hovertext": ["Offense_play_count: 29<br />Yards_gained:   0<br />Down: 1", "Offense_play_count: 30<br />Yards_gained:  -2<br />Down: 2", "Offense_play_count: 31<br />Yards_gained:  -5<br />Down: 3", "Offense_play_count: 32<br />Yards_gained:   2<br />Down: 3", "Offense_play_count: 33<br />Yards_gained:   9<br />Down: 4"],
+      "textfont": {
+        "size": 14.6645669291339,
+        "color": "rgba(0,0,0,1)"
+      },
+      "type": "scatter",
+      "mode": "text",
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x7",
+      "yaxis": "y7",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [34],
+      "y": [0],
+      "text": 1,
+      "hovertext": "Offense_play_count: 34<br />Yards_gained:   0<br />Down: 1",
+      "textfont": {
+        "size": 14.6645669291339,
+        "color": "rgba(0,0,0,1)"
+      },
+      "type": "scatter",
+      "mode": "text",
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x8",
+      "yaxis": "y8",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [35, 36, 37, 38],
+      "y": [-1, 0, 0, 0],
+      "text": [1, 2, 3, 4],
+      "hovertext": ["Offense_play_count: 35<br />Yards_gained:  -1<br />Down: 1", "Offense_play_count: 36<br />Yards_gained:   0<br />Down: 2", "Offense_play_count: 37<br />Yards_gained:   0<br />Down: 3", "Offense_play_count: 38<br />Yards_gained:   0<br />Down: 4"],
+      "textfont": {
+        "size": 14.6645669291339,
+        "color": "rgba(0,0,0,1)"
+      },
+      "type": "scatter",
+      "mode": "text",
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x9",
+      "yaxis": "y9",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [39, 40, 41, 42, 43],
+      "y": [4.4, 1.4, 0.4, -4.6, 2.4],
+      "text": [1, 2, 3, 4, 4],
+      "hovertext": ["Offense_play_count: 39<br />Yards_gained:   4<br />Down: 1", "Offense_play_count: 40<br />Yards_gained:   1<br />Down: 2", "Offense_play_count: 41<br />Yards_gained:   0<br />Down: 3", "Offense_play_count: 42<br />Yards_gained:  -5<br />Down: 4", "Offense_play_count: 43<br />Yards_gained:   2<br />Down: 4"],
+      "textfont": {
+        "size": 14.6645669291339,
+        "color": "rgba(0,0,0,1)"
+      },
+      "type": "scatter",
+      "mode": "text",
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x10",
+      "yaxis": "y10",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [44, 45, 46, 47, 48, 49, 50],
+      "y": [7, 1, 11, 5, 5, 2, 1],
+      "text": [1, 2, 3, 1, 2, 3, 4],
+      "hovertext": ["Offense_play_count: 44<br />Yards_gained:   6<br />Down: 1", "Offense_play_count: 45<br />Yards_gained:   0<br />Down: 2", "Offense_play_count: 46<br />Yards_gained:  10<br />Down: 3", "Offense_play_count: 47<br />Yards_gained:   4<br />Down: 1", "Offense_play_count: 48<br />Yards_gained:   4<br />Down: 2", "Offense_play_count: 49<br />Yards_gained:   1<br />Down: 3", "Offense_play_count: 50<br />Yards_gained:   0<br />Down: 4"],
+      "textfont": {
+        "size": 14.6645669291339,
+        "color": "rgba(0,0,0,1)"
+      },
+      "type": "scatter",
+      "mode": "text",
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x11",
+      "yaxis": "y11",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64],
+      "y": [3.9, 1.9, 6.9, 7.9, 9.9, 7.9, 2.9, 0.9, 9.9, 0.9, 5.9, 0.9, -9.1, 0.9],
+      "text": [1, 2, 3, 1, 2, 1, 2, 3, 4, 1, 2, 2, 3, 4],
+      "hovertext": ["Offense_play_count: 51<br />Yards_gained:   3<br />Down: 1", "Offense_play_count: 52<br />Yards_gained:   1<br />Down: 2", "Offense_play_count: 53<br />Yards_gained:   6<br />Down: 3", "Offense_play_count: 54<br />Yards_gained:   7<br />Down: 1", "Offense_play_count: 55<br />Yards_gained:   9<br />Down: 2", "Offense_play_count: 56<br />Yards_gained:   7<br />Down: 1", "Offense_play_count: 57<br />Yards_gained:   2<br />Down: 2", "Offense_play_count: 58<br />Yards_gained:   0<br />Down: 3", "Offense_play_count: 59<br />Yards_gained:   9<br />Down: 4", "Offense_play_count: 60<br />Yards_gained:   0<br />Down: 1", "Offense_play_count: 61<br />Yards_gained:   5<br />Down: 2", "Offense_play_count: 62<br />Yards_gained:   0<br />Down: 2", "Offense_play_count: 63<br />Yards_gained: -10<br />Down: 3", "Offense_play_count: 64<br />Yards_gained:   0<br />Down: 4"],
+      "textfont": {
+        "size": 14.6645669291339,
+        "color": "rgba(0,0,0,1)"
+      },
+      "type": "scatter",
+      "mode": "text",
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x12",
+      "yaxis": "y12",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [65, 66, 67, 68, 69, 70, 71, 72],
+      "y": [3.6, 6.6, 0.6, 2.6, 0.6, 0.6, 4.6, 0.6],
+      "text": [1, 2, 3, 4, 1, 2, 3, 4],
+      "hovertext": ["Offense_play_count: 65<br />Yards_gained:   3<br />Down: 1", "Offense_play_count: 66<br />Yards_gained:   6<br />Down: 2", "Offense_play_count: 67<br />Yards_gained:   0<br />Down: 3", "Offense_play_count: 68<br />Yards_gained:   2<br />Down: 4", "Offense_play_count: 69<br />Yards_gained:   0<br />Down: 1", "Offense_play_count: 70<br />Yards_gained:   0<br />Down: 2", "Offense_play_count: 71<br />Yards_gained:   4<br />Down: 3", "Offense_play_count: 72<br />Yards_gained:   0<br />Down: 4"],
+      "textfont": {
+        "size": 14.6645669291339,
+        "color": "rgba(0,0,0,1)"
+      },
+      "type": "scatter",
+      "mode": "text",
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x13",
+      "yaxis": "y13",
+      "hoverinfo": "text",
+      "frame": null
     }
   ],
   layout: {
@@ -2505,12 +2739,12 @@
       "automargin": true,
       "type": "linear",
       "autorange": false,
-      "range": [-3.25, 24.25],
+      "range": [-3.365, 26.665],
       "tickmode": "array",
-      "ticktext": ["0", "5", "10", "15", "20"],
-      "tickvals": [0, 5, 10, 15, 20],
+      "ticktext": ["0", "5", "10", "15", "20", "25"],
+      "tickvals": [0, 5, 10, 15, 20, 25],
       "categoryorder": "array",
-      "categoryarray": ["0", "5", "10", "15", "20"],
+      "categoryarray": ["0", "5", "10", "15", "20", "25"],
       "nticks": null,
       "ticks": "outside",
       "tickcolor": "rgba(51,51,51,1)",
@@ -3773,44 +4007,50 @@
   },
   source: "A",
   attrs: {
-    "6aa457dd52c": {
+    "857020df3d8": {
       "xmin": {},
       "xmax": {},
       "ymin": {},
       "ymax": {},
       "type": "scatter"
     },
-    "6aa467f21a7e": {
+    "85702f4717fa": {
       "xmin": {},
       "xmax": {},
       "ymin": {},
       "ymax": {}
     },
-    "6aa43b572f3d": {
+    "857074f47df0": {
       "x": {},
       "y": {},
       "xend": {},
       "yend": {}
     },
-    "6aa418185e4a": {
+    "85705c7b44dc": {
       "x": {},
       "y": {},
       "colour": {}
     },
-    "6aa4523596d": {
+    "85702caa4d10": {
       "x": {},
       "y": {},
       "shape": {},
       "colour": {}
+    },
+    "8570470332bf": {
+      "x": {},
+      "y": {},
+      "label": {}
     }
   },
-  cur_data: "6aa457dd52c",
+  cur_data: "857020df3d8",
   visdat: {
-    "6aa457dd52c": ["function (y) ", "x"],
-    "6aa467f21a7e": ["function (y) ", "x"],
-    "6aa43b572f3d": ["function (y) ", "x"],
-    "6aa418185e4a": ["function (y) ", "x"],
-    "6aa4523596d": ["function (y) ", "x"]
+    "857020df3d8": ["function (y) ", "x"],
+    "85702f4717fa": ["function (y) ", "x"],
+    "857074f47df0": ["function (y) ", "x"],
+    "85705c7b44dc": ["function (y) ", "x"],
+    "85702caa4d10": ["function (y) ", "x"],
+    "8570470332bf": ["function (y) ", "x"]
   },
   highlight: {
     "on": "plotly_click",
