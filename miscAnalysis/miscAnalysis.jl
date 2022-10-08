@@ -10,10 +10,7 @@ dirContents = readdir("../../data/", join=true)
 #######################################################################################################################################
 # Drive peril by krnxprs
 
-function excess_yards(distance, yards_gained)
-    excess_yard = yards_gained - distance
-    excess_yard > 0 ? excess_yard : 0
-end
+
 
 dirContents[313]
 df = CSV.read(dirContents[313], DataFrame; normalizenames=true)
@@ -24,7 +21,7 @@ unique(df.Play_type)
 
 begin
     df_alabama = filter(:Offense => ==("Alabama"), df)
-    df_alabama = select(df_alabama, [:Offense, :Play_type, :Yards_to_goal, :Down, :Distance, :Yards_gained])
+    df_alabama = select(df_alabama, [:Offense, :Play_type, :Yards_to_goal, :Down, :Distance, :Yards_gained, :Penalty1_status, :Penalty1_team, :Penalty2_status, :Penalty2_team, :Penalty3_status, :Penalty3_team])
     df_alabama = filter(:Play_type => !=("Penalty"), df_alabama)
     df_alabama = filter(:Play_type => !=("End Period"), df_alabama)
     df_alabama = filter(:Play_type => !=("End of Regulation"), df_alabama)
@@ -59,31 +56,47 @@ begin
     df_alabama_nonperil = filter(:Play_type => !=("Pass Interception Return"), df_alabama_nonperil)
 end
 
-
+# df_alabama
 
 # browse(df_alabama)
+browse(df_alabama_nonperil)
 
-first_down = sum(filter(:Down => ==(1), df_alabama_nonperil).Yards_gained)
-second_down = sum(filter(:Down => ==(2), df_alabama_nonperil).Yards_gained)
-# first_second = first_down + second_down
+first_down_gained = sum(filter(:Down => ==(1), df_alabama_nonperil).Yards_gained)
+second_down_gained = sum(filter(:Down => ==(2), df_alabama_nonperil).Yards_gained)
+# first_second = first_down_gained + second_down_gained
 
-
+function excess_yards(offense, down, distance, yards_gained, penalty_status1, penalty_team1, penalty_status2, penalty_team2, penalty_status3, penalty_team3)
+    if ismissing(penalty_status1)
+        excess_yard = yards_gained - distance
+        excess_yard = excess_yard > 0 ? excess_yard : 0
+    elseif offense == penalty_team1 && penalty_status1 == "enforced"
+        excess_yard = 0
+    end
+    excess_yard
+end
 
 df_third_down = filter(:Down => ==(3), df_alabama_nonperil)
-df_third_down = transform(df_third_down, [:Distance, :Yards_gained] => ByRow(excess_yards) => :Excess_yards)
+df_third_down = transform(df_third_down, [:Offense, :Down, :Distance, :Yards_gained, :Penalty1_status, :Penalty1_team, :Penalty2_status, :Penalty2_team, :Penalty3_status, :Penalty3_team] 
+                                            => ByRow(excess_yards) => :Excess_yards)
 
 df_fourth_down = filter(:Down => ==(4), df_alabama_nonperil)
-df_fourth_down = transform(df_fourth_down, [:Distance, :Yards_gained] => ByRow(excess_yards) => :Excess_yards)
+df_fourth_down = transform(df_fourth_down, [:Offense, :Down, :Distance, :Yards_gained, :Penalty1_status, :Penalty1_team, :Penalty2_status, :Penalty2_team, :Penalty3_status, :Penalty3_team] 
+                                            => ByRow(excess_yards) => :Excess_yards)
 
-third_down = sum(df_third_down.Excess_yards)
-fourth_down = sum(df_fourth_down.Excess_yards)
+third_down_gained = sum(df_third_down.Yards_gained)
+# fourth_down_gained = sum(df_fourth_down.Yards_gained)
+fourth_down_gained = 0
 
-non_peril = first_down + second_down + third_down + fourth_down
+third_down_excess = sum(df_third_down.Excess_yards)
+fourth_down_excess = sum(df_fourth_down.Excess_yards)
 
-total_yards_gained = sum(df_alabama.Yards_gained)
+non_peril = first_down_gained + second_down_gained + third_down_excess + fourth_down_excess
+
+total_yards_gained = sum(df_alabama_nonperil.Yards_gained)
 
 filter(:Down => ==(3), df_alabama).Distance
 perilous_yards = sum(filter(:Down => ==(3), df_alabama).Distance)
+# perilous_yards = sum(filter(:Down => ==(3), df_alabama_nonperil).Distance)
 
 nominal_peril_yards_ratio = 0.1764705882
 
@@ -92,13 +105,13 @@ peril_yards_ratio = perilous_yards/non_peril
 drive_peril = peril_yards_ratio/nominal_peril_yards_ratio
 
 print("Total yds gained: $total_yards_gained
-1st & 2nd yds gained: $(first_down + second_down)
-3rd & 4th yds gained: $(third_down + fourth_down)
+1st & 2nd yds gained: $(first_down_gained + second_down_gained)
+3rd & 4th yds gained: $(third_down_gained + fourth_down_gained)
 3rd yds to go: $perilous_yards
-3rd & 4th yds excess: $third_down
-3rd & 4th yds non-excess: $(third_down-perilous_yards)
+3rd & 4th yds excess: $(third_down_excess+fourth_down_excess)
+3rd & 4th yds non-excess: $(third_down_excess+fourth_down_excess-perilous_yards)
 3rd snaps: $(nrow(df_third_down))
-Non-peril yards gained: $(total_yards_gained - (third_down-perilous_yards))
+Non-peril yards gained: $(total_yards_gained - (third_down_excess+fourth_down_excess-perilous_yards))
 Peril yards ratio: $peril_yards_ratio
 Drive peril: $drive_peril
 ")
