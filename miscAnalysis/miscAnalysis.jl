@@ -56,10 +56,12 @@ begin
     df_alabama_nonperil = filter(:Play_type => !=("Pass Interception Return"), df_alabama_nonperil)
 end
 
+# deleteat!(df_alabama_nonperil, [49])
+
 # df_alabama
 
 # browse(df_alabama)
-browse(df_alabama_nonperil)
+# browse(df_alabama_nonperil)
 
 first_down_gained = sum(filter(:Down => ==(1), df_alabama_nonperil).Yards_gained)
 second_down_gained = sum(filter(:Down => ==(2), df_alabama_nonperil).Yards_gained)
@@ -71,6 +73,11 @@ function excess_yards(offense, down, distance, yards_gained, penalty_status1, pe
         excess_yard = excess_yard > 0 ? excess_yard : 0
     elseif offense == penalty_team1 && penalty_status1 == "enforced"
         excess_yard = 0
+    elseif penalty_status1 == "offsetting" && ismissing(penalty_status3)
+        excess_yard = yards_gained - distance
+        excess_yard = excess_yard > 0 ? excess_yard : 0
+    else
+        println("Add code for situation")
     end
     excess_yard
 end
@@ -84,14 +91,15 @@ df_fourth_down = transform(df_fourth_down, [:Offense, :Down, :Distance, :Yards_g
                                             => ByRow(excess_yards) => :Excess_yards)
 
 third_down_gained = sum(df_third_down.Yards_gained)
-# fourth_down_gained = sum(df_fourth_down.Yards_gained)
-fourth_down_gained = 0
+fourth_down_gained = sum(df_fourth_down.Yards_gained)
+# fourth_down_gained = 0
 
 third_down_excess = sum(df_third_down.Excess_yards)
 fourth_down_excess = sum(df_fourth_down.Excess_yards)
 
 non_peril = first_down_gained + second_down_gained + third_down_excess + fourth_down_excess
 
+# total_yards_gained = sum(df_alabama_nonperil.Yards_gained)
 total_yards_gained = sum(df_alabama_nonperil.Yards_gained)
 
 filter(:Down => ==(3), df_alabama).Distance
