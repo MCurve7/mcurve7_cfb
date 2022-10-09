@@ -53,5 +53,6 @@ dirContents = readdir("../../data/unprocessed", join=true)
 dirContents[187]
 dirContents[310]
 
-dirContents[10254]
-@time run_game(310)
+i=1147
+dirContents[i]
+@time run_game(i)

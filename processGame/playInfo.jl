@@ -1519,8 +1519,10 @@ function play_safety(cols)
             end
             if occursin(tackler_specialcase1_regex, play_text)
                 tackler = "No Data"
-            else
+            elseif occursin(tackler_sack_regex, play_text)
                 tackler = strip(match(tackler_sack_regex, play_text)[1])
+            else
+                tackler = "No Data"
             end
         end
     end
