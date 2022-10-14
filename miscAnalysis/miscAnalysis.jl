@@ -10,101 +10,128 @@ dirContents = readdir("../../data/", join=true)
 #######################################################################################################################################
 # Drive peril by krnxprs
 
-
-
-dirContents[313]
-df = CSV.read(dirContents[313], DataFrame; normalizenames=true)
-
-df
-# browse(df)
-unique(df.Play_type)
-
-begin
-    df_alabama = filter(:Offense => ==("Alabama"), df)
-    df_alabama = select(df_alabama, [:Offense, :Play_type, :Yards_to_goal, :Down, :Distance, :Yards_gained, :Penalty1_status, :Penalty1_team, :Penalty2_status, :Penalty2_team, :Penalty3_status, :Penalty3_team])
-    df_alabama = filter(:Play_type => !=("Penalty"), df_alabama)
-    df_alabama = filter(:Play_type => !=("End Period"), df_alabama)
-    df_alabama = filter(:Play_type => !=("End of Regulation"), df_alabama)
-    df_alabama = filter(:Play_type => !=("End of Game"), df_alabama)
-    df_alabama = filter(:Play_type => !=("Field Goal Missed"), df_alabama)
-    df_alabama = filter(:Play_type => !=("Timeout"), df_alabama)
-    df_alabama = filter(:Play_type => !=("End of Half"), df_alabama)
-    df_alabama = filter(:Play_type => !=("Fumble Recovery (Opponent)"), df_alabama)
-    df_alabama = filter(:Play_type => !=("Punt"), df_alabama)
-    df_alabama = filter(:Play_type => !=("Blocked Punt"), df_alabama)
-    df_alabama = filter(:Play_type => !=("Punt Return Touchdown"), df_alabama)
-    df_alabama = filter(:Play_type => !=("Blocked Punt Touchdown"), df_alabama)
-    df_alabama = filter(:Play_type => !=("Field Goal Good"), df_alabama)
-    df_alabama = filter(:Play_type => !=("Blocked Field Goal"), df_alabama)
-    df_alabama = filter(:Play_type => !=("Blocked Field Goal Touchdown"), df_alabama)
-    df_alabama = filter(:Play_type => !=("Missed Field Goal Return"), df_alabama)
-    df_alabama = filter(:Play_type => !=("Missed Field Goal Return Touchdown"), df_alabama)
-    df_alabama = filter(:Play_type => !=("Kickoff"), df_alabama)
-    df_alabama = filter(:Play_type => !=("Kickoff Return Touchdown"), df_alabama)
-    df_alabama = filter(:Play_type => !=("Kickoff Return (Offense)"), df_alabama)
-    df_alabama = filter(:Play_type => !=("Uncategorized"), df_alabama)
-    df_alabama = filter(:Play_type => !=("placeholder"), df_alabama)
-    df_alabama = filter(:Play_type => !=("Defensive 2pt Conversion"), df_alabama)
-    df_alabama = filter(:Play_type => !=("Two Point Pass"), df_alabama)
-    df_alabama = filter(:Play_type => !=("Two Point Rush"), df_alabama)
-    # df_alabama = filter(:Yards_to_goal => >=(10), df_alabama)
-end
-begin
-    df_alabama_nonperil = filter(:Play_type => !=("Interception Return Touchdown"), df_alabama)
-    df_alabama_nonperil = filter(:Play_type => !=("Interception"), df_alabama_nonperil)
-    df_alabama_nonperil = filter(:Play_type => !=("Fumble Return Touchdown"), df_alabama_nonperil)
-    df_alabama_nonperil = filter(:Play_type => !=("Pass Interception Return"), df_alabama_nonperil)
-end
-
-# deleteat!(df_alabama_nonperil, [49])
-
-# df_alabama
-
-# browse(df_alabama)
-# browse(df_alabama_nonperil)
-
-first_down_gained = sum(filter(:Down => ==(1), df_alabama_nonperil).Yards_gained)
-second_down_gained = sum(filter(:Down => ==(2), df_alabama_nonperil).Yards_gained)
-# first_second = first_down_gained + second_down_gained
-
-function excess_yards(offense, down, distance, yards_gained, penalty_status1, penalty_team1, penalty_status2, penalty_team2, penalty_status3, penalty_team3)
+#######################################################################################################################################
+# Rewrite code for drive peril (use simple formulas e.g. 1st/2nd = total - 3rd/4th instead of getting directly from dataframe)
+function excess_yards(offense, play_type, down, distance, yards_gained, penalty_status1, penalty_team1, penalty_status2, penalty_team2, penalty_status3, penalty_team3)
+    println("$offense, $down, $distance, $yards_gained, $penalty_status1, $penalty_team1, $penalty_status2, $penalty_team2, $penalty_status3, $penalty_team3")
     if ismissing(penalty_status1)
         excess_yard = yards_gained - distance
-        excess_yard = excess_yard > 0 ? excess_yard : 0
+        excess_yard = excess_yard >= 0 ? excess_yard : 0
     elseif offense == penalty_team1 && penalty_status1 == "enforced"
         excess_yard = 0
     elseif penalty_status1 == "offsetting" && ismissing(penalty_status3)
         excess_yard = yards_gained - distance
-        excess_yard = excess_yard > 0 ? excess_yard : 0
+        excess_yard = excess_yard >= 0 ? excess_yard : 0
+    elseif play_type == "Penalty"
+            excess_yard = 0
     else
-        println("Add code for situation")
+        # println("Add code for situation")
+        excess_yard = yards_gained - distance
+        excess_yard = excess_yard >= 0 ? excess_yard : 0
     end
     excess_yard
 end
 
-df_third_down = filter(:Down => ==(3), df_alabama_nonperil)
-df_third_down = transform(df_third_down, [:Offense, :Down, :Distance, :Yards_gained, :Penalty1_status, :Penalty1_team, :Penalty2_status, :Penalty2_team, :Penalty3_status, :Penalty3_team] 
+function team_and_filter(df, team)
+    df_team = filter(:Offense => ==(team), df)
+    df_team = select(df_team, [:Offense, :Play_type, :Yards_to_goal, :Down, :Distance, :Yards_gained, :Penalty1_status, :Penalty1_team, :Penalty2_status, :Penalty2_team, :Penalty3_status, :Penalty3_team])
+    df_team = filter(:Play_type => !=("End Period"), df_team)
+    df_team = filter(:Play_type => !=("End of Regulation"), df_team)
+    df_team = filter(:Play_type => !=("End of Game"), df_team)
+    df_team = filter(:Play_type => !=("Field Goal Missed"), df_team)
+    df_team = filter(:Play_type => !=("Timeout"), df_team)
+    df_team = filter(:Play_type => !=("End of Half"), df_team)
+    df_team = filter(:Play_type => !=("Punt"), df_team)
+    df_team = filter(:Play_type => !=("Blocked Punt"), df_team)
+    df_team = filter(:Play_type => !=("Punt Return Touchdown"), df_team)
+    df_team = filter(:Play_type => !=("Blocked Punt Touchdown"), df_team)
+    df_team = filter(:Play_type => !=("Field Goal Good"), df_team)
+    df_team = filter(:Play_type => !=("Blocked Field Goal"), df_team)
+    df_team = filter(:Play_type => !=("Blocked Field Goal Touchdown"), df_team)
+    df_team = filter(:Play_type => !=("Missed Field Goal Return"), df_team)
+    df_team = filter(:Play_type => !=("Missed Field Goal Return Touchdown"), df_team)
+    df_team = filter(:Play_type => !=("Kickoff"), df_team)
+    df_team = filter(:Play_type => !=("Kickoff Return Touchdown"), df_team)
+    df_team = filter(:Play_type => !=("Kickoff Return (Offense)"), df_team)
+    df_team = filter(:Play_type => !=("Uncategorized"), df_team)
+    df_team = filter(:Play_type => !=("placeholder"), df_team)
+    df_team = filter(:Play_type => !=("Defensive 2pt Conversion"), df_team)
+    df_team = filter(:Play_type => !=("Two Point Pass"), df_team)
+    df_team = filter(:Play_type => !=("Two Point Rush"), df_team)
+end
+
+function filter_defense_gains(df)
+    df_team_other = filter(:Play_type => !=("Interception Return Touchdown"), df)
+    df_team_other = filter(:Play_type => !=("Interception"), df_team_other)
+    df_team_other = filter(:Play_type => !=("Fumble Return Touchdown"), df_team_other)
+    df_team_other = filter(:Play_type => !=("Fumble Recovery (Opponent)"), df_team_other)
+    df_team_other = filter(:Play_type => !=("Pass Interception Return"), df_team_other)
+end
+
+function filter_penalties(df)
+    filter(:Play_type => !=("Penalty"), df)
+end
+
+# i = 315
+# dirContents[i]
+# df = CSV.read(dirContents[i], DataFrame; normalizenames=true)
+
+i = 316
+dirContents[i]
+df = CSV.read(dirContents[i], DataFrame; normalizenames=true)
+
+# df
+# browse(df)
+# unique(df.Play_type)
+
+# team = "Alabama"
+# team = "Arkansas"
+team = "Texas A&M"
+
+df_team = team_and_filter(df, team)
+df_team_other = filter_defense_gains(df_team)
+df_nonpenalties = filter_penalties(df_team_other)
+#In case plays need to be removed e.g. Bama-Ark 2022 bad punt snap included as Rush
+# deleteat!(df_team_other, [49])
+
+# browse(df_team)
+# browse(df_team_other)
+
+begin
+    
+# first_down_gained = sum(filter(:Down => ==(1), df_team_other).Yards_gained)
+# second_down_gained = sum(filter(:Down => ==(2), df_team_other).Yards_gained)
+first_down_gained = sum(filter(:Down => ==(1), df_team_other).Yards_gained)
+second_down_gained = sum(filter(:Down => ==(2), df_team_other).Yards_gained)
+
+
+df_third_down = filter(:Down => ==(3), df_nonpenalties)
+df_third_down = transform(df_third_down, [:Offense, :Play_type, :Down, :Distance, :Yards_gained, :Penalty1_status, :Penalty1_team, :Penalty2_status, :Penalty2_team, :Penalty3_status, :Penalty3_team] 
                                             => ByRow(excess_yards) => :Excess_yards)
 
-df_fourth_down = filter(:Down => ==(4), df_alabama_nonperil)
-df_fourth_down = transform(df_fourth_down, [:Offense, :Down, :Distance, :Yards_gained, :Penalty1_status, :Penalty1_team, :Penalty2_status, :Penalty2_team, :Penalty3_status, :Penalty3_team] 
+df_fourth_down = filter(:Down => ==(4), df_nonpenalties)
+df_fourth_down = transform(df_fourth_down, [:Offense, :Play_type, :Down, :Distance, :Yards_gained, :Penalty1_status, :Penalty1_team, :Penalty2_status, :Penalty2_team, :Penalty3_status, :Penalty3_team] 
                                             => ByRow(excess_yards) => :Excess_yards)
 
 third_down_gained = sum(df_third_down.Yards_gained)
 fourth_down_gained = sum(df_fourth_down.Yards_gained)
-# fourth_down_gained = 0
+
 
 third_down_excess = sum(df_third_down.Excess_yards)
-fourth_down_excess = sum(df_fourth_down.Excess_yards)
+fourth_down_excess = nrow(df_fourth_down) == 0 ? 0 : sum(df_fourth_down.Excess_yards)
 
-non_peril = first_down_gained + second_down_gained + third_down_excess + fourth_down_excess
+thrid_downs = nrow(filter(:Down => ==(3), df_team))
+# browse(thrid_downs)
 
-# total_yards_gained = sum(df_alabama_nonperil.Yards_gained)
-total_yards_gained = sum(df_alabama_nonperil.Yards_gained)
+total_yards_gained = sum(df_nonpenalties.Yards_gained)
+# total_yards_gained = sum(df_team.Yards_gained)
 
-filter(:Down => ==(3), df_alabama).Distance
-perilous_yards = sum(filter(:Down => ==(3), df_alabama).Distance)
-# perilous_yards = sum(filter(:Down => ==(3), df_alabama_nonperil).Distance)
+perilous_yards = sum(filter(:Down => ==(3), df_nonpenalties).Distance)
+
+thrid_fourth_nonexcess = third_down_gained + fourth_down_gained - (third_down_excess+fourth_down_excess)
+
+non_peril = total_yards_gained - thrid_fourth_nonexcess
+
 
 nominal_peril_yards_ratio = 0.1764705882
 
@@ -112,14 +139,151 @@ peril_yards_ratio = perilous_yards/non_peril
 
 drive_peril = peril_yards_ratio/nominal_peril_yards_ratio
 
-print("Total yds gained: $total_yards_gained
+print("Team: $team
+Total yds gained: $total_yards_gained
 1st & 2nd yds gained: $(first_down_gained + second_down_gained)
 3rd & 4th yds gained: $(third_down_gained + fourth_down_gained)
-3rd yds to go: $perilous_yards
 3rd & 4th yds excess: $(third_down_excess+fourth_down_excess)
-3rd & 4th yds non-excess: $(third_down_excess+fourth_down_excess-perilous_yards)
-3rd snaps: $(nrow(df_third_down))
-Non-peril yards gained: $(total_yards_gained - (third_down_excess+fourth_down_excess-perilous_yards))
+3rd & 4th yds non-excess: $thrid_fourth_nonexcess
+3rd downs: $thrid_downs
+3rd yds to go: $perilous_yards
+Non-peril yards gained: $non_peril
+Peril yards ratio: $peril_yards_ratio
+Drive peril: $drive_peril
+")
+end
+#######################################################################################################################################
+#Original code for drive peril
+function excess_yards(offense, play_type, down, distance, yards_gained, penalty_status1, penalty_team1, penalty_status2, penalty_team2, penalty_status3, penalty_team3)
+    println("$offense, $down, $distance, $yards_gained, $penalty_status1, $penalty_team1, $penalty_status2, $penalty_team2, $penalty_status3, $penalty_team3")
+    if ismissing(penalty_status1)
+        excess_yard = yards_gained - distance
+        excess_yard = excess_yard >= 0 ? excess_yard : 0
+    elseif offense == penalty_team1 && penalty_status1 == "enforced"
+        excess_yard = 0
+    elseif penalty_status1 == "offsetting" && ismissing(penalty_status3)
+        excess_yard = yards_gained - distance
+        excess_yard = excess_yard >= 0 ? excess_yard : 0
+    elseif play_type == "Penalty"
+            excess_yard = 0
+    else
+        # println("Add code for situation")
+        excess_yard = yards_gained - distance
+        excess_yard = excess_yard >= 0 ? excess_yard : 0
+    end
+    excess_yard
+end
+
+function team_and_filter(df, team)
+    df_team = filter(:Offense => ==(team), df)
+    df_team = select(df_team, [:Offense, :Play_type, :Yards_to_goal, :Down, :Distance, :Yards_gained, :Penalty1_status, :Penalty1_team, :Penalty2_status, :Penalty2_team, :Penalty3_status, :Penalty3_team])
+    df_team = filter(:Play_type => !=("End Period"), df_team)
+    df_team = filter(:Play_type => !=("End of Regulation"), df_team)
+    df_team = filter(:Play_type => !=("End of Game"), df_team)
+    df_team = filter(:Play_type => !=("Field Goal Missed"), df_team)
+    df_team = filter(:Play_type => !=("Timeout"), df_team)
+    df_team = filter(:Play_type => !=("End of Half"), df_team)
+    df_team = filter(:Play_type => !=("Punt"), df_team)
+    df_team = filter(:Play_type => !=("Blocked Punt"), df_team)
+    df_team = filter(:Play_type => !=("Punt Return Touchdown"), df_team)
+    df_team = filter(:Play_type => !=("Blocked Punt Touchdown"), df_team)
+    df_team = filter(:Play_type => !=("Field Goal Good"), df_team)
+    df_team = filter(:Play_type => !=("Blocked Field Goal"), df_team)
+    df_team = filter(:Play_type => !=("Blocked Field Goal Touchdown"), df_team)
+    df_team = filter(:Play_type => !=("Missed Field Goal Return"), df_team)
+    df_team = filter(:Play_type => !=("Missed Field Goal Return Touchdown"), df_team)
+    df_team = filter(:Play_type => !=("Kickoff"), df_team)
+    df_team = filter(:Play_type => !=("Kickoff Return Touchdown"), df_team)
+    df_team = filter(:Play_type => !=("Kickoff Return (Offense)"), df_team)
+    df_team = filter(:Play_type => !=("Uncategorized"), df_team)
+    df_team = filter(:Play_type => !=("placeholder"), df_team)
+    df_team = filter(:Play_type => !=("Defensive 2pt Conversion"), df_team)
+    df_team = filter(:Play_type => !=("Two Point Pass"), df_team)
+    df_team = filter(:Play_type => !=("Two Point Rush"), df_team)
+end
+
+function filter_penalties_defense_gains(df)
+    df_team_other = filter(:Play_type => !=("Penalty"), df)
+    df_team_other = filter(:Play_type => !=("Interception Return Touchdown"), df_team_other)
+    df_team_other = filter(:Play_type => !=("Interception"), df_team_other)
+    df_team_other = filter(:Play_type => !=("Fumble Return Touchdown"), df_team_other)
+    df_team_other = filter(:Play_type => !=("Fumble Recovery (Opponent)"), df_team_other)
+    df_team_other = filter(:Play_type => !=("Pass Interception Return"), df_team_other)
+end
+
+# i = 315
+# dirContents[i]
+# df = CSV.read(dirContents[i], DataFrame; normalizenames=true)
+
+i = 316
+dirContents[i]
+df = CSV.read(dirContents[i], DataFrame; normalizenames=true)
+
+# df
+# browse(df)
+# unique(df.Play_type)
+
+# team = "Alabama"
+# team = "Arkansas"
+team = "Texas A&M"
+
+df_team = team_and_filter(df, team)
+
+
+df_team_other = filter_penalties_defense_gains(df_team)
+#In case plays need to be removed e.g. Bama-Ark 2022 bad punt snap included as Rush
+# deleteat!(df_team_other, [49])
+
+# browse(df_team)
+# browse(df_team_other)
+
+first_down_gained = sum(filter(:Down => ==(1), df_team_other).Yards_gained)
+second_down_gained = sum(filter(:Down => ==(2), df_team_other).Yards_gained)
+
+
+df_third_down = filter(:Down => ==(3), df_team_other)
+df_third_down = transform(df_third_down, [:Offense, :Play_type, :Down, :Distance, :Yards_gained, :Penalty1_status, :Penalty1_team, :Penalty2_status, :Penalty2_team, :Penalty3_status, :Penalty3_team] 
+                                            => ByRow(excess_yards) => :Excess_yards)
+
+df_fourth_down = filter(:Down => ==(4), df_team_other)
+df_fourth_down = transform(df_fourth_down, [:Offense, :Play_type, :Down, :Distance, :Yards_gained, :Penalty1_status, :Penalty1_team, :Penalty2_status, :Penalty2_team, :Penalty3_status, :Penalty3_team] 
+                                            => ByRow(excess_yards) => :Excess_yards)
+
+third_down_gained = sum(df_third_down.Yards_gained)
+fourth_down_gained = sum(df_fourth_down.Yards_gained)
+
+
+third_down_excess = sum(df_third_down.Excess_yards)
+fourth_down_excess = nrow(df_fourth_down) == 0 ? 0 : sum(df_fourth_down.Excess_yards)
+
+thrid_downs = nrow(filter(:Down => ==(3), df_team))
+# browse(thrid_downs)
+
+total_yards_gained = sum(df_team_other.Yards_gained)
+# total_yards_gained = sum(df_team.Yards_gained)
+
+perilous_yards = sum(filter(:Down => ==(3), df_team_other).Distance)
+
+thrid_fourth_nonexcess = third_down_gained + fourth_down_gained - (third_down_excess+fourth_down_excess)
+
+non_peril = total_yards_gained - thrid_fourth_nonexcess
+
+
+nominal_peril_yards_ratio = 0.1764705882
+
+peril_yards_ratio = perilous_yards/non_peril
+
+drive_peril = peril_yards_ratio/nominal_peril_yards_ratio
+
+print("Team: $team
+Total yds gained: $total_yards_gained
+1st & 2nd yds gained: $(first_down_gained + second_down_gained)
+3rd & 4th yds gained: $(third_down_gained + fourth_down_gained)
+3rd & 4th yds excess: $(third_down_excess+fourth_down_excess)
+3rd & 4th yds non-excess: $thrid_fourth_nonexcess
+3rd downs: $thrid_downs
+3rd yds to go: $perilous_yards
+Non-peril yards gained: $non_peril
 Peril yards ratio: $peril_yards_ratio
 Drive peril: $drive_peril
 ")
@@ -273,3 +437,5 @@ df_acc
 CSV.write("all_penalties_off.csv", df_off)
 CSV.write("all_penalties_dec.csv", df_dec)
 CSV.write("all_penalties_acc.csv", df_acc)
+
+#######################################################################################################################################
