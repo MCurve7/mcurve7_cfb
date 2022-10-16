@@ -1,0 +1,947 @@
+{
+  data: [
+    {
+      "x": [null, null, null, null, null],
+      "y": [15, null, null, 15, 15],
+      "text": "",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "transparent",
+        "dash": "solid"
+      },
+      "fill": "toself",
+      "fillcolor": "rgba(255,48,48,0.2)",
+      "hoveron": "fills",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [null, null, null, null, null],
+      "y": [null, 0, 0, null, null],
+      "text": "",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "transparent",
+        "dash": "solid"
+      },
+      "fill": "toself",
+      "fillcolor": "rgba(153,153,153,0.5)",
+      "hoveron": "fills",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [-2.95, 83.95],
+      "y": [0, 0],
+      "text": "yintercept: 0",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(0,0,0,0.2)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [40.5, 40.5],
+      "y": [-11.25, 82.25],
+      "text": "xintercept: 40.5",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(0,0,0,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [17.5, 17.5, null, 57.5, 57.5],
+      "y": [-11.25, 82.25, null, -11.25, 82.25],
+      "text": ["xintercept: 17.5", "xintercept: 17.5", null, "xintercept: 57.5", "xintercept: 57.5"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(0,0,0,1)",
+        "dash": "dash"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 1, null, 14, 14, null, 22, 22, null, 25, 25, null, 37, 37, null, 50, 50, null, 53, 53, null, 58, 58, null, 61, 61, null, 64, 64, null, 78, 78],
+      "y": [0, 10.75, null, 0, 15.75, null, 0, 30.75, null, 0, 7.75, null, 0, 7.75, null, 0, 2.75, null, 0, 8.75, null, 0, 8.75, null, 0, 9.75, null, 0, 8.75, null, 0, 17.75],
+      "text": ["Offense_play_count:  1<br />y0: 0<br />Offense_play_count:  1<br />Yards_gained: 10.75", "Offense_play_count:  1<br />y0: 0<br />Offense_play_count:  1<br />Yards_gained: 10.75", null, "Offense_play_count: 14<br />y0: 0<br />Offense_play_count: 14<br />Yards_gained: 15.75", "Offense_play_count: 14<br />y0: 0<br />Offense_play_count: 14<br />Yards_gained: 15.75", null, "Offense_play_count: 22<br />y0: 0<br />Offense_play_count: 22<br />Yards_gained: 30.75", "Offense_play_count: 22<br />y0: 0<br />Offense_play_count: 22<br />Yards_gained: 30.75", null, "Offense_play_count: 25<br />y0: 0<br />Offense_play_count: 25<br />Yards_gained:  7.75", "Offense_play_count: 25<br />y0: 0<br />Offense_play_count: 25<br />Yards_gained:  7.75", null, "Offense_play_count: 37<br />y0: 0<br />Offense_play_count: 37<br />Yards_gained:  7.75", "Offense_play_count: 37<br />y0: 0<br />Offense_play_count: 37<br />Yards_gained:  7.75", null, "Offense_play_count: 50<br />y0: 0<br />Offense_play_count: 50<br />Yards_gained:  2.75", "Offense_play_count: 50<br />y0: 0<br />Offense_play_count: 50<br />Yards_gained:  2.75", null, "Offense_play_count: 53<br />y0: 0<br />Offense_play_count: 53<br />Yards_gained:  8.75", "Offense_play_count: 53<br />y0: 0<br />Offense_play_count: 53<br />Yards_gained:  8.75", null, "Offense_play_count: 58<br />y0: 0<br />Offense_play_count: 58<br />Yards_gained:  8.75", "Offense_play_count: 58<br />y0: 0<br />Offense_play_count: 58<br />Yards_gained:  8.75", null, "Offense_play_count: 61<br />y0: 0<br />Offense_play_count: 61<br />Yards_gained:  9.75", "Offense_play_count: 61<br />y0: 0<br />Offense_play_count: 61<br />Yards_gained:  9.75", null, "Offense_play_count: 64<br />y0: 0<br />Offense_play_count: 64<br />Yards_gained:  8.75", "Offense_play_count: 64<br />y0: 0<br />Offense_play_count: 64<br />Yards_gained:  8.75", null, "Offense_play_count: 78<br />y0: 0<br />Offense_play_count: 78<br />Yards_gained: 17.75", "Offense_play_count: 78<br />y0: 0<br />Offense_play_count: 78<br />Yards_gained: 17.75"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 3.77952755905512,
+        "color": "rgba(0,0,0,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 2, 3, 4, 5, 6, 7],
+      "y": [11, 20, 5, 0, 12, 7, 1],
+      "text": ["Offense_play_count:  1<br />Yards_gained: 11<br />factor(O_drive_number): 1", "Offense_play_count:  2<br />Yards_gained: 20<br />factor(O_drive_number): 1", "Offense_play_count:  3<br />Yards_gained:  5<br />factor(O_drive_number): 1", "Offense_play_count:  4<br />Yards_gained:  0<br />factor(O_drive_number): 1", "Offense_play_count:  5<br />Yards_gained: 12<br />factor(O_drive_number): 1", "Offense_play_count:  6<br />Yards_gained:  7<br />factor(O_drive_number): 1", "Offense_play_count:  7<br />Yards_gained:  1<br />factor(O_drive_number): 1"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 3.77952755905512,
+        "color": "rgba(255,130,0,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "1",
+      "legendgroup": "1",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [8, 9, 10, 11, 12, 13],
+      "y": [0, 2, 15, 11, 11, 36],
+      "text": ["Offense_play_count:  8<br />Yards_gained:  0<br />factor(O_drive_number): 2", "Offense_play_count:  9<br />Yards_gained:  2<br />factor(O_drive_number): 2", "Offense_play_count: 10<br />Yards_gained: 15<br />factor(O_drive_number): 2", "Offense_play_count: 11<br />Yards_gained: 11<br />factor(O_drive_number): 2", "Offense_play_count: 12<br />Yards_gained: 11<br />factor(O_drive_number): 2", "Offense_play_count: 13<br />Yards_gained: 36<br />factor(O_drive_number): 2"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 3.77952755905512,
+        "color": "rgba(88,89,91,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(2,1)",
+      "legendgroup": "(2,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [14, 15, 16, 17],
+      "y": [16, 5, 3, 11],
+      "text": ["Offense_play_count: 14<br />Yards_gained: 16<br />factor(O_drive_number): 3", "Offense_play_count: 15<br />Yards_gained:  5<br />factor(O_drive_number): 3", "Offense_play_count: 16<br />Yards_gained:  3<br />factor(O_drive_number): 3", "Offense_play_count: 17<br />Yards_gained: 11<br />factor(O_drive_number): 3"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 3.77952755905512,
+        "color": "rgba(255,130,0,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(3,1)",
+      "legendgroup": "(3,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [18, 19, 20, 21],
+      "y": [0, 0, 7, 3],
+      "text": ["Offense_play_count: 18<br />Yards_gained:  0<br />factor(O_drive_number): 4", "Offense_play_count: 19<br />Yards_gained:  0<br />factor(O_drive_number): 4", "Offense_play_count: 20<br />Yards_gained:  7<br />factor(O_drive_number): 4", "Offense_play_count: 21<br />Yards_gained:  3<br />factor(O_drive_number): 4"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 3.77952755905512,
+        "color": "rgba(88,89,91,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(4,1)",
+      "legendgroup": "(4,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [22, 23, 24],
+      "y": [31, 7, 2],
+      "text": ["Offense_play_count: 22<br />Yards_gained: 31<br />factor(O_drive_number): 5", "Offense_play_count: 23<br />Yards_gained:  7<br />factor(O_drive_number): 5", "Offense_play_count: 24<br />Yards_gained:  2<br />factor(O_drive_number): 5"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 3.77952755905512,
+        "color": "rgba(255,130,0,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(5,1)",
+      "legendgroup": "(5,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36],
+      "y": [8, 4, 12, -5, 0, 5, 9, 3, -7, 5, 6, 0],
+      "text": ["Offense_play_count: 25<br />Yards_gained:  8<br />factor(O_drive_number): 6", "Offense_play_count: 26<br />Yards_gained:  4<br />factor(O_drive_number): 6", "Offense_play_count: 27<br />Yards_gained: 12<br />factor(O_drive_number): 6", "Offense_play_count: 28<br />Yards_gained: -5<br />factor(O_drive_number): 6", "Offense_play_count: 29<br />Yards_gained:  0<br />factor(O_drive_number): 6", "Offense_play_count: 30<br />Yards_gained:  5<br />factor(O_drive_number): 6", "Offense_play_count: 31<br />Yards_gained:  9<br />factor(O_drive_number): 6", "Offense_play_count: 32<br />Yards_gained:  3<br />factor(O_drive_number): 6", "Offense_play_count: 33<br />Yards_gained: -7<br />factor(O_drive_number): 6", "Offense_play_count: 34<br />Yards_gained:  5<br />factor(O_drive_number): 6", "Offense_play_count: 35<br />Yards_gained:  6<br />factor(O_drive_number): 6", "Offense_play_count: 36<br />Yards_gained:  0<br />factor(O_drive_number): 6"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 3.77952755905512,
+        "color": "rgba(88,89,91,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(6,1)",
+      "legendgroup": "(6,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [37, 38, 39, 40],
+      "y": [8, 4, 9, 0],
+      "text": ["Offense_play_count: 37<br />Yards_gained:  8<br />factor(O_drive_number): 7", "Offense_play_count: 38<br />Yards_gained:  4<br />factor(O_drive_number): 7", "Offense_play_count: 39<br />Yards_gained:  9<br />factor(O_drive_number): 7", "Offense_play_count: 40<br />Yards_gained:  0<br />factor(O_drive_number): 7"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 3.77952755905512,
+        "color": "rgba(255,130,0,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(7,1)",
+      "legendgroup": "(7,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [41, 42, 43, 44, 45, 46, 47, 48, 49],
+      "y": [0, 9, 5, 11, -3, 0, 5, 6, 1],
+      "text": ["Offense_play_count: 41<br />Yards_gained:  0<br />factor(O_drive_number): 8", "Offense_play_count: 42<br />Yards_gained:  9<br />factor(O_drive_number): 8", "Offense_play_count: 43<br />Yards_gained:  5<br />factor(O_drive_number): 8", "Offense_play_count: 44<br />Yards_gained: 11<br />factor(O_drive_number): 8", "Offense_play_count: 45<br />Yards_gained: -3<br />factor(O_drive_number): 8", "Offense_play_count: 46<br />Yards_gained:  0<br />factor(O_drive_number): 8", "Offense_play_count: 47<br />Yards_gained:  5<br />factor(O_drive_number): 8", "Offense_play_count: 48<br />Yards_gained:  6<br />factor(O_drive_number): 8", "Offense_play_count: 49<br />Yards_gained:  1<br />factor(O_drive_number): 8"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 3.77952755905512,
+        "color": "rgba(88,89,91,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(8,1)",
+      "legendgroup": "(8,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [50, 51, 52],
+      "y": [3, 12, 60],
+      "text": ["Offense_play_count: 50<br />Yards_gained:  3<br />factor(O_drive_number): 9", "Offense_play_count: 51<br />Yards_gained: 12<br />factor(O_drive_number): 9", "Offense_play_count: 52<br />Yards_gained: 60<br />factor(O_drive_number): 9"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 3.77952755905512,
+        "color": "rgba(255,130,0,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(9,1)",
+      "legendgroup": "(9,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [53, 54, 55, 56, 57],
+      "y": [9, 3, 4, 0, 0],
+      "text": ["Offense_play_count: 53<br />Yards_gained:  9<br />factor(O_drive_number): 10", "Offense_play_count: 54<br />Yards_gained:  3<br />factor(O_drive_number): 10", "Offense_play_count: 55<br />Yards_gained:  4<br />factor(O_drive_number): 10", "Offense_play_count: 56<br />Yards_gained:  0<br />factor(O_drive_number): 10", "Offense_play_count: 57<br />Yards_gained:  0<br />factor(O_drive_number): 10"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 3.77952755905512,
+        "color": "rgba(88,89,91,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(10,1)",
+      "legendgroup": "(10,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [58, 59, 60],
+      "y": [9, 7, 78],
+      "text": ["Offense_play_count: 58<br />Yards_gained:  9<br />factor(O_drive_number): 11", "Offense_play_count: 59<br />Yards_gained:  7<br />factor(O_drive_number): 11", "Offense_play_count: 60<br />Yards_gained: 78<br />factor(O_drive_number): 11"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 3.77952755905512,
+        "color": "rgba(255,130,0,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(11,1)",
+      "legendgroup": "(11,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [61, 62, 63],
+      "y": [10, 2, 11],
+      "text": ["Offense_play_count: 61<br />Yards_gained: 10<br />factor(O_drive_number): 12", "Offense_play_count: 62<br />Yards_gained:  2<br />factor(O_drive_number): 12", "Offense_play_count: 63<br />Yards_gained: 11<br />factor(O_drive_number): 12"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 3.77952755905512,
+        "color": "rgba(88,89,91,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(12,1)",
+      "legendgroup": "(12,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77],
+      "y": [9, 4, 2, 2, 9, 0, 5, 11, 3, 5, 1, -4, 15, 13],
+      "text": ["Offense_play_count: 64<br />Yards_gained:  9<br />factor(O_drive_number): 13", "Offense_play_count: 65<br />Yards_gained:  4<br />factor(O_drive_number): 13", "Offense_play_count: 66<br />Yards_gained:  2<br />factor(O_drive_number): 13", "Offense_play_count: 67<br />Yards_gained:  2<br />factor(O_drive_number): 13", "Offense_play_count: 68<br />Yards_gained:  9<br />factor(O_drive_number): 13", "Offense_play_count: 69<br />Yards_gained:  0<br />factor(O_drive_number): 13", "Offense_play_count: 70<br />Yards_gained:  5<br />factor(O_drive_number): 13", "Offense_play_count: 71<br />Yards_gained: 11<br />factor(O_drive_number): 13", "Offense_play_count: 72<br />Yards_gained:  3<br />factor(O_drive_number): 13", "Offense_play_count: 73<br />Yards_gained:  5<br />factor(O_drive_number): 13", "Offense_play_count: 74<br />Yards_gained:  1<br />factor(O_drive_number): 13", "Offense_play_count: 75<br />Yards_gained: -4<br />factor(O_drive_number): 13", "Offense_play_count: 76<br />Yards_gained: 15<br />factor(O_drive_number): 13", "Offense_play_count: 77<br />Yards_gained: 13<br />factor(O_drive_number): 13"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 3.77952755905512,
+        "color": "rgba(255,130,0,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(13,1)",
+      "legendgroup": "(13,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [78, 79, 80],
+      "y": [18, 27, 40],
+      "text": ["Offense_play_count: 78<br />Yards_gained: 18<br />factor(O_drive_number): 14", "Offense_play_count: 79<br />Yards_gained: 27<br />factor(O_drive_number): 14", "Offense_play_count: 80<br />Yards_gained: 40<br />factor(O_drive_number): 14"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 3.77952755905512,
+        "color": "rgba(88,89,91,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(14,1)",
+      "legendgroup": "(14,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [80],
+      "y": [40],
+      "text": "Offense_play_count: 80<br />Yards_gained: 40<br />Play_type: Field Goal Good<br />Success: Field Goal<br />Play_text: Chase McGrath 40 yd FG GOOD",
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(127,127,127,1)",
+        "opacity": 1,
+        "size": 15.1181102362205,
+        "symbol": "square-cross-open",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(127,127,127,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Field Goal,Field Goal Good)",
+      "legendgroup": "(Field Goal,Field Goal Good)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [10, 27, 28, 30, 47, 68, 75, 76],
+      "y": [15, 12, -5, 5, 5, 9, -4, 15],
+      "text": ["Offense_play_count: 10<br />Yards_gained: 15<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: Hooker, Hendon pass incomplete to Keyton, Ramel, PENALTY ALABAMA pass interference (Arnold, Terrion) 15 yards to the TENNESSEE42, NO PLAY, 1ST DOWN TENNESSEE.", "Offense_play_count: 27<br />Yards_gained: 12<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: Hooker, Hendon pass incomplete to McCoy, Bru, PENALTY ALABAMA pass interference (Branch, Brian) 12 yards to the TENNESSEE49, NO PLAY, 1ST DOWN TENNESSEE.", "Offense_play_count: 28<br />Yards_gained: -5<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: TENNESSEE Penalty, False Start (Gerald Mincey) to the Tenn 44", "Offense_play_count: 30<br />Yards_gained:  5<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: Hooker, Hendon pass complete to Warren, Jacob for 6 yards to the 50 yardline, PENALTY ALABAMA offside (Young, Byron) 5 yards to the TENNESSEE49, NO PLAY.", "Offense_play_count: 47<br />Yards_gained:  5<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: ALABAMA Penalty, Defensive Offside (Jah-Marien Latham) to the Alab 48", "Offense_play_count: 68<br />Yards_gained:  9<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: Hooker, Hendon pass incomplete to Fant, Princeton, PENALTY ALABAMA pass interference (Branch, Brian) 9 yards to the ALABAMA49, NO PLAY, 1ST DOWN TENNESSEE.", "Offense_play_count: 75<br />Yards_gained: -4<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: TENNESSEE Penalty, False Start (-4 Yards) to the Alab 28", "Offense_play_count: 76<br />Yards_gained: 15<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: Hooker, Hendon pass pass intended for Fant, Princeton intercepted by McKinstry, Kool-Aid at the ALABAMA0, McKinstry, Kool-Aid return 82 yards to the TENNESSEE18, PENALTY ALABAMA pass interference (Moore, Malachi) 15 yards to the ALABAMA13, NO PLAY, 1ST DOWN TENNESSEE."],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(255,0,255,1)",
+        "opacity": 1,
+        "size": 15.1181102362205,
+        "symbol": "hexagram-open",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(255,0,255,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "Penalty",
+      "legendgroup": "Penalty",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [21],
+      "y": [3],
+      "text": "Offense_play_count: 21<br />Yards_gained:  3<br />Play_type: Punt<br />Success: Punt<br />Play_text: Paxton Brooks punt for 31 yds , Quandarrius Robinson returns for 3 yds to the Alab 40 Quandarrius Robinson fumbled, recovered by Tenn Christian Charles",
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(127,127,127,1)",
+        "opacity": 1,
+        "size": 15.1181102362205,
+        "symbol": "diamond",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(127,127,127,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "Punt",
+      "legendgroup": "Punt",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 5, 11, 14, 22, 31, 37, 39, 44, 58, 78, 79],
+      "y": [11, 12, 11, 16, 31, 9, 8, 9, 11, 9, 18, 27],
+      "text": ["Offense_play_count:  1<br />Yards_gained: 11<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Hendon Hooker pass complete to Bru McCoy for 11 yds to the Alab 45 for a 1ST down", "Offense_play_count:  5<br />Yards_gained: 12<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Hendon Hooker pass complete to Jacob Warren for 12 yds to the Alab 8 for a 1ST down", "Offense_play_count: 11<br />Yards_gained: 11<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Hendon Hooker pass complete to Ramel Keyton for 11 yds to the Alab 47 for a 1ST down", "Offense_play_count: 14<br />Yards_gained: 16<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Hendon Hooker pass complete to Ramel Keyton for 16 yds to the Alab 19 for a 1ST down", "Offense_play_count: 22<br />Yards_gained: 31<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Hendon Hooker pass complete to Ramel Keyton for 31 yds to the Alab 9 for a 1ST down", "Offense_play_count: 31<br />Yards_gained:  9<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Hendon Hooker pass complete to Jabari Small for 9 yds to the Alab 42", "Offense_play_count: 37<br />Yards_gained:  8<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Hendon Hooker pass complete to Princeton Fant for 8 yds to the Tenn 33", "Offense_play_count: 39<br />Yards_gained:  9<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Hendon Hooker pass complete to Princeton Fant for 9 yds to the Tenn 46", "Offense_play_count: 44<br />Yards_gained: 11<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Hendon Hooker pass complete to Jabari Small for 11 yds to the 50 yard line for a 1ST down", "Offense_play_count: 58<br />Yards_gained:  9<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Hendon Hooker pass complete to Jalin Hyatt for 9 yds to the Tenn 15", "Offense_play_count: 78<br />Yards_gained: 18<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Hendon Hooker pass complete to Ramel Keyton for 18 yds to the 50 yard line for a 1ST down", "Offense_play_count: 79<br />Yards_gained: 27<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Hendon Hooker pass complete to Bru McCoy for 27 yds to the Alab 23 for a 1ST down"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,100,0,1)",
+        "opacity": 1,
+        "size": 15.1181102362205,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(0,100,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Successful,Pass Reception)",
+      "legendgroup": "(Successful,Pass Reception)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [13, 17, 52, 60, 77],
+      "y": [36, 11, 60, 78, 13],
+      "text": ["Offense_play_count: 13<br />Yards_gained: 36<br />Play_type: Passing Touchdown<br />Success: Successful<br />Play_text: Jalin Hyatt 36 Yd pass from Hendon Hooker (Chase McGrath Kick)", "Offense_play_count: 17<br />Yards_gained: 11<br />Play_type: Passing Touchdown<br />Success: Successful<br />Play_text: Jalin Hyatt 11 Yd pass from Hendon Hooker (Chase McGrath Kick)", "Offense_play_count: 52<br />Yards_gained: 60<br />Play_type: Passing Touchdown<br />Success: Successful<br />Play_text: Jalin Hyatt 60 Yd pass from Hendon Hooker (Chase McGrath PAT failed)", "Offense_play_count: 60<br />Yards_gained: 78<br />Play_type: Passing Touchdown<br />Success: Successful<br />Play_text: Jalin Hyatt 78 Yd pass from Hendon Hooker (Hendon Hooker Pass to Princeton Fant for Two-Point Conversion)", "Offense_play_count: 77<br />Yards_gained: 13<br />Play_type: Passing Touchdown<br />Success: Successful<br />Play_text: Jalin Hyatt 13 Yd pass from Hendon Hooker (Chase McGrath Kick)"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,100,0,1)",
+        "opacity": 1,
+        "size": 15.1181102362205,
+        "symbol": "square-open-dot",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(0,100,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Successful,Passing Touchdown)",
+      "legendgroup": "(Successful,Passing Touchdown)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2, 3, 6, 12, 15, 23, 25, 26, 32, 38, 42, 43, 51, 53, 54, 59, 61, 64, 65, 71, 73],
+      "y": [20, 5, 7, 11, 5, 7, 8, 4, 3, 4, 9, 5, 12, 9, 3, 7, 10, 9, 4, 11, 5],
+      "text": ["Offense_play_count:  2<br />Yards_gained: 20<br />Play_type: Rush<br />Success: Successful<br />Play_text: Hendon Hooker run for 20 yds to the Alab 25 for a 1ST down", "Offense_play_count:  3<br />Yards_gained:  5<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jabari Small run for 5 yds to the Alab 20", "Offense_play_count:  6<br />Yards_gained:  7<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jabari Small run for 7 yds to the Alab 1", "Offense_play_count: 12<br />Yards_gained: 11<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jaylen Wright run for 11 yds to the Alab 36 for a 1ST down", "Offense_play_count: 15<br />Yards_gained:  5<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jaylen Wright run for 5 yds to the Alab 14", "Offense_play_count: 23<br />Yards_gained:  7<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jabari Small run for 7 yds to the Alab 2", "Offense_play_count: 25<br />Yards_gained:  8<br />Play_type: Rush<br />Success: Successful<br />Play_text: Hendon Hooker run for 8 yds to the Tenn 33", "Offense_play_count: 26<br />Yards_gained:  4<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jabari Small run for 4 yds to the Tenn 37 for a 1ST down", "Offense_play_count: 32<br />Yards_gained:  3<br />Play_type: Rush<br />Success: Successful<br />Play_text: Hendon Hooker run for 3 yds to the Alab 39 for a 1ST down", "Offense_play_count: 38<br />Yards_gained:  4<br />Play_type: Rush<br />Success: Successful<br />Play_text: Hendon Hooker run for 4 yds to the Tenn 37 for a 1ST down", "Offense_play_count: 42<br />Yards_gained:  9<br />Play_type: Rush<br />Success: Successful<br />Play_text: Hendon Hooker run for 9 yds to the Tenn 34", "Offense_play_count: 43<br />Yards_gained:  5<br />Play_type: Rush<br />Success: Successful<br />Play_text: Hendon Hooker run for 5 yds to the Tenn 39 for a 1ST down", "Offense_play_count: 51<br />Yards_gained: 12<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jaylen Wright run for 12 yds to the Tenn 40 for a 1ST down", "Offense_play_count: 53<br />Yards_gained:  9<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jabari Small run for 9 yds to the Tenn 34", "Offense_play_count: 54<br />Yards_gained:  3<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jabari Small run for 3 yds to the Tenn 37 for a 1ST down", "Offense_play_count: 59<br />Yards_gained:  7<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jabari Small run for 7 yds to the Tenn 22 for a 1ST down", "Offense_play_count: 61<br />Yards_gained: 10<br />Play_type: Rush<br />Success: Successful<br />Play_text: Hendon Hooker run for 10 yds to the Tenn 15 for a 1ST down", "Offense_play_count: 64<br />Yards_gained:  9<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jaylen Wright run for 9 yds to the Tenn 34", "Offense_play_count: 65<br />Yards_gained:  4<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jaylen Wright run for 4 yds to the Tenn 38 for a 1ST down", "Offense_play_count: 71<br />Yards_gained: 11<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jaylen Wright run for 11 yds to the Alab 33 for a 1ST down", "Offense_play_count: 73<br />Yards_gained:  5<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jabari Small run for 5 yds to the Alab 25"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,100,0,1)",
+        "opacity": 1,
+        "size": 15.1181102362205,
+        "symbol": "circle",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(0,100,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Successful,Rush)",
+      "legendgroup": "(Successful,Rush)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [7, 24],
+      "y": [1, 2],
+      "text": ["Offense_play_count:  7<br />Yards_gained:  1<br />Play_type: Rushing Touchdown<br />Success: Successful<br />Play_text: Jabari Small 1 Yd Run (Chase McGrath Kick)", "Offense_play_count: 24<br />Yards_gained:  2<br />Play_type: Rushing Touchdown<br />Success: Successful<br />Play_text: Princeton Fant 2 Yd Run (Chase McGrath Kick)"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,100,0,1)",
+        "opacity": 1,
+        "size": 15.1181102362205,
+        "symbol": "circle-cross-open",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(0,100,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Successful,Rushing Touchdown)",
+      "legendgroup": "(Successful,Rushing Touchdown)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [63],
+      "y": [11],
+      "text": "Offense_play_count: 63<br />Yards_gained: 11<br />Play_type: Fumble Return Touchdown<br />Success: Unsuccessful<br />Play_text: Dallas Turner 11 Yd Fumble Return (Will Reichard Kick)",
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(139,26,26,1)",
+        "opacity": 1,
+        "size": 15.1181102362205,
+        "symbol": null,
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(139,26,26,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Unsuccessful,Fumble Return Touchdown)",
+      "legendgroup": "(Unsuccessful,Fumble Return Touchdown)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [8, 19, 29, 36, 40, 41, 46, 56, 69],
+      "y": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "text": ["Offense_play_count:  8<br />Yards_gained:  0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Hendon Hooker pass incomplete to Jalin Hyatt", "Offense_play_count: 19<br />Yards_gained:  0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Hendon Hooker pass incomplete to Bru McCoy", "Offense_play_count: 29<br />Yards_gained:  0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Hendon Hooker pass incomplete to Jabari Small", "Offense_play_count: 36<br />Yards_gained:  0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Hendon Hooker pass incomplete to Ramel Keyton", "Offense_play_count: 40<br />Yards_gained:  0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Joe Milton III pass incomplete", "Offense_play_count: 41<br />Yards_gained:  0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Hendon Hooker pass incomplete to Jacob Warren", "Offense_play_count: 46<br />Yards_gained:  0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Hendon Hooker pass incomplete to Ramel Keyton", "Offense_play_count: 56<br />Yards_gained:  0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Hendon Hooker pass incomplete to Ramel Keyton", "Offense_play_count: 69<br />Yards_gained:  0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Hendon Hooker pass incomplete to Jalin Hyatt"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(139,26,26,1)",
+        "opacity": 1,
+        "size": 15.1181102362205,
+        "symbol": "triangle-up-open",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(139,26,26,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Unsuccessful,Pass Incompletion)",
+      "legendgroup": "(Unsuccessful,Pass Incompletion)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [57],
+      "y": [0],
+      "text": "Offense_play_count: 57<br />Yards_gained:  0<br />Play_type: Pass Interception Return<br />Success: Unsuccessful<br />Play_text: Hendon Hooker pass intercepted DeMarcco Hellams return for no gain to the Alab 37",
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(139,26,26,1)",
+        "opacity": 1,
+        "size": 15.1181102362205,
+        "symbol": "cross-thin-open",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(139,26,26,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Unsuccessful,Pass Interception Return)",
+      "legendgroup": "(Unsuccessful,Pass Interception Return)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [20, 34, 49, 66],
+      "y": [7, 5, 1, 2],
+      "text": ["Offense_play_count: 20<br />Yards_gained:  7<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Hendon Hooker pass complete to Princeton Fant for 7 yds to the Tenn 32", "Offense_play_count: 34<br />Yards_gained:  5<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Hendon Hooker pass complete to Jaylen Wright for 5 yds to the Alab 41", "Offense_play_count: 49<br />Yards_gained:  1<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Hendon Hooker pass complete to Jacob Warren for 1 yd to the Alab 41", "Offense_play_count: 66<br />Yards_gained:  2<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Hendon Hooker pass complete to Ramel Keyton for 2 yds to the Tenn 40"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(139,26,26,1)",
+        "opacity": 1,
+        "size": 15.1181102362205,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(139,26,26,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Unsuccessful,Pass Reception)",
+      "legendgroup": "(Unsuccessful,Pass Reception)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [4, 9, 16, 18, 35, 45, 48, 50, 55, 62, 67, 70, 72, 74],
+      "y": [0, 2, 3, 0, 6, -3, 6, 3, 4, 2, 2, 5, 3, 1],
+      "text": ["Offense_play_count:  4<br />Yards_gained:  0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jabari Small run for no gain to the Alab 20", "Offense_play_count:  9<br />Yards_gained:  2<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Hendon Hooker run for 2 yds to the Tenn 27", "Offense_play_count: 16<br />Yards_gained:  3<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jaylen Wright run for 3 yds to the Alab 11", "Offense_play_count: 18<br />Yards_gained:  0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jaylen Wright run for no gain to the Tenn 25", "Offense_play_count: 35<br />Yards_gained:  6<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Hendon Hooker run for 6 yds to the Alab 35", "Offense_play_count: 45<br />Yards_gained: -3<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Hendon Hooker run for a loss of 3 yards to the Tenn 47", "Offense_play_count: 48<br />Yards_gained:  6<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jaylen Wright run for 6 yds to the Alab 42", "Offense_play_count: 50<br />Yards_gained:  3<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Hendon Hooker run for 3 yds to the Tenn 28", "Offense_play_count: 55<br />Yards_gained:  4<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jabari Small run for 4 yds to the Tenn 41", "Offense_play_count: 62<br />Yards_gained:  2<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Hendon Hooker run for 2 yds to the Tenn 17", "Offense_play_count: 67<br />Yards_gained:  2<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jaylen Wright run for 2 yds to the Tenn 42", "Offense_play_count: 70<br />Yards_gained:  5<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jaylen Wright run for 5 yds to the Alab 44", "Offense_play_count: 72<br />Yards_gained:  3<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jaylen Wright run for 3 yds to the Alab 30", "Offense_play_count: 74<br />Yards_gained:  1<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jabari Small run for 1 yd to the Alab 24"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(139,26,26,1)",
+        "opacity": 1,
+        "size": 15.1181102362205,
+        "symbol": "circle",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(139,26,26,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Unsuccessful,Rush)",
+      "legendgroup": "(Unsuccessful,Rush)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [33],
+      "y": [-7],
+      "text": "Offense_play_count: 33<br />Yards_gained: -7<br />Play_type: Sack<br />Success: Unsuccessful<br />Play_text: Hendon Hooker sacked by DJ Dale for a loss of 7 yards to the Alab 46",
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(139,26,26,1)",
+        "opacity": 1,
+        "size": 15.1181102362205,
+        "symbol": "triangle-down-open",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(139,26,26,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Unsuccessful,Sack)",
+      "legendgroup": "(Unsuccessful,Sack)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    }
+  ],
+  layout: {
+    "margin": {
+      "t": 43.2754946727549,
+      "r": 7.30593607305936,
+      "b": 39.6955859969559,
+      "l": 43.1050228310502
+    },
+    "plot_bgcolor": "rgba(229,229,229,1)",
+    "paper_bgcolor": "rgba(255,255,255,1)",
+    "font": {
+      "color": "rgba(0,0,0,1)",
+      "family": "",
+      "size": 14.6118721461187
+    },
+    "title": {
+      "text": "Tennessee[52]: Offense drives<br> <sup>2022: wk07 vs Alabama[49]<\/sup>",
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 17.5342465753425
+      },
+      "x": 0,
+      "xref": "paper",
+      "xanchor": "left"
+    },
+    "xaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [-2.95, 83.95],
+      "tickmode": "array",
+      "ticktext": ["0", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55", "60", "65", "70", "75", "80"],
+      "tickvals": [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80],
+      "categoryorder": "array",
+      "categoryarray": ["0", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55", "60", "65", "70", "75", "80"],
+      "nticks": null,
+      "ticks": "outside",
+      "tickcolor": "rgba(51,51,51,1)",
+      "ticklen": 3.65296803652968,
+      "tickwidth": 0.66417600664176,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "tickangle": -0,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": "rgba(204,204,204,1)",
+      "gridwidth": 0.66417600664176,
+      "zeroline": false,
+      "anchor": "y",
+      "title": {
+        "text": "Offensive play count including penalties",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "yaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [-11.25, 82.25],
+      "tickmode": "array",
+      "ticktext": ["-10", "-5", "0", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55", "60", "65", "70", "75", "80"],
+      "tickvals": [-10, -5, 0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80],
+      "categoryorder": "array",
+      "categoryarray": ["-10", "-5", "0", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55", "60", "65", "70", "75", "80"],
+      "nticks": null,
+      "ticks": "outside",
+      "tickcolor": "rgba(51,51,51,1)",
+      "ticklen": 3.65296803652968,
+      "tickwidth": 0.66417600664176,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "tickangle": -0,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": "rgba(204,204,204,1)",
+      "gridwidth": 0.66417600664176,
+      "zeroline": false,
+      "anchor": "x",
+      "title": {
+        "text": "Yards gained (non-cumulative)",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "shapes": [
+      {
+        "type": "rect",
+        "fillcolor": null,
+        "line": {
+          "color": null,
+          "width": 0,
+          "linetype": []
+        },
+        "yref": "paper",
+        "xref": "paper",
+        "x0": 0,
+        "x1": 1,
+        "y0": 0,
+        "y1": 1
+      }
+    ],
+    "showlegend": true,
+    "legend": {
+      "bgcolor": "rgba(255,255,255,1)",
+      "bordercolor": "transparent",
+      "borderwidth": 1.88976377952756,
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "title": {
+        "text": "Success/Drive number<br />Play type",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      }
+    },
+    "hovermode": "closest",
+    "barmode": "relative"
+  },
+  config: {
+    "doubleClick": "reset",
+    "modeBarButtonsToAdd": ["hoverclosest", "hovercompare"],
+    "showSendToCloud": false
+  },
+  source: "A",
+  attrs: {
+    "f0c3a575f75": {
+      "xmin": {},
+      "xmax": {},
+      "ymin": {},
+      "ymax": {},
+      "type": "scatter"
+    },
+    "f0c28922b3e": {
+      "xmin": {},
+      "xmax": {},
+      "ymin": {},
+      "ymax": {}
+    },
+    "f0c797f26e": {
+      "yintercept": {}
+    },
+    "f0c3e1757cc": {
+      "xintercept": {}
+    },
+    "f0ce4b6490": {
+      "x": {},
+      "y": {},
+      "xend": {},
+      "yend": {}
+    },
+    "f0c5a6f7e16": {
+      "x": {},
+      "y": {},
+      "colour": {}
+    },
+    "f0c14df2a28": {
+      "x": {},
+      "y": {},
+      "shape": {},
+      "colour": {}
+    }
+  },
+  cur_data: "f0c3a575f75",
+  visdat: {
+    "f0c3a575f75": ["function (y) ", "x"],
+    "f0c28922b3e": ["function (y) ", "x"],
+    "f0c797f26e": ["function (y) ", "x"],
+    "f0c3e1757cc": ["function (y) ", "x"],
+    "f0ce4b6490": ["function (y) ", "x"],
+    "f0c5a6f7e16": ["function (y) ", "x"],
+    "f0c14df2a28": ["function (y) ", "x"]
+  },
+  highlight: {
+    "on": "plotly_click",
+    "persistent": false,
+    "dynamic": false,
+    "selectize": false,
+    "opacityDim": 0.2,
+    "selected": {
+      "opacity": 1
+    },
+    "debounce": 0
+  },
+  shinyEvents: ["plotly_hover", "plotly_click", "plotly_selected", "plotly_relayout", "plotly_brushed", "plotly_brushing", "plotly_clickannotation", "plotly_doubleclick", "plotly_deselect", "plotly_afterplot", "plotly_sunburstclick"],
+  base_url: "https://plot.ly"
+}

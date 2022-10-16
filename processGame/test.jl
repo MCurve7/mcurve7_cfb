@@ -1189,8 +1189,13 @@ foul_type, foul_status, foul_team, foul_transgressor = foul_analysis([penalties.
 
 #############################################################################################################################################################
 
-t = ["FLORIDA", "FLORIDA ST"]
-sort!(t, rev=true)
-t
+turnovers = CSV.read("../../data/all_games/all_fumble_recovery_opponent.csv", DataFrame)
 
-get_team_name("FLORIDA ST", "Florida", "(FLORIDA|FLA|UFL|UF)", "Florida State", "(FLORIDAST|FSU|FS|FLORIDA ST)")
+#for turnovers get the yards the offense gained before turnover and the yards the defense gained after recovering turnover
+function offense_defense_yards_gained(text)
+    offense_gained = 0
+    defense_gained = 0
+
+    
+    
+end
