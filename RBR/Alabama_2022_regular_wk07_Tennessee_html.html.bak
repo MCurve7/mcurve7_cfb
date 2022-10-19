@@ -1,0 +1,920 @@
+
+<title>Extra graphs week 07 vs Tennessee</title>
+
+
+<p>
+Unfortunately work has interfered with fun, so this will be pretty short in addition to being late.
+I think balloons and others have covered what happened in the game pretty well (from my limited reading so far this week).
+Penalties were the biggest issue that popped out of my graphs; there were many ugly pink stars twinkling merrily away.
+(Don't recall if that the correct use of a semicolon and if not just go ahead and throw another flag.)
+</p>
+
+<p>
+There has been some discussion of whether we were over penalized or not (we were IMHO).
+But of the 17 penalties 8 of them were False starts, Offsides, or Delay of games, and so were not really jusgement calls. 
+That's basically 47% of all our penalties.
+</p>
+
+<table>
+  <thead>
+    <tr class = "header headerLastRow">
+      <th style = "text-align: left;">Penalty_team</th>
+      <th style = "text-align: left;">Penalty_type</th>
+      <th style = "text-align: left;">Penalty_status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Illegal Block</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Offensive Holding</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Pass Interference</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Offensive Holding</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Holding</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">False Start</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Delay Of Game</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Pass Interference</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Offside</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Defensive Offside</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">False Start</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Holding</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Delay Of Game</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">False Start</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Pass Interference</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Pass Interference</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">False Start</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Tennessee</td>
+      <td style = "text-align: left;">Holding</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Tennessee</td>
+      <td style = "text-align: left;">False Start</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Tennessee</td>
+      <td style = "text-align: left;">Defensive Offside</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Tennessee</td>
+      <td style = "text-align: left;">Pass Interference</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Tennessee</td>
+      <td style = "text-align: left;">Illegal Block</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Tennessee</td>
+      <td style = "text-align: left;">False Start</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+  </tbody>
+</table>
+
+<a href="https://postimg.cc/341htVJR" target="_blank"><img src="https://i.postimg.cc/nrbLhfyv/2022-regular-wk07-p06-penalties-SECv-FBS-enforced.png" alt="2022-regular-wk07-p06-penalties-SECv-FBS-enforced"/></a><br/><br/>
+<a href="https://postimg.cc/gwvmZrC3" target="_blank"><img src="https://i.postimg.cc/fbPL195q/2022-regular-wk07-p07-penalties-SECv-SEC-enforced.png" alt="2022-regular-wk07-p07-penalties-SECv-SEC-enforced"/></a><br/><br/>
+
+<p>
+Since the penalty data is not reliable in my data source I used 
+<a href="https://www.sports-reference.com/cfb/schools/alabama/2022/gamelog/">Sports Reference</a>
+to get the following data since they seem to be pretty good about being accurate from the spot checks I've made (not this season).
+The following table is not in order of games played because it's late and I wasn't paying attention:
+</p>
+
+<table>
+<thead>
+  <tr>
+    <th>Alabama</th>
+    <th>Arkansas</th>
+    <th>Auburn</th>
+    <th>Florida</th>
+    <th>Georgia</th>
+    <th>Kentucky</th>
+	<th>LSU</th>
+    <th>Ole Miss</th>
+	<th>Miss St</th>
+    <th>Mizzou</th>
+	<th>USC</th>
+    <th>Viles</th>
+	<th>aTm</th>
+    <th>Vandy</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>		</td>
+<td>	6	</td>
+<td>	7	</td>
+<td>	10	</td>
+<td>	10	</td>
+<td>	7	</td>
+<td>	11	</td>
+<td>	10	</td>
+<td>	9	</td>
+<td>	13	</td>
+<td>	10	</td>
+<td>	5	</td>
+<td>	6	</td>
+<td>	6	</td>
+<td>	5	</td>
+  </tr>
+  <tr>
+    <td>		</td>
+<td>	15	</td>
+<td>	10	</td>
+<td>	9	</td>
+<td>	7	</td>
+<td>	5	</td>
+<td>	10	</td>
+<td>	9	</td>
+<td>	9	</td>
+<td>	13	</td>
+<td>	9	</td>
+<td>	5	</td>
+<td>	7	</td>
+<td>	7	</td>
+<td>	7	</td>
+  </tr>
+  <tr>
+    <td>		</td>
+<td>	6	</td>
+<td>	6	</td>
+<td>	8	</td>
+<td>	6	</td>
+<td>	4	</td>
+<td>	5	</td>
+<td>	7	</td>
+<td>	6	</td>
+<td>	7	</td>
+<td>	8	</td>
+<td>	5	</td>
+<td>	11	</td>
+<td>	5	</td>
+<td>	3	</td>
+  </tr>
+  <tr>
+    <td>		</td>
+<td>	6	</td>
+<td>	3	</td>
+<td>	7	</td>
+<td>	5	</td>
+<td>	4	</td>
+<td>	4	</td>
+<td>	6	</td>
+<td>	6	</td>
+<td>	5	</td>
+<td>	7	</td>
+<td>	10	</td>
+<td>	6	</td>
+<td>	9	</td>
+<td>	5	</td>
+  </tr>
+  <tr>
+    <td>		</td>
+<td>	10	</td>
+<td>	6	</td>
+<td>	5	</td>
+<td>	5	</td>
+<td>	3	</td>
+<td>	4	</td>
+<td>	5	</td>
+<td>	6	</td>
+<td>	4	</td>
+<td>	7	</td>
+<td>	5	</td>
+<td>	12	</td>
+<td>	3	</td>
+<td>	6	</td>
+  </tr>
+  <tr>
+    <td>		</td>
+<td>	6	</td>
+<td>	10	</td>
+<td>	4	</td>
+<td>	3	</td>
+<td>	3	</td>
+<td>	2	</td>
+<td>	5	</td>
+<td>	3	</td>
+<td>	3	</td>
+<td>	6	</td>
+<td>	4	</td>
+<td>	6	</td>
+<td>	8	</td>
+<td>	5	</td>
+  </tr>
+  <tr>
+    <td>		</td>
+<td>	17	</td>
+<td>	7	</td>
+<td>	3	</td>
+<td>	1	</td>
+<td>	2	</td>
+<td>	2	</td>
+<td>	4	</td>
+<td>	3	</td>
+<td>	3	</td>
+<td>		</td>
+<td>		</td>
+<td>		</td>
+<td>		</td>
+<td>	5	</td>
+  </tr>
+  <tr>
+    <td>	Total 	</td>
+<td>	66	</td>
+<td>	49	</td>
+<td>	46	</td>
+<td>	37	</td>
+<td>	28	</td>
+<td>	38	</td>
+<td>	46	</td>
+<td>	42	</td>
+<td>	48	</td>
+<td>	47	</td>
+<td>	34	</td>
+<td>	48	</td>
+<td>	38	</td>
+<td>	36	</td>
+  </tr>
+  <tr>
+    <td>	Count	</td>
+<td>	7	</td>
+<td>	7	</td>
+<td>	7	</td>
+<td>	7	</td>
+<td>	7	</td>
+<td>	7	</td>
+<td>	7	</td>
+<td>	7	</td>
+<td>	7	</td>
+<td>	6	</td>
+<td>	6	</td>
+<td>	6	</td>
+<td>	6	</td>
+<td>	7	</td>
+  </tr>
+  <tr>
+    <td>	Avg	</td>
+<td>	9.43	</td>
+<td>	7.00	</td>
+<td>	6.57	</td>
+<td>	5.29	</td>
+<td>	4.00	</td>
+<td>	5.43	</td>
+<td>	6.57	</td>
+<td>	6.00	</td>
+<td>	6.86	</td>
+<td>	7.83	</td>
+<td>	5.67	</td>
+<td>	8.00	</td>
+<td>	6.33	</td>
+<td>	5.14	</td>
+  </tr>
+</tbody>
+</table>
+
+<p>
+Let's see what this is in terms of <i>z</i>-scores:
+</p>
+<table>
+
+<tbody>
+  
+  <tr>
+  <th>Team</th>
+    <td>	Alabama	</td>
+<td>	Viles	</td>
+<td>	Mizzou	</td>
+<td>	Arkansas	</td>
+<td>	Miss St	</td>
+<td>	Auburn	</td>
+<td>	LSU	</td>
+<td>	aTm	</td>
+<td>	Ole Miss	</td>
+<td>	USC	</td>
+<td>	Kentucky	</td>
+<td>	Florida	</td>
+<td>	Vandy	</td>
+<td>	Georgia	</td>
+
+  </tr>
+  <tr>
+  <th><i>z</i></th>
+    <td>	1.02	</td>
+<td>	0.54	</td>
+<td>	0.48	</td>
+<td>	0.20	</td>
+<td>	0.15	</td>
+<td>	0.05	</td>
+<td>	0.05	</td>
+<td>	-0.03	</td>
+<td>	-0.14	</td>
+<td>	-0.25	</td>
+<td>	-0.34	</td>
+<td>	-0.38	</td>
+<td>	-0.43	</td>
+<td>	-0.82	</td>
+
+  </tr>
+</tbody>
+</table>
+
+<p>
+Well that seems interesting, we are 1 standard devation above the SEC mean and Tennessee is the next closest at about a half standard deviation.
+Mizzou is close at 0.48 and then from there is drops to 0.2 and of course continues to go down.
+I don't have a problem with being the most penalized team in the SEC in the sense that someone has to be,
+but that jump from 0.54 to 1.02 seems suspicious.
+</p>
+
+<p>
+But hey, at least they are protecting players and especially QBs from things like getting hit in the head!
+</p>
+
+<p>
+Hopefully I'll have more time to look at graphs next week and if I have time to relook at this game I will.
+<BR />
+Roll Tide!
+</p>
+<img src=http://a.espncdn.com/i/teamlogos/ncaa/500/333.png alt="Alabama logo" height="300">
+<a href="https://postimg.cc/cKTLrvy6" target="_blank"><img src="https://i.postimg.cc/pTMhcjsQ/Alabama-2022-regular-wk07-Tennessee-01-success-drive-bar.png" alt="Alabama-2022-regular-wk07-Tennessee-01-success-drive-bar"/></a><br/><br/>
+<table>
+  <thead>
+    <tr class = "header headerLastRow">
+      <th style = "text-align: left;">Drive number</th>
+      <th style = "text-align: left;">Total</th>
+      <th style = "text-align: left;">Successful</th>
+      <th style = "text-align: left;">Unsuccessful</th>
+      <th style = "text-align: left;">Success rate</th>
+      <th style = "text-align: left;">Scoring drive</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">0.2</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">8</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">0.5</td>
+      <td style = "text-align: left;">true</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0.0</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">11</td>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">0.636364</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">10</td>
+      <td style = "text-align: left;">8</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">0.8</td>
+      <td style = "text-align: left;">true</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">0.333333</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">0.666667</td>
+      <td style = "text-align: left;">true</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">8</td>
+      <td style = "text-align: left;">12</td>
+      <td style = "text-align: left;">8</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">0.666667</td>
+      <td style = "text-align: left;">true</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">9</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">0.2</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">10</td>
+      <td style = "text-align: left;">10</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">0.6</td>
+      <td style = "text-align: left;">true</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">11</td>
+      <td style = "text-align: left;">10</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">0.4</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+<a href="https://postimg.cc/HJWpDTcm" target="_blank"><img src="https://i.postimg.cc/JhZtXnRs/Alabama-2022-regular-wk07-Tennessee-02-drive-fac-down.png" alt="Alabama-2022-regular-wk07-Tennessee-02-drive-fac-down"/></a><br/><br/>
+<a href="https://postimg.cc/QVFddN6x" target="_blank"><img src="https://i.postimg.cc/zDjbpVKW/Alabama-2022-regular-wk07-Tennessee-07-drive-extra-yards-gained.png" alt="Alabama-2022-regular-wk07-Tennessee-07-drive-extra-yards-gained"/></a><br/><br/>
+<a href="https://postimg.cc/rz7F06bG" target="_blank"><img src="https://i.postimg.cc/YqC4PMzP/Alabama-2022-regular-wk07-Tennessee-03-drive.png" alt="Alabama-2022-regular-wk07-Tennessee-03-drive"/></a><br/><br/>
+<a href="https://postimg.cc/Lgg9CvqZ" target="_blank"><img src="https://i.postimg.cc/7hm5LWwX/Alabama-2022-regular-wk07-Tennessee-08-drive-yards-to-success.png" alt="Alabama-2022-regular-wk07-Tennessee-08-drive-yards-to-success"/></a><br/><br/>
+<table>
+  <thead>
+    <tr class = "header headerLastRow">
+      <th style = "text-align: left;">Down</th>
+      <th style = "text-align: left;">Successful</th>
+      <th style = "text-align: left;">Unsuccessful</th>
+      <th style = "text-align: left;">Total</th>
+      <th style = "text-align: left;">TD/1st</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">17</td>
+      <td style = "text-align: left;">22</td>
+      <td style = "text-align: left;">39</td>
+      <td style = "text-align: left;">9</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">19</td>
+      <td style = "text-align: left;">11</td>
+      <td style = "text-align: left;">30</td>
+      <td style = "text-align: left;">15</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">13</td>
+      <td style = "text-align: left;">6</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">missing</td>
+      <td style = "text-align: left;">missing</td>
+      <td style = "text-align: left;">1</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+<a href="https://postimg.cc/bsbY1Cc7" target="_blank"><img src="https://i.postimg.cc/wT4t8ZWj/Alabama-2022-regular-wk07-Tennessee-04-all4-downs-fac.png" alt="Alabama-2022-regular-wk07-Tennessee-04-all4-downs-fac"/></a><br/><br/>
+<a href="https://postimg.cc/xX304Xdg" target="_blank"><img src="https://i.postimg.cc/L8rnhfFd/Alabama-2022-regular-wk07-Tennessee-05-all4-downs-fac-noscale.png" alt="Alabama-2022-regular-wk07-Tennessee-05-all4-downs-fac-noscale"/></a><br/><br/>
+<a href="https://postimg.cc/6235RBtc" target="_blank"><img src="https://i.postimg.cc/9MP46fk6/Alabama-2022-regular-wk07-Tennessee-06-yards-success-gained.png" alt="Alabama-2022-regular-wk07-Tennessee-06-yards-success-gained"/></a><br/><br/>
+<a href="https://postimg.cc/4YgfP6Xm" target="_blank"><img src="https://i.postimg.cc/cLKvshjM/Alabama-2022-regular-wk07-Tennessee-09-fac-yards-to-success.png" alt="Alabama-2022-regular-wk07-Tennessee-09-fac-yards-to-success"/></a><br/><br/>
+<a href="https://postimg.cc/nM9ntRzX" target="_blank"><img src="https://i.postimg.cc/h4pvTNR1/Alabama-2022-regular-wk07-Tennessee-e01-drive-success-play.png" alt="Alabama-2022-regular-wk07-Tennessee-e01-drive-success-play"/></a><br/><br/>
+<a href="https://postimg.cc/YLF7f9V6" target="_blank"><img src="https://i.postimg.cc/brCvPS9B/Alabama-2022-regular-wk07-Tennessee-e02-drive-extra-yards-gained-fac.png" alt="Alabama-2022-regular-wk07-Tennessee-e02-drive-extra-yards-gained-fac"/></a><br/><br/>
+<a href="https://postimg.cc/NyNQQZmH" target="_blank"><img src="https://i.postimg.cc/ydKxyHNv/Alabama-2022-regular-wk07-Tennessee-p01-penalties-bar.png" alt="Alabama-2022-regular-wk07-Tennessee-p01-penalties-bar"/></a><br/><br/>
+<a href="https://postimg.cc/8JjNcwmn" target="_blank"><img src="https://i.postimg.cc/ydTdfbgB/Alabama-2022-regular-wk07-Tennessee-p02-penalties-bar-all.png" alt="Alabama-2022-regular-wk07-Tennessee-p02-penalties-bar-all"/></a><br/><br/>
+
+<br />
+<a href="https://postimg.cc/MMNxQRsZ" target="_blank"><img src="https://i.postimg.cc/cC4JPBw3/Alabama-2022-regular-wk07-p03-penalties-line-season.png" alt="Alabama-2022-regular-wk07-p03-penalties-line-season"/></a><br/><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+<img src=http://a.espncdn.com/i/teamlogos/ncaa/500/2633.png alt="Alabama logo" height="300">
+<a href="https://postimg.cc/18qWmFFc" target="_blank"><img src="https://i.postimg.cc/HkSFt4sK/Tennessee-2022-regular-wk07-Alabama-01-success-drive-bar.png" alt="Tennessee-2022-regular-wk07-Alabama-01-success-drive-bar"/></a><br/><br/>
+<table>
+  <thead>
+    <tr class = "header headerLastRow">
+      <th style = "text-align: left;">Drive number</th>
+      <th style = "text-align: left;">Total</th>
+      <th style = "text-align: left;">Successful</th>
+      <th style = "text-align: left;">Unsuccessful</th>
+      <th style = "text-align: left;">Success rate</th>
+      <th style = "text-align: left;">Scoring drive</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">0.857143</td>
+      <td style = "text-align: left;">true</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">0.6</td>
+      <td style = "text-align: left;">true</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">0.75</td>
+      <td style = "text-align: left;">true</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0.0</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">1.0</td>
+      <td style = "text-align: left;">true</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">9</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">0.444444</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">0.75</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">8</td>
+      <td style = "text-align: left;">8</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">0.375</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">9</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">0.666667</td>
+      <td style = "text-align: left;">true</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">10</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0.4</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">11</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">1.0</td>
+      <td style = "text-align: left;">true</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">12</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">0.333333</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">13</td>
+      <td style = "text-align: left;">11</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">0.454545</td>
+      <td style = "text-align: left;">true</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">14</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">1.0</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+<a href="https://postimg.cc/WqznQqjZ" target="_blank"><img src="https://i.postimg.cc/sx9NG5NT/Tennessee-2022-regular-wk07-Alabama-02-drive-fac-down.png" alt="Tennessee-2022-regular-wk07-Alabama-02-drive-fac-down"/></a><br/><br/>
+<a href="https://postimg.cc/MMd5Pmkx" target="_blank"><img src="https://i.postimg.cc/kGdH5TfV/Tennessee-2022-regular-wk07-Alabama-07-drive-extra-yards-gained.png" alt="Tennessee-2022-regular-wk07-Alabama-07-drive-extra-yards-gained"/></a><br/><br/>
+<a href="https://postimg.cc/fJk2PpTP" target="_blank"><img src="https://i.postimg.cc/gkHCxP9G/Tennessee-2022-regular-wk07-Alabama-03-drive.png" alt="Tennessee-2022-regular-wk07-Alabama-03-drive"/></a><br/><br/>
+<a href="https://postimg.cc/KkZQDsHJ" target="_blank"><img src="https://i.postimg.cc/hjmwgkbW/Tennessee-2022-regular-wk07-Alabama-08-drive-yards-to-success.png" alt="Tennessee-2022-regular-wk07-Alabama-08-drive-yards-to-success"/></a><br/><br/>
+<table>
+  <thead>
+    <tr class = "header headerLastRow">
+      <th style = "text-align: left;">Down</th>
+      <th style = "text-align: left;">Successful</th>
+      <th style = "text-align: left;">Unsuccessful</th>
+      <th style = "text-align: left;">Total</th>
+      <th style = "text-align: left;">TD/1st</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">24</td>
+      <td style = "text-align: left;">12</td>
+      <td style = "text-align: left;">36</td>
+      <td style = "text-align: left;">14</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">11</td>
+      <td style = "text-align: left;">11</td>
+      <td style = "text-align: left;">22</td>
+      <td style = "text-align: left;">9</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">10</td>
+      <td style = "text-align: left;">5</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">missing</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">missing</td>
+      <td style = "text-align: left;">0</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+<a href="https://postimg.cc/F1TCDNmc" target="_blank"><img src="https://i.postimg.cc/xTQrj14s/Tennessee-2022-regular-wk07-Alabama-04-all4-downs-fac.png" alt="Tennessee-2022-regular-wk07-Alabama-04-all4-downs-fac"/></a><br/><br/>
+<a href="https://postimg.cc/jL9gYcDS" target="_blank"><img src="https://i.postimg.cc/HkWf5PHX/Tennessee-2022-regular-wk07-Alabama-05-all4-downs-fac-noscale.png" alt="Tennessee-2022-regular-wk07-Alabama-05-all4-downs-fac-noscale"/></a><br/><br/>
+<a href="https://postimg.cc/d7c5L0mM" target="_blank"><img src="https://i.postimg.cc/GpHVg84p/Tennessee-2022-regular-wk07-Alabama-06-yards-success-gained.png" alt="Tennessee-2022-regular-wk07-Alabama-06-yards-success-gained"/></a><br/><br/>
+<a href="https://postimg.cc/qgvjtSn7" target="_blank"><img src="https://i.postimg.cc/mZQqnGg7/Tennessee-2022-regular-wk07-Alabama-09-fac-yards-to-success.png" alt="Tennessee-2022-regular-wk07-Alabama-09-fac-yards-to-success"/></a><br/><br/>
+<a href="https://postimg.cc/750V8kvK" target="_blank"><img src="https://i.postimg.cc/52kkz4sW/Tennessee-2022-regular-wk07-Alabama-e01-drive-success-play.png" alt="Tennessee-2022-regular-wk07-Alabama-e01-drive-success-play"/></a><br/><br/>
+<a href="https://postimg.cc/hfHr5GYJ" target="_blank"><img src="https://i.postimg.cc/52tRjYqm/Tennessee-2022-regular-wk07-Alabama-e02-drive-extra-yards-gained-fac.png" alt="Tennessee-2022-regular-wk07-Alabama-e02-drive-extra-yards-gained-fac"/></a><br/><br/>
+<a href="https://postimg.cc/WtYS086w" target="_blank"><img src="https://i.postimg.cc/dtwXPShp/Tennessee-2022-regular-wk07-Alabama-p01-penalties-bar.png" alt="Tennessee-2022-regular-wk07-Alabama-p01-penalties-bar"/></a><br/><br/>
+<a href="https://postimg.cc/2bw9pfZs" target="_blank"><img src="https://i.postimg.cc/gj9CZzk2/Tennessee-2022-regular-wk07-Alabama-p02-penalties-bar-all.png" alt="Tennessee-2022-regular-wk07-Alabama-p02-penalties-bar-all"/></a><br/><br/>
+<table>
+  <thead>
+    <tr class = "header headerLastRow">
+      <th style = "text-align: left;">Penalty_team</th>
+      <th style = "text-align: left;">Penalty_type</th>
+      <th style = "text-align: left;">Penalty_status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Illegal Block</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Offensive Holding</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Pass Interference</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Offensive Holding</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Holding</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">False Start</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Delay Of Game</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Pass Interference</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Offside</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Defensive Offside</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">False Start</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Holding</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Delay Of Game</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">False Start</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Pass Interference</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Pass Interference</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">False Start</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Tennessee</td>
+      <td style = "text-align: left;">Holding</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Tennessee</td>
+      <td style = "text-align: left;">False Start</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Tennessee</td>
+      <td style = "text-align: left;">Defensive Offside</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Tennessee</td>
+      <td style = "text-align: left;">Pass Interference</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Tennessee</td>
+      <td style = "text-align: left;">Illegal Block</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Tennessee</td>
+      <td style = "text-align: left;">False Start</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+<a href="https://postimg.cc/Lg8C20kn" target="_blank"><img src="https://i.postimg.cc/HnQf0qV4/Tennessee-2022-regular-wk07-p03-penalties-line-season.png" alt="Tennessee-2022-regular-wk07-p03-penalties-line-season"/></a><br/><br/>
+
+
+
+
+
+
+
+
+
+
+
+<hr />
+<h2>All SEC teams</h2>
+<a href="https://postimg.cc/hJFKvV5S" target="_blank"><img src="https://i.postimg.cc/fbyyHK70/2022-regular-wk07-p04-penalties-SECv-FBS-all.png" alt="2022-regular-wk07-p04-penalties-SECv-FBS-all"/></a><br/><br/>
+<a href="https://postimg.cc/qh40X4rS" target="_blank"><img src="https://i.postimg.cc/76T64ZWH/2022-regular-wk07-p05-penalties-SECv-SEC-all.png" alt="2022-regular-wk07-p05-penalties-SECv-SEC-all"/></a><br/><br/>
+
+
+
+
+
+
+
+<hr />
+<p>Data: @CFB_Data or collegefootballdata.com</p>
+</body>
+</html>

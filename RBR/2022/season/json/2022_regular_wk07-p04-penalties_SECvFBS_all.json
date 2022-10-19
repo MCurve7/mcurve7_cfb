@@ -2,8 +2,8 @@
   data: [
     {
       "x": [0.4, 14.6],
-      "y": [5.80645161290323, 5.80645161290323],
-      "text": "yintercept: 5.806452",
+      "y": [5.81720430107527, 5.81720430107527],
+      "text": "yintercept: 5.817204",
       "type": "scatter",
       "mode": "lines",
       "line": {
@@ -20,8 +20,8 @@
     },
     {
       "x": [0.4, 14.6],
-      "y": [5.77244772447724, 5.77244772447724],
-      "text": "yintercept: 5.772448",
+      "y": [5.82041820418204, 5.82041820418204],
+      "text": "yintercept: 5.820418",
       "type": "scatter",
       "mode": "lines",
       "line": {
@@ -66,8 +66,8 @@
       "width": 0.9,
       "base": 0,
       "x": [2],
-      "y": [7.14285714285714],
-      "text": "Team: Arkansas<br />Average: 7.142857<br />Team: Arkansas",
+      "y": [7.28571428571429],
+      "text": "Team: Arkansas<br />Average: 7.285714<br />Team: Arkansas",
       "type": "bar",
       "textposition": "none",
       "marker": {
@@ -408,9 +408,9 @@
     },
     {
       "x": [2],
-      "y": [7.14285714285714],
-      "text": "7.14",
-      "hovertext": "Team: Arkansas<br />Average: 7.142857<br />Team: Arkansas<br />sprintf(\"%2.2f\", Average): 7.14",
+      "y": [7.28571428571429],
+      "text": "7.29",
+      "hovertext": "Team: Arkansas<br />Average: 7.285714<br />Team: Arkansas<br />sprintf(\"%2.2f\", Average): 7.29",
       "textfont": {
         "size": 14.6645669291339,
         "color": "rgba(0,0,0,1)"
@@ -682,7 +682,7 @@
       "size": 14.6118721461187
     },
     "title": {
-      "text": "Penalties SEC v FBS teams, season average: enforced, declined, off-setting, ambiguous<br> <sup>SEC average (green dashed) =  5.81 , FBS average (yellow dotdash) =  5.77<\/sup>",
+      "text": "Penalties SEC v FBS teams, season average: enforced, declined, off-setting, ambiguous<br> <sup>SEC average (green dashed) =  5.82 , FBS average (yellow dotdash) =  5.82<\/sup>",
       "font": {
         "color": "rgba(0,0,0,1)",
         "family": "",
@@ -820,31 +820,31 @@
   },
   source: "A",
   attrs: {
-    "f0c3886f19": {
+    "7bc42205f05": {
       "yintercept": {},
       "type": "scatter"
     },
-    "f0c4ca61dc4": {
+    "7bc72cb5b30": {
       "yintercept": {}
     },
-    "f0c7d815aa1": {
+    "7bc78d345c8": {
       "x": {},
       "y": {},
       "fill": {}
     },
-    "f0c3f8c185b": {
+    "7bc61a42f5f": {
       "x": {},
       "y": {},
       "fill": {},
       "label": {}
     }
   },
-  cur_data: "f0c3886f19",
+  cur_data: "7bc42205f05",
   visdat: {
-    "f0c3886f19": ["function (y) ", "x"],
-    "f0c4ca61dc4": ["function (y) ", "x"],
-    "f0c7d815aa1": ["function (y) ", "x"],
-    "f0c3f8c185b": ["function (y) ", "x"]
+    "7bc42205f05": ["function (y) ", "x"],
+    "7bc72cb5b30": ["function (y) ", "x"],
+    "7bc78d345c8": ["function (y) ", "x"],
+    "7bc61a42f5f": ["function (y) ", "x"]
   },
   highlight: {
     "on": "plotly_click",

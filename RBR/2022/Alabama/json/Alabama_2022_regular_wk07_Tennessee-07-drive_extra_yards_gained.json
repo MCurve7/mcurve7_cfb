@@ -236,8 +236,8 @@
     },
     {
       "x": [55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71],
-      "y": [-2, -5, 1, 4, 2, -5, 6, 1, 20, -10, -4, 1, -1, -11, -16, -2, 1],
-      "text": ["Offense_play_count:  55<br />Extra_yards_gained:  -2<br />factor(O_drive_number): 8", "Offense_play_count:  56<br />Extra_yards_gained:  -5<br />factor(O_drive_number): 8", "Offense_play_count:  57<br />Extra_yards_gained:   1<br />factor(O_drive_number): 8", "Offense_play_count:  58<br />Extra_yards_gained:   4<br />factor(O_drive_number): 8", "Offense_play_count:  59<br />Extra_yards_gained:   2<br />factor(O_drive_number): 8", "Offense_play_count:  60<br />Extra_yards_gained:  -5<br />factor(O_drive_number): 8", "Offense_play_count:  61<br />Extra_yards_gained:   6<br />factor(O_drive_number): 8", "Offense_play_count:  62<br />Extra_yards_gained:   1<br />factor(O_drive_number): 8", "Offense_play_count:  63<br />Extra_yards_gained:  20<br />factor(O_drive_number): 8", "Offense_play_count:  64<br />Extra_yards_gained: -10<br />factor(O_drive_number): 8", "Offense_play_count:  65<br />Extra_yards_gained:  -4<br />factor(O_drive_number): 8", "Offense_play_count:  66<br />Extra_yards_gained:   1<br />factor(O_drive_number): 8", "Offense_play_count:  67<br />Extra_yards_gained:  -1<br />factor(O_drive_number): 8", "Offense_play_count:  68<br />Extra_yards_gained: -11<br />factor(O_drive_number): 8", "Offense_play_count:  69<br />Extra_yards_gained: -16<br />factor(O_drive_number): 8", "Offense_play_count:  70<br />Extra_yards_gained:  -2<br />factor(O_drive_number): 8", "Offense_play_count:  71<br />Extra_yards_gained:   1<br />factor(O_drive_number): 8"],
+      "y": [-2, -5, 1, 4, 2, -5, 6, 1, 20, -5, -4, 1, 1, -10, -5, 14, 1],
+      "text": ["Offense_play_count:  55<br />Extra_yards_gained:  -2<br />factor(O_drive_number): 8", "Offense_play_count:  56<br />Extra_yards_gained:  -5<br />factor(O_drive_number): 8", "Offense_play_count:  57<br />Extra_yards_gained:   1<br />factor(O_drive_number): 8", "Offense_play_count:  58<br />Extra_yards_gained:   4<br />factor(O_drive_number): 8", "Offense_play_count:  59<br />Extra_yards_gained:   2<br />factor(O_drive_number): 8", "Offense_play_count:  60<br />Extra_yards_gained:  -5<br />factor(O_drive_number): 8", "Offense_play_count:  61<br />Extra_yards_gained:   6<br />factor(O_drive_number): 8", "Offense_play_count:  62<br />Extra_yards_gained:   1<br />factor(O_drive_number): 8", "Offense_play_count:  63<br />Extra_yards_gained:  20<br />factor(O_drive_number): 8", "Offense_play_count:  64<br />Extra_yards_gained:  -5<br />factor(O_drive_number): 8", "Offense_play_count:  65<br />Extra_yards_gained:  -4<br />factor(O_drive_number): 8", "Offense_play_count:  66<br />Extra_yards_gained:   1<br />factor(O_drive_number): 8", "Offense_play_count:  67<br />Extra_yards_gained:   1<br />factor(O_drive_number): 8", "Offense_play_count:  68<br />Extra_yards_gained: -10<br />factor(O_drive_number): 8", "Offense_play_count:  69<br />Extra_yards_gained:  -5<br />factor(O_drive_number): 8", "Offense_play_count:  70<br />Extra_yards_gained:  14<br />factor(O_drive_number): 8", "Offense_play_count:  71<br />Extra_yards_gained:   1<br />factor(O_drive_number): 8"],
       "type": "scatter",
       "mode": "lines",
       "line": {
@@ -368,8 +368,8 @@
     },
     {
       "x": [15, 16, 19, 23, 64, 67, 68, 69, 70, 76, 90],
-      "y": [-12, -12, -22, 4, -10, -1, -11, -16, -2, -13, -12],
-      "text": ["Offense_play_count:  15<br />Extra_yards_gained: -12<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: Young, Bryce pass complete to Brooks, Ja'Corey for 28 yards to the ALABAMA42, PENALTY ALABAMA holding (McClellan, Jase) 7 yards to the ALABAMA7, NO PLAY.<br />O_drive_number: 3", "Offense_play_count:  16<br />Extra_yards_gained: -12<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: ALABAMA Penalty, False Start (Jahmyr Gibbs) to the Alab 4<br />O_drive_number: 3", "Offense_play_count:  19<br />Extra_yards_gained: -22<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: ALABAMA Penalty, Delay of Game (-2 Yards) to the Alab 2<br />O_drive_number: 3", "Offense_play_count:  23<br />Extra_yards_gained:   4<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: Young, Bryce pass incomplete to Prentice, Kobe, PENALTY TENNESSEE holding (McDonald, Tamarion) 10 yards to the ALABAMA37, NO PLAY, 1ST DOWN ALABAMA.<br />O_drive_number: 4", "Offense_play_count:  64<br />Extra_yards_gained: -10<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: ALABAMA Penalty, False Start (JC Latham) to the Tenn 15<br />O_drive_number: 8", "Offense_play_count:  67<br />Extra_yards_gained:  -1<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: TENNESSEE Penalty, Defensive Offside (Jeremy Banks) to the Tenn 1<br />O_drive_number: 8", "Offense_play_count:  68<br />Extra_yards_gained: -11<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: McClellan, Jase rush for 1 yard to the TENNESSEE0, PENALTY ALABAMA holding (Brockermeyer, James) 10 yards to the TENNESSEE11, NO PLAY.<br />O_drive_number: 8", "Offense_play_count:  69<br />Extra_yards_gained: -16<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: ALABAMA Penalty, Delay of Game (-5 Yards) to the Tenn 16<br />O_drive_number: 8", "Offense_play_count:  70<br />Extra_yards_gained:  -2<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: Young, Bryce pass incomplete to Brooks, Ja'Corey, PENALTY TENNESSEE pass interference (Rucker, De'Shawn) 14 yards to the TENNESSEE2, NO PLAY, 1ST DOWN ALABAMA.<br />O_drive_number: 8", "Offense_play_count:  76<br />Extra_yards_gained: -13<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: ALABAMA Penalty, False Start (Cameron Latu) to the Tenn 43<br />O_drive_number: 9", "Offense_play_count:  90<br />Extra_yards_gained: -12<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: ALABAMA Penalty, False Start (Traeshon Holden) to the Alab 20<br />O_drive_number: 11"],
+      "y": [-12, -12, -22, 4, -5, 1, -10, -5, 14, -13, -12],
+      "text": ["Offense_play_count:  15<br />Extra_yards_gained: -12<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: Young, Bryce pass complete to Brooks, Ja'Corey for 28 yards to the ALABAMA42, PENALTY ALABAMA holding (McClellan, Jase) 7 yards to the ALABAMA7, NO PLAY.<br />O_drive_number: 3", "Offense_play_count:  16<br />Extra_yards_gained: -12<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: ALABAMA Penalty, False Start (Jahmyr Gibbs) to the Alab 4<br />O_drive_number: 3", "Offense_play_count:  19<br />Extra_yards_gained: -22<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: ALABAMA Penalty, Delay of Game (-2 Yards) to the Alab 2<br />O_drive_number: 3", "Offense_play_count:  23<br />Extra_yards_gained:   4<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: Young, Bryce pass incomplete to Prentice, Kobe, PENALTY TENNESSEE holding (McDonald, Tamarion) 10 yards to the ALABAMA37, NO PLAY, 1ST DOWN ALABAMA.<br />O_drive_number: 4", "Offense_play_count:  64<br />Extra_yards_gained:  -5<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: ALABAMA Penalty, False Start (JC Latham) to the Tenn 15<br />O_drive_number: 8", "Offense_play_count:  67<br />Extra_yards_gained:   1<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: TENNESSEE Penalty, Defensive Offside (Jeremy Banks) to the Tenn 1<br />O_drive_number: 8", "Offense_play_count:  68<br />Extra_yards_gained: -10<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: McClellan, Jase rush for 1 yard to the TENNESSEE0, PENALTY ALABAMA holding (Brockermeyer, James) 10 yards to the TENNESSEE11, NO PLAY.<br />O_drive_number: 8", "Offense_play_count:  69<br />Extra_yards_gained:  -5<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: ALABAMA Penalty, Delay of Game (-5 Yards) to the Tenn 16<br />O_drive_number: 8", "Offense_play_count:  70<br />Extra_yards_gained:  14<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: Young, Bryce pass incomplete to Brooks, Ja'Corey, PENALTY TENNESSEE pass interference (Rucker, De'Shawn) 14 yards to the TENNESSEE2, NO PLAY, 1ST DOWN ALABAMA.<br />O_drive_number: 8", "Offense_play_count:  76<br />Extra_yards_gained: -13<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: ALABAMA Penalty, False Start (Cameron Latu) to the Tenn 43<br />O_drive_number: 9", "Offense_play_count:  90<br />Extra_yards_gained: -12<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: ALABAMA Penalty, False Start (Traeshon Holden) to the Alab 20<br />O_drive_number: 11"],
       "type": "scatter",
       "mode": "markers",
       "marker": {
@@ -780,31 +780,31 @@
   },
   source: "A",
   attrs: {
-    "f0c49e5226": {
+    "7bc363b2794": {
       "xmin": {},
       "xmax": {},
       "ymin": {},
       "ymax": {},
       "type": "scatter"
     },
-    "f0c3713515": {
+    "7bc70f36c80": {
       "xmin": {},
       "xmax": {},
       "ymin": {},
       "ymax": {}
     },
-    "f0c34eb2309": {
+    "7bc66e0440b": {
       "yintercept": {}
     },
-    "f0cab63b35": {
+    "7bc602631b5": {
       "xintercept": {}
     },
-    "f0c7fe67281": {
+    "7bc6d526d35": {
       "x": {},
       "y": {},
       "colour": {}
     },
-    "f0c50517259": {
+    "7bc5f365c8": {
       "x": {},
       "y": {},
       "shape": {},
@@ -812,14 +812,14 @@
       "label": {}
     }
   },
-  cur_data: "f0c49e5226",
+  cur_data: "7bc363b2794",
   visdat: {
-    "f0c49e5226": ["function (y) ", "x"],
-    "f0c3713515": ["function (y) ", "x"],
-    "f0c34eb2309": ["function (y) ", "x"],
-    "f0cab63b35": ["function (y) ", "x"],
-    "f0c7fe67281": ["function (y) ", "x"],
-    "f0c50517259": ["function (y) ", "x"]
+    "7bc363b2794": ["function (y) ", "x"],
+    "7bc70f36c80": ["function (y) ", "x"],
+    "7bc66e0440b": ["function (y) ", "x"],
+    "7bc602631b5": ["function (y) ", "x"],
+    "7bc6d526d35": ["function (y) ", "x"],
+    "7bc5f365c8": ["function (y) ", "x"]
   },
   highlight: {
     "on": "plotly_click",
