@@ -363,6 +363,7 @@ function declined_enforced_aux(txt, offense, defense, off_abbrv_catch, def_abbrv
         end
     else
         println("Missed: declined_enforced_aux")
+        @warn("Missed: declined_enforced_aux")
     end
     
     foul_type, foul_status, foul_team, foul_transgressor
@@ -2215,6 +2216,7 @@ function offsetting_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch,
         if DEBUG_PENALTY println(m) end
     else
       println("Missed: offsetting_aux")
+      @warn("Missed: offsetting_aux")
     end
     
     foul_type, foul_status, foul_team, foul_transgressor
@@ -2561,6 +2563,7 @@ function enforced_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch, p
         end
     else
       println("Missed: enforced_aux")
+      @warn("Missed: enforced_aux")
     end
     if DEBUG_PENALTY println(m) end
 

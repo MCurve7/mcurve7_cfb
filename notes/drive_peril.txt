@@ -1,0 +1,108 @@
+
+Rephrasing the idea in just words--which I know I've done, but I think I get better at it the more times I do it--it compares the number of risky yards required (yards to go on 3rd down) to the number of safe yards gained (1st down, 2nd down, and yards on 3rd/4th down past the first down marker). The fewer yards you have to go on 3rd down, the less likely you'll have to punt or attempt a FG. The more yards you gain safely, the less likely you'll have to punt or attempt a FG. It's not trying to measure performance on 3rd/4th down. It measures your ability to not have to perform on 3rd/4th down, which helps answer the key question of the BoB era: are we relying too much on 3rd down success?
+
+####################################################################################################################################################################
+
+The basic idea is to form a ratio of the total yards to go on 3rd down (the perilous yards to go) to the yards gained outside of peril (non-peril yards gained). Non-peril yards gained include the following.
+*All yards gained on 1st down
+*All yards gained on 2nd down
+*Total of yards gained in excess of yards to go on 3rd down, if any. If you don't exceed the yards to go on a given 3rd down play, you don't add the yards gained on the play to this total.
+*Total of yards gained in excess of yards to go on 4th down, if any. If you don't exceed the yards to go on a given 4th down play, you don't add the yards gained on the play to this total.
+
+This ratio is the "peril yards ratio." The smaller the value the better. But what is a good value? To determine a good baseline, we can look to the formula for success rate and the concept of "nominal efficiency."
+
+####################################################################################################################################################################
+
+Um...I'm not sure entirely how the penalty yardage is ultimately accounted for in all those values I'm calculating. I'm parsing the 3rd and 4th down plays manually on ESPN's play-by-play page. For each 3rd down, I record the to-go yardage and the yards gained in a table. If there's a penalty on that play, here's what I do.
+
+If there was a defensive penalty, I record the original to-go yards. The yards gained depends...
+*If it was enough for the first down, I put 0 for the yards gained.
+*If it only shortened the distance, I record the yards gained for the next play-by-play line.
+
+If there was an offensive penalty on the play, I ignore the play-by-play line and use the next one for to-go yards and yards gained.
+
+If they go for it on 4th, I'm only recording the to-go yards from 3rd down and adding the yards gained on 3rd and 4th downs together.
+
+That's the only data I'm pulling out besides the total offensive yards. I tally up the 3rd yards gained (which includes 4th yards gained) and subtract that from total yards to get 1st-2nd yards gained. In my 3rd down table, I make a column that takes the min of to-go and yards gained for that line. I total that column to get 3rd & 4th yds non-excess. Everything is derived from these pieces of data.
+
+I noticed your 1st-2nd yards gained and 3rd-4th yards gained aren't adding up to the total yards. And one other thing that could be a significant difference is that, right or wrong, I did not treat our punt snap snafu as a 4th down attempt. I may should have taken that yardage out of the offensive total since I was treating it as a non-offensive play. That would have made the total yardage go up and lowered (improved) our peril yards ratio.
+
+####################################################################################################################################################################
+
+The way I get my 3rd down data is I go to the espn's play-by-play page for the game and expand all the Alabama drives.
+https://www.espn.com/college-football/playbyplay/_/gameId/401403902
+Then I use ctrl-F to find "3rd &" and read each one. There are 17 on the page, but two of the 3rd downs had penalties. Maybe this is the source of our difference for 3rd downs/snaps?
+
+3rd & 3 at ARK 7
+(2:57 - 2nd) ALABAMA Penalty, Offensive Pass Interference (-15 Yards) to the Ark 22
+
+3rd & 18 at ARK 22
+(2:51 - 2nd) Jalen Milroe pass complete to JoJo Earle for 22 yds for a TD, (Will Reichard KICK)
+
+
+3rd & 10 at ALA 25
+(14:51 - 4th) ALABAMA Penalty, False Start (-5 Yards) to the Alab 20
+
+3rd & 15 at ALA 20
+(14:30 - 4th) Jalen Milroe run for 77 yds to the Ark 3 for a 1ST down
+
+Those only count as 2 3rd down situations. For the first situation I use 18 yds to go, 22 yds gained, 18 non-excess.
+
+For the second situation I use 15 yds to go, 77 yds gained, 15 non-excess.
+
+Avatar for MCurve7
+Hmm, my data is also showing another penalty Q2, 5:02, 3rd & 3 Yards_to_goal=34
+ARKANSAS Penalty, Defensive Holding (10 Yards) to the Ark 24 for a 1ST down
+
+3rd & 3 at ARK 34
+(5:02 - 2nd) ARKANSAS Penalty, Defensive Holding (10 Yards) to the Ark 24 for a 1ST down
+
+Avatar for krnxprs
+Yeah, for that play I use 3 yds to go, 0 yds gained, 0 non-excess.
+
+####################################################################################################################################################################
+
+Need:
+Total yards gained
+1st-2nd yards gained
+3rd-4th yards gained
+3rd-4th yards excess
+3rd-4th yards non-excess
+3rd downs
+3rd yards to go
+Non-peril yards gained
+
+Non-peril yards gained:
+-All yards gained 1st/2nd including penalties
+-On 3rd/4th 
+--if Yards_gained > Distance then
+----non-peril = non-peril + (Yards_gained - Distance)
+--else
+----nothing
+--end
+
+for Play_type in [Rush(type), Pass(type), Penalty]
+	if Down == 1st
+		Non-peril = Non-peril + Yards_gained
+	elseif Down == 2nd
+		Non-peril = Non-peril + Yards_gained
+	elseif Down == 3rd
+		if Penalty == false
+			if Yards_gained > Distance
+				Non-peril = Non-peril + (Yards_gained - Distance)
+			end
+			Perilous = Perilous + Distance
+		elseif Penalty == true
+			if Penalty_team == Defense
+				Perilous = Perilous + Distance
+			end
+		end
+		Non-excess = Non-excess + min(Distance, Yards_gained)
+	elseif Down == 4th and Play_type !in [Punt(type play), FG(type play), (other non-play types)]
+		Non-peril = Non-peril + (Yards_gained - Distance)
+	end
+end
+
+for Play_type in [(turnover types)]
+	
+end

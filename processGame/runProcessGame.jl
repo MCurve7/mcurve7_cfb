@@ -1,11 +1,15 @@
 using Revise
 includet("processGame.jl")
+using Logging
 
 ############################################################################################################
 #Runs process_game on all unprocessed files, but skips processed games if overwrite = false
 function run_all_games()
     dirContents = readdir("../../data/unprocessed", join=true)
     processed_directory = "..\\..\\data\\"
+
+    # @Logging.configure(level=DEBUG)
+    # Logging.configure(filename="../notes/logfile.log")
 
     overwrite = false
     # overwrite = true
@@ -52,8 +56,8 @@ function run_game(n)
 end
 dirContents = readdir("../../data/unprocessed", join=true)
 dirContents[199]
-dirContents[318]
+dirContents[321]
 
-i=318
+i=321
 dirContents[i]
 @time run_game(i)

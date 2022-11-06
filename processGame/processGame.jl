@@ -16,6 +16,7 @@ using Random
 using StatsPlots
 using Statistics
 
+
 using Revise
 includet("foulAnalysis.jl")
 includet("playInfo.jl")
@@ -23,7 +24,8 @@ includet("playInfo.jl")
 #= 
 ToDo:
 convert all name regexs to best
-add "process error" to all ifelse as a catchall
+SCRATCH add "process error" to all ifelse as a catchall,
+learn to use Logging package
 =#
 
 #= Notes
@@ -244,23 +246,30 @@ function scoredrive(df)
 
     for i in 1:length(drive_number_list)
         dfdrive = filter(:Drive_number => x->(x==drive_number_list[i]), df)
+
+        #remove drive ending on End of Game, End of half, etc
+        #but need to keep track of how many removed and add back to get correct number of elemenets in column
+        end_of_count = nrow(filter(:Play_type => x->(x ∈ ["End of Game", "End of Half", "End of Regulation", "End Period"]), dfdrive))
+        # println("Drive number: $i, End_ofs: $end_of_count")
+        dfdrive = filter(:Play_type => x->(x ∉ ["End of Game", "End of Half", "End of Regulation", "End Period"]), dfdrive)
+
         len_dfdrive = nrow(dfdrive)
         # df_len = length(unique(dfdrive.O_scoring))
         df_len = nrow(dfdrive[in(["offense"]).(dfdrive.Who_scored), :]) + 1
         # if dfdrive[len_dfdrive, :Play_type] == "Field Goal Good"
         if dfdrive[len_dfdrive, :Play_type] ∈ ["Field Goal Good", "Interception Return Touchdown", "Defensive 2pt Conversion", "Fumble Return Touchdown", "Blocked Field Goal Touchdown",
                                                 "Blocked Punt Touchdown", "Missed Field Goal Return Touchdown"]
-            for j in 1:len_dfdrive
+            for j in 1:len_dfdrive + end_of_count
                 push!(scoredrivevec, false)
             end
         elseif df_len == 2
             if dfdrive[len_dfdrive, :Who_scored] == "offense"
                 #print("len = "*string(df_len)*"\n")
-                for j in 1:len_dfdrive
+                for j in 1:len_dfdrive + end_of_count
                     push!(scoredrivevec, true)
                 end
             else
-                for j in 1:len_dfdrive
+                for j in 1:len_dfdrive + end_of_count
                     push!(scoredrivevec, false)
                 end
             end
@@ -269,12 +278,12 @@ function scoredrive(df)
             # if unique(dfdrive.O_scoring)[1]
             if last(dfdrive.Who_scored) == "offense"
                 #print("len = $df_len, temp=$temp: true\n")
-                for j in 1:len_dfdrive
+                for j in 1:len_dfdrive + end_of_count
                     push!(scoredrivevec, true)
                 end
             else
                 #print("len = $df_len, temp = $temp: false\n")
-                for j in 1:len_dfdrive
+                for j in 1:len_dfdrive + end_of_count
                     push!(scoredrivevec, false)
                 end
             end

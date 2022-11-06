@@ -197,6 +197,7 @@ function play_rush(cols)
         else
             ##########################################################################################################
             runner = "Reprocess2mnyErrors2catch"
+            # @warn "Fcn: play_rush" game play_text
             ##########################################################################################################
         end
     end
@@ -411,6 +412,7 @@ function play_fumble_return_td(cols)
         PAT_kicker,  PAT_type, two_point, two_point_type, two_point_runner, two_point_passer, two_point_receiver = points_after(play_text)
     else
         "Error"
+        @warn "Fcn: play_fumble_return_td" game play_text
     end
     
     #[passer, receiver, interceptor, runner, forcer, recoverer, tackler, PAT_kicker,  PAT_type, two_point, two_point_type, two_point_runner, two_point_passer, two_point_receiver, punt, punt_type]
@@ -586,6 +588,7 @@ function play_pass_td(cols)
         PAT_kicker,  PAT_type, two_point, two_point_type, two_point_runner, two_point_passer, two_point_receiver = points_after(play_text)
     else
         "Error"
+        @warn "Fcn: play_pass_td" game play_text
     end
     
     [passer, receiver, PAT_kicker,  PAT_type, two_point, two_point_type, two_point_runner, two_point_passer, two_point_receiver]
@@ -735,6 +738,7 @@ function play_interception_return_td(cols)
         PAT_kicker,  PAT_type, two_point, two_point_type, two_point_runner, two_point_passer, two_point_receiver = points_after(play_text)
     else
         "Error"
+        @warn "Fcn: play_interception_return_td" game play_text
     end
 
     [passer, interceptor, PAT_kicker,  PAT_type, two_point, two_point_type, two_point_runner, two_point_passer, two_point_receiver]
@@ -949,6 +953,7 @@ function play_kickoff_return_td(cols)
         PAT_kicker,  PAT_type, two_point, two_point_type, two_point_runner, two_point_passer, two_point_receiver = points_after(play_text)
     else
         "Error"
+        @warn "Fcn: play_kickoff_return_td" game play_text
     end
     
     [kicker, returner, PAT_kicker,  PAT_type, two_point, two_point_type, two_point_runner, two_point_passer, two_point_receiver]
@@ -990,6 +995,7 @@ function play_blocked_fieldgoal_return_td(cols)
     #     PAT_kicker,  PAT_type, two_point, two_point_type, two_point_runner, two_point_passer, two_point_receiver = points_after(play_text)
     else
         "Error"
+        @warn "Fcn: play_blocked_fieldgoal_return_td" game play_text
     end
 
     [kicker, recoverer, blocker, PAT_kicker,  PAT_type, two_point, two_point_type, two_point_runner, two_point_passer, two_point_receiver, FG, FG_type]
@@ -1053,6 +1059,7 @@ function play_missed_fieldgoal_return_td(cols)
         PAT_kicker,  PAT_type, two_point, two_point_type, two_point_runner, two_point_passer, two_point_receiver = points_after(play_text)        
     else
         "Error"
+        @warn "Fcn: play_missed_fieldgoal_return_td" game play_text
     end
 
     [kicker, returner, PAT_kicker,  PAT_type, two_point, two_point_type, two_point_runner, two_point_passer, two_point_receiver, FG, FG_type]
@@ -1094,12 +1101,17 @@ function play_fieldgoal_missed_return(cols)
     kicker_regex = Regex("^$(name_regex)\\d")
     returner_nodata_regex = r",\s*return for"
     returner_regex = Regex("$(name_regex)return for")
+    returner_returned_by_regex = Regex("returned by $(name_regex)for")
     
     kicker = strip(match(kicker_regex, play_text)[1])
     if occursin(returner_nodata_regex, play_text)
         returner = "No data"
-    else
+    elseif occursin(returner_regex, play_text)
         returner = strip(match(returner_regex, play_text)[1])
+    elseif occursin(returner_returned_by_regex, play_text)
+        returner = strip(match(returner_returned_by_regex, play_text)[1])
+    else
+        returner = "No data"
     end
     
     [kicker, returner, FG_type]
@@ -1186,7 +1198,8 @@ function play_punt(cols)
     punter_regex = Regex("^$(name_regex) ?punt")
     punt_type_regex = r"(downed|fair catch|returns|touchback|out-of-bounds)"
     returner_single_initial_faircatch_regex = r"fair catch by ([A-Z\p{Lu}-]\s*(?:[A-Z\p{Lu}-][a-z\p{Ll}A-Z&\p{Lu}'\.-]+\s?)+)"
-    returner_faircatch_regex = Regex("fair catch by $(name_regex)")
+    returner_faircatch_by_regex = Regex("fair catch by $(name_regex)")
+    returner_faircatch_at_regex = Regex("fair catch at the")
     returner_returns_regex = Regex("$(name_regex) returns for")
     
     if ismissing(play_text)
@@ -1215,8 +1228,13 @@ function play_punt(cols)
             if punt_type == "fair catch"
                 if occursin(returner_single_initial_faircatch_regex, play_text)
                     returner = strip(match(returner_single_initial_faircatch_regex, play_text)[1])
+                elseif occursin(returner_faircatch_by_regex, play_text)
+                    returner = strip(match(returner_faircatch_by_regex, play_text)[1])
+                elseif occursin(returner_faircatch_at_regex, play_text)
+                    returner = "No data"
                 else
-                    returner = strip(match(returner_faircatch_regex, play_text)[1])
+                    println("Missed play_punt")
+                    @warn "Fcn: play_punt" game play_text
                 end
             elseif punt_type == "returns"
                 if occursin(returner_returns_regex, play_text)
@@ -1292,6 +1310,7 @@ function play_punt_return_td(cols)
         punter, recoverer, blocker, PAT_kicker,  PAT_type, two_point, two_point_type, two_point_runner, two_point_passer, two_point_receiver, punt_type = play_blocked_punt_td(play_text)
     else
         "Error"
+        @warn "Fcn: play_punt_return_td" game play_text
     end
 
     [punter, receiver, returner, blocker, PAT_kicker,  PAT_type, two_point, two_point_type, two_point_runner, two_point_passer, two_point_receiver, punt_type]
@@ -1377,6 +1396,7 @@ function play_blocked_punt_td(cols)
         PAT_kicker,  PAT_type, two_point, two_point_type, two_point_runner, two_point_passer, two_point_receiver = points_after(play_text)
     else
         "Error"
+        @warn "Fcn: play_blocked_punt_td" game play_text
     end
 
     [punter, recoverer, blocker, PAT_kicker,  PAT_type, two_point, two_point_type, two_point_runner, two_point_passer, two_point_receiver, punt_type]
@@ -1434,6 +1454,7 @@ function play_rush_twopoint(cols)
         two_point_runner = strip(match(rush_digit_run_regex, play_text)[1])
     else
         "Error"
+        @warn "Fcn: play_rush_twopoint" game play_text
     end
     
     [two_point, two_point_type, two_point_runner]
