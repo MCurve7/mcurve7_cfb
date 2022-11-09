@@ -124,24 +124,85 @@ function process_game(game)
     df
 end
 ###############################################################################################################################################
-
 """
-Takes Symbol("Play type") :Scoring
+Covert {'minutes': 15, 'seconds': 0} to 15:00
 """
-function oscoring(cols)
-    playtype = cols[1]
-    scoring = cols[2]
-
-    #println("playtype: $playtype, scoring: $scoring")
-    if playtype == "Interception Return Touchdown"
-        false
-    elseif scoring == true
-        true
-    else
-        false
-    end
+function clock_reformat(time)
+    clock = JSON.parse(replace(time, "'" => '"'))
+    "$(clock["minutes"]):$(@sprintf("%02d",clock["seconds"]))"
 end
 
+"""
+Makes a column vector with elements: neither, offense, defense
+"""
+function who_scored(df)
+    
+    nr = nrow(df)
+
+    #od_scored = offense or defense scored (or neither)
+    od_scored = Vector{String}()
+    if df[1, :Offense_score] ≠ 0
+        push!(od_scored, "offense")
+    elseif df[1, :Defense_score] ≠ 0
+        push!(od_scored, "defense")
+    else
+        push!(od_scored, "neither")
+    end
+
+    for i in 2:nr
+        last_d_score = df[i-1, :Defense_score]
+        current_d_score = df[i, :Defense_score]
+        last_o_score = df[i-1, :Offense_score]
+        current_o_score = df[i, :Offense_score]
+
+        #Take care of kickoffs and change of possessions
+        if df[i, :Play_number] == 1
+            # Need to fix bc recieving team (defense) isn't always the one who scored
+            if ((df[i, :Play_type] == "Kickoff") || (df[i, :Play_type] == "Kickoff Return Touchdown") || (df[i, :Play_type] == "Kickoff Return (Offense)")) && (df[i, :Scoring] == true)
+                push!(od_scored, "defense")
+            elseif df[i, :Scoring]
+                if current_o_score - last_d_score > 0
+                    push!(od_scored, "offense")
+                elseif current_d_score - last_o_score > 0
+                    push!(od_scored, "defense")
+                else
+                    push!(od_scored, "ERROR")#push!(od_scored, "neither")
+                end    
+            else
+                push!(od_scored, "neither")
+            end
+        elseif df[i, :Play_number] == 2
+            #This first case is for after kickoffs: the offense and defense swap afte the kickoff
+            if (current_o_score == last_d_score) && (current_d_score == last_o_score)
+                push!(od_scored, "neither")
+            elseif current_o_score - last_o_score > 0
+                push!(od_scored, "offense")
+            elseif current_d_score - last_d_score > 0
+                push!(od_scored, "defense")
+            else
+                push!(od_scored, "neither")
+            end
+        else
+            if current_o_score - last_o_score > 0
+                push!(od_scored, "offense")
+            elseif current_d_score - last_d_score > 0
+                push!(od_scored, "defense")
+            else
+                push!(od_scored, "neither")
+            end
+        end
+    end
+
+    #Make DataFrame with one column :Who_scored
+    DataFrame(:Who_scored => od_scored)
+end
+
+"""
+Calculates how many yards needed to be successful.
+    1st down:  50% of yards to make a 1st down or TD
+    2nd down:  70% of yards to make a 1st down or TD
+    3rd down: 100% of yards to make a 1st down or TD
+"""
 function yards_to_success(cols)
     down = cols[1]
     distance = cols[2]
@@ -154,6 +215,12 @@ function yards_to_success(cols)
     end
 end
 
+"""
+Determine if a play was successful or unsuccessful and return:
+    Successful
+    Unsuccessful
+    or the play type for plays that successful/unsuccessful doesn't apply
+"""
 function successful(cols)
     playtype = cols[1]
     down = cols[2]
@@ -217,6 +284,9 @@ function successful(cols)
     end
 end
 
+"""
+Return true if play makes a 1st down or TD and false o.w.
+"""
 function tdfirst(cols)
     play_type = cols[1]
     yardsgained = cols[2]
@@ -233,6 +303,10 @@ function tdfirst(cols)
         false
     end
 end
+
+
+
+
 
 #I think I need to exclude pic-6s, fumbles retunred for TD, KO/punts for TD, field goals:
 #   make vector of Play types to exclude, in for loop:drive_number_list check if Play type is in vector and if so set to false.
@@ -294,63 +368,21 @@ function scoredrive(df)
 end
 
 
-function who_scored(df)
-    
-    nr = nrow(df)
+"""
+Takes Symbol("Play type") :Scoring
+"""
+function oscoring(cols)
+    playtype = cols[1]
+    scoring = cols[2]
 
-    od_scored = Vector{String}()
-    if df[1, :Offense_score] ≠ 0
-        push!(od_scored, "offense")
-    elseif df[1, :Defense_score] ≠ 0
-        push!(od_scored, "defense")
+    #println("playtype: $playtype, scoring: $scoring")
+    if playtype == "Interception Return Touchdown"
+        false
+    elseif scoring == true
+        true
     else
-        push!(od_scored, "neither")
+        false
     end
-
-    for i in 2:nr
-        last_d_score = df[i-1, :Defense_score]
-        current_d_score = df[i, :Defense_score]
-        last_o_score = df[i-1, :Offense_score]
-        current_o_score = df[i, :Offense_score]
-
-        #Take care of kickoffs and change of possessions
-        if df[i, :Play_number] == 1
-            # Need to fix bc recieving team (defense) isn't always the one who scored
-            if ((df[i, :Play_type] == "Kickoff") || (df[i, :Play_type] == "Kickoff Return Touchdown") || (df[i, :Play_type] == "Kickoff Return (Offense)")) && (df[i, :Scoring] == true)
-                push!(od_scored, "defense")
-            elseif df[i, :Scoring]
-                if current_o_score - last_d_score > 0
-                    push!(od_scored, "offense")
-                elseif current_d_score - last_o_score > 0
-                    push!(od_scored, "defense")
-                else
-                    push!(od_scored, "ERROR")#push!(od_scored, "neither")
-                end    
-            else
-                push!(od_scored, "neither")
-            end
-        elseif df[i, :Play_number] == 2
-            if (current_o_score == last_d_score) && (current_d_score == last_o_score)
-                push!(od_scored, "neither")
-            elseif current_o_score - last_o_score > 0
-                push!(od_scored, "offense")
-            elseif current_d_score - last_d_score > 0
-                push!(od_scored, "defense")
-            else
-                push!(od_scored, "neither")
-            end
-        else
-            if current_o_score - last_o_score > 0
-                push!(od_scored, "offense")
-            elseif current_d_score - last_d_score > 0
-                push!(od_scored, "defense")
-            else
-                push!(od_scored, "neither")
-            end
-        end
-    end
-
-    DataFrame(:Who_scored => od_scored)
 end
 
 #######################################################################################################################################################################################
@@ -656,10 +688,7 @@ function foultransgressor(cols)
     foultransgressor
 end
 
-function clock_reformat(time)
-    clock = JSON.parse(replace(time, "'" => '"'))
-    "$(clock["minutes"]):$(@sprintf("%02d",clock["seconds"]))"
-end
+
 #END old foul functions
 ##############################################################################################################
 
