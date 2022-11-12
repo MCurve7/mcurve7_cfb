@@ -124,6 +124,7 @@ function process_game(game)
     df
 end
 ###############################################################################################################################################
+
 """
 Covert {'minutes': 15, 'seconds': 0} to 15:00
 """
@@ -376,7 +377,8 @@ function oscoring(cols)
     scoring = cols[2]
 
     #println("playtype: $playtype, scoring: $scoring")
-    if playtype == "Interception Return Touchdown"
+    # if playtype == "Interception Return Touchdown"
+    if playtype ∈ ["Interception Return Touchdown", "Fumble Return Touchdown", "Safety"]
         false
     elseif scoring == true
         true
@@ -385,6 +387,7 @@ function oscoring(cols)
     end
 end
 
+#=
 #######################################################################################################################################################################################
 function foulteam_checkname(foulteam, offense, defense, school_colors)
     #println("foulteam: $foulteam, offense: $offense, defense: $defense")
@@ -691,6 +694,7 @@ end
 
 #END old foul functions
 ##############################################################################################################
+=#
 
 #####################################################################################################
 

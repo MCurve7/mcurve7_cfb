@@ -188,6 +188,7 @@ function process_name(name)
     end
 end
 
+############################################################################################################################################################
 function declined_enforced_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch, off_abbrv, def_abbrv, penalty_type_vec)
 
     penalties_regex_txt = "(?:Penalty|PENALTY)"
@@ -1444,6 +1445,7 @@ function declinedaux_penalty_team_foul_team_foul_declined(txt, offense, defense,
     foul_type, foul_status, foul_team, foul_transgressor
 end
 
+############################################################################################################################################################
 function declined_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch, penalty_type_vec)
     
     declined_accepted = Regex("$penalties_regex_txt (?:[A-Za-z'\\(\\),\\.\\d-]+ )+declined,(?: NO PLAY,)? $penalties_regex_txt (?:[A-Za-z'\\(\\),\\.\\d-]+ )+\\d+")
@@ -1577,6 +1579,7 @@ function declined_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch, p
     foul_type, foul_status, foul_team, foul_transgressor
 end
 
+############################################################################################################################################################
 function offsetting_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch, penalty_type_vec)
     penalties_regex_txt = "(?:Penalty|PENALTY)"
 
@@ -2222,6 +2225,7 @@ function offsetting_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch,
     foul_type, foul_status, foul_team, foul_transgressor
 end
 
+############################################################################################################################################################
 function enforced_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch, penalty_type_vec)
     penalties_regex_txt = "(?:Penalty|PENALTY)"
 
@@ -4218,6 +4222,7 @@ function specialcase_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch
     foul_type, foul_status, foul_team, foul_transgressor
 end
 
+############################################################################################################################################################
 function rest_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch, penalty_type_vec)
     penalties_regex_txt = "(?:Penalty|PENALTY)"
 
@@ -4309,9 +4314,10 @@ function rest_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch, penal
 end
 #END rest_aux section
 
+
+
+############################################################################################################################################################
 #BEGIN penalized_aux section
-
-
 function  penalized_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch, penalty_type_vec)
 
     penalized_regex = "(?:PENALIZED|Penalized)"
