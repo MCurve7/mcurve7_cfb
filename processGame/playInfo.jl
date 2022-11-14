@@ -1655,7 +1655,9 @@ function points_after(cols)
             PAT_type = "made"
         end
     elseif occursin("BLOCKED", play_text)
-        PAT_kicker = strip(replace(match(kicker_blocked_regex, play_text)[1], "PAT" => ""))
+        substr = play_text[end-25:end]
+        # PAT_kicker = strip(replace(match(kicker_blocked_regex, play_text)[1], "PAT" => ""))
+        PAT_kicker = strip(replace(match(kicker_blocked_regex, substr)[1], "PAT" => ""))
         PAT_type = "blocked"
     elseif occursin("MISSED", play_text)
         PAT_kicker = strip(match(kicker_missed_regex, play_text)[1])

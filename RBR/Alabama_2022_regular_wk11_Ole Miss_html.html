@@ -1,0 +1,1718 @@
+<title>Extra graphs week 11 vs Ole Miss</title>
+
+
+<p>
+I think looking at the Yards to success graph when supplimented with the Extra yards and Offensive drives graphs give a pretty good indication of how well a drive is going.
+If a drive is hanging around 5 yards or lower on the Yards to success graph then the team seems to be doing well on that drive.
+When the the drive starts to hang out above 5 yards and especially if it starts to increase monotonically that is a bad sign for that drive.
+Looking at our Yards to success graph drives 1, 2, 3 they stay at 5 yards or higher for every play 
+(ignore the last point on drive 3 that's after fourth down so I need to think about how to handle this situation)
+and result in punts or a turnover on downs.
+Drive 4 and 7 both remain at or below 5 yards and result in touchdowns.
+Obviously this is not exact as drive 10 satys at or below 5 yards and we had to kick a field goal
+and drive 9 bounces all over the place and we were still able to score a touchdown.
+I think I might need to make a Yards to success/SR by Drive graph.
+I want to rewatch the games with these graphs at hand and see if the play on the field correspond to what I think I'm seeing.
+</p>
+
+<a href="https://postimg.cc/8JctwrbD" target="_blank"><img src="https://i.postimg.cc/Qtkw8Q9B/Alabama-2022-regular-wk11-Ole-Miss-08-drive-yards-to-success.png" alt="Alabama-2022-regular-wk11-Ole-Miss-08-drive-yards-to-success"/></a><br/><br/>
+<a href="https://postimg.cc/K17qYbzX" target="_blank"><img src="https://i.postimg.cc/Vkp3DLPN/Alabama-2022-regular-wk11-Ole-Miss-01-success-drive-bar.png" alt="Alabama-2022-regular-wk11-Ole-Miss-01-success-drive-bar"/></a><br/><br/>
+<a href="https://postimg.cc/30D9Q56c" target="_blank"><img src="https://i.postimg.cc/zvxQWqk8/Alabama-2022-regular-wk11-Ole-Miss-07-drive-extra-yards-gained.png" alt="Alabama-2022-regular-wk11-Ole-Miss-07-drive-extra-yards-gained"/></a><br/><br/>
+<a href="https://postimg.cc/mc8mQSC8" target="_blank"><img src="https://i.postimg.cc/qRdWHbRV/Alabama-2022-regular-wk11-Ole-Miss-03-drive.png" alt="Alabama-2022-regular-wk11-Ole-Miss-03-drive"/></a><br/><br/>
+
+<p>
+Ole Miss's graphs seem to correlate to what I recall from the game.
+Their offense seemed to be in control through most of the 1st half
+and then we were able to disrupt their game plan for most of the second half.
+</p>
+
+<a href="https://postimg.cc/crSfLn8H" target="_blank"><img src="https://i.postimg.cc/5NHgp54w/Ole-Miss-2022-regular-wk11-Alabama-08-drive-yards-to-success.png" alt="Ole-Miss-2022-regular-wk11-Alabama-08-drive-yards-to-success"/></a><br/><br/>
+<a href="https://postimg.cc/vgx5c7z1" target="_blank"><img src="https://i.postimg.cc/XJQL1QBg/Ole-Miss-2022-regular-wk11-Alabama-01-success-drive-bar.png" alt="Ole-Miss-2022-regular-wk11-Alabama-01-success-drive-bar"/></a><br/><br/>
+<a href="https://postimg.cc/G43YknKn" target="_blank"><img src="https://i.postimg.cc/9QZpHWq0/Ole-Miss-2022-regular-wk11-Alabama-07-drive-extra-yards-gained.png" alt="Ole-Miss-2022-regular-wk11-Alabama-07-drive-extra-yards-gained"/></a><br/><br/>
+<a href="https://postimg.cc/w3JhzVMZ" target="_blank"><img src="https://i.postimg.cc/QNYSpY38/Ole-Miss-2022-regular-wk11-Alabama-03-drive.png" alt="Ole-Miss-2022-regular-wk11-Alabama-03-drive"/></a><br/><br/>
+
+<p>
+As to penalties, unfortunately my code missed most of ours (but seems to have picked up on Ole Miss's penalties just fine).
+I've been keeping a list of the penalties commited during the game so I was able to fill out the table of which penalties were called.
+Also, the bye week is causing an problem with the line graph (last Bama/Ole Miss graph) but just mentally slide LSU over and it will be lined up correctly.
+I need to add a table that records a Home/Away column along with the umber of penalties and annotate it in the line chart.
+I'll also note that the tables below are generated from a different dataset and is correct.
+</p>
+
+<p>
+The good news is that we were below our average with 5 penalties enforced and 1 penalty declined.
+Of the 6 flags thrown on us,
+4 are what I would consider effort penalties and the other 2 (Illegal Shift and Delay Of Game) mental errors.
+</p>
+
+<table>
+  <thead>
+    <tr class = "header headerLastRow">
+      <th style = "text-align: left;">Penalty_team</th>
+      <th style = "text-align: left;">Penalty_type</th>
+      <th style = "text-align: left;">Penalty_status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Illegal Shift</td>
+      <td style = "text-align: left;">declined</td>
+    </tr>
+	<tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Pass Interference</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+	<tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Delay Of Game</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+	<tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Face Mask</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+	<tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Holding</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+	<tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Illegal Touching</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Ole Miss</td>
+      <td style = "text-align: left;">False Start</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Ole Miss</td>
+      <td style = "text-align: left;">False Start</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Ole Miss</td>
+      <td style = "text-align: left;">Personal Foul</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Ole Miss</td>
+      <td style = "text-align: left;">Holding</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Ole Miss</td>
+      <td style = "text-align: left;">Offensive Holding</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Ole Miss</td>
+      <td style = "text-align: left;">Offsides</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+
+<p>
+We are still tied for most penalized with Tennessee with 83 penalties total, 8.30 per game, and a z-score of 1.70 compared with other SEC schools.
+We are at least no longer the worst in the country,
+but our z-score with respect to the rest of the FBS is 2.32.
+That's still pretty bad.
+Navy is still the least penalized team with 34 total, 3.40 per game, and -3.06 as their z-score.
+Georgia is still the least penalized SEC team and compared to the FBS: 44 total, 4.40 per game, and a -1.96 z-score.
+</p>
+
+<table>
+  <thead>
+    <tr class = "header headerLastRow">
+      <th style = "text-align: left;">school</th>
+      <th style = "text-align: left;">sum</th>
+      <th style = "text-align: left;">mean</th>
+      <th style = "text-align: left;">z</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">83</td>
+      <td style = "text-align: left;">8.30</td>
+      <td style = "text-align: left;">1.70</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Tennessee</td>
+      <td style = "text-align: left;">83</td>
+      <td style = "text-align: left;">8.30</td>
+      <td style = "text-align: left;">1.70</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Missouri</td>
+      <td style = "text-align: left;">76</td>
+      <td style = "text-align: left;">7.60</td>
+      <td style = "text-align: left;">0.96</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Auburn</td>
+      <td style = "text-align: left;">75</td>
+      <td style = "text-align: left;">7.50</td>
+      <td style = "text-align: left;">0.85</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Mississippi State</td>
+      <td style = "text-align: left;">68</td>
+      <td style = "text-align: left;">6.80</td>
+      <td style = "text-align: left;">0.11</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">South Carolina</td>
+      <td style = "text-align: left;">68</td>
+      <td style = "text-align: left;">6.80</td>
+      <td style = "text-align: left;">0.11</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Texas A&amp;M</td>
+      <td style = "text-align: left;">68</td>
+      <td style = "text-align: left;">6.80</td>
+      <td style = "text-align: left;">0.11</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Arkansas</td>
+      <td style = "text-align: left;">67</td>
+      <td style = "text-align: left;">6.70</td>
+      <td style = "text-align: left;">0.01</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">LSU</td>
+      <td style = "text-align: left;">67</td>
+      <td style = "text-align: left;">6.70</td>
+      <td style = "text-align: left;">0.01</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Ole Miss</td>
+      <td style = "text-align: left;">65</td>
+      <td style = "text-align: left;">6.50</td>
+      <td style = "text-align: left;">-0.20</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Florida</td>
+      <td style = "text-align: left;">61</td>
+      <td style = "text-align: left;">6.10</td>
+      <td style = "text-align: left;">-0.63</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Kentucky</td>
+      <td style = "text-align: left;">59</td>
+      <td style = "text-align: left;">5.90</td>
+      <td style = "text-align: left;">-0.84</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Vanderbilt</td>
+      <td style = "text-align: left;">53</td>
+      <td style = "text-align: left;">5.30</td>
+      <td style = "text-align: left;">-1.47</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Georgia</td>
+      <td style = "text-align: left;">44</td>
+      <td style = "text-align: left;">4.40</td>
+      <td style = "text-align: left;">-2.43</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+
+<p>
+That's all I have for this week. Roll Tide!
+</p>
+
+<img src=http://a.espncdn.com/i/teamlogos/ncaa/500/333.png alt="Alabama logo" height="300">
+<table>
+  <thead>
+    <tr class = "header headerLastRow">
+      <th style = "text-align: left;">Drive number</th>
+      <th style = "text-align: left;">Total</th>
+      <th style = "text-align: left;">Successful</th>
+      <th style = "text-align: left;">Unsuccessful</th>
+      <th style = "text-align: left;">Success rate</th>
+      <th style = "text-align: left;">Scoring drive</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">0.166667</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0.0</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">0.0</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">0.666667</td>
+      <td style = "text-align: left;">true</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">0.0</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0.0</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0.5</td>
+      <td style = "text-align: left;">true</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">8</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">0.333333</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">9</td>
+      <td style = "text-align: left;">14</td>
+      <td style = "text-align: left;">10</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">0.714286</td>
+      <td style = "text-align: left;">true</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">10</td>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0.571429</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">11</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">0.0</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">12</td>
+      <td style = "text-align: left;">8</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">0.5</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">13</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">0.0</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+<a href="https://postimg.cc/5jZnqyQd" target="_blank"><img src="https://i.postimg.cc/ZKq2myTR/Alabama-2022-regular-wk11-Ole-Miss-02-drive-fac-down.png" alt="Alabama-2022-regular-wk11-Ole-Miss-02-drive-fac-down"/></a><br/><br/>
+<table>
+  <thead>
+    <tr class = "header headerLastRow">
+      <th style = "text-align: left;">Down</th>
+      <th style = "text-align: left;">Successful</th>
+      <th style = "text-align: left;">Unsuccessful</th>
+      <th style = "text-align: left;">Total</th>
+      <th style = "text-align: left;">TD/1st</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">11</td>
+      <td style = "text-align: left;">18</td>
+      <td style = "text-align: left;">29</td>
+      <td style = "text-align: left;">3</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">11</td>
+      <td style = "text-align: left;">13</td>
+      <td style = "text-align: left;">24</td>
+      <td style = "text-align: left;">10</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">8</td>
+      <td style = "text-align: left;">14</td>
+      <td style = "text-align: left;">6</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">missing</td>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">missing</td>
+      <td style = "text-align: left;">0</td>
+    </tr>
+  </tbody>
+</table>
+<br />    
+<a href="https://postimg.cc/V5SKCn6W" target="_blank"><img src="https://i.postimg.cc/66cgFhxg/Alabama-2022-regular-wk11-Ole-Miss-04-all4-downs-fac.png" alt="Alabama-2022-regular-wk11-Ole-Miss-04-all4-downs-fac"/></a><br/><br/>
+<a href="https://postimg.cc/njWTWcdm" target="_blank"><img src="https://i.postimg.cc/Y0rVhvYd/Alabama-2022-regular-wk11-Ole-Miss-05-all4-downs-fac-noscale.png" alt="Alabama-2022-regular-wk11-Ole-Miss-05-all4-downs-fac-noscale"/></a><br/><br/>
+<a href="https://postimg.cc/cKsDgzgv" target="_blank"><img src="https://i.postimg.cc/0NSh3R90/Alabama-2022-regular-wk11-Ole-Miss-06-yards-success-gained.png" alt="Alabama-2022-regular-wk11-Ole-Miss-06-yards-success-gained"/></a><br/><br/>
+<a href="https://postimg.cc/CzkJv0bZ" target="_blank"><img src="https://i.postimg.cc/zXPMGXBk/Alabama-2022-regular-wk11-Ole-Miss-09-fac-yards-to-success.png" alt="Alabama-2022-regular-wk11-Ole-Miss-09-fac-yards-to-success"/></a><br/><br/>
+<a href="https://postimg.cc/LYGBTQXB" target="_blank"><img src="https://i.postimg.cc/fyR2M6QF/Alabama-2022-regular-wk11-Ole-Miss-e01-drive-success-play.png" alt="Alabama-2022-regular-wk11-Ole-Miss-e01-drive-success-play"/></a><br/><br/>
+<a href="https://postimg.cc/4KL1KxR0" target="_blank"><img src="https://i.postimg.cc/TwGN4K7T/Alabama-2022-regular-wk11-Ole-Miss-e02-drive-extra-yards-gained-fac.png" alt="Alabama-2022-regular-wk11-Ole-Miss-e02-drive-extra-yards-gained-fac"/></a><br/><br/>
+<a href="https://postimg.cc/Mnw5NLY9" target="_blank"><img src="https://i.postimg.cc/y8gGg43C/Alabama-2022-regular-wk11-Ole-Miss-p01-penalties-bar.png" alt="Alabama-2022-regular-wk11-Ole-Miss-p01-penalties-bar"/></a><br/><br/>
+<a href="https://postimg.cc/5XmgVm7b" target="_blank"><img src="https://i.postimg.cc/sgkN565Q/Alabama-2022-regular-wk11-Ole-Miss-p02-penalties-bar-all.png" alt="Alabama-2022-regular-wk11-Ole-Miss-p02-penalties-bar-all"/></a><br/><br/>
+<a href="https://postimg.cc/hJPrP76x" target="_blank"><img src="https://i.postimg.cc/s250mYJn/Alabama-2022-regular-wk11-p03-penalties-line-season.png" alt="Alabama-2022-regular-wk11-p03-penalties-line-season"/></a><br/><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img src=http://a.espncdn.com/i/teamlogos/ncaa/500/145.png alt="Alabama logo" height="300">
+<table>
+  <thead>
+    <tr class = "header headerLastRow">
+      <th style = "text-align: left;">Drive number</th>
+      <th style = "text-align: left;">Total</th>
+      <th style = "text-align: left;">Successful</th>
+      <th style = "text-align: left;">Unsuccessful</th>
+      <th style = "text-align: left;">Success rate</th>
+      <th style = "text-align: left;">Scoring drive</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">10</td>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0.7</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">0.333333</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">11</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">0.545455</td>
+      <td style = "text-align: left;">true</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">8</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">0.25</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0.0</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">0.714286</td>
+      <td style = "text-align: left;">true</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">0.0</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">8</td>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">1.0</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">9</td>
+      <td style = "text-align: left;">11</td>
+      <td style = "text-align: left;">8</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0.727273</td>
+      <td style = "text-align: left;">true</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">10</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0.0</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">11</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0.0</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">12</td>
+      <td style = "text-align: left;">8</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">0.375</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">13</td>
+      <td style = "text-align: left;">8</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">0.375</td>
+      <td style = "text-align: left;">false</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+<a href="https://postimg.cc/p9pF6Q30" target="_blank"><img src="https://i.postimg.cc/QMqJV0mr/Ole-Miss-2022-regular-wk11-Alabama-02-drive-fac-down.png" alt="Ole-Miss-2022-regular-wk11-Alabama-02-drive-fac-down"/></a><br/><br/>
+<table>
+  <thead>
+    <tr class = "header headerLastRow">
+      <th style = "text-align: left;">Down</th>
+      <th style = "text-align: left;">Successful</th>
+      <th style = "text-align: left;">Unsuccessful</th>
+      <th style = "text-align: left;">Total</th>
+      <th style = "text-align: left;">TD/1st</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">17</td>
+      <td style = "text-align: left;">17</td>
+      <td style = "text-align: left;">34</td>
+      <td style = "text-align: left;">5</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">12</td>
+      <td style = "text-align: left;">15</td>
+      <td style = "text-align: left;">27</td>
+      <td style = "text-align: left;">10</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">8</td>
+      <td style = "text-align: left;">8</td>
+      <td style = "text-align: left;">16</td>
+      <td style = "text-align: left;">8</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">missing</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">missing</td>
+      <td style = "text-align: left;">0</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+<a href="https://postimg.cc/hQ9x0SNc" target="_blank"><img src="https://i.postimg.cc/0j4fPjfM/Ole-Miss-2022-regular-wk11-Alabama-04-all4-downs-fac.png" alt="Ole-Miss-2022-regular-wk11-Alabama-04-all4-downs-fac"/></a><br/><br/>
+<a href="https://postimg.cc/18WFB77n" target="_blank"><img src="https://i.postimg.cc/fbsvw6xK/Ole-Miss-2022-regular-wk11-Alabama-05-all4-downs-fac-noscale.png" alt="Ole-Miss-2022-regular-wk11-Alabama-05-all4-downs-fac-noscale"/></a><br/><br/>
+<a href="https://postimg.cc/K3XBLKq0" target="_blank"><img src="https://i.postimg.cc/d33Bbr8c/Ole-Miss-2022-regular-wk11-Alabama-06-yards-success-gained.png" alt="Ole-Miss-2022-regular-wk11-Alabama-06-yards-success-gained"/></a><br/><br/>
+<a href="https://postimg.cc/yJtZ4gH7" target="_blank"><img src="https://i.postimg.cc/SsN79C1Y/Ole-Miss-2022-regular-wk11-Alabama-09-fac-yards-to-success.png" alt="Ole-Miss-2022-regular-wk11-Alabama-09-fac-yards-to-success"/></a><br/><br/>
+<a href="https://postimg.cc/nCpQJf69" target="_blank"><img src="https://i.postimg.cc/J4B3j1xx/Ole-Miss-2022-regular-wk11-Alabama-e01-drive-success-play.png" alt="Ole-Miss-2022-regular-wk11-Alabama-e01-drive-success-play"/></a><br/><br/>
+<a href="https://postimg.cc/z3nR6GP1" target="_blank"><img src="https://i.postimg.cc/gc7qwwVr/Ole-Miss-2022-regular-wk11-Alabama-e02-drive-extra-yards-gained-fac.png" alt="Ole-Miss-2022-regular-wk11-Alabama-e02-drive-extra-yards-gained-fac"/></a><br/><br/>
+<a href="https://postimg.cc/CB8fFhhk" target="_blank"><img src="https://i.postimg.cc/5075SyD7/Ole-Miss-2022-regular-wk11-Alabama-p01-penalties-bar.png" alt="Ole-Miss-2022-regular-wk11-Alabama-p01-penalties-bar"/></a><br/><br/>
+<a href="https://postimg.cc/jnrn2p29" target="_blank"><img src="https://i.postimg.cc/d3h2HvYq/Ole-Miss-2022-regular-wk11-Alabama-p02-penalties-bar-all.png" alt="Ole-Miss-2022-regular-wk11-Alabama-p02-penalties-bar-all"/></a><br/><br/>
+    <table>
+  <thead>
+    <tr class = "header headerLastRow">
+      <th style = "text-align: left;">Penalty_team</th>
+      <th style = "text-align: left;">Penalty_type</th>
+      <th style = "text-align: left;">Penalty_status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Illegal Shift</td>
+      <td style = "text-align: left;">declined</td>
+    </tr>
+	<tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Pass Interference</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+	<tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Delay Of Game</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+	<tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Face Mask</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+	<tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Holding</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+	<tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Illegal Touching</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Ole Miss</td>
+      <td style = "text-align: left;">False Start</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Ole Miss</td>
+      <td style = "text-align: left;">False Start</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Ole Miss</td>
+      <td style = "text-align: left;">Personal Foul</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Ole Miss</td>
+      <td style = "text-align: left;">Holding</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Ole Miss</td>
+      <td style = "text-align: left;">Offensive Holding</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Ole Miss</td>
+      <td style = "text-align: left;">Offsides</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+<a href="https://postimg.cc/7JMG2KTL" target="_blank"><img src="https://i.postimg.cc/rs7S7bV5/Ole-Miss-2022-regular-wk11-p03-penalties-line-season.png" alt="Ole-Miss-2022-regular-wk11-p03-penalties-line-season"/></a><br/><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr />
+<h2>All SEC teams</h2>
+<a href="https://postimg.cc/dLsm9CQf" target="_blank"><img src="https://i.postimg.cc/c4Y907pd/2022-regular-wk11-p04-penalties-SECv-FBS-all.png" alt="2022-regular-wk11-p04-penalties-SECv-FBS-all"/></a><br/><br/>
+<a href="https://postimg.cc/RNg1p0NZ" target="_blank"><img src="https://i.postimg.cc/2SDH6bYh/2022-regular-wk11-p05-penalties-SECv-SEC-all.png" alt="2022-regular-wk11-p05-penalties-SECv-SEC-all"/></a><br/><br/>
+<a href="https://postimg.cc/RWq7kzHQ" target="_blank"><img src="https://i.postimg.cc/jS4MJxq9/2022-regular-wk11-p06-penalties-SECv-FBS-enforced.png" alt="2022-regular-wk11-p06-penalties-SECv-FBS-enforced"/></a><br/><br/>
+<a href="https://postimg.cc/cvjRZ57q" target="_blank"><img src="https://i.postimg.cc/R0CX7kN0/2022-regular-wk11-p07-penalties-SECv-SEC-enforced.png" alt="2022-regular-wk11-p07-penalties-SECv-SEC-enforced"/></a><br/><br/>
+
+
+
+
+
+
+<table>
+  <thead>
+    <tr class = "header headerLastRow">
+      <th style = "text-align: left;">week</th>
+      <th style = "text-align: left;">Alabama</th>
+      <th style = "text-align: left;">Arkansas</th>
+      <th style = "text-align: left;">Auburn</th>
+      <th style = "text-align: left;">Florida</th>
+      <th style = "text-align: left;">Georgia</th>
+      <th style = "text-align: left;">Kentucky</th>
+      <th style = "text-align: left;">LSU</th>
+      <th style = "text-align: left;">Mississippi State</th>
+      <th style = "text-align: left;">Missouri</th>
+      <th style = "text-align: left;">Ole Miss</th>
+      <th style = "text-align: left;">South Carolina</th>
+      <th style = "text-align: left;">Tennessee</th>
+      <th style = "text-align: left;">Texas A&amp;M</th>
+      <th style = "text-align: left;">Vanderbilt</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">missing</td>
+      <td style = "text-align: left;">missing</td>
+      <td style = "text-align: left;">missing</td>
+      <td style = "text-align: left;">missing</td>
+      <td style = "text-align: left;">missing</td>
+      <td style = "text-align: left;">missing</td>
+      <td style = "text-align: left;">missing</td>
+      <td style = "text-align: left;">missing</td>
+      <td style = "text-align: left;">missing</td>
+      <td style = "text-align: left;">missing</td>
+      <td style = "text-align: left;">missing</td>
+      <td style = "text-align: left;">missing</td>
+      <td style = "text-align: left;">missing</td>
+      <td style = "text-align: left;">7</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">10</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">5</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">15</td>
+      <td style = "text-align: left;">10</td>
+      <td style = "text-align: left;">9</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">8</td>
+      <td style = "text-align: left;">9</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">3</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">10</td>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">9</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">11</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">5</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">10</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">10</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">9</td>
+      <td style = "text-align: left;">6</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">10</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">8</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">10</td>
+      <td style = "text-align: left;">13</td>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">missing</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">missing</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">10</td>
+      <td style = "text-align: left;">10</td>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">9</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">9</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">12</td>
+      <td style = "text-align: left;">8</td>
+      <td style = "text-align: left;">5</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">17</td>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">11</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">13</td>
+      <td style = "text-align: left;">missing</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">missing</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">missing</td>
+      <td style = "text-align: left;">5</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">8</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">missing</td>
+      <td style = "text-align: left;">missing</td>
+      <td style = "text-align: left;">missing</td>
+      <td style = "text-align: left;">missing</td>
+      <td style = "text-align: left;">missing</td>
+      <td style = "text-align: left;">8</td>
+      <td style = "text-align: left;">10</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">10</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">13</td>
+      <td style = "text-align: left;">8</td>
+      <td style = "text-align: left;">5</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">9</td>
+      <td style = "text-align: left;">missing</td>
+      <td style = "text-align: left;">10</td>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">missing</td>
+      <td style = "text-align: left;">missing</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">9</td>
+      <td style = "text-align: left;">missing</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">10</td>
+      <td style = "text-align: left;">9</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">14</td>
+      <td style = "text-align: left;">10</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">12</td>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">missing</td>
+      <td style = "text-align: left;">12</td>
+      <td style = "text-align: left;">9</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">5</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">11</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">8</td>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">14</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">11</td>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">8</td>
+      <td style = "text-align: left;">7</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+
+<table>
+  <thead>
+    <tr class = "header headerLastRow">
+      <th style = "text-align: left;">school</th>
+      <th style = "text-align: left;">sum</th>
+      <th style = "text-align: left;">mean</th>
+      <th style = "text-align: left;">z</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style = "text-align: left;">South Alabama</td>
+      <td style = "text-align: left;">87</td>
+      <td style = "text-align: left;">8.70</td>
+      <td style = "text-align: left;">2.76</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Utah State</td>
+      <td style = "text-align: left;">87</td>
+      <td style = "text-align: left;">8.70</td>
+      <td style = "text-align: left;">2.76</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Cincinnati</td>
+      <td style = "text-align: left;">84</td>
+      <td style = "text-align: left;">8.40</td>
+      <td style = "text-align: left;">2.43</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Rutgers</td>
+      <td style = "text-align: left;">84</td>
+      <td style = "text-align: left;">8.40</td>
+      <td style = "text-align: left;">2.43</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Syracuse</td>
+      <td style = "text-align: left;">84</td>
+      <td style = "text-align: left;">8.40</td>
+      <td style = "text-align: left;">2.43</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">83</td>
+      <td style = "text-align: left;">8.30</td>
+      <td style = "text-align: left;">2.32</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Eastern Michigan</td>
+      <td style = "text-align: left;">83</td>
+      <td style = "text-align: left;">8.30</td>
+      <td style = "text-align: left;">2.32</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Houston</td>
+      <td style = "text-align: left;">83</td>
+      <td style = "text-align: left;">8.30</td>
+      <td style = "text-align: left;">2.32</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Tennessee</td>
+      <td style = "text-align: left;">83</td>
+      <td style = "text-align: left;">8.30</td>
+      <td style = "text-align: left;">2.32</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Bowling Green</td>
+      <td style = "text-align: left;">82</td>
+      <td style = "text-align: left;">8.20</td>
+      <td style = "text-align: left;">2.21</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">UMass</td>
+      <td style = "text-align: left;">80</td>
+      <td style = "text-align: left;">8.00</td>
+      <td style = "text-align: left;">1.99</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Maryland</td>
+      <td style = "text-align: left;">79</td>
+      <td style = "text-align: left;">7.90</td>
+      <td style = "text-align: left;">1.88</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Pittsburgh</td>
+      <td style = "text-align: left;">77</td>
+      <td style = "text-align: left;">7.70</td>
+      <td style = "text-align: left;">1.66</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Missouri</td>
+      <td style = "text-align: left;">76</td>
+      <td style = "text-align: left;">7.60</td>
+      <td style = "text-align: left;">1.55</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">San Diego State</td>
+      <td style = "text-align: left;">76</td>
+      <td style = "text-align: left;">7.60</td>
+      <td style = "text-align: left;">1.55</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Virginia Tech</td>
+      <td style = "text-align: left;">76</td>
+      <td style = "text-align: left;">7.60</td>
+      <td style = "text-align: left;">1.55</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Arizona State</td>
+      <td style = "text-align: left;">75</td>
+      <td style = "text-align: left;">7.50</td>
+      <td style = "text-align: left;">1.44</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Auburn</td>
+      <td style = "text-align: left;">75</td>
+      <td style = "text-align: left;">7.50</td>
+      <td style = "text-align: left;">1.44</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">NC State</td>
+      <td style = "text-align: left;">75</td>
+      <td style = "text-align: left;">7.50</td>
+      <td style = "text-align: left;">1.44</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Colorado State</td>
+      <td style = "text-align: left;">74</td>
+      <td style = "text-align: left;">7.40</td>
+      <td style = "text-align: left;">1.33</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Central Michigan</td>
+      <td style = "text-align: left;">66</td>
+      <td style = "text-align: left;">7.33</td>
+      <td style = "text-align: left;">1.20</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Florida State</td>
+      <td style = "text-align: left;">73</td>
+      <td style = "text-align: left;">7.30</td>
+      <td style = "text-align: left;">1.22</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">New Mexico State</td>
+      <td style = "text-align: left;">58</td>
+      <td style = "text-align: left;">7.25</td>
+      <td style = "text-align: left;">1.04</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Georgia State</td>
+      <td style = "text-align: left;">72</td>
+      <td style = "text-align: left;">7.20</td>
+      <td style = "text-align: left;">1.11</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Louisville</td>
+      <td style = "text-align: left;">72</td>
+      <td style = "text-align: left;">7.20</td>
+      <td style = "text-align: left;">1.11</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Illinois</td>
+      <td style = "text-align: left;">71</td>
+      <td style = "text-align: left;">7.10</td>
+      <td style = "text-align: left;">1.00</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Old Dominion</td>
+      <td style = "text-align: left;">71</td>
+      <td style = "text-align: left;">7.10</td>
+      <td style = "text-align: left;">1.00</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Southern Mississippi</td>
+      <td style = "text-align: left;">71</td>
+      <td style = "text-align: left;">7.10</td>
+      <td style = "text-align: left;">1.00</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Miami</td>
+      <td style = "text-align: left;">70</td>
+      <td style = "text-align: left;">7.00</td>
+      <td style = "text-align: left;">0.89</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Oregon</td>
+      <td style = "text-align: left;">70</td>
+      <td style = "text-align: left;">7.00</td>
+      <td style = "text-align: left;">0.89</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">UAB</td>
+      <td style = "text-align: left;">70</td>
+      <td style = "text-align: left;">7.00</td>
+      <td style = "text-align: left;">0.89</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Virginia</td>
+      <td style = "text-align: left;">70</td>
+      <td style = "text-align: left;">7.00</td>
+      <td style = "text-align: left;">0.89</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Louisiana</td>
+      <td style = "text-align: left;">69</td>
+      <td style = "text-align: left;">6.90</td>
+      <td style = "text-align: left;">0.78</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Louisiana Tech</td>
+      <td style = "text-align: left;">69</td>
+      <td style = "text-align: left;">6.90</td>
+      <td style = "text-align: left;">0.78</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Middle Tennessee</td>
+      <td style = "text-align: left;">69</td>
+      <td style = "text-align: left;">6.90</td>
+      <td style = "text-align: left;">0.78</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">North Carolina</td>
+      <td style = "text-align: left;">69</td>
+      <td style = "text-align: left;">6.90</td>
+      <td style = "text-align: left;">0.78</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Western Michigan</td>
+      <td style = "text-align: left;">69</td>
+      <td style = "text-align: left;">6.90</td>
+      <td style = "text-align: left;">0.78</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Marshall</td>
+      <td style = "text-align: left;">62</td>
+      <td style = "text-align: left;">6.89</td>
+      <td style = "text-align: left;">0.73</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Mississippi State</td>
+      <td style = "text-align: left;">68</td>
+      <td style = "text-align: left;">6.80</td>
+      <td style = "text-align: left;">0.67</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">South Carolina</td>
+      <td style = "text-align: left;">68</td>
+      <td style = "text-align: left;">6.80</td>
+      <td style = "text-align: left;">0.67</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Texas A&amp;M</td>
+      <td style = "text-align: left;">68</td>
+      <td style = "text-align: left;">6.80</td>
+      <td style = "text-align: left;">0.67</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Toledo</td>
+      <td style = "text-align: left;">68</td>
+      <td style = "text-align: left;">6.80</td>
+      <td style = "text-align: left;">0.67</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">USC</td>
+      <td style = "text-align: left;">68</td>
+      <td style = "text-align: left;">6.80</td>
+      <td style = "text-align: left;">0.67</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Wisconsin</td>
+      <td style = "text-align: left;">68</td>
+      <td style = "text-align: left;">6.80</td>
+      <td style = "text-align: left;">0.67</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Charlotte</td>
+      <td style = "text-align: left;">74</td>
+      <td style = "text-align: left;">6.73</td>
+      <td style = "text-align: left;">0.62</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Arkansas</td>
+      <td style = "text-align: left;">67</td>
+      <td style = "text-align: left;">6.70</td>
+      <td style = "text-align: left;">0.56</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">LSU</td>
+      <td style = "text-align: left;">67</td>
+      <td style = "text-align: left;">6.70</td>
+      <td style = "text-align: left;">0.56</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">UCLA</td>
+      <td style = "text-align: left;">67</td>
+      <td style = "text-align: left;">6.70</td>
+      <td style = "text-align: left;">0.56</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">UT San Antonio</td>
+      <td style = "text-align: left;">67</td>
+      <td style = "text-align: left;">6.70</td>
+      <td style = "text-align: left;">0.56</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Washington</td>
+      <td style = "text-align: left;">67</td>
+      <td style = "text-align: left;">6.70</td>
+      <td style = "text-align: left;">0.56</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Connecticut</td>
+      <td style = "text-align: left;">72</td>
+      <td style = "text-align: left;">6.55</td>
+      <td style = "text-align: left;">0.41</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Western Kentucky</td>
+      <td style = "text-align: left;">72</td>
+      <td style = "text-align: left;">6.55</td>
+      <td style = "text-align: left;">0.41</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Florida International</td>
+      <td style = "text-align: left;">65</td>
+      <td style = "text-align: left;">6.50</td>
+      <td style = "text-align: left;">0.34</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Ole Miss</td>
+      <td style = "text-align: left;">65</td>
+      <td style = "text-align: left;">6.50</td>
+      <td style = "text-align: left;">0.34</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Oregon State</td>
+      <td style = "text-align: left;">65</td>
+      <td style = "text-align: left;">6.50</td>
+      <td style = "text-align: left;">0.34</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Akron</td>
+      <td style = "text-align: left;">64</td>
+      <td style = "text-align: left;">6.40</td>
+      <td style = "text-align: left;">0.23</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Boston College</td>
+      <td style = "text-align: left;">64</td>
+      <td style = "text-align: left;">6.40</td>
+      <td style = "text-align: left;">0.23</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Kent State</td>
+      <td style = "text-align: left;">64</td>
+      <td style = "text-align: left;">6.40</td>
+      <td style = "text-align: left;">0.23</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">New Mexico</td>
+      <td style = "text-align: left;">64</td>
+      <td style = "text-align: left;">6.40</td>
+      <td style = "text-align: left;">0.23</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Northern Illinois</td>
+      <td style = "text-align: left;">64</td>
+      <td style = "text-align: left;">6.40</td>
+      <td style = "text-align: left;">0.23</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">UTEP</td>
+      <td style = "text-align: left;">64</td>
+      <td style = "text-align: left;">6.40</td>
+      <td style = "text-align: left;">0.23</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Liberty</td>
+      <td style = "text-align: left;">63</td>
+      <td style = "text-align: left;">6.30</td>
+      <td style = "text-align: left;">0.13</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Tulsa</td>
+      <td style = "text-align: left;">62</td>
+      <td style = "text-align: left;">6.20</td>
+      <td style = "text-align: left;">0.02</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">West Virginia</td>
+      <td style = "text-align: left;">62</td>
+      <td style = "text-align: left;">6.20</td>
+      <td style = "text-align: left;">0.02</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Arkansas State</td>
+      <td style = "text-align: left;">61</td>
+      <td style = "text-align: left;">6.10</td>
+      <td style = "text-align: left;">-0.09</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Clemson</td>
+      <td style = "text-align: left;">61</td>
+      <td style = "text-align: left;">6.10</td>
+      <td style = "text-align: left;">-0.09</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Florida</td>
+      <td style = "text-align: left;">61</td>
+      <td style = "text-align: left;">6.10</td>
+      <td style = "text-align: left;">-0.09</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Florida Atlantic</td>
+      <td style = "text-align: left;">61</td>
+      <td style = "text-align: left;">6.10</td>
+      <td style = "text-align: left;">-0.09</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Georgia Tech</td>
+      <td style = "text-align: left;">61</td>
+      <td style = "text-align: left;">6.10</td>
+      <td style = "text-align: left;">-0.09</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Oklahoma</td>
+      <td style = "text-align: left;">61</td>
+      <td style = "text-align: left;">6.10</td>
+      <td style = "text-align: left;">-0.09</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Texas Tech</td>
+      <td style = "text-align: left;">61</td>
+      <td style = "text-align: left;">6.10</td>
+      <td style = "text-align: left;">-0.09</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Ball State</td>
+      <td style = "text-align: left;">59</td>
+      <td style = "text-align: left;">5.90</td>
+      <td style = "text-align: left;">-0.31</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Kentucky</td>
+      <td style = "text-align: left;">59</td>
+      <td style = "text-align: left;">5.90</td>
+      <td style = "text-align: left;">-0.31</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Michigan State</td>
+      <td style = "text-align: left;">59</td>
+      <td style = "text-align: left;">5.90</td>
+      <td style = "text-align: left;">-0.31</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Nevada</td>
+      <td style = "text-align: left;">59</td>
+      <td style = "text-align: left;">5.90</td>
+      <td style = "text-align: left;">-0.31</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Rice</td>
+      <td style = "text-align: left;">59</td>
+      <td style = "text-align: left;">5.90</td>
+      <td style = "text-align: left;">-0.31</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Hawai&apos;i</td>
+      <td style = "text-align: left;">64</td>
+      <td style = "text-align: left;">5.82</td>
+      <td style = "text-align: left;">-0.42</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">BYU</td>
+      <td style = "text-align: left;">58</td>
+      <td style = "text-align: left;">5.80</td>
+      <td style = "text-align: left;">-0.42</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Coastal Carolina</td>
+      <td style = "text-align: left;">58</td>
+      <td style = "text-align: left;">5.80</td>
+      <td style = "text-align: left;">-0.42</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Duke</td>
+      <td style = "text-align: left;">58</td>
+      <td style = "text-align: left;">5.80</td>
+      <td style = "text-align: left;">-0.42</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Miami (OH)</td>
+      <td style = "text-align: left;">58</td>
+      <td style = "text-align: left;">5.80</td>
+      <td style = "text-align: left;">-0.42</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Texas</td>
+      <td style = "text-align: left;">58</td>
+      <td style = "text-align: left;">5.80</td>
+      <td style = "text-align: left;">-0.42</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">San Jos\xe9 State</td>
+      <td style = "text-align: left;">52</td>
+      <td style = "text-align: left;">5.78</td>
+      <td style = "text-align: left;">-0.43</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Nebraska</td>
+      <td style = "text-align: left;">57</td>
+      <td style = "text-align: left;">5.70</td>
+      <td style = "text-align: left;">-0.53</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">UCF</td>
+      <td style = "text-align: left;">57</td>
+      <td style = "text-align: left;">5.70</td>
+      <td style = "text-align: left;">-0.53</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">UNLV</td>
+      <td style = "text-align: left;">57</td>
+      <td style = "text-align: left;">5.70</td>
+      <td style = "text-align: left;">-0.53</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Appalachian State</td>
+      <td style = "text-align: left;">51</td>
+      <td style = "text-align: left;">5.67</td>
+      <td style = "text-align: left;">-0.54</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Kansas</td>
+      <td style = "text-align: left;">56</td>
+      <td style = "text-align: left;">5.60</td>
+      <td style = "text-align: left;">-0.64</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Penn State</td>
+      <td style = "text-align: left;">56</td>
+      <td style = "text-align: left;">5.60</td>
+      <td style = "text-align: left;">-0.64</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Purdue</td>
+      <td style = "text-align: left;">56</td>
+      <td style = "text-align: left;">5.60</td>
+      <td style = "text-align: left;">-0.64</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Kansas State</td>
+      <td style = "text-align: left;">55</td>
+      <td style = "text-align: left;">5.50</td>
+      <td style = "text-align: left;">-0.75</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Washington State</td>
+      <td style = "text-align: left;">55</td>
+      <td style = "text-align: left;">5.50</td>
+      <td style = "text-align: left;">-0.75</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Boise State</td>
+      <td style = "text-align: left;">54</td>
+      <td style = "text-align: left;">5.40</td>
+      <td style = "text-align: left;">-0.86</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Ohio</td>
+      <td style = "text-align: left;">54</td>
+      <td style = "text-align: left;">5.40</td>
+      <td style = "text-align: left;">-0.86</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Troy</td>
+      <td style = "text-align: left;">54</td>
+      <td style = "text-align: left;">5.40</td>
+      <td style = "text-align: left;">-0.86</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Buffalo</td>
+      <td style = "text-align: left;">48</td>
+      <td style = "text-align: left;">5.33</td>
+      <td style = "text-align: left;">-0.89</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">James Madison</td>
+      <td style = "text-align: left;">48</td>
+      <td style = "text-align: left;">5.33</td>
+      <td style = "text-align: left;">-0.89</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Baylor</td>
+      <td style = "text-align: left;">53</td>
+      <td style = "text-align: left;">5.30</td>
+      <td style = "text-align: left;">-0.97</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Iowa State</td>
+      <td style = "text-align: left;">53</td>
+      <td style = "text-align: left;">5.30</td>
+      <td style = "text-align: left;">-0.97</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Texas State</td>
+      <td style = "text-align: left;">53</td>
+      <td style = "text-align: left;">5.30</td>
+      <td style = "text-align: left;">-0.97</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Vanderbilt</td>
+      <td style = "text-align: left;">53</td>
+      <td style = "text-align: left;">5.30</td>
+      <td style = "text-align: left;">-0.97</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Army</td>
+      <td style = "text-align: left;">47</td>
+      <td style = "text-align: left;">5.22</td>
+      <td style = "text-align: left;">-1.00</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">California</td>
+      <td style = "text-align: left;">52</td>
+      <td style = "text-align: left;">5.20</td>
+      <td style = "text-align: left;">-1.08</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Colorado</td>
+      <td style = "text-align: left;">51</td>
+      <td style = "text-align: left;">5.10</td>
+      <td style = "text-align: left;">-1.19</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Georgia Southern</td>
+      <td style = "text-align: left;">51</td>
+      <td style = "text-align: left;">5.10</td>
+      <td style = "text-align: left;">-1.19</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">North Texas</td>
+      <td style = "text-align: left;">56</td>
+      <td style = "text-align: left;">5.09</td>
+      <td style = "text-align: left;">-1.26</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Arizona</td>
+      <td style = "text-align: left;">50</td>
+      <td style = "text-align: left;">5.00</td>
+      <td style = "text-align: left;">-1.30</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Indiana</td>
+      <td style = "text-align: left;">50</td>
+      <td style = "text-align: left;">5.00</td>
+      <td style = "text-align: left;">-1.30</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Louisiana Monroe</td>
+      <td style = "text-align: left;">50</td>
+      <td style = "text-align: left;">5.00</td>
+      <td style = "text-align: left;">-1.30</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Notre Dame</td>
+      <td style = "text-align: left;">50</td>
+      <td style = "text-align: left;">5.00</td>
+      <td style = "text-align: left;">-1.30</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Temple</td>
+      <td style = "text-align: left;">50</td>
+      <td style = "text-align: left;">5.00</td>
+      <td style = "text-align: left;">-1.30</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Wake Forest</td>
+      <td style = "text-align: left;">50</td>
+      <td style = "text-align: left;">5.00</td>
+      <td style = "text-align: left;">-1.30</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Ohio State</td>
+      <td style = "text-align: left;">49</td>
+      <td style = "text-align: left;">4.90</td>
+      <td style = "text-align: left;">-1.41</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Utah</td>
+      <td style = "text-align: left;">48</td>
+      <td style = "text-align: left;">4.80</td>
+      <td style = "text-align: left;">-1.52</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Northwestern</td>
+      <td style = "text-align: left;">47</td>
+      <td style = "text-align: left;">4.70</td>
+      <td style = "text-align: left;">-1.63</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">TCU</td>
+      <td style = "text-align: left;">47</td>
+      <td style = "text-align: left;">4.70</td>
+      <td style = "text-align: left;">-1.63</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">South Florida</td>
+      <td style = "text-align: left;">46</td>
+      <td style = "text-align: left;">4.60</td>
+      <td style = "text-align: left;">-1.74</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Wyoming</td>
+      <td style = "text-align: left;">45</td>
+      <td style = "text-align: left;">4.50</td>
+      <td style = "text-align: left;">-1.85</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Georgia</td>
+      <td style = "text-align: left;">44</td>
+      <td style = "text-align: left;">4.40</td>
+      <td style = "text-align: left;">-1.96</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Iowa</td>
+      <td style = "text-align: left;">44</td>
+      <td style = "text-align: left;">4.40</td>
+      <td style = "text-align: left;">-1.96</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Fresno State</td>
+      <td style = "text-align: left;">43</td>
+      <td style = "text-align: left;">4.30</td>
+      <td style = "text-align: left;">-2.07</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Tulane</td>
+      <td style = "text-align: left;">43</td>
+      <td style = "text-align: left;">4.30</td>
+      <td style = "text-align: left;">-2.07</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Memphis</td>
+      <td style = "text-align: left;">42</td>
+      <td style = "text-align: left;">4.20</td>
+      <td style = "text-align: left;">-2.18</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">SMU</td>
+      <td style = "text-align: left;">42</td>
+      <td style = "text-align: left;">4.20</td>
+      <td style = "text-align: left;">-2.18</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Stanford</td>
+      <td style = "text-align: left;">42</td>
+      <td style = "text-align: left;">4.20</td>
+      <td style = "text-align: left;">-2.18</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Air Force</td>
+      <td style = "text-align: left;">41</td>
+      <td style = "text-align: left;">4.10</td>
+      <td style = "text-align: left;">-2.29</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">East Carolina</td>
+      <td style = "text-align: left;">41</td>
+      <td style = "text-align: left;">4.10</td>
+      <td style = "text-align: left;">-2.29</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Michigan</td>
+      <td style = "text-align: left;">41</td>
+      <td style = "text-align: left;">4.10</td>
+      <td style = "text-align: left;">-2.29</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Minnesota</td>
+      <td style = "text-align: left;">41</td>
+      <td style = "text-align: left;">4.10</td>
+      <td style = "text-align: left;">-2.29</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Oklahoma State</td>
+      <td style = "text-align: left;">37</td>
+      <td style = "text-align: left;">3.70</td>
+      <td style = "text-align: left;">-2.73</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Navy</td>
+      <td style = "text-align: left;">34</td>
+      <td style = "text-align: left;">3.40</td>
+      <td style = "text-align: left;">-3.06</td>
+    </tr>
+  </tbody>
+</table>
+<br />    
+
+<hr />
+<p>Data: @CFB_Data or collegefootballdata.com</p>

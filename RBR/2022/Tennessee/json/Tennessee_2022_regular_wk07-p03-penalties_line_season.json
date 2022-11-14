@@ -1,9 +1,9 @@
 {
   data: [
     {
-      "x": [0.7, 7.3],
-      "y": [6.16666666666667, 6.16666666666667],
-      "text": "yintercept: 6.166667",
+      "x": [0.5, 11.5],
+      "y": [7.5, 7.5],
+      "text": "yintercept: 7.5",
       "type": "scatter",
       "mode": "lines",
       "line": {
@@ -19,9 +19,9 @@
       "frame": null
     },
     {
-      "x": [1, 2, 3, 4, 6, 7],
-      "y": [6, 7, 0, 6, 12, 6],
-      "text": ["Game_number: 1<br />Opponent: Ball State<br />Penalty_all_count:  6", "Game_number: 2<br />Opponent: Pittsburgh<br />Penalty_all_count:  7", "Game_number: 3<br />Opponent: Akron<br />Penalty_all_count:  0", "Game_number: 4<br />Opponent: Florida<br />Penalty_all_count:  6", "Game_number: 6<br />Opponent: LSU<br />Penalty_all_count: 12", "Game_number: 7<br />Opponent: Alabama<br />Penalty_all_count:  6"],
+      "x": [1, 2, 3, 4, 6, 7, 8, 9, 10, 11],
+      "y": [6, 7, 0, 6, 12, 6, 16, 6, 9, 7],
+      "text": ["Game_number:  1<br />Opponent: Ball State<br />Penalty_all_count:  6", "Game_number:  2<br />Opponent: Pittsburgh<br />Penalty_all_count:  7", "Game_number:  3<br />Opponent: Akron<br />Penalty_all_count:  0", "Game_number:  4<br />Opponent: Florida<br />Penalty_all_count:  6", "Game_number:  6<br />Opponent: LSU<br />Penalty_all_count: 12", "Game_number:  7<br />Opponent: Alabama<br />Penalty_all_count:  6", "Game_number:  8<br />Opponent: UT Martin<br />Penalty_all_count: 16", "Game_number:  9<br />Opponent: Kentucky<br />Penalty_all_count:  6", "Game_number: 10<br />Opponent: Georgia<br />Penalty_all_count:  9", "Game_number: 11<br />Opponent: Missouri<br />Penalty_all_count:  7"],
       "type": "scatter",
       "mode": "lines+markers",
       "line": {
@@ -48,9 +48,9 @@
       "frame": null
     },
     {
-      "x": [1, 2, 3, 4, 6, 7],
-      "y": [6, 7, 0, 6, 12, 6],
-      "text": ["Game_number: 1<br />Opponent: Ball State<br />Penalty_enforced_count:  6", "Game_number: 2<br />Opponent: Pittsburgh<br />Penalty_enforced_count:  7", "Game_number: 3<br />Opponent: Akron<br />Penalty_enforced_count:  0", "Game_number: 4<br />Opponent: Florida<br />Penalty_enforced_count:  6", "Game_number: 6<br />Opponent: LSU<br />Penalty_enforced_count: 12", "Game_number: 7<br />Opponent: Alabama<br />Penalty_enforced_count:  6"],
+      "x": [1, 2, 3, 4, 6, 7, 8, 9, 10, 11],
+      "y": [6, 7, 0, 6, 12, 6, 16, 6, 9, 7],
+      "text": ["Game_number:  1<br />Opponent: Ball State<br />Penalty_enforced_count:  6", "Game_number:  2<br />Opponent: Pittsburgh<br />Penalty_enforced_count:  7", "Game_number:  3<br />Opponent: Akron<br />Penalty_enforced_count:  0", "Game_number:  4<br />Opponent: Florida<br />Penalty_enforced_count:  6", "Game_number:  6<br />Opponent: LSU<br />Penalty_enforced_count: 12", "Game_number:  7<br />Opponent: Alabama<br />Penalty_enforced_count:  6", "Game_number:  8<br />Opponent: UT Martin<br />Penalty_enforced_count: 16", "Game_number:  9<br />Opponent: Kentucky<br />Penalty_enforced_count:  6", "Game_number: 10<br />Opponent: Georgia<br />Penalty_enforced_count:  9", "Game_number: 11<br />Opponent: Missouri<br />Penalty_enforced_count:  7"],
       "type": "scatter",
       "mode": "lines+markers",
       "line": {
@@ -92,7 +92,7 @@
       "size": 14.6118721461187
     },
     "title": {
-      "text": "Tennessee penalties for 2022; Average: enforced = 6.17 (primary team color), all = 6.17 (secondary team color)<br> <sup><\/sup>",
+      "text": "Tennessee penalties for 2022; Average: enforced = 7.50 (primary team color), all = 7.50 (secondary team color)<br> <sup><\/sup>",
       "font": {
         "color": "rgba(0,0,0,1)",
         "family": "",
@@ -107,12 +107,12 @@
       "automargin": true,
       "type": "linear",
       "autorange": false,
-      "range": [0.7, 7.3],
+      "range": [0.5, 11.5],
       "tickmode": "array",
-      "ticktext": ["Ball State", "Pittsburgh", "Akron", "Florida", "LSU", "Alabama"],
-      "tickvals": [1, 2, 3, 4, 5, 6],
+      "ticktext": ["Ball State", "Pittsburgh", "Akron", "Florida", "LSU", "Alabama", "UT Martin", "Kentucky", "Georgia", "Missouri"],
+      "tickvals": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
       "categoryorder": "array",
-      "categoryarray": ["Ball State", "Pittsburgh", "Akron", "Florida", "LSU", "Alabama"],
+      "categoryarray": ["Ball State", "Pittsburgh", "Akron", "Florida", "LSU", "Alabama", "UT Martin", "Kentucky", "Georgia", "Missouri"],
       "nticks": null,
       "ticks": "outside",
       "tickcolor": "rgba(51,51,51,1)",
@@ -148,12 +148,12 @@
       "automargin": true,
       "type": "linear",
       "autorange": false,
-      "range": [-0.6, 12.6],
+      "range": [-0.8, 16.8],
       "tickmode": "array",
-      "ticktext": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"],
-      "tickvals": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "ticktext": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16"],
+      "tickvals": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
       "categoryorder": "array",
-      "categoryarray": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"],
+      "categoryarray": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16"],
       "nticks": null,
       "ticks": "outside",
       "tickcolor": "rgba(51,51,51,1)",
@@ -222,42 +222,42 @@
   },
   source: "A",
   attrs: {
-    "7bc2b8a7262": {
+    "33d42fb223cc": {
       "yintercept": {},
       "type": "scatter"
     },
-    "7bc15186109": {
+    "33d437a018ee": {
       "yintercept": {}
     },
-    "7bc341554fa": {
+    "33d418328cb": {
       "x": {},
       "label": {},
       "y": {}
     },
-    "7bc427761b4": {
+    "33d460a9137": {
       "x": {},
       "label": {},
       "y": {}
     },
-    "7bc71ee43fd": {
+    "33d46f651240": {
       "x": {},
       "label": {},
       "y": {}
     },
-    "7bc9cb36c0": {
+    "33d433771d29": {
       "x": {},
       "label": {},
       "y": {}
     }
   },
-  cur_data: "7bc2b8a7262",
+  cur_data: "33d42fb223cc",
   visdat: {
-    "7bc2b8a7262": ["function (y) ", "x"],
-    "7bc15186109": ["function (y) ", "x"],
-    "7bc341554fa": ["function (y) ", "x"],
-    "7bc427761b4": ["function (y) ", "x"],
-    "7bc71ee43fd": ["function (y) ", "x"],
-    "7bc9cb36c0": ["function (y) ", "x"]
+    "33d42fb223cc": ["function (y) ", "x"],
+    "33d437a018ee": ["function (y) ", "x"],
+    "33d418328cb": ["function (y) ", "x"],
+    "33d460a9137": ["function (y) ", "x"],
+    "33d46f651240": ["function (y) ", "x"],
+    "33d433771d29": ["function (y) ", "x"]
   },
   highlight: {
     "on": "plotly_click",

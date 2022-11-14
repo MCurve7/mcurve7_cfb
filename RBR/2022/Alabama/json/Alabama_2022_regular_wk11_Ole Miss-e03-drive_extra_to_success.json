@@ -1,0 +1,797 @@
+{
+  data: [
+    {
+      "x": [-2.95, 83.95],
+      "y": [0, 0],
+      "text": "yintercept: 0",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(0,0,0,0.2)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [34.5, 34.5],
+      "y": [-4.98571428571429, 16.7],
+      "text": "xintercept: 34.5",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(0,0,0,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [15.5, 15.5, null, 56.5, 56.5],
+      "y": [-4.98571428571429, 16.7, null, -4.98571428571429, 16.7],
+      "text": ["xintercept: 15.5", "xintercept: 15.5", null, "xintercept: 56.5", "xintercept: 56.5"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(0,0,0,1)",
+        "dash": "dash"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 2, 3, 4, 5, 6, 7],
+      "y": [-1, -0.714285714285714, 0.875, -0.8, -0.793650793650794, -2.125, -1],
+      "text": ["Offense_play_count:  1<br />Extra_over_toSuccess: -1.00000000<br />factor(O_drive_number): 1", "Offense_play_count:  2<br />Extra_over_toSuccess: -0.71428571<br />factor(O_drive_number): 1", "Offense_play_count:  3<br />Extra_over_toSuccess:  0.87500000<br />factor(O_drive_number): 1", "Offense_play_count:  4<br />Extra_over_toSuccess: -0.80000000<br />factor(O_drive_number): 1", "Offense_play_count:  5<br />Extra_over_toSuccess: -0.79365079<br />factor(O_drive_number): 1", "Offense_play_count:  6<br />Extra_over_toSuccess: -2.12500000<br />factor(O_drive_number): 1", "Offense_play_count:  7<br />Extra_over_toSuccess: -1.00000000<br />factor(O_drive_number): 1"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(158,27,50,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "1",
+      "legendgroup": "1",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [8, 9, 10, 11],
+      "y": [-1, -0.571428571428571, -1, -1],
+      "text": ["Offense_play_count:  8<br />Extra_over_toSuccess: -1.00000000<br />factor(O_drive_number): 2", "Offense_play_count:  9<br />Extra_over_toSuccess: -0.57142857<br />factor(O_drive_number): 2", "Offense_play_count: 10<br />Extra_over_toSuccess: -1.00000000<br />factor(O_drive_number): 2", "Offense_play_count: 11<br />Extra_over_toSuccess: -1.00000000<br />factor(O_drive_number): 2"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(130,138,143,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(2,1)",
+      "legendgroup": "(2,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [12, 13, 14, 15],
+      "y": [-1, -1.71428571428571, -0.0666666666666667, -1],
+      "text": ["Offense_play_count: 12<br />Extra_over_toSuccess: -1.00000000<br />factor(O_drive_number): 3", "Offense_play_count: 13<br />Extra_over_toSuccess: -1.71428571<br />factor(O_drive_number): 3", "Offense_play_count: 14<br />Extra_over_toSuccess: -0.06666667<br />factor(O_drive_number): 3", "Offense_play_count: 15<br />Extra_over_toSuccess: -1.00000000<br />factor(O_drive_number): 3"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(158,27,50,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(3,1)",
+      "legendgroup": "(3,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [16, 17, 18, 19, 20, 21, 22],
+      "y": [-0.4, 1.02040816326531, 0.6, 3.57142857142857, -0.2, 2.61904761904762, 2.8],
+      "text": ["Offense_play_count: 16<br />Extra_over_toSuccess: -0.40000000<br />factor(O_drive_number): 4", "Offense_play_count: 17<br />Extra_over_toSuccess:  1.02040816<br />factor(O_drive_number): 4", "Offense_play_count: 18<br />Extra_over_toSuccess:  0.60000000<br />factor(O_drive_number): 4", "Offense_play_count: 19<br />Extra_over_toSuccess:  3.57142857<br />factor(O_drive_number): 4", "Offense_play_count: 20<br />Extra_over_toSuccess: -0.20000000<br />factor(O_drive_number): 4", "Offense_play_count: 21<br />Extra_over_toSuccess:  2.61904762<br />factor(O_drive_number): 4", "Offense_play_count: 22<br />Extra_over_toSuccess:  2.80000000<br />factor(O_drive_number): 4"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(130,138,143,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(4,1)",
+      "legendgroup": "(4,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [23],
+      "y": [1],
+      "text": "Offense_play_count: 23<br />Extra_over_toSuccess:  1.00000000<br />factor(O_drive_number): 5",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(158,27,50,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(5,1)",
+      "legendgroup": "(5,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [24, 25, 26, 27],
+      "y": [-0.8, -0.158730158730159, -4, -1],
+      "text": ["Offense_play_count: 24<br />Extra_over_toSuccess: -0.80000000<br />factor(O_drive_number): 6", "Offense_play_count: 25<br />Extra_over_toSuccess: -0.15873016<br />factor(O_drive_number): 6", "Offense_play_count: 26<br />Extra_over_toSuccess: -4.00000000<br />factor(O_drive_number): 6", "Offense_play_count: 27<br />Extra_over_toSuccess: -1.00000000<br />factor(O_drive_number): 6"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(130,138,143,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(6,1)",
+      "legendgroup": "(6,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [28, 29, 30, 31, 32, 33, 34],
+      "y": [0.2, -0.714285714285714, 3.33333333333333, -1.33333333333333, -0.952380952380953, -2.66666666666667, 0],
+      "text": ["Offense_play_count: 28<br />Extra_over_toSuccess:  0.20000000<br />factor(O_drive_number): 7", "Offense_play_count: 29<br />Extra_over_toSuccess: -0.71428571<br />factor(O_drive_number): 7", "Offense_play_count: 30<br />Extra_over_toSuccess:  3.33333333<br />factor(O_drive_number): 7", "Offense_play_count: 31<br />Extra_over_toSuccess: -1.33333333<br />factor(O_drive_number): 7", "Offense_play_count: 32<br />Extra_over_toSuccess: -0.95238095<br />factor(O_drive_number): 7", "Offense_play_count: 33<br />Extra_over_toSuccess: -2.66666667<br />factor(O_drive_number): 7", "Offense_play_count: 34<br />Extra_over_toSuccess:  0.00000000<br />factor(O_drive_number): 7"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(158,27,50,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(7,1)",
+      "legendgroup": "(7,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [35, 36, 37, 38, 39, 40, 41],
+      "y": [1.8, -0.8, -0.2, -0.952380952380953, -1, 4.6031746031746, 5.5],
+      "text": ["Offense_play_count: 35<br />Extra_over_toSuccess:  1.80000000<br />factor(O_drive_number): 8", "Offense_play_count: 36<br />Extra_over_toSuccess: -0.80000000<br />factor(O_drive_number): 8", "Offense_play_count: 37<br />Extra_over_toSuccess: -0.20000000<br />factor(O_drive_number): 8", "Offense_play_count: 38<br />Extra_over_toSuccess: -0.95238095<br />factor(O_drive_number): 8", "Offense_play_count: 39<br />Extra_over_toSuccess: -1.00000000<br />factor(O_drive_number): 8", "Offense_play_count: 40<br />Extra_over_toSuccess:  4.60317460<br />factor(O_drive_number): 8", "Offense_play_count: 41<br />Extra_over_toSuccess:  5.50000000<br />factor(O_drive_number): 8"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(130,138,143,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(8,1)",
+      "legendgroup": "(8,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56],
+      "y": [-1, 0, 2, -0.8, 1.11111111111111, 0.6, 2.85714285714286, -3, 0, 0.714285714285714, 0.4, 2.38095238095238, -0.666666666666667, -1.14285714285714, 0],
+      "text": ["Offense_play_count: 42<br />Extra_over_toSuccess: -1.00000000<br />factor(O_drive_number): 9", "Offense_play_count: 43<br />Extra_over_toSuccess:  0.00000000<br />factor(O_drive_number): 9", "Offense_play_count: 44<br />Extra_over_toSuccess:  2.00000000<br />factor(O_drive_number): 9", "Offense_play_count: 45<br />Extra_over_toSuccess: -0.80000000<br />factor(O_drive_number): 9", "Offense_play_count: 46<br />Extra_over_toSuccess:  1.11111111<br />factor(O_drive_number): 9", "Offense_play_count: 47<br />Extra_over_toSuccess:  0.60000000<br />factor(O_drive_number): 9", "Offense_play_count: 48<br />Extra_over_toSuccess:  2.85714286<br />factor(O_drive_number): 9", "Offense_play_count: 49<br />Extra_over_toSuccess: -3.00000000<br />factor(O_drive_number): 9", "Offense_play_count: 50<br />Extra_over_toSuccess:  0.00000000<br />factor(O_drive_number): 9", "Offense_play_count: 51<br />Extra_over_toSuccess:  0.71428571<br />factor(O_drive_number): 9", "Offense_play_count: 52<br />Extra_over_toSuccess:  0.40000000<br />factor(O_drive_number): 9", "Offense_play_count: 53<br />Extra_over_toSuccess:  2.38095238<br />factor(O_drive_number): 9", "Offense_play_count: 54<br />Extra_over_toSuccess: -0.66666667<br />factor(O_drive_number): 9", "Offense_play_count: 55<br />Extra_over_toSuccess: -1.14285714<br />factor(O_drive_number): 9", "Offense_play_count: 56<br />Extra_over_toSuccess:  0.00000000<br />factor(O_drive_number): 9"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(158,27,50,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(9,1)",
+      "legendgroup": "(9,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [57, 58, 59, 60, 61, 62, 63, 64],
+      "y": [0.8, 14.2857142857143, 0.8, 15.7142857142857, -0.25, -1.14285714285714, -1, 3.6],
+      "text": ["Offense_play_count: 57<br />Extra_over_toSuccess:  0.80000000<br />factor(O_drive_number): 10", "Offense_play_count: 58<br />Extra_over_toSuccess: 14.28571429<br />factor(O_drive_number): 10", "Offense_play_count: 59<br />Extra_over_toSuccess:  0.80000000<br />factor(O_drive_number): 10", "Offense_play_count: 60<br />Extra_over_toSuccess: 15.71428571<br />factor(O_drive_number): 10", "Offense_play_count: 61<br />Extra_over_toSuccess: -0.25000000<br />factor(O_drive_number): 10", "Offense_play_count: 62<br />Extra_over_toSuccess: -1.14285714<br />factor(O_drive_number): 10", "Offense_play_count: 63<br />Extra_over_toSuccess: -1.00000000<br />factor(O_drive_number): 10", "Offense_play_count: 64<br />Extra_over_toSuccess:  3.60000000<br />factor(O_drive_number): 10"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(130,138,143,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(10,1)",
+      "legendgroup": "(10,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [65, 66, 67, 68],
+      "y": [-2.2, -0.982142857142857, -1, -1],
+      "text": ["Offense_play_count: 65<br />Extra_over_toSuccess: -2.20000000<br />factor(O_drive_number): 11", "Offense_play_count: 66<br />Extra_over_toSuccess: -0.98214286<br />factor(O_drive_number): 11", "Offense_play_count: 67<br />Extra_over_toSuccess: -1.00000000<br />factor(O_drive_number): 11", "Offense_play_count: 68<br />Extra_over_toSuccess: -1.00000000<br />factor(O_drive_number): 11"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(158,27,50,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(11,1)",
+      "legendgroup": "(11,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [69, 70, 71, 72, 73, 74, 75, 76, 77, 78],
+      "y": [-0.4, -0.816326530612245, 0.666666666666667, 0, 0, 1.42857142857143, 0.2, -2.14285714285714, -1, 6],
+      "text": ["Offense_play_count: 69<br />Extra_over_toSuccess: -0.40000000<br />factor(O_drive_number): 12", "Offense_play_count: 70<br />Extra_over_toSuccess: -0.81632653<br />factor(O_drive_number): 12", "Offense_play_count: 71<br />Extra_over_toSuccess:  0.66666667<br />factor(O_drive_number): 12", "Offense_play_count: 72<br />Extra_over_toSuccess:  0.00000000<br />factor(O_drive_number): 12", "Offense_play_count: 73<br />Extra_over_toSuccess:  0.00000000<br />factor(O_drive_number): 12", "Offense_play_count: 74<br />Extra_over_toSuccess:  1.42857143<br />factor(O_drive_number): 12", "Offense_play_count: 75<br />Extra_over_toSuccess:  0.20000000<br />factor(O_drive_number): 12", "Offense_play_count: 76<br />Extra_over_toSuccess: -2.14285714<br />factor(O_drive_number): 12", "Offense_play_count: 77<br />Extra_over_toSuccess: -1.00000000<br />factor(O_drive_number): 12", "Offense_play_count: 78<br />Extra_over_toSuccess:  6.00000000<br />factor(O_drive_number): 12"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(130,138,143,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(12,1)",
+      "legendgroup": "(12,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [79, 80],
+      "y": [-1, -1.03896103896104],
+      "text": ["Offense_play_count: 79<br />Extra_over_toSuccess: -1.00000000<br />factor(O_drive_number): 13", "Offense_play_count: 80<br />Extra_over_toSuccess: -1.03896104<br />factor(O_drive_number): 13"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(158,27,50,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(13,1)",
+      "legendgroup": "(13,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [41, 64, 78],
+      "y": [5.5, 3.6, 6],
+      "text": ["Offense_play_count: 41<br />Extra_over_toSuccess:  5.50000000<br />Play_type: Field Goal Good<br />Success: Field Goal<br />Play_text: Will Reichard 39 Yd Field Goal <br />O_drive_number: 8", "Offense_play_count: 64<br />Extra_over_toSuccess:  3.60000000<br />Play_type: Field Goal Good<br />Success: Field Goal<br />Play_text: Will Reichard 23 Yd Field Goal <br />O_drive_number: 10", "Offense_play_count: 78<br />Extra_over_toSuccess:  6.00000000<br />Play_type: Field Goal Good<br />Success: Field Goal<br />Play_text: Will Reichard 49 Yd Field Goal <br />O_drive_number: 12"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(127,127,127,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "square-cross-open",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(127,127,127,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Field Goal,Field Goal Good)",
+      "legendgroup": "(Field Goal,Field Goal Good)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [21, 33, 49, 66, 72],
+      "y": [2.61904761904762, -2.66666666666667, -3, -0.982142857142857, 0],
+      "text": ["Offense_play_count: 21<br />Extra_over_toSuccess:  2.61904762<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: OLE MISS Penalty, Personal Foul (15 Yards) to the Miss 19 for a 1ST down<br />O_drive_number: 4", "Offense_play_count: 33<br />Extra_over_toSuccess: -2.66666667<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: ALABAMA Penalty, Delay Of Game (Jahmyr Gibbs) to the Miss 8<br />O_drive_number: 7", "Offense_play_count: 49<br />Extra_over_toSuccess: -3.00000000<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: YOUNG, Bryce pass to the right complete for 10 yards to LATU, Cameron caught at the OLE35 and advanced to the OLE22 (BROWN, Troy). PENALTY ALA Holding on LATHAM, JC enforced 10 yards from the OLE32 to the OLE42 [NHSG]. NO PLAY (replay the down).<br />O_drive_number: 9", "Offense_play_count: 66<br />Extra_over_toSuccess: -0.98214286<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: YOUNG, Bryce pass to the left complete for 12 yards to BROOKS, Ja'Corey caught at the ALA47 and advanced to the ALA47 (BATTLE, Miles), out of bounds. PENALTY ALA Illegal Touch-Pass on BROOKS, Ja'Corey enforced 0 yards from the ALA35 to the ALA35, penalty results in a loss of down [NHSG]. NO PLAY (replay the down).<br />O_drive_number: 11", "Offense_play_count: 72<br />Extra_over_toSuccess:  0.00000000<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: OLE MISS Penalty, Offsides (Otis Reese) to the Miss 40<br />O_drive_number: 12"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(255,0,255,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "hexagram-open",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(255,0,255,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "Penalty",
+      "legendgroup": "Penalty",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [7, 11, 27, 68],
+      "y": [-1, -1, -1, -1],
+      "text": ["Offense_play_count:  7<br />Extra_over_toSuccess: -1.00000000<br />Play_type: Punt<br />Success: Punt<br />Play_text: James Burnip punt for 46 yds<br />O_drive_number: 1", "Offense_play_count: 11<br />Extra_over_toSuccess: -1.00000000<br />Play_type: Punt<br />Success: Punt<br />Play_text: James Burnip punt for 37 yds, fair catch by Jonathan Mingo at the Miss 32<br />O_drive_number: 2", "Offense_play_count: 27<br />Extra_over_toSuccess: -1.00000000<br />Play_type: Punt<br />Success: Punt<br />Play_text: James Burnip punt for 51 yds, fair catch by Jonathan Mingo at the Miss 16<br />O_drive_number: 6", "Offense_play_count: 68<br />Extra_over_toSuccess: -1.00000000<br />Play_type: Punt<br />Success: Punt<br />Play_text: James Burnip punt for 42 yds, fair catch by Jonathan Mingo at the Miss 23<br />O_drive_number: 11"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(127,127,127,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "diamond",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(127,127,127,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "Punt",
+      "legendgroup": "Punt",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [3, 17, 18, 35, 40, 43, 44, 46, 50, 53, 57, 75],
+      "y": [0.875, 1.02040816326531, 0.6, 1.8, 4.6031746031746, 0, 2, 1.11111111111111, 0, 2.38095238095238, 0.8, 0.2],
+      "text": ["Offense_play_count:  3<br />Extra_over_toSuccess:  0.87500000<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Bryce Young pass complete to Cameron Latu for 15 yds to the Alab 29 for a 1ST down<br />O_drive_number: 1", "Offense_play_count: 17<br />Extra_over_toSuccess:  1.02040816<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Bryce Young pass complete to JoJo Earle for 10 yds to the Alab 33 for a 1ST down<br />O_drive_number: 4", "Offense_play_count: 18<br />Extra_over_toSuccess:  0.60000000<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Bryce Young pass complete to Ja'Corey Brooks for 8 yds to the Alab 41<br />O_drive_number: 4", "Offense_play_count: 35<br />Extra_over_toSuccess:  1.80000000<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Bryce Young pass complete to Jermaine Burton for 14 yds to the Alab 39 for a 1ST down<br />O_drive_number: 8", "Offense_play_count: 40<br />Extra_over_toSuccess:  4.60317460<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Bryce Young pass complete to Ja'Corey Brooks for 35 yds to the Miss 25 for a 1ST down<br />O_drive_number: 8", "Offense_play_count: 43<br />Extra_over_toSuccess:  0.00000000<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Bryce Young pass complete to Kendrick Law for 7 yds to the Alab 32<br />O_drive_number: 9", "Offense_play_count: 44<br />Extra_over_toSuccess:  2.00000000<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Bryce Young pass complete to Kendrick Law for 9 yds to the Alab 41 for a 1ST down<br />O_drive_number: 9", "Offense_play_count: 46<br />Extra_over_toSuccess:  1.11111111<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Bryce Young pass complete to Ja'Corey Brooks for 13 yds to the Miss 45 for a 1ST down<br />O_drive_number: 9", "Offense_play_count: 50<br />Extra_over_toSuccess:  0.00000000<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Bryce Young pass complete to Kendrick Law for 10 yds to the Miss 32<br />O_drive_number: 9", "Offense_play_count: 53<br />Extra_over_toSuccess:  2.38095238<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Bryce Young pass complete to Kobe Prentice for 7 yds to the Miss 6 for a 1ST down<br />O_drive_number: 9", "Offense_play_count: 57<br />Extra_over_toSuccess:  0.80000000<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Bryce Young pass complete to Jermaine Burton for 9 yds to the Miss 40<br />O_drive_number: 10", "Offense_play_count: 75<br />Extra_over_toSuccess:  0.20000000<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Bryce Young pass complete to Jermaine Burton for 6 yds to the Miss 28<br />O_drive_number: 12"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,100,0,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(0,100,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Successful,Pass Reception)",
+      "legendgroup": "(Successful,Pass Reception)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [22, 34, 56],
+      "y": [2.8, 0, 0],
+      "text": ["Offense_play_count: 22<br />Extra_over_toSuccess:  2.80000000<br />Play_type: Passing Touchdown<br />Success: Successful<br />Play_text: Jermaine Burton 19 Yd pass from Bryce Young (Will Reichard Kick)<br />O_drive_number: 4", "Offense_play_count: 34<br />Extra_over_toSuccess:  0.00000000<br />Play_type: Passing Touchdown<br />Success: Successful<br />Play_text: Cameron Latu 8 Yd pass from Bryce Young (Will Reichard Kick)<br />O_drive_number: 7", "Offense_play_count: 56<br />Extra_over_toSuccess:  0.00000000<br />Play_type: Passing Touchdown<br />Success: Successful<br />Play_text: Ja'Corey Brooks 5 Yd pass from Bryce Young (Will Reichard Kick)<br />O_drive_number: 9"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,100,0,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "square-open-dot",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(0,100,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Successful,Passing Touchdown)",
+      "legendgroup": "(Successful,Passing Touchdown)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [19, 28, 30, 47, 48, 51, 52, 58, 59, 60, 71, 73, 74],
+      "y": [3.57142857142857, 0.2, 3.33333333333333, 0.6, 2.85714285714286, 0.714285714285714, 0.4, 14.2857142857143, 0.8, 15.7142857142857, 0.666666666666667, 0, 1.42857142857143],
+      "text": ["Offense_play_count: 19<br />Extra_over_toSuccess:  3.57142857<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jase McClellan run for 6 yds to the Alab 47 for a 1ST down<br />O_drive_number: 4", "Offense_play_count: 28<br />Extra_over_toSuccess:  0.20000000<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jase McClellan run for 6 yds to the Miss 17<br />O_drive_number: 7", "Offense_play_count: 30<br />Extra_over_toSuccess:  3.33333333<br />Play_type: Rush<br />Success: Successful<br />Play_text: Bryce Young run for 13 yds to the Miss 3 for a 1ST down<br />O_drive_number: 7", "Offense_play_count: 47<br />Extra_over_toSuccess:  0.60000000<br />Play_type: Rush<br />Success: Successful<br />Play_text: Roydell Williams run for 8 yds to the Miss 37<br />O_drive_number: 9", "Offense_play_count: 48<br />Extra_over_toSuccess:  2.85714286<br />Play_type: Rush<br />Success: Successful<br />Play_text: Roydell Williams run for 5 yds to the Miss 32 for a 1ST down<br />O_drive_number: 9", "Offense_play_count: 51<br />Extra_over_toSuccess:  0.71428571<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jase McClellan run for 12 yds to the Miss 20 for a 1ST down<br />O_drive_number: 9", "Offense_play_count: 52<br />Extra_over_toSuccess:  0.40000000<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jase McClellan run for 7 yds to the Miss 13<br />O_drive_number: 9", "Offense_play_count: 58<br />Extra_over_toSuccess: 14.28571429<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jase McClellan run for 11 yds to the Miss 29 for a 1ST down<br />O_drive_number: 10", "Offense_play_count: 59<br />Extra_over_toSuccess:  0.80000000<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jase McClellan run for 9 yds to the Miss 20<br />O_drive_number: 10", "Offense_play_count: 60<br />Extra_over_toSuccess: 15.71428571<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jase McClellan run for 12 yds to the Miss 8 for a 1ST down<br />O_drive_number: 10", "Offense_play_count: 71<br />Extra_over_toSuccess:  0.66666667<br />Play_type: Rush<br />Success: Successful<br />Play_text: Bryce Young run for 10 yds to the Miss 45 for a 1ST down<br />O_drive_number: 12", "Offense_play_count: 73<br />Extra_over_toSuccess:  0.00000000<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jase McClellan run for 3 yds to the Miss 37<br />O_drive_number: 12", "Offense_play_count: 74<br />Extra_over_toSuccess:  1.42857143<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jase McClellan run for 3 yds to the Miss 34 for a 1ST down<br />O_drive_number: 12"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,100,0,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "circle",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(0,100,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Successful,Rush)",
+      "legendgroup": "(Successful,Rush)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [23],
+      "y": [1],
+      "text": "Offense_play_count: 23<br />Extra_over_toSuccess:  1.00000000<br />Play_type: Fumble Recovery (Opponent)<br />Success: Unsuccessful<br />Play_text: Bryce Young pass complete to JoJo Earle for 10 yds JoJo Earle fumbled, recovered by Miss Otis Reese<br />O_drive_number: 5",
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(139,26,26,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "circle-open",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(139,26,26,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Unsuccessful,Fumble Recovery (Opponent))",
+      "legendgroup": "(Unsuccessful,Fumble Recovery (Opponent))",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [8, 10, 12, 32, 38, 39, 42, 55, 62, 63, 67, 77],
+      "y": [-1, -1, -1, -0.952380952380953, -0.952380952380953, -1, -1, -1.14285714285714, -1.14285714285714, -1, -1, -1],
+      "text": ["Offense_play_count:  8<br />Extra_over_toSuccess: -1.00000000<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Bryce Young pass incomplete<br />O_drive_number: 2", "Offense_play_count: 10<br />Extra_over_toSuccess: -1.00000000<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Bryce Young pass incomplete<br />O_drive_number: 2", "Offense_play_count: 12<br />Extra_over_toSuccess: -1.00000000<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Bryce Young pass incomplete<br />O_drive_number: 3", "Offense_play_count: 32<br />Extra_over_toSuccess: -0.95238095<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Bryce Young pass incomplete<br />O_drive_number: 7", "Offense_play_count: 38<br />Extra_over_toSuccess: -0.95238095<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Bryce Young pass incomplete<br />O_drive_number: 8", "Offense_play_count: 39<br />Extra_over_toSuccess: -1.00000000<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Bryce Young pass incomplete<br />O_drive_number: 8", "Offense_play_count: 42<br />Extra_over_toSuccess: -1.00000000<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Bryce Young pass incomplete<br />O_drive_number: 9", "Offense_play_count: 55<br />Extra_over_toSuccess: -1.14285714<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Bryce Young pass incomplete<br />O_drive_number: 9", "Offense_play_count: 62<br />Extra_over_toSuccess: -1.14285714<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Bryce Young pass incomplete<br />O_drive_number: 10", "Offense_play_count: 63<br />Extra_over_toSuccess: -1.00000000<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Bryce Young pass incomplete<br />O_drive_number: 10", "Offense_play_count: 67<br />Extra_over_toSuccess: -1.00000000<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Bryce Young pass incomplete<br />O_drive_number: 11", "Offense_play_count: 77<br />Extra_over_toSuccess: -1.00000000<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Bryce Young pass incomplete<br />O_drive_number: 12"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(139,26,26,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "triangle-up-open",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(139,26,26,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Unsuccessful,Pass Incompletion)",
+      "legendgroup": "(Unsuccessful,Pass Incompletion)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2, 4, 25, 36],
+      "y": [-0.714285714285714, -0.8, -0.158730158730159, -0.8],
+      "text": ["Offense_play_count:  2<br />Extra_over_toSuccess: -0.71428571<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Bryce Young pass complete to Jermaine Burton for 2 yds to the Alab 14<br />O_drive_number: 1", "Offense_play_count:  4<br />Extra_over_toSuccess: -0.80000000<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Bryce Young pass complete to JoJo Earle for 1 yd to the Alab 30<br />O_drive_number: 1", "Offense_play_count: 25<br />Extra_over_toSuccess: -0.15873016<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Bryce Young pass complete to Jahmyr Gibbs for 5 yds to the Alab 45<br />O_drive_number: 6", "Offense_play_count: 36<br />Extra_over_toSuccess: -0.80000000<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Bryce Young pass complete to Jase McClellan for 1 yd to the Alab 40<br />O_drive_number: 8"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(139,26,26,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(139,26,26,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Unsuccessful,Pass Reception)",
+      "legendgroup": "(Unsuccessful,Pass Reception)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 5, 9, 13, 14, 15, 16, 20, 24, 29, 31, 37, 45, 54, 61, 69, 70, 76, 79, 80],
+      "y": [-1, -0.793650793650794, -0.571428571428571, -1.71428571428571, -0.0666666666666667, -1, -0.4, -0.2, -0.8, -0.714285714285714, -1.33333333333333, -0.2, -0.8, -0.666666666666667, -0.25, -0.4, -0.816326530612245, -2.14285714285714, -1, -1.03896103896104],
+      "text": ["Offense_play_count:  1<br />Extra_over_toSuccess: -1.00000000<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jahmyr Gibbs run for no gain to the Alab 12<br />O_drive_number: 1", "Offense_play_count:  5<br />Extra_over_toSuccess: -0.79365079<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jahmyr Gibbs run for 1 yd to the Alab 31<br />O_drive_number: 1", "Offense_play_count:  9<br />Extra_over_toSuccess: -0.57142857<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jahmyr Gibbs run for 3 yds to the Alab 31<br />O_drive_number: 2", "Offense_play_count: 13<br />Extra_over_toSuccess: -1.71428571<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jahmyr Gibbs run for a loss of 5 yards to the Alab 22<br />O_drive_number: 3", "Offense_play_count: 14<br />Extra_over_toSuccess: -0.06666667<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Bryce Young run for 14 yds to the Alab 36<br />O_drive_number: 3", "Offense_play_count: 15<br />Extra_over_toSuccess: -1.00000000<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Bryce Young run for no gain to the Alab 36<br />O_drive_number: 3", "Offense_play_count: 16<br />Extra_over_toSuccess: -0.40000000<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jahmyr Gibbs run for 3 yds to the Alab 23<br />O_drive_number: 4", "Offense_play_count: 20<br />Extra_over_toSuccess: -0.20000000<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jase McClellan run for 4 yds to the Miss 49<br />O_drive_number: 4", "Offense_play_count: 24<br />Extra_over_toSuccess: -0.80000000<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jahmyr Gibbs run for 1 yd to the Alab 40<br />O_drive_number: 6", "Offense_play_count: 29<br />Extra_over_toSuccess: -0.71428571<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jase McClellan run for 1 yd to the Miss 16<br />O_drive_number: 7", "Offense_play_count: 31<br />Extra_over_toSuccess: -1.33333333<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jase McClellan run for no gain to the Miss 3<br />O_drive_number: 7", "Offense_play_count: 37<br />Extra_over_toSuccess: -0.20000000<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jase McClellan run for 4 yds to the Miss 21<br />O_drive_number: 8", "Offense_play_count: 45<br />Extra_over_toSuccess: -0.80000000<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jase McClellan run for 1 yd to the Alab 42<br />O_drive_number: 9", "Offense_play_count: 54<br />Extra_over_toSuccess: -0.66666667<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jase McClellan run for 1 yd to the Miss 5<br />O_drive_number: 9", "Offense_play_count: 61<br />Extra_over_toSuccess: -0.25000000<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jase McClellan run for 3 yds to the Miss 5<br />O_drive_number: 10", "Offense_play_count: 69<br />Extra_over_toSuccess: -0.40000000<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jase McClellan run for 3 yds to the Alab 44<br />O_drive_number: 12", "Offense_play_count: 70<br />Extra_over_toSuccess: -0.81632653<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jase McClellan run for 1 yd to the Alab 45<br />O_drive_number: 12", "Offense_play_count: 76<br />Extra_over_toSuccess: -2.14285714<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jase McClellan run for a loss of 3 yards to the Miss 31<br />O_drive_number: 12", "Offense_play_count: 79<br />Extra_over_toSuccess: -1.00000000<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: [NH] Kneel down by ALA at ALA19 (team loss of 1).<br />O_drive_number: 13", "Offense_play_count: 80<br />Extra_over_toSuccess: -1.03896104<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: [NH] Kneel down by ALA at ALA18 (team loss of 1), clock 00:00.<br />O_drive_number: 13"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(139,26,26,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "circle",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(139,26,26,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Unsuccessful,Rush)",
+      "legendgroup": "(Unsuccessful,Rush)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [6, 26, 65],
+      "y": [-2.125, -4, -2.2],
+      "text": ["Offense_play_count:  6<br />Extra_over_toSuccess: -2.12500000<br />Play_type: Sack<br />Success: Unsuccessful<br />Play_text: Bryce Young sacked by JJ Pegues for a loss of 9 yards to the Alab 22<br />O_drive_number: 1", "Offense_play_count: 26<br />Extra_over_toSuccess: -4.00000000<br />Play_type: Sack<br />Success: Unsuccessful<br />Play_text: Bryce Young sacked by Isheem Young and Tavius Robinson for a loss of 12 yards to the Alab 33<br />O_drive_number: 6", "Offense_play_count: 65<br />Extra_over_toSuccess: -2.20000000<br />Play_type: Sack<br />Success: Unsuccessful<br />Play_text: Bryce Young sacked by Otis Reese for a loss of 6 yards to the Alab 35<br />O_drive_number: 11"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(139,26,26,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "triangle-down-open",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(139,26,26,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Unsuccessful,Sack)",
+      "legendgroup": "(Unsuccessful,Sack)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    }
+  ],
+  layout: {
+    "margin": {
+      "t": 43.2754946727549,
+      "r": 7.30593607305936,
+      "b": 39.6955859969559,
+      "l": 37.2602739726027
+    },
+    "plot_bgcolor": "rgba(229,229,229,1)",
+    "paper_bgcolor": "rgba(255,255,255,1)",
+    "font": {
+      "color": "rgba(0,0,0,1)",
+      "family": "",
+      "size": 14.6118721461187
+    },
+    "title": {
+      "text": "Alabama[30]: Ratio: Extra yards over Yards to success<br> <sup>2022: wk11 vs Ole Miss[24]<\/sup>",
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 17.5342465753425
+      },
+      "x": 0,
+      "xref": "paper",
+      "xanchor": "left"
+    },
+    "xaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [-2.95, 83.95],
+      "tickmode": "array",
+      "ticktext": ["0", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55", "60", "65", "70", "75", "80"],
+      "tickvals": [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80],
+      "categoryorder": "array",
+      "categoryarray": ["0", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55", "60", "65", "70", "75", "80"],
+      "nticks": null,
+      "ticks": "outside",
+      "tickcolor": "rgba(51,51,51,1)",
+      "ticklen": 3.65296803652968,
+      "tickwidth": 0.66417600664176,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "tickangle": -0,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": "rgba(204,204,204,1)",
+      "gridwidth": 0.66417600664176,
+      "zeroline": false,
+      "anchor": "y",
+      "title": {
+        "text": "Offensive play count including penalties",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "yaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [-4.98571428571429, 16.7],
+      "tickmode": "array",
+      "ticktext": ["0", "5", "10", "15"],
+      "tickvals": [0, 5, 10, 15],
+      "categoryorder": "array",
+      "categoryarray": ["0", "5", "10", "15"],
+      "nticks": null,
+      "ticks": "outside",
+      "tickcolor": "rgba(51,51,51,1)",
+      "ticklen": 3.65296803652968,
+      "tickwidth": 0.66417600664176,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "tickangle": -0,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": "rgba(204,204,204,1)",
+      "gridwidth": 0.66417600664176,
+      "zeroline": false,
+      "anchor": "x",
+      "title": {
+        "text": "Extra yards / Yards to be successful",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "shapes": [
+      {
+        "type": "rect",
+        "fillcolor": null,
+        "line": {
+          "color": null,
+          "width": 0,
+          "linetype": []
+        },
+        "yref": "paper",
+        "xref": "paper",
+        "x0": 0,
+        "x1": 1,
+        "y0": 0,
+        "y1": 1
+      }
+    ],
+    "showlegend": true,
+    "legend": {
+      "bgcolor": "rgba(255,255,255,1)",
+      "bordercolor": "transparent",
+      "borderwidth": 1.88976377952756,
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "title": {
+        "text": "Play type<br />Success/Drive number",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      }
+    },
+    "hovermode": "closest",
+    "barmode": "relative"
+  },
+  config: {
+    "doubleClick": "reset",
+    "modeBarButtonsToAdd": ["hoverclosest", "hovercompare"],
+    "showSendToCloud": false
+  },
+  source: "A",
+  attrs: {
+    "33d474162b62": {
+      "yintercept": {},
+      "type": "scatter"
+    },
+    "33d41985774": {
+      "xintercept": {}
+    },
+    "33d45e8a2064": {
+      "x": {},
+      "y": {},
+      "colour": {}
+    },
+    "33d4561b3de6": {
+      "x": {},
+      "y": {},
+      "shape": {},
+      "colour": {},
+      "label": {}
+    }
+  },
+  cur_data: "33d474162b62",
+  visdat: {
+    "33d474162b62": ["function (y) ", "x"],
+    "33d41985774": ["function (y) ", "x"],
+    "33d45e8a2064": ["function (y) ", "x"],
+    "33d4561b3de6": ["function (y) ", "x"]
+  },
+  highlight: {
+    "on": "plotly_click",
+    "persistent": false,
+    "dynamic": false,
+    "selectize": false,
+    "opacityDim": 0.2,
+    "selected": {
+      "opacity": 1
+    },
+    "debounce": 0
+  },
+  shinyEvents: ["plotly_hover", "plotly_click", "plotly_selected", "plotly_relayout", "plotly_brushed", "plotly_brushing", "plotly_clickannotation", "plotly_doubleclick", "plotly_deselect", "plotly_afterplot", "plotly_sunburstclick"],
+  base_url: "https://plot.ly"
+}
