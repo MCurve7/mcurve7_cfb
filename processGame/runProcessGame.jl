@@ -3,6 +3,15 @@ includet("processGame.jl")
 using Logging
 
 ############################################################################################################
+#NOTE: 
+#school_colors.csv uses ; as delimiter
+
+
+
+############################################################################################################
+
+
+############################################################################################################
 #Runs process_game on all unprocessed files, but skips processed games if overwrite = false
 function run_all_games()
     dirContents = readdir("../../data/unprocessed", join=true)
