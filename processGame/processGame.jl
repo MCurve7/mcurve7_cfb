@@ -149,7 +149,7 @@ function who_scored(df)
     else
         push!(od_scored, "neither")
     end
-
+    
     for i in 2:nr
         last_d_score = df[i-1, :Defense_score]
         current_d_score = df[i, :Defense_score]

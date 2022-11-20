@@ -3,6 +3,15 @@ function play_info(cols)
     #  Blocked Field Goal Touchdown (need more examples to make regexs for more than the main case) 
     #  Pass (not sure what to make of this, only two observations... so come back later)
 
+    # Pretty sure I can remove the FG variable. I think I changed my mind on how to handle that. Was FG = true/false (I think).
+    # Fieldgoals: merge recoverer and returner (change returner to recoverer... I think).
+
+    #Any play that involve a touchdown needs:
+    # passer, receiver, interceptor, runner, forcer, recoverer, tackler, PAT_kicker,  PAT_type, two_point, two_point_type, two_point_runner, two_point_passer, two_point_receiver
+    #since a 2-pt conversion can be fumbled/intercepted and returned for a score.
+
+    #Have I accounted for Onside kicks? Don't see it.
+
     play_text = cols[1]
     play_type = cols[2]
     offense  = cols[3]
@@ -51,7 +60,7 @@ function play_info(cols)
     returner = missing # Player name
     recoverer = missing # Player name on blocked FG/punts/fumbles...
     blocker = missing # Player name
-    FG_type = missing #  made, missed, blocked, failed
+    FG_type = missing # made, missed, blocked, failed, returned
     punter = missing # Player name
     punt_type  = missing #  blocked, failed
     tackler = missing # Player name
@@ -62,6 +71,7 @@ function play_info(cols)
 
     if DEBUG_PLAY_INFO println("play_info: $play_text") end
 
+    #Rush plays
     if play_type == "Rushing Touchdown"
         runner, PAT_kicker,  PAT_type, two_point, two_point_type, two_point_runner, two_point_passer, two_point_receiver = play_rush_td(play_text)
     elseif play_type == "Rush"     
@@ -73,6 +83,7 @@ function play_info(cols)
     elseif play_type == "Fumble Return Touchdown"
         passer, receiver, interceptor, runner, forcer, recoverer, tackler, PAT_kicker,  PAT_type, two_point, two_point_type, two_point_runner, two_point_passer, two_point_receiver = play_fumble_return_td(play_text)
 
+    #Pass plays
     elseif play_type == "Pass Reception"
         passer, receiver = play_reception(play_text)
     elseif play_type == "Pass Incompletion"
@@ -88,11 +99,14 @@ function play_info(cols)
     elseif play_type == "Sack"
         passer, tackler = play_sack(play_text)
 
+    #Kickoffs
     elseif play_type == "Kickoff" || play_type == "Kickoff Return (Offense)"
         kicker, kick_type, returner = play_kickoff(play_text)
     elseif play_type == "Kickoff Return Touchdown"
         kicker, returner, PAT_kicker,  PAT_type, two_point, two_point_type, two_point_runner, two_point_passer, two_point_receiver = play_kickoff_return_td(play_text)
-    
+    ##Onside?
+
+    #Fieldgoals
     elseif play_type == "Blocked Field Goal Touchdown"
         kicker, recoverer, blocker, PAT_kicker,  PAT_type, two_point, two_point_type, two_point_runner, two_point_passer, two_point_receiver, FG, FG_type = play_blocked_fieldgoal_return_td(play_text)
     elseif play_type == "Missed Field Goal Return Touchdown"
@@ -104,11 +118,12 @@ function play_info(cols)
         kicker, FG_type = play_fieldgoal_missed(play_text)    
     elseif play_type == "Missed Field Goal Return"
         kicker, returner, FG_type = play_fieldgoal_missed_return(play_text)    
-    elseif play_type == "Missed Field Goal Return Touchdown"
-        kicker, returner, FG_type = play_fieldgoal_missed_return_td(play_text)
+    # elseif play_type == "Missed Field Goal Return Touchdown"
+    #     kicker, returner, FG_type = play_fieldgoal_missed_return_td(play_text)
     elseif play_type == "Blocked Field Goal"
         kicker, blocker, returner, FG_type = play_blocked_fieldgoal(play_text)
-    
+
+    #Punts
     elseif play_type == "Punt"
         punter, returner, punt_type = play_punt(play_text)
     elseif play_type == "Punt Return Touchdown"
@@ -118,7 +133,7 @@ function play_info(cols)
     elseif play_type == "Blocked Punt Touchdown"
         punter, returner, blocker, PAT_kicker,  PAT_type, two_point, two_point_type, two_point_runner, two_point_passer, two_point_receiver, punt_type = play_blocked_punt_td(play_text)
     
-
+    #Other scoring
     elseif play_type == "Two Point Pass"
         two_point, two_point_type, two_point_passer, two_point_receiver = play_pass_twopoint(play_text)
     elseif play_type == "Two Point Rush"
@@ -128,6 +143,7 @@ function play_info(cols)
     elseif play_type == "Safety"
         passer, runner, tackler = play_safety(play_text)
 
+    #Timeout
     elseif play_type == "Timeout"
         timeout_team, timeout_time = play_timeout(play_text)
     end
@@ -973,7 +989,7 @@ function play_blocked_fieldgoal_return_td(cols)
     two_point_passer = missing # Player name
     two_point_receiver = missing # Player name
     FG = false
-    FG_type = "blocked"
+    FG_type = "blocked" # made, missed, blocked, failed, returned
 
     return_of_blocked_regex = r"Return of Blocked Field Goal"
     return_of_blocked_recoverer_regex = Regex("$(name_regex)\\d+ Yd Return of Blocked Field Goal")
@@ -1014,7 +1030,7 @@ function play_missed_fieldgoal_return_td(cols)
     two_point_passer = missing # Player name
     two_point_receiver = missing # Player name
     FG = false
-    FG_type = "missed"
+    FG_type = "missed" # made, missed, blocked, failed, returned
    
     fg_returned_regex = r"FG RETURNED"
     fg_returned_kicker_regex = Regex("^$(name_regex) ?\\d+")
@@ -1069,7 +1085,7 @@ function play_fieldgoal_good(cols)
     play_text = cols
 
     kicker = missing # Player name
-    FG_type = "good" #touchback, returned, fair-catch, on-side:kicking/receiving, unknown, ?fumbled
+    FG_type = "made" # made, missed, blocked, failed, returned
     
     kicker_regex = Regex("^$(name_regex)\\d")
     
@@ -1082,7 +1098,7 @@ function play_fieldgoal_missed(cols)
     play_text = cols
 
     kicker = missing # Player name
-    FG_type = "missed" #touchback, returned, fair-catch, on-side:kicking/receiving, unknown, ?fumbled
+    FG_type = "missed" # made, missed, blocked, failed, returned
     
     kicker_regex = Regex("^$(name_regex)\\d")
     
@@ -1095,7 +1111,7 @@ function play_fieldgoal_missed_return(cols)
     play_text = cols
 
     kicker = missing # Player name
-    FG_type = "returned" #touchback, returned, fair-catch, on-side:kicking/receiving, unknown, ?fumbled
+    FG_type = "returned" # made, missed, blocked, failed, returned
     returner = missing # Player name
 
     kicker_regex = Regex("^$(name_regex)\\d")
@@ -1121,7 +1137,7 @@ function play_fieldgoal_missed_return_td(cols)
     play_text = cols
 
     kicker = missing # Player name
-    FG_type = "returned" #touchback, returned, fair-catch, on-side:kicking/receiving, unknown, ?fumbled
+    FG_type = "returned" # made, missed, blocked, failed, returned
     returner = missing # Player name
 
     kicker_regex = Regex("^$(name_regex)\\d+\\s*[Yy][Dd]\\s*FG\\s*(RETURNED|MISSED)")
@@ -1152,7 +1168,7 @@ function play_blocked_fieldgoal(cols)
     # println(play_text)
 
     kicker = missing # Player name
-    FG_type = "blocked" #touchback, returned, fair-catch, on-side:kicking/receiving, unknown, ?fumbled
+    FG_type = "blocked" # made, missed, blocked, failed, returned
     blocker = missing # Player name
     returner = missing # Player name
 
