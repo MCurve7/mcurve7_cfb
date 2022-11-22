@@ -1,0 +1,275 @@
+{
+  data: [
+    {
+      "x": [0.45, 12.55],
+      "y": [7.45454545454545, 7.45454545454545],
+      "text": "yintercept: 7.454545",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 3.77952755905512,
+        "color": "rgba(255,130,0,1)",
+        "dash": "dash"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12],
+      "y": [6, 7, 0, 6, 12, 6, 16, 6, 9, 7, 7],
+      "text": ["Game_number:  1<br />Opponent: Ball State<br />Penalty_all_count:  6", "Game_number:  2<br />Opponent: Pittsburgh<br />Penalty_all_count:  7", "Game_number:  3<br />Opponent: Akron<br />Penalty_all_count:  0", "Game_number:  4<br />Opponent: Florida<br />Penalty_all_count:  6", "Game_number:  6<br />Opponent: LSU<br />Penalty_all_count: 12", "Game_number:  7<br />Opponent: Alabama<br />Penalty_all_count:  6", "Game_number:  8<br />Opponent: UT Martin<br />Penalty_all_count: 16", "Game_number:  9<br />Opponent: Kentucky<br />Penalty_all_count:  6", "Game_number: 10<br />Opponent: Georgia<br />Penalty_all_count:  9", "Game_number: 11<br />Opponent: Missouri<br />Penalty_all_count:  7", "Game_number: 12<br />Opponent: South Carolina<br />Penalty_all_count:  7"],
+      "type": "scatter",
+      "mode": "lines+markers",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(88,89,91,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(88,89,91,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "circle",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(88,89,91,1)"
+        }
+      },
+      "frame": null
+    },
+    {
+      "x": [1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12],
+      "y": [6, 7, 0, 6, 12, 6, 16, 6, 9, 7, 7],
+      "text": ["Game_number:  1<br />Opponent: Ball State<br />Penalty_enforced_count:  6", "Game_number:  2<br />Opponent: Pittsburgh<br />Penalty_enforced_count:  7", "Game_number:  3<br />Opponent: Akron<br />Penalty_enforced_count:  0", "Game_number:  4<br />Opponent: Florida<br />Penalty_enforced_count:  6", "Game_number:  6<br />Opponent: LSU<br />Penalty_enforced_count: 12", "Game_number:  7<br />Opponent: Alabama<br />Penalty_enforced_count:  6", "Game_number:  8<br />Opponent: UT Martin<br />Penalty_enforced_count: 16", "Game_number:  9<br />Opponent: Kentucky<br />Penalty_enforced_count:  6", "Game_number: 10<br />Opponent: Georgia<br />Penalty_enforced_count:  9", "Game_number: 11<br />Opponent: Missouri<br />Penalty_enforced_count:  7", "Game_number: 12<br />Opponent: South Carolina<br />Penalty_enforced_count:  7"],
+      "type": "scatter",
+      "mode": "lines+markers",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(255,130,0,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(255,130,0,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "circle",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(255,130,0,1)"
+        }
+      },
+      "frame": null
+    }
+  ],
+  layout: {
+    "margin": {
+      "t": 43.2754946727549,
+      "r": 7.30593607305936,
+      "b": 39.6955859969559,
+      "l": 37.2602739726027
+    },
+    "plot_bgcolor": "rgba(235,235,235,1)",
+    "paper_bgcolor": "rgba(255,255,255,1)",
+    "font": {
+      "color": "rgba(0,0,0,1)",
+      "family": "",
+      "size": 14.6118721461187
+    },
+    "title": {
+      "text": "Tennessee penalties for 2022; Average: enforced = 7.45 (primary team color), all = 7.45 (secondary team color)<br> <sup><\/sup>",
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 17.5342465753425
+      },
+      "x": 0,
+      "xref": "paper",
+      "xanchor": "left"
+    },
+    "xaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [0.45, 12.55],
+      "tickmode": "array",
+      "ticktext": ["Ball State", "Pittsburgh", "Akron", "Florida", "LSU", "Alabama", "UT Martin", "Kentucky", "Georgia", "Missouri", "South Carolina"],
+      "tickvals": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+      "categoryorder": "array",
+      "categoryarray": ["Ball State", "Pittsburgh", "Akron", "Florida", "LSU", "Alabama", "UT Martin", "Kentucky", "Georgia", "Missouri", "South Carolina"],
+      "nticks": null,
+      "ticks": "outside",
+      "tickcolor": "rgba(51,51,51,1)",
+      "ticklen": 3.65296803652968,
+      "tickwidth": 0.66417600664176,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "tickangle": -0,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": "rgba(255,255,255,1)",
+      "gridwidth": 0.66417600664176,
+      "zeroline": false,
+      "anchor": "y",
+      "title": {
+        "text": "Opponent",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "yaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [-0.8, 16.8],
+      "tickmode": "array",
+      "ticktext": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16"],
+      "tickvals": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
+      "categoryorder": "array",
+      "categoryarray": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16"],
+      "nticks": null,
+      "ticks": "outside",
+      "tickcolor": "rgba(51,51,51,1)",
+      "ticklen": 3.65296803652968,
+      "tickwidth": 0.66417600664176,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "tickangle": -0,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": "rgba(255,255,255,1)",
+      "gridwidth": 0.66417600664176,
+      "zeroline": false,
+      "anchor": "x",
+      "title": {
+        "text": "Penalty Count: all (dotdashed line), enforced (dashed line)",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "shapes": [
+      {
+        "type": "rect",
+        "fillcolor": null,
+        "line": {
+          "color": null,
+          "width": 0,
+          "linetype": []
+        },
+        "yref": "paper",
+        "xref": "paper",
+        "x0": 0,
+        "x1": 1,
+        "y0": 0,
+        "y1": 1
+      }
+    ],
+    "showlegend": false,
+    "legend": {
+      "bgcolor": "rgba(255,255,255,1)",
+      "bordercolor": "transparent",
+      "borderwidth": 1.88976377952756,
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 11.689497716895
+      }
+    },
+    "hovermode": "closest",
+    "barmode": "relative"
+  },
+  config: {
+    "doubleClick": "reset",
+    "modeBarButtonsToAdd": ["hoverclosest", "hovercompare"],
+    "showSendToCloud": false
+  },
+  source: "A",
+  attrs: {
+    "7f46aa2152a": {
+      "yintercept": {},
+      "type": "scatter"
+    },
+    "7f459fe174f": {
+      "yintercept": {}
+    },
+    "7f46b437ff": {
+      "x": {},
+      "label": {},
+      "y": {}
+    },
+    "7f4589e4b4d": {
+      "x": {},
+      "label": {},
+      "y": {}
+    },
+    "7f41879790": {
+      "x": {},
+      "label": {},
+      "y": {}
+    },
+    "7f4369b6532": {
+      "x": {},
+      "label": {},
+      "y": {}
+    }
+  },
+  cur_data: "7f46aa2152a",
+  visdat: {
+    "7f46aa2152a": ["function (y) ", "x"],
+    "7f459fe174f": ["function (y) ", "x"],
+    "7f46b437ff": ["function (y) ", "x"],
+    "7f4589e4b4d": ["function (y) ", "x"],
+    "7f41879790": ["function (y) ", "x"],
+    "7f4369b6532": ["function (y) ", "x"]
+  },
+  highlight: {
+    "on": "plotly_click",
+    "persistent": false,
+    "dynamic": false,
+    "selectize": false,
+    "opacityDim": 0.2,
+    "selected": {
+      "opacity": 1
+    },
+    "debounce": 0
+  },
+  shinyEvents: ["plotly_hover", "plotly_click", "plotly_selected", "plotly_relayout", "plotly_brushed", "plotly_brushing", "plotly_clickannotation", "plotly_doubleclick", "plotly_deselect", "plotly_afterplot", "plotly_sunburstclick"],
+  base_url: "https://plot.ly"
+}

@@ -40,6 +40,9 @@ DEBUG_PENALTY = false
 # DEBUG_PLAY_INFO = true
 DEBUG_PLAY_INFO = false
 
+# DEBUG = true
+DEBUG = false
+
 # Global variables
 name_regex = "((?:(?:[A-Z\\p{Lu}'-][a-z\\p{Ll}A-Z&\\p{Lu}'\\.-]+|(?:de))|(?:[A-Z\\p{Lu}-]\\.?)?\\s?)+)" #most general name regex
 name_simple_regex = "((?:[A-Z\\p{Lu}'-][a-z\\p{Ll}A-Z&\\p{Lu}'\\.-]+ ?)+)"
@@ -321,6 +324,7 @@ function scoredrive(df)
 
     for i in 1:length(drive_number_list)
         dfdrive = filter(:Drive_number => x->(x==drive_number_list[i]), df)
+        if DEBUG print(dfdrive) end
 
         #remove drive ending on End of Game, End of half, etc
         #but need to keep track of how many removed and add back to get correct number of elemenets in column
