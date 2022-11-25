@@ -2244,6 +2244,7 @@ function enforced_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch, p
     team_penalty_enforced_paraen_numberteam = r"[A-Z]+ (?:Penalty|PENALTY),? [A-Za-z ]+ enforced(?: at the deadball spot for)? \((?:-?\d+ [Yy]ards|TEAM)\)"
     team_penalty_enforced_name = Regex("[A-Z]+ (?:Penalty|PENALTY),? [A-Za-z ]+ enforced \\($name_regex")
     team_penalty_enforced_revcapname = Regex("[A-Z]+ (?:Penalty|PENALTY),? [A-Za-z ]+ $name_caplastfirst_penalty_regex enforced")
+    team_penalty_revcapname_enforced = Regex("(?:Penalty|PENALTY) [A-Z]+ [A-Za-z\\- ]+ $name_caplastfirst_penalty_regex enforced")
     team_penalty_on_player = r"[A-Z]+ (?:Penalty|PENALTY),? [A-Za-z ]+ on [A-Z]+"
 
     
@@ -2521,7 +2522,23 @@ function enforced_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch, p
                 push!(foul_transgressor, process_name(m[3]))
                 break
             end
-        end
+        end        
+    elseif occursin(team_penalty_revcapname_enforced, txt)
+        if DEBUG_PENALTY println("  Trying: team_penalty_revcapname_enforced") end
+        for penalty in penalty_list_occurred, team in [off_abbrv_catch, def_abbrv_catch]
+            
+            team_penalty_revcapname_enforced_regex = 
+            Regex("$penalties_regex_txt $team(?: Before the snap)?,? ($penalty)(?: on)? $name_caplastfirst_penalty_regex enforced")
+            #YOUNG, Bryce pass to the left complete for 12 yards to BROOKS, Ja'Corey caught at the ALA47 and advanced to the ALA47 (BATTLE, Miles), out of bounds. PENALTY ALA Illegal Touch-Pass on BROOKS, Ja'Corey enforced 0 yards from the ALA35 to the ALA35, penalty results in a loss of down [NHSG]. NO PLAY (replay the down).
+            m = match(team_penalty_revcapname_enforced_regex, txt)
+            if !isnothing(m)
+                push!(foul_type, m[2])
+                push!(foul_status, "enforced")
+                push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
+                push!(foul_transgressor, process_name(m[3]))
+                break
+            end
+        end    
     elseif occursin(team_penalty_on_player, txt)
         if DEBUG_PENALTY println("  Trying: team_penalty_on_player") end
         for penalty1 in penalty_list_occurred, penalty2 in penalty_list_occurred, team in [off_abbrv_catch, def_abbrv_catch]
