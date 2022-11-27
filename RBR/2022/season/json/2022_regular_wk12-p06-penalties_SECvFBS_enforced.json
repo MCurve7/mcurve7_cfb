@@ -2,8 +2,8 @@
   data: [
     {
       "x": [0.4, 14.6],
-      "y": [5.77777777777778, 5.77777777777778],
-      "text": "yintercept: 5.777778",
+      "y": [5.80392156862745, 5.80392156862745],
+      "text": "yintercept: 5.803922",
       "type": "scatter",
       "mode": "lines",
       "line": {
@@ -20,8 +20,8 @@
     },
     {
       "x": [0.4, 14.6],
-      "y": [5.32770022042616, 5.32770022042616],
-      "text": "yintercept: 5.3277",
+      "y": [5.33063923585599, 5.33063923585599],
+      "text": "yintercept: 5.330639",
       "type": "scatter",
       "mode": "lines",
       "line": {
@@ -41,8 +41,8 @@
       "width": 0.9,
       "base": 0,
       "x": [1],
-      "y": [7.45454545454545],
-      "text": "Team: Alabama<br />Average: 7.454545<br />Team: Alabama",
+      "y": [7.81818181818182],
+      "text": "Team: Alabama<br />Average: 7.818182<br />Team: Alabama",
       "type": "bar",
       "textposition": "none",
       "marker": {
@@ -388,9 +388,9 @@
     },
     {
       "x": [1],
-      "y": [7.45454545454545],
-      "text": "7.45",
-      "hovertext": "Team: Alabama<br />Average: 7.454545<br />Team: Alabama<br />sprintf(\"%2.2f\", Average): 7.45",
+      "y": [7.81818181818182],
+      "text": "7.82",
+      "hovertext": "Team: Alabama<br />Average: 7.818182<br />Team: Alabama<br />sprintf(\"%2.2f\", Average): 7.82",
       "textfont": {
         "size": 14.6645669291339,
         "color": "rgba(0,0,0,1)"
@@ -682,7 +682,7 @@
       "size": 14.6118721461187
     },
     "title": {
-      "text": "SEC v FBS team season average penalties: enforced<br> <sup>SEC average (green dashed) =  5.78 , FBS average (yellow dotdash) =  5.33<\/sup>",
+      "text": "SEC v FBS team season average penalties: enforced<br> <sup>SEC average (green dashed) =  5.80 , FBS average (yellow dotdash) =  5.33<\/sup>",
       "font": {
         "color": "rgba(0,0,0,1)",
         "family": "",
@@ -738,12 +738,12 @@
       "automargin": true,
       "type": "linear",
       "autorange": false,
-      "range": [-0.372727272727273, 7.82727272727273],
+      "range": [-0.390909090909091, 8.20909090909091],
       "tickmode": "array",
-      "ticktext": ["0", "1", "2", "3", "4", "5", "6", "7"],
-      "tickvals": [0, 1, 2, 3, 4, 5, 6, 7],
+      "ticktext": ["0", "1", "2", "3", "4", "5", "6", "7", "8"],
+      "tickvals": [0, 1, 2, 3, 4, 5, 6, 7, 8],
       "categoryorder": "array",
-      "categoryarray": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "categoryarray": ["0", "1", "2", "3", "4", "5", "6", "7", "8"],
       "nticks": null,
       "ticks": "outside",
       "tickcolor": "rgba(51,51,51,1)",
@@ -820,31 +820,31 @@
   },
   source: "A",
   attrs: {
-    "4b9c2ca924e0": {
+    "6c287d993f7": {
       "yintercept": {},
       "type": "scatter"
     },
-    "4b9c3ed43a73": {
+    "6c281ba818ef": {
       "yintercept": {}
     },
-    "4b9c3cd10e4": {
+    "6c282567cfe": {
       "x": {},
       "y": {},
       "fill": {}
     },
-    "4b9c3e481bb5": {
+    "6c2828ab4c1a": {
       "x": {},
       "y": {},
       "fill": {},
       "label": {}
     }
   },
-  cur_data: "4b9c2ca924e0",
+  cur_data: "6c287d993f7",
   visdat: {
-    "4b9c2ca924e0": ["function (y) ", "x"],
-    "4b9c3ed43a73": ["function (y) ", "x"],
-    "4b9c3cd10e4": ["function (y) ", "x"],
-    "4b9c3e481bb5": ["function (y) ", "x"]
+    "6c287d993f7": ["function (y) ", "x"],
+    "6c281ba818ef": ["function (y) ", "x"],
+    "6c282567cfe": ["function (y) ", "x"],
+    "6c2828ab4c1a": ["function (y) ", "x"]
   },
   highlight: {
     "on": "plotly_click",

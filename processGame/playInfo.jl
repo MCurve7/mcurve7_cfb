@@ -823,7 +823,7 @@ function play_kickoff(cols)
     faircatch_regex = r"fair catch"
     faircatch_kicker_regex = r"^(?:((?:[A-Z\p{Lu}-][a-z\p{Ll}A-Z&\p{Lu}'\.-]+\s?)+)|(?:(N\/A)\s?))kickoff for"
     faircatch_kicker_regex2 = Regex("$(name_regex)kickoff for")
-    faircatch_receiver_regex = r"fair catch by (?:((?:[A-Z\p{Lu}-][a-z\p{Ll}A-Z&\p{Lu}'\.-]+\s?)+)|(?:(N\/A)\s?))at the"
+    faircatch_receiver_regex = r"fair catch by (?:((?:[A-Z\p{Lu}-][a-z\p{Ll}A-Z&\p{Lu}'\.-]+\s?)+)|(?:(N\/A)\s?))(?:at the)?"
     faircatch_receiver_return_regex = Regex("$(name_regex)return for (?:\\d+|(?:no gain)|a)")
     faircatch_receiver_nodata1_regex = r"fair catch at the"
     faircatch_receiver_nodata2_regex = r"downed at the"

@@ -2,8 +2,8 @@
   data: [
     {
       "x": [0.4, 14.6],
-      "y": [6.24509803921569, 6.24509803921569],
-      "text": "yintercept: 6.245098",
+      "y": [6.2843137254902, 6.2843137254902],
+      "text": "yintercept: 6.284314",
       "type": "scatter",
       "mode": "lines",
       "line": {
@@ -20,8 +20,8 @@
     },
     {
       "x": [0.4, 14.6],
-      "y": [5.57678177810434, 5.57678177810434],
-      "text": "yintercept: 5.576782",
+      "y": [5.57972079353417, 5.57972079353417],
+      "text": "yintercept: 5.579721",
       "type": "scatter",
       "mode": "lines",
       "line": {
@@ -41,8 +41,8 @@
       "width": 0.9,
       "base": 0,
       "x": [1],
-      "y": [7.42857142857143],
-      "text": "Team: Alabama<br />Average: 7.428571<br />Team: Alabama",
+      "y": [8],
+      "text": "Team: Alabama<br />Average: 8.000000<br />Team: Alabama",
       "type": "bar",
       "textposition": "none",
       "marker": {
@@ -388,9 +388,9 @@
     },
     {
       "x": [1],
-      "y": [7.42857142857143],
-      "text": "7.43",
-      "hovertext": "Team: Alabama<br />Average: 7.428571<br />Team: Alabama<br />sprintf(\"%2.2f\", Average): 7.43",
+      "y": [8],
+      "text": "8.00",
+      "hovertext": "Team: Alabama<br />Average: 8.000000<br />Team: Alabama<br />sprintf(\"%2.2f\", Average): 8.00",
       "textfont": {
         "size": 14.6645669291339,
         "color": "rgba(0,0,0,1)"
@@ -682,7 +682,7 @@
       "size": 14.6118721461187
     },
     "title": {
-      "text": "SEC v SEC team season average penalties: enforced, declined, off-setting, ambiguous<br> <sup>SEC average (green dashed) =  6.25 , FBS average (yellow dotdash) =  5.58<\/sup>",
+      "text": "SEC v SEC team season average penalties: enforced, declined, off-setting, ambiguous<br> <sup>SEC average (green dashed) =  6.28 , FBS average (yellow dotdash) =  5.58<\/sup>",
       "font": {
         "color": "rgba(0,0,0,1)",
         "family": "",
@@ -820,31 +820,31 @@
   },
   source: "A",
   attrs: {
-    "4b9c692a1f08": {
+    "6c284e55f65": {
       "yintercept": {},
       "type": "scatter"
     },
-    "4b9c9472aa3": {
+    "6c2826be286a": {
       "yintercept": {}
     },
-    "4b9c4f633c24": {
+    "6c28787c424a": {
       "x": {},
       "y": {},
       "fill": {}
     },
-    "4b9c58f6991": {
+    "6c282cbb1613": {
       "x": {},
       "y": {},
       "fill": {},
       "label": {}
     }
   },
-  cur_data: "4b9c692a1f08",
+  cur_data: "6c284e55f65",
   visdat: {
-    "4b9c692a1f08": ["function (y) ", "x"],
-    "4b9c9472aa3": ["function (y) ", "x"],
-    "4b9c4f633c24": ["function (y) ", "x"],
-    "4b9c58f6991": ["function (y) ", "x"]
+    "6c284e55f65": ["function (y) ", "x"],
+    "6c2826be286a": ["function (y) ", "x"],
+    "6c28787c424a": ["function (y) ", "x"],
+    "6c282cbb1613": ["function (y) ", "x"]
   },
   highlight: {
     "on": "plotly_click",

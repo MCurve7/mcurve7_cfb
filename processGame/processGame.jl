@@ -324,7 +324,7 @@ function scoredrive(df)
 
     for i in 1:length(drive_number_list)
         dfdrive = filter(:Drive_number => x->(x==drive_number_list[i]), df)
-        if DEBUG print(dfdrive) end
+        if DEBUG print("dfdrive:\n$dfdrive\n\n") end
 
         #remove drive ending on End of Game, End of half, etc
         #but need to keep track of how many removed and add back to get correct number of elemenets in column
@@ -336,7 +336,9 @@ function scoredrive(df)
         # df_len = length(unique(dfdrive.O_scoring))
         df_len = nrow(dfdrive[in(["offense"]).(dfdrive.Who_scored), :]) + 1
         # if dfdrive[len_dfdrive, :Play_type] == "Field Goal Good"
-        if dfdrive[len_dfdrive, :Play_type] ∈ ["Field Goal Good", "Interception Return Touchdown", "Defensive 2pt Conversion", "Fumble Return Touchdown", "Blocked Field Goal Touchdown",
+        if len_dfdrive == 0
+            push!(scoredrivevec, false)
+        elseif dfdrive[len_dfdrive, :Play_type] ∈ ["Field Goal Good", "Interception Return Touchdown", "Defensive 2pt Conversion", "Fumble Return Touchdown", "Blocked Field Goal Touchdown",
                                                 "Blocked Punt Touchdown", "Missed Field Goal Return Touchdown"]
             for j in 1:len_dfdrive + end_of_count
                 push!(scoredrivevec, false)

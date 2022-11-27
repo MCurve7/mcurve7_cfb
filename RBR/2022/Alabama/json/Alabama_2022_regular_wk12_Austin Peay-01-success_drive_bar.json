@@ -6,7 +6,7 @@
       "base": [0, 0, 0, 0, 0, 0, 0],
       "x": [2, 4, 5, 6, 8, 10, 11],
       "y": [0.571428571428571, 0.571428571428571, 0, 0.333333333333333, 0.25, 0.6, 0.6],
-      "text": ["O_drive_number:  2<br />Success_rate: 0.5714286<br />Score_drive: FALSE", "O_drive_number:  4<br />Success_rate: 0.5714286<br />Score_drive: FALSE", "O_drive_number:  5<br />Success_rate: 0.0000000<br />Score_drive: FALSE", "O_drive_number:  6<br />Success_rate: 0.3333333<br />Score_drive: FALSE", "O_drive_number:  8<br />Success_rate: 0.2500000<br />Score_drive: FALSE", "O_drive_number: 10<br />Success_rate: 0.6000000<br />Score_drive: FALSE", "O_drive_number: 11<br />Success_rate: 0.6000000<br />Score_drive: FALSE"],
+      "text": ["O_drive_number:  2<br />Success_rate: 0.5714286<br />Score_drive: FALSE<br />Total:  7", "O_drive_number:  4<br />Success_rate: 0.5714286<br />Score_drive: FALSE<br />Total:  7", "O_drive_number:  5<br />Success_rate: 0.0000000<br />Score_drive: FALSE<br />Total:  2", "O_drive_number:  6<br />Success_rate: 0.3333333<br />Score_drive: FALSE<br />Total:  3", "O_drive_number:  8<br />Success_rate: 0.2500000<br />Score_drive: FALSE<br />Total:  4", "O_drive_number: 10<br />Success_rate: 0.6000000<br />Score_drive: FALSE<br />Total: 10", "O_drive_number: 11<br />Success_rate: 0.6000000<br />Score_drive: FALSE<br />Total: 10"],
       "type": "bar",
       "textposition": "none",
       "marker": {
@@ -31,7 +31,7 @@
       "base": [0, 0, 0, 0],
       "x": [1, 3, 7, 9],
       "y": [0.538461538461538, 0.5, 1, 0.75],
-      "text": ["O_drive_number:  1<br />Success_rate: 0.5384615<br />Score_drive:  TRUE", "O_drive_number:  3<br />Success_rate: 0.5000000<br />Score_drive:  TRUE", "O_drive_number:  7<br />Success_rate: 1.0000000<br />Score_drive:  TRUE", "O_drive_number:  9<br />Success_rate: 0.7500000<br />Score_drive:  TRUE"],
+      "text": ["O_drive_number:  1<br />Success_rate: 0.5384615<br />Score_drive:  TRUE<br />Total: 13", "O_drive_number:  3<br />Success_rate: 0.5000000<br />Score_drive:  TRUE<br />Total:  8", "O_drive_number:  7<br />Success_rate: 1.0000000<br />Score_drive:  TRUE<br />Total:  3", "O_drive_number:  9<br />Success_rate: 0.7500000<br />Score_drive:  TRUE<br />Total:  8"],
       "type": "bar",
       "textposition": "none",
       "marker": {
@@ -230,26 +230,27 @@
   },
   source: "A",
   attrs: {
-    "4b9c49646861": {
+    "6c28414d2803": {
       "x": {},
       "y": {},
       "fill": {},
+      "label": {},
       "type": "bar"
     },
-    "4b9c18cc48a1": {
+    "6c2838cb6cac": {
       "y": {}
     },
-    "4b9c3a6c609b": {
+    "6c28357cded": {
       "x": {},
       "y": {},
       "label": {}
     }
   },
-  cur_data: "4b9c49646861",
+  cur_data: "6c28414d2803",
   visdat: {
-    "4b9c49646861": ["function (y) ", "x"],
-    "4b9c18cc48a1": ["function (y) ", "x"],
-    "4b9c3a6c609b": ["function (y) ", "x"]
+    "6c28414d2803": ["function (y) ", "x"],
+    "6c2838cb6cac": ["function (y) ", "x"],
+    "6c28357cded": ["function (y) ", "x"]
   },
   highlight: {
     "on": "plotly_click",
