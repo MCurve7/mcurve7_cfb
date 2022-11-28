@@ -1,9 +1,9 @@
 {
   data: [
     {
-      "x": [-0.25, 5.25],
-      "y": [8.8, 8.8],
-      "text": "yintercept: 8.8",
+      "x": [-0.05, 1.05],
+      "y": [8.5, 8.5],
+      "text": "yintercept: 8.5",
       "type": "scatter",
       "mode": "lines",
       "line": {
@@ -19,11 +19,11 @@
       "frame": null
     },
     {
-      "x": [0, 1, 2, 4, 5],
-      "y": [6, 11, 11, 8, 8],
-      "text": ["Game_number: 0<br />Opponent: Connecticut<br />Penalty_all_count:  6", "Game_number: 1<br />Opponent: Alabama<br />Penalty_all_count: 11", "Game_number: 2<br />Opponent: Weber State<br />Penalty_all_count: 11", "Game_number: 4<br />Opponent: UNLV<br />Penalty_all_count:  8", "Game_number: 5<br />Opponent: BYU<br />Penalty_all_count:  8"],
+      "x": [0, 1],
+      "y": [6, 11],
+      "text": ["Game_number: 0<br />Opponent: Connecticut<br />Penalty_all_count_nona:  6", "Game_number: 1<br />Opponent: Alabama<br />Penalty_all_count_nona: 11"],
       "type": "scatter",
-      "mode": "lines+markers",
+      "mode": "lines",
       "line": {
         "width": 1.88976377952756,
         "color": "rgba(138,141,143,1)",
@@ -34,6 +34,14 @@
       "xaxis": "x",
       "yaxis": "y",
       "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [0, 1],
+      "y": [6, 11],
+      "text": ["Game_number: 0<br />Opponent: Connecticut<br />Penalty_all_count:  6", "Game_number: 1<br />Opponent: Alabama<br />Penalty_all_count: 11"],
+      "type": "scatter",
+      "mode": "markers",
       "marker": {
         "autocolorscale": false,
         "color": "rgba(138,141,143,1)",
@@ -45,14 +53,19 @@
           "color": "rgba(138,141,143,1)"
         }
       },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
       "frame": null
     },
     {
-      "x": [0, 1, 2, 4, 5],
-      "y": [6, 11, 11, 8, 8],
-      "text": ["Game_number: 0<br />Opponent: Connecticut<br />Penalty_enforced_count:  6", "Game_number: 1<br />Opponent: Alabama<br />Penalty_enforced_count: 11", "Game_number: 2<br />Opponent: Weber State<br />Penalty_enforced_count: 11", "Game_number: 4<br />Opponent: UNLV<br />Penalty_enforced_count:  8", "Game_number: 5<br />Opponent: BYU<br />Penalty_enforced_count:  8"],
+      "x": [0, 1],
+      "y": [6, 11],
+      "text": ["Game_number: 0<br />Opponent: Connecticut<br />Penalty_enforced_count_nona:  6", "Game_number: 1<br />Opponent: Alabama<br />Penalty_enforced_count_nona: 11"],
       "type": "scatter",
-      "mode": "lines+markers",
+      "mode": "lines",
       "line": {
         "width": 1.88976377952756,
         "color": "rgba(0,38,58,1)",
@@ -63,6 +76,14 @@
       "xaxis": "x",
       "yaxis": "y",
       "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [0, 1],
+      "y": [6, 11],
+      "text": ["Game_number: 0<br />Opponent: Connecticut<br />Penalty_enforced_count:  6", "Game_number: 1<br />Opponent: Alabama<br />Penalty_enforced_count: 11"],
+      "type": "scatter",
+      "mode": "markers",
       "marker": {
         "autocolorscale": false,
         "color": "rgba(0,38,58,1)",
@@ -74,6 +95,20 @@
           "color": "rgba(0,38,58,1)"
         }
       },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "visible": false,
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "mode": "",
       "frame": null
     }
   ],
@@ -92,7 +127,7 @@
       "size": 14.6118721461187
     },
     "title": {
-      "text": "Utah State penalties for 2022; Average: enforced = 8.80 (primary team color), all = 8.80 (secondary team color)<br> <sup><\/sup>",
+      "text": "Utah State penalties for 2022; Average: enforced = 8.50 (primary team color), all = 8.50 (secondary team color)<br> <sup><\/sup>",
       "font": {
         "color": "rgba(0,0,0,1)",
         "family": "",
@@ -107,12 +142,12 @@
       "automargin": true,
       "type": "linear",
       "autorange": false,
-      "range": [-0.25, 5.25],
+      "range": [-0.05, 1.05],
       "tickmode": "array",
-      "ticktext": ["Connecticut", "Alabama", "Weber State", "UNLV", "BYU"],
-      "tickvals": [1, 2, 3, 4, 5],
+      "ticktext": ["Connecticut"],
+      "tickvals": [1],
       "categoryorder": "array",
-      "categoryarray": ["Connecticut", "Alabama", "Weber State", "UNLV", "BYU"],
+      "categoryarray": ["Connecticut"],
       "nticks": null,
       "ticks": "outside",
       "tickcolor": "rgba(51,51,51,1)",
@@ -148,12 +183,12 @@
       "automargin": true,
       "type": "linear",
       "autorange": false,
-      "range": [5.75, 11.25],
+      "range": [-0.55, 11.55],
       "tickmode": "array",
-      "ticktext": ["6", "7", "8", "9", "10", "11"],
-      "tickvals": [6, 7, 8, 9, 10, 11],
+      "ticktext": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"],
+      "tickvals": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
       "categoryorder": "array",
-      "categoryarray": ["6", "7", "8", "9", "10", "11"],
+      "categoryarray": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"],
       "nticks": null,
       "ticks": "outside",
       "tickcolor": "rgba(51,51,51,1)",
@@ -222,42 +257,46 @@
   },
   source: "A",
   attrs: {
-    "8570198f750f": {
+    "6c287bed3a51": {
       "yintercept": {},
       "type": "scatter"
     },
-    "85702b4e7726": {
+    "6c284f751fcf": {
       "yintercept": {}
     },
-    "85707ab45d7c": {
+    "6c28494d2e50": {
       "x": {},
       "label": {},
       "y": {}
     },
-    "85706af368b3": {
+    "6c2830cedb": {
       "x": {},
       "label": {},
       "y": {}
     },
-    "85706ca767e6": {
+    "6c284f767e9c": {
       "x": {},
       "label": {},
       "y": {}
     },
-    "857027b21787": {
+    "6c2881b6e7c": {
       "x": {},
       "label": {},
+      "y": {}
+    },
+    "6c2868dd14d3": {
       "y": {}
     }
   },
-  cur_data: "8570198f750f",
+  cur_data: "6c287bed3a51",
   visdat: {
-    "8570198f750f": ["function (y) ", "x"],
-    "85702b4e7726": ["function (y) ", "x"],
-    "85707ab45d7c": ["function (y) ", "x"],
-    "85706af368b3": ["function (y) ", "x"],
-    "85706ca767e6": ["function (y) ", "x"],
-    "857027b21787": ["function (y) ", "x"]
+    "6c287bed3a51": ["function (y) ", "x"],
+    "6c284f751fcf": ["function (y) ", "x"],
+    "6c28494d2e50": ["function (y) ", "x"],
+    "6c2830cedb": ["function (y) ", "x"],
+    "6c284f767e9c": ["function (y) ", "x"],
+    "6c2881b6e7c": ["function (y) ", "x"],
+    "6c2868dd14d3": ["function (y) ", "x"]
   },
   highlight: {
     "on": "plotly_click",

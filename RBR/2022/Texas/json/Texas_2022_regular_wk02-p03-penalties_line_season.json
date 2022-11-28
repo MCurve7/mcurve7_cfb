@@ -39,9 +39,9 @@
     {
       "x": [1, 2],
       "y": [6, 5],
-      "text": ["Game_number: 1<br />Opponent: Louisiana Monroe<br />Penalty_all_count: 6", "Game_number: 2<br />Opponent: Alabama<br />Penalty_all_count: 5"],
+      "text": ["Game_number: 1<br />Opponent: Louisiana Monroe<br />Penalty_all_count_nona: 6", "Game_number: 2<br />Opponent: Alabama<br />Penalty_all_count_nona: 5"],
       "type": "scatter",
-      "mode": "lines+markers",
+      "mode": "lines",
       "line": {
         "width": 1.88976377952756,
         "color": "rgba(51,63,72,1)",
@@ -52,6 +52,14 @@
       "xaxis": "x",
       "yaxis": "y",
       "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 2],
+      "y": [6, 5],
+      "text": ["Game_number: 1<br />Opponent: Louisiana Monroe<br />Penalty_all_count: 6", "Game_number: 2<br />Opponent: Alabama<br />Penalty_all_count: 5"],
+      "type": "scatter",
+      "mode": "markers",
       "marker": {
         "autocolorscale": false,
         "color": "rgba(51,63,72,1)",
@@ -63,14 +71,19 @@
           "color": "rgba(51,63,72,1)"
         }
       },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
       "frame": null
     },
     {
       "x": [1, 2],
       "y": [5, 5],
-      "text": ["Game_number: 1<br />Opponent: Louisiana Monroe<br />Penalty_enforced_count: 5", "Game_number: 2<br />Opponent: Alabama<br />Penalty_enforced_count: 5"],
+      "text": ["Game_number: 1<br />Opponent: Louisiana Monroe<br />Penalty_enforced_count_nona: 5", "Game_number: 2<br />Opponent: Alabama<br />Penalty_enforced_count_nona: 5"],
       "type": "scatter",
-      "mode": "lines+markers",
+      "mode": "lines",
       "line": {
         "width": 1.88976377952756,
         "color": "rgba(191,87,0,1)",
@@ -81,6 +94,14 @@
       "xaxis": "x",
       "yaxis": "y",
       "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 2],
+      "y": [5, 5],
+      "text": ["Game_number: 1<br />Opponent: Louisiana Monroe<br />Penalty_enforced_count: 5", "Game_number: 2<br />Opponent: Alabama<br />Penalty_enforced_count: 5"],
+      "type": "scatter",
+      "mode": "markers",
       "marker": {
         "autocolorscale": false,
         "color": "rgba(191,87,0,1)",
@@ -92,6 +113,19 @@
           "color": "rgba(191,87,0,1)"
         }
       },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "visible": false,
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
       "frame": null
     }
   ],
@@ -166,12 +200,12 @@
       "automargin": true,
       "type": "linear",
       "autorange": false,
-      "range": [4.95, 6.05],
+      "range": [-0.3, 6.3],
       "tickmode": "array",
-      "ticktext": ["5", "6"],
-      "tickvals": [5, 6],
+      "ticktext": ["0", "1", "2", "3", "4", "5", "6"],
+      "tickvals": [0, 1, 2, 3, 4, 5, 6],
       "categoryorder": "array",
-      "categoryarray": ["5", "6"],
+      "categoryarray": ["0", "1", "2", "3", "4", "5", "6"],
       "nticks": null,
       "ticks": "outside",
       "tickcolor": "rgba(51,51,51,1)",
@@ -240,42 +274,46 @@
   },
   source: "A",
   attrs: {
-    "4a1c1563208c": {
+    "6c283dc3edd": {
       "yintercept": {},
       "type": "scatter"
     },
-    "4a1c75e4555d": {
+    "6c2878c52eac": {
       "yintercept": {}
     },
-    "4a1c3e6c7f1f": {
+    "6c2811dc530f": {
       "x": {},
       "label": {},
       "y": {}
     },
-    "4a1c61b65d36": {
+    "6c28a244627": {
       "x": {},
       "label": {},
       "y": {}
     },
-    "4a1c102bcce": {
+    "6c2855b242be": {
       "x": {},
       "label": {},
       "y": {}
     },
-    "4a1c4892cd4": {
+    "6c2811304744": {
       "x": {},
       "label": {},
+      "y": {}
+    },
+    "6c2826cc3db3": {
       "y": {}
     }
   },
-  cur_data: "4a1c1563208c",
+  cur_data: "6c283dc3edd",
   visdat: {
-    "4a1c1563208c": ["function (y) ", "x"],
-    "4a1c75e4555d": ["function (y) ", "x"],
-    "4a1c3e6c7f1f": ["function (y) ", "x"],
-    "4a1c61b65d36": ["function (y) ", "x"],
-    "4a1c102bcce": ["function (y) ", "x"],
-    "4a1c4892cd4": ["function (y) ", "x"]
+    "6c283dc3edd": ["function (y) ", "x"],
+    "6c2878c52eac": ["function (y) ", "x"],
+    "6c2811dc530f": ["function (y) ", "x"],
+    "6c28a244627": ["function (y) ", "x"],
+    "6c2855b242be": ["function (y) ", "x"],
+    "6c2811304744": ["function (y) ", "x"],
+    "6c2826cc3db3": ["function (y) ", "x"]
   },
   highlight: {
     "on": "plotly_click",

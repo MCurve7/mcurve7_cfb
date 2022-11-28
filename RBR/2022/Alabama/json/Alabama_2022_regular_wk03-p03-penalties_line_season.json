@@ -21,9 +21,9 @@
     {
       "x": [1, 2, 3],
       "y": [6, 15, 6],
-      "text": ["Game_number: 1<br />Opponent: Utah State<br />Penalty_all_count:  6", "Game_number: 2<br />Opponent: Texas<br />Penalty_all_count: 15", "Game_number: 3<br />Opponent: Louisiana Monroe<br />Penalty_all_count:  6"],
+      "text": ["Game_number: 1<br />Opponent: Utah State<br />Penalty_all_count_nona:  6", "Game_number: 2<br />Opponent: Texas<br />Penalty_all_count_nona: 15", "Game_number: 3<br />Opponent: Louisiana Monroe<br />Penalty_all_count_nona:  6"],
       "type": "scatter",
-      "mode": "lines+markers",
+      "mode": "lines",
       "line": {
         "width": 1.88976377952756,
         "color": "rgba(130,138,143,1)",
@@ -34,6 +34,14 @@
       "xaxis": "x",
       "yaxis": "y",
       "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 2, 3],
+      "y": [6, 15, 6],
+      "text": ["Game_number: 1<br />Opponent: Utah State<br />Penalty_all_count:  6", "Game_number: 2<br />Opponent: Texas<br />Penalty_all_count: 15", "Game_number: 3<br />Opponent: Louisiana Monroe<br />Penalty_all_count:  6"],
+      "type": "scatter",
+      "mode": "markers",
       "marker": {
         "autocolorscale": false,
         "color": "rgba(130,138,143,1)",
@@ -45,14 +53,19 @@
           "color": "rgba(130,138,143,1)"
         }
       },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
       "frame": null
     },
     {
       "x": [1, 2, 3],
       "y": [6, 15, 6],
-      "text": ["Game_number: 1<br />Opponent: Utah State<br />Penalty_enforced_count:  6", "Game_number: 2<br />Opponent: Texas<br />Penalty_enforced_count: 15", "Game_number: 3<br />Opponent: Louisiana Monroe<br />Penalty_enforced_count:  6"],
+      "text": ["Game_number: 1<br />Opponent: Utah State<br />Penalty_enforced_count_nona:  6", "Game_number: 2<br />Opponent: Texas<br />Penalty_enforced_count_nona: 15", "Game_number: 3<br />Opponent: Louisiana Monroe<br />Penalty_enforced_count_nona:  6"],
       "type": "scatter",
-      "mode": "lines+markers",
+      "mode": "lines",
       "line": {
         "width": 1.88976377952756,
         "color": "rgba(158,27,50,1)",
@@ -63,6 +76,14 @@
       "xaxis": "x",
       "yaxis": "y",
       "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 2, 3],
+      "y": [6, 15, 6],
+      "text": ["Game_number: 1<br />Opponent: Utah State<br />Penalty_enforced_count:  6", "Game_number: 2<br />Opponent: Texas<br />Penalty_enforced_count: 15", "Game_number: 3<br />Opponent: Louisiana Monroe<br />Penalty_enforced_count:  6"],
+      "type": "scatter",
+      "mode": "markers",
       "marker": {
         "autocolorscale": false,
         "color": "rgba(158,27,50,1)",
@@ -74,6 +95,20 @@
           "color": "rgba(158,27,50,1)"
         }
       },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "visible": false,
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "mode": "",
       "frame": null
     }
   ],
@@ -148,12 +183,12 @@
       "automargin": true,
       "type": "linear",
       "autorange": false,
-      "range": [5.55, 15.45],
+      "range": [-0.75, 15.75],
       "tickmode": "array",
-      "ticktext": ["6", "7", "8", "9", "10", "11", "12", "13", "14", "15"],
-      "tickvals": [6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+      "ticktext": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"],
+      "tickvals": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
       "categoryorder": "array",
-      "categoryarray": ["6", "7", "8", "9", "10", "11", "12", "13", "14", "15"],
+      "categoryarray": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"],
       "nticks": null,
       "ticks": "outside",
       "tickcolor": "rgba(51,51,51,1)",
@@ -222,42 +257,46 @@
   },
   source: "A",
   attrs: {
-    "4500fec7c35": {
+    "6c286fea2cd2": {
       "yintercept": {},
       "type": "scatter"
     },
-    "450015de1655": {
+    "6c282f9f7e17": {
       "yintercept": {}
     },
-    "45001efb18ab": {
+    "6c2838241f8d": {
       "x": {},
       "label": {},
       "y": {}
     },
-    "450028246713": {
+    "6c2837ea1369": {
       "x": {},
       "label": {},
       "y": {}
     },
-    "450065395997": {
+    "6c284227727": {
       "x": {},
       "label": {},
       "y": {}
     },
-    "450019452890": {
+    "6c288e84a4e": {
       "x": {},
       "label": {},
+      "y": {}
+    },
+    "6c28bc55070": {
       "y": {}
     }
   },
-  cur_data: "4500fec7c35",
+  cur_data: "6c286fea2cd2",
   visdat: {
-    "4500fec7c35": ["function (y) ", "x"],
-    "450015de1655": ["function (y) ", "x"],
-    "45001efb18ab": ["function (y) ", "x"],
-    "450028246713": ["function (y) ", "x"],
-    "450065395997": ["function (y) ", "x"],
-    "450019452890": ["function (y) ", "x"]
+    "6c286fea2cd2": ["function (y) ", "x"],
+    "6c282f9f7e17": ["function (y) ", "x"],
+    "6c2838241f8d": ["function (y) ", "x"],
+    "6c2837ea1369": ["function (y) ", "x"],
+    "6c284227727": ["function (y) ", "x"],
+    "6c288e84a4e": ["function (y) ", "x"],
+    "6c28bc55070": ["function (y) ", "x"]
   },
   highlight: {
     "on": "plotly_click",

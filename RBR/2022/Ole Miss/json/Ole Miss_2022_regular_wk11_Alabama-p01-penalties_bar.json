@@ -5,8 +5,8 @@
       "width": 0.9,
       "base": 0,
       "x": [1],
-      "y": [1],
-      "text": "Penalty_team: Alabama<br />Count: 1<br />Penalty_team: Alabama",
+      "y": [5],
+      "text": "Penalty_team: Alabama<br />Count: 5<br />Penalty_team: Alabama",
       "type": "bar",
       "textposition": "none",
       "marker": {
@@ -66,7 +66,7 @@
       "size": 14.6118721461187
     },
     "title": {
-      "text": "Ole Miss[24] Number of penalties enforced Ole Miss: 6, Alabama: 1<br> <sup>2022: wk11 vs Alabama[30]<\/sup>",
+      "text": "Ole Miss[24] Number of penalties enforced Ole Miss: 6, Alabama: 5<br> <sup>2022: wk11 vs Alabama[30]<\/sup>",
       "font": {
         "color": "rgba(0,0,0,1)",
         "family": "",
@@ -196,16 +196,16 @@
   },
   source: "A",
   attrs: {
-    "30387eb54148": {
+    "6c28248d7197": {
       "x": {},
       "y": {},
       "fill": {},
       "type": "bar"
     }
   },
-  cur_data: "30387eb54148",
+  cur_data: "6c28248d7197",
   visdat: {
-    "30387eb54148": ["function (y) ", "x"]
+    "6c28248d7197": ["function (y) ", "x"]
   },
   highlight: {
     "on": "plotly_click",

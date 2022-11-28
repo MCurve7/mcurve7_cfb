@@ -5,8 +5,8 @@
       "width": 0.9,
       "base": 0,
       "x": [1],
-      "y": [1],
-      "text": "Penalty_team: Alabama<br />Count: 1<br />Penalty_status: enforced<br />Penalty_team: Alabama<br />Penalty_team: Alabama",
+      "y": [5],
+      "text": "Penalty_team: Alabama<br />Count: 5<br />Penalty_status: enforced<br />Penalty_team: Alabama<br />Penalty_team: Alabama",
       "type": "bar",
       "textposition": "none",
       "marker": {
@@ -204,7 +204,7 @@
   },
   source: "A",
   attrs: {
-    "303864bd6cd3": {
+    "6c286a6f7f24": {
       "x": {},
       "y": {},
       "fill": {},
@@ -213,9 +213,9 @@
       "type": "bar"
     }
   },
-  cur_data: "303864bd6cd3",
+  cur_data: "6c286a6f7f24",
   visdat: {
-    "303864bd6cd3": ["function (y) ", "x"]
+    "6c286a6f7f24": ["function (y) ", "x"]
   },
   highlight: {
     "on": "plotly_click",

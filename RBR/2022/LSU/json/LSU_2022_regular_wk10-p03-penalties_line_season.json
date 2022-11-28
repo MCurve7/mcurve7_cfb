@@ -1,9 +1,9 @@
 {
   data: [
     {
-      "x": [0.5, 11.5],
-      "y": [5.9, 5.9],
-      "text": "yintercept: 5.9",
+      "x": [0.55, 10.45],
+      "y": [5.77777777777778, 5.77777777777778],
+      "text": "yintercept: 5.777778",
       "type": "scatter",
       "mode": "lines",
       "line": {
@@ -19,11 +19,11 @@
       "frame": null
     },
     {
-      "x": [1, 2, 3, 4, 5, 6, 7, 8, 10, 11],
-      "y": [3, 0, 7, 4, 10, 9, 4, 8, 7, 7],
-      "text": ["Game_number:  1<br />Opponent: Florida State<br />Penalty_all_count:  3", "Game_number:  2<br />Opponent: Southern<br />Penalty_all_count:  0", "Game_number:  3<br />Opponent: Mississippi State<br />Penalty_all_count:  7", "Game_number:  4<br />Opponent: New Mexico<br />Penalty_all_count:  4", "Game_number:  5<br />Opponent: Auburn<br />Penalty_all_count: 10", "Game_number:  6<br />Opponent: Tennessee<br />Penalty_all_count:  9", "Game_number:  7<br />Opponent: Florida<br />Penalty_all_count:  4", "Game_number:  8<br />Opponent: Ole Miss<br />Penalty_all_count:  8", "Game_number: 10<br />Opponent: Alabama<br />Penalty_all_count:  7", "Game_number: 11<br />Opponent: Arkansas<br />Penalty_all_count:  7"],
+      "x": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "y": [3, 0, 7, 4, 10, 9, 4, 8, 7.5, 7],
+      "text": ["Game_number:  1<br />Opponent: Florida State<br />Penalty_all_count_nona:  3.0", "Game_number:  2<br />Opponent: Southern<br />Penalty_all_count_nona:  0.0", "Game_number:  3<br />Opponent: Mississippi State<br />Penalty_all_count_nona:  7.0", "Game_number:  4<br />Opponent: New Mexico<br />Penalty_all_count_nona:  4.0", "Game_number:  5<br />Opponent: Auburn<br />Penalty_all_count_nona: 10.0", "Game_number:  6<br />Opponent: Tennessee<br />Penalty_all_count_nona:  9.0", "Game_number:  7<br />Opponent: Florida<br />Penalty_all_count_nona:  4.0", "Game_number:  8<br />Opponent: Ole Miss<br />Penalty_all_count_nona:  8.0", "Game_number:  9<br />Opponent: BYE<br />Penalty_all_count_nona:  7.5", "Game_number: 10<br />Opponent: Alabama<br />Penalty_all_count_nona:  7.0"],
       "type": "scatter",
-      "mode": "lines+markers",
+      "mode": "lines",
       "line": {
         "width": 1.88976377952756,
         "color": "rgba(253,208,35,1)",
@@ -34,6 +34,14 @@
       "xaxis": "x",
       "yaxis": "y",
       "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "y": [3, 0, 7, 4, 10, 9, 4, 8, null, 7],
+      "text": ["Game_number:  1<br />Opponent: Florida State<br />Penalty_all_count:  3", "Game_number:  2<br />Opponent: Southern<br />Penalty_all_count:  0", "Game_number:  3<br />Opponent: Mississippi State<br />Penalty_all_count:  7", "Game_number:  4<br />Opponent: New Mexico<br />Penalty_all_count:  4", "Game_number:  5<br />Opponent: Auburn<br />Penalty_all_count: 10", "Game_number:  6<br />Opponent: Tennessee<br />Penalty_all_count:  9", "Game_number:  7<br />Opponent: Florida<br />Penalty_all_count:  4", "Game_number:  8<br />Opponent: Ole Miss<br />Penalty_all_count:  8", "Game_number:  9<br />Opponent: BYE<br />Penalty_all_count: NA", "Game_number: 10<br />Opponent: Alabama<br />Penalty_all_count:  7"],
+      "type": "scatter",
+      "mode": "markers",
       "marker": {
         "autocolorscale": false,
         "color": "rgba(253,208,35,1)",
@@ -45,14 +53,19 @@
           "color": "rgba(253,208,35,1)"
         }
       },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
       "frame": null
     },
     {
-      "x": [1, 2, 3, 4, 5, 6, 7, 8, 10, 11],
-      "y": [3, 0, 7, 4, 10, 9, 4, 8, 7, 7],
-      "text": ["Game_number:  1<br />Opponent: Florida State<br />Penalty_enforced_count:  3", "Game_number:  2<br />Opponent: Southern<br />Penalty_enforced_count:  0", "Game_number:  3<br />Opponent: Mississippi State<br />Penalty_enforced_count:  7", "Game_number:  4<br />Opponent: New Mexico<br />Penalty_enforced_count:  4", "Game_number:  5<br />Opponent: Auburn<br />Penalty_enforced_count: 10", "Game_number:  6<br />Opponent: Tennessee<br />Penalty_enforced_count:  9", "Game_number:  7<br />Opponent: Florida<br />Penalty_enforced_count:  4", "Game_number:  8<br />Opponent: Ole Miss<br />Penalty_enforced_count:  8", "Game_number: 10<br />Opponent: Alabama<br />Penalty_enforced_count:  7", "Game_number: 11<br />Opponent: Arkansas<br />Penalty_enforced_count:  7"],
+      "x": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "y": [3, 0, 7, 4, 10, 9, 4, 8, 7.5, 7],
+      "text": ["Game_number:  1<br />Opponent: Florida State<br />Penalty_enforced_count_nona:  3.0", "Game_number:  2<br />Opponent: Southern<br />Penalty_enforced_count_nona:  0.0", "Game_number:  3<br />Opponent: Mississippi State<br />Penalty_enforced_count_nona:  7.0", "Game_number:  4<br />Opponent: New Mexico<br />Penalty_enforced_count_nona:  4.0", "Game_number:  5<br />Opponent: Auburn<br />Penalty_enforced_count_nona: 10.0", "Game_number:  6<br />Opponent: Tennessee<br />Penalty_enforced_count_nona:  9.0", "Game_number:  7<br />Opponent: Florida<br />Penalty_enforced_count_nona:  4.0", "Game_number:  8<br />Opponent: Ole Miss<br />Penalty_enforced_count_nona:  8.0", "Game_number:  9<br />Opponent: BYE<br />Penalty_enforced_count_nona:  7.5", "Game_number: 10<br />Opponent: Alabama<br />Penalty_enforced_count_nona:  7.0"],
       "type": "scatter",
-      "mode": "lines+markers",
+      "mode": "lines",
       "line": {
         "width": 1.88976377952756,
         "color": "rgba(70,29,124,1)",
@@ -63,6 +76,14 @@
       "xaxis": "x",
       "yaxis": "y",
       "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "y": [3, 0, 7, 4, 10, 9, 4, 8, null, 7],
+      "text": ["Game_number:  1<br />Opponent: Florida State<br />Penalty_enforced_count:  3", "Game_number:  2<br />Opponent: Southern<br />Penalty_enforced_count:  0", "Game_number:  3<br />Opponent: Mississippi State<br />Penalty_enforced_count:  7", "Game_number:  4<br />Opponent: New Mexico<br />Penalty_enforced_count:  4", "Game_number:  5<br />Opponent: Auburn<br />Penalty_enforced_count: 10", "Game_number:  6<br />Opponent: Tennessee<br />Penalty_enforced_count:  9", "Game_number:  7<br />Opponent: Florida<br />Penalty_enforced_count:  4", "Game_number:  8<br />Opponent: Ole Miss<br />Penalty_enforced_count:  8", "Game_number:  9<br />Opponent: BYE<br />Penalty_enforced_count: NA", "Game_number: 10<br />Opponent: Alabama<br />Penalty_enforced_count:  7"],
+      "type": "scatter",
+      "mode": "markers",
       "marker": {
         "autocolorscale": false,
         "color": "rgba(70,29,124,1)",
@@ -74,6 +95,20 @@
           "color": "rgba(70,29,124,1)"
         }
       },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "visible": false,
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "mode": "",
       "frame": null
     }
   ],
@@ -92,7 +127,7 @@
       "size": 14.6118721461187
     },
     "title": {
-      "text": "LSU penalties for 2022; Average: enforced = 5.90 (primary team color), all = 5.90 (secondary team color)<br> <sup><\/sup>",
+      "text": "LSU penalties for 2022; Average: enforced = 5.78 (primary team color), all = 5.78 (secondary team color)<br> <sup><\/sup>",
       "font": {
         "color": "rgba(0,0,0,1)",
         "family": "",
@@ -107,12 +142,12 @@
       "automargin": true,
       "type": "linear",
       "autorange": false,
-      "range": [0.5, 11.5],
+      "range": [0.55, 10.45],
       "tickmode": "array",
-      "ticktext": ["Florida State", "Southern", "Mississippi State", "New Mexico", "Auburn", "Tennessee", "Florida", "Ole Miss", "Alabama", "Arkansas"],
+      "ticktext": ["Florida State", "Southern", "Mississippi State", "New Mexico", "Auburn", "Tennessee", "Florida", "Ole Miss", "BYE", "Alabama"],
       "tickvals": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
       "categoryorder": "array",
-      "categoryarray": ["Florida State", "Southern", "Mississippi State", "New Mexico", "Auburn", "Tennessee", "Florida", "Ole Miss", "Alabama", "Arkansas"],
+      "categoryarray": ["Florida State", "Southern", "Mississippi State", "New Mexico", "Auburn", "Tennessee", "Florida", "Ole Miss", "BYE", "Alabama"],
       "nticks": null,
       "ticks": "outside",
       "tickcolor": "rgba(51,51,51,1)",
@@ -222,42 +257,46 @@
   },
   source: "A",
   attrs: {
-    "33d41662dd5": {
+    "6c281ac067dd": {
       "yintercept": {},
       "type": "scatter"
     },
-    "33d43e852165": {
+    "6c285ab88d": {
       "yintercept": {}
     },
-    "33d43e5f4843": {
+    "6c28bb954b4": {
       "x": {},
       "label": {},
       "y": {}
     },
-    "33d45953df8": {
+    "6c281af37c6e": {
       "x": {},
       "label": {},
       "y": {}
     },
-    "33d437df56f4": {
+    "6c285a3617a7": {
       "x": {},
       "label": {},
       "y": {}
     },
-    "33d41686cf3": {
+    "6c281e196437": {
       "x": {},
       "label": {},
+      "y": {}
+    },
+    "6c28164c41f4": {
       "y": {}
     }
   },
-  cur_data: "33d41662dd5",
+  cur_data: "6c281ac067dd",
   visdat: {
-    "33d41662dd5": ["function (y) ", "x"],
-    "33d43e852165": ["function (y) ", "x"],
-    "33d43e5f4843": ["function (y) ", "x"],
-    "33d45953df8": ["function (y) ", "x"],
-    "33d437df56f4": ["function (y) ", "x"],
-    "33d41686cf3": ["function (y) ", "x"]
+    "6c281ac067dd": ["function (y) ", "x"],
+    "6c285ab88d": ["function (y) ", "x"],
+    "6c28bb954b4": ["function (y) ", "x"],
+    "6c281af37c6e": ["function (y) ", "x"],
+    "6c285a3617a7": ["function (y) ", "x"],
+    "6c281e196437": ["function (y) ", "x"],
+    "6c28164c41f4": ["function (y) ", "x"]
   },
   highlight: {
     "on": "plotly_click",

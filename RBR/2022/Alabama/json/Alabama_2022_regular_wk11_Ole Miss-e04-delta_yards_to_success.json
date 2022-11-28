@@ -20,7 +20,7 @@
     },
     {
       "x": [34.5, 34.5],
-      "y": [-18.025, 4.525],
+      "y": [-19.125, 5.625],
       "text": "xintercept: 34.5",
       "type": "scatter",
       "mode": "lines",
@@ -38,7 +38,7 @@
     },
     {
       "x": [15.5, 15.5, null, 56.5, 56.5],
-      "y": [-18.025, 4.525, null, -18.025, 4.525],
+      "y": [-19.125, 5.625, null, -19.125, 5.625],
       "text": ["xintercept: 15.5", "xintercept: 15.5", null, "xintercept: 56.5", "xintercept: 56.5"],
       "type": "scatter",
       "mode": "lines",
@@ -599,6 +599,24 @@
       "yaxis": "y",
       "hoverinfo": "text",
       "frame": null
+    },
+    {
+      "x": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80],
+      "y": [1, -4.5, -7.5, 1, -3.8, -7.5, -18, 1, -4.5, -6.5, -8, 1, -4.5, -14.5, -2, 1, -2.4, 1, 3.1, 1, -1.7, 1, 1, 1, -3.8, -3.5, -17, 1, 1.7, -2.5, 4.5, 2.4, -2.5, -7.5, 1, 1, 1, -1.7, -5.5, -3.8, -7, 1, -4.5, -2.5, 1, -3.8, 1, 3.1, 1, -6, -4.5, 1, 2.4, 3, 1, -4.5, 1, 3.8, 1, 3.8, 2, 1, -4.5, -6, 1, -8.7, -15.5, -17, 1, -2.4, -5.5, 1, 3.5, 3.1, 1, 1.7, -6.5, -8, 1, -5.2],
+      "text": [1, 2, 3, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 1, 2, 1, 2, 1, 1, 1, 2, 3, 4, 1, 2, 3, 1, 2, 3, 3, 1, 1, 1, 2, 3, 2, 4, 1, 2, 3, 1, 2, 1, 2, 1, 1, 2, 1, 2, 1, 2, 3, 1, 2, 1, 2, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 1, 1, 2, 1, 2, 3, 4, 1, 2],
+      "hovertext": ["Offense_play_count:  1<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count:  2<br />Delta_yards_to_success:  -3.5<br />Down: 2", "Offense_play_count:  3<br />Delta_yards_to_success:  -6.5<br />Down: 3", "Offense_play_count:  4<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count:  5<br />Delta_yards_to_success:  -2.8<br />Down: 2", "Offense_play_count:  6<br />Delta_yards_to_success:  -6.5<br />Down: 3", "Offense_play_count:  7<br />Delta_yards_to_success: -17.0<br />Down: 4", "Offense_play_count:  8<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count:  9<br />Delta_yards_to_success:  -3.5<br />Down: 2", "Offense_play_count: 10<br />Delta_yards_to_success:  -5.5<br />Down: 3", "Offense_play_count: 11<br />Delta_yards_to_success:  -7.0<br />Down: 4", "Offense_play_count: 12<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 13<br />Delta_yards_to_success:  -3.5<br />Down: 2", "Offense_play_count: 14<br />Delta_yards_to_success: -13.5<br />Down: 3", "Offense_play_count: 15<br />Delta_yards_to_success:  -1.0<br />Down: 4", "Offense_play_count: 16<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 17<br />Delta_yards_to_success:  -1.4<br />Down: 2", "Offense_play_count: 18<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 19<br />Delta_yards_to_success:   2.1<br />Down: 2", "Offense_play_count: 20<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 21<br />Delta_yards_to_success:  -0.7<br />Down: 2", "Offense_play_count: 22<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 23<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 24<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 25<br />Delta_yards_to_success:  -2.8<br />Down: 2", "Offense_play_count: 26<br />Delta_yards_to_success:  -2.5<br />Down: 3", "Offense_play_count: 27<br />Delta_yards_to_success: -16.0<br />Down: 4", "Offense_play_count: 28<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 29<br />Delta_yards_to_success:   0.7<br />Down: 2", "Offense_play_count: 30<br />Delta_yards_to_success:  -1.5<br />Down: 3", "Offense_play_count: 31<br />Delta_yards_to_success:   3.5<br />Down: 1", "Offense_play_count: 32<br />Delta_yards_to_success:   1.4<br />Down: 2", "Offense_play_count: 33<br />Delta_yards_to_success:  -1.5<br />Down: 3", "Offense_play_count: 34<br />Delta_yards_to_success:  -6.5<br />Down: 3", "Offense_play_count: 35<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 36<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 37<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 38<br />Delta_yards_to_success:  -0.7<br />Down: 2", "Offense_play_count: 39<br />Delta_yards_to_success:  -4.5<br />Down: 3", "Offense_play_count: 40<br />Delta_yards_to_success:  -2.8<br />Down: 2", "Offense_play_count: 41<br />Delta_yards_to_success:  -6.0<br />Down: 4", "Offense_play_count: 42<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 43<br />Delta_yards_to_success:  -3.5<br />Down: 2", "Offense_play_count: 44<br />Delta_yards_to_success:  -1.5<br />Down: 3", "Offense_play_count: 45<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 46<br />Delta_yards_to_success:  -2.8<br />Down: 2", "Offense_play_count: 47<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 48<br />Delta_yards_to_success:   2.1<br />Down: 2", "Offense_play_count: 49<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 50<br />Delta_yards_to_success:  -5.0<br />Down: 1", "Offense_play_count: 51<br />Delta_yards_to_success:  -3.5<br />Down: 2", "Offense_play_count: 52<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 53<br />Delta_yards_to_success:   1.4<br />Down: 2", "Offense_play_count: 54<br />Delta_yards_to_success:   2.0<br />Down: 1", "Offense_play_count: 55<br />Delta_yards_to_success:   0.0<br />Down: 2", "Offense_play_count: 56<br />Delta_yards_to_success:  -3.5<br />Down: 3", "Offense_play_count: 57<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 58<br />Delta_yards_to_success:   2.8<br />Down: 2", "Offense_play_count: 59<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 60<br />Delta_yards_to_success:   2.8<br />Down: 2", "Offense_play_count: 61<br />Delta_yards_to_success:   1.0<br />Down: 1", "Offense_play_count: 62<br />Delta_yards_to_success:   0.0<br />Down: 2", "Offense_play_count: 63<br />Delta_yards_to_success:  -3.5<br />Down: 3", "Offense_play_count: 64<br />Delta_yards_to_success:  -5.0<br />Down: 4", "Offense_play_count: 65<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 66<br />Delta_yards_to_success:  -7.7<br />Down: 2", "Offense_play_count: 67<br />Delta_yards_to_success: -14.5<br />Down: 3", "Offense_play_count: 68<br />Delta_yards_to_success: -16.0<br />Down: 4", "Offense_play_count: 69<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 70<br />Delta_yards_to_success:  -1.4<br />Down: 2", "Offense_play_count: 71<br />Delta_yards_to_success:  -4.5<br />Down: 3", "Offense_play_count: 72<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 73<br />Delta_yards_to_success:   2.5<br />Down: 1", "Offense_play_count: 74<br />Delta_yards_to_success:   2.1<br />Down: 2", "Offense_play_count: 75<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 76<br />Delta_yards_to_success:   0.7<br />Down: 2", "Offense_play_count: 77<br />Delta_yards_to_success:  -5.5<br />Down: 3", "Offense_play_count: 78<br />Delta_yards_to_success:  -7.0<br />Down: 4", "Offense_play_count: 79<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 80<br />Delta_yards_to_success:  -4.2<br />Down: 2"],
+      "textfont": {
+        "size": 14.6645669291339,
+        "color": "rgba(0,0,0,1)"
+      },
+      "type": "scatter",
+      "mode": "text",
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
     }
   ],
   layout: {
@@ -616,7 +634,7 @@
       "size": 14.6118721461187
     },
     "title": {
-      "text": "Alabama[30]: Delta yards to success = Nominal yards to success - Yards to success<br> <sup>2022: wk11 vs Ole Miss[24]<\/sup>",
+      "text": "Alabama[30]: Delta yards to success = Nominal yards to success - Yards to success and annotated with Down<br> <sup>2022: wk11 vs Ole Miss[24]<\/sup>",
       "font": {
         "color": "rgba(0,0,0,1)",
         "family": "",
@@ -672,12 +690,12 @@
       "automargin": true,
       "type": "linear",
       "autorange": false,
-      "range": [-18.025, 4.525],
+      "range": [-19.125, 5.625],
       "tickmode": "array",
-      "ticktext": ["-15", "-10", "-5", "0"],
-      "tickvals": [-15, -10, -5, 0],
+      "ticktext": ["-15", "-10", "-5", "0", "5"],
+      "tickvals": [-15, -10, -5, 0, 5],
       "categoryorder": "array",
-      "categoryarray": ["-15", "-10", "-5", "0"],
+      "categoryarray": ["-15", "-10", "-5", "0", "5"],
       "nticks": null,
       "ticks": "outside",
       "tickcolor": "rgba(51,51,51,1)",
@@ -754,32 +772,38 @@
   },
   source: "A",
   attrs: {
-    "303857b3796a": {
+    "6c284f903046": {
       "yintercept": {},
       "type": "scatter"
     },
-    "30387dd91126": {
+    "6c28a5f2e44": {
       "xintercept": {}
     },
-    "3038501e6ad2": {
+    "6c284cc74396": {
       "x": {},
       "y": {},
       "colour": {}
     },
-    "30389afb42": {
+    "6c281efa7a62": {
       "x": {},
       "y": {},
       "shape": {},
       "colour": {},
       "label": {}
+    },
+    "6c283a214e29": {
+      "x": {},
+      "y": {},
+      "label": {}
     }
   },
-  cur_data: "303857b3796a",
+  cur_data: "6c284f903046",
   visdat: {
-    "303857b3796a": ["function (y) ", "x"],
-    "30387dd91126": ["function (y) ", "x"],
-    "3038501e6ad2": ["function (y) ", "x"],
-    "30389afb42": ["function (y) ", "x"]
+    "6c284f903046": ["function (y) ", "x"],
+    "6c28a5f2e44": ["function (y) ", "x"],
+    "6c284cc74396": ["function (y) ", "x"],
+    "6c281efa7a62": ["function (y) ", "x"],
+    "6c283a214e29": ["function (y) ", "x"]
   },
   highlight: {
     "on": "plotly_click",

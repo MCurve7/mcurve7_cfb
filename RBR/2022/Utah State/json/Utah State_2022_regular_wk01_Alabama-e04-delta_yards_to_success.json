@@ -1,0 +1,743 @@
+{
+  data: [
+    {
+      "x": [-2.55, 75.55],
+      "y": [0, 0],
+      "text": "yintercept: 0",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(0,0,0,0.2)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [34.5, 34.5],
+      "y": [-17.445, 3.345],
+      "text": "xintercept: 34.5",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(0,0,0,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [17.5, 17.5, null, 52.5, 52.5],
+      "y": [-17.445, 3.345, null, -17.445, 3.345],
+      "text": ["xintercept: 17.5", "xintercept: 17.5", null, "xintercept: 52.5", "xintercept: 52.5"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(0,0,0,1)",
+        "dash": "dash"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 2, 3, 4, 5],
+      "y": [0, 0, -4.9, -9.5, -8],
+      "text": ["Offense_play_count:  1<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 1", "Offense_play_count:  2<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 1", "Offense_play_count:  3<br />Delta_yards_to_success:  -4.9<br />factor(O_drive_number): 1", "Offense_play_count:  4<br />Delta_yards_to_success:  -9.5<br />factor(O_drive_number): 1", "Offense_play_count:  5<br />Delta_yards_to_success:  -8.0<br />factor(O_drive_number): 1"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(0,38,58,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "1",
+      "legendgroup": "1",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [6, 7, 8, 9],
+      "y": [0, -2.8, -7.5, -9],
+      "text": ["Offense_play_count:  6<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 2", "Offense_play_count:  7<br />Delta_yards_to_success:  -2.8<br />factor(O_drive_number): 2", "Offense_play_count:  8<br />Delta_yards_to_success:  -7.5<br />factor(O_drive_number): 2", "Offense_play_count:  9<br />Delta_yards_to_success:  -9.0<br />factor(O_drive_number): 2"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(138,141,143,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(2,1)",
+      "legendgroup": "(2,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [10, 11, 12, 13],
+      "y": [0, -3.5, -5.5, -1],
+      "text": ["Offense_play_count: 10<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 3", "Offense_play_count: 11<br />Delta_yards_to_success:  -3.5<br />factor(O_drive_number): 3", "Offense_play_count: 12<br />Delta_yards_to_success:  -5.5<br />factor(O_drive_number): 3", "Offense_play_count: 13<br />Delta_yards_to_success:  -1.0<br />factor(O_drive_number): 3"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(0,38,58,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(3,1)",
+      "legendgroup": "(3,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [14, 15, 16, 17],
+      "y": [0, -6.3, -2.5, -4],
+      "text": ["Offense_play_count: 14<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 4", "Offense_play_count: 15<br />Delta_yards_to_success:  -6.3<br />factor(O_drive_number): 4", "Offense_play_count: 16<br />Delta_yards_to_success:  -2.5<br />factor(O_drive_number): 4", "Offense_play_count: 17<br />Delta_yards_to_success:  -4.0<br />factor(O_drive_number): 4"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(138,141,143,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(4,1)",
+      "legendgroup": "(4,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [18, 19, 20, 21],
+      "y": [0, -3.5, -8.5, -10],
+      "text": ["Offense_play_count: 18<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 5", "Offense_play_count: 19<br />Delta_yards_to_success:  -3.5<br />factor(O_drive_number): 5", "Offense_play_count: 20<br />Delta_yards_to_success:  -8.5<br />factor(O_drive_number): 5", "Offense_play_count: 21<br />Delta_yards_to_success: -10.0<br />factor(O_drive_number): 5"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(0,38,58,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(5,1)",
+      "legendgroup": "(5,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [22, 23, 24, 25, 26, 27, 28],
+      "y": [0, -4.9, -7.5, 0, 1.4, -1.5, -3],
+      "text": ["Offense_play_count: 22<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 6", "Offense_play_count: 23<br />Delta_yards_to_success:  -4.9<br />factor(O_drive_number): 6", "Offense_play_count: 24<br />Delta_yards_to_success:  -7.5<br />factor(O_drive_number): 6", "Offense_play_count: 25<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 6", "Offense_play_count: 26<br />Delta_yards_to_success:   1.4<br />factor(O_drive_number): 6", "Offense_play_count: 27<br />Delta_yards_to_success:  -1.5<br />factor(O_drive_number): 6", "Offense_play_count: 28<br />Delta_yards_to_success:  -3.0<br />factor(O_drive_number): 6"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(138,141,143,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(6,1)",
+      "legendgroup": "(6,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [29, 30, 31, 32, 33],
+      "y": [0, -3.5, -10.5, -15.5, -15],
+      "text": ["Offense_play_count: 29<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 7", "Offense_play_count: 30<br />Delta_yards_to_success:  -3.5<br />factor(O_drive_number): 7", "Offense_play_count: 31<br />Delta_yards_to_success: -10.5<br />factor(O_drive_number): 7", "Offense_play_count: 32<br />Delta_yards_to_success: -15.5<br />factor(O_drive_number): 7", "Offense_play_count: 33<br />Delta_yards_to_success: -15.0<br />factor(O_drive_number): 7"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(0,38,58,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(7,1)",
+      "legendgroup": "(7,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [34],
+      "y": [0],
+      "text": "Offense_play_count: 34<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 8",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(138,141,143,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(8,1)",
+      "legendgroup": "(8,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [35, 36, 37, 38],
+      "y": [0, -4.2, -9.5, -11],
+      "text": ["Offense_play_count: 35<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 9", "Offense_play_count: 36<br />Delta_yards_to_success:  -4.2<br />factor(O_drive_number): 9", "Offense_play_count: 37<br />Delta_yards_to_success:  -9.5<br />factor(O_drive_number): 9", "Offense_play_count: 38<br />Delta_yards_to_success: -11.0<br />factor(O_drive_number): 9"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(0,38,58,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(9,1)",
+      "legendgroup": "(9,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [39, 40, 41, 42, 43],
+      "y": [0, -0.699999999999999, -3.5, -5, -10],
+      "text": ["Offense_play_count: 39<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 10", "Offense_play_count: 40<br />Delta_yards_to_success:  -0.7<br />factor(O_drive_number): 10", "Offense_play_count: 41<br />Delta_yards_to_success:  -3.5<br />factor(O_drive_number): 10", "Offense_play_count: 42<br />Delta_yards_to_success:  -5.0<br />factor(O_drive_number): 10", "Offense_play_count: 43<br />Delta_yards_to_success: -10.0<br />factor(O_drive_number): 10"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(138,141,143,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(10,1)",
+      "legendgroup": "(10,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [44, 45, 46, 47, 48, 49, 50],
+      "y": [0, 0.7, -7.5, 0, -0.699999999999999, -0.5, -1],
+      "text": ["Offense_play_count: 44<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 11", "Offense_play_count: 45<br />Delta_yards_to_success:   0.7<br />factor(O_drive_number): 11", "Offense_play_count: 46<br />Delta_yards_to_success:  -7.5<br />factor(O_drive_number): 11", "Offense_play_count: 47<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 11", "Offense_play_count: 48<br />Delta_yards_to_success:  -0.7<br />factor(O_drive_number): 11", "Offense_play_count: 49<br />Delta_yards_to_success:  -0.5<br />factor(O_drive_number): 11", "Offense_play_count: 50<br />Delta_yards_to_success:  -1.0<br />factor(O_drive_number): 11"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(0,38,58,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(11,1)",
+      "legendgroup": "(11,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64],
+      "y": [0, -1.4, -4.5, 0, 1.4, 0, 1.4, 0.5, -1, 0, -3.5, 0, -3.5, -15],
+      "text": ["Offense_play_count: 51<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 12", "Offense_play_count: 52<br />Delta_yards_to_success:  -1.4<br />factor(O_drive_number): 12", "Offense_play_count: 53<br />Delta_yards_to_success:  -4.5<br />factor(O_drive_number): 12", "Offense_play_count: 54<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 12", "Offense_play_count: 55<br />Delta_yards_to_success:   1.4<br />factor(O_drive_number): 12", "Offense_play_count: 56<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 12", "Offense_play_count: 57<br />Delta_yards_to_success:   1.4<br />factor(O_drive_number): 12", "Offense_play_count: 58<br />Delta_yards_to_success:   0.5<br />factor(O_drive_number): 12", "Offense_play_count: 59<br />Delta_yards_to_success:  -1.0<br />factor(O_drive_number): 12", "Offense_play_count: 60<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 12", "Offense_play_count: 61<br />Delta_yards_to_success:  -3.5<br />factor(O_drive_number): 12", "Offense_play_count: 62<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 12", "Offense_play_count: 63<br />Delta_yards_to_success:  -3.5<br />factor(O_drive_number): 12", "Offense_play_count: 64<br />Delta_yards_to_success: -15.0<br />factor(O_drive_number): 12"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(138,141,143,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(12,1)",
+      "legendgroup": "(12,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [65, 66, 67, 68, 69, 70, 71, 72],
+      "y": [0, -1.4, 0.5, -1, 0, -3.5, -8.5, -6],
+      "text": ["Offense_play_count: 65<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 13", "Offense_play_count: 66<br />Delta_yards_to_success:  -1.4<br />factor(O_drive_number): 13", "Offense_play_count: 67<br />Delta_yards_to_success:   0.5<br />factor(O_drive_number): 13", "Offense_play_count: 68<br />Delta_yards_to_success:  -1.0<br />factor(O_drive_number): 13", "Offense_play_count: 69<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 13", "Offense_play_count: 70<br />Delta_yards_to_success:  -3.5<br />factor(O_drive_number): 13", "Offense_play_count: 71<br />Delta_yards_to_success:  -8.5<br />factor(O_drive_number): 13", "Offense_play_count: 72<br />Delta_yards_to_success:  -6.0<br />factor(O_drive_number): 13"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(0,38,58,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(13,1)",
+      "legendgroup": "(13,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [31, 42, 61],
+      "y": [-10.5, -5, -3.5],
+      "text": ["Offense_play_count: 31<br />Delta_yards_to_success: -10.5<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: UTAH ST Penalty, False Start (-5 Yards) to the UthSt 18<br />O_drive_number: 7", "Offense_play_count: 42<br />Delta_yards_to_success:  -5.0<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: UTAH ST Penalty, False Start (-5 Yards) to the UthSt 25<br />O_drive_number: 10", "Offense_play_count: 61<br />Delta_yards_to_success:  -3.5<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: ALABAMA Penalty, Defensive Offside (5 Yards) to the Alab 29<br />O_drive_number: 12"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(255,0,255,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "hexagram-open",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(255,0,255,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "Penalty",
+      "legendgroup": "Penalty",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [5, 9, 17, 21, 28, 33, 38, 43, 50, 64],
+      "y": [-8, -9, -4, -10, -3, -15, -11, -10, -1, -15],
+      "text": ["Offense_play_count:  5<br />Delta_yards_to_success:  -8.0<br />Play_type: Punt<br />Success: Punt<br />Play_text: Stephen Kotsanlee punt for 21 yds, punt out-of-bounds at the Alab 29<br />O_drive_number: 1", "Offense_play_count:  9<br />Delta_yards_to_success:  -9.0<br />Play_type: Punt<br />Success: Punt<br />Play_text: Stephen Kotsanlee punt for 43 yds , Kool-Aid McKinstry returns for 9 yds to the Alab 40<br />O_drive_number: 2", "Offense_play_count: 17<br />Delta_yards_to_success:  -4.0<br />Play_type: Punt<br />Success: Punt<br />Play_text: Stephen Kotsanlee punt for 51 yds, punt out-of-bounds at the Alab 18<br />O_drive_number: 4", "Offense_play_count: 21<br />Delta_yards_to_success: -10.0<br />Play_type: Punt<br />Success: Punt<br />Play_text: Stephen Kotsanlee punt for 52 yds, fair catch by Kool-Aid McKinstry at the Alab 23<br />O_drive_number: 5", "Offense_play_count: 28<br />Delta_yards_to_success:  -3.0<br />Play_type: Punt<br />Success: Punt<br />Play_text: Stephen Kotsanlee punt for 24 yds, punt out-of-bounds at the Alab 34<br />O_drive_number: 6", "Offense_play_count: 33<br />Delta_yards_to_success: -15.0<br />Play_type: Punt<br />Success: Punt<br />Play_text: Stephen Kotsanlee punt for 51 yds , Kool-Aid McKinstry returns for 9 yds to the Alab 38<br />O_drive_number: 7", "Offense_play_count: 38<br />Delta_yards_to_success: -11.0<br />Play_type: Punt<br />Success: Punt<br />Play_text: Stephen Kotsanlee punt for 20 yds, punt out-of-bounds at the UthSt 44<br />O_drive_number: 9", "Offense_play_count: 43<br />Delta_yards_to_success: -10.0<br />Play_type: Punt<br />Success: Punt<br />Play_text: Stephen Kotsanlee punt for 60 yds , Kool-Aid McKinstry returns for 2 yds to the Alab 17<br />O_drive_number: 10", "Offense_play_count: 50<br />Delta_yards_to_success:  -1.0<br />Play_type: Punt<br />Success: Punt<br />Play_text: Stephen Kotsanlee punt for 35 yds, downed at the Alab 8<br />O_drive_number: 11", "Offense_play_count: 64<br />Delta_yards_to_success: -15.0<br />Play_type: Punt<br />Success: Punt<br />Play_text: Stephen Kotsanlee punt for 26 yds, fair catch by Kool-Aid McKinstry at the Alab 13<br />O_drive_number: 12"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(127,127,127,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "diamond",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(127,127,127,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "Punt",
+      "legendgroup": "Punt",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 15, 53, 55],
+      "y": [0, -6.3, -4.5, 1.4],
+      "text": ["Offense_play_count:  1<br />Delta_yards_to_success:   0.0<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Logan Bonner pass complete to Brian Cobbs for 23 yds to the UthSt 48 for a 1ST down<br />O_drive_number: 1", "Offense_play_count: 15<br />Delta_yards_to_success:  -6.3<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Logan Bonner pass complete to Brian Cobbs for 10 yds to the UthSt 31<br />O_drive_number: 4", "Offense_play_count: 53<br />Delta_yards_to_success:  -4.5<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Levi Williams pass complete to Terrell Vaughn for 6 yds to the UthSt 32 for a 1ST down<br />O_drive_number: 12", "Offense_play_count: 55<br />Delta_yards_to_success:   1.4<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Levi Williams pass complete to NyNy Davis for 9 yds to the UthSt 48 for a 1ST down<br />O_drive_number: 12"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,100,0,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(0,100,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Successful,Pass Reception)",
+      "legendgroup": "(Successful,Pass Reception)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [24, 25, 44, 46, 54, 56, 59, 66, 68],
+      "y": [-7.5, 0, 0, -7.5, 0, 0, -1, -1.4, -1],
+      "text": ["Offense_play_count: 24<br />Delta_yards_to_success:  -7.5<br />Play_type: Rush<br />Success: Successful<br />Play_text: Cooper Legas run for 9 yds to the UthSt 35 for a 1ST down<br />O_drive_number: 6", "Offense_play_count: 25<br />Delta_yards_to_success:   0.0<br />Play_type: Rush<br />Success: Successful<br />Play_text: Calvin Tyler Jr. run for 7 yds to the UthSt 42<br />O_drive_number: 6", "Offense_play_count: 44<br />Delta_yards_to_success:   0.0<br />Play_type: Rush<br />Success: Successful<br />Play_text: NyNy Davis run for 6 yds to the UthSt 38<br />O_drive_number: 11", "Offense_play_count: 46<br />Delta_yards_to_success:  -7.5<br />Play_type: Rush<br />Success: Successful<br />Play_text: Terrell Vaughn run for 10 yds to the UthSt 48 for a 1ST down<br />O_drive_number: 11", "Offense_play_count: 54<br />Delta_yards_to_success:   0.0<br />Play_type: Rush<br />Success: Successful<br />Play_text: Pailate Makakona run for 7 yds to the UthSt 39<br />O_drive_number: 12", "Offense_play_count: 56<br />Delta_yards_to_success:   0.0<br />Play_type: Rush<br />Success: Successful<br />Play_text: Pailate Makakona run for 7 yds to the Alab 45<br />O_drive_number: 12", "Offense_play_count: 59<br />Delta_yards_to_success:  -1.0<br />Play_type: Rush<br />Success: Successful<br />Play_text: Levi Williams run for 9 yds to the Alab 34 for a 1ST down<br />O_drive_number: 12", "Offense_play_count: 66<br />Delta_yards_to_success:  -1.4<br />Play_type: Rush<br />Success: Successful<br />Play_text: Robert Briggs run for 6 yds to the Alab 22<br />O_drive_number: 13", "Offense_play_count: 68<br />Delta_yards_to_success:  -1.0<br />Play_type: Rush<br />Success: Successful<br />Play_text: Robert Briggs run for 2 yds to the Alab 20 for a 1ST down<br />O_drive_number: 13"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,100,0,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "circle",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(0,100,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Successful,Rush)",
+      "legendgroup": "(Successful,Rush)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2, 63],
+      "y": [0, -3.5],
+      "text": ["Offense_play_count:  2<br />Delta_yards_to_success:   0.0<br />Play_type: Fumble Recovery (Own)<br />Success: Unsuccessful<br />Play_text: Logan Bonner run for a loss of 2 yards to the UthSt 46 Logan Bonner fumbled, recovered by UthSt Calvin Tyler Jr.<br />O_drive_number: 1", "Offense_play_count: 63<br />Delta_yards_to_success:  -3.5<br />Play_type: Fumble Recovery (Own)<br />Success: Unsuccessful<br />Play_text: Levi Williams run for a loss of 10 yards to the Alab 39 Levi Williams fumbled, recovered by UthSt NyNy Davis<br />O_drive_number: 12"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(139,26,26,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "circle",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(139,26,26,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Unsuccessful,Fumble Recovery (Own))",
+      "legendgroup": "(Unsuccessful,Fumble Recovery (Own))",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [7, 8, 10, 13, 16, 19, 27, 36, 41, 58, 62, 67, 69, 72],
+      "y": [-2.8, -7.5, 0, -1, -2.5, -3.5, -1.5, -4.2, -3.5, 0.5, 0, 0.5, 0, -6],
+      "text": ["Offense_play_count:  7<br />Delta_yards_to_success:  -2.8<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Logan Bonner pass incomplete to Kyle Van Leeuwen<br />O_drive_number: 2", "Offense_play_count:  8<br />Delta_yards_to_success:  -7.5<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Logan Bonner pass incomplete to Brian Cobbs<br />O_drive_number: 2", "Offense_play_count: 10<br />Delta_yards_to_success:   0.0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Logan Bonner pass incomplete to NyNy Davis<br />O_drive_number: 3", "Offense_play_count: 13<br />Delta_yards_to_success:  -1.0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Logan Bonner pass incomplete to Justin McGriff<br />O_drive_number: 3", "Offense_play_count: 16<br />Delta_yards_to_success:  -2.5<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Logan Bonner pass incomplete to Brian Cobbs<br />O_drive_number: 4", "Offense_play_count: 19<br />Delta_yards_to_success:  -3.5<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Logan Bonner pass incomplete to Brian Cobbs<br />O_drive_number: 5", "Offense_play_count: 27<br />Delta_yards_to_success:  -1.5<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Cooper Legas pass incomplete to Xavier Williams<br />O_drive_number: 6", "Offense_play_count: 36<br />Delta_yards_to_success:  -4.2<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Cooper Legas pass incomplete to Justin McGriff<br />O_drive_number: 9", "Offense_play_count: 41<br />Delta_yards_to_success:  -3.5<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Levi Williams pass incomplete to NyNy Davis<br />O_drive_number: 10", "Offense_play_count: 58<br />Delta_yards_to_success:   0.5<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Levi Williams pass incomplete to NyNy Davis<br />O_drive_number: 12", "Offense_play_count: 62<br />Delta_yards_to_success:   0.0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Levi Williams pass incomplete to Xavier Williams<br />O_drive_number: 12", "Offense_play_count: 67<br />Delta_yards_to_success:   0.5<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Cooper Legas pass incomplete to Jalen Royals<br />O_drive_number: 13", "Offense_play_count: 69<br />Delta_yards_to_success:   0.0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Cooper Legas pass incomplete to Jalen Royals<br />O_drive_number: 13", "Offense_play_count: 72<br />Delta_yards_to_success:  -6.0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Cooper Legas pass incomplete to NyNy Davis<br />O_drive_number: 13"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(139,26,26,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "triangle-up-open",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(139,26,26,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Unsuccessful,Pass Incompletion)",
+      "legendgroup": "(Unsuccessful,Pass Incompletion)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [12, 22, 23, 32],
+      "y": [-5.5, 0, -4.9, -15.5],
+      "text": ["Offense_play_count: 12<br />Delta_yards_to_success:  -5.5<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Logan Bonner pass complete to Justin McGriff for 6 yds to the UthSt 34<br />O_drive_number: 3", "Offense_play_count: 22<br />Delta_yards_to_success:   0.0<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Cooper Legas pass complete to Kyle Van Leeuwen for a loss of 2 yards to the UthSt 23<br />O_drive_number: 6", "Offense_play_count: 23<br />Delta_yards_to_success:  -4.9<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Cooper Legas pass complete to Kyle Van Leeuwen for 3 yds to the UthSt 26<br />O_drive_number: 6", "Offense_play_count: 32<br />Delta_yards_to_success: -15.5<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Cooper Legas pass complete to Calvin Tyler Jr. for 2 yds to the UthSt 20<br />O_drive_number: 7"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(139,26,26,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(139,26,26,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Unsuccessful,Pass Reception)",
+      "legendgroup": "(Unsuccessful,Pass Reception)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [3, 4, 6, 11, 14, 18, 20, 26, 29, 30, 34, 35, 37, 39, 40, 45, 47, 48, 49, 51, 52, 57, 60, 65, 70, 71],
+      "y": [-4.9, -9.5, 0, -3.5, 0, 0, -8.5, 1.4, 0, -3.5, 0, 0, -9.5, 0, -0.699999999999999, 0.7, 0, -0.699999999999999, -0.5, 0, -1.4, 1.4, 0, 0, -3.5, -8.5],
+      "text": ["Offense_play_count:  3<br />Delta_yards_to_success:  -4.9<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Calvin Tyler Jr. run for 1 yd to the UthSt 47<br />O_drive_number: 1", "Offense_play_count:  4<br />Delta_yards_to_success:  -9.5<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Calvin Tyler Jr. run for 3 yds to the 50 yard line<br />O_drive_number: 1", "Offense_play_count:  6<br />Delta_yards_to_success:   0.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Calvin Tyler Jr. run for 1 yd to the UthSt 26<br />O_drive_number: 2", "Offense_play_count: 11<br />Delta_yards_to_success:  -3.5<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Calvin Tyler Jr. run for 3 yds to the UthSt 28<br />O_drive_number: 3", "Offense_play_count: 14<br />Delta_yards_to_success:   0.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Pailate Makakona run for a loss of 4 yards to the UthSt 21<br />O_drive_number: 4", "Offense_play_count: 18<br />Delta_yards_to_success:   0.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Calvin Tyler Jr. run for no gain to the UthSt 25<br />O_drive_number: 5", "Offense_play_count: 20<br />Delta_yards_to_success:  -8.5<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Calvin Tyler Jr. run for no gain to the UthSt 25<br />O_drive_number: 5", "Offense_play_count: 26<br />Delta_yards_to_success:   1.4<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Calvin Tyler Jr. run for no gain to the UthSt 42<br />O_drive_number: 6", "Offense_play_count: 29<br />Delta_yards_to_success:   0.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Calvin Tyler Jr. run for no gain to the UthSt 25<br />O_drive_number: 7", "Offense_play_count: 30<br />Delta_yards_to_success:  -3.5<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Calvin Tyler Jr. run for a loss of 2 yards to the UthSt 23<br />O_drive_number: 7", "Offense_play_count: 34<br />Delta_yards_to_success:   0.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Calvin Tyler Jr. run for no gain to the UthSt 25<br />O_drive_number: 8", "Offense_play_count: 35<br />Delta_yards_to_success:   0.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Cooper Legas run for a loss of 1 yard to the UthSt 24<br />O_drive_number: 9", "Offense_play_count: 37<br />Delta_yards_to_success:  -9.5<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Calvin Tyler Jr. run for no gain to the UthSt 24<br />O_drive_number: 9", "Offense_play_count: 39<br />Delta_yards_to_success:   0.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Robert Briggs run for 4 yds to the UthSt 29<br />O_drive_number: 10", "Offense_play_count: 40<br />Delta_yards_to_success:  -0.7<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Levi Williams run for 1 yd to the UthSt 30<br />O_drive_number: 10", "Offense_play_count: 45<br />Delta_yards_to_success:   0.7<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Robert Briggs run for no gain to the UthSt 38<br />O_drive_number: 11", "Offense_play_count: 47<br />Delta_yards_to_success:   0.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Robert Briggs run for 4 yds to the Alab 48<br />O_drive_number: 11", "Offense_play_count: 48<br />Delta_yards_to_success:  -0.7<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Robert Briggs run for 4 yds to the Alab 44<br />O_drive_number: 11", "Offense_play_count: 49<br />Delta_yards_to_success:  -0.5<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Robert Briggs run for 1 yd to the Alab 43<br />O_drive_number: 11", "Offense_play_count: 51<br />Delta_yards_to_success:   0.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Pailate Makakona run for 3 yds to the UthSt 25<br />O_drive_number: 12", "Offense_play_count: 52<br />Delta_yards_to_success:  -1.4<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Pailate Makakona run for 1 yd to the UthSt 26<br />O_drive_number: 12", "Offense_play_count: 57<br />Delta_yards_to_success:   1.4<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Levi Williams run for 2 yds to the Alab 43<br />O_drive_number: 12", "Offense_play_count: 60<br />Delta_yards_to_success:   0.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Pailate Makakona run for no gain to the Alab 34<br />O_drive_number: 12", "Offense_play_count: 65<br />Delta_yards_to_success:   0.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Robert Briggs run for 3 yds to the Alab 28<br />O_drive_number: 13", "Offense_play_count: 70<br />Delta_yards_to_success:  -3.5<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Robert Briggs run for no gain to the Alab 20<br />O_drive_number: 13", "Offense_play_count: 71<br />Delta_yards_to_success:  -8.5<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Robert Briggs run for 4 yds to the Alab 16<br />O_drive_number: 13"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(139,26,26,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "circle",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(139,26,26,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Unsuccessful,Rush)",
+      "legendgroup": "(Unsuccessful,Rush)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72],
+      "y": [1, 1, -5.9, -10.5, -9, 1, -3.8, -8.5, -10, 1, -4.5, -6.5, -2, 1, -7.3, -3.5, -5, 1, -4.5, -9.5, -11, 1, -5.9, -8.5, 1, 2.4, -2.5, -4, 1, -4.5, -11.5, -16.5, -16, 1, 1, -5.2, -10.5, -12, 1, -1.7, -4.5, -6, -11, 1, 1.7, -8.5, 1, -1.7, -1.5, -2, 1, -2.4, -5.5, 1, 2.4, 1, 2.4, 1.5, -2, 1, -4.5, 1, -4.5, -16, 1, -2.4, 1.5, -2, 1, -4.5, -9.5, -7],
+      "text": [1, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 1, 2, 3, 4, 1, 2, 3, 3, 4, 1, 1, 2, 3, 4, 1, 2, 3, 4, 4, 1, 2, 3, 1, 2, 3, 4, 1, 2, 3, 1, 2, 1, 2, 3, 4, 1, 2, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4],
+      "hovertext": ["Offense_play_count:  1<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count:  2<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count:  3<br />Delta_yards_to_success:  -4.9<br />Down: 2", "Offense_play_count:  4<br />Delta_yards_to_success:  -9.5<br />Down: 3", "Offense_play_count:  5<br />Delta_yards_to_success:  -8.0<br />Down: 4", "Offense_play_count:  6<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count:  7<br />Delta_yards_to_success:  -2.8<br />Down: 2", "Offense_play_count:  8<br />Delta_yards_to_success:  -7.5<br />Down: 3", "Offense_play_count:  9<br />Delta_yards_to_success:  -9.0<br />Down: 4", "Offense_play_count: 10<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 11<br />Delta_yards_to_success:  -3.5<br />Down: 2", "Offense_play_count: 12<br />Delta_yards_to_success:  -5.5<br />Down: 3", "Offense_play_count: 13<br />Delta_yards_to_success:  -1.0<br />Down: 4", "Offense_play_count: 14<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 15<br />Delta_yards_to_success:  -6.3<br />Down: 2", "Offense_play_count: 16<br />Delta_yards_to_success:  -2.5<br />Down: 3", "Offense_play_count: 17<br />Delta_yards_to_success:  -4.0<br />Down: 4", "Offense_play_count: 18<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 19<br />Delta_yards_to_success:  -3.5<br />Down: 2", "Offense_play_count: 20<br />Delta_yards_to_success:  -8.5<br />Down: 3", "Offense_play_count: 21<br />Delta_yards_to_success: -10.0<br />Down: 4", "Offense_play_count: 22<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 23<br />Delta_yards_to_success:  -4.9<br />Down: 2", "Offense_play_count: 24<br />Delta_yards_to_success:  -7.5<br />Down: 3", "Offense_play_count: 25<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 26<br />Delta_yards_to_success:   1.4<br />Down: 2", "Offense_play_count: 27<br />Delta_yards_to_success:  -1.5<br />Down: 3", "Offense_play_count: 28<br />Delta_yards_to_success:  -3.0<br />Down: 4", "Offense_play_count: 29<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 30<br />Delta_yards_to_success:  -3.5<br />Down: 2", "Offense_play_count: 31<br />Delta_yards_to_success: -10.5<br />Down: 3", "Offense_play_count: 32<br />Delta_yards_to_success: -15.5<br />Down: 3", "Offense_play_count: 33<br />Delta_yards_to_success: -15.0<br />Down: 4", "Offense_play_count: 34<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 35<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 36<br />Delta_yards_to_success:  -4.2<br />Down: 2", "Offense_play_count: 37<br />Delta_yards_to_success:  -9.5<br />Down: 3", "Offense_play_count: 38<br />Delta_yards_to_success: -11.0<br />Down: 4", "Offense_play_count: 39<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 40<br />Delta_yards_to_success:  -0.7<br />Down: 2", "Offense_play_count: 41<br />Delta_yards_to_success:  -3.5<br />Down: 3", "Offense_play_count: 42<br />Delta_yards_to_success:  -5.0<br />Down: 4", "Offense_play_count: 43<br />Delta_yards_to_success: -10.0<br />Down: 4", "Offense_play_count: 44<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 45<br />Delta_yards_to_success:   0.7<br />Down: 2", "Offense_play_count: 46<br />Delta_yards_to_success:  -7.5<br />Down: 3", "Offense_play_count: 47<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 48<br />Delta_yards_to_success:  -0.7<br />Down: 2", "Offense_play_count: 49<br />Delta_yards_to_success:  -0.5<br />Down: 3", "Offense_play_count: 50<br />Delta_yards_to_success:  -1.0<br />Down: 4", "Offense_play_count: 51<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 52<br />Delta_yards_to_success:  -1.4<br />Down: 2", "Offense_play_count: 53<br />Delta_yards_to_success:  -4.5<br />Down: 3", "Offense_play_count: 54<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 55<br />Delta_yards_to_success:   1.4<br />Down: 2", "Offense_play_count: 56<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 57<br />Delta_yards_to_success:   1.4<br />Down: 2", "Offense_play_count: 58<br />Delta_yards_to_success:   0.5<br />Down: 3", "Offense_play_count: 59<br />Delta_yards_to_success:  -1.0<br />Down: 4", "Offense_play_count: 60<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 61<br />Delta_yards_to_success:  -3.5<br />Down: 2", "Offense_play_count: 62<br />Delta_yards_to_success:   0.0<br />Down: 2", "Offense_play_count: 63<br />Delta_yards_to_success:  -3.5<br />Down: 3", "Offense_play_count: 64<br />Delta_yards_to_success: -15.0<br />Down: 4", "Offense_play_count: 65<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 66<br />Delta_yards_to_success:  -1.4<br />Down: 2", "Offense_play_count: 67<br />Delta_yards_to_success:   0.5<br />Down: 3", "Offense_play_count: 68<br />Delta_yards_to_success:  -1.0<br />Down: 4", "Offense_play_count: 69<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 70<br />Delta_yards_to_success:  -3.5<br />Down: 2", "Offense_play_count: 71<br />Delta_yards_to_success:  -8.5<br />Down: 3", "Offense_play_count: 72<br />Delta_yards_to_success:  -6.0<br />Down: 4"],
+      "textfont": {
+        "size": 14.6645669291339,
+        "color": "rgba(0,0,0,1)"
+      },
+      "type": "scatter",
+      "mode": "text",
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    }
+  ],
+  layout: {
+    "margin": {
+      "t": 43.2754946727549,
+      "r": 7.30593607305936,
+      "b": 39.6955859969559,
+      "l": 43.1050228310502
+    },
+    "plot_bgcolor": "rgba(229,229,229,1)",
+    "paper_bgcolor": "rgba(255,255,255,1)",
+    "font": {
+      "color": "rgba(0,0,0,1)",
+      "family": "",
+      "size": 14.6118721461187
+    },
+    "title": {
+      "text": "Utah State[0]: Delta yards to success = Nominal yards to success - Yards to success and annotated with Down<br> <sup>2022: wk01 vs Alabama[55]<\/sup>",
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 17.5342465753425
+      },
+      "x": 0,
+      "xref": "paper",
+      "xanchor": "left"
+    },
+    "xaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [-2.55, 75.55],
+      "tickmode": "array",
+      "ticktext": ["0", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55", "60", "65", "70", "75"],
+      "tickvals": [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75],
+      "categoryorder": "array",
+      "categoryarray": ["0", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55", "60", "65", "70", "75"],
+      "nticks": null,
+      "ticks": "outside",
+      "tickcolor": "rgba(51,51,51,1)",
+      "ticklen": 3.65296803652968,
+      "tickwidth": 0.66417600664176,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "tickangle": -0,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": "rgba(204,204,204,1)",
+      "gridwidth": 0.66417600664176,
+      "zeroline": false,
+      "anchor": "y",
+      "title": {
+        "text": "Offensive play count including penalties",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "yaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [-17.445, 3.345],
+      "tickmode": "array",
+      "ticktext": ["-15", "-10", "-5", "0"],
+      "tickvals": [-15, -10, -5, 0],
+      "categoryorder": "array",
+      "categoryarray": ["-15", "-10", "-5", "0"],
+      "nticks": null,
+      "ticks": "outside",
+      "tickcolor": "rgba(51,51,51,1)",
+      "ticklen": 3.65296803652968,
+      "tickwidth": 0.66417600664176,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "tickangle": -0,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": "rgba(204,204,204,1)",
+      "gridwidth": 0.66417600664176,
+      "zeroline": false,
+      "anchor": "x",
+      "title": {
+        "text": "Delta yards needed to be successful",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "shapes": [
+      {
+        "type": "rect",
+        "fillcolor": null,
+        "line": {
+          "color": null,
+          "width": 0,
+          "linetype": []
+        },
+        "yref": "paper",
+        "xref": "paper",
+        "x0": 0,
+        "x1": 1,
+        "y0": 0,
+        "y1": 1
+      }
+    ],
+    "showlegend": true,
+    "legend": {
+      "bgcolor": "rgba(255,255,255,1)",
+      "bordercolor": "transparent",
+      "borderwidth": 1.88976377952756,
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "title": {
+        "text": "Play type<br />Success/Drive number",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      }
+    },
+    "hovermode": "closest",
+    "barmode": "relative"
+  },
+  config: {
+    "doubleClick": "reset",
+    "modeBarButtonsToAdd": ["hoverclosest", "hovercompare"],
+    "showSendToCloud": false
+  },
+  source: "A",
+  attrs: {
+    "6c2873da6dfa": {
+      "yintercept": {},
+      "type": "scatter"
+    },
+    "6c28f9f7b5": {
+      "xintercept": {}
+    },
+    "6c2851d351a0": {
+      "x": {},
+      "y": {},
+      "colour": {}
+    },
+    "6c282ab4448": {
+      "x": {},
+      "y": {},
+      "shape": {},
+      "colour": {},
+      "label": {}
+    },
+    "6c2865e6796b": {
+      "x": {},
+      "y": {},
+      "label": {}
+    }
+  },
+  cur_data: "6c2873da6dfa",
+  visdat: {
+    "6c2873da6dfa": ["function (y) ", "x"],
+    "6c28f9f7b5": ["function (y) ", "x"],
+    "6c2851d351a0": ["function (y) ", "x"],
+    "6c282ab4448": ["function (y) ", "x"],
+    "6c2865e6796b": ["function (y) ", "x"]
+  },
+  highlight: {
+    "on": "plotly_click",
+    "persistent": false,
+    "dynamic": false,
+    "selectize": false,
+    "opacityDim": 0.2,
+    "selected": {
+      "opacity": 1
+    },
+    "debounce": 0
+  },
+  shinyEvents: ["plotly_hover", "plotly_click", "plotly_selected", "plotly_relayout", "plotly_brushed", "plotly_brushing", "plotly_clickannotation", "plotly_doubleclick", "plotly_deselect", "plotly_afterplot", "plotly_sunburstclick"],
+  base_url: "https://plot.ly"
+}

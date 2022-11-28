@@ -2,8 +2,8 @@
   data: [
     {
       "x": [0.5, 11.5],
-      "y": [7.9, 7.9],
-      "text": "yintercept: 7.9",
+      "y": [8.3, 8.3],
+      "text": "yintercept: 8.3",
       "type": "scatter",
       "mode": "lines",
       "line": {
@@ -20,8 +20,8 @@
     },
     {
       "x": [0.5, 11.5],
-      "y": [7.8, 7.8],
-      "text": "yintercept: 7.8",
+      "y": [8.2, 8.2],
+      "text": "yintercept: 8.2",
       "type": "scatter",
       "mode": "lines",
       "line": {
@@ -37,11 +37,11 @@
       "frame": null
     },
     {
-      "x": [1, 2, 3, 4, 5, 6, 7, 8, 10, 11],
-      "y": [6, 15, 6, 7, 10, 5, 17, 3, 9, 1],
-      "text": ["Game_number:  1<br />Opponent: Utah State<br />Penalty_all_count:  6", "Game_number:  2<br />Opponent: Texas<br />Penalty_all_count: 15", "Game_number:  3<br />Opponent: Louisiana Monroe<br />Penalty_all_count:  6", "Game_number:  4<br />Opponent: Vanderbilt<br />Penalty_all_count:  7", "Game_number:  5<br />Opponent: Arkansas<br />Penalty_all_count: 10", "Game_number:  6<br />Opponent: Texas A&M<br />Penalty_all_count:  5", "Game_number:  7<br />Opponent: Tennessee<br />Penalty_all_count: 17", "Game_number:  8<br />Opponent: Mississippi State<br />Penalty_all_count:  3", "Game_number: 10<br />Opponent: LSU<br />Penalty_all_count:  9", "Game_number: 11<br />Opponent: Ole Miss<br />Penalty_all_count:  1"],
+      "x": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+      "y": [6, 15, 6, 7, 10, 5, 17, 3, 6, 9, 5],
+      "text": ["Game_number:  1<br />Opponent: Utah State<br />Penalty_all_count_nona:  6", "Game_number:  2<br />Opponent: Texas<br />Penalty_all_count_nona: 15", "Game_number:  3<br />Opponent: Louisiana Monroe<br />Penalty_all_count_nona:  6", "Game_number:  4<br />Opponent: Vanderbilt<br />Penalty_all_count_nona:  7", "Game_number:  5<br />Opponent: Arkansas<br />Penalty_all_count_nona: 10", "Game_number:  6<br />Opponent: Texas A&M<br />Penalty_all_count_nona:  5", "Game_number:  7<br />Opponent: Tennessee<br />Penalty_all_count_nona: 17", "Game_number:  8<br />Opponent: Mississippi State<br />Penalty_all_count_nona:  3", "Game_number:  9<br />Opponent: BYE<br />Penalty_all_count_nona:  6", "Game_number: 10<br />Opponent: LSU<br />Penalty_all_count_nona:  9", "Game_number: 11<br />Opponent: Ole Miss<br />Penalty_all_count_nona:  5"],
       "type": "scatter",
-      "mode": "lines+markers",
+      "mode": "lines",
       "line": {
         "width": 1.88976377952756,
         "color": "rgba(130,138,143,1)",
@@ -52,6 +52,14 @@
       "xaxis": "x",
       "yaxis": "y",
       "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+      "y": [6, 15, 6, 7, 10, 5, 17, 3, null, 9, 5],
+      "text": ["Game_number:  1<br />Opponent: Utah State<br />Penalty_all_count:  6", "Game_number:  2<br />Opponent: Texas<br />Penalty_all_count: 15", "Game_number:  3<br />Opponent: Louisiana Monroe<br />Penalty_all_count:  6", "Game_number:  4<br />Opponent: Vanderbilt<br />Penalty_all_count:  7", "Game_number:  5<br />Opponent: Arkansas<br />Penalty_all_count: 10", "Game_number:  6<br />Opponent: Texas A&M<br />Penalty_all_count:  5", "Game_number:  7<br />Opponent: Tennessee<br />Penalty_all_count: 17", "Game_number:  8<br />Opponent: Mississippi State<br />Penalty_all_count:  3", "Game_number:  9<br />Opponent: BYE<br />Penalty_all_count: NA", "Game_number: 10<br />Opponent: LSU<br />Penalty_all_count:  9", "Game_number: 11<br />Opponent: Ole Miss<br />Penalty_all_count:  5"],
+      "type": "scatter",
+      "mode": "markers",
       "marker": {
         "autocolorscale": false,
         "color": "rgba(130,138,143,1)",
@@ -63,14 +71,19 @@
           "color": "rgba(130,138,143,1)"
         }
       },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
       "frame": null
     },
     {
-      "x": [1, 2, 3, 4, 5, 6, 7, 8, 10, 11],
-      "y": [6, 15, 6, 6, 10, 5, 17, 3, 9, 1],
-      "text": ["Game_number:  1<br />Opponent: Utah State<br />Penalty_enforced_count:  6", "Game_number:  2<br />Opponent: Texas<br />Penalty_enforced_count: 15", "Game_number:  3<br />Opponent: Louisiana Monroe<br />Penalty_enforced_count:  6", "Game_number:  4<br />Opponent: Vanderbilt<br />Penalty_enforced_count:  6", "Game_number:  5<br />Opponent: Arkansas<br />Penalty_enforced_count: 10", "Game_number:  6<br />Opponent: Texas A&M<br />Penalty_enforced_count:  5", "Game_number:  7<br />Opponent: Tennessee<br />Penalty_enforced_count: 17", "Game_number:  8<br />Opponent: Mississippi State<br />Penalty_enforced_count:  3", "Game_number: 10<br />Opponent: LSU<br />Penalty_enforced_count:  9", "Game_number: 11<br />Opponent: Ole Miss<br />Penalty_enforced_count:  1"],
+      "x": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+      "y": [6, 15, 6, 6, 10, 5, 17, 3, 6, 9, 5],
+      "text": ["Game_number:  1<br />Opponent: Utah State<br />Penalty_enforced_count_nona:  6", "Game_number:  2<br />Opponent: Texas<br />Penalty_enforced_count_nona: 15", "Game_number:  3<br />Opponent: Louisiana Monroe<br />Penalty_enforced_count_nona:  6", "Game_number:  4<br />Opponent: Vanderbilt<br />Penalty_enforced_count_nona:  6", "Game_number:  5<br />Opponent: Arkansas<br />Penalty_enforced_count_nona: 10", "Game_number:  6<br />Opponent: Texas A&M<br />Penalty_enforced_count_nona:  5", "Game_number:  7<br />Opponent: Tennessee<br />Penalty_enforced_count_nona: 17", "Game_number:  8<br />Opponent: Mississippi State<br />Penalty_enforced_count_nona:  3", "Game_number:  9<br />Opponent: BYE<br />Penalty_enforced_count_nona:  6", "Game_number: 10<br />Opponent: LSU<br />Penalty_enforced_count_nona:  9", "Game_number: 11<br />Opponent: Ole Miss<br />Penalty_enforced_count_nona:  5"],
       "type": "scatter",
-      "mode": "lines+markers",
+      "mode": "lines",
       "line": {
         "width": 1.88976377952756,
         "color": "rgba(158,27,50,1)",
@@ -81,6 +94,14 @@
       "xaxis": "x",
       "yaxis": "y",
       "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+      "y": [6, 15, 6, 6, 10, 5, 17, 3, null, 9, 5],
+      "text": ["Game_number:  1<br />Opponent: Utah State<br />Penalty_enforced_count:  6", "Game_number:  2<br />Opponent: Texas<br />Penalty_enforced_count: 15", "Game_number:  3<br />Opponent: Louisiana Monroe<br />Penalty_enforced_count:  6", "Game_number:  4<br />Opponent: Vanderbilt<br />Penalty_enforced_count:  6", "Game_number:  5<br />Opponent: Arkansas<br />Penalty_enforced_count: 10", "Game_number:  6<br />Opponent: Texas A&M<br />Penalty_enforced_count:  5", "Game_number:  7<br />Opponent: Tennessee<br />Penalty_enforced_count: 17", "Game_number:  8<br />Opponent: Mississippi State<br />Penalty_enforced_count:  3", "Game_number:  9<br />Opponent: BYE<br />Penalty_enforced_count: NA", "Game_number: 10<br />Opponent: LSU<br />Penalty_enforced_count:  9", "Game_number: 11<br />Opponent: Ole Miss<br />Penalty_enforced_count:  5"],
+      "type": "scatter",
+      "mode": "markers",
       "marker": {
         "autocolorscale": false,
         "color": "rgba(158,27,50,1)",
@@ -92,6 +113,19 @@
           "color": "rgba(158,27,50,1)"
         }
       },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "visible": false,
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
       "frame": null
     }
   ],
@@ -110,7 +144,7 @@
       "size": 14.6118721461187
     },
     "title": {
-      "text": "Alabama penalties for 2022; Average: enforced = 7.80 (primary team color), all = 7.90 (secondary team color)<br> <sup><\/sup>",
+      "text": "Alabama penalties for 2022; Average: enforced = 8.20 (primary team color), all = 8.30 (secondary team color)<br> <sup><\/sup>",
       "font": {
         "color": "rgba(0,0,0,1)",
         "family": "",
@@ -127,10 +161,10 @@
       "autorange": false,
       "range": [0.5, 11.5],
       "tickmode": "array",
-      "ticktext": ["Utah State", "Texas", "Louisiana Monroe", "Vanderbilt", "Arkansas", "Texas A&M", "Tennessee", "Mississippi State", "LSU", "Ole Miss"],
-      "tickvals": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "ticktext": ["Utah State", "Texas", "Louisiana Monroe", "Vanderbilt", "Arkansas", "Texas A&M", "Tennessee", "Mississippi State", "BYE", "LSU", "Ole Miss"],
+      "tickvals": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
       "categoryorder": "array",
-      "categoryarray": ["Utah State", "Texas", "Louisiana Monroe", "Vanderbilt", "Arkansas", "Texas A&M", "Tennessee", "Mississippi State", "LSU", "Ole Miss"],
+      "categoryarray": ["Utah State", "Texas", "Louisiana Monroe", "Vanderbilt", "Arkansas", "Texas A&M", "Tennessee", "Mississippi State", "BYE", "LSU", "Ole Miss"],
       "nticks": null,
       "ticks": "outside",
       "tickcolor": "rgba(51,51,51,1)",
@@ -166,12 +200,12 @@
       "automargin": true,
       "type": "linear",
       "autorange": false,
-      "range": [0.2, 17.8],
+      "range": [-0.85, 17.85],
       "tickmode": "array",
-      "ticktext": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17"],
-      "tickvals": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17],
+      "ticktext": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17"],
+      "tickvals": [1.11022302462516e-16, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17],
       "categoryorder": "array",
-      "categoryarray": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17"],
+      "categoryarray": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17"],
       "nticks": null,
       "ticks": "outside",
       "tickcolor": "rgba(51,51,51,1)",
@@ -240,42 +274,46 @@
   },
   source: "A",
   attrs: {
-    "303872d65373": {
+    "6c287f442395": {
       "yintercept": {},
       "type": "scatter"
     },
-    "303858e56069": {
+    "6c28745955e7": {
       "yintercept": {}
     },
-    "303828657e83": {
+    "6c2860f0539e": {
       "x": {},
       "label": {},
       "y": {}
     },
-    "3038333b42ba": {
+    "6c287e5a66c5": {
       "x": {},
       "label": {},
       "y": {}
     },
-    "303812c4cec": {
+    "6c286e6d6513": {
       "x": {},
       "label": {},
       "y": {}
     },
-    "3038551a57a0": {
+    "6c28fe27fd": {
       "x": {},
       "label": {},
+      "y": {}
+    },
+    "6c28766c5a27": {
       "y": {}
     }
   },
-  cur_data: "303872d65373",
+  cur_data: "6c287f442395",
   visdat: {
-    "303872d65373": ["function (y) ", "x"],
-    "303858e56069": ["function (y) ", "x"],
-    "303828657e83": ["function (y) ", "x"],
-    "3038333b42ba": ["function (y) ", "x"],
-    "303812c4cec": ["function (y) ", "x"],
-    "3038551a57a0": ["function (y) ", "x"]
+    "6c287f442395": ["function (y) ", "x"],
+    "6c28745955e7": ["function (y) ", "x"],
+    "6c2860f0539e": ["function (y) ", "x"],
+    "6c287e5a66c5": ["function (y) ", "x"],
+    "6c286e6d6513": ["function (y) ", "x"],
+    "6c28fe27fd": ["function (y) ", "x"],
+    "6c28766c5a27": ["function (y) ", "x"]
   },
   highlight: {
     "on": "plotly_click",

@@ -39,9 +39,9 @@
     {
       "x": [0, 1, 2, 3, 4],
       "y": [0, 8, 0, 5, 6],
-      "text": ["Game_number: 0<br />Opponent: Hawai'i<br />Penalty_all_count: 0", "Game_number: 1<br />Opponent: Elon<br />Penalty_all_count: 8", "Game_number: 2<br />Opponent: Wake Forest<br />Penalty_all_count: 0", "Game_number: 3<br />Opponent: Northern Illinois<br />Penalty_all_count: 5", "Game_number: 4<br />Opponent: Alabama<br />Penalty_all_count: 6"],
+      "text": ["Game_number: 0<br />Opponent: Hawai'i<br />Penalty_all_count_nona: 0", "Game_number: 1<br />Opponent: Elon<br />Penalty_all_count_nona: 8", "Game_number: 2<br />Opponent: Wake Forest<br />Penalty_all_count_nona: 0", "Game_number: 3<br />Opponent: Northern Illinois<br />Penalty_all_count_nona: 5", "Game_number: 4<br />Opponent: Alabama<br />Penalty_all_count_nona: 6"],
       "type": "scatter",
-      "mode": "lines+markers",
+      "mode": "lines",
       "line": {
         "width": 1.88976377952756,
         "color": "rgba(134,109,75,1)",
@@ -52,6 +52,14 @@
       "xaxis": "x",
       "yaxis": "y",
       "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [0, 1, 2, 3, 4],
+      "y": [0, 8, 0, 5, 6],
+      "text": ["Game_number: 0<br />Opponent: Hawai'i<br />Penalty_all_count: 0", "Game_number: 1<br />Opponent: Elon<br />Penalty_all_count: 8", "Game_number: 2<br />Opponent: Wake Forest<br />Penalty_all_count: 0", "Game_number: 3<br />Opponent: Northern Illinois<br />Penalty_all_count: 5", "Game_number: 4<br />Opponent: Alabama<br />Penalty_all_count: 6"],
+      "type": "scatter",
+      "mode": "markers",
       "marker": {
         "autocolorscale": false,
         "color": "rgba(134,109,75,1)",
@@ -63,14 +71,19 @@
           "color": "rgba(134,109,75,1)"
         }
       },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
       "frame": null
     },
     {
       "x": [0, 1, 2, 3, 4],
       "y": [0, 6, 0, 5, 6],
-      "text": ["Game_number: 0<br />Opponent: Hawai'i<br />Penalty_enforced_count: 0", "Game_number: 1<br />Opponent: Elon<br />Penalty_enforced_count: 6", "Game_number: 2<br />Opponent: Wake Forest<br />Penalty_enforced_count: 0", "Game_number: 3<br />Opponent: Northern Illinois<br />Penalty_enforced_count: 5", "Game_number: 4<br />Opponent: Alabama<br />Penalty_enforced_count: 6"],
+      "text": ["Game_number: 0<br />Opponent: Hawai'i<br />Penalty_enforced_count_nona: 0", "Game_number: 1<br />Opponent: Elon<br />Penalty_enforced_count_nona: 6", "Game_number: 2<br />Opponent: Wake Forest<br />Penalty_enforced_count_nona: 0", "Game_number: 3<br />Opponent: Northern Illinois<br />Penalty_enforced_count_nona: 5", "Game_number: 4<br />Opponent: Alabama<br />Penalty_enforced_count_nona: 6"],
       "type": "scatter",
-      "mode": "lines+markers",
+      "mode": "lines",
       "line": {
         "width": 1.88976377952756,
         "color": "rgba(0,0,0,1)",
@@ -81,6 +94,14 @@
       "xaxis": "x",
       "yaxis": "y",
       "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [0, 1, 2, 3, 4],
+      "y": [0, 6, 0, 5, 6],
+      "text": ["Game_number: 0<br />Opponent: Hawai'i<br />Penalty_enforced_count: 0", "Game_number: 1<br />Opponent: Elon<br />Penalty_enforced_count: 6", "Game_number: 2<br />Opponent: Wake Forest<br />Penalty_enforced_count: 0", "Game_number: 3<br />Opponent: Northern Illinois<br />Penalty_enforced_count: 5", "Game_number: 4<br />Opponent: Alabama<br />Penalty_enforced_count: 6"],
+      "type": "scatter",
+      "mode": "markers",
       "marker": {
         "autocolorscale": false,
         "color": "rgba(0,0,0,1)",
@@ -92,6 +113,19 @@
           "color": "rgba(0,0,0,1)"
         }
       },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "visible": false,
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
       "frame": null
     }
   ],
@@ -240,42 +274,46 @@
   },
   source: "A",
   attrs: {
-    "54bcaf35891": {
+    "6c286db45300": {
       "yintercept": {},
       "type": "scatter"
     },
-    "54bc666323a9": {
+    "6c286d826ede": {
       "yintercept": {}
     },
-    "54bc22106255": {
+    "6c2853da495e": {
       "x": {},
       "label": {},
       "y": {}
     },
-    "54bc6488857": {
+    "6c28183529e6": {
       "x": {},
       "label": {},
       "y": {}
     },
-    "54bc21706498": {
+    "6c281b374923": {
       "x": {},
       "label": {},
       "y": {}
     },
-    "54bc68952fb": {
+    "6c287b312d11": {
       "x": {},
       "label": {},
+      "y": {}
+    },
+    "6c28659c71f8": {
       "y": {}
     }
   },
-  cur_data: "54bcaf35891",
+  cur_data: "6c286db45300",
   visdat: {
-    "54bcaf35891": ["function (y) ", "x"],
-    "54bc666323a9": ["function (y) ", "x"],
-    "54bc22106255": ["function (y) ", "x"],
-    "54bc6488857": ["function (y) ", "x"],
-    "54bc21706498": ["function (y) ", "x"],
-    "54bc68952fb": ["function (y) ", "x"]
+    "6c286db45300": ["function (y) ", "x"],
+    "6c286d826ede": ["function (y) ", "x"],
+    "6c2853da495e": ["function (y) ", "x"],
+    "6c28183529e6": ["function (y) ", "x"],
+    "6c281b374923": ["function (y) ", "x"],
+    "6c287b312d11": ["function (y) ", "x"],
+    "6c28659c71f8": ["function (y) ", "x"]
   },
   highlight: {
     "on": "plotly_click",

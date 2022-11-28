@@ -21,9 +21,9 @@
     {
       "x": [1, 2, 3, 4, 5],
       "y": [7, 10, 6, 3, 6],
-      "text": ["Game_number: 1<br />Opponent: Cincinnati<br />Penalty_all_count:  7", "Game_number: 2<br />Opponent: South Carolina<br />Penalty_all_count: 10", "Game_number: 3<br />Opponent: Missouri State<br />Penalty_all_count:  6", "Game_number: 4<br />Opponent: Texas A&M<br />Penalty_all_count:  3", "Game_number: 5<br />Opponent: Alabama<br />Penalty_all_count:  6"],
+      "text": ["Game_number: 1<br />Opponent: Cincinnati<br />Penalty_all_count_nona:  7", "Game_number: 2<br />Opponent: South Carolina<br />Penalty_all_count_nona: 10", "Game_number: 3<br />Opponent: Missouri State<br />Penalty_all_count_nona:  6", "Game_number: 4<br />Opponent: Texas A&M<br />Penalty_all_count_nona:  3", "Game_number: 5<br />Opponent: Alabama<br />Penalty_all_count_nona:  6"],
       "type": "scatter",
-      "mode": "lines+markers",
+      "mode": "lines",
       "line": {
         "width": 1.88976377952756,
         "color": "rgba(255,255,255,1)",
@@ -34,6 +34,14 @@
       "xaxis": "x",
       "yaxis": "y",
       "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 2, 3, 4, 5],
+      "y": [7, 10, 6, 3, 6],
+      "text": ["Game_number: 1<br />Opponent: Cincinnati<br />Penalty_all_count:  7", "Game_number: 2<br />Opponent: South Carolina<br />Penalty_all_count: 10", "Game_number: 3<br />Opponent: Missouri State<br />Penalty_all_count:  6", "Game_number: 4<br />Opponent: Texas A&M<br />Penalty_all_count:  3", "Game_number: 5<br />Opponent: Alabama<br />Penalty_all_count:  6"],
+      "type": "scatter",
+      "mode": "markers",
       "marker": {
         "autocolorscale": false,
         "color": "rgba(255,255,255,1)",
@@ -45,14 +53,19 @@
           "color": "rgba(255,255,255,1)"
         }
       },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
       "frame": null
     },
     {
       "x": [1, 2, 3, 4, 5],
       "y": [7, 10, 6, 3, 6],
-      "text": ["Game_number: 1<br />Opponent: Cincinnati<br />Penalty_enforced_count:  7", "Game_number: 2<br />Opponent: South Carolina<br />Penalty_enforced_count: 10", "Game_number: 3<br />Opponent: Missouri State<br />Penalty_enforced_count:  6", "Game_number: 4<br />Opponent: Texas A&M<br />Penalty_enforced_count:  3", "Game_number: 5<br />Opponent: Alabama<br />Penalty_enforced_count:  6"],
+      "text": ["Game_number: 1<br />Opponent: Cincinnati<br />Penalty_enforced_count_nona:  7", "Game_number: 2<br />Opponent: South Carolina<br />Penalty_enforced_count_nona: 10", "Game_number: 3<br />Opponent: Missouri State<br />Penalty_enforced_count_nona:  6", "Game_number: 4<br />Opponent: Texas A&M<br />Penalty_enforced_count_nona:  3", "Game_number: 5<br />Opponent: Alabama<br />Penalty_enforced_count_nona:  6"],
       "type": "scatter",
-      "mode": "lines+markers",
+      "mode": "lines",
       "line": {
         "width": 1.88976377952756,
         "color": "rgba(157,34,53,1)",
@@ -63,6 +76,14 @@
       "xaxis": "x",
       "yaxis": "y",
       "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 2, 3, 4, 5],
+      "y": [7, 10, 6, 3, 6],
+      "text": ["Game_number: 1<br />Opponent: Cincinnati<br />Penalty_enforced_count:  7", "Game_number: 2<br />Opponent: South Carolina<br />Penalty_enforced_count: 10", "Game_number: 3<br />Opponent: Missouri State<br />Penalty_enforced_count:  6", "Game_number: 4<br />Opponent: Texas A&M<br />Penalty_enforced_count:  3", "Game_number: 5<br />Opponent: Alabama<br />Penalty_enforced_count:  6"],
+      "type": "scatter",
+      "mode": "markers",
       "marker": {
         "autocolorscale": false,
         "color": "rgba(157,34,53,1)",
@@ -74,6 +95,20 @@
           "color": "rgba(157,34,53,1)"
         }
       },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "visible": false,
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "mode": "",
       "frame": null
     }
   ],
@@ -148,12 +183,12 @@
       "automargin": true,
       "type": "linear",
       "autorange": false,
-      "range": [2.65, 10.35],
+      "range": [-0.5, 10.5],
       "tickmode": "array",
-      "ticktext": ["3", "4", "5", "6", "7", "8", "9", "10"],
-      "tickvals": [3, 4, 5, 6, 7, 8, 9, 10],
+      "ticktext": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
+      "tickvals": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
       "categoryorder": "array",
-      "categoryarray": ["3", "4", "5", "6", "7", "8", "9", "10"],
+      "categoryarray": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
       "nticks": null,
       "ticks": "outside",
       "tickcolor": "rgba(51,51,51,1)",
@@ -222,42 +257,46 @@
   },
   source: "A",
   attrs: {
-    "231c34af5890": {
+    "6c282923232d": {
       "yintercept": {},
       "type": "scatter"
     },
-    "231c77de1650": {
+    "6c2864ea6970": {
       "yintercept": {}
     },
-    "231c2c61468e": {
+    "6c2859e8648b": {
       "x": {},
       "label": {},
       "y": {}
     },
-    "231c3a044175": {
+    "6c2824587dc2": {
       "x": {},
       "label": {},
       "y": {}
     },
-    "231c24cc46a4": {
+    "6c282a786059": {
       "x": {},
       "label": {},
       "y": {}
     },
-    "231c7cc296a": {
+    "6c284db66964": {
       "x": {},
       "label": {},
+      "y": {}
+    },
+    "6c282e4612b5": {
       "y": {}
     }
   },
-  cur_data: "231c34af5890",
+  cur_data: "6c282923232d",
   visdat: {
-    "231c34af5890": ["function (y) ", "x"],
-    "231c77de1650": ["function (y) ", "x"],
-    "231c2c61468e": ["function (y) ", "x"],
-    "231c3a044175": ["function (y) ", "x"],
-    "231c24cc46a4": ["function (y) ", "x"],
-    "231c7cc296a": ["function (y) ", "x"]
+    "6c282923232d": ["function (y) ", "x"],
+    "6c2864ea6970": ["function (y) ", "x"],
+    "6c2859e8648b": ["function (y) ", "x"],
+    "6c2824587dc2": ["function (y) ", "x"],
+    "6c282a786059": ["function (y) ", "x"],
+    "6c284db66964": ["function (y) ", "x"],
+    "6c282e4612b5": ["function (y) ", "x"]
   },
   highlight: {
     "on": "plotly_click",

@@ -21,9 +21,9 @@
     {
       "x": [1, 2],
       "y": [6, 15],
-      "text": ["Game_number: 1<br />Opponent: Utah State<br />Penalty_all_count:  6", "Game_number: 2<br />Opponent: Texas<br />Penalty_all_count: 15"],
+      "text": ["Game_number: 1<br />Opponent: Utah State<br />Penalty_all_count_nona:  6", "Game_number: 2<br />Opponent: Texas<br />Penalty_all_count_nona: 15"],
       "type": "scatter",
-      "mode": "lines+markers",
+      "mode": "lines",
       "line": {
         "width": 1.88976377952756,
         "color": "rgba(130,138,143,1)",
@@ -34,6 +34,14 @@
       "xaxis": "x",
       "yaxis": "y",
       "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 2],
+      "y": [6, 15],
+      "text": ["Game_number: 1<br />Opponent: Utah State<br />Penalty_all_count:  6", "Game_number: 2<br />Opponent: Texas<br />Penalty_all_count: 15"],
+      "type": "scatter",
+      "mode": "markers",
       "marker": {
         "autocolorscale": false,
         "color": "rgba(130,138,143,1)",
@@ -45,14 +53,19 @@
           "color": "rgba(130,138,143,1)"
         }
       },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
       "frame": null
     },
     {
       "x": [1, 2],
       "y": [6, 15],
-      "text": ["Game_number: 1<br />Opponent: Utah State<br />Penalty_enforced_count:  6", "Game_number: 2<br />Opponent: Texas<br />Penalty_enforced_count: 15"],
+      "text": ["Game_number: 1<br />Opponent: Utah State<br />Penalty_enforced_count_nona:  6", "Game_number: 2<br />Opponent: Texas<br />Penalty_enforced_count_nona: 15"],
       "type": "scatter",
-      "mode": "lines+markers",
+      "mode": "lines",
       "line": {
         "width": 1.88976377952756,
         "color": "rgba(158,27,50,1)",
@@ -63,6 +76,14 @@
       "xaxis": "x",
       "yaxis": "y",
       "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 2],
+      "y": [6, 15],
+      "text": ["Game_number: 1<br />Opponent: Utah State<br />Penalty_enforced_count:  6", "Game_number: 2<br />Opponent: Texas<br />Penalty_enforced_count: 15"],
+      "type": "scatter",
+      "mode": "markers",
       "marker": {
         "autocolorscale": false,
         "color": "rgba(158,27,50,1)",
@@ -74,14 +95,28 @@
           "color": "rgba(158,27,50,1)"
         }
       },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "visible": false,
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "mode": "",
       "frame": null
     }
   ],
   layout: {
     "margin": {
-      "t": 40.8401826484018,
+      "t": 43.2754946727549,
       "r": 7.30593607305936,
-      "b": 37.2602739726027,
+      "b": 39.6955859969559,
       "l": 37.2602739726027
     },
     "plot_bgcolor": "rgba(235,235,235,1)",
@@ -148,12 +183,12 @@
       "automargin": true,
       "type": "linear",
       "autorange": false,
-      "range": [5.55, 15.45],
+      "range": [-0.75, 15.75],
       "tickmode": "array",
-      "ticktext": ["6", "7", "8", "9", "10", "11", "12", "13", "14", "15"],
-      "tickvals": [6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+      "ticktext": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"],
+      "tickvals": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
       "categoryorder": "array",
-      "categoryarray": ["6", "7", "8", "9", "10", "11", "12", "13", "14", "15"],
+      "categoryarray": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"],
       "nticks": null,
       "ticks": "outside",
       "tickcolor": "rgba(51,51,51,1)",
@@ -222,42 +257,46 @@
   },
   source: "A",
   attrs: {
-    "4a1c2889219": {
+    "6c282e125f8c": {
       "yintercept": {},
       "type": "scatter"
     },
-    "4a1c384536fd": {
+    "6c284b64285a": {
       "yintercept": {}
     },
-    "4a1c4c1a58b0": {
+    "6c283c5b2251": {
       "x": {},
       "label": {},
       "y": {}
     },
-    "4a1c591f6f8a": {
+    "6c284d373500": {
       "x": {},
       "label": {},
       "y": {}
     },
-    "4a1c338479e2": {
+    "6c28594d3acd": {
       "x": {},
       "label": {},
       "y": {}
     },
-    "4a1c5a785592": {
+    "6c284bb36a36": {
       "x": {},
       "label": {},
+      "y": {}
+    },
+    "6c2866781e41": {
       "y": {}
     }
   },
-  cur_data: "4a1c2889219",
+  cur_data: "6c282e125f8c",
   visdat: {
-    "4a1c2889219": ["function (y) ", "x"],
-    "4a1c384536fd": ["function (y) ", "x"],
-    "4a1c4c1a58b0": ["function (y) ", "x"],
-    "4a1c591f6f8a": ["function (y) ", "x"],
-    "4a1c338479e2": ["function (y) ", "x"],
-    "4a1c5a785592": ["function (y) ", "x"]
+    "6c282e125f8c": ["function (y) ", "x"],
+    "6c284b64285a": ["function (y) ", "x"],
+    "6c283c5b2251": ["function (y) ", "x"],
+    "6c284d373500": ["function (y) ", "x"],
+    "6c28594d3acd": ["function (y) ", "x"],
+    "6c284bb36a36": ["function (y) ", "x"],
+    "6c2866781e41": ["function (y) ", "x"]
   },
   highlight: {
     "on": "plotly_click",
