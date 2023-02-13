@@ -1,7 +1,9 @@
 using Revise
 includet("processGame.jl")
 using Logging
+using Base.Threads: @threads, @spawn
 
+println("Number of threads: ", Threads.nthreads())
 ############################################################################################################
 #NOTE: 
 #school_colors.csv uses ; as delimiter
@@ -23,7 +25,7 @@ function run_all_games()
     overwrite = false
     # overwrite = true
     
-    for game in dirContents
+    @threads for game in dirContents
         game_split = split(game, r"[\\/]")
         #println("Split directory: $game_split")
         game_file = last(game_split)
@@ -68,7 +70,58 @@ dirContents[205]
 # ≈ + 123
 dirContents[328]
 
-
-i=323
+#Appalachian State_2018_wk14_regular.csv
+i=1413
 dirContents[i]
 @time run_game(i)
+
+############################################################################################################
+GET_NAMES = true
+# GET_NAMES = false
+
+global names_df = DataFrame(Name = String[], Txt = String[])
+
+function add_names_df!(names_df, name, txt)
+    global names_df = vcat(names_df, DataFrame(Name = [name], Txt = [txt]))
+end
+
+dirContents = readdir("../../data/unprocessed", join=true)
+process_game(dirContents[1])
+
+# dirContents[1587:end]
+#Get names
+function run_all_games_names()
+    dirContents = readdir("../../data/unprocessed", join=true)
+
+    # @Logging.configure(level=DEBUG)
+    # Logging.configure(filename="../notes/logfile.log")
+
+    # names_df = DataFrame(Name = String[], Txt = String[])
+
+    for j in 7500:500:10000
+    # j = 7500
+        i = j
+        lastval = j < 10000 ? j+500 : length(dirContents)
+        # for game in dirContents[j+1:j+500]
+        @threads for game in dirContents[j+1:lastval]
+            i += 1
+            game_split = split(game, r"[\\/]")
+            game_file = last(game_split)
+            processed_game = split(game_file, ".")
+            processed_game = processed_game[1]*"-processed."*processed_game[2]
+            println("Game number: $i, Thread: ", Threads.threadid())
+            println("Processing game: $game")
+            process_game(game)
+            
+        end
+        CSV.write("../../data/all_games/names_play_text-$(j+500).csv", names_df)
+    end
+end
+@time run_all_games_names()
+
+
+
+
+# dirContents = readdir("../../data/unprocessed", join=true)
+# dirContents[562]
+# process_game(dirContents[1])

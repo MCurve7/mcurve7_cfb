@@ -1,10 +1,36 @@
 #used for testing code
 
 using Revise
-using DataFrames
+includet("processGame.jl")
+# using DataFrames
 import FloatingTableView
 # using FLoops
-includet("processGame.jl")
+
+
+
+
+
+###################################################################################################################################
+dirContents = readdir("../../data/unprocessed", join=true)
+# game = dirContents[1588]
+game = dirContents[4193]
+
+df = CSV.read(game, DataFrame; normalizenames=true)
+df = select(df, Not(:PPA))
+df = transform(df, :Clock => ByRow(clock_reformat) => :Clock)
+df = hcat(df, who_scored(df))
+df = transform(df, AsTable([:Down, :Distance]) => ByRow(yards_to_success) => :Yards_to_success)
+df = transform(df, AsTable([:Play_type, :Down, :Play_text, :Yards_gained, :Distance, :Scoring, :Who_scored]) => ByRow(successful) => :Success) #Fumble Return Touchdown use who_scored
+df = transform(df, AsTable([:Play_type, :Yards_gained, :Distance, :Who_scored, :Success]) => ByRow(tdfirst) => :TD_first)
+scoredrive(df)
+df = hcat(df, scoredrive(df)) # need to check for punt score and mark as false
+df = transform(df, AsTable([:Play_text, :Play_type, :Offense, :Defense]) => ByRow(play_info) => 
+    [:Runner, :Passer, :Receiver, :Interceptor, :Tackler, :Forcer, :Fumbler, :Recoverer, :PAT_kicker, :PAT_type, :Two_point, :Two_point_type, 
+    :Two_point_runner, :Two_point_passer, :Two_point_receiver, :Kicker, :Kick_type, :Returner, :Blocker, :FG_type, :Punter, :Punt_type, :Timeout_team, :Timeout_time])
+df = transform(df, AsTable([:Play_text, :Offense, :Defense]) => ByRow(foul_analysis) => 
+        [:Penalty1_type, :Penalty1_status, :Penalty1_team, :Penalty1_transgressor, :Penalty2_type, :Penalty2_status, :Penalty2_team, :Penalty2_transgressor, :Penalty3_type, :Penalty3_status, :Penalty3_team, :Penalty3_transgressor])
+
+###################################################################################################################################
 
 #using StringEncodings
 

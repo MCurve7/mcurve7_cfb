@@ -141,13 +141,7 @@ end
 
 
 function get_team_name(str, offense, off_abbrv_catch, defense, def_abbrv_catch)
-    # if occursin(Regex(str), off_abbrv_catch)
-    #     offense
-    # elseif occursin(Regex(str), def_abbrv_catch)
-    #     defense
-    # else
-    #     "No data"
-    # end
+    #Check lengths to make sure I don't mistake Florida and Florida St, etc.
     if length(defense) < length(offense)
         if !isnothing(match(Regex(off_abbrv_catch), str))
             offense
@@ -245,6 +239,9 @@ function declined_enforced_aux(txt, offense, defense, off_abbrv_catch, def_abbrv
         push!(foul_team, team) #m[1])
         push!(foul_team, team) #m[5])
         push!(foul_team, team) #m[9])
+        GET_NAMES && add_names_df!(names_df, m[3], txt)
+        GET_NAMES && add_names_df!(names_df, m[7], txt)
+        GET_NAMES && add_names_df!(names_df, m[11], txt)
         push!(foul_transgressor, process_name(m[3]))
         push!(foul_transgressor, process_name(m[7]))
         push!(foul_transgressor, process_name(m[11]))
@@ -288,13 +285,18 @@ function declined_enforced_aux(txt, offense, defense, off_abbrv_catch, def_abbrv
 
         #Find transgressor
         if occursin(enforced_declined_on_regex, txt_penalty)
-            last_name, first_name = strip.(split(match(enforced_declined_on_regex, txt_penalty)[1], ","))
+            tname = match(enforced_declined_on_regex, txt_penalty)[1]
+            GET_NAMES && add_names_df!(names_df, tname, txt)
+            last_name, first_name = strip.(split(tname, ","))
             push!(foul_transgressor, first_name*" "*titlecase(last_name))
             push!(foul_transgressor, "No data")
         elseif occursin(enforced_declined_enforced_regex, txt_penalty)
-            push!(foul_transgressor, strip(match(enforced_declined_enforced_regex, txt_penalty)[1]))
+            tname = match(enforced_declined_enforced_regex, txt_penalty)[1]
+            GET_NAMES && add_names_df!(names_df, tname, txt)
+            push!(foul_transgressor, strip(tname))
             push!(foul_transgressor, "No data")
         else
+            GET_NAMES && add_names_df!(names_df, "No data", txt)
             push!(foul_transgressor, "No data")
             push!(foul_transgressor, "No data")
         end
@@ -355,16 +357,20 @@ function declined_enforced_aux(txt, offense, defense, off_abbrv_catch, def_abbrv
         push!(foul_team, team) #m[4])
         push!(foul_team, team) #m[1])
         if match1
+            GET_NAMES && add_names_df!(names_df, m[6], txt)
+            GET_NAMES && add_names_df!(names_df, m[3], txt)
             push!(foul_transgressor, process_name(m[6]))
             push!(foul_transgressor, process_name(m[3]))
         else
             #TIGHTEN: I don't think I need the two different cases since process_name converts both
+            GET_NAMES && add_names_df!(names_df, m[6], txt)
+            GET_NAMES && add_names_df!(names_df, m[3], txt)
             push!(foul_transgressor, process_name(m[6]))
             push!(foul_transgressor, process_name(m[3]))
         end
     else
         println("Missed: declined_enforced_aux")
-        @warn("Missed: declined_enforced_aux")
+        # @warn("Missed: declined_enforced_aux")
     end
     
     foul_type, foul_status, foul_team, foul_transgressor
@@ -406,6 +412,7 @@ function declinedaux_triple_regex(txt, offense, defense, off_abbrv_catch, def_ab
             push!(foul_team, team) #m[5])
             push!(foul_transgressor, "No data")
             push!(foul_transgressor, "No data")
+            GET_NAMES && add_names_df!(names_df, m[7], txt)
             push!(foul_transgressor, m[7])
             break
         end
@@ -464,6 +471,7 @@ function declinedaux_declined_accepted(txt, offense, defense, off_abbrv_catch, d
             push!(foul_team, team) #m[1])
             push!(foul_team, team) #m[3])
             push!(foul_transgressor, "No data")
+            GET_NAMES && add_names_df!(names_df, m[5], txt)
             push!(foul_transgressor, m[5])
         # println("declined_accepted_name_regex")
             break
@@ -479,6 +487,7 @@ function declinedaux_declined_accepted(txt, offense, defense, off_abbrv_catch, d
             push!(foul_team, team) #m[1])
             push!(foul_team, team) #m[3])
             push!(foul_transgressor, "No data")
+            GET_NAMES && add_names_df!(names_df, m[5], txt)
             push!(foul_transgressor, process_name(m[5]))
             # last_name, first_name = strip.(split(m[5], ","))
             # push!(foul_transgressor, titlecase(first_name)*" "*titlecase(last_name))
@@ -496,6 +505,7 @@ function declinedaux_declined_accepted(txt, offense, defense, off_abbrv_catch, d
             push!(foul_team, team) #m[1])
             push!(foul_team, team) #m[3])
             push!(foul_transgressor, "No data")
+            GET_NAMES && add_names_df!(names_df, m[5], txt)
             push!(foul_transgressor, process_name(m[5]))
             # last_name, first_name = strip.(split(m[5], ","))
             # push!(foul_transgressor, titlecase(first_name)*" "*titlecase(last_name))
@@ -512,6 +522,8 @@ function declinedaux_declined_accepted(txt, offense, defense, off_abbrv_catch, d
             push!(foul_status, "enforced")
             push!(foul_team, team) #m[1])
             push!(foul_team, team) #m[3])
+            GET_NAMES && add_names_df!(names_df, m[3], txt)
+            GET_NAMES && add_names_df!(names_df, m[6], txt)
             push!(foul_transgressor, process_name(m[3]))
             push!(foul_transgressor, process_name(m[6]))
             # last_name, first_name = strip.(split(m[3], ","))
@@ -532,6 +544,7 @@ function declinedaux_declined_accepted(txt, offense, defense, off_abbrv_catch, d
             push!(foul_status, "enforced")
             push!(foul_team, team) #m[1])
             push!(foul_team, team) #m[3])
+            GET_NAMES && add_names_df!(names_df, "No data", txt)
             push!(foul_transgressor, "No data")
             push!(foul_transgressor, "No data")
             break
@@ -570,6 +583,7 @@ function declinedaux_declined_accepted_specialcase(txt, offense, defense, off_ab
             push!(foul_team, team) #m[1])
             push!(foul_team, team) #m[3])
             push!(foul_transgressor, "No data")
+            GET_NAMES && add_names_df!(names_df, m[3], txt)
             push!(foul_transgressor, process_name(m[3]))
             # last_name, first_name = strip.(split(m[3], ","))
             # push!(foul_transgressor, titlecase(first_name)*" "*titlecase(last_name))
@@ -610,6 +624,7 @@ function declinedaux_accepted_declined(txt, offense, defense, off_abbrv_catch, d
             push!(foul_status, "declined")
             push!(foul_team, team) #m[1])
             push!(foul_team, team) #m[3])
+            GET_NAMES && add_names_df!(names_df, "No data", txt)
             push!(foul_transgressor, "No data")
             push!(foul_transgressor, "No data")
             break
@@ -623,6 +638,7 @@ function declinedaux_accepted_declined(txt, offense, defense, off_abbrv_catch, d
             push!(foul_status, "declined")
             push!(foul_team, team) 
             push!(foul_team, team) 
+            GET_NAMES && add_names_df!(names_df, m[3], txt)
             push!(foul_transgressor, m[3])
             push!(foul_transgressor, "No data")
             break
@@ -636,6 +652,7 @@ function declinedaux_accepted_declined(txt, offense, defense, off_abbrv_catch, d
             push!(foul_status, "declined")
             push!(foul_team, team) #m[1])
             push!(foul_team, team) #m[3])
+            GET_NAMES && add_names_df!(names_df, m[3], txt)
             push!(foul_transgressor, process_name(m[3]))
             # last_name, first_name = strip.(split(m[3], ","))
             # push!(foul_transgressor, titlecase(first_name)*" "*titlecase(last_name))
@@ -679,6 +696,7 @@ function declinedaux_accepted_declined_specialcase1(txt, offense, defense, off_a
             #     push!(foul_team, "No data")
             #     # println("No data")
             # end
+            GET_NAMES && add_names_df!(names_df, "No data", txt)
             push!(foul_transgressor, "No data")
             push!(foul_transgressor, "No data")
             break
@@ -702,6 +720,7 @@ function declinedaux_accepted_declined_specialcase1(txt, offense, defense, off_a
                 push!(foul_team, "No data")
                 # println("No data")
             end
+            GET_NAMES && add_names_df!(names_df, "No data", txt)
             push!(foul_transgressor, "No data")
             push!(foul_transgressor, "No data")
             break
@@ -719,6 +738,7 @@ function declinedaux_accepted_declined_specialcase1(txt, offense, defense, off_a
             else
                 push!(foul_team, "No data")
             end
+            GET_NAMES && add_names_df!(names_df, m[3], txt)
             push!(foul_transgressor, process_name(m[3]))
             # last_name, first_name = strip.(split(m[3], ","))
             # push!(foul_transgressor, titlecase(first_name)*" "*titlecase(last_name))
@@ -736,6 +756,7 @@ function declinedaux_accepted_declined_specialcase1(txt, offense, defense, off_a
             push!(foul_status, "declined")
             push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
             push!(foul_team, get_team_name(m[4], offense, off_abbrv_catch, defense, def_abbrv_catch))
+            GET_NAMES && add_names_df!(names_df, m[3], txt)
             push!(foul_transgressor, process_name(m[3]))
             push!(foul_transgressor, "No data")
             break
@@ -771,6 +792,7 @@ function declinedaux_accepted_declined_specialcase2(txt, offense, defense, off_a
             push!(foul_type, m[2])
             push!(foul_status, "declined")
             push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
+            GET_NAMES && add_names_df!(names_df, "No data", txt)
             push!(foul_transgressor, "No data")
             break
         end
@@ -806,6 +828,7 @@ function declinedaux_declined_na(txt, offense, defense, off_abbrv_catch, def_abb
             push!(foul_type, m[2])
             push!(foul_status, "declined")
             push!(foul_team, team)
+            GET_NAMES && add_names_df!(names_df, "No data", txt)
             push!(foul_transgressor, "No data")
             break
         end
@@ -815,6 +838,7 @@ function declinedaux_declined_na(txt, offense, defense, off_abbrv_catch, def_abb
             push!(foul_type, "No data")
             push!(foul_status, "declined")
             push!(foul_team, team)
+            GET_NAMES && add_names_df!(names_df, "No data", txt)
             push!(foul_transgressor, "No data")
             break
         end
@@ -826,6 +850,7 @@ function declinedaux_declined_na(txt, offense, defense, off_abbrv_catch, def_abb
             push!(foul_type, m[2])
             push!(foul_status, "declined")
             push!(foul_team, team)
+            GET_NAMES && add_names_df!(names_df, "No data", txt)
             push!(foul_transgressor, "No data")
             break
         end
@@ -837,6 +862,7 @@ function declinedaux_declined_na(txt, offense, defense, off_abbrv_catch, def_abb
             push!(foul_type, "No data")
             push!(foul_status, "declined")
             push!(foul_team, team)
+            GET_NAMES && add_names_df!(names_df, "No data", txt)
             push!(foul_transgressor, "No data")
         end
     end
@@ -871,6 +897,7 @@ function declinedaux_declined_team(txt, offense, defense, off_abbrv_catch, def_a
             push!(foul_type, m[2])
             push!(foul_status, "declined")
             push!(foul_team, team)
+            GET_NAMES && add_names_df!(names_df, "No data", txt)
             push!(foul_transgressor, "No data")
             break
         end
@@ -908,6 +935,7 @@ function declinedaux_declined_accepted_yards(txt, offense, defense, off_abbrv_ca
                 push!(foul_team, "No data")
                 # println("No data")
             end
+            GET_NAMES && add_names_df!(names_df, "No data", txt)
             push!(foul_transgressor, "No data")
             push!(foul_transgressor, "No data")
             break
@@ -930,6 +958,7 @@ function declinedaux_declined_accepted_yards(txt, offense, defense, off_abbrv_ca
                 push!(foul_team, "No data")
                 # println("No data")
             end
+            GET_NAMES && add_names_df!(names_df, "No data", txt)
             push!(foul_transgressor, "No data")
             push!(foul_transgressor, "No data")
             break
@@ -970,6 +999,7 @@ function declinedaux_declined_yards(txt, offense, defense, off_abbrv_catch, def_
             end
             push!(foul_status, "declined")
             push!(foul_team, team)
+            GET_NAMES && add_names_df!(names_df, "No data", txt)
             push!(foul_transgressor, "No data")
             break
         end
@@ -985,6 +1015,7 @@ function declinedaux_declined_yards(txt, offense, defense, off_abbrv_catch, def_
             push!(foul_status, "declined")
             push!(foul_team, team)
             push!(foul_team, team)
+            GET_NAMES && add_names_df!(names_df, "No data", txt)
             push!(foul_transgressor, "No data")
             push!(foul_transgressor, "No data")
             break
@@ -1002,6 +1033,7 @@ function declinedaux_declined_yards(txt, offense, defense, off_abbrv_catch, def_
             push!(foul_team, team)
             push!(foul_team, team)
             push!(foul_transgressor, "No data")
+            GET_NAMES && add_names_df!(names_df, m[4], txt)
             push!(foul_transgressor, process_name(m[4]))
             break
         end
@@ -1016,6 +1048,7 @@ function declinedaux_declined_yards(txt, offense, defense, off_abbrv_catch, def_
                 push!(foul_type, m[2])
                 push!(foul_status, "declined")
                 push!(foul_team, team)
+                GET_NAMES && add_names_df!(names_df, m[3], txt)
                 push!(foul_transgressor, process_name(m[3]))
                 break
             end
@@ -1031,6 +1064,7 @@ function declinedaux_declined_yards(txt, offense, defense, off_abbrv_catch, def_
                 push!(foul_type, m[2])
                 push!(foul_status, "declined")
                 push!(foul_team, team)
+                GET_NAMES && add_names_df!(names_df, m[3], txt)
                 push!(foul_transgressor, process_name(m[3]))
                 break
             end
@@ -1045,6 +1079,7 @@ function declinedaux_declined_yards(txt, offense, defense, off_abbrv_catch, def_
                 push!(foul_type, m[2])
                 push!(foul_status, "declined")
                 push!(foul_team, team)
+                GET_NAMES && add_names_df!(names_df, "No data", txt)
                 push!(foul_transgressor, "No data")
                 break
             end
@@ -1079,6 +1114,7 @@ function declinedaux_declined_no_paraenthesis(txt, offense, defense, off_abbrv_c
             push!(foul_type, m[2])
             push!(foul_status, "declined")
             push!(foul_team, team)
+            GET_NAMES && add_names_df!(names_df, "No data", txt)
             push!(foul_transgressor, "No data")
             break
         end
@@ -1116,6 +1152,7 @@ function declinedaux_penalty_team_team(txt, offense, defense, off_abbrv_catch, d
             push!(foul_team, team)
             push!(foul_team, team)
             push!(foul_transgressor, "No data")
+            GET_NAMES && add_names_df!(names_df, m[5], txt)
             push!(foul_transgressor, process_name(m[5]))
             # last_name, first_name = strip.(split(m[5], ","))
             # push!(foul_transgressor, titlecase(first_name)*" "*titlecase(last_name))
@@ -1158,6 +1195,7 @@ function declinedaux_team_penalty_penalty_or_name(txt, offense, defense, off_abb
             push!(foul_team, team)
             push!(foul_team, team)
             push!(foul_transgressor, "No data")
+            GET_NAMES && add_names_df!(names_df, m[4], txt)
             push!(foul_transgressor, m[4])
             break
         end
@@ -1170,6 +1208,7 @@ function declinedaux_team_penalty_penalty_or_name(txt, offense, defense, off_abb
             push!(foul_type, m[2])
             push!(foul_status, "declined")
             push!(foul_team, team)
+            GET_NAMES && add_names_df!(names_df, m[3], txt)
             push!(foul_transgressor, m[3])
             break
         end
@@ -1207,9 +1246,11 @@ function declinedaux_team_penalty_penalty_on(txt, offense, defense, off_abbrv_ca
             push!(foul_status, "enforced")
             push!(foul_team, team)
             push!(foul_team, team)
+            GET_NAMES && add_names_df!(names_df, m[4], txt)
             push!(foul_transgressor, process_name(m[4]))
             # last_name, first_name = strip.(split(m[4], ","))
             # push!(foul_transgressor, titlecase(first_name)*" "*titlecase(last_name))
+            GET_NAMES && add_names_df!(names_df, m[5], txt)
             push!(foul_transgressor, m[5])
             break
         end
@@ -1246,6 +1287,7 @@ function declinedaux_team_penalty_name_declined(txt, offense, defense, off_abbrv
             push!(foul_type, m[2])
             push!(foul_status, "declined")
             push!(foul_team, team)
+            GET_NAMES && add_names_df!(names_df, m[3], txt)
             push!(foul_transgressor, m[3])
             break
         end
@@ -1276,6 +1318,7 @@ function declinedaux_penalty_team_accepted_revname_team_declined(txt, offense, d
             push!(foul_status, "declined")
             push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
             push!(foul_team, get_team_name(m[4], offense, off_abbrv_catch, defense, def_abbrv_catch))
+            GET_NAMES && add_names_df!(names_df, m[3], txt)
             push!(foul_transgressor, process_name(m[3]))
             push!(foul_transgressor, "No data")
             break
@@ -1322,6 +1365,7 @@ function declinedaux_penalty_safety(txt, offense, defense, off_abbrv_catch, def_
             push!(foul_type, m[2])
             push!(foul_status, "declined")
             push!(foul_team, team)
+            GET_NAMES && add_names_df!(names_df, m[3], txt)
             push!(foul_transgressor, process_name(m[3]))
             # last_name, first_name = strip.(split(m[3], ","))
             # push!(foul_transgressor, titlecase(first_name)*" "*titlecase(last_name))
@@ -1351,6 +1395,7 @@ function declinedaux_team_penalty_caprevname_paren_name_declined(txt, offense, d
             push!(foul_type, m[2])
             push!(foul_status, "declined")
             push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
+            GET_NAMES && add_names_df!(names_df, m[4], txt)
             push!(foul_transgressor, m[4])
             break
         end
@@ -1378,6 +1423,7 @@ function declinedaux_team_penalty_declined(txt, offense, defense, off_abbrv_catc
             push!(foul_type, m[2])
             push!(foul_status, "declined")
             push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
+            GET_NAMES && add_names_df!(names_df, "No data", txt)
             push!(foul_transgressor, "No data")
             break
         end
@@ -1405,6 +1451,7 @@ function declinedaux_penalty_team_declined(txt, offense, defense, off_abbrv_catc
             push!(foul_type, m[2])
             push!(foul_status, "declined")
             push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
+            GET_NAMES && add_names_df!(names_df, "No data", txt)
             push!(foul_transgressor, "No data")
             break
         end
@@ -1435,6 +1482,7 @@ function declinedaux_penalty_team_foul_team_foul_declined(txt, offense, defense,
             push!(foul_status, "declined")
             push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
             push!(foul_team, get_team_name(m[3], offense, off_abbrv_catch, defense, def_abbrv_catch))
+            GET_NAMES && add_names_df!(names_df, "No data", txt)
             push!(foul_transgressor, "No data")
             push!(foul_transgressor, "No data")
             break
@@ -1920,6 +1968,8 @@ function offsetting_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch,
                     push!(foul_status, "off-setting")
                     push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
                     push!(foul_team, get_team_name(m[4], offense, off_abbrv_catch, defense, def_abbrv_catch))
+                    GET_NAMES && add_names_df!(names_df, m[3], txt)
+                    GET_NAMES && add_names_df!(names_df, m[6], txt)
                     push!(foul_transgressor, process_name(m[3]))
                     push!(foul_transgressor, process_name(m[6]))
                     break
@@ -1937,6 +1987,8 @@ function offsetting_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch,
                     push!(foul_status, "off-setting")
                     push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
                     push!(foul_team, get_team_name(m[4], offense, off_abbrv_catch, defense, def_abbrv_catch))
+                    GET_NAMES && add_names_df!(names_df, m[3], txt)
+                    GET_NAMES && add_names_df!(names_df, m[6], txt)
                     push!(foul_transgressor, process_name(m[3]))
                     push!(foul_transgressor, process_name(m[6]))
                     break
@@ -1960,6 +2012,7 @@ function offsetting_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch,
                     push!(foul_status, "off-setting")
                     push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
                     push!(foul_team, get_team_name(m[4], offense, off_abbrv_catch, defense, def_abbrv_catch))  
+                    GET_NAMES && add_names_df!(names_df, m[3], txt)
                     push!(foul_transgressor, m[3])
                     push!(foul_transgressor, "No data")
                     break
@@ -1982,6 +2035,8 @@ function offsetting_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch,
                     push!(foul_status, "off-setting")
                     push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
                     push!(foul_team, get_team_name(m[4], offense, off_abbrv_catch, defense, def_abbrv_catch))
+                    GET_NAMES && add_names_df!(names_df, m[3], txt)
+                    GET_NAMES && add_names_df!(names_df, m[6], txt)
                     push!(foul_transgressor, m[3])
                     push!(foul_transgressor, m[6])
                     break
@@ -2004,6 +2059,7 @@ function offsetting_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch,
                     push!(foul_status, "off-setting")
                     push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
                     push!(foul_team, get_team_name(m[3], offense, off_abbrv_catch, defense, def_abbrv_catch))
+                    GET_NAMES && add_names_df!(names_df, "No data", txt)
                     push!(foul_transgressor, "No data")
                     push!(foul_transgressor, "No data")
                     break
@@ -2029,6 +2085,7 @@ function offsetting_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch,
                     push!(foul_status, "off-setting")
                     push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
                     push!(foul_team, get_team_name(m[3], offense, off_abbrv_catch, defense, def_abbrv_catch))
+                    GET_NAMES && add_names_df!(names_df, "No data", txt)
                     push!(foul_transgressor, "No data")
                     push!(foul_transgressor, "No data")
                     break
@@ -2054,6 +2111,7 @@ function offsetting_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch,
                         push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
                         push!(foul_team, get_team_name(m[3], offense, off_abbrv_catch, defense, def_abbrv_catch))
                         push!(foul_transgressor, "No data")
+                        GET_NAMES && add_names_df!(names_df, m[5], txt)
                         push!(foul_transgressor, process_name(m[5]))
                         # last_name, first_name = strip.(split(m[5], ","))
                         # push!(foul_transgressor, titlecase(first_name)*" "*titlecase(last_name))
@@ -2071,6 +2129,7 @@ function offsetting_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch,
                         push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
                         push!(foul_team, get_team_name(m[3], offense, off_abbrv_catch, defense, def_abbrv_catch))
                         push!(foul_transgressor, "No data")
+                        GET_NAMES && add_names_df!(names_df, m[5], txt)
                         push!(foul_transgressor, process_name(m[5]))
                         # push!(foul_transgressor, replace(m[5], "." => " "))
                         break
@@ -2116,6 +2175,7 @@ function offsetting_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch,
                     push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
                     push!(foul_team, get_team_name(m[3], offense, off_abbrv_catch, defense, def_abbrv_catch))
                     push!(foul_team, get_team_name(m[5], offense, off_abbrv_catch, defense, def_abbrv_catch))
+                    GET_NAMES && add_names_df!(names_df, "No data", txt)
                     push!(foul_transgressor, "No data")
                     push!(foul_transgressor, "No data")
                     push!(foul_transgressor, "No data")
@@ -2140,6 +2200,7 @@ function offsetting_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch,
                         push!(foul_status, "off-setting")
                         push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
                         push!(foul_team, get_team_name(m[3], offense, off_abbrv_catch, defense, def_abbrv_catch))
+                        GET_NAMES && add_names_df!(names_df, "No data", txt)
                         push!(foul_transgressor, "No data")
                         push!(foul_transgressor, "No data")
                         break
@@ -2163,6 +2224,7 @@ function offsetting_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch,
                         push!(foul_status, "off-setting")
                         push!(foul_team, offense)
                         push!(foul_team, defense)
+                        GET_NAMES && add_names_df!(names_df, "No data", txt)
                         push!(foul_transgressor, "No data")
                         push!(foul_transgressor, "No data")
                         break
@@ -2209,6 +2271,7 @@ function offsetting_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch,
                         push!(foul_status, "off-setting")
                         push!(foul_team, offense)
                         push!(foul_team, defense)
+                        GET_NAMES && add_names_df!(names_df, "No data", txt)
                         push!(foul_transgressor, "No data")
                         push!(foul_transgressor, "No data")
                         break
@@ -2219,7 +2282,7 @@ function offsetting_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch,
         if DEBUG_PENALTY println(m) end
     else
       println("Missed: offsetting_aux")
-      @warn("Missed: offsetting_aux")
+      # @warn("Missed: offsetting_aux")
     end
     
     foul_type, foul_status, foul_team, foul_transgressor
@@ -2278,6 +2341,7 @@ function enforced_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch, p
                 push!(foul_type, m[2])
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, m[3], txt)
                 push!(foul_transgressor, process_name(m[3]))
                 # last_name, first_name = strip.(split(m[3], ","))
                 # push!(foul_transgressor, titlecase(first_name)*" "*titlecase(last_name))
@@ -2296,6 +2360,7 @@ function enforced_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch, p
                 push!(foul_type, m[2])
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, "No data", txt)
                 push!(foul_transgressor, "No data")
                 break
             end
@@ -2312,6 +2377,7 @@ function enforced_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch, p
                 push!(foul_type, m[2])
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, "No data", txt)
                 push!(foul_transgressor, "No data")
                 break
             end
@@ -2324,6 +2390,7 @@ function enforced_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch, p
                     push!(foul_type, m[2])
                     push!(foul_status, "enforced")
                     push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
+                    GET_NAMES && add_names_df!(names_df, m[3], txt)
                     push!(foul_transgressor, process_name(m[3]))
                     break
                 end
@@ -2341,6 +2408,7 @@ function enforced_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch, p
                 push!(foul_type, m[2])
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, "No data", txt)
                 push!(foul_transgressor, "No data")
                 break
             end
@@ -2353,6 +2421,7 @@ function enforced_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch, p
                     push!(foul_type, m[2])
                     push!(foul_status, "enforced")
                     push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
+                    GET_NAMES && add_names_df!(names_df, m[3], txt)
                     push!(foul_transgressor, m[3])
                     break
                 end
@@ -2375,6 +2444,7 @@ function enforced_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch, p
                 push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
                 push!(foul_team, get_team_name(m[3], offense, off_abbrv_catch, defense, def_abbrv_catch))
                 push!(foul_transgressor, "No data")
+                GET_NAMES && add_names_df!(names_df, m[5], txt)
                 push!(foul_transgressor, process_name(m[5]))
                 # last_name, first_name = strip.(split(m[5], ","))
                 # push!(foul_transgressor, titlecase(first_name)*" "*titlecase(last_name))
@@ -2393,6 +2463,7 @@ function enforced_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch, p
                 push!(foul_type, m[2])
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, "No data", txt)
                 push!(foul_transgressor, "No data")
                 break
             end
@@ -2405,6 +2476,7 @@ function enforced_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch, p
                     push!(foul_type, m[2])
                     push!(foul_status, "enforced")
                     push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
+                    GET_NAMES && add_names_df!(names_df, m[3], txt)
                     push!(foul_transgressor, m[3])
                     break
                 end
@@ -2423,6 +2495,7 @@ function enforced_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch, p
                 push!(foul_type, m[2])
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, m[3], txt)
                 push!(foul_transgressor, replace(m[3], "." => " "))
                 break
             end
@@ -2458,6 +2531,7 @@ function enforced_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch, p
                 push!(foul_type, m[2])
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, m[3], txt)
                 push!(foul_transgressor, process_name(m[3]))
                 # last_name, first_name = strip.(split(m[3], ","))
                 # push!(foul_transgressor, titlecase(first_name)*" "*titlecase(last_name))
@@ -2476,6 +2550,7 @@ function enforced_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch, p
                 push!(foul_type, m[2])
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, "No data", txt)
                 push!(foul_transgressor, "No data")
                 break
             end
@@ -2492,6 +2567,7 @@ function enforced_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch, p
                 push!(foul_type, m[2])
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, m[3], txt)
                 push!(foul_transgressor, m[3])
                 break
             end
@@ -2508,6 +2584,7 @@ function enforced_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch, p
                 push!(foul_type, m[2])
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, m[3], txt)
                 push!(foul_transgressor, process_name(m[3]))
                 break
             end
@@ -2519,6 +2596,7 @@ function enforced_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch, p
                 push!(foul_type, m[2])
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, m[3], txt)
                 push!(foul_transgressor, process_name(m[3]))
                 break
             end
@@ -2535,6 +2613,7 @@ function enforced_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch, p
                 push!(foul_type, m[2])
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, m[3], txt)
                 push!(foul_transgressor, process_name(m[3]))
                 break
             end
@@ -2554,10 +2633,12 @@ function enforced_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch, p
                     push!(foul_status, "enforced")
                     push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
                     if isnothing(m[4])
+                        GET_NAMES && add_names_df!(names_df, m[3], txt)
                         push!(foul_transgressor, process_name(m[3]))
                         # last_name, postfix, first_name = strip.(split(m[3], ","))
                         # push!(foul_transgressor, titlecase(first_name)*" "*titlecase(last_name)*" "*postfix)
                     elseif isnothing(m[3])
+                        GET_NAMES && add_names_df!(names_df, m[4], txt)
                         push!(foul_transgressor, process_name(m[4]))
                         # push!(foul_transgressor, replace(m[4], "." => " "))
                     end
@@ -2575,6 +2656,7 @@ function enforced_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch, p
                     push!(foul_status, "declined")
                     push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
                     push!(foul_team, foul_team[1])
+                    GET_NAMES && add_names_df!(names_df, m[5], txt)
                     push!(foul_transgressor, process_name(m[5]))
                     # push!(foul_transgressor, replace(m[5], "." => " "))
                     push!(foul_transgressor, "No data")
@@ -2584,7 +2666,7 @@ function enforced_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch, p
         end
     else
       println("Missed: enforced_aux")
-      @warn("Missed: enforced_aux")
+      # @warn("Missed: enforced_aux")
     end
     if DEBUG_PENALTY println(m) end
 
@@ -2665,6 +2747,8 @@ function penalty_penalty_case_aux(txt, offense, defense, off_abbrv_catch, def_ab
                 push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
                 push!(foul_team, get_team_name(m[4], offense, off_abbrv_catch, defense, def_abbrv_catch))
                 push!(foul_team, get_team_name(m[7], offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, m[3], txt)
+                GET_NAMES && add_names_df!(names_df, m[6], txt)
                 push!(foul_transgressor, process_name(m[3]))
                 push!(foul_transgressor, process_name(m[6]))
                 push!(foul_transgressor, "No data")
@@ -2706,6 +2790,7 @@ function penalty_penalty_case_aux(txt, offense, defense, off_abbrv_catch, def_ab
                 push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
                 push!(foul_team, get_team_name(m[3], offense, off_abbrv_catch, defense, def_abbrv_catch))
                 push!(foul_team, get_team_name(m[5], offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, "No data", txt)
                 push!(foul_transgressor, "No data")
                 push!(foul_transgressor, "No data")
                 push!(foul_transgressor, "No data")
@@ -2731,6 +2816,7 @@ function penalty_penalty_case_aux(txt, offense, defense, off_abbrv_catch, def_ab
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
                 push!(foul_team, get_team_name(m[3], offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, "No data", txt)
                 push!(foul_transgressor, "No data")
                 push!(foul_transgressor, "No data")
                 break
@@ -2752,6 +2838,8 @@ function penalty_penalty_case_aux(txt, offense, defense, off_abbrv_catch, def_ab
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
                 push!(foul_team, get_team_name(m[4], offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, m[3], txt)
+                GET_NAMES && add_names_df!(names_df, m[6], txt)
                 push!(foul_transgressor, m[3])
                 push!(foul_transgressor, m[6])
                 break
@@ -2773,6 +2861,7 @@ function penalty_penalty_case_aux(txt, offense, defense, off_abbrv_catch, def_ab
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
                 push!(foul_team, get_team_name(m[4], offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, m[3], txt)
                 push!(foul_transgressor, m[3])
                 push!(foul_transgressor, "No data")
                 break
@@ -2795,6 +2884,7 @@ function penalty_penalty_case_aux(txt, offense, defense, off_abbrv_catch, def_ab
                 push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
                 push!(foul_team, get_team_name(m[3], offense, off_abbrv_catch, defense, def_abbrv_catch))
                 push!(foul_transgressor, "No data")
+                GET_NAMES && add_names_df!(names_df, m[5], txt)
                 push!(foul_transgressor, process_name(m[5]))
                 break
             end
@@ -2816,6 +2906,7 @@ function penalty_penalty_case_aux(txt, offense, defense, off_abbrv_catch, def_ab
                 push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
                 push!(foul_team, get_team_name(m[3], offense, off_abbrv_catch, defense, def_abbrv_catch))
                 push!(foul_transgressor, "No data")
+                GET_NAMES && add_names_df!(names_df, m[5], txt)
                 push!(foul_transgressor, process_name(m[5]))
                 break
             end
@@ -2836,6 +2927,7 @@ function penalty_penalty_case_aux(txt, offense, defense, off_abbrv_catch, def_ab
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
                 push!(foul_team, get_team_name(m[3], offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, "No data", txt)
                 push!(foul_transgressor, "No data")
                 push!(foul_transgressor, "No data")
                 break
@@ -2855,6 +2947,7 @@ function penalty_penalty_case_aux(txt, offense, defense, off_abbrv_catch, def_ab
                 push!(foul_type, m[2])
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, m[3], txt)
                 push!(foul_transgressor, m[3])
                 break
             end
@@ -2872,6 +2965,7 @@ function penalty_penalty_case_aux(txt, offense, defense, off_abbrv_catch, def_ab
                 push!(foul_type, m[2])
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, "No data", txt)
                 push!(foul_transgressor, "No data")
                 break
             end
@@ -2892,6 +2986,8 @@ function penalty_penalty_case_aux(txt, offense, defense, off_abbrv_catch, def_ab
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
                 push!(foul_team, get_team_name(m[4], offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, m[3], txt)
+                GET_NAMES && add_names_df!(names_df, m[6], txt)
                 push!(foul_transgressor, m[3])
                 push!(foul_transgressor, process_name(m[6]))
                 break
@@ -2910,6 +3006,7 @@ function penalty_penalty_case_aux(txt, offense, defense, off_abbrv_catch, def_ab
                 push!(foul_type, m[2])
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, "No data", txt)
                 push!(foul_transgressor, "No data")
                 break
             end
@@ -2927,6 +3024,7 @@ function penalty_penalty_case_aux(txt, offense, defense, off_abbrv_catch, def_ab
                 push!(foul_type, m[2])
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, m[3], txt)
                 push!(foul_transgressor, m[3])
                 break
             end
@@ -2944,6 +3042,7 @@ function penalty_penalty_case_aux(txt, offense, defense, off_abbrv_catch, def_ab
                 push!(foul_type, m[2])
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, m[3], txt)
                 push!(foul_transgressor, m[3])
                 break
             end
@@ -2965,6 +3064,7 @@ function penalty_penalty_case_aux(txt, offense, defense, off_abbrv_catch, def_ab
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
                 push!(foul_team, get_team_name(m[3], offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, "No data", txt)
                 push!(foul_transgressor, "No data")
                 push!(foul_transgressor, "No data")
                 break
@@ -2987,6 +3087,7 @@ function penalty_penalty_case_aux(txt, offense, defense, off_abbrv_catch, def_ab
                 push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
                 push!(foul_team, get_team_name(m[3], offense, off_abbrv_catch, defense, def_abbrv_catch))
                 push!(foul_transgressor, "No data")
+                GET_NAMES && add_names_df!(names_df, m[5], txt)
                 push!(foul_transgressor, process_name(m[5]))
                 break
             end
@@ -3008,6 +3109,7 @@ function penalty_penalty_case_aux(txt, offense, defense, off_abbrv_catch, def_ab
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
                 push!(foul_team, get_team_name(m[3], offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, "No data", txt)
                 push!(foul_transgressor, "No data")
                 push!(foul_transgressor, "No data")
                 break
@@ -3029,6 +3131,7 @@ function penalty_penalty_case_aux(txt, offense, defense, off_abbrv_catch, def_ab
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
                 push!(foul_team, get_team_name(m[4], offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, m[3], txt)
                 push!(foul_transgressor, process_name(m[3]))
                 push!(foul_transgressor, "No data")
                 break
@@ -3050,6 +3153,8 @@ function penalty_penalty_case_aux(txt, offense, defense, off_abbrv_catch, def_ab
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
                 push!(foul_team, get_team_name(m[4], offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, m[3], txt)
+                GET_NAMES && add_names_df!(names_df, m[6], txt)
                 push!(foul_transgressor, process_name(m[3]))
                 push!(foul_transgressor, process_name(m[6]))
                 break
@@ -3071,6 +3176,8 @@ function penalty_penalty_case_aux(txt, offense, defense, off_abbrv_catch, def_ab
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
                 push!(foul_team, get_team_name(m[4], offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, m[3], txt)
+                GET_NAMES && add_names_df!(names_df, m[6], txt)
                 push!(foul_transgressor, process_name(m[3]))
                 push!(foul_transgressor, process_name(m[6]))
                 break
@@ -3092,6 +3199,7 @@ function penalty_penalty_case_aux(txt, offense, defense, off_abbrv_catch, def_ab
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
                 push!(foul_team, get_team_name(m[4], offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, m[3], txt)
                 push!(foul_transgressor, process_name(m[3]))
                 push!(foul_transgressor, "No data")
                 break
@@ -3114,6 +3222,7 @@ function penalty_penalty_case_aux(txt, offense, defense, off_abbrv_catch, def_ab
                 push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
                 push!(foul_team, get_team_name(m[3], offense, off_abbrv_catch, defense, def_abbrv_catch))
                 push!(foul_transgressor, "No data")
+                GET_NAMES && add_names_df!(names_df, m[5], txt)
                 push!(foul_transgressor, process_name(m[5]))
                 println("foul_type: $foul_type, foul_status: $foul_status, foul_team: $foul_team, foul_transgressor: $foul_transgressor")
                 break
@@ -3161,6 +3270,7 @@ function penalty_team_number_case_aux(txt, offense, defense, off_abbrv_catch, de
                 push!(foul_type, m[2])
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, m[3], txt)
                 push!(foul_transgressor, "Player #$(m[3])")
                 break
             end
@@ -3177,6 +3287,7 @@ function penalty_team_number_case_aux(txt, offense, defense, off_abbrv_catch, de
                 push!(foul_type, m[2])
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, m[3], txt)
                 push!(foul_transgressor, process_name(m[3]))
                 break
             end
@@ -3193,6 +3304,7 @@ function penalty_team_number_case_aux(txt, offense, defense, off_abbrv_catch, de
                 push!(foul_type, m[2])
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, m[3], txt)
                 push!(foul_transgressor, process_name(m[3]))
                 break
             end
@@ -3210,6 +3322,7 @@ function penalty_team_number_case_aux(txt, offense, defense, off_abbrv_catch, de
                 push!(foul_type, m[2])
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, "No data", txt)
                 push!(foul_transgressor, "No data")
                 break
             end
@@ -3226,6 +3339,7 @@ function penalty_team_number_case_aux(txt, offense, defense, off_abbrv_catch, de
                 push!(foul_type, m[2])
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, "No data", txt)
                 push!(foul_transgressor, "No data")
                 break
             end
@@ -3242,6 +3356,7 @@ function penalty_team_number_case_aux(txt, offense, defense, off_abbrv_catch, de
                 push!(foul_type, m[2])
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, m[3], txt)
                 push!(foul_transgressor, process_name(m[3]))
                 break
             end
@@ -3258,6 +3373,7 @@ function penalty_team_number_case_aux(txt, offense, defense, off_abbrv_catch, de
                 push!(foul_type, m[2])
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, m[3], txt)
                 push!(foul_transgressor, process_name(m[3]))
                 break
             end
@@ -3310,6 +3426,7 @@ function penalty_team_name_case_aux(txt, offense, defense, off_abbrv_catch, def_
                 push!(foul_type, m[2])
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name((m[1]), offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, m[3], txt)
                 push!(foul_transgressor, process_name(m[3]))
                 break
             end
@@ -3341,6 +3458,7 @@ function penalty_team_name_case_aux(txt, offense, defense, off_abbrv_catch, def_
                 push!(foul_type, m[2])
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name((m[1]), offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, m[3], txt)
                 push!(foul_transgressor, process_name(m[3]))
                 break
             end
@@ -3357,6 +3475,7 @@ function penalty_team_name_case_aux(txt, offense, defense, off_abbrv_catch, def_
                 push!(foul_type, m[2])
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, m[3], txt)
                 push!(foul_transgressor, titlecase(m[3]))
                 break
             end
@@ -3396,6 +3515,7 @@ function penalty_team_name_case_aux(txt, offense, defense, off_abbrv_catch, def_
                 push!(foul_type, m[2])
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name(m[1], offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, m[3], txt)
                 last_name, first_name = strip.(split(m[3], ","))
                 push!(foul_transgressor, titlecase(first_name)*" "*titlecase(last_name))
                 break
@@ -3413,6 +3533,7 @@ function penalty_team_name_case_aux(txt, offense, defense, off_abbrv_catch, def_
                 push!(foul_type, m[2])
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name((m[1]), offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, m[3], txt)
                 push!(foul_transgressor, process_name(m[3]))
                 break
             end
@@ -3449,6 +3570,7 @@ function penalty_team_team_case_aux(txt, offense, defense, off_abbrv_catch, def_
                 push!(foul_type, m[2])
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name((m[1]), offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, "No data", txt)
                 push!(foul_transgressor, "No data")
                 break
             end
@@ -3484,6 +3606,7 @@ function team_peanlty_team_case_aux(txt, offense, defense, off_abbrv_catch, def_
                 push!(foul_type, m[2])
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name((m[1]), offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, "No data", txt)
                 push!(foul_transgressor, "No data")
                 break
             end
@@ -3526,6 +3649,7 @@ function team_penalty_number_case_aux(txt, offense, defense, off_abbrv_catch, de
                 push!(foul_type, m[2])
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name((m[1]), offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, "No data", txt)
                 push!(foul_transgressor, "No data")
                 break
             end
@@ -3545,6 +3669,7 @@ function team_penalty_number_case_aux(txt, offense, defense, off_abbrv_catch, de
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name((m[1]), offense, off_abbrv_catch, defense, def_abbrv_catch))
                 push!(foul_team, get_team_name((m[1]), offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, "No data", txt)
                 push!(foul_transgressor, "No data")
                 push!(foul_transgressor, "No data")
                 break
@@ -3562,6 +3687,7 @@ function team_penalty_number_case_aux(txt, offense, defense, off_abbrv_catch, de
                 push!(foul_type, m[2])
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name((m[1]), offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, "No data", txt)
                 push!(foul_transgressor, "No data")
                 break
             end
@@ -3578,6 +3704,7 @@ function team_penalty_number_case_aux(txt, offense, defense, off_abbrv_catch, de
                 push!(foul_type, "No data")
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name((m[1]), offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, "No data", txt)
                 push!(foul_transgressor, "No data")
                 break
             end
@@ -3641,6 +3768,8 @@ function team_penalty_name_case_aux(txt, offense, defense, off_abbrv_catch, def_
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name((m[1]), offense, off_abbrv_catch, defense, def_abbrv_catch))
                 push!(foul_team, get_team_name((m[1]), offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, m[3], txt)
+                GET_NAMES && add_names_df!(names_df, m[4], txt)
                 push!(foul_transgressor, m[3])
                 push!(foul_transgressor, m[4])
                 break
@@ -3658,6 +3787,7 @@ function team_penalty_name_case_aux(txt, offense, defense, off_abbrv_catch, def_
                 push!(foul_type, m[2])
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name((m[1]), offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, m[3], txt)
                 push!(foul_transgressor, m[3])
                 break
             end
@@ -3674,6 +3804,7 @@ function team_penalty_name_case_aux(txt, offense, defense, off_abbrv_catch, def_
                 push!(foul_type, m[2])
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name((m[1]), offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, m[3], txt)
                 push!(foul_transgressor, m[3])
                 break
             end
@@ -3687,6 +3818,7 @@ function team_penalty_name_case_aux(txt, offense, defense, off_abbrv_catch, def_
                     push!(foul_type, m[2])
                     push!(foul_status, "enforced")
                     push!(foul_team, get_team_name((m[1]), offense, off_abbrv_catch, defense, def_abbrv_catch))
+                    GET_NAMES && add_names_df!(names_df, m[3], txt)
                     push!(foul_transgressor, m[3])
                     break
                 end
@@ -3704,6 +3836,7 @@ function team_penalty_name_case_aux(txt, offense, defense, off_abbrv_catch, def_
                     push!(foul_status, "Ambiguous")
                     push!(foul_team, get_team_name((m[1]), offense, off_abbrv_catch, defense, def_abbrv_catch))
                     push!(foul_team, get_team_name((m[1]), offense, off_abbrv_catch, defense, def_abbrv_catch))
+                    GET_NAMES && add_names_df!(names_df, "Ambiguous", txt)
                     push!(foul_transgressor, "Ambiguous")
                     push!(foul_transgressor, "Ambiguous")
                     break
@@ -3718,6 +3851,7 @@ function team_penalty_name_case_aux(txt, offense, defense, off_abbrv_catch, def_
                     push!(foul_type, m[2])
                     push!(foul_status, "enforced")
                     push!(foul_team, get_team_name((m[1]), offense, off_abbrv_catch, defense, def_abbrv_catch))
+                    GET_NAMES && add_names_df!(names_df, m[3], txt)
                     push!(foul_transgressor, m[3])
                     break
                 end
@@ -3736,6 +3870,7 @@ function team_penalty_name_case_aux(txt, offense, defense, off_abbrv_catch, def_
                 push!(foul_type, m[2])
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name((m[1]), offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, m[3], txt)
                 push!(foul_transgressor, m[3])
                 break
             end
@@ -3754,6 +3889,7 @@ function team_penalty_name_case_aux(txt, offense, defense, off_abbrv_catch, def_
                 push!(foul_type, m[2])
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name((m[1]), offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, m[3], txt)
                 push!(foul_transgressor, m[3])
                 break
             end
@@ -3771,6 +3907,7 @@ function team_penalty_name_case_aux(txt, offense, defense, off_abbrv_catch, def_
                 push!(foul_type, m[2])
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name((m[1]), offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, m[3], txt)
                 push!(foul_transgressor, strip(m[3]))
                 break
             end
@@ -3787,6 +3924,7 @@ function team_penalty_name_case_aux(txt, offense, defense, off_abbrv_catch, def_
                 push!(foul_type, m[2])
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name((m[1]), offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, "Coach $(m[3])", txt)
                 push!(foul_transgressor, "Coach $(strip(m[3]))")
                 break
             end
@@ -3804,6 +3942,7 @@ function team_penalty_name_case_aux(txt, offense, defense, off_abbrv_catch, def_
                 push!(foul_type, m[2])
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name((m[1]), offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, m[3], txt)
                 push!(foul_transgressor, m[3])
                 break
             end
@@ -3820,6 +3959,7 @@ function team_penalty_name_case_aux(txt, offense, defense, off_abbrv_catch, def_
                 push!(foul_type, m[2])
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name((m[1]), offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, m[3], txt)
                 push!(foul_transgressor, process_name(m[3]))
                 break
             end
@@ -3836,6 +3976,7 @@ function team_penalty_name_case_aux(txt, offense, defense, off_abbrv_catch, def_
                 push!(foul_type, m[2])
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name((m[1]), offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, m[3], txt)
                 push!(foul_transgressor, process_name(m[3]))
                 break
             end
@@ -3855,6 +3996,7 @@ function team_penalty_name_case_aux(txt, offense, defense, off_abbrv_catch, def_
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name((m[1]), offense, off_abbrv_catch, defense, def_abbrv_catch))
                 push!(foul_team, get_team_name((m[1]), offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, m[3], txt)
                 push!(foul_transgressor, process_name(m[3]))
                 push!(foul_transgressor, process_name(m[3]))
                 break
@@ -3871,6 +4013,7 @@ function team_penalty_name_case_aux(txt, offense, defense, off_abbrv_catch, def_
                 push!(foul_type, m[2])
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name((m[1]), offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, "No data", txt)
                 push!(foul_transgressor, "No data")
                 break
             end
@@ -3886,6 +4029,7 @@ function team_penalty_name_case_aux(txt, offense, defense, off_abbrv_catch, def_
                 push!(foul_type, m[2])
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name((m[1]), offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, "No data", txt)
                 push!(foul_transgressor, "No data")
                 break
             end
@@ -3922,6 +4066,7 @@ function team_penalty_na_case_aux(txt, offense, defense, off_abbrv_catch, def_ab
                 push!(foul_type, m[2])
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name((m[1]), offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, "No data", txt)
                 push!(foul_transgressor, "No data")
                 break
             end
@@ -3938,6 +4083,7 @@ function team_penalty_na_case_aux(txt, offense, defense, off_abbrv_catch, def_ab
                 push!(foul_type, "No data")
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name((m[1]), offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, "No data", txt)
                 push!(foul_transgressor, "No data")
                 break
             end
@@ -3974,6 +4120,7 @@ function team_penalty_yards_case_aux(txt, offense, defense, off_abbrv_catch, def
                 push!(foul_type, m[2])
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name((m[1]), offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, "No data", txt)
                 push!(foul_transgressor, "No data")
                 break
             end
@@ -3990,6 +4137,7 @@ function team_penalty_yards_case_aux(txt, offense, defense, off_abbrv_catch, def
                 push!(foul_type, "No data")
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name((m[1]), offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, "No data", txt)
                 push!(foul_transgressor, "No data")
                 break
             end
@@ -4041,6 +4189,7 @@ function specialcase_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch
                 push!(foul_type, m[2])
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name((m[1]), offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, "No data", txt)
                 push!(foul_transgressor, "No data")
                 break
             end
@@ -4057,6 +4206,7 @@ function specialcase_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch
                 push!(foul_type, m[2])
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name((m[1]), offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, "No data", txt)
                 push!(foul_transgressor, "No data")
                 break
             end
@@ -4073,6 +4223,7 @@ function specialcase_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch
                 push!(foul_type, "Targeting")
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name((m[1]), offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, m[2], txt)
                 push!(foul_transgressor, m[2])
                 break
             end
@@ -4092,6 +4243,7 @@ function specialcase_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch
                 push!(foul_status, "offseting")
                 push!(foul_team, offense)
                 push!(foul_team, defense)
+                GET_NAMES && add_names_df!(names_df, "No data", txt)
                 push!(foul_transgressor, "No data")
                 push!(foul_transgressor, "No data")
                 break
@@ -4109,6 +4261,7 @@ function specialcase_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch
                 push!(foul_type, m[2])
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name((m[1]), offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, "No data", txt)
                 push!(foul_transgressor, "No data")
                 break
             end
@@ -4125,6 +4278,7 @@ function specialcase_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch
                 push!(foul_type, m[2])
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name((m[1]), offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, "No data", txt)
                 push!(foul_transgressor, "No data")
                 break
             end
@@ -4144,6 +4298,7 @@ function specialcase_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name((m[1]), offense, off_abbrv_catch, defense, def_abbrv_catch))
                 push!(foul_team, get_team_name((m[1]), offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, "No data", txt)
                 push!(foul_transgressor, "No data")
                 push!(foul_transgressor, "No data")
                 break
@@ -4162,6 +4317,7 @@ function specialcase_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch
                 push!(foul_type, m[2])
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name((m[1]), offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, "No data", txt)
                 push!(foul_transgressor, "No data")
                 break
             end
@@ -4179,6 +4335,7 @@ function specialcase_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch
                 push!(foul_type, m[2])
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name((m[1]), offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, "No data", txt)
                 push!(foul_transgressor, "No data")
                 break
             end
@@ -4195,6 +4352,7 @@ function specialcase_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch
                 push!(foul_type, m[2])
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name((m[1]), offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, "No data", txt)
                 push!(foul_transgressor, "No data")
                 break
             end
@@ -4212,6 +4370,7 @@ function specialcase_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch
                 push!(foul_type, m[2])
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name((m[1]), offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, "No data", txt)
                 push!(foul_transgressor, "No data")
                 break
             end
@@ -4228,6 +4387,7 @@ function specialcase_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch
                 push!(foul_type, m[1])
                 push!(foul_status, "enforced")
                 push!(foul_team, "No data")
+                GET_NAMES && add_names_df!(names_df, "No data", txt)
                 push!(foul_transgressor, "No data")
                 break
             end
@@ -4373,6 +4533,7 @@ function  penalized_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch,
                 push!(foul_type, m[3])
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name((m[1]), offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, m[2], txt)
                 push!(foul_transgressor, m[2])
                 break
             end
@@ -4389,6 +4550,7 @@ function  penalized_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch,
                 push!(foul_type, m[2])
                 push!(foul_status, "enforced")
                 push!(foul_team, get_team_name((m[1]), offense, off_abbrv_catch, defense, def_abbrv_catch))
+                GET_NAMES && add_names_df!(names_df, "No data", txt)
                 push!(foul_transgressor, "No data")
                 break
             end

@@ -1,0 +1,777 @@
+{
+  data: [
+    {
+      "x": [-1.85, 60.85],
+      "y": [0, 0],
+      "text": "yintercept: 0",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(0,0,0,0.2)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [30.5, 30.5],
+      "y": [-1.05, 22.05],
+      "text": "xintercept: 30.5",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(0,0,0,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [19.5, 19.5, null, 46.5, 46.5],
+      "y": [-1.05, 22.05, null, -1.05, 22.05],
+      "text": ["xintercept: 19.5", "xintercept: 19.5", null, "xintercept: 46.5", "xintercept: 46.5"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(0,0,0,1)",
+        "dash": "dash"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 2, 3, 4, 5],
+      "y": [5, 7.5, 10.5, 12, 12],
+      "text": ["Offense_play_count:  1<br />Yards_to_success:  5.0<br />factor(O_drive_number): 1", "Offense_play_count:  2<br />Yards_to_success:  7.5<br />factor(O_drive_number): 1", "Offense_play_count:  3<br />Yards_to_success: 10.5<br />factor(O_drive_number): 1", "Offense_play_count:  4<br />Yards_to_success: 12.0<br />factor(O_drive_number): 1", "Offense_play_count:  5<br />Yards_to_success: 12.0<br />factor(O_drive_number): 1"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(77,25,121,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "1",
+      "legendgroup": "1",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [6, 7, 8, 9],
+      "y": [5, 11.2, 14, 5],
+      "text": ["Offense_play_count:  6<br />Yards_to_success:  5.0<br />factor(O_drive_number): 2", "Offense_play_count:  7<br />Yards_to_success: 11.2<br />factor(O_drive_number): 2", "Offense_play_count:  8<br />Yards_to_success: 14.0<br />factor(O_drive_number): 2", "Offense_play_count:  9<br />Yards_to_success:  5.0<br />factor(O_drive_number): 2"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(163,169,172,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(2,1)",
+      "legendgroup": "(2,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [10, 11, 12, 13, 14],
+      "y": [5, 4.2, 5, 3.5, 1],
+      "text": ["Offense_play_count: 10<br />Yards_to_success:  5.0<br />factor(O_drive_number): 3", "Offense_play_count: 11<br />Yards_to_success:  4.2<br />factor(O_drive_number): 3", "Offense_play_count: 12<br />Yards_to_success:  5.0<br />factor(O_drive_number): 3", "Offense_play_count: 13<br />Yards_to_success:  3.5<br />factor(O_drive_number): 3", "Offense_play_count: 14<br />Yards_to_success:  1.0<br />factor(O_drive_number): 3"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(77,25,121,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(3,1)",
+      "legendgroup": "(3,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [15, 16, 17, 18, 19, 20, 21],
+      "y": [5, 5, 2.1, 5, 12.6, 17, 6],
+      "text": ["Offense_play_count: 15<br />Yards_to_success:  5.0<br />factor(O_drive_number): 4", "Offense_play_count: 16<br />Yards_to_success:  5.0<br />factor(O_drive_number): 4", "Offense_play_count: 17<br />Yards_to_success:  2.1<br />factor(O_drive_number): 4", "Offense_play_count: 18<br />Yards_to_success:  5.0<br />factor(O_drive_number): 4", "Offense_play_count: 19<br />Yards_to_success: 12.6<br />factor(O_drive_number): 4", "Offense_play_count: 20<br />Yards_to_success: 17.0<br />factor(O_drive_number): 4", "Offense_play_count: 21<br />Yards_to_success:  6.0<br />factor(O_drive_number): 4"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(163,169,172,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(4,1)",
+      "legendgroup": "(4,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [22, 23, 24, 25],
+      "y": [5, 5.6, 10.5, 7],
+      "text": ["Offense_play_count: 22<br />Yards_to_success:  5.0<br />factor(O_drive_number): 5", "Offense_play_count: 23<br />Yards_to_success:  5.6<br />factor(O_drive_number): 5", "Offense_play_count: 24<br />Yards_to_success: 10.5<br />factor(O_drive_number): 5", "Offense_play_count: 25<br />Yards_to_success:  7.0<br />factor(O_drive_number): 5"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(77,25,121,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(5,1)",
+      "legendgroup": "(5,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [26, 27, 28],
+      "y": [5, 5.6, 18],
+      "text": ["Offense_play_count: 26<br />Yards_to_success:  5.0<br />factor(O_drive_number): 6", "Offense_play_count: 27<br />Yards_to_success:  5.6<br />factor(O_drive_number): 6", "Offense_play_count: 28<br />Yards_to_success: 18.0<br />factor(O_drive_number): 6"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(163,169,172,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(6,1)",
+      "legendgroup": "(6,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [29, 30],
+      "y": [5, 3.5],
+      "text": ["Offense_play_count: 29<br />Yards_to_success:  5.0<br />factor(O_drive_number): 7", "Offense_play_count: 30<br />Yards_to_success:  3.5<br />factor(O_drive_number): 7"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(77,25,121,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(7,1)",
+      "legendgroup": "(7,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [31, 32, 33, 34],
+      "y": [5, 6.3, 5, 5],
+      "text": ["Offense_play_count: 31<br />Yards_to_success:  5.0<br />factor(O_drive_number): 8", "Offense_play_count: 32<br />Yards_to_success:  6.3<br />factor(O_drive_number): 8", "Offense_play_count: 33<br />Yards_to_success:  5.0<br />factor(O_drive_number): 8", "Offense_play_count: 34<br />Yards_to_success:  5.0<br />factor(O_drive_number): 8"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(163,169,172,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(8,1)",
+      "legendgroup": "(8,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [35, 36, 37, 38, 39, 40, 41],
+      "y": [5, 2.1, 5, 5, 3.5, 5, 8],
+      "text": ["Offense_play_count: 35<br />Yards_to_success:  5.0<br />factor(O_drive_number): 9", "Offense_play_count: 36<br />Yards_to_success:  2.1<br />factor(O_drive_number): 9", "Offense_play_count: 37<br />Yards_to_success:  5.0<br />factor(O_drive_number): 9", "Offense_play_count: 38<br />Yards_to_success:  5.0<br />factor(O_drive_number): 9", "Offense_play_count: 39<br />Yards_to_success:  3.5<br />factor(O_drive_number): 9", "Offense_play_count: 40<br />Yards_to_success:  5.0<br />factor(O_drive_number): 9", "Offense_play_count: 41<br />Yards_to_success:  8.0<br />factor(O_drive_number): 9"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(77,25,121,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(9,1)",
+      "legendgroup": "(9,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [42, 43, 44, 45, 46, 47, 48],
+      "y": [5, 5.6, 8, 5, 5.6, 9, 11],
+      "text": ["Offense_play_count: 42<br />Yards_to_success:  5.0<br />factor(O_drive_number): 10", "Offense_play_count: 43<br />Yards_to_success:  5.6<br />factor(O_drive_number): 10", "Offense_play_count: 44<br />Yards_to_success:  8.0<br />factor(O_drive_number): 10", "Offense_play_count: 45<br />Yards_to_success:  5.0<br />factor(O_drive_number): 10", "Offense_play_count: 46<br />Yards_to_success:  5.6<br />factor(O_drive_number): 10", "Offense_play_count: 47<br />Yards_to_success:  9.0<br />factor(O_drive_number): 10", "Offense_play_count: 48<br />Yards_to_success: 11.0<br />factor(O_drive_number): 10"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(163,169,172,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(10,1)",
+      "legendgroup": "(10,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [49, 50, 51, 52],
+      "y": [5, 8.4, 21, 6],
+      "text": ["Offense_play_count: 49<br />Yards_to_success:  5.0<br />factor(O_drive_number): 11", "Offense_play_count: 50<br />Yards_to_success:  8.4<br />factor(O_drive_number): 11", "Offense_play_count: 51<br />Yards_to_success: 21.0<br />factor(O_drive_number): 11", "Offense_play_count: 52<br />Yards_to_success:  6.0<br />factor(O_drive_number): 11"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(77,25,121,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(11,1)",
+      "legendgroup": "(11,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [53, 54, 55, 56, 57, 58],
+      "y": [5, 0.7, 5, 7, 6, 6],
+      "text": ["Offense_play_count: 53<br />Yards_to_success:  5.0<br />factor(O_drive_number): 12", "Offense_play_count: 54<br />Yards_to_success:  0.7<br />factor(O_drive_number): 12", "Offense_play_count: 55<br />Yards_to_success:  5.0<br />factor(O_drive_number): 12", "Offense_play_count: 56<br />Yards_to_success:  7.0<br />factor(O_drive_number): 12", "Offense_play_count: 57<br />Yards_to_success:  6.0<br />factor(O_drive_number): 12", "Offense_play_count: 58<br />Yards_to_success:  6.0<br />factor(O_drive_number): 12"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(163,169,172,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(12,1)",
+      "legendgroup": "(12,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 8],
+      "y": [5, 14],
+      "text": ["Offense_play_count:  1<br />Yards_to_success:  5.0<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: TCU Penalty, False Start (Steve Avila) to the TCU 20<br />O_drive_number: 1", "Offense_play_count:  8<br />Yards_to_success: 14.0<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: GEORGIA Penalty, Defensive Holding (Javon Bullard) to the TCU 31 for a 1ST down<br />O_drive_number: 2"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(255,0,255,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "hexagram-open",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(255,0,255,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "Penalty",
+      "legendgroup": "Penalty",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [5, 21, 34, 41, 58],
+      "y": [12, 6, 5, 8, 6],
+      "text": ["Offense_play_count:  5<br />Yards_to_success: 12.0<br />Play_type: Punt<br />Success: Punt<br />Play_text: Jordy Sandy punt for 34 yds, fair catch by Kearis Jackson at the Geo 43<br />O_drive_number: 1", "Offense_play_count: 21<br />Yards_to_success:  6.0<br />Play_type: Punt<br />Success: Punt<br />Play_text: Jordy Sandy punt for 39 yds, fair catch by Kearis Jackson at the Geo 8<br />O_drive_number: 4", "Offense_play_count: 34<br />Yards_to_success:  5.0<br />Play_type: Punt<br />Success: Punt<br />Play_text: Jordy Sandy punt for 40 yds, fair catch by Kearis Jackson at the Geo 45<br />O_drive_number: 8", "Offense_play_count: 41<br />Yards_to_success:  8.0<br />Play_type: Punt<br />Success: Punt<br />Play_text: Jordy Sandy punt for 42 yds, fair catch by Kearis Jackson at the Geo 16<br />O_drive_number: 9", "Offense_play_count: 58<br />Yards_to_success:  6.0<br />Play_type: Punt<br />Success: Punt<br />Play_text: Jordy Sandy punt for 30 yds, fair catch by Mekhi Mews at the Geo 25<br />O_drive_number: 12"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(127,127,127,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "diamond",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(127,127,127,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "Punt",
+      "legendgroup": "Punt",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [11, 17, 37, 38, 44],
+      "y": [4.2, 2.1, 5, 5, 8],
+      "text": ["Offense_play_count: 11<br />Yards_to_success:  4.2<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Max Duggan pass complete to Derius Davis for 60 yds to the Geo 11 for a 1ST down<br />O_drive_number: 3", "Offense_play_count: 17<br />Yards_to_success:  2.1<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Max Duggan pass complete to Jared Wiley for 10 yds to the TCU 49 for a 1ST down<br />O_drive_number: 4", "Offense_play_count: 37<br />Yards_to_success:  5.0<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Max Duggan pass complete to Geor'Quarius Spivey for 10 yds to the TCU 40 for a 1ST down<br />O_drive_number: 9", "Offense_play_count: 38<br />Yards_to_success:  5.0<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Max Duggan pass complete to Derius Davis for 5 yds to the TCU 45<br />O_drive_number: 9", "Offense_play_count: 44<br />Yards_to_success:  8.0<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Max Duggan pass complete to Derius Davis for 23 yds to the Geo 45 for a 1ST down<br />O_drive_number: 10"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,100,0,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(0,100,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Successful,Pass Reception)",
+      "legendgroup": "(Successful,Pass Reception)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [12, 13, 15, 16, 29, 30, 35, 36, 53, 54],
+      "y": [5, 3.5, 5, 5, 5, 3.5, 5, 2.1, 5, 0.7],
+      "text": ["Offense_play_count: 12<br />Yards_to_success:  5.0<br />Play_type: Rush<br />Success: Successful<br />Play_text: Emari Demercado run for 5 yds to the Geo 6<br />O_drive_number: 3", "Offense_play_count: 13<br />Yards_to_success:  3.5<br />Play_type: Rush<br />Success: Successful<br />Play_text: Emari Demercado run for 4 yds to the Geo 2<br />O_drive_number: 3", "Offense_play_count: 15<br />Yards_to_success:  5.0<br />Play_type: Rush<br />Success: Successful<br />Play_text: Emari Demercado run for 10 yds to the TCU 32 for a 1ST down<br />O_drive_number: 4", "Offense_play_count: 16<br />Yards_to_success:  5.0<br />Play_type: Rush<br />Success: Successful<br />Play_text: Emari Demercado run for 7 yds to the TCU 39<br />O_drive_number: 4", "Offense_play_count: 29<br />Yards_to_success:  5.0<br />Play_type: Rush<br />Success: Successful<br />Play_text: Emani Bailey run for 5 yds to the TCU 31<br />O_drive_number: 7", "Offense_play_count: 30<br />Yards_to_success:  3.5<br />Play_type: Rush<br />Success: Successful<br />Play_text: Emani Bailey run for 4 yds to the TCU 35<br />O_drive_number: 7", "Offense_play_count: 35<br />Yards_to_success:  5.0<br />Play_type: Rush<br />Success: Successful<br />Play_text: Emari Demercado run for 7 yds to the TCU 25<br />O_drive_number: 9", "Offense_play_count: 36<br />Yards_to_success:  2.1<br />Play_type: Rush<br />Success: Successful<br />Play_text: Max Duggan run for 5 yds to the TCU 30 for a 1ST down<br />O_drive_number: 9", "Offense_play_count: 53<br />Yards_to_success:  5.0<br />Play_type: Rush<br />Success: Successful<br />Play_text: Emari Demercado run for 9 yds to the TCU 34<br />O_drive_number: 12", "Offense_play_count: 54<br />Yards_to_success:  0.7<br />Play_type: Rush<br />Success: Successful<br />Play_text: Emari Demercado run for 7 yds to the TCU 41 for a 1ST down<br />O_drive_number: 12"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,100,0,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "circle",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(0,100,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Successful,Rush)",
+      "legendgroup": "(Successful,Rush)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [14],
+      "y": [1],
+      "text": "Offense_play_count: 14<br />Yards_to_success:  1.0<br />Play_type: Rushing Touchdown<br />Success: Successful<br />Play_text: Max Duggan run for 2 yds for a TD (Griffin Kell KICK)<br />O_drive_number: 3",
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,100,0,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "circle-cross-open",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(0,100,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Successful,Rushing Touchdown)",
+      "legendgroup": "(Successful,Rushing Touchdown)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [9],
+      "y": [5],
+      "text": "Offense_play_count:  9<br />Yards_to_success:  5.0<br />Play_type: Fumble Recovery (Opponent)<br />Success: Unsuccessful<br />Play_text: Derius Davis run for 2 yds to the TCU 33 Derius Davis fumbled, recovered by Geo Javon Bullard<br />O_drive_number: 2",
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(139,26,26,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "circle-open",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(139,26,26,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Unsuccessful,Fumble Recovery (Opponent))",
+      "legendgroup": "(Unsuccessful,Fumble Recovery (Opponent))",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2, 4, 33, 39, 43, 48, 57],
+      "y": [7.5, 12, 5, 3.5, 5.6, 11, 6],
+      "text": ["Offense_play_count:  2<br />Yards_to_success:  7.5<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Max Duggan pass incomplete to Savion Williams<br />O_drive_number: 1", "Offense_play_count:  4<br />Yards_to_success: 12.0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Max Duggan pass incomplete to Derius Davis<br />O_drive_number: 1", "Offense_play_count: 33<br />Yards_to_success:  5.0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Max Duggan pass incomplete to Quentin Johnston<br />O_drive_number: 8", "Offense_play_count: 39<br />Yards_to_success:  3.5<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Max Duggan pass incomplete to Emari Demercado<br />O_drive_number: 9", "Offense_play_count: 43<br />Yards_to_success:  5.6<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Max Duggan pass incomplete to Derius Davis<br />O_drive_number: 10", "Offense_play_count: 48<br />Yards_to_success: 11.0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Max Duggan pass incomplete to Gunnar Henderson<br />O_drive_number: 10", "Offense_play_count: 57<br />Yards_to_success:  6.0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Chandler Morris pass incomplete to Blair Conwright<br />O_drive_number: 12"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(139,26,26,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "triangle-up-open",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(139,26,26,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Unsuccessful,Pass Incompletion)",
+      "legendgroup": "(Unsuccessful,Pass Incompletion)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [25, 28],
+      "y": [7, 18],
+      "text": ["Offense_play_count: 25<br />Yards_to_success:  7.0<br />Play_type: Pass Interception Return<br />Success: Unsuccessful<br />Play_text: Max Duggan pass intercepted Javon Bullard return for no gain to the Geo 34<br />O_drive_number: 5", "Offense_play_count: 28<br />Yards_to_success: 18.0<br />Play_type: Pass Interception Return<br />Success: Unsuccessful<br />Play_text: Max Duggan pass intercepted Javon Bullard return for 3 yds to the TCU 22<br />O_drive_number: 6"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(139,26,26,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "cross-thin-open",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(139,26,26,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Unsuccessful,Pass Interception Return)",
+      "legendgroup": "(Unsuccessful,Pass Interception Return)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [3, 7, 19, 20, 24, 26, 32, 47, 51],
+      "y": [10.5, 11.2, 12.6, 17, 10.5, 5, 6.3, 9, 21],
+      "text": ["Offense_play_count:  3<br />Yards_to_success: 10.5<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Max Duggan pass complete to Quentin Johnston for 3 yds to the TCU 23<br />O_drive_number: 1", "Offense_play_count:  7<br />Yards_to_success: 11.2<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Max Duggan pass complete to Derius Davis for 2 yds to the TCU 21<br />O_drive_number: 2", "Offense_play_count: 19<br />Yards_to_success: 12.6<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Max Duggan pass complete to Corey Wren for 1 yd to the TCU 42<br />O_drive_number: 4", "Offense_play_count: 20<br />Yards_to_success: 17.0<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Max Duggan pass complete to Derius Davis for 11 yds to the Geo 47<br />O_drive_number: 4", "Offense_play_count: 24<br />Yards_to_success: 10.5<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Max Duggan pass complete to Taye Barber for 8 yds to the TCU 23<br />O_drive_number: 5", "Offense_play_count: 26<br />Yards_to_success:  5.0<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Max Duggan pass complete to Emani Bailey for 2 yds to the TCU 22<br />O_drive_number: 6", "Offense_play_count: 32<br />Yards_to_success:  6.3<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Max Duggan pass complete to Jared Wiley for 4 yds to the TCU 15<br />O_drive_number: 8", "Offense_play_count: 47<br />Yards_to_success:  9.0<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Max Duggan pass complete to Emari Demercado for a loss of 2 yards to the Geo 46<br />O_drive_number: 10", "Offense_play_count: 51<br />Yards_to_success: 21.0<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Max Duggan pass complete to Blair Conwright for 15 yds to the TCU 29<br />O_drive_number: 11"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(139,26,26,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(139,26,26,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Unsuccessful,Pass Reception)",
+      "legendgroup": "(Unsuccessful,Pass Reception)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [6, 10, 22, 23, 31, 40, 42, 45, 49, 55, 56],
+      "y": [5, 5, 5, 5.6, 5, 5, 5, 5, 5, 5, 7],
+      "text": ["Offense_play_count:  6<br />Yards_to_success:  5.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Max Duggan run for a loss of 6 yards to the TCU 19<br />O_drive_number: 2", "Offense_play_count: 10<br />Yards_to_success:  5.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Emari Demercado run for 4 yds to the TCU 29<br />O_drive_number: 3", "Offense_play_count: 22<br />Yards_to_success:  5.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Max Duggan run for 2 yds to the TCU 22<br />O_drive_number: 5", "Offense_play_count: 23<br />Yards_to_success:  5.6<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Emari Demercado run for 3 yds to the TCU 25 TCU Penalty, Offensive Holding (-10 Yards) to the TCU 15<br />O_drive_number: 5", "Offense_play_count: 31<br />Yards_to_success:  5.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Emari Demercado run for 1 yd to the TCU 11<br />O_drive_number: 8", "Offense_play_count: 40<br />Yards_to_success:  5.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Max Duggan run for a loss of 3 yards to the TCU 42<br />O_drive_number: 9", "Offense_play_count: 42<br />Yards_to_success:  5.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Emari Demercado run for 2 yds to the TCU 32<br />O_drive_number: 10", "Offense_play_count: 45<br />Yards_to_success:  5.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Emari Demercado run for 2 yds to the Geo 43<br />O_drive_number: 10", "Offense_play_count: 49<br />Yards_to_success:  5.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Emari Demercado run for a loss of 2 yards to the TCU 23<br />O_drive_number: 11", "Offense_play_count: 55<br />Yards_to_success:  5.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Emari Demercado run for no gain to the TCU 41<br />O_drive_number: 12", "Offense_play_count: 56<br />Yards_to_success:  7.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Chandler Morris run for 4 yds to the TCU 45<br />O_drive_number: 12"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(139,26,26,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "circle",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(139,26,26,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Unsuccessful,Rush)",
+      "legendgroup": "(Unsuccessful,Rush)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [18, 27, 46, 50, 52],
+      "y": [5, 5.6, 5.6, 8.4, 6],
+      "text": ["Offense_play_count: 18<br />Yards_to_success:  5.0<br />Play_type: Sack<br />Success: Unsuccessful<br />Play_text: Max Duggan sacked by Mykel Williams for a loss of 8 yards to the TCU 41<br />O_drive_number: 4", "Offense_play_count: 27<br />Yards_to_success:  5.6<br />Play_type: Sack<br />Success: Unsuccessful<br />Play_text: Max Duggan sacked by Bear Alexander for a loss of 10 yards to the TCU 12<br />O_drive_number: 6", "Offense_play_count: 46<br />Yards_to_success:  5.6<br />Play_type: Sack<br />Success: Unsuccessful<br />Play_text: Max Duggan sacked by Robert Beal Jr. for a loss of 1 yard to the Geo 44<br />O_drive_number: 10", "Offense_play_count: 50<br />Yards_to_success:  8.4<br />Play_type: Sack<br />Success: Unsuccessful<br />Play_text: Max Duggan sacked by Tykee Smith for a loss of 9 yards to the TCU 14<br />O_drive_number: 11", "Offense_play_count: 52<br />Yards_to_success:  6.0<br />Play_type: Sack<br />Success: Unsuccessful<br />Play_text: Max Duggan sacked by Jalon Walker for a loss of 10 yards to the TCU 19<br />O_drive_number: 11"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(139,26,26,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "triangle-down-open",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(139,26,26,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Unsuccessful,Sack)",
+      "legendgroup": "(Unsuccessful,Sack)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    }
+  ],
+  layout: {
+    "margin": {
+      "t": 43.2754946727549,
+      "r": 7.30593607305936,
+      "b": 39.6955859969559,
+      "l": 37.2602739726027
+    },
+    "plot_bgcolor": "rgba(229,229,229,1)",
+    "paper_bgcolor": "rgba(255,255,255,1)",
+    "font": {
+      "color": "rgba(0,0,0,1)",
+      "family": "",
+      "size": 14.6118721461187
+    },
+    "title": {
+      "text": "TCU[7]: Yards to success<br> <sup>2022: wk02 vs Georgia[65]<\/sup>",
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 17.5342465753425
+      },
+      "x": 0,
+      "xref": "paper",
+      "xanchor": "left"
+    },
+    "xaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [-1.85, 60.85],
+      "tickmode": "array",
+      "ticktext": ["0", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55", "60"],
+      "tickvals": [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60],
+      "categoryorder": "array",
+      "categoryarray": ["0", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55", "60"],
+      "nticks": null,
+      "ticks": "outside",
+      "tickcolor": "rgba(51,51,51,1)",
+      "ticklen": 3.65296803652968,
+      "tickwidth": 0.66417600664176,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "tickangle": -0,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": "rgba(204,204,204,1)",
+      "gridwidth": 0.66417600664176,
+      "zeroline": false,
+      "anchor": "y",
+      "title": {
+        "text": "Offensive play count including penalties",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "yaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [-1.05, 22.05],
+      "tickmode": "array",
+      "ticktext": ["0", "5", "10", "15", "20"],
+      "tickvals": [0, 5, 10, 15, 20],
+      "categoryorder": "array",
+      "categoryarray": ["0", "5", "10", "15", "20"],
+      "nticks": null,
+      "ticks": "outside",
+      "tickcolor": "rgba(51,51,51,1)",
+      "ticklen": 3.65296803652968,
+      "tickwidth": 0.66417600664176,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "tickangle": -0,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": "rgba(204,204,204,1)",
+      "gridwidth": 0.66417600664176,
+      "zeroline": false,
+      "anchor": "x",
+      "title": {
+        "text": "Yards needed to be successful",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "shapes": [
+      {
+        "type": "rect",
+        "fillcolor": null,
+        "line": {
+          "color": null,
+          "width": 0,
+          "linetype": []
+        },
+        "yref": "paper",
+        "xref": "paper",
+        "x0": 0,
+        "x1": 1,
+        "y0": 0,
+        "y1": 1
+      }
+    ],
+    "showlegend": true,
+    "legend": {
+      "bgcolor": "rgba(255,255,255,1)",
+      "bordercolor": "transparent",
+      "borderwidth": 1.88976377952756,
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "title": {
+        "text": "Success/Drive number<br />Play type",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      }
+    },
+    "hovermode": "closest",
+    "barmode": "relative"
+  },
+  config: {
+    "doubleClick": "reset",
+    "modeBarButtonsToAdd": ["hoverclosest", "hovercompare"],
+    "showSendToCloud": false
+  },
+  source: "A",
+  attrs: {
+    "9f0441792665": {
+      "yintercept": {},
+      "type": "scatter"
+    },
+    "9f04493a2812": {
+      "xintercept": {}
+    },
+    "9f0474e73199": {
+      "x": {},
+      "y": {},
+      "colour": {}
+    },
+    "9f04117855ed": {
+      "x": {},
+      "y": {},
+      "shape": {},
+      "colour": {},
+      "label": {}
+    }
+  },
+  cur_data: "9f0441792665",
+  visdat: {
+    "9f0441792665": ["function (y) ", "x"],
+    "9f04493a2812": ["function (y) ", "x"],
+    "9f0474e73199": ["function (y) ", "x"],
+    "9f04117855ed": ["function (y) ", "x"]
+  },
+  highlight: {
+    "on": "plotly_click",
+    "persistent": false,
+    "dynamic": false,
+    "selectize": false,
+    "opacityDim": 0.2,
+    "selected": {
+      "opacity": 1
+    },
+    "debounce": 0
+  },
+  shinyEvents: ["plotly_hover", "plotly_click", "plotly_selected", "plotly_relayout", "plotly_brushed", "plotly_brushing", "plotly_clickannotation", "plotly_doubleclick", "plotly_deselect", "plotly_afterplot", "plotly_sunburstclick"],
+  base_url: "https://plot.ly"
+}

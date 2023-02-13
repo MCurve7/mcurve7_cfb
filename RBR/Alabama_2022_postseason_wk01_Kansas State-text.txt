@@ -1,0 +1,304 @@
+<p>
+I suppose I will start with penalties since I've been concentrating on them all season.
+For our final game we committed 5 penalties.
+This is below our 7.92 average for the season 
+and gave us a final <i>z</i>-score of 2.45 in comparison with all FBS teams.
+We were penalized less than Tennessee (mean = 8.08, <i>z</i> = 2.64).
+The summary stats for the whole FBS, SEC, Big 12, and Big Ten are shown below:
+</p>
+
+<table>
+<thead>
+  <tr>
+    <th>Group</th>
+    <th>Mean</th>
+    <th>Stdev</th>
+    <th>Min</th>
+    <th>Q1</th>
+    <th>Median</th>
+    <th>Q3</th>
+    <th>Max</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>FBS</td>
+    <td>6.01</td>
+    <td>2.82</td>
+    <td>0</td>
+    <td>4.0</td>
+    <td>6.0</td>
+    <td>8.0</td>
+    <td>18</td>
+  </tr>
+  <tr>
+    <td>SEC</td>
+    <td>6.57</td>
+    <td>2.95</td>
+    <td>1</td>
+    <td>5.0</td>
+    <td>6.0</td>
+    <td>8.5</td>
+    <td>17</td>
+  </tr>
+  <tr>
+    <td>Big 12</td>
+    <td>5.30</td>
+    <td>2.51</td>
+    <td>0</td>
+    <td>4.0</td>
+    <td>5.0</td>
+    <td>7.0</td>
+    <td>14</td>
+  </tr>
+  <tr>
+    <td>Big Ten</td>
+    <td>5.51</td>
+    <td>2.85</td>
+    <td>0</td>
+    <td>3.75 </td>
+    <td>5.0</td>
+    <td>7.0</td>
+    <td>15</td>
+  </tr>
+</tbody>
+</table>
+
+<p>
+I'll briefly note that all four playoff teams had a negative <i>z</i>-score.
+I don't know if that is normal,
+but it doesn't seem surprising that a lack of discipline or what ever else that causes a large number of penalties would cause a team to miss the playoffs.
+</p>
+
+<table>
+<thead>
+  <tr>
+    <th>school</th>
+    <th>sum</th>
+    <th>mean</th>
+    <th>z</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Tennessee</td>
+    <td>105</td>
+    <td>8.08</td>
+    <td>2.64</td>
+  </tr>
+  <tr>
+    <td>Alabama</td>
+    <td>103</td>
+    <td>7.92</td>
+    <td>2.45</td>
+  </tr>
+  <tr>
+    <td>Georgia</td>
+    <td>62</td>
+    <td>4.43</td>
+    <td>-2.10</td>
+  </tr>
+  <tr>
+    <td>TCU</td>
+    <td>67</td>
+    <td>4.79</td>
+    <td>-1.63</td>
+  </tr>
+  <tr>
+    <td>Ohio State</td>
+    <td>73</td>
+    <td>5.62</td>
+    <td>-0.51</td>
+  </tr>
+  <tr>
+    <td>Michigan</td>
+    <td>58</td>
+    <td>4.14</td>
+    <td>-2.48</td>
+  </tr>
+</tbody>
+</table>
+
+<div id="Alabama_2022_postseason_wk01_Kansas State-05-all4_downs_fac_noscale" ></div><br />
+<div id="Kansas State_2022_postseason_wk01_Alabama-05-all4_downs_fac_noscale" ></div><br />
+
+<p>
+Something that I had intended to track this season was the SR vs 1st down/TD rate by down.
+(A bug in translating my code left it off my Yards to be Successful vs Yards gained by Down graphs 
+and I didn't remember that I generated a table with the same data, lol.)
+SR seems to be a measure of how well you are keeping on track to gain a 1st down and hopefully a TD,
+but the 1st/TD rate is, 
+of course, 
+the rate at which you make 1st downs and touchdowns.
+</p>
+
+<table>
+<caption>Alabama</caption>
+  <thead>
+    <tr class = "header headerLastRow">
+      <th style = "text-align: left;">Down</th>
+      <th style = "text-align: left;">Successful</th>
+      <th style = "text-align: left;">Unsuccessful</th>
+      <th style = "text-align: left;">Total</th>
+      <th style = "text-align: left;">TD/1st</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">12</td>
+      <td style = "text-align: left;">15</td>
+      <td style = "text-align: left;">27</td>
+      <td style = "text-align: left;">7</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">9</td>
+      <td style = "text-align: left;">9</td>
+      <td style = "text-align: left;">18</td>
+      <td style = "text-align: left;">8</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">10</td>
+      <td style = "text-align: left;">4</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">0</td>
+    </tr>
+  </tbody>
+</table>
+<br />        
+
+<table>
+<caption>Kansas St</caption>
+  <thead>
+    <tr class = "header headerLastRow">
+      <th style = "text-align: left;">Down</th>
+      <th style = "text-align: left;">Successful</th>
+      <th style = "text-align: left;">Unsuccessful</th>
+      <th style = "text-align: left;">Total</th>
+      <th style = "text-align: left;">TD/1st</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">9</td>
+      <td style = "text-align: left;">21</td>
+      <td style = "text-align: left;">30</td>
+      <td style = "text-align: left;">4</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">16</td>
+      <td style = "text-align: left;">23</td>
+      <td style = "text-align: left;">5</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">11</td>
+      <td style = "text-align: left;">18</td>
+      <td style = "text-align: left;">7</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">2</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+
+<p>
+I thought it was interesting that on 1st down our 1st/TD rate of 26% was close to KSt's SR of 30%
+and on 2nd down our 1st/TD rate of 44% was higher than their SR of 30%.
+Also for the game, our 1st/TD rate was 35% vs K St's 34% SR.
+In the tables below we can see that the number of 1st and 2nd downs were similar.
+I don't know how much can be made of these numbers yet,
+but it feels appropriate given how well we played for most of the game.
+</p>
+
+<table>
+<thead>
+  <tr>
+    <th></th>
+    <th></th>
+    <th>Bama</th>
+    <th>K St</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>1st</td>
+    <td>SR</td>
+    <td>44%</td>
+    <td>30%</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>1st/TD</td>
+    <td>26%</td>
+    <td>13%</td>
+  </tr>
+  <tr>
+    <td>2nd</td>
+    <td>SR</td>
+    <td>50%</td>
+    <td>30%</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>1st/TD</td>
+    <td>44%</td>
+    <td>22%</td>
+  </tr>
+  <tr>
+    <td>Overall</td>
+    <td>SR</td>
+    <td>45%</td>
+    <td>34%</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>1st/TD</td>
+    <td>35%</td>
+    <td>24%</td>
+  </tr>
+</tbody>
+</table>
+
+<div id="Alabama_2022_postseason_wk01_Kansas State-03-drive" ></div><br />
+<div id="Alabama_2022_postseason_wk01_Kansas State-e04-delta_yards_to_success" ></div><br />
+
+<p>
+Looking at the Delta yards to success (second graph above for Alabama and below for K St),
+the trend of staying in the -5 yards and above band and moving the ball downfield seems to continue.
+And if you get below -5 yards then an explosive play (or close to one) or penalty is needed to save the drive.
+</p>
+
+<div id="Kansas State_2022_postseason_wk01_Alabama-03-drive" ></div><br />
+<div id="Kansas State_2022_postseason_wk01_Alabama-e04-delta_yards_to_success" ></div><br />
+
+<p>
+Well that's all I have for now.
+I'm going to try to streamline and automate more of my process so that I can spend more time thinking about the data
+and work on my writing.
+It's certainly choppier than I would like and I don't always have the time to flesh out my thoughts.
+As always any feedback is appreciated.
+</p>
+
+<p>
+May all of our "disappointing" seasons be this "bad".
+Roll Tide!
+</p>

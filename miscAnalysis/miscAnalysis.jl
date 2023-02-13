@@ -6,6 +6,139 @@ using FloatingTableView
 
 # dirContents = readdir("../../data/unprocessed/", join=true)
 dirContents = readdir("../../data/", join=true)
+#######################################################################################################################################
+# Make a singel function to parse names no matter their format
+name_regex = "((?:(?:[A-Z\\p{Lu}'-][a-z\\p{Ll}A-Z&\\p{Lu}'\\.-]+|(?:de))|(?:[A-Z\\p{Lu}-]\\.?)?\\s?)+)" #most general name regex
+name_simple_regex = "((?:[A-Z\\p{Lu}'-][a-z\\p{Ll}A-Z&\\p{Lu}'\\.-]+ ?)+)"
+name_regex_nc = "(?:((?:[A-Z\\p{Lu}'-][a-z\\p{Ll}A-Z&\\p{Lu}'\\.-]+|(?:de))|(?:[A-Z\\p{Lu}-]\\.?)?\\s?)+)" #non-capturing
+# name_lastfirst_regex = "([A-Z\\p{Lu}-][a-z\\p{Ll}A-Z&\\p{Lu}'\\.-]+,\\s*[A-Z\\p{Lu}-][a-z\\p{Ll}A-Z&\\p{Lu}'\\.-]+)" #just madeit work need to genalize it last first
+name_lastfirst_regex = "([A-Z\\p{Lu}-][a-z\\p{Ll}A-Z&\\p{Lu}'\\.-]+,\\s*[A-Z\\p{Lu}-][a-z\\p{Ll}A-Z&\\p{Lu}'\\.-]+)" #just madeit work need to genalize it last first
+name_caplastfirst_regex = "([A-Z\\p{Lu}-]+, ?(?:[A-Z\\p{Lu}-][a-z\\p{Ll}A-Z&\\p{Lu}'\\.-]+))" #just made it work need to genalize it last first
+name_penalty_regex = "((?:(?:(?:(?:[A-Z\\p{Lu}'-][a-z\\p{Ll}A-Z&\\p{Lu}'\\.-]+|(?:de))|(?:[A-Z\\p{Lu}-]\\.?)?\\s?)+) ?)+)"
+# name_lastfirst_penalty_regex = "([A-Z\\p{Lu}-][a-z\\p{Ll}A-Z&\\p{Lu}'\\.-]+, ?[A-Z\\p{Lu}-][a-z\\p{Ll}A-Z&\\p{Lu}'\\.-]+)" #just madeit work need to genalize it last first
+# name_lastfirst_penalty_regex = "((?:(?:[A-Z\\p{Lu}\\.-]+|[A-Z\\p{Lu}-][a-z\\p{Ll}A-Z&\\p{Lu}'\\.-]+ ?)+, ?[A-Z\\p{Lu}-][a-z\\p{Ll}A-Z&\\p{Lu}'\\.-]+))" #general last first regex
+# name_lastfirst_penalty_regex = "([A-Z\\p{Lu}-][a-z\\p{Ll}A-Z&\\p{Lu}'\\.-]+,? ?[A-Z\\p{Lu}-][a-z\\p{Ll}A-Z&\\p{Lu}'\\.-]*)" #general last first regex, could be single letter first name
+name_twofirst_penalty_regex = "((?:(?:(?:[A-Z\\p{Lu}'-][a-z\\p{Ll}A-Z&\\p{Lu}'\\. -]+)+|(?:de))|(?:[A-Z\\p{Lu}-]\\.?)?\\s?)+)"
+#general last first regex, could be single letter first name
+# name_lastfirst_penalty_regex = "((?:[A-Z\\p{Lu}-][a-z\\p{Ll}A-Z&\\p{Lu}'\\.-]+|,? Jr.| III| II)+,? ?[A-Z\\p{Lu}-][a-z\\p{Ll}A-Z&\\p{Lu}'\\.-]*)"
+name_lastfirst_penalty_regex = 
+"((?:(?:(?:(?:(?:de )?[A-Z\\p{Lu}-][a-z\\p{Ll}A-Z&\\p{Lu}'\\.-]+ ?)+|,? Jr.|,? Sr.|,? III|,? II|,? IV|,? V)+, *(?:[A-Z\\p{Lu}-][a-z\\p{Ll}A-Z&\\p{Lu}'\\.-]* ?)+)|(?:(?:[A-Z\\p{Lu}-][a-z\\p{Ll}A-Z&\\p{Lu}'\\.-]+ ?)+|,? Jr.|,? III|,? II|,? IV|,? V)+ [A-Z\\p{Lu}-]\\.?\\b))"
+# "((?:(?:[A-Z\\p{Lu}-][a-z\\p{Ll}A-Z&\\p{Lu}'\\.-]+ ?)+|,? Jr.|,? III|,? II|,? IV|,? V)+,? *(?:[A-Z\\p{Lu}-][a-z\\p{Ll}A-Z&\\p{Lu}'\\.-]* ?)+)"
+# "((?:(?:[A-Z\\p{Lu}-][a-z\\p{Ll}A-Z&\\p{Lu}'\\.-]+ ?)+|,? Jr.|,? III|,? II|,? IV|,? V)+, *(?:[A-Z\\p{Lu}-][a-z\\p{Ll}A-Z&\\p{Lu}'\\.-]* ?)+)"
+name_lowerlastfirst_penalty_regex = 
+"((?:(?:(?:(?:[a-z\\p{Ll}A-Z&\\p{Lu}'\\.-]+ ?)+|,? Jr.|,? Sr.|,? III|,? II|,? IV|,? V)+, *(?:[A-Z\\p{Lu}-][a-z\\p{Ll}A-Z&\\p{Lu}'\\.-]* ?)+)|(?:(?:[A-Z\\p{Lu}-][a-z\\p{Ll}A-Z&\\p{Lu}'\\.-]+ ?)+|,? Jr.|,? III|,? II|,? IV|,? V)+ [A-Z\\p{Lu}-]\\.?\\b))"
+name_lasttwofirst_penalty_regex = "((?:[A-Z\\p{Lu}-][a-z\\p{Ll}A-Z&\\p{Lu}'\\.-]+| Jr.|,? Sr.| III| II)+,? ?(?:[A-Z\\p{Lu}-][a-z\\p{Ll}A-Z&\\p{Lu}'\\.-]+ ?)*)"
+# name_caplastfirst_penalty_regex = "([A-Z\\p{Lu}-]+, ?(?:[A-Z\\p{Lu}-][a-z\\p{Ll}A-Z&\\p{Lu}'\\.-]+))" #just made it work need to genalize it last first
+# name_caplastfirst_penalty_regex = "([A-Z\\p{Lu}-]+, ?(?:[A-Z\\p{Lu}-][a-z\\p{Ll}A-Z&\\p{Lu}'\\.-]*))"
+# name_caplastfirst_penalty_regex = "((?:[A-Z\\p{Lu}'-]+| III)+, ?(?:[A-Z\\p{Lu}-][a-z\\p{Ll}A-Z&\\p{Lu}'\\.-]*))"
+# name_caplastfirst_penalty_regex = "((?:(?:Mc|Mac)[A-Z\\p{Lu}'-]+| III)+, ?(?:[A-Z\\p{Lu}-][a-z\\p{Ll}A-Z&\\p{Lu}'\\.-]*))"
+# name_caplastfirst_penalty_regex = "((?:(?:Mc|Mac)?[A-Z\\p{Lu}'-]+)+(?: JR\\.?|,? SR\\.?| IIII| III| II| IV| V)?, ?(?:[A-Z\\p{Lu}-][a-z\\p{Ll}A-Z&\\p{Lu}'\\.-]*))"
+name_caplastfirst_penalty_regex = "((?:Mc|Mac)?[A-Z\\p{Lu}'-]+,? (?:JR\\.|SR\\.|IIII|III|II|IV|V)?,? ?(?:[A-Z\\p{Lu}-][a-z\\p{Ll}A-Z&\\p{Lu}'\\.-]*))"
+name_captwolastfirst_penalty_regex = "([A-Z\\p{Lu}'-]+ [A-Z\\p{Lu}-]+, ?(?:[A-Z\\p{Lu}-][a-z\\p{Ll}A-Z&\\p{Lu}'\\.-]*))"
+name_caplasttwofirst_penalty_regex = "((?:Mc|Mac)?[A-Z\\p{Lu}'-]+,? (?:JR\\.|SR\\.|IIII|III|II|IV|V)?,? ?(?:[A-Z\\p{Lu}-][a-z\\p{Ll}A-Z&\\p{Lu}'\\.-]*) (?:[A-Z\\p{Lu}-][a-z\\p{Ll}A-Z&\\p{Lu}'\\.-]*))"
+# name_caplast_postfix_first_penalty_regex = "((?:[A-Z\\p{Lu}'-]+)+, (?:JR\\.|SR\\.?|III|II|IV),? ?(?:[A-Z\\p{Lu}-][a-z\\p{Ll}A-Z&\\p{Lu}'\\.-]*))"
+name_caplast_postfix_first_penalty_regex = "((?:[A-Z\\p{Lu}'-]+)+, (?:JR\\.|SR\\.|III|II|IV),? ?(?:[A-Z\\p{Lu}\\.-][a-z\\p{Ll}A-Z&\\p{Lu}'\\.-]*))"
+# name_period_penalty_regex = "([A-Z\\p{Lu}'-][a-z\\p{Ll}A-Z&\\p{Lu}'\\.-]+\\.[A-Z\\p{Lu}'-][a-z\\p{Ll}A-Z&\\p{Lu}'\\.-]+)"
+# name_period_penalty_regex = "([A-Z\\p{Lu}'-][a-z\\p{Ll}A-Z&\\p{Lu}'\\.-]+(?: J[Rr]\\.?| II| III| IV))"
+name_period_penalty_regex = "([A-Z\\p{Lu}'-].[A-Z\\p{Lu}'-][a-z\\p{Ll}A-Z&\\p{Lu}'\\.-]+(?: J[Rr]\\.?| S[Rr]\\.?| III| II| IV)?)"
+name_lastonly_regex = "((?:[A-Z\\p{Lu}-][a-z\\p{Ll}A-Z&\\p{Lu}'\\.-]+| J[Rr]\\.|S[Rr]\\.?| III| II)+)"
+
+df_names_text = DataFrame(:Name => String[], :Txt => String[])
+# df = CSV.read("../../data/all_games/names_play_text-500.csv", DataFrame; normalizenames=true)
+for i in 500:500:10000
+    df = CSV.read("../../data/all_games/names_play_text-$i.csv", DataFrame; normalizenames=true)
+    dropmissing!(df)
+    df_names_text = vcat(df_names_text, df)
+    unique!(df_names_text)
+end
+
+# sort!(df_names_text)
+df_names_text
+
+CSV.write("../../data/all_games/names_all.csv", df_names_text)
+
+
+df = CSV.read("../../data/all_games/names_all-edit.csv", DataFrame; normalizenames=true)
+df_names_text = DataFrame(:Name => df[1,1], :Txt => df[1,2])
+last_name = df_names_text[1, :Name]
+for r in 2:nrow(df)
+    if df[r, :Name] ≠ last_name
+        df_names_text = vcat(df_names_text, DataFrame(:Name => df[r,1], :Txt => df[r,2]))
+        last_name = df[r, :Name]
+    end
+end
+
+df_names_text
+CSV.write("../../data/all_games/names_all-unique.csv", df_names_text)
+
+
+
+
+df = CSV.read("../../data/all_games/names_all-unique.csv", DataFrame; normalizenames=true)
+df_names_text = DataFrame(:Name => df[1,1], :Txt => df[1,2])
+last_name = df_names_text[1, :Name]
+for r in 2:nrow(df)
+    if df[r, :Name] ≠ last_name
+        df_names_text = vcat(df_names_text, DataFrame(:Name => df[r,1], :Txt => df[r,2]))
+        last_name = df[r, :Name]
+    end
+end
+df_names_text
+CSV.write("../../data/all_games/names_all-unique.csv", df_names_text)
+
+
+#Make comma list and non-comma list
+df = CSV.read("../../data/all_games/names_all-unique.csv", DataFrame; normalizenames=true)
+df_names_comma = DataFrame(:Name => String[], :Txt => String[])
+df_names_nocomma = DataFrame(:Name => String[], :Txt => String[])
+for r in 1:nrow(df)
+    if occursin(",", df[r,1])
+        df_names_comma = vcat(df_names_comma, DataFrame(:Name => df[r,1], :Txt => df[r,2]))
+    else
+        df_names_nocomma = vcat(df_names_nocomma, DataFrame(:Name => df[r,1], :Txt => df[r,2]))
+    end
+end
+
+df_names_comma
+df_names_nocomma
+
+CSV.write("../../data/all_games/names_all-unique_comma.csv", df_names_comma)
+CSV.write("../../data/all_games/names_all-unique_nocomma.csv", df_names_nocomma)
+
+
+
+df_names_nocomma = CSV.read("../../data/all_games/names_all-unique_nocomma.csv", DataFrame)
+
+current_name = df_names_nocomma[10,:Name]
+if current_name == "-"
+    println("Missing")
+elseif occursin("-", current_name)
+    processed_name = replace(current_name, r"^\s*-\s*" => "")
+    println("$processed_name from $current_name")
+end
+
+splitnames = split(current_name, " ")
+length_split_names = length(splitnames)
+if length_split_names == 2   
+    processed_name = splitnames[2]*", "*splitnames[1]
+end
+
+
+
+
+# name_vec = String[]
+
+# for i in 500:500:10000
+#     df = CSV.read("../../data/all_games/names_play_text-$i.csv", DataFrame; normalizenames=true)
+#     dropmissing!(df)
+#     name_vec = vcat(name_vec, df[:, :Name])    
+#     unique!(name_vec)
+# end
+
+# sort!(name_vec)
+
+# CSV.write("../../data/all_games/names_all.csv", DataFrame(:Names => name_vec))
+
 
 #######################################################################################################################################
 # Drive peril by krnxprs
