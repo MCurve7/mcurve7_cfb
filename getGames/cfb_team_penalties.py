@@ -25,6 +25,7 @@ else:
     week_get = int(input("Week [1-16]="))
     seasontype_entry  = input("Season type [regular/postseason/both/preseason]=")
 
+#Get password and access CFDB
 with open('../../data/info/cfbd.txt', mode = 'r') as file:
     Authorization = file.readlines()[0]
     
@@ -48,6 +49,7 @@ api_instance = cfbd.GamesApi(cfbd.ApiClient(configuration))
 # print(len(stats_json[0].teams[0]["stats"]))
 # print(len(stats_json[0].teams[1]["stats"]))
 
+#Define function that translates from JSON to a dictionary
 def json2dict(data):
     stats_json_dict = {}
     # print(stats_json[0].teams[0]["school"])
@@ -80,12 +82,12 @@ if arg_length == 4:
     csvfile='../school_colors/teams-fbs-'+str(year_get)+'.csv'
     with open(csvfile, mode = 'r') as file:
         teams = csv.reader(file)
-        #Skips the 1st row which is a header row
-        next(teams)
+        
+        next(teams) #Skips the 1st row which is a header row
 
         for t in teams:
             team_get = t[0]
-            print(team_get)
+            print("Get team:", team_get)
             for wk in range(1,week_get+1):
                 stats_json = api_instance.get_team_game_stats(season_type = seasontype, year = year_get, week = wk, team = team_get)
                 game0 = []
@@ -105,9 +107,11 @@ if arg_length == 4:
                     
                     if 'totalPenaltiesYards' in json_dict:
                         if team_current not in teams_seen.keys():
+                            teams_seen[team_current] = [0] #ADDED 09/03/2023 to fix a Key not found error
                             num, yards = json_dict['totalPenaltiesYards'].split("-")
                             game0 = [year_get, 0, team_current, json_dict["conference"], num, yards, team_other, seasontype]
                         else:
+                            teams_seen[team_current].append(0) #ADDED 09/03/2023
                             num, yards = json_dict['totalPenaltiesYards'].split("-")
                             game0 = [year_get, 0, team_current, json_dict["conference"], num, yards, team_other, seasontype]
 
@@ -121,13 +125,16 @@ if arg_length == 4:
                     team_current = json_dict['school']
                     if 'totalPenaltiesYards' in json_dict:
                         if team_current not in teams_seen.keys():
+                            teams_seen[team_current] = [1] #ADDED 09/03/2023
                             num, yards = json_dict['totalPenaltiesYards'].split("-")
                             game1 = [year_get, 1, team_current, json_dict["conference"], num, yards, team_other, seasontype]
                         else:
+                            teams_seen[team_current].append(1) #ADDED 09/03/2023
                             num, yards = json_dict['totalPenaltiesYards'].split("-")
                             game1 = [year_get, 1, team_current, json_dict["conference"], num, yards, team_other, seasontype]
                     
                     week0_data[team_get] = [game0, game1]
+                    print("Played week 0:", week0_data)
 
                 #For teams that didn't play a week 0 game
                 else:
@@ -147,6 +154,8 @@ if arg_length == 4:
                                 teams_seen[team_current].append(wk)
                                 num, yards = json_dict['totalPenaltiesYards'].split("-")
                                 data.append([year_get, wk, team_current, json_dict["conference"], num, yards, team_other, seasontype])
+                    
+                    print("Didn't play week 0:", data)
 
     print("Week 0 data:")
     print(week0_data)
@@ -168,6 +177,8 @@ if arg_length == 4:
         penaltyYards0 = week0_data[t][0][5]
         numPenalties1 = week0_data[t][1][4]
         penaltyYards1 = week0_data[t][1][5]
+        print("teams_seen:")
+        print(teams_seen)
         if 1 in teams_seen[t]:
             print("Seen week 1")
             for g in data:

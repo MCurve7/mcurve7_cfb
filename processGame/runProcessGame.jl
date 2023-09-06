@@ -68,10 +68,11 @@ end
 dirContents = readdir("../../data/unprocessed", join=true)
 dirContents[205]
 # ≈ + 123
-dirContents[328]
+dirContents[336]
 
+dirContents[2170]
 #Appalachian State_2018_wk14_regular.csv
-i=1413
+i=336
 dirContents[i]
 @time run_game(i)
 

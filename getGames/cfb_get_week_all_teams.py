@@ -32,6 +32,7 @@ else:
 #seasontype = "both"
 
 
+# Get list of teams from https://collegefootballdata.com/exporter/teams/fbs and delete all non-School columns
 csvfile='../school_colors/teams-fbs-'+str(year_get)+'.csv'
 with open(csvfile, mode = 'r') as file:
     teams = csv.reader(file)
