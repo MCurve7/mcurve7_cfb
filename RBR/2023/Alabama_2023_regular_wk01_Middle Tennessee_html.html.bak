@@ -6,11 +6,18 @@
 <body>
 
 
+
 <p>
 I had intended to post this Monday night, 
 but the accented e in San Josè State broke my code this season.
 So if you look for their data in the penalties data they won't be there 
 and I know how many of you will be upset about this...
+</p>
+
+<p>
+If you would like to see and play with the interactive version of these graphs you can find them at <BR />
+<a href="https://github.com/MCurve7/mcurve7_cfb/tree/main/RBR/2023">https://github.com/MCurve7/mcurve7_cfb/tree/main/RBR/2023</a><BR />
+You just need to download the .html file and open it in a web browser.
 </p>
 
 <p>
@@ -146,9 +153,87 @@ In table form:
 </table>
 <br />
 <p>
-So we were only unsuccessful on 3rd down 3 out of 13 times from distances of 5, 6, and 15 yards.
-With a little bit of time (I think) I should be able to convert this to a graph if there is interest in having it.
+While responding to RaulTyde's comment below it reminded me of how I was interpreting my Yards to Successful vs Yards gained by Down graph.
+So I decided to generate a table that represents what I look at.
+I think the Down column is self explanatory.
+The Count column is the number of that down played.
+The column Δ_plays is the change in the number of plays played in consecutive downs.
+I think the mean, standard deviation (std), and median of the distance and gained are self explanatory.
+(I can add a column for median gained if anyone wants it... which I might add whether it's asked for or not :-P).
 </p>
+<p>
+What I look for is for Δ_plays to have a nice decrease from 1st to 2nd to 3rd downs (and hope there were no turnovers making the numbers look good).
+I also look to see if the mean/median distance is decreasing by down.
+Obviously a large mean gained is desired.
+</p>
+<table>
+  <thead>
+    <tr class = "header headerLastRow">
+      <th style = "text-align: left;">Down</th>
+      <th style = "text-align: left;">Count</th>
+      <th style = "text-align: left;">Δ_plays</th>
+      <th style = "text-align: left;">Mean distance</th>
+      <th style = "text-align: left;">Std distance</th>
+      <th style = "text-align: left;">Median distance</th>
+      <th style = "text-align: left;">Mean gained</th>
+      <th style = "text-align: left;">Std gained</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">29</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">9.7931</td>
+      <td style = "text-align: left;">0.818505</td>
+      <td style = "text-align: left;">10.0</td>
+      <td style = "text-align: left;">6.34483</td>
+      <td style = "text-align: left;">9.66317</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">22</td>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">6.40909</td>
+      <td style = "text-align: left;">4.23881</td>
+      <td style = "text-align: left;">6.0</td>
+      <td style = "text-align: left;">6.5</td>
+      <td style = "text-align: left;">7.50079</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">13</td>
+      <td style = "text-align: left;">9</td>
+      <td style = "text-align: left;">5.0</td>
+      <td style = "text-align: left;">4.28174</td>
+      <td style = "text-align: left;">5.0</td>
+      <td style = "text-align: left;">8.76923</td>
+      <td style = "text-align: left;">14.196</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">13</td>
+      <td style = "text-align: left;">NaN</td>
+      <td style = "text-align: left;">NaN</td>
+      <td style = "text-align: left;">NaN</td>
+      <td style = "text-align: left;">NaN</td>
+      <td style = "text-align: left;">NaN</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+<p>
+So we were only unsuccessful on 3rd down 3 out of 13 times from distances of 5, 6, and 15 yards.
+<s>With a little bit of time (I think) I should be able to convert this to a graph if there is interest in having it.</s>
+I was able to generate the SR by distance to 1st down/TD by down. These can be seen below.
+</p>
+
+<a href="https://postimg.cc/HVc7B8n3" target="_blank"><img src="https://i.postimg.cc/5Npq9wVc/Alabama-2023-regular-wk01-Middle-Tennessee-e05-distance-success-down-all.png" alt="Alabama-2023-regular-wk01-Middle-Tennessee-e05-distance-success-down-all"/></a><br/><br/>
+<a href="https://postimg.cc/6yk4S6GK" target="_blank"><img src="https://i.postimg.cc/3xRjkd8k/Alabama-2023-regular-wk01-Middle-Tennessee-e06-distance-success-down1.png" alt="Alabama-2023-regular-wk01-Middle-Tennessee-e06-distance-success-down1"/></a><br/><br/>
+<a href="https://postimg.cc/RWwJzrcH" target="_blank"><img src="https://i.postimg.cc/8z0RMNct/Alabama-2023-regular-wk01-Middle-Tennessee-e07-distance-success-down2.png" alt="Alabama-2023-regular-wk01-Middle-Tennessee-e07-distance-success-down2"/></a><br/><br/>
+<a href="https://postimg.cc/mcwctQpZ" target="_blank"><img src="https://i.postimg.cc/JnwjYxbX/Alabama-2023-regular-wk01-Middle-Tennessee-e08-distance-success-down3.png" alt="Alabama-2023-regular-wk01-Middle-Tennessee-e08-distance-success-down3"/></a><br/><br/>
+<a href="https://postimg.cc/0MyzmbhY" target="_blank"><img src="https://i.postimg.cc/hj9Tkmr5/Alabama-2023-regular-wk01-Middle-Tennessee-e09-distance-success-down4.png" alt="Alabama-2023-regular-wk01-Middle-Tennessee-e09-distance-success-down4"/></a><br/><br/>
 
 <p>
 For the SR by Drive graph I added a game average line (dotdash) and a season average line (dashed).
@@ -389,7 +474,7 @@ Let us hope that that "era" of Bama football is over.
 Our defense kept their SR below 0.5 on 9 out of 12 drives and of their three drives that were above 0.5 only one was a scoring drive.
 Though they did help us on the first three drives by committing some penalties.
 </p>
-<a href="https://postimg.cc/BLtT7Ymg" target="_blank"><img src="https://i.postimg.cc/fLf8L1X6/Middle-Tennessee-2023-regular-wk01-Alabama-01-success-drive-bar.png" alt="Middle-Tennessee-2023-regular-wk01-Alabama-01-success-drive-bar"/></a><br/><br/>
+<a href='https://postimg.cc/mzYZYs2h' target='_blank'><img src='https://i.postimg.cc/MT4c86C0/Middle-Tennessee-2023-regular-wk01-Alabama-01-success-drive-bar.png' border='0' alt='Middle-Tennessee-2023-regular-wk01-Alabama-01-success-drive-bar'/></a>
 <table>
   <thead>
     <tr class = "header headerLastRow">
@@ -502,6 +587,7 @@ Though they did help us on the first three drives by committing some penalties.
 </table>
 <br />
 <a href="https://postimg.cc/cvmfxyjh" target="_blank"><img src="https://i.postimg.cc/SK0dGmfB/Middle-Tennessee-2023-regular-wk01-Alabama-02-drive-fac-down.png" alt="Middle-Tennessee-2023-regular-wk01-Alabama-02-drive-fac-down"/></a><br/><br/>
+
 
 <img src=["http://a.espncdn.com/i/teamlogos/ncaa/500/333.png"] alt="Alabama logo" height="300">
 <a href="https://postimg.cc/1nKHbVSm" target="_blank"><img src="https://i.postimg.cc/Jnf2Djdk/Alabama-2023-regular-wk01-Middle-Tennessee-01-success-drive-bar.png" alt="Alabama-2023-regular-wk01-Middle-Tennessee-01-success-drive-bar"/></a><br/><br/>
@@ -670,9 +756,148 @@ Though they did help us on the first three drives by committing some penalties.
     </tr>
   </tbody>
 </table>
-<br />        
+<br />
+<table>
+  <thead>
+    <tr class = "header headerLastRow">
+      <th style = "text-align: left;">Distance</th>
+      <th style = "text-align: left;">Yards to goal</th>
+      <th style = "text-align: left;">Successful</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">Successful</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">27</td>
+      <td style = "text-align: left;">Successful</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">38</td>
+      <td style = "text-align: left;">Successful</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">71</td>
+      <td style = "text-align: left;">Successful</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">81</td>
+      <td style = "text-align: left;">Successful</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">49</td>
+      <td style = "text-align: left;">Successful</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">17</td>
+      <td style = "text-align: left;">Successful</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">70</td>
+      <td style = "text-align: left;">Unsuccessful</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">59</td>
+      <td style = "text-align: left;">Unsuccessful</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">60</td>
+      <td style = "text-align: left;">Successful</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">8</td>
+      <td style = "text-align: left;">48</td>
+      <td style = "text-align: left;">Successful</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">10</td>
+      <td style = "text-align: left;">75</td>
+      <td style = "text-align: left;">Successful</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">15</td>
+      <td style = "text-align: left;">84</td>
+      <td style = "text-align: left;">Unsuccessful</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+<table>
+  <thead>
+    <tr class = "header headerLastRow">
+      <th style = "text-align: left;">Down</th>
+      <th style = "text-align: left;">Count</th>
+      <th style = "text-align: left;">Δ_plays</th>
+      <th style = "text-align: left;">Mean distance</th>
+      <th style = "text-align: left;">Std distance</th>
+      <th style = "text-align: left;">Median distance</th>
+      <th style = "text-align: left;">Mean gained</th>
+      <th style = "text-align: left;">Std gained</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">29</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">9.7931</td>
+      <td style = "text-align: left;">0.818505</td>
+      <td style = "text-align: left;">10.0</td>
+      <td style = "text-align: left;">6.34483</td>
+      <td style = "text-align: left;">9.66317</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">22</td>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">6.40909</td>
+      <td style = "text-align: left;">4.23881</td>
+      <td style = "text-align: left;">6.0</td>
+      <td style = "text-align: left;">6.5</td>
+      <td style = "text-align: left;">7.50079</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">13</td>
+      <td style = "text-align: left;">9</td>
+      <td style = "text-align: left;">5.0</td>
+      <td style = "text-align: left;">4.28174</td>
+      <td style = "text-align: left;">5.0</td>
+      <td style = "text-align: left;">8.76923</td>
+      <td style = "text-align: left;">14.196</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">13</td>
+      <td style = "text-align: left;">NaN</td>
+      <td style = "text-align: left;">NaN</td>
+      <td style = "text-align: left;">NaN</td>
+      <td style = "text-align: left;">NaN</td>
+      <td style = "text-align: left;">NaN</td>
+    </tr>
+  </tbody>
+</table>
+<br />
 <a href="https://postimg.cc/qNCG45rZ" target="_blank"><img src="https://i.postimg.cc/3xtfjsc7/Alabama-2023-regular-wk01-Middle-Tennessee-04-all4-downs-fac.png" alt="Alabama-2023-regular-wk01-Middle-Tennessee-04-all4-downs-fac"/></a><br/><br/>
 <a href="https://postimg.cc/2bTQ0pd3" target="_blank"><img src="https://i.postimg.cc/gjbgkmny/Alabama-2023-regular-wk01-Middle-Tennessee-05-all4-downs-fac-noscale.png" alt="Alabama-2023-regular-wk01-Middle-Tennessee-05-all4-downs-fac-noscale"/></a><br/><br/>
+<a href='https://postimg.cc/GHMBzMZ8' target='_blank'><img src='https://i.postimg.cc/vZyWYkhz/Alabama-2023-regular-wk01-Middle-Tennessee-e10-distance-success-downs-all4.png' border='0' alt='Alabama-2023-regular-wk01-Middle-Tennessee-e10-distance-success-downs-all4'/></a>
+<a href="https://postimg.cc/6yk4S6GK" target="_blank"><img src="https://i.postimg.cc/3xRjkd8k/Alabama-2023-regular-wk01-Middle-Tennessee-e06-distance-success-down1.png" alt="Alabama-2023-regular-wk01-Middle-Tennessee-e06-distance-success-down1"/></a><br/><br/>
+<a href="https://postimg.cc/RWwJzrcH" target="_blank"><img src="https://i.postimg.cc/8z0RMNct/Alabama-2023-regular-wk01-Middle-Tennessee-e07-distance-success-down2.png" alt="Alabama-2023-regular-wk01-Middle-Tennessee-e07-distance-success-down2"/></a><br/><br/>
+<a href="https://postimg.cc/mcwctQpZ" target="_blank"><img src="https://i.postimg.cc/JnwjYxbX/Alabama-2023-regular-wk01-Middle-Tennessee-e08-distance-success-down3.png" alt="Alabama-2023-regular-wk01-Middle-Tennessee-e08-distance-success-down3"/></a><br/><br/>
+<a href="https://postimg.cc/0MyzmbhY" target="_blank"><img src="https://i.postimg.cc/hj9Tkmr5/Alabama-2023-regular-wk01-Middle-Tennessee-e09-distance-success-down4.png" alt="Alabama-2023-regular-wk01-Middle-Tennessee-e09-distance-success-down4"/></a><br/><br/>
 <a href="https://postimg.cc/B8Tc1PXT" target="_blank"><img src="https://i.postimg.cc/mrqdJQ45/Alabama-2023-regular-wk01-Middle-Tennessee-06-yards-success-gained.png" alt="Alabama-2023-regular-wk01-Middle-Tennessee-06-yards-success-gained"/></a><br/><br/>
 <a href="https://postimg.cc/qgMXzR0K" target="_blank"><img src="https://i.postimg.cc/7PSBtGWK/Alabama-2023-regular-wk01-Middle-Tennessee-09-fac-yards-to-success.png" alt="Alabama-2023-regular-wk01-Middle-Tennessee-09-fac-yards-to-success"/></a><br/><br/>
 <a href="https://postimg.cc/nMHTB2KC" target="_blank"><img src="https://i.postimg.cc/sfW8F0v9/Alabama-2023-regular-wk01-Middle-Tennessee-e01-drive-success-play.png" alt="Alabama-2023-regular-wk01-Middle-Tennessee-e01-drive-success-play"/></a><br/><br/>
@@ -769,8 +994,14 @@ Though they did help us on the first three drives by committing some penalties.
 
 
 
+
+
+
+
+
+
 <img src=https://upload.wikimedia.org/wikipedia/commons/3/3d/Cupcake_icon.jpg alt="Middle Tennessee logo" height="300">
-<a href="https://postimg.cc/BLtT7Ymg" target="_blank"><img src="https://i.postimg.cc/fLf8L1X6/Middle-Tennessee-2023-regular-wk01-Alabama-01-success-drive-bar.png" alt="Middle-Tennessee-2023-regular-wk01-Alabama-01-success-drive-bar"/></a><br/><br/>
+<a href='https://postimg.cc/mzYZYs2h' target='_blank'><img src='https://i.postimg.cc/MT4c86C0/Middle-Tennessee-2023-regular-wk01-Alabama-01-success-drive-bar.png' border='0' alt='Middle-Tennessee-2023-regular-wk01-Alabama-01-success-drive-bar'/></a>
 <table>
   <thead>
     <tr class = "header headerLastRow">
@@ -929,8 +1160,162 @@ Though they did help us on the first three drives by committing some penalties.
   </tbody>
 </table>
 <br />
+<table>
+  <thead>
+    <tr class = "header headerLastRow">
+      <th style = "text-align: left;">Distance</th>
+      <th style = "text-align: left;">Yards to goal</th>
+      <th style = "text-align: left;">Successful</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">29</td>
+      <td style = "text-align: left;">Successful</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">60</td>
+      <td style = "text-align: left;">Successful</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">63</td>
+      <td style = "text-align: left;">Successful</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">22</td>
+      <td style = "text-align: left;">Successful</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">74</td>
+      <td style = "text-align: left;">Successful</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">68</td>
+      <td style = "text-align: left;">Successful</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">60</td>
+      <td style = "text-align: left;">Unsuccessful</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">Successful</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">8</td>
+      <td style = "text-align: left;">73</td>
+      <td style = "text-align: left;">Unsuccessful</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">9</td>
+      <td style = "text-align: left;">74</td>
+      <td style = "text-align: left;">Unsuccessful</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">10</td>
+      <td style = "text-align: left;">54</td>
+      <td style = "text-align: left;">Unsuccessful</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">12</td>
+      <td style = "text-align: left;">94</td>
+      <td style = "text-align: left;">Unsuccessful</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">14</td>
+      <td style = "text-align: left;">14</td>
+      <td style = "text-align: left;">Unsuccessful</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">14</td>
+      <td style = "text-align: left;">75</td>
+      <td style = "text-align: left;">Unsuccessful</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">15</td>
+      <td style = "text-align: left;">80</td>
+      <td style = "text-align: left;">Unsuccessful</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">22</td>
+      <td style = "text-align: left;">87</td>
+      <td style = "text-align: left;">Unsuccessful</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+<table>
+  <thead>
+    <tr class = "header headerLastRow">
+      <th style = "text-align: left;">Down</th>
+      <th style = "text-align: left;">Count</th>
+      <th style = "text-align: left;">Δ_plays</th>
+      <th style = "text-align: left;">Mean distance</th>
+      <th style = "text-align: left;">Std distance</th>
+      <th style = "text-align: left;">Median distance</th>
+      <th style = "text-align: left;">Mean gained</th>
+      <th style = "text-align: left;">Std gained</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">24</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">10.2917</td>
+      <td style = "text-align: left;">1.51741</td>
+      <td style = "text-align: left;">10.0</td>
+      <td style = "text-align: left;">3.75</td>
+      <td style = "text-align: left;">3.87018</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">21</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">8.14286</td>
+      <td style = "text-align: left;">3.99106</td>
+      <td style = "text-align: left;">8.0</td>
+      <td style = "text-align: left;">3.52381</td>
+      <td style = "text-align: left;">6.39233</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">16</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">7.9375</td>
+      <td style = "text-align: left;">6.25533</td>
+      <td style = "text-align: left;">7.5</td>
+      <td style = "text-align: left;">3.6875</td>
+      <td style = "text-align: left;">7.83768</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">16</td>
+      <td style = "text-align: left;">NaN</td>
+      <td style = "text-align: left;">NaN</td>
+      <td style = "text-align: left;">NaN</td>
+      <td style = "text-align: left;">NaN</td>
+      <td style = "text-align: left;">NaN</td>
+    </tr>
+  </tbody>
+</table>
+<br />
 <a href="https://postimg.cc/G4rknhM9" target="_blank"><img src="https://i.postimg.cc/FHkGcY3b/Middle-Tennessee-2023-regular-wk01-Alabama-04-all4-downs-fac.png" alt="Middle-Tennessee-2023-regular-wk01-Alabama-04-all4-downs-fac"/></a><br/><br/>
 <a href="https://postimg.cc/Ty3ghNv6" target="_blank"><img src="https://i.postimg.cc/fbxK21HJ/Middle-Tennessee-2023-regular-wk01-Alabama-05-all4-downs-fac-noscale.png" alt="Middle-Tennessee-2023-regular-wk01-Alabama-05-all4-downs-fac-noscale"/></a><br/><br/>
+<a href='https://postimg.cc/hQDj1xs1' target='_blank'><img src='https://i.postimg.cc/j2N7K4Jm/Middle-Tennessee-2023-regular-wk01-Alabama-e10-distance-success-downs-all4.png' border='0' alt='Middle-Tennessee-2023-regular-wk01-Alabama-e10-distance-success-downs-all4'/></a>
+<a href="https://postimg.cc/xqb0ZvGk" target="_blank"><img src="https://i.postimg.cc/nV3CCTC1/Middle-Tennessee-2023-regular-wk01-Alabama-e06-distance-success-down1.png" alt="Middle-Tennessee-2023-regular-wk01-Alabama-e06-distance-success-down1"/></a><br/><br/>
+<a href="https://postimg.cc/D4snbhfQ" target="_blank"><img src="https://i.postimg.cc/0jXQF5L4/Middle-Tennessee-2023-regular-wk01-Alabama-e07-distance-success-down2.png" alt="Middle-Tennessee-2023-regular-wk01-Alabama-e07-distance-success-down2"/></a><br/><br/>
+<a href="https://postimg.cc/gXxYmRfT" target="_blank"><img src="https://i.postimg.cc/MTDX0mtq/Middle-Tennessee-2023-regular-wk01-Alabama-e08-distance-success-down3.png" alt="Middle-Tennessee-2023-regular-wk01-Alabama-e08-distance-success-down3"/></a><br/><br/>
+<a href="https://postimg.cc/tZ89TJbC" target="_blank"><img src="https://i.postimg.cc/T131t5Hm/Middle-Tennessee-2023-regular-wk01-Alabama-e09-distance-success-down4.png" alt="Middle-Tennessee-2023-regular-wk01-Alabama-e09-distance-success-down4"/></a><br/><br/>
 <a href="https://postimg.cc/BPH1RdHx" target="_blank"><img src="https://i.postimg.cc/d3SmZF0S/Middle-Tennessee-2023-regular-wk01-Alabama-06-yards-success-gained.png" alt="Middle-Tennessee-2023-regular-wk01-Alabama-06-yards-success-gained"/></a><br/><br/>
 <a href="https://postimg.cc/yWZ9JStk" target="_blank"><img src="https://i.postimg.cc/3rLZcXZC/Middle-Tennessee-2023-regular-wk01-Alabama-09-fac-yards-to-success.png" alt="Middle-Tennessee-2023-regular-wk01-Alabama-09-fac-yards-to-success"/></a><br/><br/>
 <a href="https://postimg.cc/G9WFzjGF" target="_blank"><img src="https://i.postimg.cc/jd5MxgjF/Middle-Tennessee-2023-regular-wk01-Alabama-e01-drive-success-play.png" alt="Middle-Tennessee-2023-regular-wk01-Alabama-e01-drive-success-play"/></a><br/><br/>
@@ -1010,6 +1395,12 @@ Though they did help us on the first three drives by committing some penalties.
 </table>
 <br />
 <a href="https://postimg.cc/fVhvWvbz" target="_blank"><img src="https://i.postimg.cc/rwDZJnXr/Middle-Tennessee-2023-regular-wk01-p03-penalties-line-season.png" alt="Middle-Tennessee-2023-regular-wk01-p03-penalties-line-season"/></a><br/><br/>
+
+
+
+
+
+
 
 
 
