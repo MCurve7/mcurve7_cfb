@@ -1,0 +1,312 @@
+{
+  data: [
+    {
+      "x": [-0.0449999999999999, 13.045],
+      "y": [0.286489898989899, 0.286489898989899],
+      "text": "yintercept: 0.2864899",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(158,27,50,1)",
+        "dash": "dashdot"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [-0.0449999999999999, 13.045],
+      "y": [0.420909090909091, 0.420909090909091],
+      "text": "yintercept: 0.4209091",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(130,138,143,1)",
+        "dash": "dash"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "orientation": "v",
+      "width": [0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.899999999999999, 0.899999999999999, 0.899999999999999],
+      "base": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "x": [1, 2, 3, 4, 5, 6, 7, 8, 10, 12],
+      "y": [0.571428571428571, 0.454545454545455, 0.333333333333333, 0.25, 0.428571428571429, 0.166666666666667, 0.333333333333333, 0, 0, 0],
+      "text": ["O_drive_number:  1<br />Success_rate: 0.5714286<br />Score_drive: FALSE<br />Total:  7", "O_drive_number:  2<br />Success_rate: 0.4545455<br />Score_drive: FALSE<br />Total: 11", "O_drive_number:  3<br />Success_rate: 0.3333333<br />Score_drive: FALSE<br />Total:  6", "O_drive_number:  4<br />Success_rate: 0.2500000<br />Score_drive: FALSE<br />Total:  4", "O_drive_number:  5<br />Success_rate: 0.4285714<br />Score_drive: FALSE<br />Total:  7", "O_drive_number:  6<br />Success_rate: 0.1666667<br />Score_drive: FALSE<br />Total:  6", "O_drive_number:  7<br />Success_rate: 0.3333333<br />Score_drive: FALSE<br />Total:  3", "O_drive_number:  8<br />Success_rate: 0.0000000<br />Score_drive: FALSE<br />Total:  3", "O_drive_number: 10<br />Success_rate: 0.0000000<br />Score_drive: FALSE<br />Total:  1", "O_drive_number: 12<br />Success_rate: 0.0000000<br />Score_drive: FALSE<br />Total:  3"],
+      "type": "bar",
+      "textposition": "none",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(130,138,143,1)",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "name": "FALSE",
+      "legendgroup": "FALSE",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "orientation": "v",
+      "width": [0.899999999999999, 0.899999999999999],
+      "base": [0, 0],
+      "x": [9, 11],
+      "y": [0.4, 0.5],
+      "text": ["O_drive_number:  9<br />Success_rate: 0.4000000<br />Score_drive:  TRUE<br />Total:  5", "O_drive_number: 11<br />Success_rate: 0.5000000<br />Score_drive:  TRUE<br />Total:  6"],
+      "type": "bar",
+      "textposition": "none",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(158,27,50,1)",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "name": "TRUE",
+      "legendgroup": "TRUE",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "visible": false,
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "y": [0.571428571428571, 0.454545454545455, 0.333333333333333, 0.25, 0.428571428571429, 0.166666666666667, 0.333333333333333, 0, 0.4, 0, 0.5, 0],
+      "text": [7, 11, 6, 4, 7, 6, 3, 3, 5, 1, 6, 3],
+      "hovertext": ["O_drive_number:  1<br />Success_rate: 0.5714286<br />Total:  7", "O_drive_number:  2<br />Success_rate: 0.4545455<br />Total: 11", "O_drive_number:  3<br />Success_rate: 0.3333333<br />Total:  6", "O_drive_number:  4<br />Success_rate: 0.2500000<br />Total:  4", "O_drive_number:  5<br />Success_rate: 0.4285714<br />Total:  7", "O_drive_number:  6<br />Success_rate: 0.1666667<br />Total:  6", "O_drive_number:  7<br />Success_rate: 0.3333333<br />Total:  3", "O_drive_number:  8<br />Success_rate: 0.0000000<br />Total:  3", "O_drive_number:  9<br />Success_rate: 0.4000000<br />Total:  5", "O_drive_number: 10<br />Success_rate: 0.0000000<br />Total:  1", "O_drive_number: 11<br />Success_rate: 0.5000000<br />Total:  6", "O_drive_number: 12<br />Success_rate: 0.0000000<br />Total:  3"],
+      "textfont": {
+        "size": 14.6645669291339,
+        "color": "rgba(0,0,0,1)"
+      },
+      "type": "scatter",
+      "mode": "text",
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    }
+  ],
+  layout: {
+    "margin": {
+      "t": 43.2754946727549,
+      "r": 7.30593607305936,
+      "b": 39.6955859969559,
+      "l": 43.1050228310502
+    },
+    "plot_bgcolor": "rgba(229,229,229,1)",
+    "paper_bgcolor": "rgba(255,255,255,1)",
+    "font": {
+      "color": "rgba(0,0,0,1)",
+      "family": "",
+      "size": 14.6118721461187
+    },
+    "title": {
+      "text": "Alabama[24]: Success rate by Drive with TD drive indicated and number of plays per drive; Mean: Game = 0.286 (dotdash), Season = 0.421 (dashed)<br> <sup>2023: wk02 vs Texas[34]<\/sup>",
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 17.5342465753425
+      },
+      "x": 0,
+      "xref": "paper",
+      "xanchor": "left"
+    },
+    "xaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [-0.0449999999999999, 13.045],
+      "tickmode": "array",
+      "ticktext": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"],
+      "tickvals": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "categoryorder": "array",
+      "categoryarray": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"],
+      "nticks": null,
+      "ticks": "outside",
+      "tickcolor": "rgba(51,51,51,1)",
+      "ticklen": 3.65296803652968,
+      "tickwidth": 0.66417600664176,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "tickangle": -0,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": "rgba(204,204,204,1)",
+      "gridwidth": 0.66417600664176,
+      "zeroline": false,
+      "anchor": "y",
+      "title": {
+        "text": "Drive number",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "yaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [-0.05, 1.05],
+      "tickmode": "array",
+      "ticktext": ["0.0", "0.1", "0.2", "0.3", "0.4", "0.5", "0.6", "0.7", "0.8", "0.9", "1.0"],
+      "tickvals": [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1],
+      "categoryorder": "array",
+      "categoryarray": ["0.0", "0.1", "0.2", "0.3", "0.4", "0.5", "0.6", "0.7", "0.8", "0.9", "1.0"],
+      "nticks": null,
+      "ticks": "outside",
+      "tickcolor": "rgba(51,51,51,1)",
+      "ticklen": 3.65296803652968,
+      "tickwidth": 0.66417600664176,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "tickangle": -0,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": "rgba(204,204,204,1)",
+      "gridwidth": 0.66417600664176,
+      "zeroline": false,
+      "anchor": "x",
+      "title": {
+        "text": "Success rate",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "shapes": [
+      {
+        "type": "rect",
+        "fillcolor": null,
+        "line": {
+          "color": null,
+          "width": 0,
+          "linetype": []
+        },
+        "yref": "paper",
+        "xref": "paper",
+        "x0": 0,
+        "x1": 1,
+        "y0": 0,
+        "y1": 1
+      }
+    ],
+    "showlegend": true,
+    "legend": {
+      "bgcolor": "rgba(255,255,255,1)",
+      "bordercolor": "transparent",
+      "borderwidth": 1.88976377952756,
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "title": {
+        "text": "TD",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      }
+    },
+    "hovermode": "closest",
+    "barmode": "relative"
+  },
+  config: {
+    "doubleClick": "reset",
+    "modeBarButtonsToAdd": ["hoverclosest", "hovercompare"],
+    "showSendToCloud": false
+  },
+  source: "A",
+  attrs: {
+    "4b7c2e4510d3": {
+      "yintercept": {},
+      "type": "scatter"
+    },
+    "4b7c5f50670c": {
+      "yintercept": {}
+    },
+    "4b7c6694ce8": {
+      "x": {},
+      "y": {},
+      "fill": {},
+      "label": {}
+    },
+    "4b7c44292bd": {
+      "y": {}
+    },
+    "4b7c535f9d9": {
+      "x": {},
+      "y": {},
+      "label": {}
+    }
+  },
+  cur_data: "4b7c2e4510d3",
+  visdat: {
+    "4b7c2e4510d3": ["function (y) ", "x"],
+    "4b7c5f50670c": ["function (y) ", "x"],
+    "4b7c6694ce8": ["function (y) ", "x"],
+    "4b7c44292bd": ["function (y) ", "x"],
+    "4b7c535f9d9": ["function (y) ", "x"]
+  },
+  highlight: {
+    "on": "plotly_click",
+    "persistent": false,
+    "dynamic": false,
+    "selectize": false,
+    "opacityDim": 0.2,
+    "selected": {
+      "opacity": 1
+    },
+    "debounce": 0
+  },
+  shinyEvents: ["plotly_hover", "plotly_click", "plotly_selected", "plotly_relayout", "plotly_brushed", "plotly_brushing", "plotly_clickannotation", "plotly_doubleclick", "plotly_deselect", "plotly_afterplot", "plotly_sunburstclick"],
+  base_url: "https://plot.ly"
+}

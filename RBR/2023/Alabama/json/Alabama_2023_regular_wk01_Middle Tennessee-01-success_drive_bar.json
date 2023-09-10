@@ -32,7 +32,7 @@
         "color": "rgba(130,138,143,1)",
         "line": {
           "width": 1.88976377952756,
-          "color": "transparent"
+          "color": "rgba(0,0,0,1)"
         }
       },
       "name": "FALSE",
@@ -58,7 +58,7 @@
         "color": "rgba(158,27,50,1)",
         "line": {
           "width": 1.88976377952756,
-          "color": "transparent"
+          "color": "rgba(0,0,0,1)"
         }
       },
       "name": "TRUE",
@@ -251,35 +251,35 @@
   },
   source: "A",
   attrs: {
-    "4dc86dfc4b62": {
+    "4b7c5bf451b6": {
       "yintercept": {},
       "type": "scatter"
     },
-    "4dc8102132d0": {
+    "4b7c7eee99c": {
       "yintercept": {}
     },
-    "4dc8399a1fb3": {
+    "4b7c37ad39ca": {
       "x": {},
       "y": {},
       "fill": {},
       "label": {}
     },
-    "4dc842c1147d": {
+    "4b7ca7475d0": {
       "y": {}
     },
-    "4dc818b6111f": {
+    "4b7c2b43c0a": {
       "x": {},
       "y": {},
       "label": {}
     }
   },
-  cur_data: "4dc86dfc4b62",
+  cur_data: "4b7c5bf451b6",
   visdat: {
-    "4dc86dfc4b62": ["function (y) ", "x"],
-    "4dc8102132d0": ["function (y) ", "x"],
-    "4dc8399a1fb3": ["function (y) ", "x"],
-    "4dc842c1147d": ["function (y) ", "x"],
-    "4dc818b6111f": ["function (y) ", "x"]
+    "4b7c5bf451b6": ["function (y) ", "x"],
+    "4b7c7eee99c": ["function (y) ", "x"],
+    "4b7c37ad39ca": ["function (y) ", "x"],
+    "4b7ca7475d0": ["function (y) ", "x"],
+    "4b7c2b43c0a": ["function (y) ", "x"]
   },
   highlight: {
     "on": "plotly_click",

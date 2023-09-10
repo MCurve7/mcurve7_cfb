@@ -25,6 +25,8 @@ function run_all_games()
     overwrite = false
     # overwrite = true
     
+    
+    # for game in dirContents
     @threads for game in dirContents
         game_split = split(game, r"[\\/]")
         #println("Split directory: $game_split")
@@ -68,11 +70,12 @@ end
 dirContents = readdir("../../data/unprocessed", join=true)
 dirContents[205]
 # ≈ + 123
-dirContents[336]
+dirContents[339]
 
-dirContents[2170]
+dirContents[13628]
 #Appalachian State_2018_wk14_regular.csv
-i=336
+
+i=findall(x->x=="../../data/unprocessed\\Alabama_2023_wk02_regular.csv", dirContents)[1]
 dirContents[i]
 @time run_game(i)
 

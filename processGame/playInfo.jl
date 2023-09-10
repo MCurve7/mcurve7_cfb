@@ -23,13 +23,32 @@ function play_info(cols)
         play_text = replace(play_text, "\xc9" => "É")
         play_text = replace(play_text, "\xe9" => "é")
         # println("Play text after:\n$(play_text)")
+        offense = replace(offense, "\xc9" => "É")
+        offense = replace(offense, "\xe9" => "é")
+        defense = replace(defense, "\xc9" => "É")
+        defense = replace(defense, "\xe9" => "é")
+        # if DEBUG_PLAY_INFO println("offense: $offense") end
+        # if DEBUG_PLAY_INFO println("defense: $defense") end
     else
         play_text = ""
     end
 
     school_colors = CSV.File("../school_colors/school_colors.csv", delim=';') |> DataFrame
-    off_abbrv = replace(school_colors[school_colors.School .== offense, :Abbreviation_regex][1], "("=>"(?:")
-    def_abbrv = replace(school_colors[school_colors.School .== defense, :Abbreviation_regex][1], "("=>"(?:")
+    # if DEBUG_PLAY_INFO println("school_colors.offense: $offense") end
+    # if DEBUG_PLAY_INFO println("school_colors.offense.Abbreviation_regex: $(school_colors[school_colors.School .== offense, :Abbreviation_regex])") end
+    if offense == "San Jos� State" || occursin("San Jos", offense)
+        off_abbrv = replace(school_colors[school_colors.School .== "San José State", :Abbreviation_regex][1], "("=>"(?:")
+    else
+        off_abbrv = replace(school_colors[school_colors.School .== offense, :Abbreviation_regex][1], "("=>"(?:")
+    end
+    # if DEBUG_PLAY_INFO println("school_colors.defense: $defense") end
+    # if DEBUG_PLAY_INFO println("school_colors.defense.Abbreviation_regex: $(school_colors[school_colors.School .== defense, :Abbreviation_regex])") end
+    # if DEBUG_PLAY_INFO println("""occursin("San Jos", defense): $(occursin("San Jos", defense))""") end
+    if defense == "San Jos� State" || occursin("San Jos", defense)
+        def_abbrv = replace(school_colors[school_colors.School .== "San José State", :Abbreviation_regex][1], "("=>"(?:")
+    else
+        def_abbrv = replace(school_colors[school_colors.School .== defense, :Abbreviation_regex][1], "("=>"(?:")
+    end
     # println("def_abbrv = $(def_abbrv)")
     #Must go after school_colors above
     offense = replace(offense, "\xc9" => "É")
@@ -1345,6 +1364,7 @@ function play_punt_return_td(cols)
     punt_return_regex = r"[Yy]d Punt Return"
     punt_return_receiver_regex = Regex("^TD $(name_regex)\\d")
     punt_return_receiver2_regex = Regex("^$(name_regex)\\d+ Yd Punt Return")
+    punt_return_receiver3_regex = Regex("$(name_regex)\\d+ Yd Punt Return")
     
     punt_for_regex = r"punt blocked by"
     punt_for_punter_regex = Regex("^$(name_regex)punt for")
@@ -1358,8 +1378,10 @@ function play_punt_return_td(cols)
         punter = "No data"
         if occursin(punt_return_receiver_regex, play_text)
             recoverer = strip(match(punt_return_receiver_regex, play_text)[1])
+        elseif occursin(punt_return_receiver2_regex, play_text)
+            recoverer = strip(match(punt_return_receiver3_regex, play_text)[1])
         else
-            recoverer = strip(match(punt_return_receiver2_regex, play_text)[1])
+
         end
         PAT_kicker,  PAT_type, two_point, two_point_type, two_point_runner, two_point_passer, two_point_receiver = points_after(play_text)
     elseif occursin(punt_for_regex, play_text)
@@ -1696,7 +1718,7 @@ function points_after(cols)
     kicker_blocked_regex = Regex("$(name_regex)(?:PAT )?BLOCKED")
     kicker_missed_regex = r"(?:((?:[A-Z\p{Lu}-][a-z\p{Ll}A-Z&\p{Lu}'\.-]+\s?)+)(?: PAT)? MISSED)"
     runner_regex = r"(?:((?:[A-Z\p{Lu}-][a-z\p{Ll}A-Z&\p{Lu}'\.-]+\s?)+) Run [Ff]or Two-[Pp]oint Conversion)"
-    runner_nodata_regex = r"( Run For Two-point Conversion)"
+    runner_nodata_regex = r"( [Rr]un [Ff]or [Tt]wo-[Pp]oint [Cc]onversion)"
     passer_regex = Regex("$(name_regex)[Pp]ass")
     passer_regex2 = Regex("Two pt pass, $(name_regex)[Pp]ass")
     receiver_regex = Regex("[Pp]ass\\s+to $(name_regex)for")

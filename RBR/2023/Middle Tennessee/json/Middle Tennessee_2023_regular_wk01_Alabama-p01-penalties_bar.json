@@ -14,7 +14,7 @@
         "color": "rgba(158,27,50,1)",
         "line": {
           "width": 1.88976377952756,
-          "color": "transparent"
+          "color": "rgba(0,0,0,1)"
         }
       },
       "name": "Alabama",
@@ -39,7 +39,7 @@
         "color": "rgba(0,0,0,1)",
         "line": {
           "width": 1.88976377952756,
-          "color": "transparent"
+          "color": "rgba(0,0,0,1)"
         }
       },
       "name": "Middle Tennessee",
@@ -196,16 +196,16 @@
   },
   source: "A",
   attrs: {
-    "4dc8331c5dd2": {
+    "4b7c1b867ff": {
       "x": {},
       "y": {},
       "fill": {},
       "type": "bar"
     }
   },
-  cur_data: "4dc8331c5dd2",
+  cur_data: "4b7c1b867ff",
   visdat: {
-    "4dc8331c5dd2": ["function (y) ", "x"]
+    "4b7c1b867ff": ["function (y) ", "x"]
   },
   highlight: {
     "on": "plotly_click",

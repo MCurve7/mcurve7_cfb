@@ -134,7 +134,9 @@ function process_game(game)
     # df = transform(df, AsTable([:Play_text, :Offense, :Defense, :Penalty_type]) => ByRow(foulteam) => :Penalty_team)
     # df = transform(df, AsTable([:Play_text, :Penalty_type]) => ByRow(foultransgressor) => :Penalty_transgressor)
     DEBUG_PROCESS_FUNCTION && println("foul_analysis")
-    df = transform(df, AsTable([:Play_text, :Offense, :Defense]) => ByRow(foul_analysis) => 
+    # df = transform(df, AsTable([:Play_text, :Offense, :Defense]) => ByRow(foul_analysis) => 
+    #     [:Penalty1_type, :Penalty1_status, :Penalty1_team, :Penalty1_transgressor, :Penalty2_type, :Penalty2_status, :Penalty2_team, :Penalty2_transgressor, :Penalty3_type, :Penalty3_status, :Penalty3_team, :Penalty3_transgressor])
+    df = transform(df, AsTable([:Play_text, :Offense, :Defense, :Quarter, :Down, :Drive_number, :Play_number]) => ByRow(foul_analysis) => 
         [:Penalty1_type, :Penalty1_status, :Penalty1_team, :Penalty1_transgressor, :Penalty2_type, :Penalty2_status, :Penalty2_team, :Penalty2_transgressor, :Penalty3_type, :Penalty3_status, :Penalty3_team, :Penalty3_transgressor])
 
     df
@@ -342,9 +344,13 @@ function scoredrive(df)
         #remove drive ending on End of Game, End of half, etc
         #but need to keep track of how many removed and add back to get correct number of elemenets in column
         #rename end_of_count to number_of_removed_plays
-        end_of_count = nrow(filter(:Play_type => x->(x ∈ ["End of Game", "End of Half", "End of Regulation", "End Period"]), dfdrive))
+        
+        # end_of_count = nrow(filter(:Play_type => x->(x ∈ ["End of Game", "End of Half", "End of Regulation", "End Period"]), dfdrive))
+        end_of_count = nrow(filter(:Play_type => x->(x ∈ ["End of Game", "End of Half", "End of Regulation", "End Period", "Timeout"]), dfdrive))
+
         # println("Drive number: $i, End_ofs: $end_of_count")
-        dfdrive = filter(:Play_type => x->(x ∉ ["End of Game", "End of Half", "End of Regulation", "End Period"]), dfdrive)
+        # dfdrive = filter(:Play_type => x->(x ∉ ["End of Game", "End of Half", "End of Regulation", "End Period"]), dfdrive)
+        dfdrive = filter(:Play_type => x->(x ∉ ["End of Game", "End of Half", "End of Regulation", "End Period", "Timeout"]), dfdrive)
 
         len_dfdrive = nrow(dfdrive)
         # df_len = length(unique(dfdrive.O_scoring))

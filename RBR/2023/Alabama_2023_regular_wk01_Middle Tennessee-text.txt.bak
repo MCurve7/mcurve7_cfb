@@ -143,6 +143,20 @@ In table form:
   </tbody>
 </table>
 <br />
+<p>
+While responding to RaulTyde's comment below it reminded me of how I was interpreting my Yards to Successful vs Yards gained by Down graph.
+So I decided to generate a table that represents what I look at.
+I think the Down column is self explanatory.
+The Count column is the number of that down played.
+The column Δ_plays is the change in the number of plays played in consecutive downs.
+I think the mean, standard deviation (std), and median of the distance and gained are self explanatory.
+(I can add a column for median gained if anyone wants it... which I might add whether it's asked for or not :-P).
+</p>
+<p>
+What I look for is for Δ_plays to have a nice decrease from 1st to 2nd to 3rd downs (and hope there were no turnovers making the numbers look good).
+I also look to see if the mean/median distance is decreasing by down.
+Obviously a large mean gained is desired.
+</p>
 <table>
   <thead>
     <tr class = "header headerLastRow">
@@ -202,8 +216,15 @@ In table form:
 <br />
 <p>
 So we were only unsuccessful on 3rd down 3 out of 13 times from distances of 5, 6, and 15 yards.
-With a little bit of time (I think) I should be able to convert this to a graph if there is interest in having it.
+<s>With a little bit of time (I think) I should be able to convert this to a graph if there is interest in having it.</s>
+I was able to generate the SR by distance to 1st down/TD by down. These can be seen below.
 </p>
+
+<div id="Alabama_2023_regular_wk01_Middle Tennessee-e05-distance_success_down_all" ></div><br />
+<div id="Alabama_2023_regular_wk01_Middle Tennessee-e06-distance_success_down1" ></div><br />
+<div id="Alabama_2023_regular_wk01_Middle Tennessee-e07-distance_success_down2" ></div><br />
+<div id="Alabama_2023_regular_wk01_Middle Tennessee-e08-distance_success_down3" ></div><br />
+<div id="Alabama_2023_regular_wk01_Middle Tennessee-e09-distance_success_down4" ></div><br />
 
 <p>
 For the SR by Drive graph I added a game average line (dotdash) and a season average line (dashed).

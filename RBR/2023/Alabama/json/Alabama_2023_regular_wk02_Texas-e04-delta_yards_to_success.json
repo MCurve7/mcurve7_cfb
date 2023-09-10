@@ -1,0 +1,801 @@
+{
+  data: [
+    {
+      "x": [-2.75, 79.75],
+      "y": [0, 0],
+      "text": "yintercept: 0",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(0,0,0,0.2)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [41.5, 41.5],
+      "y": [-22.24, 5.04],
+      "text": "xintercept: 41.5",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(0,0,0,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [18.5, 18.5, null, 65.5, 65.5],
+      "y": [-22.24, 5.04, null, -22.24, 5.04],
+      "text": ["xintercept: 18.5", "xintercept: 18.5", null, "xintercept: 65.5", "xintercept: 65.5"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(0,0,0,1)",
+        "dash": "dash"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 2, 3, 4, 5, 6, 7],
+      "y": [0, 2.8, 0, -3.5, 0, 0, -3.5],
+      "text": ["Offense_play_count:  1<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 1", "Offense_play_count:  2<br />Delta_yards_to_success:   2.8<br />factor(O_drive_number): 1", "Offense_play_count:  3<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 1", "Offense_play_count:  4<br />Delta_yards_to_success:  -3.5<br />factor(O_drive_number): 1", "Offense_play_count:  5<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 1", "Offense_play_count:  6<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 1", "Offense_play_count:  7<br />Delta_yards_to_success:  -3.5<br />factor(O_drive_number): 1"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(158,27,50,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "1",
+      "legendgroup": "1",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
+      "y": [0, 0, 0, -2.8, -2.5, -3, 0, 0.7, 0, -3.5, -8.5, -10],
+      "text": ["Offense_play_count:  8<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 2", "Offense_play_count:  9<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 2", "Offense_play_count: 10<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 2", "Offense_play_count: 11<br />Delta_yards_to_success:  -2.8<br />factor(O_drive_number): 2", "Offense_play_count: 12<br />Delta_yards_to_success:  -2.5<br />factor(O_drive_number): 2", "Offense_play_count: 13<br />Delta_yards_to_success:  -3.0<br />factor(O_drive_number): 2", "Offense_play_count: 14<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 2", "Offense_play_count: 15<br />Delta_yards_to_success:   0.7<br />factor(O_drive_number): 2", "Offense_play_count: 16<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 2", "Offense_play_count: 17<br />Delta_yards_to_success:  -3.5<br />factor(O_drive_number): 2", "Offense_play_count: 18<br />Delta_yards_to_success:  -8.5<br />factor(O_drive_number): 2", "Offense_play_count: 19<br />Delta_yards_to_success: -10.0<br />factor(O_drive_number): 2"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(130,138,143,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(2,1)",
+      "legendgroup": "(2,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [20, 21, 22, 23, 24, 25, 26],
+      "y": [0, 0, -3.5, 0, -3.5, -5.5, -17],
+      "text": ["Offense_play_count: 20<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 3", "Offense_play_count: 21<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 3", "Offense_play_count: 22<br />Delta_yards_to_success:  -3.5<br />factor(O_drive_number): 3", "Offense_play_count: 23<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 3", "Offense_play_count: 24<br />Delta_yards_to_success:  -3.5<br />factor(O_drive_number): 3", "Offense_play_count: 25<br />Delta_yards_to_success:  -5.5<br />factor(O_drive_number): 3", "Offense_play_count: 26<br />Delta_yards_to_success: -17.0<br />factor(O_drive_number): 3"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(158,27,50,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(3,1)",
+      "legendgroup": "(3,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [27, 28, 29, 30, 31],
+      "y": [0, 0, -4.2, -9.5, -8],
+      "text": ["Offense_play_count: 27<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 4", "Offense_play_count: 28<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 4", "Offense_play_count: 29<br />Delta_yards_to_success:  -4.2<br />factor(O_drive_number): 4", "Offense_play_count: 30<br />Delta_yards_to_success:  -9.5<br />factor(O_drive_number): 4", "Offense_play_count: 31<br />Delta_yards_to_success:  -8.0<br />factor(O_drive_number): 4"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(130,138,143,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(4,1)",
+      "legendgroup": "(4,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [32, 33, 34, 35, 36, 37, 38, 39, 40, 41],
+      "y": [0, -4.2, -6.5, 0, 0, 0, -6.5, -11.5, -16.5, -5],
+      "text": ["Offense_play_count: 32<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 5", "Offense_play_count: 33<br />Delta_yards_to_success:  -4.2<br />factor(O_drive_number): 5", "Offense_play_count: 34<br />Delta_yards_to_success:  -6.5<br />factor(O_drive_number): 5", "Offense_play_count: 35<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 5", "Offense_play_count: 36<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 5", "Offense_play_count: 37<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 5", "Offense_play_count: 38<br />Delta_yards_to_success:  -6.5<br />factor(O_drive_number): 5", "Offense_play_count: 39<br />Delta_yards_to_success: -11.5<br />factor(O_drive_number): 5", "Offense_play_count: 40<br />Delta_yards_to_success: -16.5<br />factor(O_drive_number): 5", "Offense_play_count: 41<br />Delta_yards_to_success:  -5.0<br />factor(O_drive_number): 5"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(158,27,50,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(5,1)",
+      "legendgroup": "(5,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [42, 43, 44, 45, 46, 47, 48, 49, 50],
+      "y": [0, -1.4, -2.5, 0, -1.4, -8.4, -11.9, -11.5, -8],
+      "text": ["Offense_play_count: 42<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 6", "Offense_play_count: 43<br />Delta_yards_to_success:  -1.4<br />factor(O_drive_number): 6", "Offense_play_count: 44<br />Delta_yards_to_success:  -2.5<br />factor(O_drive_number): 6", "Offense_play_count: 45<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 6", "Offense_play_count: 46<br />Delta_yards_to_success:  -1.4<br />factor(O_drive_number): 6", "Offense_play_count: 47<br />Delta_yards_to_success:  -8.4<br />factor(O_drive_number): 6", "Offense_play_count: 48<br />Delta_yards_to_success: -11.9<br />factor(O_drive_number): 6", "Offense_play_count: 49<br />Delta_yards_to_success: -11.5<br />factor(O_drive_number): 6", "Offense_play_count: 50<br />Delta_yards_to_success:  -8.0<br />factor(O_drive_number): 6"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(130,138,143,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(6,1)",
+      "legendgroup": "(6,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [51, 52, 53, 54, 55],
+      "y": [0, 0, 0, -2.5, -4],
+      "text": ["Offense_play_count: 51<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 7", "Offense_play_count: 52<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 7", "Offense_play_count: 53<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 7", "Offense_play_count: 54<br />Delta_yards_to_success:  -2.5<br />factor(O_drive_number): 7", "Offense_play_count: 55<br />Delta_yards_to_success:  -4.0<br />factor(O_drive_number): 7"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(158,27,50,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(7,1)",
+      "legendgroup": "(7,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [56, 57, 58, 59, 60],
+      "y": [0, -3.5, -8.5, -13.5, -20],
+      "text": ["Offense_play_count: 56<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 8", "Offense_play_count: 57<br />Delta_yards_to_success:  -3.5<br />factor(O_drive_number): 8", "Offense_play_count: 58<br />Delta_yards_to_success:  -8.5<br />factor(O_drive_number): 8", "Offense_play_count: 59<br />Delta_yards_to_success: -13.5<br />factor(O_drive_number): 8", "Offense_play_count: 60<br />Delta_yards_to_success: -20.0<br />factor(O_drive_number): 8"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(130,138,143,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(8,1)",
+      "legendgroup": "(8,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [61, 62, 63, 64, 65],
+      "y": [0, -2.8, -5.5, 0, -4.2],
+      "text": ["Offense_play_count: 61<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 9", "Offense_play_count: 62<br />Delta_yards_to_success:  -2.8<br />factor(O_drive_number): 9", "Offense_play_count: 63<br />Delta_yards_to_success:  -5.5<br />factor(O_drive_number): 9", "Offense_play_count: 64<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 9", "Offense_play_count: 65<br />Delta_yards_to_success:  -4.2<br />factor(O_drive_number): 9"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(158,27,50,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(9,1)",
+      "legendgroup": "(9,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [66],
+      "y": [0],
+      "text": "Offense_play_count: 66<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 10",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(130,138,143,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(10,1)",
+      "legendgroup": "(10,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [67, 68, 69, 70, 71, 72],
+      "y": [0, -3.5, -15.5, 0, 0, -4.2],
+      "text": ["Offense_play_count: 67<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 11", "Offense_play_count: 68<br />Delta_yards_to_success:  -3.5<br />factor(O_drive_number): 11", "Offense_play_count: 69<br />Delta_yards_to_success: -15.5<br />factor(O_drive_number): 11", "Offense_play_count: 70<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 11", "Offense_play_count: 71<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 11", "Offense_play_count: 72<br />Delta_yards_to_success:  -4.2<br />factor(O_drive_number): 11"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(158,27,50,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(11,1)",
+      "legendgroup": "(11,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [73, 74, 75, 76],
+      "y": [0, -3.5, -8.5, -18],
+      "text": ["Offense_play_count: 73<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 12", "Offense_play_count: 74<br />Delta_yards_to_success:  -3.5<br />factor(O_drive_number): 12", "Offense_play_count: 75<br />Delta_yards_to_success:  -8.5<br />factor(O_drive_number): 12", "Offense_play_count: 76<br />Delta_yards_to_success: -18.0<br />factor(O_drive_number): 12"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(130,138,143,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(12,1)",
+      "legendgroup": "(12,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [19, 41, 50],
+      "y": [-10, -5, -8],
+      "text": ["Offense_play_count: 19<br />Delta_yards_to_success: -10.0<br />Play_type: Field Goal Good<br />Success: Field Goal<br />Play_text: Will Reichard 42 yd FG GOOD<br />O_drive_number: 2", "Offense_play_count: 41<br />Delta_yards_to_success:  -5.0<br />Play_type: Field Goal Good<br />Success: Field Goal<br />Play_text: Will Reichard 30 yd FG GOOD<br />O_drive_number: 5", "Offense_play_count: 50<br />Delta_yards_to_success:  -8.0<br />Play_type: Field Goal Good<br />Success: Field Goal<br />Play_text: Will Reichard 51 yd FG GOOD<br />O_drive_number: 6"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(127,127,127,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "square-cross-open",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(127,127,127,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Field Goal,Field Goal Good)",
+      "legendgroup": "(Field Goal,Field Goal Good)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [38, 39, 46, 47, 51, 58],
+      "y": [-6.5, -11.5, -1.4, -8.4, 0, -8.5],
+      "text": ["Offense_play_count: 38<br />Delta_yards_to_success:  -6.5<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: Milroe, Jalen pass complete to Burton, Jermaine for 15 yards to the TEXAS0, PENALTY ALABAMA ineligible downfield on pass (Dalcourt, Darrian) 5 yards to the TEXAS20, NO PLAY.<br />O_drive_number: 5", "Offense_play_count: 39<br />Delta_yards_to_success: -11.5<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: Alabama Penalty, Illegal Snap (Seth McLaughlin) to the TEX 25<br />O_drive_number: 5", "Offense_play_count: 46<br />Delta_yards_to_success:  -1.4<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: Milroe, Jalen pass complete to Burton, Jermaine for 32 yards to the TEXAS0, PENALTY ALABAMA holding (Proctor, Kadyn) 10 yards to the TEXAS42, NO PLAY.<br />O_drive_number: 6", "Offense_play_count: 47<br />Delta_yards_to_success:  -8.4<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: Alabama Penalty, Illegal Snap (Seth McLaughlin) to the TEX 47<br />O_drive_number: 6", "Offense_play_count: 51<br />Delta_yards_to_success:   0.0<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: Milroe, Jalen pass incomplete to Bond, Isaiah, PENALTY TEXAS pass interference (Holmes, Gavin) 15 yards to the ALABAMA35, NO PLAY, 1ST DOWN ALABAMA.<br />O_drive_number: 7", "Offense_play_count: 58<br />Delta_yards_to_success:  -8.5<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: Alabama Penalty, False Start (JC Latham) to the ALA 19<br />O_drive_number: 8"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(255,0,255,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "hexagram-open",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(255,0,255,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "Penalty",
+      "legendgroup": "Penalty",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [26, 31, 55, 60, 76],
+      "y": [-17, -8, -4, -20, -18],
+      "text": ["Offense_play_count: 26<br />Delta_yards_to_success: -17.0<br />Play_type: Punt<br />Success: Punt<br />Play_text: James Burnip punt for 61 yds, downed at the TEX 7<br />O_drive_number: 3", "Offense_play_count: 31<br />Delta_yards_to_success:  -8.0<br />Play_type: Punt<br />Success: Punt<br />Play_text: James Burnip punt for 44 yds, downed at the TEX 9<br />O_drive_number: 4", "Offense_play_count: 55<br />Delta_yards_to_success:  -4.0<br />Play_type: Punt<br />Success: Punt<br />Play_text: James Burnip punt for 53 yds, fair catch by Xavier Worthy at the TEX 6<br />O_drive_number: 7", "Offense_play_count: 60<br />Delta_yards_to_success: -20.0<br />Play_type: Punt<br />Success: Punt<br />Play_text: James Burnip punt for 47 yds, punt out-of-bounds at the TEX 39<br />O_drive_number: 8", "Offense_play_count: 76<br />Delta_yards_to_success: -18.0<br />Play_type: Punt<br />Success: Punt<br />Play_text: James Burnip punt for 58 yds, punt out-of-bounds at the TEX 30<br />O_drive_number: 12"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(127,127,127,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "diamond",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(127,127,127,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "Punt",
+      "legendgroup": "Punt",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [4, 13, 14, 22, 34, 35, 36, 44, 69, 70],
+      "y": [-3.5, -3, 0, -3.5, -6.5, 0, 0, -2.5, -15.5, 0],
+      "text": ["Offense_play_count:  4<br />Delta_yards_to_success:  -3.5<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Jalen Milroe pass complete to Jase McClellan for 12 yds to the ALA 29 for a 1ST down<br />O_drive_number: 1", "Offense_play_count: 13<br />Delta_yards_to_success:  -3.0<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Jalen Milroe pass complete to Malik Benson for 6 yds to the TEX 36 for a 1ST down<br />O_drive_number: 2", "Offense_play_count: 14<br />Delta_yards_to_success:   0.0<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Jalen Milroe pass complete to Amari Niblack for 6 yds to the TEX 30<br />O_drive_number: 2", "Offense_play_count: 22<br />Delta_yards_to_success:  -3.5<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Jalen Milroe pass complete to Jermaine Burton for 9 yds to the ALA 39 for a 1ST down<br />O_drive_number: 3", "Offense_play_count: 34<br />Delta_yards_to_success:  -6.5<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Jalen Milroe pass complete to Kobe Prentice for 28 yds to the TEX 32 for a 1ST down<br />O_drive_number: 5", "Offense_play_count: 35<br />Delta_yards_to_success:   0.0<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Jalen Milroe pass complete to Kobe Prentice for 15 yds to the TEX 17 for a 1ST down<br />O_drive_number: 5", "Offense_play_count: 36<br />Delta_yards_to_success:   0.0<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Jalen Milroe pass complete to Roydell Williams for 5 yds to the TEX 12<br />O_drive_number: 5", "Offense_play_count: 44<br />Delta_yards_to_success:  -2.5<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Jalen Milroe pass complete to Isaiah Bond for 34 yds to the TEX 35 for a 1ST down<br />O_drive_number: 6", "Offense_play_count: 69<br />Delta_yards_to_success: -15.5<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Jalen Milroe pass complete to Malik Benson for 27 yds to the ALA 45 for a 1ST down<br />O_drive_number: 11", "Offense_play_count: 70<br />Delta_yards_to_success:   0.0<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Jalen Milroe pass complete to Kobe Prentice for 17 yds to the TEX 38 for a 1ST down<br />O_drive_number: 11"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,100,0,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(0,100,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Successful,Pass Reception)",
+      "legendgroup": "(Successful,Pass Reception)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [65, 72],
+      "y": [-4.2, -4.2],
+      "text": ["Offense_play_count: 65<br />Delta_yards_to_success:  -4.2<br />Play_type: Passing Touchdown<br />Success: Successful<br />Play_text: Jalen Milroe pass complete to Jermaine Burton for 49 yds for a TD (Will Reichard KICK)<br />O_drive_number: 9", "Offense_play_count: 72<br />Delta_yards_to_success:  -4.2<br />Play_type: Passing Touchdown<br />Success: Successful<br />Play_text: Jalen Milroe pass complete to Amari Niblack for 39 yds for a TD Timeout Texas, clock 11:08 (Jalen Milroe pass  to Isaiah Bond for Two-Point Conversion)<br />O_drive_number: 11"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,100,0,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "square-open-dot",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(0,100,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Successful,Passing Touchdown)",
+      "legendgroup": "(Successful,Passing Touchdown)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 2, 5, 8, 9, 15, 20, 27, 52, 63],
+      "y": [0, 2.8, 0, 0, 0, 0.7, 0, 0, 0, -5.5],
+      "text": ["Offense_play_count:  1<br />Delta_yards_to_success:   0.0<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jase McClellan run for 9 yds to the ALA 12<br />O_drive_number: 1", "Offense_play_count:  2<br />Delta_yards_to_success:   2.8<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jase McClellan run for 5 yds to the ALA 17 for a 1ST down<br />O_drive_number: 1", "Offense_play_count:  5<br />Delta_yards_to_success:   0.0<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jalen Milroe run for 12 yds to the ALA 41 for a 1ST down<br />O_drive_number: 1", "Offense_play_count:  8<br />Delta_yards_to_success:   0.0<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jalen Milroe run for 11 yds to the ALA 36 for a 1ST down<br />O_drive_number: 2", "Offense_play_count:  9<br />Delta_yards_to_success:   0.0<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jase McClellan run for 15 yds to the TEX 49 for a 1ST down<br />O_drive_number: 2", "Offense_play_count: 15<br />Delta_yards_to_success:   0.7<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jase McClellan run for 6 yds to the TEX 24 for a 1ST down<br />O_drive_number: 2", "Offense_play_count: 20<br />Delta_yards_to_success:   0.0<br />Play_type: Rush<br />Success: Successful<br />Play_text: Roydell Williams run for 5 yds to the ALA 30<br />O_drive_number: 3", "Offense_play_count: 27<br />Delta_yards_to_success:   0.0<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jalen Milroe run for 20 yds to the ALA 45 for a 1ST down<br />O_drive_number: 4", "Offense_play_count: 52<br />Delta_yards_to_success:   0.0<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jam Miller run for 5 yds to the ALA 40<br />O_drive_number: 7", "Offense_play_count: 63<br />Delta_yards_to_success:  -5.5<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jalen Milroe run for 8 yds to the TEX 48 for a 1ST down<br />O_drive_number: 9"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,100,0,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "circle",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(0,100,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Successful,Rush)",
+      "legendgroup": "(Successful,Rush)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [3, 6, 17, 18, 21, 29, 54, 56, 67, 73, 74],
+      "y": [0, 0, -3.5, -8.5, 0, -4.2, -2.5, 0, 0, 0, -3.5],
+      "text": ["Offense_play_count:  3<br />Delta_yards_to_success:   0.0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Jalen Milroe pass incomplete to Amari Niblack<br />O_drive_number: 1", "Offense_play_count:  6<br />Delta_yards_to_success:   0.0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Jalen Milroe pass incomplete<br />O_drive_number: 1", "Offense_play_count: 17<br />Delta_yards_to_success:  -3.5<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Jalen Milroe pass incomplete to Ja'Corey Brooks<br />O_drive_number: 2", "Offense_play_count: 18<br />Delta_yards_to_success:  -8.5<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Jalen Milroe pass incomplete to Roydell Williams<br />O_drive_number: 2", "Offense_play_count: 21<br />Delta_yards_to_success:   0.0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Jalen Milroe pass incomplete to Jase McClellan<br />O_drive_number: 3", "Offense_play_count: 29<br />Delta_yards_to_success:  -4.2<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Jalen Milroe pass incomplete<br />O_drive_number: 4", "Offense_play_count: 54<br />Delta_yards_to_success:  -2.5<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Jalen Milroe pass incomplete to Jase McClellan<br />O_drive_number: 7", "Offense_play_count: 56<br />Delta_yards_to_success:   0.0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Jalen Milroe pass incomplete to Kobe Prentice<br />O_drive_number: 8", "Offense_play_count: 67<br />Delta_yards_to_success:   0.0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Jalen Milroe pass incomplete to Isaiah Bond<br />O_drive_number: 11", "Offense_play_count: 73<br />Delta_yards_to_success:   0.0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Jalen Milroe pass incomplete to Isaiah Bond<br />O_drive_number: 12", "Offense_play_count: 74<br />Delta_yards_to_success:  -3.5<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Jalen Milroe pass incomplete to Amari Niblack<br />O_drive_number: 12"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(139,26,26,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "triangle-up-open",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(139,26,26,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Unsuccessful,Pass Incompletion)",
+      "legendgroup": "(Unsuccessful,Pass Incompletion)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [7, 66],
+      "y": [-3.5, 0],
+      "text": ["Offense_play_count:  7<br />Delta_yards_to_success:  -3.5<br />Play_type: Pass Interception Return<br />Success: Unsuccessful<br />Play_text: Jalen Milroe pass intercepted Jahdae Barron return for 16 yds to the ALA 30<br />O_drive_number: 1", "Offense_play_count: 66<br />Delta_yards_to_success:   0.0<br />Play_type: Pass Interception Return<br />Success: Unsuccessful<br />Play_text: Jalen Milroe pass intercepted Jerrin Thompson return for 32 yds to the ALA 5<br />O_drive_number: 10"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(139,26,26,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "cross-thin-open",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(139,26,26,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Unsuccessful,Pass Interception Return)",
+      "legendgroup": "(Unsuccessful,Pass Interception Return)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [32, 48],
+      "y": [0, -11.9],
+      "text": ["Offense_play_count: 32<br />Delta_yards_to_success:   0.0<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Jalen Milroe pass complete to Kobe Prentice for a loss of 1 yard to the ALA 37<br />O_drive_number: 5", "Offense_play_count: 48<br />Delta_yards_to_success: -11.9<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Jalen Milroe pass complete to Kobe Prentice for 9 yds to the TEX 38<br />O_drive_number: 6"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(139,26,26,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(139,26,26,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Unsuccessful,Pass Reception)",
+      "legendgroup": "(Unsuccessful,Pass Reception)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [10, 11, 12, 16, 23, 24, 28, 30, 33, 37, 40, 42, 43, 45, 49, 53, 57, 61, 62, 71],
+      "y": [0, -2.8, -2.5, 0, 0, -3.5, 0, -9.5, -4.2, 0, -16.5, 0, -1.4, 0, -11.5, 0, -3.5, 0, -2.8, 0],
+      "text": ["Offense_play_count: 10<br />Delta_yards_to_success:   0.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jase McClellan run for 1 yd to the TEX 48<br />O_drive_number: 2", "Offense_play_count: 11<br />Delta_yards_to_success:  -2.8<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Roydell Williams run for 5 yds to the TEX 43<br />O_drive_number: 2", "Offense_play_count: 12<br />Delta_yards_to_success:  -2.5<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Roydell Williams run for 1 yd to the TEX 42<br />O_drive_number: 2", "Offense_play_count: 16<br />Delta_yards_to_success:   0.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jase McClellan run for no gain to the TEX 24<br />O_drive_number: 2", "Offense_play_count: 23<br />Delta_yards_to_success:   0.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Roydell Williams run for no gain to the ALA 39<br />O_drive_number: 3", "Offense_play_count: 24<br />Delta_yards_to_success:  -3.5<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jalen Milroe run for 3 yds to the ALA 42<br />O_drive_number: 3", "Offense_play_count: 28<br />Delta_yards_to_success:   0.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jase McClellan run for a loss of 1 yard to the ALA 44<br />O_drive_number: 4", "Offense_play_count: 30<br />Delta_yards_to_success:  -9.5<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jalen Milroe run for 3 yds to the ALA 47<br />O_drive_number: 4", "Offense_play_count: 33<br />Delta_yards_to_success:  -4.2<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jalen Milroe run for 3 yds to the ALA 40<br />O_drive_number: 5", "Offense_play_count: 37<br />Delta_yards_to_success:   0.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jalen Milroe run for a loss of 3 yards to the TEX 15<br />O_drive_number: 5", "Offense_play_count: 40<br />Delta_yards_to_success: -16.5<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jalen Milroe run for 13 yds to the TEX 12<br />O_drive_number: 5", "Offense_play_count: 42<br />Delta_yards_to_success:   0.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jase McClellan run for 3 yds to the ALA 28<br />O_drive_number: 6", "Offense_play_count: 43<br />Delta_yards_to_success:  -1.4<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jase McClellan run for 3 yds to the ALA 31<br />O_drive_number: 6", "Offense_play_count: 45<br />Delta_yards_to_success:   0.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jase McClellan run for 3 yds to the TEX 32<br />O_drive_number: 6", "Offense_play_count: 49<br />Delta_yards_to_success: -11.5<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jalen Milroe run for 5 yds to the TEX 33<br />O_drive_number: 6", "Offense_play_count: 53<br />Delta_yards_to_success:   0.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jam Miller run for 1 yd to the ALA 41<br />O_drive_number: 7", "Offense_play_count: 57<br />Delta_yards_to_success:  -3.5<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Roydell Williams run for no gain to the ALA 24<br />O_drive_number: 8", "Offense_play_count: 61<br />Delta_yards_to_success:   0.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Roydell Williams run for 1 yd to the ALA 42<br />O_drive_number: 9", "Offense_play_count: 62<br />Delta_yards_to_success:  -2.8<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jase McClellan run for 2 yds to the ALA 44<br />O_drive_number: 9", "Offense_play_count: 71<br />Delta_yards_to_success:   0.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jase McClellan run for a loss of 1 yard to the TEX 39<br />O_drive_number: 11"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(139,26,26,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "circle",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(139,26,26,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Unsuccessful,Rush)",
+      "legendgroup": "(Unsuccessful,Rush)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [25, 59, 64, 68, 75],
+      "y": [-5.5, -13.5, 0, -3.5, -8.5],
+      "text": ["Offense_play_count: 25<br />Delta_yards_to_success:  -5.5<br />Play_type: Sack<br />Success: Unsuccessful<br />Play_text: Jalen Milroe sacked by David Gbenda for a loss of 10 yards to the ALA 32<br />O_drive_number: 3", "Offense_play_count: 59<br />Delta_yards_to_success: -13.5<br />Play_type: Sack<br />Success: Unsuccessful<br />Play_text: Jalen Milroe sacked by Anthony Hill Jr. for a loss of 5 yards to the ALA 14<br />O_drive_number: 8", "Offense_play_count: 64<br />Delta_yards_to_success:   0.0<br />Play_type: Sack<br />Success: Unsuccessful<br />Play_text: Jalen Milroe sacked by T'Vondre Sweat for a loss of 1 yard to the TEX 49<br />O_drive_number: 9", "Offense_play_count: 68<br />Delta_yards_to_success:  -3.5<br />Play_type: Sack<br />Success: Unsuccessful<br />Play_text: Jalen Milroe sacked by Ethan Burke for a loss of 7 yards to the ALA 18<br />O_drive_number: 11", "Offense_play_count: 75<br />Delta_yards_to_success:  -8.5<br />Play_type: Sack<br />Success: Unsuccessful<br />Play_text: Jalen Milroe sacked by Anthony Hill Jr. and Jaray Bledsoe for a loss of 8 yards to the ALA 12<br />O_drive_number: 12"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(139,26,26,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "triangle-down-open",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(139,26,26,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Unsuccessful,Sack)",
+      "legendgroup": "(Unsuccessful,Sack)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76],
+      "y": [1, 3.8, 1, -4.5, 1, 1, -4.5, 1, 1, 1, -3.8, -3.5, -4, 1, 1.7, 1, -4.5, -9.5, -11, 1, 1, -4.5, 1, -4.5, -6.5, -18, 1, 1, -5.2, -10.5, -9, 1, -5.2, -7.5, 1, 1, 1, -7.5, -12.5, -17.5, -6, 1, -2.4, -3.5, 1, -2.4, -9.4, -12.9, -12.5, -9, 1, 1, 1, -3.5, -5, 1, -4.5, -9.5, -14.5, -21, 1, -3.8, -6.5, 1, -5.2, 1, 1, -4.5, -16.5, 1, 1, -5.2, 1, -4.5, -9.5, -19],
+      "text": [1, 2, 1, 2, 1, 1, 2, 1, 1, 1, 2, 3, 4, 1, 2, 1, 2, 3, 4, 1, 2, 3, 1, 2, 3, 4, 1, 1, 2, 3, 4, 1, 2, 3, 1, 1, 2, 3, 3, 3, 4, 1, 2, 3, 1, 2, 2, 2, 3, 4, 1, 1, 2, 3, 4, 1, 2, 3, 3, 4, 1, 2, 3, 1, 2, 1, 1, 2, 3, 1, 1, 2, 1, 2, 3, 4],
+      "hovertext": ["Offense_play_count:  1<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count:  2<br />Delta_yards_to_success:   2.8<br />Down: 2", "Offense_play_count:  3<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count:  4<br />Delta_yards_to_success:  -3.5<br />Down: 2", "Offense_play_count:  5<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count:  6<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count:  7<br />Delta_yards_to_success:  -3.5<br />Down: 2", "Offense_play_count:  8<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count:  9<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 10<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 11<br />Delta_yards_to_success:  -2.8<br />Down: 2", "Offense_play_count: 12<br />Delta_yards_to_success:  -2.5<br />Down: 3", "Offense_play_count: 13<br />Delta_yards_to_success:  -3.0<br />Down: 4", "Offense_play_count: 14<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 15<br />Delta_yards_to_success:   0.7<br />Down: 2", "Offense_play_count: 16<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 17<br />Delta_yards_to_success:  -3.5<br />Down: 2", "Offense_play_count: 18<br />Delta_yards_to_success:  -8.5<br />Down: 3", "Offense_play_count: 19<br />Delta_yards_to_success: -10.0<br />Down: 4", "Offense_play_count: 20<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 21<br />Delta_yards_to_success:   0.0<br />Down: 2", "Offense_play_count: 22<br />Delta_yards_to_success:  -3.5<br />Down: 3", "Offense_play_count: 23<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 24<br />Delta_yards_to_success:  -3.5<br />Down: 2", "Offense_play_count: 25<br />Delta_yards_to_success:  -5.5<br />Down: 3", "Offense_play_count: 26<br />Delta_yards_to_success: -17.0<br />Down: 4", "Offense_play_count: 27<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 28<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 29<br />Delta_yards_to_success:  -4.2<br />Down: 2", "Offense_play_count: 30<br />Delta_yards_to_success:  -9.5<br />Down: 3", "Offense_play_count: 31<br />Delta_yards_to_success:  -8.0<br />Down: 4", "Offense_play_count: 32<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 33<br />Delta_yards_to_success:  -4.2<br />Down: 2", "Offense_play_count: 34<br />Delta_yards_to_success:  -6.5<br />Down: 3", "Offense_play_count: 35<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 36<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 37<br />Delta_yards_to_success:   0.0<br />Down: 2", "Offense_play_count: 38<br />Delta_yards_to_success:  -6.5<br />Down: 3", "Offense_play_count: 39<br />Delta_yards_to_success: -11.5<br />Down: 3", "Offense_play_count: 40<br />Delta_yards_to_success: -16.5<br />Down: 3", "Offense_play_count: 41<br />Delta_yards_to_success:  -5.0<br />Down: 4", "Offense_play_count: 42<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 43<br />Delta_yards_to_success:  -1.4<br />Down: 2", "Offense_play_count: 44<br />Delta_yards_to_success:  -2.5<br />Down: 3", "Offense_play_count: 45<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 46<br />Delta_yards_to_success:  -1.4<br />Down: 2", "Offense_play_count: 47<br />Delta_yards_to_success:  -8.4<br />Down: 2", "Offense_play_count: 48<br />Delta_yards_to_success: -11.9<br />Down: 2", "Offense_play_count: 49<br />Delta_yards_to_success: -11.5<br />Down: 3", "Offense_play_count: 50<br />Delta_yards_to_success:  -8.0<br />Down: 4", "Offense_play_count: 51<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 52<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 53<br />Delta_yards_to_success:   0.0<br />Down: 2", "Offense_play_count: 54<br />Delta_yards_to_success:  -2.5<br />Down: 3", "Offense_play_count: 55<br />Delta_yards_to_success:  -4.0<br />Down: 4", "Offense_play_count: 56<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 57<br />Delta_yards_to_success:  -3.5<br />Down: 2", "Offense_play_count: 58<br />Delta_yards_to_success:  -8.5<br />Down: 3", "Offense_play_count: 59<br />Delta_yards_to_success: -13.5<br />Down: 3", "Offense_play_count: 60<br />Delta_yards_to_success: -20.0<br />Down: 4", "Offense_play_count: 61<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 62<br />Delta_yards_to_success:  -2.8<br />Down: 2", "Offense_play_count: 63<br />Delta_yards_to_success:  -5.5<br />Down: 3", "Offense_play_count: 64<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 65<br />Delta_yards_to_success:  -4.2<br />Down: 2", "Offense_play_count: 66<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 67<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 68<br />Delta_yards_to_success:  -3.5<br />Down: 2", "Offense_play_count: 69<br />Delta_yards_to_success: -15.5<br />Down: 3", "Offense_play_count: 70<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 71<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 72<br />Delta_yards_to_success:  -4.2<br />Down: 2", "Offense_play_count: 73<br />Delta_yards_to_success:   0.0<br />Down: 1", "Offense_play_count: 74<br />Delta_yards_to_success:  -3.5<br />Down: 2", "Offense_play_count: 75<br />Delta_yards_to_success:  -8.5<br />Down: 3", "Offense_play_count: 76<br />Delta_yards_to_success: -18.0<br />Down: 4"],
+      "textfont": {
+        "size": 14.6645669291339,
+        "color": "rgba(0,0,0,1)"
+      },
+      "type": "scatter",
+      "mode": "text",
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    }
+  ],
+  layout: {
+    "margin": {
+      "t": 43.2754946727549,
+      "r": 7.30593607305936,
+      "b": 39.6955859969559,
+      "l": 43.1050228310502
+    },
+    "plot_bgcolor": "rgba(229,229,229,1)",
+    "paper_bgcolor": "rgba(255,255,255,1)",
+    "font": {
+      "color": "rgba(0,0,0,1)",
+      "family": "",
+      "size": 14.6118721461187
+    },
+    "title": {
+      "text": "Alabama[24]: Delta yards to success = Nominal yards to success - Yards to success and annotated with Down<br> <sup>2023: wk02 vs Texas[34]<\/sup>",
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 17.5342465753425
+      },
+      "x": 0,
+      "xref": "paper",
+      "xanchor": "left"
+    },
+    "xaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [-2.75, 79.75],
+      "tickmode": "array",
+      "ticktext": ["0", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55", "60", "65", "70", "75"],
+      "tickvals": [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75],
+      "categoryorder": "array",
+      "categoryarray": ["0", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55", "60", "65", "70", "75"],
+      "nticks": null,
+      "ticks": "outside",
+      "tickcolor": "rgba(51,51,51,1)",
+      "ticklen": 3.65296803652968,
+      "tickwidth": 0.66417600664176,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "tickangle": -0,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": "rgba(204,204,204,1)",
+      "gridwidth": 0.66417600664176,
+      "zeroline": false,
+      "anchor": "y",
+      "title": {
+        "text": "Offensive play count including penalties",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "yaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [-22.24, 5.04],
+      "tickmode": "array",
+      "ticktext": ["-20", "-15", "-10", "-5", "0", "5"],
+      "tickvals": [-20, -15, -10, -5, 0, 5],
+      "categoryorder": "array",
+      "categoryarray": ["-20", "-15", "-10", "-5", "0", "5"],
+      "nticks": null,
+      "ticks": "outside",
+      "tickcolor": "rgba(51,51,51,1)",
+      "ticklen": 3.65296803652968,
+      "tickwidth": 0.66417600664176,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "tickangle": -0,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": "rgba(204,204,204,1)",
+      "gridwidth": 0.66417600664176,
+      "zeroline": false,
+      "anchor": "x",
+      "title": {
+        "text": "Delta yards needed to be successful",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "shapes": [
+      {
+        "type": "rect",
+        "fillcolor": null,
+        "line": {
+          "color": null,
+          "width": 0,
+          "linetype": []
+        },
+        "yref": "paper",
+        "xref": "paper",
+        "x0": 0,
+        "x1": 1,
+        "y0": 0,
+        "y1": 1
+      }
+    ],
+    "showlegend": true,
+    "legend": {
+      "bgcolor": "rgba(255,255,255,1)",
+      "bordercolor": "transparent",
+      "borderwidth": 1.88976377952756,
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "title": {
+        "text": "Success/Drive number<br />Play type",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      }
+    },
+    "hovermode": "closest",
+    "barmode": "relative"
+  },
+  config: {
+    "doubleClick": "reset",
+    "modeBarButtonsToAdd": ["hoverclosest", "hovercompare"],
+    "showSendToCloud": false
+  },
+  source: "A",
+  attrs: {
+    "4b7c28d543fa": {
+      "yintercept": {},
+      "type": "scatter"
+    },
+    "4b7c2d4ea": {
+      "xintercept": {}
+    },
+    "4b7c7ec61193": {
+      "x": {},
+      "y": {},
+      "colour": {}
+    },
+    "4b7c49761229": {
+      "x": {},
+      "y": {},
+      "shape": {},
+      "colour": {},
+      "label": {}
+    },
+    "4b7c35b47dd": {
+      "x": {},
+      "y": {},
+      "label": {}
+    }
+  },
+  cur_data: "4b7c28d543fa",
+  visdat: {
+    "4b7c28d543fa": ["function (y) ", "x"],
+    "4b7c2d4ea": ["function (y) ", "x"],
+    "4b7c7ec61193": ["function (y) ", "x"],
+    "4b7c49761229": ["function (y) ", "x"],
+    "4b7c35b47dd": ["function (y) ", "x"]
+  },
+  highlight: {
+    "on": "plotly_click",
+    "persistent": false,
+    "dynamic": false,
+    "selectize": false,
+    "opacityDim": 0.2,
+    "selected": {
+      "opacity": 1
+    },
+    "debounce": 0
+  },
+  shinyEvents: ["plotly_hover", "plotly_click", "plotly_selected", "plotly_relayout", "plotly_brushed", "plotly_brushing", "plotly_clickannotation", "plotly_doubleclick", "plotly_deselect", "plotly_afterplot", "plotly_sunburstclick"],
+  base_url: "https://plot.ly"
+}
