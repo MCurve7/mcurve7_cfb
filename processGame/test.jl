@@ -1,5 +1,23 @@
 #used for testing code
 
+using CSV
+using DataFrames
+using Pipe: @pipe
+using Unicode
+using StringEncodings
+
+school_colors = CSV.File("../school_colors/school_colors.csv", delim=';') |> DataFrame
+dirContents = readdir("../../data/unprocessed", join=true)
+
+i=findall(x->x=="../../data/unprocessed\\Air Force_2015_wk02_regular.csv", dirContents)[1]
+dirContents[i]
+game = dirContents[i]
+tdf = CSV.read(game, DataFrame; normalizenames=true, types = Dict(:Scoring => Bool, :Distance => Int8, :Yards_gained => Int8))
+toff = tdf[1,:Offense]
+decode(encode(toff, "UTF-8"), "UTF-8")
+
+toff = replace(toff, "\xe9" => "é")
+
 using Revise
 includet("processGame.jl")
 # using DataFrames

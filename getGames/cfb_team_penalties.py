@@ -134,7 +134,7 @@ if arg_length == 4:
                             game1 = [year_get, 1, team_current, json_dict["conference"], num, yards, team_other, seasontype]
                     
                     week0_data[team_get] = [game0, game1]
-                    print("Played week 0:", week0_data)
+                    # print("Played week 0:", week0_data)
 
                 #For teams that didn't play a week 0 game
                 else:
@@ -155,10 +155,10 @@ if arg_length == 4:
                                 num, yards = json_dict['totalPenaltiesYards'].split("-")
                                 data.append([year_get, wk, team_current, json_dict["conference"], num, yards, team_other, seasontype])
                     
-                    print("Didn't play week 0:", data)
+                    # print("Didn't play week 0:", data)
 
-    print("Week 0 data:")
-    print(week0_data)
+    # print("Week 0 data:")
+    # print(week0_data)
 
     for t in week0_data.keys():
         print("Team: ", t)
@@ -171,14 +171,14 @@ if arg_length == 4:
             team_other = json2dict(stats_json[0].teams[0])['school']
         else:
             print("Error matching team name.")
-            print(stats_json[0].teams[0])
-            print(stats_json[0].teams[1])
+            # print(stats_json[0].teams[0])
+            # print(stats_json[0].teams[1])
         numPenalties0 = week0_data[t][0][4]
         penaltyYards0 = week0_data[t][0][5]
         numPenalties1 = week0_data[t][1][4]
         penaltyYards1 = week0_data[t][1][5]
-        print("teams_seen:")
-        print(teams_seen)
+        # print("teams_seen:")
+        # print(teams_seen)
         if 1 in teams_seen[t]:
             print("Seen week 1")
             for g in data:
@@ -186,13 +186,13 @@ if arg_length == 4:
                     num = g[4]
                     yards = g[5]
             # num, yards = json_dict['totalPenaltiesYards'].split("-")
-            print("numPenalties0 = ", numPenalties0, "penaltyYards0 = ", penaltyYards0)
-            print("numPenalties1 = ", numPenalties1, "penaltyYards1 = ", penaltyYards1)
-            print("num = ", num, "yards = ", yards)
+            # print("numPenalties0 = ", numPenalties0, "penaltyYards0 = ", penaltyYards0)
+            # print("numPenalties1 = ", numPenalties1, "penaltyYards1 = ", penaltyYards1)
+            # print("num = ", num, "yards = ", yards)
             if numPenalties0 == num and penaltyYards0 == yards:
                 game = week0_data[t][1]
                 game[1] = 0
-                print("Adding: ", game)
+                # print("Adding: ", game)
                 data.append(game)
                 # print("Adding: ", week0_data[t][1])
                 # data.append(week0_data[t][1])
@@ -201,7 +201,7 @@ if arg_length == 4:
             else:
                 game = week0_data[t][0]
                 game[1] = 0
-                print("Adding: ", game)
+                # print("Adding: ", game)
                 data.append(game)
                 # print("Adding: ", week0_data[t][0])
                 # data.append(week0_data[t][0])
@@ -213,9 +213,9 @@ if arg_length == 4:
             # data.append(game0)
             # print("Adding: ", game1)
             # data.append(game1)
-            print("Adding: ", year_get, 0, json_dict["school"], json_dict["conference"], numPenalties0, penaltyYards0, week0_data[t][0][6], seasontype)
+            # print("Adding: ", year_get, 0, json_dict["school"], json_dict["conference"], numPenalties0, penaltyYards0, week0_data[t][0][6], seasontype)
             data.append([year_get, 0, json_dict["school"], json_dict["conference"], numPenalties0, penaltyYards0, week0_data[t][0][6], seasontype])
-            print("Adding: ", year_get, 1, json_dict["school"], json_dict["conference"], numPenalties1, penaltyYards1, week0_data[t][1][6], seasontype)
+            # print("Adding: ", year_get, 1, json_dict["school"], json_dict["conference"], numPenalties1, penaltyYards1, week0_data[t][1][6], seasontype)
             data.append([year_get, 1, json_dict["school"], json_dict["conference"], numPenalties1, penaltyYards1, week0_data[t][1][6], seasontype])
             
 
@@ -225,8 +225,8 @@ if arg_length == 4:
     writer.writerows(data)
     f.close()
 
-    print("Data:")
-    print(data)
+    # print("Data:")
+    # print(data)
     # print("Week 0 data:")
     # print(week0_data)
 
@@ -237,10 +237,10 @@ if arg_length == 4:
 ###############################################################################
 else:
     stats_json = api_instance.get_team_game_stats(season_type = seasontype, year = year_get, week = week_get, team = team_get)
-    print(stats_json)
-    print(len(stats_json))
+    # print(stats_json)
+    # print(len(stats_json))
     json_dict = json2dict(stats_json[0].teams[0])
-    print(json_dict['school'])
+    # print(json_dict['school'])
 
 
 # length = 1

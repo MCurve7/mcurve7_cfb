@@ -3,6 +3,7 @@ using DataFrames
 using Pipe: @pipe
 using DelimitedFiles
 using Unicode
+using StringEncodings
 using Dates
 using JSON
 using Printf
@@ -91,10 +92,21 @@ GET_NAMES = false
 function process_game(game)
     DEBUG_PROCESS_FUNCTION && println("Read CSV")
     df = CSV.read(game, DataFrame; normalizenames=true, types = Dict(:Scoring => Bool, :Distance => Int8, :Yards_gained => Int8))
+    for i in 1:nrow(df)
+        DEBUG_PROCESS_FUNCTION && println("Offense: $(df[i, :Offense])")
+        if df[i, :Offense] == "San Jos� State" 
+            df[i, :Offense] = "San José State"
+        end
+        # df[i, :Offense] = decode(encode((df[i, :Offense]), "UTF-8"), "UTF-8")        
+    end
+
     DEBUG_PROCESS_FUNCTION && println("Remove PPA")
     df = select(df, Not(:PPA))
     # Need to process the play_text and replace unicode "\xc9" => "É" and "\xe9" => "é".
 
+    
+
+    if DEBUG_PROCESS_FUNCTION println("processGames=> offense from df:\n $(df[:, :Offense])") end
     #Move to end and add new variables
     # df = @pipe df |> select(_, :Defense => categorical => :Defense,
     #             :Offense => categorical => :Offense,
@@ -122,11 +134,20 @@ function process_game(game)
     df = transform(df, AsTable([:Down, :Distance]) => ByRow(yards_to_success) => :Yards_to_success)
     DEBUG_PROCESS_FUNCTION && println("Success")
     df = transform(df, AsTable([:Play_type, :Down, :Play_text, :Yards_gained, :Distance, :Scoring, :Who_scored]) => ByRow(successful) => :Success) #Fumble Return Touchdown use who_scored
+    DEBUG_PROCESS_FUNCTION && println("Explosive")
+    df = transform(df, AsTable([:Play_type, :Down, :Play_text, :Yards_gained, :Distance, :Scoring, :Who_scored]) => ByRow(explosive) => :Explosive)    
     DEBUG_PROCESS_FUNCTION && println("TD_first")
     df = transform(df, AsTable([:Play_type, :Yards_gained, :Distance, :Who_scored, :Success]) => ByRow(tdfirst) => :TD_first)
     DEBUG_PROCESS_FUNCTION && println("scoredrive")
     df = hcat(df, scoredrive(df)) # need to check for punt score and mark as false
+    DEBUG_PROCESS_FUNCTION && println("turnover_column_generate")
+    df = hcat(df, turnover_column_generate(df))
+    DEBUG_PROCESS_FUNCTION && println("score_turnover_column_generate")
+    df = hcat(df, score_turnover_column_generate(df))
     DEBUG_PROCESS_FUNCTION && println("play_info")
+    # df = transform(df, :Offense => ByRow(preprocess_playinfo_utf) => :Offense)
+    # df = transform(df, :Defense => ByRow(preprocess_playinfo_utf) => :Defense)
+    # df = transform(df, :Play_text => ByRow(preprocess_playinfo_utf) => :Play_text)
     df = transform(df, AsTable([:Play_text, :Play_type, :Offense, :Defense]) => ByRow(play_info) => 
     [:Runner, :Passer, :Receiver, :Interceptor, :Tackler, :Forcer, :Fumbler, :Recoverer, :PAT_kicker, :PAT_type, :Two_point, :Two_point_type, 
     :Two_point_runner, :Two_point_passer, :Two_point_receiver, :Kicker, :Kick_type, :Returner, :Blocker, :FG_type, :Punter, :Punt_type, :Timeout_team, :Timeout_time])
@@ -142,6 +163,11 @@ function process_game(game)
     df
 end
 ###############################################################################################################################################
+
+function preprocess_playinfo_utf(txt)
+    if DEBUG_PROCESS_FUNCTION println("processGames: preprocess_playinfo_utf => txt: $txt") end
+    decode(encode(txt, "UTF-8"), "UTF-8")
+end
 
 """
 Covert {'minutes': 15, 'seconds': 0} to 15:00
@@ -303,6 +329,56 @@ function successful(cols)
     end
 end
 
+function explosive(cols)
+    playtype = cols[1]
+    down = cols[2]
+    playtext = cols[3]
+    yardsgained = cols[4]
+    distance = cols[5]
+    scoring = cols[6]
+    whoscored = cols[7]
+    if playtype == "Penalty" 
+        "Penalty"
+    elseif playtype == "Punt" || playtype == "Blocked Punt" || playtype == "Punt Return Touchdown" || playtype == "Blocked Punt Touchdown"
+        "Punt"
+    elseif playtype == "Field Goal Good" ||  playtype == "Field Goal Missed" ||  playtype == "Blocked Field Goal" ||  playtype == "Blocked Field Goal Touchdown" ||  playtype == "Missed Field Goal Return" ||  playtype == "Missed Field Goal Return Touchdown"
+        "Field Goal"    
+    elseif playtype == "Kickoff" || playtype == "Kickoff Return Touchdown" || playtype == "Kickoff Return (Offense)"
+        "Kickoff"
+    elseif playtype == "Defensive 2pt Conversion"
+        "Defensive 2pt Conversion"
+    elseif playtype == "End Period" || playtype == "End of Half" || playtype == "End of Regulation" || playtype == "End of Game"
+        "End of"
+    elseif playtype == "Timeout"
+        "Timeout"
+    elseif playtype == "Uncategorized" || playtype == "placeholder"
+        "Missing data"
+    elseif playtype == "Pass Interception Return" || playtype == "Interception Return Touchdown" || playtype == "Pass Incompletion" || playtype == "Sack" || playtype == "Interception" || playtype == "Safety"
+        "Unexplosive"
+    elseif playtype == "Fumble Recovery (Opponent)"
+        "Unexplosive"
+
+    # elseif playtype == "Passing Touchdown"
+    #     "Successful"
+    # elseif playtype == "Two Point Pass"
+    #     "Successful"
+    # elseif playtype == "Rushing Touchdown" 
+    #     "Successful"
+    # elseif playtype == "Two Point Rush"
+    #     "Successful"
+    elseif playtype == "Fumble Return Touchdown"
+        if whoscored == "offense"
+            yardsgained ≥ 15 ? "Explosive" : "Unexplosive"
+        else
+            "Unexplosive"
+        end
+    # elseif playtype == "Fumble Recovery (Own)"
+        # yardsgained ≥ 15 ? "Explosive" : "Unexplosive"
+    else
+        yardsgained ≥ 15 ? "Explosive" : "Unexplosive"
+    end
+end
+
 """
 Return true if play makes a 1st down or TD and false o.w.
 """
@@ -398,6 +474,49 @@ function scoredrive(df)
     DataFrame(:Score_drive => scoredrivevec)
 end
 
+function turnover_column_generate(df)
+    turnover_bool = false
+    turnover_vec = Bool[]
+    drive_number_list = unique(df.Drive_number)
+
+    for i in 1:length(drive_number_list)
+        if DEBUG_PROCESS_FUNCTION println("i = $i") end
+        dfdrive = filter(:Drive_number => x->(x==drive_number_list[i]), df)
+        if DEBUG_PROCESS_FUNCTION println("dfdrive:\n$dfdrive\n\n") end
+        if nrow(dfdrive) ≠ 1
+            last_play = dfdrive[end, :Play_type]
+            if last_play ∈ ["End Period", "End of Half", "End of Game", "End of Regulation"]
+                last_play = dfdrive[end-1, :Play_type]
+            end
+            if last_play ∈ ["Fumble Recovery (Opponent)", "Fumble Return Touchdown", "Interception", "Interception Return Touchdown", "Pass Interception Return"]
+                turnover_bool = true
+            else
+                turnover_bool = false
+            end
+            turnover_vec = vcat(turnover_vec, fill(turnover_bool, nrow(dfdrive)))
+        else
+            turnover_vec = vcat(turnover_vec, [false])
+        end
+    end
+    DataFrame(:Turnover_drive => turnover_vec)
+end
+
+function score_turnover_column_generate(df)
+    score_turnover_vec = String[]
+    score_vec = df[!, :Score_drive]
+    turnover_vec = df[!, :Turnover_drive]
+
+    for i in 1:length(score_vec)
+        if turnover_vec[i]
+            push!(score_turnover_vec, "Turnover")
+        elseif score_vec[i]
+            push!(score_turnover_vec, "Score")
+        else
+            push!(score_turnover_vec, "Neither")
+        end
+    end
+    DataFrame(:Score_Turnover_drive => score_turnover_vec)
+end
 
 """
 Takes Symbol("Play type") :Scoring

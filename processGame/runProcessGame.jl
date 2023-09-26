@@ -26,8 +26,8 @@ function run_all_games()
     # overwrite = true
     
     
-    # for game in dirContents
-    @threads for game in dirContents
+    for game in dirContents
+    # @threads for game in dirContents
         game_split = split(game, r"[\\/]")
         #println("Split directory: $game_split")
         game_file = last(game_split)
@@ -37,7 +37,7 @@ function run_all_games()
         processed_game = processed_game[1]*"-processed."*processed_game[2]
         #println("New filename split: $processed_game")
         if overwrite || !isfile(processed_directory*processed_game)
-            println("Processing game: $game")
+            println("Processing game: $game \n")
             df = process_game(game)
             CSV.write(processed_directory*processed_game, df, transform = (col,val) -> something(val, ""))
         end
@@ -68,17 +68,20 @@ function run_game(n)
     
 end
 dirContents = readdir("../../data/unprocessed", join=true)
-dirContents[205]
-# ≈ + 123
-dirContents[339]
+# dirContents[205]
+# # ≈ + 123
+# dirContents[341]
 
-dirContents[13628]
+# dirContents[13628]
 #Appalachian State_2018_wk14_regular.csv
 
-i=findall(x->x=="../../data/unprocessed\\Alabama_2023_wk02_regular.csv", dirContents)[1]
+i=findall(x->x=="../../data/unprocessed\\Alabama_2023_wk04_regular.csv", dirContents)[1]
 dirContents[i]
 @time run_game(i)
 
+i=findall(x->x=="../../data/unprocessed\\Ole Miss_2023_wk04_regular.csv", dirContents)[1]
+dirContents[i]
+@time run_game(i)
 ############################################################################################################
 GET_NAMES = true
 # GET_NAMES = false
@@ -129,3 +132,10 @@ end
 # dirContents = readdir("../../data/unprocessed", join=true)
 # dirContents[562]
 # process_game(dirContents[1])
+
+dirContents = readdir("../../data/unprocessed", join=true)
+i=findall(x->x=="../../data/unprocessed\\Alabama_2023_wk02_regular.csv", dirContents)[1]
+
+df = CSV.read(dirContents[i], DataFrame; normalizenames=true, types = Dict(:Scoring => Bool, :Distance => Int8, :Yards_gained => Int8))
+df = select(df, Not(:PPA))
+

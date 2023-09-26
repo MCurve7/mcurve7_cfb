@@ -16,36 +16,59 @@ function play_info(cols)
     play_type = cols[2]
     offense  = cols[3]
     defense  = cols[4]
+    if DEBUG_PLAY_INFO println("offense from cols: $offense") end
+    if DEBUG_PLAY_INFO println("defense from cols: $defense") end
 
     if !ismissing(play_text)
-        # println("Play text before:\n$(play_text)")
+        if DEBUG_PLAY_INFO println("Play text before:\n$(play_text)") end
         play_text = replace(play_text, r"\s{2,}"=>" ")
         play_text = replace(play_text, "\xc9" => "É")
         play_text = replace(play_text, "\xe9" => "é")
-        # println("Play text after:\n$(play_text)")
+        # play_text = decode(encode(play_text, "UTF-8"), "UTF-8")
+        if DEBUG_PLAY_INFO println("Play text after:\n$(play_text)") end
+
+        if DEBUG_PLAY_INFO println("offense pre é: $offense") end
         offense = replace(offense, "\xc9" => "É")
         offense = replace(offense, "\xe9" => "é")
+        # offense = decode(encode(offense, "UTF-8"), "UTF-8")
+        if DEBUG_PLAY_INFO println("offense post é: $offense") end
+
+        if DEBUG_PLAY_INFO println("defense pre é: $defense") end
         defense = replace(defense, "\xc9" => "É")
         defense = replace(defense, "\xe9" => "é")
-        # if DEBUG_PLAY_INFO println("offense: $offense") end
-        # if DEBUG_PLAY_INFO println("defense: $defense") end
+        # defense = decode(encode(defense, "UTF-8"), "UTF-8")
+        if DEBUG_PLAY_INFO println("defense post é: $defense") end
     else
         play_text = ""
     end
 
     school_colors = CSV.File("../school_colors/school_colors.csv", delim=';') |> DataFrame
-    # if DEBUG_PLAY_INFO println("school_colors.offense: $offense") end
-    # if DEBUG_PLAY_INFO println("school_colors.offense.Abbreviation_regex: $(school_colors[school_colors.School .== offense, :Abbreviation_regex])") end
-    if offense == "San Jos� State" || occursin("San Jos", offense)
-        off_abbrv = replace(school_colors[school_colors.School .== "San José State", :Abbreviation_regex][1], "("=>"(?:")
+    if DEBUG_PLAY_INFO println("school_colors.offense: $offense") end
+    if DEBUG_PLAY_INFO println("school_colors.offense.Abbreviation_regex: $(school_colors[school_colors.School .== offense, :Abbreviation_regex])") end
+    # if offense == "San Jos� State"
+    #     off_abbrv = replace(school_colors[school_colors.School .== "San José State", :Abbreviation_regex][1], "("=>"(?:")
+    #     # off_abbrv = replace(school_colors[school_colors.School .== "San Jos� State", :Abbreviation_regex][1], "("=>"(?:")
+    # elseif offense == occursin("San Jos", offense)
+    #     off_abbrv = replace(school_colors[school_colors.School .== "San José State", :Abbreviation_regex][1], "("=>"(?:")
+    # elseif offense == "San Jos� State"
+    #     off_abbrv = replace(school_colors[school_colors.School .== "San Jos� State", :Abbreviation_regex][1], "("=>"(?:")
+    # else
+        if offense == "San José State"
+        # if DEBUG_PLAY_INFO println("school_colors.School:\n $(school_colors[:, :School])") end
+        off_abbrv = replace(school_colors[school_colors.School .== "San Jos\xe9 State", :Abbreviation_regex][1], "("=>"(?:")
     else
         off_abbrv = replace(school_colors[school_colors.School .== offense, :Abbreviation_regex][1], "("=>"(?:")
     end
+    # off_abbrv = replace(school_colors[school_colors.School .== offense, :Abbreviation_regex][1], "("=>"(?:")
+
     # if DEBUG_PLAY_INFO println("school_colors.defense: $defense") end
     # if DEBUG_PLAY_INFO println("school_colors.defense.Abbreviation_regex: $(school_colors[school_colors.School .== defense, :Abbreviation_regex])") end
     # if DEBUG_PLAY_INFO println("""occursin("San Jos", defense): $(occursin("San Jos", defense))""") end
-    if defense == "San Jos� State" || occursin("San Jos", defense)
-        def_abbrv = replace(school_colors[school_colors.School .== "San José State", :Abbreviation_regex][1], "("=>"(?:")
+    # if defense == "San Jos� State" || occursin("San Jos", defense)
+    #     def_abbrv = replace(school_colors[school_colors.School .== "San José State", :Abbreviation_regex][1], "("=>"(?:")
+    if defense == "San José State"
+        # if DEBUG_PLAY_INFO println("school_colors.School:\n $(school_colors[:, :School])") end
+        def_abbrv = replace(school_colors[school_colors.School .== "San Jos\xe9 State", :Abbreviation_regex][1], "("=>"(?:")
     else
         def_abbrv = replace(school_colors[school_colors.School .== defense, :Abbreviation_regex][1], "("=>"(?:")
     end

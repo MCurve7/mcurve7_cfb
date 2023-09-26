@@ -4,6 +4,8 @@
 
 #I might break this further apart into: offsetting_aux, declined_enforced_aux, declined_aux, enforced_aux, and rest_aux files
 
+# HAVE TO ADD declined declined see Alabama_2023_wk04_regular.csv
+
 function foul_analysis(cols)
     txt = cols[1]
     offense = cols[2]
@@ -15,31 +17,53 @@ function foul_analysis(cols)
 
     school_colors = CSV.File("../school_colors/school_colors.csv", delim=';') |> DataFrame
     # off_abbrv = replace(school_colors[school_colors.School .== offense, :Abbreviation_regex][1], "^("=>"(?:")
-    if offense == "San Jos� State" || occursin("San Jos", offense)
-        off_abbrv = replace(school_colors[school_colors.School .== "San José State", :Abbreviation_regex][1], "("=>"(?:")
+    # if offense == "San Jos� State" || occursin("San Jos", offense)
+    #     off_abbrv = replace(school_colors[school_colors.School .== "San José State", :Abbreviation_regex][1], "("=>"(?:")
+    # else
+    #     off_abbrv = replace(school_colors[school_colors.School .== offense, :Abbreviation_regex][1], "("=>"(?:")
+    # end
+    if offense == "San José State"
+        off_abbrv = replace(school_colors[school_colors.School .== "San Jos\xe9 State", :Abbreviation_regex][1], "("=>"(?:")
     else
         off_abbrv = replace(school_colors[school_colors.School .== offense, :Abbreviation_regex][1], "("=>"(?:")
     end
 if DEBUG_PENALTY println("off_abbrv: $off_abbrv") end
     # def_abbrv = replace(school_colors[school_colors.School .== defense, :Abbreviation_regex][1], "^("=>"(?:")
-    if defense == "San Jos� State" || occursin("San Jos", defense)
-        def_abbrv = replace(school_colors[school_colors.School .== "San José State", :Abbreviation_regex][1], "("=>"(?:")
+    # if defense == "San Jos� State" || occursin("San Jos", defense)
+    #     def_abbrv = replace(school_colors[school_colors.School .== "San José State", :Abbreviation_regex][1], "("=>"(?:")
+    # else
+    #     def_abbrv = replace(school_colors[school_colors.School .== defense, :Abbreviation_regex][1], "("=>"(?:")
+    # end
+    if defense == "San José State"
+        def_abbrv = replace(school_colors[school_colors.School .== "San Jos\xe9 State", :Abbreviation_regex][1], "("=>"(?:")
     else
         def_abbrv = replace(school_colors[school_colors.School .== defense, :Abbreviation_regex][1], "("=>"(?:")
     end
 if DEBUG_PENALTY println("def_abbrv: $def_abbrv") end
     # off_abbrv_catch = school_colors[school_colors.School .== offense, :Abbreviation_regex][1]
-    if offense == "San Jos� State" || occursin("San Jos", offense)
-        off_abbrv_catch = school_colors[school_colors.School .== "San José State", :Abbreviation_regex][1]
+    # if offense == "San Jos� State" || occursin("San Jos", offense)
+    #     off_abbrv_catch = school_colors[school_colors.School .== "San José State", :Abbreviation_regex][1]
+    # else
+    #     off_abbrv_catch = school_colors[school_colors.School .== offense, :Abbreviation_regex][1]
+    # end
+    if offense == "San José State"
+        off_abbrv_catch = school_colors[school_colors.School .== "San Jos\xe9 State", :Abbreviation_regex][1]
     else
         off_abbrv_catch = school_colors[school_colors.School .== offense, :Abbreviation_regex][1]
-    end
+    end    
+
     # def_abbrv_catch = school_colors[school_colors.School .== defense, :Abbreviation_regex][1]
-    if defense == "San Jos� State" || occursin("San Jos", defense)
-        def_abbrv_catch = school_colors[school_colors.School .== "San José State", :Abbreviation_regex][1]
+    # if defense == "San Jos� State" || occursin("San Jos", defense)
+    #     def_abbrv_catch = school_colors[school_colors.School .== "San José State", :Abbreviation_regex][1]
+    # else
+    #     def_abbrv_catch = school_colors[school_colors.School .== defense, :Abbreviation_regex][1]
+    # end
+    if defense == "San José State"
+        def_abbrv_catch = school_colors[school_colors.School .== "San Jos\xe9 State", :Abbreviation_regex][1]
     else
         def_abbrv_catch = school_colors[school_colors.School .== defense, :Abbreviation_regex][1]
     end
+
     off_abbrv_catch = replace(off_abbrv_catch, "\xe9" => "é")
     off_abbrv_catch = replace(off_abbrv_catch, "\xc9" => "É")
     def_abbrv_catch = replace(def_abbrv_catch, "\xe9" => "é")
@@ -331,6 +355,7 @@ function declined_enforced_aux(txt, offense, defense, off_abbrv_catch, def_abbrv
         m = ""
         match1 = nothing
         match2 = nothing
+        match3 = nothing
         if occursin(Regex("PENALTY "*off_abbrv_catch), txt) 
             team_regex = off_abbrv_catch
             team = offense
@@ -344,21 +369,39 @@ function declined_enforced_aux(txt, offense, defense, off_abbrv_catch, def_abbrv
             regex = Regex("PENALTY $team_regex ($penalty_declined) on $name_lastfirst_penalty_regex declined $team_regex ($penalty_enforced) on $name_lastfirst_penalty_regex enforced")
             # println(regex)
             m = match(regex, txt) 
-if DEBUG_PENALTY println("1st: $m") end
+            if DEBUG_PENALTY println("1st: $m") end
             # println("m = $m")
             if !isnothing(m)
                 match1 = true
                 match2 = false
+                match3 = false
                 break
             end
-            regex = Regex("PENALTY $team_regex ($penalty_declined) on(?: #\\d+)? ([A-Z\\p{Lu}'-].(?:[A-Z\\p{Lu}'-][a-z\\p{Ll}A-Z&\\p{Lu}'\\.-]+ ?)+) declined; $team_regex ($penalty_enforced) on(?: #\\d+)? ([A-Z\\p{Lu}'-].(?:[A-Z\\p{Lu}'-][a-z\\p{Ll}A-Z&\\p{Lu}'\\.-]+ ?)+) enforced")
+
+            regex = Regex("PENALTY $team_regex ($penalty_declined) declined $team_regex ($penalty_enforced) on $name_caplastfirst_regex enforced")
+            # println(regex)
             m = match(regex, txt) 
-if DEBUG_PENALTY println("2nd: $m") end
+            if DEBUG_PENALTY println("2nd: $m") end
+            # println("m = $m")
             if !isnothing(m)
                 match1 = false
                 match2 = false
+                match3 = true
                 break
             end
+
+            regex = Regex("PENALTY $team_regex ($penalty_declined) on(?: #\\d+)? ([A-Z\\p{Lu}'-].(?:[A-Z\\p{Lu}'-][a-z\\p{Ll}A-Z&\\p{Lu}'\\.-]+ ?)+) declined; $team_regex ($penalty_enforced) on(?: #\\d+)? ([A-Z\\p{Lu}'-].(?:[A-Z\\p{Lu}'-][a-z\\p{Ll}A-Z&\\p{Lu}'\\.-]+ ?)+) enforced")
+            m = match(regex, txt) 
+            if DEBUG_PENALTY println("3rd: $m") end
+            if !isnothing(m)
+                match1 = false
+                match2 = false
+                match3 = false
+                break
+            end
+
+            
+
         end
         if isnothing(m)
             maux = ""
@@ -368,7 +411,7 @@ if DEBUG_PENALTY println("2nd: $m") end
                 regex = Regex("PENALTY $team_regex ($penalty_declined) declined; $team_regex ($penalty_enforced) on(?: #\\d+)? ([A-Z\\p{Lu}'-].(?:[A-Z\\p{Lu}'-][a-z\\p{Ll}A-Z&\\p{Lu}'\\.-]+ ?)+) enforced")
                 # println("penalty_declined: $penalty_declined, penalty_enforced: $penalty_enforced")
                 maux = match(regex, txt) 
-if DEBUG_PENALTY println("One name: $maux") end
+                # if DEBUG_PENALTY println("One name: $maux") end
                 if !isnothing(maux)
                     push!(m, maux[1])
                     push!(m, maux[2])
@@ -378,12 +421,13 @@ if DEBUG_PENALTY println("One name: $maux") end
                     push!(m, maux[5])
                     match1 = false
                     match2 = true
+                    match3 = false
                     break
                 end
             end
         end
-if DEBUG_PENALTY println("After No names: $m, isnothing: $(isnothing(m))") end
-        if isnothing(m )|| length(m) == 0
+        # if DEBUG_PENALTY println("After No names: $m, isnothing: $(isnothing(m))") end
+        if isnothing(m)|| length(m) == 0
             maux = ""
             m = Vector{String}()#[]
             # for penalty_declined in penalty_list_occurred[51:53], penalty_enforced in penalty_list_occurred[15:17]
@@ -391,7 +435,7 @@ if DEBUG_PENALTY println("After No names: $m, isnothing: $(isnothing(m))") end
                 regex = Regex("PENALTY $team_regex ($penalty_declined) .+ declined;? $team_regex ($penalty_enforced) on .+ enforced")
                 # println("penalty_declined: $penalty_declined, penalty_enforced: $penalty_enforced")
                 maux = match(regex, txt)
-if DEBUG_PENALTY println("No names: $maux") end 
+                # if DEBUG_PENALTY println("No names: $maux") end 
                 if !isnothing(maux)
                     push!(m, team)#team: declined
                     push!(m, maux[1])#foul_type: declined
@@ -401,11 +445,12 @@ if DEBUG_PENALTY println("No names: $maux") end
                     push!(m, "No.Data")#foul_transgressor: enforced
                     match1 = false
                     match2 = false
+                    match3 = false
                     break
                 end
             end
         end
-if DEBUG_PENALTY println(m) end
+        if DEBUG_PENALTY println(m) end
         push!(foul_type, m[5])
         push!(foul_type, m[2])
         push!(foul_status, "enforced")
@@ -422,6 +467,12 @@ if DEBUG_PENALTY println(m) end
             GET_NAMES && add_names_df!(names_df, m[6], txt)
             GET_NAMES && add_names_df!(names_df, m[3], txt)
             push!(foul_transgressor, process_name(m[6]))
+            push!(foul_transgressor, process_name(m[3]))
+        elseif match3
+            #TIGHTEN: I don't think I need the two different cases since process_name converts both
+            GET_NAMES && add_names_df!(names_df, m[5], txt)
+            GET_NAMES && add_names_df!(names_df, m[3], txt)
+            push!(foul_transgressor, "No.Data")
             push!(foul_transgressor, process_name(m[3]))
         else
             push!(foul_transgressor, "No.Data")
