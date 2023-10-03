@@ -1,0 +1,331 @@
+{
+  data: [
+    {
+      "x": [0.7, 7.3],
+      "y": [6.66666666666667, 6.66666666666667],
+      "text": "yintercept: 6.666667",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 3.77952755905512,
+        "color": "rgba(255,255,255,1)",
+        "dash": "dashdot"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [0.7, 7.3],
+      "y": [6.16666666666667, 6.16666666666667],
+      "text": "yintercept: 6.166667",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 3.77952755905512,
+        "color": "rgba(80,0,0,1)",
+        "dash": "dash"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 2, 3, 4, 5, 6, 7],
+      "y": [3, 9, 10, 8, 6, 5, 4],
+      "text": ["Game_number: 1<br />Opponent: Texas State<br />Penalty_all_count_nona:  3", "Game_number: 2<br />Opponent: Clemson<br />Penalty_all_count_nona:  9", "Game_number: 3<br />Opponent: Lamar<br />Penalty_all_count_nona: 10", "Game_number: 4<br />Opponent: Auburn<br />Penalty_all_count_nona:  8", "Game_number: 5<br />Opponent: Arkansas<br />Penalty_all_count_nona:  6", "Game_number: 6<br />Opponent: BYE<br />Penalty_all_count_nona:  5", "Game_number: 7<br />Opponent: Alabama<br />Penalty_all_count_nona:  4"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(255,255,255,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 2, 3, 4, 5, 6, 7],
+      "y": [3, 9, 10, 8, 6, null, 4],
+      "text": ["Game_number: 1<br />Opponent: Texas State<br />Penalty_all_count:  3", "Game_number: 2<br />Opponent: Clemson<br />Penalty_all_count:  9", "Game_number: 3<br />Opponent: Lamar<br />Penalty_all_count: 10", "Game_number: 4<br />Opponent: Auburn<br />Penalty_all_count:  8", "Game_number: 5<br />Opponent: Arkansas<br />Penalty_all_count:  6", "Game_number: 6<br />Opponent: BYE<br />Penalty_all_count: NA", "Game_number: 7<br />Opponent: Alabama<br />Penalty_all_count:  4"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(255,255,255,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "circle",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(255,255,255,1)"
+        }
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 2, 3, 4, 5, 6, 7],
+      "y": [3, 9, 7, 8, 6, 5, 4],
+      "text": ["Game_number: 1<br />Opponent: Texas State<br />Penalty_enforced_count_nona: 3", "Game_number: 2<br />Opponent: Clemson<br />Penalty_enforced_count_nona: 9", "Game_number: 3<br />Opponent: Lamar<br />Penalty_enforced_count_nona: 7", "Game_number: 4<br />Opponent: Auburn<br />Penalty_enforced_count_nona: 8", "Game_number: 5<br />Opponent: Arkansas<br />Penalty_enforced_count_nona: 6", "Game_number: 6<br />Opponent: BYE<br />Penalty_enforced_count_nona: 5", "Game_number: 7<br />Opponent: Alabama<br />Penalty_enforced_count_nona: 4"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(80,0,0,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 2, 3, 4, 5, 6, 7],
+      "y": [3, 9, 7, 8, 6, null, 4],
+      "text": ["Game_number: 1<br />Opponent: Texas State<br />Penalty_enforced_count:  3", "Game_number: 2<br />Opponent: Clemson<br />Penalty_enforced_count:  9", "Game_number: 3<br />Opponent: Lamar<br />Penalty_enforced_count:  7", "Game_number: 4<br />Opponent: Auburn<br />Penalty_enforced_count:  8", "Game_number: 5<br />Opponent: Arkansas<br />Penalty_enforced_count:  6", "Game_number: 6<br />Opponent: BYE<br />Penalty_enforced_count: NA", "Game_number: 7<br />Opponent: Alabama<br />Penalty_enforced_count:  4"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(80,0,0,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "circle",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(80,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "visible": false,
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    }
+  ],
+  layout: {
+    "margin": {
+      "t": 43.2754946727549,
+      "r": 7.30593607305936,
+      "b": 39.6955859969559,
+      "l": 37.2602739726027
+    },
+    "plot_bgcolor": "rgba(235,235,235,1)",
+    "paper_bgcolor": "rgba(255,255,255,1)",
+    "font": {
+      "color": "rgba(0,0,0,1)",
+      "family": "",
+      "size": 14.6118721461187
+    },
+    "title": {
+      "text": "Texas A&M penalties for 2019; Average: enforced = 6.17 (primary team color), all = 6.67 (secondary team color)<br> <sup><\/sup>",
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 17.5342465753425
+      },
+      "x": 0,
+      "xref": "paper",
+      "xanchor": "left"
+    },
+    "xaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [0.7, 7.3],
+      "tickmode": "array",
+      "ticktext": ["Texas State", "Clemson", "Lamar", "Auburn", "Arkansas", "BYE", "Alabama"],
+      "tickvals": [1, 2, 3, 4, 5, 6, 7],
+      "categoryorder": "array",
+      "categoryarray": ["Texas State", "Clemson", "Lamar", "Auburn", "Arkansas", "BYE", "Alabama"],
+      "nticks": null,
+      "ticks": "outside",
+      "tickcolor": "rgba(51,51,51,1)",
+      "ticklen": 3.65296803652968,
+      "tickwidth": 0.66417600664176,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "tickangle": -0,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": "rgba(255,255,255,1)",
+      "gridwidth": 0.66417600664176,
+      "zeroline": false,
+      "anchor": "y",
+      "title": {
+        "text": "Opponent",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "yaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [-0.5, 10.5],
+      "tickmode": "array",
+      "ticktext": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
+      "tickvals": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "categoryorder": "array",
+      "categoryarray": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
+      "nticks": null,
+      "ticks": "outside",
+      "tickcolor": "rgba(51,51,51,1)",
+      "ticklen": 3.65296803652968,
+      "tickwidth": 0.66417600664176,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "tickangle": -0,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": "rgba(255,255,255,1)",
+      "gridwidth": 0.66417600664176,
+      "zeroline": false,
+      "anchor": "x",
+      "title": {
+        "text": "Penalty Count: all (dotdashed line), enforced (dashed line)",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "shapes": [
+      {
+        "type": "rect",
+        "fillcolor": null,
+        "line": {
+          "color": null,
+          "width": 0,
+          "linetype": []
+        },
+        "yref": "paper",
+        "xref": "paper",
+        "x0": 0,
+        "x1": 1,
+        "y0": 0,
+        "y1": 1
+      }
+    ],
+    "showlegend": false,
+    "legend": {
+      "bgcolor": "rgba(255,255,255,1)",
+      "bordercolor": "transparent",
+      "borderwidth": 1.88976377952756,
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 11.689497716895
+      }
+    },
+    "hovermode": "closest",
+    "barmode": "relative"
+  },
+  config: {
+    "doubleClick": "reset",
+    "modeBarButtonsToAdd": ["hoverclosest", "hovercompare"],
+    "showSendToCloud": false
+  },
+  source: "A",
+  attrs: {
+    "12f07d5e67e3": {
+      "yintercept": {},
+      "type": "scatter"
+    },
+    "12f03a181525": {
+      "yintercept": {}
+    },
+    "12f0266e679b": {
+      "x": {},
+      "label": {},
+      "y": {}
+    },
+    "12f038397e92": {
+      "x": {},
+      "label": {},
+      "y": {}
+    },
+    "12f02fb353e": {
+      "x": {},
+      "label": {},
+      "y": {}
+    },
+    "12f067b43d77": {
+      "x": {},
+      "label": {},
+      "y": {}
+    },
+    "12f010b83d8f": {
+      "y": {}
+    }
+  },
+  cur_data: "12f07d5e67e3",
+  visdat: {
+    "12f07d5e67e3": ["function (y) ", "x"],
+    "12f03a181525": ["function (y) ", "x"],
+    "12f0266e679b": ["function (y) ", "x"],
+    "12f038397e92": ["function (y) ", "x"],
+    "12f02fb353e": ["function (y) ", "x"],
+    "12f067b43d77": ["function (y) ", "x"],
+    "12f010b83d8f": ["function (y) ", "x"]
+  },
+  highlight: {
+    "on": "plotly_click",
+    "persistent": false,
+    "dynamic": false,
+    "selectize": false,
+    "opacityDim": 0.2,
+    "selected": {
+      "opacity": 1
+    },
+    "debounce": 0
+  },
+  shinyEvents: ["plotly_hover", "plotly_click", "plotly_selected", "plotly_relayout", "plotly_brushed", "plotly_brushing", "plotly_clickannotation", "plotly_doubleclick", "plotly_deselect", "plotly_afterplot", "plotly_sunburstclick"],
+  base_url: "https://plot.ly"
+}

@@ -163,6 +163,7 @@ if arg_length == 4:
     for t in week0_data.keys():
         print("Team: ", t)
         stats_json = api_instance.get_team_game_stats(season_type = seasontype, year = year_get, week = 1, team = t)
+        print("stats_json[0].teams[0]['school']: ", stats_json[0].teams[0]['school'])
         if stats_json[0].teams[0]['school'] == t:
             json_dict = json2dict(stats_json[0].teams[0])
             team_other = json2dict(stats_json[0].teams[1])['school']

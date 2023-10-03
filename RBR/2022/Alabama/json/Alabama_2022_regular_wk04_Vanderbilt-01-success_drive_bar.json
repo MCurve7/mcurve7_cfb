@@ -1,12 +1,48 @@
 {
   data: [
     {
+      "x": [-0.0449999999999999, 13.045],
+      "y": [0.550252525252525, 0.550252525252525],
+      "text": "yintercept: 0.5502525",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(158,27,50,1)",
+        "dash": "dashdot"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [-0.0449999999999999, 13.045],
+      "y": [0.420278351528352, 0.420278351528352],
+      "text": "yintercept: 0.4202784",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(130,138,143,1)",
+        "dash": "dash"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
       "orientation": "v",
       "width": [0.9, 0.9, 0.9, 0.899999999999999, 0.899999999999999],
       "base": [0, 0, 0, 0, 0],
       "x": [1, 5, 7, 8, 10],
       "y": [0.4, 0.2, 0.666666666666667, 0.636363636363636, 0],
-      "text": ["O_drive_number:  1<br />Success_rate: 0.4000000<br />Score_drive: FALSE<br />Total:  5", "O_drive_number:  5<br />Success_rate: 0.2000000<br />Score_drive: FALSE<br />Total:  5", "O_drive_number:  7<br />Success_rate: 0.6666667<br />Score_drive: FALSE<br />Total:  3", "O_drive_number:  8<br />Success_rate: 0.6363636<br />Score_drive: FALSE<br />Total: 11", "O_drive_number: 10<br />Success_rate: 0.0000000<br />Score_drive: FALSE<br />Total:  3"],
+      "text": ["O_drive_number:  1<br />Success_rate: 0.4000000<br />Score_Turnover_drive: Neither<br />Total:  5", "O_drive_number:  5<br />Success_rate: 0.2000000<br />Score_Turnover_drive: Neither<br />Total:  5", "O_drive_number:  7<br />Success_rate: 0.6666667<br />Score_Turnover_drive: Neither<br />Total:  3", "O_drive_number:  8<br />Success_rate: 0.6363636<br />Score_Turnover_drive: Neither<br />Total: 11", "O_drive_number: 10<br />Success_rate: 0.0000000<br />Score_Turnover_drive: Neither<br />Total:  3"],
       "type": "bar",
       "textposition": "none",
       "marker": {
@@ -14,11 +50,11 @@
         "color": "rgba(130,138,143,1)",
         "line": {
           "width": 1.88976377952756,
-          "color": "transparent"
+          "color": "rgba(0,0,0,1)"
         }
       },
-      "name": "FALSE",
-      "legendgroup": "FALSE",
+      "name": "Neither",
+      "legendgroup": "Neither",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -31,7 +67,7 @@
       "base": [0, 0, 0, 0, 0, 0, 0],
       "x": [2, 3, 4, 6, 9, 11, 12],
       "y": [1, 0.5, 1, 0.666666666666667, 0.666666666666667, 0.466666666666667, 0.4],
-      "text": ["O_drive_number:  2<br />Success_rate: 1.0000000<br />Score_drive:  TRUE<br />Total:  4", "O_drive_number:  3<br />Success_rate: 0.5000000<br />Score_drive:  TRUE<br />Total: 10", "O_drive_number:  4<br />Success_rate: 1.0000000<br />Score_drive:  TRUE<br />Total:  1", "O_drive_number:  6<br />Success_rate: 0.6666667<br />Score_drive:  TRUE<br />Total:  9", "O_drive_number:  9<br />Success_rate: 0.6666667<br />Score_drive:  TRUE<br />Total:  6", "O_drive_number: 11<br />Success_rate: 0.4666667<br />Score_drive:  TRUE<br />Total: 15", "O_drive_number: 12<br />Success_rate: 0.4000000<br />Score_drive:  TRUE<br />Total:  5"],
+      "text": ["O_drive_number:  2<br />Success_rate: 1.0000000<br />Score_Turnover_drive: Score<br />Total:  4", "O_drive_number:  3<br />Success_rate: 0.5000000<br />Score_Turnover_drive: Score<br />Total: 10", "O_drive_number:  4<br />Success_rate: 1.0000000<br />Score_Turnover_drive: Score<br />Total:  1", "O_drive_number:  6<br />Success_rate: 0.6666667<br />Score_Turnover_drive: Score<br />Total:  9", "O_drive_number:  9<br />Success_rate: 0.6666667<br />Score_Turnover_drive: Score<br />Total:  6", "O_drive_number: 11<br />Success_rate: 0.4666667<br />Score_Turnover_drive: Score<br />Total: 15", "O_drive_number: 12<br />Success_rate: 0.4000000<br />Score_Turnover_drive: Score<br />Total:  5"],
       "type": "bar",
       "textposition": "none",
       "marker": {
@@ -39,11 +75,11 @@
         "color": "rgba(158,27,50,1)",
         "line": {
           "width": 1.88976377952756,
-          "color": "transparent"
+          "color": "rgba(0,0,0,1)"
         }
       },
-      "name": "TRUE",
-      "legendgroup": "TRUE",
+      "name": "Score",
+      "legendgroup": "Score",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -92,7 +128,7 @@
       "size": 14.6118721461187
     },
     "title": {
-      "text": "Alabama[55]: Success rate by Drive with TD drive indicated and number of plays per drive<br> <sup>2022: wk04 vs Vanderbilt[3]<\/sup>",
+      "text": "Alabama[55]: Success rate by Drive with TD drive indicated and number of plays per drive; Mean: Game = 0.55 (dotdash), Season = 0.42 (dashed)<br> <sup>2022: wk04 vs Vanderbilt[3]<\/sup>",
       "font": {
         "color": "rgba(0,0,0,1)",
         "family": "",
@@ -230,27 +266,35 @@
   },
   source: "A",
   attrs: {
-    "6c285b063ac": {
+    "12f030a3b1d": {
+      "yintercept": {},
+      "type": "scatter"
+    },
+    "12f0201bd59": {
+      "yintercept": {}
+    },
+    "12f07880af3": {
       "x": {},
       "y": {},
       "fill": {},
-      "label": {},
-      "type": "bar"
+      "label": {}
     },
-    "6c284c37350a": {
+    "12f02f671f50": {
       "y": {}
     },
-    "6c28480f6b7": {
+    "12f05a6638bb": {
       "x": {},
       "y": {},
       "label": {}
     }
   },
-  cur_data: "6c285b063ac",
+  cur_data: "12f030a3b1d",
   visdat: {
-    "6c285b063ac": ["function (y) ", "x"],
-    "6c284c37350a": ["function (y) ", "x"],
-    "6c28480f6b7": ["function (y) ", "x"]
+    "12f030a3b1d": ["function (y) ", "x"],
+    "12f0201bd59": ["function (y) ", "x"],
+    "12f07880af3": ["function (y) ", "x"],
+    "12f02f671f50": ["function (y) ", "x"],
+    "12f05a6638bb": ["function (y) ", "x"]
   },
   highlight: {
     "on": "plotly_click",

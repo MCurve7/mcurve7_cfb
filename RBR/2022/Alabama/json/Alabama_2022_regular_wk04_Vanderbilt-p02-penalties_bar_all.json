@@ -6,7 +6,7 @@
       "base": 1,
       "x": [1],
       "y": [6],
-      "text": "Penalty_team: Alabama<br />Count: 6<br />Penalty_status: enforced<br />Penalty_team: Alabama<br />Penalty_team: Alabama",
+      "text": "Penalty_team: Alabama<br />Count: 6<br />Penalty_status: enforced<br />Penalty_team: black<br />Penalty_team: Alabama",
       "type": "bar",
       "textposition": "none",
       "marker": {
@@ -14,11 +14,11 @@
         "color": "rgba(255,62,150,1)",
         "line": {
           "width": 11.3385826771654,
-          "color": "rgba(158,27,50,1)"
+          "color": "rgba(0,0,0,1)"
         }
       },
-      "name": "(enforced,Alabama)",
-      "legendgroup": "(enforced,Alabama)",
+      "name": "(enforced,Alabama,1)",
+      "legendgroup": "(enforced,Alabama,1)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -31,7 +31,7 @@
       "base": 1,
       "x": [2],
       "y": [6],
-      "text": "Penalty_team: Vanderbilt<br />Count: 6<br />Penalty_status: enforced<br />Penalty_team: Vanderbilt<br />Penalty_team: Vanderbilt",
+      "text": "Penalty_team: Vanderbilt<br />Count: 6<br />Penalty_status: enforced<br />Penalty_team: black<br />Penalty_team: Vanderbilt",
       "type": "bar",
       "textposition": "none",
       "marker": {
@@ -42,8 +42,8 @@
           "color": "rgba(0,0,0,1)"
         }
       },
-      "name": "(enforced,Vanderbilt)",
-      "legendgroup": "(enforced,Vanderbilt)",
+      "name": "(enforced,Vanderbilt,1)",
+      "legendgroup": "(enforced,Vanderbilt,1)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -56,7 +56,7 @@
       "base": 0,
       "x": [1],
       "y": [1],
-      "text": "Penalty_team: Alabama<br />Count: 1<br />Penalty_status: off-setting<br />Penalty_team: Alabama<br />Penalty_team: Alabama",
+      "text": "Penalty_team: Alabama<br />Count: 1<br />Penalty_status: off-setting<br />Penalty_team: black<br />Penalty_team: Alabama",
       "type": "bar",
       "textposition": "none",
       "marker": {
@@ -64,11 +64,11 @@
         "color": "rgba(238,233,233,1)",
         "line": {
           "width": 11.3385826771654,
-          "color": "rgba(158,27,50,1)"
+          "color": "rgba(0,0,0,1)"
         }
       },
-      "name": "(off-setting,Alabama)",
-      "legendgroup": "(off-setting,Alabama)",
+      "name": "(off-setting,Alabama,1)",
+      "legendgroup": "(off-setting,Alabama,1)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -81,7 +81,7 @@
       "base": 0,
       "x": [2],
       "y": [1],
-      "text": "Penalty_team: Vanderbilt<br />Count: 1<br />Penalty_status: off-setting<br />Penalty_team: Vanderbilt<br />Penalty_team: Vanderbilt",
+      "text": "Penalty_team: Vanderbilt<br />Count: 1<br />Penalty_status: off-setting<br />Penalty_team: black<br />Penalty_team: Vanderbilt",
       "type": "bar",
       "textposition": "none",
       "marker": {
@@ -92,8 +92,8 @@
           "color": "rgba(0,0,0,1)"
         }
       },
-      "name": "(off-setting,Vanderbilt)",
-      "legendgroup": "(off-setting,Vanderbilt)",
+      "name": "(off-setting,Vanderbilt,1)",
+      "legendgroup": "(off-setting,Vanderbilt,1)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -236,7 +236,7 @@
         "size": 11.689497716895
       },
       "title": {
-        "text": "Team<br />Penalty Status",
+        "text": "Penalty Status",
         "font": {
           "color": "rgba(0,0,0,1)",
           "family": "",
@@ -254,7 +254,7 @@
   },
   source: "A",
   attrs: {
-    "6c28324065a0": {
+    "12f03c681886": {
       "x": {},
       "y": {},
       "fill": {},
@@ -263,9 +263,9 @@
       "type": "bar"
     }
   },
-  cur_data: "6c28324065a0",
+  cur_data: "12f03c681886",
   visdat: {
-    "6c28324065a0": ["function (y) ", "x"]
+    "12f03c681886": ["function (y) ", "x"]
   },
   highlight: {
     "on": "plotly_click",

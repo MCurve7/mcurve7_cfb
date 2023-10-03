@@ -1,0 +1,441 @@
+{
+  data: [
+    {
+      "x": [0.199687168919481, 9.59187501009088],
+      "y": [0.199687168919481, 9.59187501009088],
+      "text": "intercept: 0<br />slope: 1",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(0,0,0,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [5.12224586205557, 4.89671750664711, 4.80202146898955, 9.16495738094673, 5.48745480338112, 4.80948236351833, 5.18062029574066, 8.91934185978025],
+      "y": [8, 10, 44, 17, 14, 37, 22, 20],
+      "text": ["Yards_to_success: 5.0<br />Yards_gained:  8<br />Play_type: Pass Reception<br />Success: Successful", "Yards_to_success: 5.0<br />Yards_gained: 10<br />Play_type: Pass Reception<br />Success: Successful", "Yards_to_success: 5.0<br />Yards_gained: 44<br />Play_type: Pass Reception<br />Success: Successful", "Yards_to_success: 9.0<br />Yards_gained: 17<br />Play_type: Pass Reception<br />Success: Successful", "Yards_to_success: 5.6<br />Yards_gained: 14<br />Play_type: Pass Reception<br />Success: Successful", "Yards_to_success: 5.0<br />Yards_gained: 37<br />Play_type: Pass Reception<br />Success: Successful", "Yards_to_success: 5.0<br />Yards_gained: 22<br />Play_type: Pass Reception<br />Success: Successful", "Yards_to_success: 9.0<br />Yards_gained: 20<br />Play_type: Pass Reception<br />Success: Successful"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,100,0,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(0,100,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Successful,Pass Reception)",
+      "legendgroup": "(Successful,Pass Reception)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [4.82769524333999, 5.05550672067329, 5.11576458634809, 2.86947020925581],
+      "y": [57, 12, 54, 15],
+      "text": ["Yards_to_success: 5.0<br />Yards_gained: 57<br />Play_type: Passing Touchdown<br />Success: Successful", "Yards_to_success: 5.0<br />Yards_gained: 12<br />Play_type: Passing Touchdown<br />Success: Successful", "Yards_to_success: 5.0<br />Yards_gained: 54<br />Play_type: Passing Touchdown<br />Success: Successful", "Yards_to_success: 3.0<br />Yards_gained: 15<br />Play_type: Passing Touchdown<br />Success: Successful"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,100,0,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "square-open-dot",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(0,100,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Successful,Passing Touchdown)",
+      "legendgroup": "(Successful,Passing Touchdown)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1.51528565194458, 5.04323374303058, 7.00837303930894, 6.25957905286923, 0.677062494680285, 5.06171595705673, 4.95965236732736, 4.98376586977392, 5.14579927567393, 5.10775707019493, 3.31285179350525, 0.853992502298206, 4.86328534912318, 1.44965570904315, 5.07873908067122, 0.626604798063636, 5.08114604558796, 2.63358951099217, 2.84006934380159],
+      "y": [3, 6, 22, 7, 1, 10, 6, 20, 9, 5, 4, 8, 8, 4, 9, 5, 6, 3, 3],
+      "text": ["Yards_to_success: 1.4<br />Yards_gained:  3<br />Play_type: Rush<br />Success: Successful", "Yards_to_success: 5.0<br />Yards_gained:  6<br />Play_type: Rush<br />Success: Successful", "Yards_to_success: 7.0<br />Yards_gained: 22<br />Play_type: Rush<br />Success: Successful", "Yards_to_success: 6.3<br />Yards_gained:  7<br />Play_type: Rush<br />Success: Successful", "Yards_to_success: 0.7<br />Yards_gained:  1<br />Play_type: Rush<br />Success: Successful", "Yards_to_success: 5.0<br />Yards_gained: 10<br />Play_type: Rush<br />Success: Successful", "Yards_to_success: 5.0<br />Yards_gained:  6<br />Play_type: Rush<br />Success: Successful", "Yards_to_success: 5.0<br />Yards_gained: 20<br />Play_type: Rush<br />Success: Successful", "Yards_to_success: 5.0<br />Yards_gained:  9<br />Play_type: Rush<br />Success: Successful", "Yards_to_success: 5.0<br />Yards_gained:  5<br />Play_type: Rush<br />Success: Successful", "Yards_to_success: 3.5<br />Yards_gained:  4<br />Play_type: Rush<br />Success: Successful", "Yards_to_success: 1.0<br />Yards_gained:  8<br />Play_type: Rush<br />Success: Successful", "Yards_to_success: 5.0<br />Yards_gained:  8<br />Play_type: Rush<br />Success: Successful", "Yards_to_success: 1.4<br />Yards_gained:  4<br />Play_type: Rush<br />Success: Successful", "Yards_to_success: 5.0<br />Yards_gained:  9<br />Play_type: Rush<br />Success: Successful", "Yards_to_success: 0.7<br />Yards_gained:  5<br />Play_type: Rush<br />Success: Successful", "Yards_to_success: 5.0<br />Yards_gained:  6<br />Play_type: Rush<br />Success: Successful", "Yards_to_success: 2.8<br />Yards_gained:  3<br />Play_type: Rush<br />Success: Successful", "Yards_to_success: 3.0<br />Yards_gained:  3<br />Play_type: Rush<br />Success: Successful"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,100,0,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "circle",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(0,100,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Successful,Rush)",
+      "legendgroup": "(Successful,Rush)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [3.6734328713268, 2.21961577152833, 2.60888556502759, 4.14116642372683],
+      "y": [5, 3, 46, 6],
+      "text": ["Yards_to_success: 3.5<br />Yards_gained:  5<br />Play_type: Rushing Touchdown<br />Success: Successful", "Yards_to_success: 2.1<br />Yards_gained:  3<br />Play_type: Rushing Touchdown<br />Success: Successful", "Yards_to_success: 2.8<br />Yards_gained: 46<br />Play_type: Rushing Touchdown<br />Success: Successful", "Yards_to_success: 4.0<br />Yards_gained:  6<br />Play_type: Rushing Touchdown<br />Success: Successful"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,100,0,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "circle-cross-open",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(0,100,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Successful,Rushing Touchdown)",
+      "legendgroup": "(Successful,Rushing Touchdown)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1.66849772622809],
+      "y": [2],
+      "text": "Yards_to_success: 1.5<br />Yards_gained:  2<br />Play_type: Fumble Recovery (Opponent)<br />Success: Unsuccessful",
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(139,26,26,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "circle-open",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(139,26,26,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Unsuccessful,Fumble Recovery (Opponent))",
+      "legendgroup": "(Unsuccessful,Fumble Recovery (Opponent))",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [7.17857713727281, 4.83735079020262, 6.18095745109022],
+      "y": [0, 0, 0],
+      "text": ["Yards_to_success: 7.0<br />Yards_gained:  0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful", "Yards_to_success: 5.0<br />Yards_gained:  0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful", "Yards_to_success: 6.3<br />Yards_gained:  0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(139,26,26,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "triangle-up-open",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(139,26,26,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Unsuccessful,Pass Incompletion)",
+      "legendgroup": "(Unsuccessful,Pass Incompletion)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [5.12769111515954, 7.17965957215056, 5.14911059904844, 2.19933881713077, 4.95655155777931, 4.65113066025078, 5.13215392073616, 2.30056299120188, 5.13458812870085, 4.01800598334521, 4.98670031903312, 5.08458812320605, 7.02652974203229, 4.95539838606492, 4.25567107852548, 1.09087613597512, 5.08788378033787, 7.59455271810293],
+      "y": [0, 3, 1, 0, -8, 4, 2, 2, 4, 3, 1, 0, 5, 4, 2, -2, -1, -1],
+      "text": ["Yards_to_success: 5.0<br />Yards_gained:  0<br />Play_type: Rush<br />Success: Unsuccessful", "Yards_to_success: 7.0<br />Yards_gained:  3<br />Play_type: Rush<br />Success: Unsuccessful", "Yards_to_success: 5.0<br />Yards_gained:  1<br />Play_type: Rush<br />Success: Unsuccessful", "Yards_to_success: 2.0<br />Yards_gained:  0<br />Play_type: Rush<br />Success: Unsuccessful", "Yards_to_success: 5.0<br />Yards_gained: -8<br />Play_type: Rush<br />Success: Unsuccessful", "Yards_to_success: 4.5<br />Yards_gained:  4<br />Play_type: Rush<br />Success: Unsuccessful", "Yards_to_success: 5.0<br />Yards_gained:  2<br />Play_type: Rush<br />Success: Unsuccessful", "Yards_to_success: 2.5<br />Yards_gained:  2<br />Play_type: Rush<br />Success: Unsuccessful", "Yards_to_success: 5.0<br />Yards_gained:  4<br />Play_type: Rush<br />Success: Unsuccessful", "Yards_to_success: 4.2<br />Yards_gained:  3<br />Play_type: Rush<br />Success: Unsuccessful", "Yards_to_success: 5.0<br />Yards_gained:  1<br />Play_type: Rush<br />Success: Unsuccessful", "Yards_to_success: 5.0<br />Yards_gained:  0<br />Play_type: Rush<br />Success: Unsuccessful", "Yards_to_success: 7.0<br />Yards_gained:  5<br />Play_type: Rush<br />Success: Unsuccessful", "Yards_to_success: 5.0<br />Yards_gained:  4<br />Play_type: Rush<br />Success: Unsuccessful", "Yards_to_success: 4.2<br />Yards_gained:  2<br />Play_type: Rush<br />Success: Unsuccessful", "Yards_to_success: 1.0<br />Yards_gained: -2<br />Play_type: Rush<br />Success: Unsuccessful", "Yards_to_success: 5.0<br />Yards_gained: -1<br />Play_type: Rush<br />Success: Unsuccessful", "Yards_to_success: 7.7<br />Yards_gained: -1<br />Play_type: Rush<br />Success: Unsuccessful"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(139,26,26,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "circle",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(139,26,26,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Unsuccessful,Rush)",
+      "legendgroup": "(Unsuccessful,Rush)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [null, null, null, null, null],
+      "y": [15, null, null, 15, 15],
+      "text": "",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "transparent",
+        "dash": "solid"
+      },
+      "fill": "toself",
+      "fillcolor": "rgba(255,48,48,0.2)",
+      "hoveron": "fills",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [null, null, null, null, null],
+      "y": [null, 0, 0, null, null],
+      "text": "",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "transparent",
+        "dash": "solid"
+      },
+      "fill": "toself",
+      "fillcolor": "rgba(153,153,153,0.3)",
+      "hoveron": "fills",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    }
+  ],
+  layout: {
+    "margin": {
+      "t": 43.2754946727549,
+      "r": 7.30593607305936,
+      "b": 39.6955859969559,
+      "l": 43.1050228310502
+    },
+    "plot_bgcolor": "rgba(229,229,229,1)",
+    "paper_bgcolor": "rgba(255,255,255,1)",
+    "font": {
+      "color": "rgba(0,0,0,1)",
+      "family": "",
+      "size": 14.6118721461187
+    },
+    "title": {
+      "text": "Alabama[66]: Yards to Success vs Yards gained<br> <sup>2019: wk13 vs Western Carolina[3]<\/sup>",
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 17.5342465753425
+      },
+      "x": 0,
+      "xref": "paper",
+      "xanchor": "left"
+    },
+    "xaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [0.199687168919481, 9.59187501009088],
+      "tickmode": "array",
+      "ticktext": ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
+      "tickvals": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+      "categoryorder": "array",
+      "categoryarray": ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
+      "nticks": null,
+      "ticks": "outside",
+      "tickcolor": "rgba(51,51,51,1)",
+      "ticklen": 3.65296803652968,
+      "tickwidth": 0.66417600664176,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "tickangle": -0,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": "rgba(204,204,204,1)",
+      "gridwidth": 0.66417600664176,
+      "zeroline": false,
+      "anchor": "y",
+      "title": {
+        "text": "Yards to success",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "yaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [-11.25, 60.25],
+      "tickmode": "array",
+      "ticktext": ["-10", "-5", "0", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55", "60"],
+      "tickvals": [-10, -5, 0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60],
+      "categoryorder": "array",
+      "categoryarray": ["-10", "-5", "0", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55", "60"],
+      "nticks": null,
+      "ticks": "outside",
+      "tickcolor": "rgba(51,51,51,1)",
+      "ticklen": 3.65296803652968,
+      "tickwidth": 0.66417600664176,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "tickangle": -0,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": "rgba(204,204,204,1)",
+      "gridwidth": 0.66417600664176,
+      "zeroline": false,
+      "anchor": "x",
+      "title": {
+        "text": "Yards gained",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "shapes": [
+      {
+        "type": "rect",
+        "fillcolor": null,
+        "line": {
+          "color": null,
+          "width": 0,
+          "linetype": []
+        },
+        "yref": "paper",
+        "xref": "paper",
+        "x0": 0,
+        "x1": 1,
+        "y0": 0,
+        "y1": 1
+      }
+    ],
+    "showlegend": true,
+    "legend": {
+      "bgcolor": "rgba(255,255,255,1)",
+      "bordercolor": "transparent",
+      "borderwidth": 1.88976377952756,
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "title": {
+        "text": "Success<br />Play type",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      }
+    },
+    "hovermode": "closest",
+    "barmode": "relative"
+  },
+  config: {
+    "doubleClick": "reset",
+    "modeBarButtonsToAdd": ["hoverclosest", "hovercompare"],
+    "showSendToCloud": false
+  },
+  source: "A",
+  attrs: {
+    "12f03fa91a16": {
+      "intercept": {},
+      "slope": {},
+      "type": "scatter"
+    },
+    "12f077e95b77": {
+      "x": {},
+      "y": {},
+      "shape": {},
+      "colour": {}
+    },
+    "12f072fc52af": {
+      "xmin": {},
+      "xmax": {},
+      "ymin": {},
+      "ymax": {}
+    },
+    "12f064847d6c": {
+      "xmin": {},
+      "xmax": {},
+      "ymin": {},
+      "ymax": {}
+    }
+  },
+  cur_data: "12f03fa91a16",
+  visdat: {
+    "12f03fa91a16": ["function (y) ", "x"],
+    "12f077e95b77": ["function (y) ", "x"],
+    "12f072fc52af": ["function (y) ", "x"],
+    "12f064847d6c": ["function (y) ", "x"]
+  },
+  highlight: {
+    "on": "plotly_click",
+    "persistent": false,
+    "dynamic": false,
+    "selectize": false,
+    "opacityDim": 0.2,
+    "selected": {
+      "opacity": 1
+    },
+    "debounce": 0
+  },
+  shinyEvents: ["plotly_hover", "plotly_click", "plotly_selected", "plotly_relayout", "plotly_brushed", "plotly_brushing", "plotly_clickannotation", "plotly_doubleclick", "plotly_deselect", "plotly_afterplot", "plotly_sunburstclick"],
+  base_url: "https://plot.ly"
+}

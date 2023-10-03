@@ -1,0 +1,314 @@
+{
+  data: [
+    {
+      "x": [0.5, 11.5],
+      "y": [5.88888888888889, 5.88888888888889],
+      "text": "yintercept: 5.888889",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 3.77952755905512,
+        "color": "rgba(70,29,124,1)",
+        "dash": "dash"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+      "y": [7, 6, 4, 5, 5, 5, 4, 7, 11, 7.5, 4],
+      "text": ["Game_number:  1<br />Opponent: Georgia Southern<br />Penalty_all_count_nona:  7.0", "Game_number:  2<br />Opponent: Texas<br />Penalty_all_count_nona:  6.0", "Game_number:  3<br />Opponent: Northwestern State<br />Penalty_all_count_nona:  4.0", "Game_number:  4<br />Opponent: Vanderbilt<br />Penalty_all_count_nona:  5.0", "Game_number:  5<br />Opponent: BYE<br />Penalty_all_count_nona:  5.0", "Game_number:  6<br />Opponent: Utah State<br />Penalty_all_count_nona:  5.0", "Game_number:  7<br />Opponent: Florida<br />Penalty_all_count_nona:  4.0", "Game_number:  8<br />Opponent: Mississippi State<br />Penalty_all_count_nona:  7.0", "Game_number:  9<br />Opponent: Auburn<br />Penalty_all_count_nona: 11.0", "Game_number: 10<br />Opponent: BYE<br />Penalty_all_count_nona:  7.5", "Game_number: 11<br />Opponent: Alabama<br />Penalty_all_count_nona:  4.0"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(253,208,35,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+      "y": [7, 6, 4, 5, null, 5, 4, 7, 11, null, 4],
+      "text": ["Game_number:  1<br />Opponent: Georgia Southern<br />Penalty_all_count:  7", "Game_number:  2<br />Opponent: Texas<br />Penalty_all_count:  6", "Game_number:  3<br />Opponent: Northwestern State<br />Penalty_all_count:  4", "Game_number:  4<br />Opponent: Vanderbilt<br />Penalty_all_count:  5", "Game_number:  5<br />Opponent: BYE<br />Penalty_all_count: NA", "Game_number:  6<br />Opponent: Utah State<br />Penalty_all_count:  5", "Game_number:  7<br />Opponent: Florida<br />Penalty_all_count:  4", "Game_number:  8<br />Opponent: Mississippi State<br />Penalty_all_count:  7", "Game_number:  9<br />Opponent: Auburn<br />Penalty_all_count: 11", "Game_number: 10<br />Opponent: BYE<br />Penalty_all_count: NA", "Game_number: 11<br />Opponent: Alabama<br />Penalty_all_count:  4"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(253,208,35,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "circle",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(253,208,35,1)"
+        }
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+      "y": [7, 6, 4, 5, 5, 5, 4, 7, 11, 7.5, 4],
+      "text": ["Game_number:  1<br />Opponent: Georgia Southern<br />Penalty_enforced_count_nona:  7.0", "Game_number:  2<br />Opponent: Texas<br />Penalty_enforced_count_nona:  6.0", "Game_number:  3<br />Opponent: Northwestern State<br />Penalty_enforced_count_nona:  4.0", "Game_number:  4<br />Opponent: Vanderbilt<br />Penalty_enforced_count_nona:  5.0", "Game_number:  5<br />Opponent: BYE<br />Penalty_enforced_count_nona:  5.0", "Game_number:  6<br />Opponent: Utah State<br />Penalty_enforced_count_nona:  5.0", "Game_number:  7<br />Opponent: Florida<br />Penalty_enforced_count_nona:  4.0", "Game_number:  8<br />Opponent: Mississippi State<br />Penalty_enforced_count_nona:  7.0", "Game_number:  9<br />Opponent: Auburn<br />Penalty_enforced_count_nona: 11.0", "Game_number: 10<br />Opponent: BYE<br />Penalty_enforced_count_nona:  7.5", "Game_number: 11<br />Opponent: Alabama<br />Penalty_enforced_count_nona:  4.0"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(70,29,124,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+      "y": [7, 6, 4, 5, null, 5, 4, 7, 11, null, 4],
+      "text": ["Game_number:  1<br />Opponent: Georgia Southern<br />Penalty_enforced_count:  7", "Game_number:  2<br />Opponent: Texas<br />Penalty_enforced_count:  6", "Game_number:  3<br />Opponent: Northwestern State<br />Penalty_enforced_count:  4", "Game_number:  4<br />Opponent: Vanderbilt<br />Penalty_enforced_count:  5", "Game_number:  5<br />Opponent: BYE<br />Penalty_enforced_count: NA", "Game_number:  6<br />Opponent: Utah State<br />Penalty_enforced_count:  5", "Game_number:  7<br />Opponent: Florida<br />Penalty_enforced_count:  4", "Game_number:  8<br />Opponent: Mississippi State<br />Penalty_enforced_count:  7", "Game_number:  9<br />Opponent: Auburn<br />Penalty_enforced_count: 11", "Game_number: 10<br />Opponent: BYE<br />Penalty_enforced_count: NA", "Game_number: 11<br />Opponent: Alabama<br />Penalty_enforced_count:  4"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(70,29,124,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "circle",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(70,29,124,1)"
+        }
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "visible": false,
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "mode": "",
+      "frame": null
+    }
+  ],
+  layout: {
+    "margin": {
+      "t": 43.2754946727549,
+      "r": 7.30593607305936,
+      "b": 39.6955859969559,
+      "l": 37.2602739726027
+    },
+    "plot_bgcolor": "rgba(235,235,235,1)",
+    "paper_bgcolor": "rgba(255,255,255,1)",
+    "font": {
+      "color": "rgba(0,0,0,1)",
+      "family": "",
+      "size": 14.6118721461187
+    },
+    "title": {
+      "text": "LSU penalties for 2019; Average: enforced = 5.89 (primary team color), all = 5.89 (secondary team color)<br> <sup><\/sup>",
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 17.5342465753425
+      },
+      "x": 0,
+      "xref": "paper",
+      "xanchor": "left"
+    },
+    "xaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [0.5, 11.5],
+      "tickmode": "array",
+      "ticktext": ["Georgia Southern", "Texas", "Northwestern State", "Vanderbilt", "BYE", "Utah State", "Florida", "Mississippi State", "Auburn", "BYE", "Alabama"],
+      "tickvals": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+      "categoryorder": "array",
+      "categoryarray": ["Georgia Southern", "Texas", "Northwestern State", "Vanderbilt", "BYE", "Utah State", "Florida", "Mississippi State", "Auburn", "BYE", "Alabama"],
+      "nticks": null,
+      "ticks": "outside",
+      "tickcolor": "rgba(51,51,51,1)",
+      "ticklen": 3.65296803652968,
+      "tickwidth": 0.66417600664176,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "tickangle": -0,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": "rgba(255,255,255,1)",
+      "gridwidth": 0.66417600664176,
+      "zeroline": false,
+      "anchor": "y",
+      "title": {
+        "text": "Opponent",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "yaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [-0.55, 11.55],
+      "tickmode": "array",
+      "ticktext": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"],
+      "tickvals": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+      "categoryorder": "array",
+      "categoryarray": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"],
+      "nticks": null,
+      "ticks": "outside",
+      "tickcolor": "rgba(51,51,51,1)",
+      "ticklen": 3.65296803652968,
+      "tickwidth": 0.66417600664176,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "tickangle": -0,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": "rgba(255,255,255,1)",
+      "gridwidth": 0.66417600664176,
+      "zeroline": false,
+      "anchor": "x",
+      "title": {
+        "text": "Penalty Count: all (dotdashed line), enforced (dashed line)",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "shapes": [
+      {
+        "type": "rect",
+        "fillcolor": null,
+        "line": {
+          "color": null,
+          "width": 0,
+          "linetype": []
+        },
+        "yref": "paper",
+        "xref": "paper",
+        "x0": 0,
+        "x1": 1,
+        "y0": 0,
+        "y1": 1
+      }
+    ],
+    "showlegend": false,
+    "legend": {
+      "bgcolor": "rgba(255,255,255,1)",
+      "bordercolor": "transparent",
+      "borderwidth": 1.88976377952756,
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 11.689497716895
+      }
+    },
+    "hovermode": "closest",
+    "barmode": "relative"
+  },
+  config: {
+    "doubleClick": "reset",
+    "modeBarButtonsToAdd": ["hoverclosest", "hovercompare"],
+    "showSendToCloud": false
+  },
+  source: "A",
+  attrs: {
+    "12f07c2c769d": {
+      "yintercept": {},
+      "type": "scatter"
+    },
+    "12f058353e8b": {
+      "yintercept": {}
+    },
+    "12f04c551b14": {
+      "x": {},
+      "label": {},
+      "y": {}
+    },
+    "12f03a52ea9": {
+      "x": {},
+      "label": {},
+      "y": {}
+    },
+    "12f02e8b4094": {
+      "x": {},
+      "label": {},
+      "y": {}
+    },
+    "12f037ca4d24": {
+      "x": {},
+      "label": {},
+      "y": {}
+    },
+    "12f016df64b2": {
+      "y": {}
+    }
+  },
+  cur_data: "12f07c2c769d",
+  visdat: {
+    "12f07c2c769d": ["function (y) ", "x"],
+    "12f058353e8b": ["function (y) ", "x"],
+    "12f04c551b14": ["function (y) ", "x"],
+    "12f03a52ea9": ["function (y) ", "x"],
+    "12f02e8b4094": ["function (y) ", "x"],
+    "12f037ca4d24": ["function (y) ", "x"],
+    "12f016df64b2": ["function (y) ", "x"]
+  },
+  highlight: {
+    "on": "plotly_click",
+    "persistent": false,
+    "dynamic": false,
+    "selectize": false,
+    "opacityDim": 0.2,
+    "selected": {
+      "opacity": 1
+    },
+    "debounce": 0
+  },
+  shinyEvents: ["plotly_hover", "plotly_click", "plotly_selected", "plotly_relayout", "plotly_brushed", "plotly_brushing", "plotly_clickannotation", "plotly_doubleclick", "plotly_deselect", "plotly_afterplot", "plotly_sunburstclick"],
+  base_url: "https://plot.ly"
+}

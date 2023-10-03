@@ -2,8 +2,8 @@
   data: [
     {
       "x": [-0.2, 4.2],
-      "y": [3.8, 3.8],
-      "text": "yintercept: 3.8",
+      "y": [4.4, 4.4],
+      "text": "yintercept: 4.4",
       "type": "scatter",
       "mode": "lines",
       "line": {
@@ -20,8 +20,8 @@
     },
     {
       "x": [-0.2, 4.2],
-      "y": [3.4, 3.4],
-      "text": "yintercept: 3.4",
+      "y": [3.8, 3.8],
+      "text": "yintercept: 3.8",
       "type": "scatter",
       "mode": "lines",
       "line": {
@@ -38,8 +38,8 @@
     },
     {
       "x": [0, 1, 2, 3, 4],
-      "y": [0, 8, 0, 5, 6],
-      "text": ["Game_number: 0<br />Opponent: Hawai'i<br />Penalty_all_count_nona: 0", "Game_number: 1<br />Opponent: Elon<br />Penalty_all_count_nona: 8", "Game_number: 2<br />Opponent: Wake Forest<br />Penalty_all_count_nona: 0", "Game_number: 3<br />Opponent: Northern Illinois<br />Penalty_all_count_nona: 5", "Game_number: 4<br />Opponent: Alabama<br />Penalty_all_count_nona: 6"],
+      "y": [2, 8, 0, 5, 7],
+      "text": ["Game_number: 0<br />Opponent: Hawai'i<br />Penalty_all_count_nona: 2", "Game_number: 1<br />Opponent: Elon<br />Penalty_all_count_nona: 8", "Game_number: 2<br />Opponent: Wake Forest<br />Penalty_all_count_nona: 0", "Game_number: 3<br />Opponent: Northern Illinois<br />Penalty_all_count_nona: 5", "Game_number: 4<br />Opponent: Alabama<br />Penalty_all_count_nona: 7"],
       "type": "scatter",
       "mode": "lines",
       "line": {
@@ -56,8 +56,8 @@
     },
     {
       "x": [0, 1, 2, 3, 4],
-      "y": [0, 8, 0, 5, 6],
-      "text": ["Game_number: 0<br />Opponent: Hawai'i<br />Penalty_all_count: 0", "Game_number: 1<br />Opponent: Elon<br />Penalty_all_count: 8", "Game_number: 2<br />Opponent: Wake Forest<br />Penalty_all_count: 0", "Game_number: 3<br />Opponent: Northern Illinois<br />Penalty_all_count: 5", "Game_number: 4<br />Opponent: Alabama<br />Penalty_all_count: 6"],
+      "y": [2, 8, 0, 5, 7],
+      "text": ["Game_number: 0<br />Opponent: Hawai'i<br />Penalty_all_count: 2", "Game_number: 1<br />Opponent: Elon<br />Penalty_all_count: 8", "Game_number: 2<br />Opponent: Wake Forest<br />Penalty_all_count: 0", "Game_number: 3<br />Opponent: Northern Illinois<br />Penalty_all_count: 5", "Game_number: 4<br />Opponent: Alabama<br />Penalty_all_count: 7"],
       "type": "scatter",
       "mode": "markers",
       "marker": {
@@ -80,8 +80,8 @@
     },
     {
       "x": [0, 1, 2, 3, 4],
-      "y": [0, 6, 0, 5, 6],
-      "text": ["Game_number: 0<br />Opponent: Hawai'i<br />Penalty_enforced_count_nona: 0", "Game_number: 1<br />Opponent: Elon<br />Penalty_enforced_count_nona: 6", "Game_number: 2<br />Opponent: Wake Forest<br />Penalty_enforced_count_nona: 0", "Game_number: 3<br />Opponent: Northern Illinois<br />Penalty_enforced_count_nona: 5", "Game_number: 4<br />Opponent: Alabama<br />Penalty_enforced_count_nona: 6"],
+      "y": [2, 6, 0, 5, 6],
+      "text": ["Game_number: 0<br />Opponent: Hawai'i<br />Penalty_enforced_count_nona: 2", "Game_number: 1<br />Opponent: Elon<br />Penalty_enforced_count_nona: 6", "Game_number: 2<br />Opponent: Wake Forest<br />Penalty_enforced_count_nona: 0", "Game_number: 3<br />Opponent: Northern Illinois<br />Penalty_enforced_count_nona: 5", "Game_number: 4<br />Opponent: Alabama<br />Penalty_enforced_count_nona: 6"],
       "type": "scatter",
       "mode": "lines",
       "line": {
@@ -98,8 +98,8 @@
     },
     {
       "x": [0, 1, 2, 3, 4],
-      "y": [0, 6, 0, 5, 6],
-      "text": ["Game_number: 0<br />Opponent: Hawai'i<br />Penalty_enforced_count: 0", "Game_number: 1<br />Opponent: Elon<br />Penalty_enforced_count: 6", "Game_number: 2<br />Opponent: Wake Forest<br />Penalty_enforced_count: 0", "Game_number: 3<br />Opponent: Northern Illinois<br />Penalty_enforced_count: 5", "Game_number: 4<br />Opponent: Alabama<br />Penalty_enforced_count: 6"],
+      "y": [2, 6, 0, 5, 6],
+      "text": ["Game_number: 0<br />Opponent: Hawai'i<br />Penalty_enforced_count: 2", "Game_number: 1<br />Opponent: Elon<br />Penalty_enforced_count: 6", "Game_number: 2<br />Opponent: Wake Forest<br />Penalty_enforced_count: 0", "Game_number: 3<br />Opponent: Northern Illinois<br />Penalty_enforced_count: 5", "Game_number: 4<br />Opponent: Alabama<br />Penalty_enforced_count: 6"],
       "type": "scatter",
       "mode": "markers",
       "marker": {
@@ -144,7 +144,7 @@
       "size": 14.6118721461187
     },
     "title": {
-      "text": "Vanderbilt penalties for 2022; Average: enforced = 3.40 (primary team color), all = 3.80 (secondary team color)<br> <sup><\/sup>",
+      "text": "Vanderbilt penalties for 2022; Average: enforced = 3.80 (primary team color), all = 4.40 (secondary team color)<br> <sup><\/sup>",
       "font": {
         "color": "rgba(0,0,0,1)",
         "family": "",
@@ -274,46 +274,46 @@
   },
   source: "A",
   attrs: {
-    "6c286db45300": {
+    "12f030601cc2": {
       "yintercept": {},
       "type": "scatter"
     },
-    "6c286d826ede": {
+    "12f07d95ee9": {
       "yintercept": {}
     },
-    "6c2853da495e": {
+    "12f0a4b4f6b": {
       "x": {},
       "label": {},
       "y": {}
     },
-    "6c28183529e6": {
+    "12f06fd56ab3": {
       "x": {},
       "label": {},
       "y": {}
     },
-    "6c281b374923": {
+    "12f0705e2112": {
       "x": {},
       "label": {},
       "y": {}
     },
-    "6c287b312d11": {
+    "12f04fcb2aa3": {
       "x": {},
       "label": {},
       "y": {}
     },
-    "6c28659c71f8": {
+    "12f04b53f1d": {
       "y": {}
     }
   },
-  cur_data: "6c286db45300",
+  cur_data: "12f030601cc2",
   visdat: {
-    "6c286db45300": ["function (y) ", "x"],
-    "6c286d826ede": ["function (y) ", "x"],
-    "6c2853da495e": ["function (y) ", "x"],
-    "6c28183529e6": ["function (y) ", "x"],
-    "6c281b374923": ["function (y) ", "x"],
-    "6c287b312d11": ["function (y) ", "x"],
-    "6c28659c71f8": ["function (y) ", "x"]
+    "12f030601cc2": ["function (y) ", "x"],
+    "12f07d95ee9": ["function (y) ", "x"],
+    "12f0a4b4f6b": ["function (y) ", "x"],
+    "12f06fd56ab3": ["function (y) ", "x"],
+    "12f0705e2112": ["function (y) ", "x"],
+    "12f04fcb2aa3": ["function (y) ", "x"],
+    "12f04b53f1d": ["function (y) ", "x"]
   },
   highlight: {
     "on": "plotly_click",
