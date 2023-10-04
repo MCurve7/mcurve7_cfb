@@ -1740,8 +1740,8 @@ function points_after(cols)
     kicker_regex = r"(?:((?:[A-Z\p{Lu}-][a-z\p{Ll}A-Z&\p{Lu}'\.-]+\s?)+) (?:Kick|KICK))"
     kicker_blocked_regex = Regex("$(name_regex)(?:PAT )?BLOCKED")
     kicker_missed_regex = r"(?:((?:[A-Z\p{Lu}-][a-z\p{Ll}A-Z&\p{Lu}'\.-]+\s?)+)(?: PAT)? MISSED)"
-    runner_regex = r"(?:((?:[A-Z\p{Lu}-][a-z\p{Ll}A-Z&\p{Lu}'\.-]+\s?)+) Run [Ff]or Two-[Pp]oint Conversion)"
-    runner_nodata_regex = r"( [Rr]un [Ff]or [Tt]wo-[Pp]oint [Cc]onversion)"
+    runner_regex = r"(?:((?:[A-Z\p{Lu}-][a-z\p{Ll}A-Z&\p{Lu}'\.-]+\s?)+) [Rr]un [Ff]or Two-[Pp]oint Conversion)"
+    runner_nodata_regex = r"( ?[Rr]un [Ff]or [Tt]wo-[Pp]oint [Cc]onversion)"
     passer_regex = Regex("$(name_regex)[Pp]ass")
     passer_regex2 = Regex("Two pt pass, $(name_regex)[Pp]ass")
     receiver_regex = Regex("[Pp]ass\\s+to $(name_regex)for")

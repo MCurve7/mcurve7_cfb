@@ -17,6 +17,7 @@ println("Number of threads: ", Threads.nthreads())
 #Runs process_game on all unprocessed files, but skips processed games if overwrite = false
 function run_all_games()
     dirContents = readdir("../../data/unprocessed", join=true)
+    setdiff!(dirContents, ["../../data/unprocessed\\corrected"])
     processed_directory = "..\\..\\data\\"
 
     # @Logging.configure(level=DEBUG)
@@ -33,7 +34,7 @@ function run_all_games()
         game_file = last(game_split)
         #println("File name: $game_file")
         processed_game = split(game_file, ".")
-        #println("Filename split: $processed_game")
+        println("Filename split: $processed_game")
         processed_game = processed_game[1]*"-processed."*processed_game[2]
         #println("New filename split: $processed_game")
         if overwrite || !isfile(processed_directory*processed_game)
@@ -79,7 +80,7 @@ i=findall(x->x=="../../data/unprocessed\\Alabama_2023_wk05_regular.csv", dirCont
 dirContents[i]
 @time run_game(i)
 
-i=findall(x->x=="../../data/unprocessed\\Ole Miss_2023_wk04_regular.csv", dirContents)[1]
+i=findall(x->x=="../../data/unprocessed\\Wyoming_2023_wk05_regular.csv", dirContents)[1]
 dirContents[i]
 @time run_game(i)
 ############################################################################################################
