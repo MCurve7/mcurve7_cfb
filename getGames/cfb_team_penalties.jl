@@ -1,4 +1,7 @@
 using PyCall
+using DataFrames
+using CSV
+using JSONTables
 
 # run(`$(PyCall.python) -m pip install --upgrade cython`)
 # run(`$(PyCall.python) -m pip install cfbd`)
@@ -8,65 +11,193 @@ year_get = 2023 #int(input("Year="))
 week_get = 1 #int(input("Week [1-16]="))
 seasontype_entry = "regular" #input("Season type [regular/postseason/both/preseason]=")
 
-#Get password and access CFDB
-# open("../../data/info/cfbd.txt") do f
-#     Authorization = readline(f)
-# end
+team_get = "Vanderbilt" #input("Team=")
+year_get = 2023 #int(input("Year="))
+week_get = 1 #int(input("Week [1-16]="))
+seasontype_entry = "regular" #input("Season type [regular/postseason/both/preseason]=")
 
-
-py"""    
-with open('../../data/info/cfbd.txt', mode = 'r') as file:
-    Authorization = file.readlines()[0]
-
-# seasontype_entry = $seasontype_entry
-print(seasontype_entry)
-# Configure API key authorization: ApiKeyAuth
+py"""
 import cfbd
 from cfbd.rest import ApiException
-from pprint import pprint
+#Get password and access CFDB
+with open('../../data/info/cfbd.txt', mode = 'r') as file:
+    Authorization = file.readlines()[0]
+    
+# Configure API key authorization: ApiKeyAuth
 configuration = cfbd.Configuration()
 configuration.api_key['Authorization'] = Authorization
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 configuration.api_key_prefix['Authorization'] = 'Bearer'
 
-if $seasontype_entry == "preseason":
-    seasontype = "regular"
-else:
-    seasontype = $seasontype_entry
+# if seasontype_entry == "preseason":
+#     seasontype = "regular"
+# else:
+#     seasontype = seasontype_entry
     
 api_instance = cfbd.GamesApi(cfbd.ApiClient(configuration))
-print(api_instance)
 """
 
-wk = 1
-py"api_instance.get_team_game_stats(season_type = seasontype, year = $year_get, week = $wk, team = $team_get)"
-# py"api_instance"
+"""
+Pass in stats_json[n].teams where n is 1 or 2 if they played a week 0 game
+"""
+function json2dict(data)
+    team1 = Dict()
+    team2 = Dict()
 
-# print(stats_json[0])
-# print(stats_json[0].teams[0]["school"])
-# print(len(stats_json[0].teams[0]["stats"]))
-# print(len(stats_json[0].teams[1]["stats"]))
+    team1["school"] = data[1]["school"]
+    team1["conference"] = data[1]["conference"]
+    team1["homeAway"] = data[1]["homeAway"]
+    team1["points"] = data[1]["points"]
+    for i in keys(data[1]["stats"])
+        # println("data[stats][$i]= $(data["stats"][i]["category"])")
+        # println("data[stats][$i]= $(data["stats"][i]["stat"])")
+        team1[data[1]["stats"][i]["category"]] = data[1]["stats"][i]["stat"]
+        # data["stats"]
+    end
 
-#Define function that translates from JSON to a dictionary
-def json2dict(data):
-    stats_json_dict = {}
-    # print(stats_json[0].teams[0]["school"])
+    team2["school"] = data[2]["school"]
+    team2["conference"] = data[2]["conference"]
+    team2["homeAway"] = data[2]["homeAway"]
+    team2["points"] = data[2]["points"]
+    for i in keys(data[2]["stats"])
+        # println("data[stats][$i]= $(data["stats"][i]["category"])")
+        # println("data[stats][$i]= $(data["stats"][i]["stat"])")
+        team2[data[2]["stats"][i]["category"]] = data[2]["stats"][i]["stat"]
+        # data["stats"]
+    end
 
-    stats_json_dict["school"] = data["school"]
-    stats_json_dict["conference"] = data["conference"]
-    stats_json_dict["homeAway"] = data["homeAway"]
-    stats_json_dict["points"] = data["points"]
-    for s in range(len(data["stats"])):
-        current_stat = data["stats"][s]['category']
-        stats_json_dict[current_stat] = data["stats"][s]['stat']
-    
-    return stats_json_dict
+    team1["opponent"] = team2["school"]
+    team2["opponent"] = team1["school"]
+    team1, team2
+end
 
-# json_dict = json2dict(stats_json[0].teams[0])
+# json2dict(stats_json[1].teams)
+
+# ## Test getting json season_type = seasontype, year = year_get, week = wk, team = team_get
+# stats_json = py"api_instance.get_team_game_stats"(season_type = seasontype_entry, year = year_get, week = week_get, team = team_get)
+# stats_json
+# stats_json[2].teams
+
+# t = stats_json[1].teams
+# t[1]["school"]
+
+# keys(stats_json[1].teams)
+# stats_json[1].teams[1]
+
+# team1 = stats_json[1].teams[1]
+# stats_json[1].teams[1]["school"]
+# team1["school"]
+
+# team1["stats"]
+# keys(team1["stats"])
+# team1["stats"][1]
+
+# t = json2dict(stats_json[1].teams[1])
+# t["school"]
+# t["totalPenaltiesYards"]
+# a, b = split(t["totalPenaltiesYards"], "-")
+# parse(Int, a)
+# b
+# ## END testing region
 
 
-header = ["year", "week", "school", "conference", "totalPenalties", "totalPenaltiesYards", "opponent", "season"]
-data = []
+# school_colors = CSV.File("../school_colors/teams-fbs-$year_get.csv", delim = ";") |> DataFrame
+team_names = CSV.File("../school_colors/teams-fbs-$year_get.csv", delim = ";") |> DataFrame
+# team_names[:, :School]
+
+function get_stats(data, week)
+    df = DataFrame(Year = Int8[], Week = Int8[], School = String[], Conference = String[], TotalPenalties = Int8[], TotalPenaltiesYards = Int8[], Opponent = String[], Season = String[])
+    team1_data, team2_data = json2dict(data)
+    tot_penalties_yards = split(team1_data["totalPenaltiesYards"], "-")
+    df = vcat(df, DataFrame(Year = year_get, Week = week, School = team1_data["school"], Conference = team1_data["conference"], TotalPenalties = parse(Int, tot_penalties_yards[1]), TotalPenaltiesYards = parse(Int, tot_penalties_yards[2]), Opponent = team1_data["opponent"], Season = seasontype_entry))
+    tot_penalties_yards = split(team2_data["totalPenaltiesYards"], "-")
+    df = vcat(df, DataFrame(Year = year_get, Week = week, School = team2_data["school"], Conference = team2_data["conference"], TotalPenalties = parse(Int, tot_penalties_yards[1]), TotalPenaltiesYards = parse(Int, tot_penalties_yards[2]), Opponent = team2_data["opponent"], Season = seasontype_entry))
+    df, team1_data["school"], team2_data["school"]
+end
+
+begin
+    df = DataFrame(Year = Int8[], Week = Int8[], School = String[], Conference = String[], TotalPenalties = Int8[], TotalPenaltiesYards = Int8[], Opponent = String[], Season = String[])
+    df0 = DataFrame(Year = Int8[], Week = Int8[], School = String[], Conference = String[], TotalPenalties = Int8[], TotalPenaltiesYards = Int8[], Opponent = String[], Season = String[])
+    # teams_seen = (String, Int)[]
+    teams_seen = Tuple{String, Int}[]
+    for week in 1:week_get
+        # teams_seen = String[]
+        
+        for team in team_names[:, :School]
+            # if team in teams_seen
+            if (team, week) in teams_seen
+                println("Seen $team already in week $week")
+            else
+                println("Working on: $team")
+                
+                json_team_data = py"api_instance.get_team_game_stats"(season_type = seasontype_entry, year = year_get, week = week_get, team = team)
+                # println("json_team_data:$json_team_data")
+                if length(json_team_data) == 1
+                    df_temp, school1, school2 = get_stats(json_team_data[1].teams, week)
+                    df = vcat(df, df_temp)
+                    push!(teams_seen, (school1, week))
+                    push!(teams_seen, (school2, week))
+                elseif length(json_team_data) == 2
+                    df_temp, school1, school2 = get_stats(json_team_data[1].teams, -1)
+                    df0 = vcat(df0, df_temp)
+                    # push!(teams_seen, (school1, 0))
+                    # push!(teams_seen, (school2, 0))
+                    ##########################################################################
+                    df_temp, school1, school2 = get_stats(json_team_data[2].teams, -2)
+                    df0 = vcat(df0, df_temp)
+                    # push!(teams_seen, (school1, 1))
+                    # push!(teams_seen, (school2, 1))
+                else
+                    println("MISSED NOTHING PROCESSED")
+                end
+            end
+            # println("teams_seen: $teams_seen")
+        end
+    end
+end
+
+for team in unique(df0[:, :School])
+    println("team: $team")
+    multi_opponenets = unique(filter(:School => ==(team), df0)[:, :Opponent])
+    length(multi_opponenets) == 1 && continue
+    seen_p = Bool[]
+    # week_seen = Int[]
+    for i in 1:2
+        if multi_opponenets[i] in filter(:School => ==(team), df)[:, :Opponent]
+            push!(seen_p, true)
+            # week_seen = filter([:School, :Opponent] => (x,y) -> (x=="Hawai'i" && y==multi_opponenets[i]), df)[:, :Week]
+        else
+            push!(seen_p, false)
+        end
+    end
+    # week_seen
+    # seen_p
+    for i in 1:2
+        if !seen_p[i]
+            println("$team seen=> week: $(i-1), opponent: $(multi_opponenets[i])")
+            conference_seen = filter([:School, :Opponent] => (x,y) -> (x==team && y==multi_opponenets[i]), df0)[:, :Conference][1]
+            # println("conference_seen: $conference_seen")
+            totalpenalties_seen = filter([:School, :Opponent] => (x,y) -> (x==team && y==multi_opponenets[i]), df0)[:, :TotalPenalties]
+            totalpenaltiesyards_seen = filter([:School, :Opponent] => (x,y) -> (x==team && y==multi_opponenets[i]), df0)[:, :TotalPenaltiesYards]
+            println("Year = $year_get, Week = $(i-1), School = $team, Conference = $conference_seen, TotalPenalties = $totalpenalties_seen, TotalPenaltiesYards = $totalpenaltiesyards_seen, Opponent = $(multi_opponenets[i]), Season = regular")
+            df = vcat(df, DataFrame(Year = year_get, Week = i-1, School = team, Conference = conference_seen, TotalPenalties = totalpenalties_seen, TotalPenaltiesYards = totalpenaltiesyards_seen, Opponent = multi_opponenets[i], Season = "regular"))
+        end
+    end
+end
+filter([:School, :Opponent] => (x,y) -> (x=="Hawai'i" && y==multi_opponenets[1]), df0)[:, :Conference]
+
+
+
+println(df)
+println(df0)
+
+#open ("../../data/team_stats/"+str(year_get)+'_'+seasontype+'_'+"penalties_yards"+'.csv', 'w', newline='')
+CSV.write("../../data/team_stats/$(year_get)_$(seasontype_entry)_penalties_yards_julia.csv", vcat(df, df0), append=false)
+CSV.write("../../data/team_stats/$(year_get)_$(seasontype_entry)_penalties_yards_julia.csv", df, append=false)
+
+
+
+
 
 #############################################################################################
 #Fix:
