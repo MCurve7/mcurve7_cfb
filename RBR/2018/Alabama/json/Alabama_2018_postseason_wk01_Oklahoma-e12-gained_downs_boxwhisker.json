@@ -1,0 +1,316 @@
+{
+  data: [
+    {
+      "x": [null, null, null, null, null],
+      "y": [15, null, null, 15, 15],
+      "text": "",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "transparent",
+        "dash": "solid"
+      },
+      "fill": "toself",
+      "fillcolor": "rgba(255,48,48,0.2)",
+      "hoveron": "fills",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [null, null, null, null, null],
+      "y": [null, 0, 0, null, null],
+      "text": "",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "transparent",
+        "dash": "solid"
+      },
+      "fill": "toself",
+      "fillcolor": "rgba(153,153,153,0.5)",
+      "hoveron": "fills",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3],
+      "y": [50, 1, 4, 9, 7, 11, 6, 6, 10, 4, 9, 0, 0, 2, 7, 11, 9, 5, 7, 4, -6, 7, 4, 6, 10, 9, 2, 13, 2, 11, 5, 2, 19, -2, 4, 0, 1, 13, -2, 40, 1, 8, 4, 0, 9, 12, 4, 4, 2, 9, 6, 4, 16, 21, 10, 16, 13, 2, 10, -2, 15, 1, 10, 27, 0, 7, 9, 6, 0, 4],
+      "hoverinfo": "y",
+      "type": "box",
+      "fillcolor": "rgba(158,27,50,1)",
+      "marker": {
+        "opacity": null,
+        "outliercolor": "rgba(0,0,0,1)",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(0,0,0,1)"
+        },
+        "size": 5.66929133858268
+      },
+      "line": {
+        "color": "rgba(51,51,51,1)",
+        "width": 1.88976377952756
+      },
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": [0.876054087560624, 1.14233938930556, 1.10271742520854, 1.01404566168785, 1.07949417149648, 0.858576154801995, 0.866475247126073, 1.1633900878951, 1.03820281447843, 0.929612301941961, 0.801194830890745, 1.02365983892232, 0.868295230809599, 1.04628186728805, 1.05788627685979, 0.945179798733443, 0.978904258925468, 1.04036761820316, 1.04596853805706, 1.15955131510273, 1.10181273762137, 0.859042721986771, 1.18047596467659, 1.00818442068994, 0.948619329091162, 1.01470627468079, 1.18335875710472, 0.928067207802087, 1.08736528931186, 0.837997920811176, 1.18658895101398, 0.846456194669008, 1.1343160495162, 1.05217734873295, 2.10246023517102, 1.95213010590523, 2.17287667822093, 2.07534324731678, 1.85617945389822, 2.06347760343924, 1.82633897447959, 2.12471459805965, 2.03758380953222, 2.0658815767616, 2.16644849386066, 1.96357705080882, 2.01942252330482, 2.17498861877248, 2.16710577206686, 1.94474872304127, 1.97383915754035, 1.90631072120741, 1.80072577781975, 2.1073446681723, 1.80662771863863, 1.84470220226794, 1.83881518281996, 2.89086451409385, 3.18865153286606, 3.15906001143157, 3.113977349177, 3.02565269777551, 2.90232506208122, 3.12453820686787],
+      "y": [50, 1, 4, 9, 7, 11, 6, 6, 10, 4, 9, 0, 0, 2, 7, 11, 9, 5, 7, 4, -6, 7, 4, 6, 10, 9, 2, 13, 2, 11, 5, 2, 19, -2, 4, 0, 1, 13, -2, 40, 8, 4, 0, 9, 12, 4, 4, 2, 9, 6, 4, 16, 21, 16, 2, 10, -2, 15, 0, 7, 9, 6, 0, 4],
+      "text": ["Down: Down 1<br />Gained: 50<br />Scoring: FALSE", "Down: Down 1<br />Gained:  1<br />Scoring: FALSE", "Down: Down 1<br />Gained:  4<br />Scoring: FALSE", "Down: Down 1<br />Gained:  9<br />Scoring: FALSE", "Down: Down 1<br />Gained:  7<br />Scoring: FALSE", "Down: Down 1<br />Gained: 11<br />Scoring: FALSE", "Down: Down 1<br />Gained:  6<br />Scoring: FALSE", "Down: Down 1<br />Gained:  6<br />Scoring: FALSE", "Down: Down 1<br />Gained: 10<br />Scoring: FALSE", "Down: Down 1<br />Gained:  4<br />Scoring: FALSE", "Down: Down 1<br />Gained:  9<br />Scoring: FALSE", "Down: Down 1<br />Gained:  0<br />Scoring: FALSE", "Down: Down 1<br />Gained:  0<br />Scoring: FALSE", "Down: Down 1<br />Gained:  2<br />Scoring: FALSE", "Down: Down 1<br />Gained:  7<br />Scoring: FALSE", "Down: Down 1<br />Gained: 11<br />Scoring: FALSE", "Down: Down 1<br />Gained:  9<br />Scoring: FALSE", "Down: Down 1<br />Gained:  5<br />Scoring: FALSE", "Down: Down 1<br />Gained:  7<br />Scoring: FALSE", "Down: Down 1<br />Gained:  4<br />Scoring: FALSE", "Down: Down 1<br />Gained: -6<br />Scoring: FALSE", "Down: Down 1<br />Gained:  7<br />Scoring: FALSE", "Down: Down 1<br />Gained:  4<br />Scoring: FALSE", "Down: Down 1<br />Gained:  6<br />Scoring: FALSE", "Down: Down 1<br />Gained: 10<br />Scoring: FALSE", "Down: Down 1<br />Gained:  9<br />Scoring: FALSE", "Down: Down 1<br />Gained:  2<br />Scoring: FALSE", "Down: Down 1<br />Gained: 13<br />Scoring: FALSE", "Down: Down 1<br />Gained:  2<br />Scoring: FALSE", "Down: Down 1<br />Gained: 11<br />Scoring: FALSE", "Down: Down 1<br />Gained:  5<br />Scoring: FALSE", "Down: Down 1<br />Gained:  2<br />Scoring: FALSE", "Down: Down 1<br />Gained: 19<br />Scoring: FALSE", "Down: Down 1<br />Gained: -2<br />Scoring: FALSE", "Down: Down 2<br />Gained:  4<br />Scoring: FALSE", "Down: Down 2<br />Gained:  0<br />Scoring: FALSE", "Down: Down 2<br />Gained:  1<br />Scoring: FALSE", "Down: Down 2<br />Gained: 13<br />Scoring: FALSE", "Down: Down 2<br />Gained: -2<br />Scoring: FALSE", "Down: Down 2<br />Gained: 40<br />Scoring: FALSE", "Down: Down 2<br />Gained:  8<br />Scoring: FALSE", "Down: Down 2<br />Gained:  4<br />Scoring: FALSE", "Down: Down 2<br />Gained:  0<br />Scoring: FALSE", "Down: Down 2<br />Gained:  9<br />Scoring: FALSE", "Down: Down 2<br />Gained: 12<br />Scoring: FALSE", "Down: Down 2<br />Gained:  4<br />Scoring: FALSE", "Down: Down 2<br />Gained:  4<br />Scoring: FALSE", "Down: Down 2<br />Gained:  2<br />Scoring: FALSE", "Down: Down 2<br />Gained:  9<br />Scoring: FALSE", "Down: Down 2<br />Gained:  6<br />Scoring: FALSE", "Down: Down 2<br />Gained:  4<br />Scoring: FALSE", "Down: Down 2<br />Gained: 16<br />Scoring: FALSE", "Down: Down 2<br />Gained: 21<br />Scoring: FALSE", "Down: Down 2<br />Gained: 16<br />Scoring: FALSE", "Down: Down 2<br />Gained:  2<br />Scoring: FALSE", "Down: Down 2<br />Gained: 10<br />Scoring: FALSE", "Down: Down 2<br />Gained: -2<br />Scoring: FALSE", "Down: Down 3<br />Gained: 15<br />Scoring: FALSE", "Down: Down 3<br />Gained:  0<br />Scoring: FALSE", "Down: Down 3<br />Gained:  7<br />Scoring: FALSE", "Down: Down 3<br />Gained:  9<br />Scoring: FALSE", "Down: Down 3<br />Gained:  6<br />Scoring: FALSE", "Down: Down 3<br />Gained:  0<br />Scoring: FALSE", "Down: Down 3<br />Gained:  4<br />Scoring: FALSE"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,0,0,1)",
+        "opacity": 1,
+        "size": 7.55905511811024,
+        "symbol": "circle",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "FALSE",
+      "legendgroup": "FALSE",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2.04202277893201, 2.08103657178581, 2.13445718148723, 2.9261977551505, 2.97729837745428, 3.12236453825608],
+      "y": [1, 10, 13, 1, 10, 27],
+      "text": ["Down: Down 2<br />Gained:  1<br />Scoring:  TRUE", "Down: Down 2<br />Gained: 10<br />Scoring:  TRUE", "Down: Down 2<br />Gained: 13<br />Scoring:  TRUE", "Down: Down 3<br />Gained:  1<br />Scoring:  TRUE", "Down: Down 3<br />Gained: 10<br />Scoring:  TRUE", "Down: Down 3<br />Gained: 27<br />Scoring:  TRUE"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(255,0,255,1)",
+        "opacity": 1,
+        "size": 7.55905511811024,
+        "symbol": "circle",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "TRUE",
+      "legendgroup": "TRUE",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    }
+  ],
+  layout: {
+    "margin": {
+      "t": 43.2754946727549,
+      "r": 7.30593607305936,
+      "b": 39.6955859969559,
+      "l": 37.2602739726027
+    },
+    "plot_bgcolor": "rgba(235,235,235,1)",
+    "paper_bgcolor": "rgba(255,255,255,1)",
+    "font": {
+      "color": "rgba(0,0,0,1)",
+      "family": "",
+      "size": 14.6118721461187
+    },
+    "title": {
+      "text": "Alabama[45] Gained by Down: # Plays by down: (34, 26, 10, 0)<br> <sup>2018: wk01 vs Oklahoma[34]<\/sup>",
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 17.5342465753425
+      },
+      "x": 0,
+      "xref": "paper",
+      "xanchor": "left"
+    },
+    "xaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [0.4, 4.6],
+      "tickmode": "array",
+      "ticktext": ["Down 1", "Down 2", "Down 3", "Down 4"],
+      "tickvals": [1, 2, 3, 4],
+      "categoryorder": "array",
+      "categoryarray": ["Down 1", "Down 2", "Down 3", "Down 4"],
+      "nticks": null,
+      "ticks": "outside",
+      "tickcolor": "rgba(51,51,51,1)",
+      "ticklen": 3.65296803652968,
+      "tickwidth": 0.66417600664176,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "tickangle": -0,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": "rgba(255,255,255,1)",
+      "gridwidth": 0.66417600664176,
+      "zeroline": false,
+      "anchor": "y",
+      "title": {
+        "text": "Down",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "yaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [-8.8, 52.8],
+      "tickmode": "array",
+      "ticktext": ["-5", "0", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50"],
+      "tickvals": [-5, 0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50],
+      "categoryorder": "array",
+      "categoryarray": ["-5", "0", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50"],
+      "nticks": null,
+      "ticks": "outside",
+      "tickcolor": "rgba(51,51,51,1)",
+      "ticklen": 3.65296803652968,
+      "tickwidth": 0.66417600664176,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "tickangle": -0,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": "rgba(255,255,255,1)",
+      "gridwidth": 0.66417600664176,
+      "zeroline": false,
+      "anchor": "x",
+      "title": {
+        "text": "Gained",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "shapes": [
+      {
+        "type": "rect",
+        "fillcolor": null,
+        "line": {
+          "color": null,
+          "width": 0,
+          "linetype": []
+        },
+        "yref": "paper",
+        "xref": "paper",
+        "x0": 0,
+        "x1": 1,
+        "y0": 0,
+        "y1": 1
+      }
+    ],
+    "showlegend": true,
+    "legend": {
+      "bgcolor": "rgba(255,255,255,1)",
+      "bordercolor": "transparent",
+      "borderwidth": 1.88976377952756,
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "title": {
+        "text": "Scoring",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      }
+    },
+    "hovermode": "closest",
+    "barmode": "relative"
+  },
+  config: {
+    "doubleClick": "reset",
+    "modeBarButtonsToAdd": ["hoverclosest", "hovercompare"],
+    "showSendToCloud": false
+  },
+  source: "A",
+  attrs: {
+    "2f185d65160c": {
+      "xmin": {},
+      "xmax": {},
+      "ymin": {},
+      "ymax": {},
+      "type": "scatter"
+    },
+    "2f186c8d16d": {
+      "xmin": {},
+      "xmax": {},
+      "ymin": {},
+      "ymax": {}
+    },
+    "2f184e141536": {
+      "x": {},
+      "y": {}
+    },
+    "2f18748c781b": {
+      "x": {},
+      "y": {},
+      "fill": {}
+    }
+  },
+  cur_data: "2f185d65160c",
+  visdat: {
+    "2f185d65160c": ["function (y) ", "x"],
+    "2f186c8d16d": ["function (y) ", "x"],
+    "2f184e141536": ["function (y) ", "x"],
+    "2f18748c781b": ["function (y) ", "x"]
+  },
+  highlight: {
+    "on": "plotly_click",
+    "persistent": false,
+    "dynamic": false,
+    "selectize": false,
+    "opacityDim": 0.2,
+    "selected": {
+      "opacity": 1
+    },
+    "debounce": 0
+  },
+  shinyEvents: ["plotly_hover", "plotly_click", "plotly_selected", "plotly_relayout", "plotly_brushed", "plotly_brushing", "plotly_clickannotation", "plotly_doubleclick", "plotly_deselect", "plotly_afterplot", "plotly_sunburstclick"],
+  base_url: "https://plot.ly"
+}

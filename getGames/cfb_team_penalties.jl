@@ -1,5 +1,6 @@
 using PyCall
 using DataFrames
+using DataFramesMeta
 using CSV
 using JSONTables
 
@@ -11,9 +12,9 @@ year_get = 2023 #int(input("Year="))
 week_get = 1 #int(input("Week [1-16]="))
 seasontype_entry = "regular" #input("Season type [regular/postseason/both/preseason]=")
 
-team_get = "Vanderbilt" #input("Team=")
+# team_get = "Vanderbilt" #input("Team=")
 year_get = 2023 #int(input("Year="))
-week_get = 1 #int(input("Week [1-16]="))
+week_get = 2 #int(input("Week [1-16]="))
 seasontype_entry = "regular" #input("Season type [regular/postseason/both/preseason]=")
 
 py"""
@@ -130,7 +131,8 @@ begin
             else
                 println("Working on: $team")
                 
-                json_team_data = py"api_instance.get_team_game_stats"(season_type = seasontype_entry, year = year_get, week = week_get, team = team)
+                # json_team_data = py"api_instance.get_team_game_stats"(season_type = seasontype_entry, year = year_get, week = week_get, team = team)
+                json_team_data = py"api_instance.get_team_game_stats"(season_type = seasontype_entry, year = year_get, week = week, team = team)
                 # println("json_team_data:$json_team_data")
                 if length(json_team_data) == 1
                     df_temp, school1, school2 = get_stats(json_team_data[1].teams, week)
@@ -154,6 +156,68 @@ begin
             # println("teams_seen: $teams_seen")
         end
     end
+    df0 = unique(df0)
+end
+
+println(df)
+println(df0)
+
+# df0
+# t = not_wk1_df[:, :School]
+# t2 = filter(:School => ==(t[1]), not_wk1_df)[:, :Opponent]
+
+# not_wk1_df[in([t[1]]).(not_wk1_df.School), :][1,:]
+# @rsubset(not_wk1_df, :School == t[1], :Opponent == t2[1])[1,2]
+
+###change df_t to df
+week_one_df = filter(:Week => ==(1), df)
+not_wk1_df = unique(antijoin(df0, week_one_df, on = :School))
+df_t = DataFrame(Year = Int8[], Week = Int8[], School = String[], Conference = String[], TotalPenalties = Int8[], TotalPenaltiesYards = Int8[], Opponent = String[], Season = String[])
+for t_school in unique(not_wk1_df[:, :School])
+    i = 0
+    for t_opponenet in filter(:School => ==(t_school), not_wk1_df)[:, :Opponent]
+        tt = @rsubset(not_wk1_df, :School == t_school, :Opponent == t_opponenet)
+        println("School: $t_school, Opponent: $t_opponenet; $(tt)")
+        df_t = vcat(df_t, DataFrame(Year = tt[1,:Year], Week = i, School = tt[1,:School], Conference = tt[1,:Conference], TotalPenalties = tt[1,:TotalPenalties], TotalPenaltiesYards = tt[1,:TotalPenaltiesYards], Opponent = tt[1,:Opponent], Season = tt[1,:Season]))
+        i +=1
+    end
+end
+df_t
+
+# If length = 2 loop to set to 0 or 1
+not_wk1_team = unique(filter(:School => ==("Jacksonville State"), not_wk1_df))
+# not_wk1_team[1,:Week] = 0
+# not_wk1_team
+for i in 1:2
+    not_wk1_team[i,:Week] = i-1
+end
+not_wk1_team
+
+not_wk1_df2 = antijoin(df0, df_t, on = [:School, :Opponent])
+
+
+
+df0
+
+
+
+week_zeroone_teams
+anti_df = antijoin(df0, week_one_df, on = [:School, :Opponent])
+filter(:School => ==("SMU"), anti_df)
+
+week_zero_teams = df0[:, :School]
+week_one_teams = filter(:Week => ==(1), df)[:, :School]
+week_zeroone_teams = intersect(week_zero_teams, week_one_teams)
+
+week0_in_week1_df = filter([:Week, :School] => (x,y) -> x == 1 && y in week_zero_teams, df)
+
+week_zeroone_teams
+week0_in_week1_df
+
+for team in week_zeroone_teams
+    df_temp = filter(:School => ==(team), df0)
+
+    println("df_temp:\n $df_temp")
 end
 
 for team in unique(df0[:, :School])
@@ -199,178 +263,8 @@ CSV.write("../../data/team_stats/$(year_get)_$(seasontype_entry)_penalties_yards
 
 
 
-#############################################################################################
-#Fix:
-# Fix unicode for San Jos'e' State
-# Rewrite in Julia, slow code
-#############################################################################################
-week0_data = {}
-if arg_length == 4:
-    teams_seen = {}
-    csvfile='../school_colors/teams-fbs-'+str(year_get)+'.csv'
-    with open(csvfile, mode = 'r') as file:
-        teams = csv.reader(file)
-        
-        next(teams) #Skips the 1st row which is a header row
 
-        for t in teams:
-            team_get = t[0]
-            print("Get team:", team_get)
-            for wk in range(1,week_get+1):
-                stats_json = api_instance.get_team_game_stats(season_type = seasontype, year = year_get, week = wk, team = team_get)
-                game0 = []
-                game1 = []
-                # stats_json = replace(stats_json, "\xe9" => "é") need python equivalent
-                if stats_json == []:
-                    print("Bye week")
-                elif len(stats_json) == 2:
-                    #Grab a week
-                    if stats_json[0].teams[0]["school"] == team_get:
-                        json_dict = json2dict(stats_json[0].teams[0])
-                        team_other = json2dict(stats_json[0].teams[1])['school']
-                    else:
-                        json_dict = json2dict(stats_json[0].teams[1])
-                        team_other = json2dict(stats_json[0].teams[0])['school']
-                    team_current = json_dict['school']
-                    
-                    if 'totalPenaltiesYards' in json_dict:
-                        if team_current not in teams_seen.keys():
-                            teams_seen[team_current] = [0] #ADDED 09/03/2023 to fix a Key not found error
-                            num, yards = json_dict['totalPenaltiesYards'].split("-")
-                            game0 = [year_get, 0, team_current, json_dict["conference"], num, yards, team_other, seasontype]
-                        else:
-                            teams_seen[team_current].append(0) #ADDED 09/03/2023
-                            num, yards = json_dict['totalPenaltiesYards'].split("-")
-                            game0 = [year_get, 0, team_current, json_dict["conference"], num, yards, team_other, seasontype]
-
-                    #Grab the other week
-                    if stats_json[1].teams[0]["school"] == team_get:
-                        json_dict = json2dict(stats_json[1].teams[0])
-                        team_other = json2dict(stats_json[1].teams[1])['school']
-                    else:
-                        json_dict = json2dict(stats_json[1].teams[1])
-                        team_other = json2dict(stats_json[1].teams[0])['school']
-                    team_current = json_dict['school']
-                    if 'totalPenaltiesYards' in json_dict:
-                        if team_current not in teams_seen.keys():
-                            teams_seen[team_current] = [1] #ADDED 09/03/2023
-                            num, yards = json_dict['totalPenaltiesYards'].split("-")
-                            game1 = [year_get, 1, team_current, json_dict["conference"], num, yards, team_other, seasontype]
-                        else:
-                            teams_seen[team_current].append(1) #ADDED 09/03/2023
-                            num, yards = json_dict['totalPenaltiesYards'].split("-")
-                            game1 = [year_get, 1, team_current, json_dict["conference"], num, yards, team_other, seasontype]
-                    
-                    week0_data[team_get] = [game0, game1]
-                    print("Played week 0:", week0_data)
-
-                #For teams that didn't play a week 0 game
-                else:
-                    #Loop over both teams
-                    for i in range(2):
-                        json_dict = json2dict(stats_json[0].teams[i])
-                        team_current = json_dict['school']
-                        j = 1 if i == 0 else 0
-                        team_other = json2dict(stats_json[0].teams[j])['school']
-                        # print(json_dict)
-                        if 'totalPenaltiesYards' in json_dict:
-                            if team_current not in teams_seen.keys():
-                                teams_seen[team_current] = [wk]
-                                num, yards = json_dict['totalPenaltiesYards'].split("-")
-                                data.append([year_get, wk, team_current, json_dict["conference"], num, yards, team_other, seasontype])
-                            elif wk not in teams_seen[team_current]:
-                                teams_seen[team_current].append(wk)
-                                num, yards = json_dict['totalPenaltiesYards'].split("-")
-                                data.append([year_get, wk, team_current, json_dict["conference"], num, yards, team_other, seasontype])
-                    
-                    print("Didn't play week 0:", data)
-
-    print("Week 0 data:")
-    print(week0_data)
-
-    for t in week0_data.keys():
-        print("Team: ", t)
-        stats_json = api_instance.get_team_game_stats(season_type = seasontype, year = year_get, week = 1, team = t)
-        if stats_json[0].teams[0]['school'] == t:
-            json_dict = json2dict(stats_json[0].teams[0])
-            team_other = json2dict(stats_json[0].teams[1])['school']
-        elif stats_json[0].teams[1]['school'] == t:
-            json_dict = json2dict(stats_json[0].teams[1])
-            team_other = json2dict(stats_json[0].teams[0])['school']
-        else:
-            print("Error matching team name.")
-            print(stats_json[0].teams[0])
-            print(stats_json[0].teams[1])
-        numPenalties0 = week0_data[t][0][4]
-        penaltyYards0 = week0_data[t][0][5]
-        numPenalties1 = week0_data[t][1][4]
-        penaltyYards1 = week0_data[t][1][5]
-        print("teams_seen:")
-        print(teams_seen)
-        if 1 in teams_seen[t]:
-            print("Seen week 1")
-            for g in data:
-                if g[1] == 1 and g[2] == t:
-                    num = g[4]
-                    yards = g[5]
-            # num, yards = json_dict['totalPenaltiesYards'].split("-")
-            print("numPenalties0 = ", numPenalties0, "penaltyYards0 = ", penaltyYards0)
-            print("numPenalties1 = ", numPenalties1, "penaltyYards1 = ", penaltyYards1)
-            print("num = ", num, "yards = ", yards)
-            if numPenalties0 == num and penaltyYards0 == yards:
-                game = week0_data[t][1]
-                game[1] = 0
-                print("Adding: ", game)
-                data.append(game)
-                # print("Adding: ", week0_data[t][1])
-                # data.append(week0_data[t][1])
-                # print("Adding: ", year_get, 0, json_dict["school"], json_dict["conference"], numPenalties1, penaltyYards1)
-                # data.append([year_get, 0, json_dict["school"], json_dict["conference"], numPenalties1, penaltyYards1])
-            else:
-                game = week0_data[t][0]
-                game[1] = 0
-                print("Adding: ", game)
-                data.append(game)
-                # print("Adding: ", week0_data[t][0])
-                # data.append(week0_data[t][0])
-                # print("Adding: ", year_get, 0, json_dict["school"], json_dict["conference"], numPenalties0, penaltyYards0)
-                # data.append([year_get, 0, json_dict["school"], json_dict["conference"], numPenalties0, penaltyYards0])
-        else:
-            print("No week 1")
-            # print("Adding: ", game0)
-            # data.append(game0)
-            # print("Adding: ", game1)
-            # data.append(game1)
-            print("Adding: ", year_get, 0, json_dict["school"], json_dict["conference"], numPenalties0, penaltyYards0, week0_data[t][0][6], seasontype)
-            data.append([year_get, 0, json_dict["school"], json_dict["conference"], numPenalties0, penaltyYards0, week0_data[t][0][6], seasontype])
-            print("Adding: ", year_get, 1, json_dict["school"], json_dict["conference"], numPenalties1, penaltyYards1, week0_data[t][1][6], seasontype)
-            data.append([year_get, 1, json_dict["school"], json_dict["conference"], numPenalties1, penaltyYards1, week0_data[t][1][6], seasontype])
-            
-
-    f = open ("../../data/team_stats/"+str(year_get)+'_'+seasontype+'_'+"penalties_yards"+'.csv', 'w', newline='')
-    writer = csv.writer(f)
-    writer.writerow(header)
-    writer.writerows(data)
-    f.close()
-
-    print("Data:")
-    print(data)
-    # print("Week 0 data:")
-    # print(week0_data)
-
-
-
-
-
-###############################################################################
-else:
-    stats_json = api_instance.get_team_game_stats(season_type = seasontype, year = year_get, week = week_get, team = team_get)
-    print(stats_json)
-    print(len(stats_json))
-    json_dict = json2dict(stats_json[0].teams[0])
-    print(json_dict['school'])
-
-
+"""
 # length = 1
 '''
 [{'id': 401403854,
@@ -590,3 +484,4 @@ else:
                       {'category': 'thirdDownEff', 'stat': '6-15'},
                       {'category': 'firstDowns', 'stat': '31'}]}]}]
 '''
+"""

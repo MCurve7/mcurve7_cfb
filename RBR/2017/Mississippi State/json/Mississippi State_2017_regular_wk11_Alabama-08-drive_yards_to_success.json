@@ -1,0 +1,731 @@
+{
+  data: [
+    {
+      "x": [-3.1, 87.1],
+      "y": [0, 0],
+      "text": "yintercept: 0",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(0,0,0,0.2)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [45.5, 45.5],
+      "y": [-1, 21],
+      "text": "xintercept: 45.5",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(0,0,0,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [24.5, 24.5, null, 65.5, 65.5],
+      "y": [-1, 21, null, -1, 21],
+      "text": ["xintercept: 24.5", "xintercept: 24.5", null, "xintercept: 65.5", "xintercept: 65.5"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(0,0,0,1)",
+        "dash": "dash"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
+      "y": [5, 7, 10, 20, 5, 1.4, 1, 5, 4.9, 5, 1.4, 2, 2, 7],
+      "text": ["Offense_play_count:  1<br />Yards_to_success:  5.0<br />factor(O_drive_number): 1", "Offense_play_count:  2<br />Yards_to_success:  7.0<br />factor(O_drive_number): 1", "Offense_play_count:  3<br />Yards_to_success: 10.0<br />factor(O_drive_number): 1", "Offense_play_count:  4<br />Yards_to_success: 20.0<br />factor(O_drive_number): 1", "Offense_play_count:  5<br />Yards_to_success:  5.0<br />factor(O_drive_number): 1", "Offense_play_count:  6<br />Yards_to_success:  1.4<br />factor(O_drive_number): 1", "Offense_play_count:  7<br />Yards_to_success:  1.0<br />factor(O_drive_number): 1", "Offense_play_count:  8<br />Yards_to_success:  5.0<br />factor(O_drive_number): 1", "Offense_play_count:  9<br />Yards_to_success:  4.9<br />factor(O_drive_number): 1", "Offense_play_count: 10<br />Yards_to_success:  5.0<br />factor(O_drive_number): 1", "Offense_play_count: 11<br />Yards_to_success:  1.4<br />factor(O_drive_number): 1", "Offense_play_count: 12<br />Yards_to_success:  2.0<br />factor(O_drive_number): 1", "Offense_play_count: 13<br />Yards_to_success:  2.0<br />factor(O_drive_number): 1", "Offense_play_count: 14<br />Yards_to_success:  7.0<br />factor(O_drive_number): 1"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(102,0,0,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "1",
+      "legendgroup": "1",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [15, 16, 17, 18, 19, 20],
+      "y": [5, 5, 3.5, 1, 5, 4.9],
+      "text": ["Offense_play_count: 15<br />Yards_to_success:  5.0<br />factor(O_drive_number): 2", "Offense_play_count: 16<br />Yards_to_success:  5.0<br />factor(O_drive_number): 2", "Offense_play_count: 17<br />Yards_to_success:  3.5<br />factor(O_drive_number): 2", "Offense_play_count: 18<br />Yards_to_success:  1.0<br />factor(O_drive_number): 2", "Offense_play_count: 19<br />Yards_to_success:  5.0<br />factor(O_drive_number): 2", "Offense_play_count: 20<br />Yards_to_success:  4.9<br />factor(O_drive_number): 2"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(204,204,204,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(2,1)",
+      "legendgroup": "(2,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32],
+      "y": [5, 4.9, 5, 5, 1, 5, 5.6, 7, 5, 7.7, 2, 2.5],
+      "text": ["Offense_play_count: 21<br />Yards_to_success:  5.0<br />factor(O_drive_number): 3", "Offense_play_count: 22<br />Yards_to_success:  4.9<br />factor(O_drive_number): 3", "Offense_play_count: 23<br />Yards_to_success:  5.0<br />factor(O_drive_number): 3", "Offense_play_count: 24<br />Yards_to_success:  5.0<br />factor(O_drive_number): 3", "Offense_play_count: 25<br />Yards_to_success:  1.0<br />factor(O_drive_number): 3", "Offense_play_count: 26<br />Yards_to_success:  5.0<br />factor(O_drive_number): 3", "Offense_play_count: 27<br />Yards_to_success:  5.6<br />factor(O_drive_number): 3", "Offense_play_count: 28<br />Yards_to_success:  7.0<br />factor(O_drive_number): 3", "Offense_play_count: 29<br />Yards_to_success:  5.0<br />factor(O_drive_number): 3", "Offense_play_count: 30<br />Yards_to_success:  7.7<br />factor(O_drive_number): 3", "Offense_play_count: 31<br />Yards_to_success:  2.0<br />factor(O_drive_number): 3", "Offense_play_count: 32<br />Yards_to_success:  2.5<br />factor(O_drive_number): 3"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(102,0,0,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(3,1)",
+      "legendgroup": "(3,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [33, 34, 35, 36, 37],
+      "y": [5, 5, 7, 13, 7],
+      "text": ["Offense_play_count: 33<br />Yards_to_success:  5.0<br />factor(O_drive_number): 4", "Offense_play_count: 34<br />Yards_to_success:  5.0<br />factor(O_drive_number): 4", "Offense_play_count: 35<br />Yards_to_success:  7.0<br />factor(O_drive_number): 4", "Offense_play_count: 36<br />Yards_to_success: 13.0<br />factor(O_drive_number): 4", "Offense_play_count: 37<br />Yards_to_success:  7.0<br />factor(O_drive_number): 4"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(204,204,204,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(4,1)",
+      "legendgroup": "(4,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [38, 39, 40, 41, 42, 43, 44],
+      "y": [5, 4.2, 1, 5, 7, 7, 7],
+      "text": ["Offense_play_count: 38<br />Yards_to_success:  5.0<br />factor(O_drive_number): 5", "Offense_play_count: 39<br />Yards_to_success:  4.2<br />factor(O_drive_number): 5", "Offense_play_count: 40<br />Yards_to_success:  1.0<br />factor(O_drive_number): 5", "Offense_play_count: 41<br />Yards_to_success:  5.0<br />factor(O_drive_number): 5", "Offense_play_count: 42<br />Yards_to_success:  7.0<br />factor(O_drive_number): 5", "Offense_play_count: 43<br />Yards_to_success:  7.0<br />factor(O_drive_number): 5", "Offense_play_count: 44<br />Yards_to_success:  7.0<br />factor(O_drive_number): 5"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(102,0,0,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(5,1)",
+      "legendgroup": "(5,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [45],
+      "y": [5],
+      "text": "Offense_play_count: 45<br />Yards_to_success:  5.0<br />factor(O_drive_number): 6",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(204,204,204,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(6,1)",
+      "legendgroup": "(6,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58],
+      "y": [5, 4.2, 5, 2.1, 5, 4.2, 5, 7, 10, 5, 4.9, 1.5, 1.4],
+      "text": ["Offense_play_count: 46<br />Yards_to_success:  5.0<br />factor(O_drive_number): 7", "Offense_play_count: 47<br />Yards_to_success:  4.2<br />factor(O_drive_number): 7", "Offense_play_count: 48<br />Yards_to_success:  5.0<br />factor(O_drive_number): 7", "Offense_play_count: 49<br />Yards_to_success:  2.1<br />factor(O_drive_number): 7", "Offense_play_count: 50<br />Yards_to_success:  5.0<br />factor(O_drive_number): 7", "Offense_play_count: 51<br />Yards_to_success:  4.2<br />factor(O_drive_number): 7", "Offense_play_count: 52<br />Yards_to_success:  5.0<br />factor(O_drive_number): 7", "Offense_play_count: 53<br />Yards_to_success:  7.0<br />factor(O_drive_number): 7", "Offense_play_count: 54<br />Yards_to_success: 10.0<br />factor(O_drive_number): 7", "Offense_play_count: 55<br />Yards_to_success:  5.0<br />factor(O_drive_number): 7", "Offense_play_count: 56<br />Yards_to_success:  4.9<br />factor(O_drive_number): 7", "Offense_play_count: 57<br />Yards_to_success:  1.5<br />factor(O_drive_number): 7", "Offense_play_count: 58<br />Yards_to_success:  1.4<br />factor(O_drive_number): 7"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(102,0,0,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(7,1)",
+      "legendgroup": "(7,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [59, 60, 61, 62, 63, 64, 65, 66, 67, 68],
+      "y": [5, 7, 8, 5, 4.9, 4, 5, 5.6, 7, 7],
+      "text": ["Offense_play_count: 59<br />Yards_to_success:  5.0<br />factor(O_drive_number): 8", "Offense_play_count: 60<br />Yards_to_success:  7.0<br />factor(O_drive_number): 8", "Offense_play_count: 61<br />Yards_to_success:  8.0<br />factor(O_drive_number): 8", "Offense_play_count: 62<br />Yards_to_success:  5.0<br />factor(O_drive_number): 8", "Offense_play_count: 63<br />Yards_to_success:  4.9<br />factor(O_drive_number): 8", "Offense_play_count: 64<br />Yards_to_success:  4.0<br />factor(O_drive_number): 8", "Offense_play_count: 65<br />Yards_to_success:  5.0<br />factor(O_drive_number): 8", "Offense_play_count: 66<br />Yards_to_success:  5.6<br />factor(O_drive_number): 8", "Offense_play_count: 67<br />Yards_to_success:  7.0<br />factor(O_drive_number): 8", "Offense_play_count: 68<br />Yards_to_success:  7.0<br />factor(O_drive_number): 8"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(204,204,204,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(8,1)",
+      "legendgroup": "(8,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [69, 70, 71, 72, 73, 74],
+      "y": [5, 1.4, 5, 5.6, 8, 3],
+      "text": ["Offense_play_count: 69<br />Yards_to_success:  5.0<br />factor(O_drive_number): 9", "Offense_play_count: 70<br />Yards_to_success:  1.4<br />factor(O_drive_number): 9", "Offense_play_count: 71<br />Yards_to_success:  5.0<br />factor(O_drive_number): 9", "Offense_play_count: 72<br />Yards_to_success:  5.6<br />factor(O_drive_number): 9", "Offense_play_count: 73<br />Yards_to_success:  8.0<br />factor(O_drive_number): 9", "Offense_play_count: 74<br />Yards_to_success:  3.0<br />factor(O_drive_number): 9"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(102,0,0,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(9,1)",
+      "legendgroup": "(9,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [75, 76, 77, 78],
+      "y": [5, 6.3, 9, 11],
+      "text": ["Offense_play_count: 75<br />Yards_to_success:  5.0<br />factor(O_drive_number): 10", "Offense_play_count: 76<br />Yards_to_success:  6.3<br />factor(O_drive_number): 10", "Offense_play_count: 77<br />Yards_to_success:  9.0<br />factor(O_drive_number): 10", "Offense_play_count: 78<br />Yards_to_success: 11.0<br />factor(O_drive_number): 10"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(204,204,204,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(10,1)",
+      "legendgroup": "(10,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [79, 80, 81, 82, 83],
+      "y": [5, 5, 7, 10, 5],
+      "text": ["Offense_play_count: 79<br />Yards_to_success:  5.0<br />factor(O_drive_number): 11", "Offense_play_count: 80<br />Yards_to_success:  5.0<br />factor(O_drive_number): 11", "Offense_play_count: 81<br />Yards_to_success:  7.0<br />factor(O_drive_number): 11", "Offense_play_count: 82<br />Yards_to_success: 10.0<br />factor(O_drive_number): 11", "Offense_play_count: 83<br />Yards_to_success:  5.0<br />factor(O_drive_number): 11"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(102,0,0,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(11,1)",
+      "legendgroup": "(11,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [68],
+      "y": [7],
+      "text": "Offense_play_count: 68<br />Yards_to_success:  7.0<br />Play_type: Field Goal Good<br />Success: Field Goal<br />Play_text: Jace Christmann 25 yd FG GOOD<br />O_drive_number: 8",
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(127,127,127,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "square-cross-open",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(127,127,127,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Field Goal,Field Goal Good)",
+      "legendgroup": "(Field Goal,Field Goal Good)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [4, 13, 23, 82],
+      "y": [20, 2, 5, 10],
+      "text": ["Offense_play_count:  4<br />Yards_to_success: 20.0<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: ALABAMA Penalty, Personal Foul (15 Yards) to the MisSt 30 for a 1ST down<br />O_drive_number: 1", "Offense_play_count: 13<br />Yards_to_success:  2.0<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: MISSISSIPPI ST Penalty, Delay of Game (Nick Fitzgerald) to the Alab 41<br />O_drive_number: 1", "Offense_play_count: 23<br />Yards_to_success:  5.0<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: Fitzgerald, Nick pass incomplete to Johnson, Justin, PENALTY ALABAMA holding (Jones, Hootie) 10 yards to the MISSSTATE42, NO PLAY, 1ST DOWN MISSSTATE.<br />O_drive_number: 3", "Offense_play_count: 82<br />Yards_to_success: 10.0<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: Fitzgerald, Nick pass incomplete to Todd, Reginald, PENALTY ALABAMA pass interference (Holcombe, Keith) 15 yards to the ALABAMA34, NO PLAY, 1ST DOWN MISSSTATE.<br />O_drive_number: 11"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(255,0,255,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "hexagram-open",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(255,0,255,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "Penalty",
+      "legendgroup": "Penalty",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [14, 37, 44, 74, 78],
+      "y": [7, 7, 7, 3, 11],
+      "text": ["Offense_play_count: 14<br />Yards_to_success:  7.0<br />Play_type: Punt<br />Success: Punt<br />Play_text: Logan Cooke punt for 36 yds, downed at the Alab 5<br />O_drive_number: 1", "Offense_play_count: 37<br />Yards_to_success:  7.0<br />Play_type: Punt<br />Success: Punt<br />Play_text: Logan Cooke punt for 56 yds , Xavian Marks returns for a loss of 6 yards to the Alab 18 Xavian Marks fumbled, recovered by Alab Xavian Marks<br />O_drive_number: 4", "Offense_play_count: 44<br />Yards_to_success:  7.0<br />Play_type: Punt<br />Success: Punt<br />Play_text: Logan Cooke punt for 53 yds, downed at the Alab 2<br />O_drive_number: 5", "Offense_play_count: 74<br />Yards_to_success:  3.0<br />Play_type: Punt<br />Success: Punt<br />Play_text: Logan Cooke punt for 42 yds for a touchback<br />O_drive_number: 9", "Offense_play_count: 78<br />Yards_to_success: 11.0<br />Play_type: Punt<br />Success: Punt<br />Play_text: Logan Cooke punt for 46 yds, fair catch by Xavian Marks at the Alab 32<br />O_drive_number: 10"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(127,127,127,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "diamond",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(127,127,127,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "Punt",
+      "legendgroup": "Punt",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [9, 10, 15, 28, 31, 49, 51, 61, 64, 79],
+      "y": [4.9, 5, 5, 7, 2, 2.1, 4.2, 8, 4, 5],
+      "text": ["Offense_play_count:  9<br />Yards_to_success:  4.9<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Nick Fitzgerald pass complete to Reginald Todd for 9 yds to the Alab 44 for a 1ST down<br />O_drive_number: 1", "Offense_play_count: 10<br />Yards_to_success:  5.0<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Nick Fitzgerald pass complete to Osirus Mitchell for 8 yds to the Alab 36<br />O_drive_number: 1", "Offense_play_count: 15<br />Yards_to_success:  5.0<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Nick Fitzgerald pass complete to Jordan Thomas for 24 yds to the Alab 33 for a 1ST down<br />O_drive_number: 2", "Offense_play_count: 28<br />Yards_to_success:  7.0<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Nick Fitzgerald pass complete to Justin Johnson for 7 yds to the Alab 36 for a 1ST down<br />O_drive_number: 3", "Offense_play_count: 31<br />Yards_to_success:  2.0<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Nick Fitzgerald pass complete to Farrod Green for 23 yds to the Alab 5 for a 1ST down<br />O_drive_number: 3", "Offense_play_count: 49<br />Yards_to_success:  2.1<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Nick Fitzgerald pass complete to Nick Gibson for 9 yds to the Alab 41 for a 1ST down<br />O_drive_number: 7", "Offense_play_count: 51<br />Yards_to_success:  4.2<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Nick Fitzgerald pass complete to Aeris Williams for 9 yds to the Alab 28 for a 1ST down<br />O_drive_number: 7", "Offense_play_count: 61<br />Yards_to_success:  8.0<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Nick Fitzgerald pass complete to Keith Mixon for 20 yds to the Alab 42 for a 1ST down<br />O_drive_number: 8", "Offense_play_count: 64<br />Yards_to_success:  4.0<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Nick Fitzgerald pass complete to Deddrick Thomas for 25 yds to the Alab 11 for a 1ST down<br />O_drive_number: 8", "Offense_play_count: 79<br />Yards_to_success:  5.0<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Nick Fitzgerald pass complete to Reginald Todd for 16 yds to the Alab 49 for a 1ST down<br />O_drive_number: 11"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,100,0,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(0,100,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Successful,Pass Reception)",
+      "legendgroup": "(Successful,Pass Reception)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [5, 7, 16, 17, 18, 25, 30, 33, 39, 40, 47, 48, 54, 56, 69, 70],
+      "y": [5, 1, 5, 3.5, 1, 1, 7.7, 5, 4.2, 1, 4.2, 5, 10, 4.9, 5, 1.4],
+      "text": ["Offense_play_count:  5<br />Yards_to_success:  5.0<br />Play_type: Rush<br />Success: Successful<br />Play_text: Aeris Williams run for 8 yds to the MisSt 38<br />O_drive_number: 1", "Offense_play_count:  7<br />Yards_to_success:  1.0<br />Play_type: Rush<br />Success: Successful<br />Play_text: Aeris Williams run for 5 yds to the MisSt 44 for a 1ST down<br />O_drive_number: 1", "Offense_play_count: 16<br />Yards_to_success:  5.0<br />Play_type: Rush<br />Success: Successful<br />Play_text: Nick Fitzgerald run for 5 yds to the Alab 28<br />O_drive_number: 2", "Offense_play_count: 17<br />Yards_to_success:  3.5<br />Play_type: Rush<br />Success: Successful<br />Play_text: Aeris Williams run for 4 yds to the Alab 24<br />O_drive_number: 2", "Offense_play_count: 18<br />Yards_to_success:  1.0<br />Play_type: Rush<br />Success: Successful<br />Play_text: Nick Fitzgerald run for 10 yds to the Alab 14 for a 1ST down<br />O_drive_number: 2", "Offense_play_count: 25<br />Yards_to_success:  1.0<br />Play_type: Rush<br />Success: Successful<br />Play_text: Aeris Williams run for 12 yds to the Alab 46 for a 1ST down<br />O_drive_number: 3", "Offense_play_count: 30<br />Yards_to_success:  7.7<br />Play_type: Rush<br />Success: Successful<br />Play_text: Aeris Williams run for 9 yds to the Alab 28<br />O_drive_number: 3", "Offense_play_count: 33<br />Yards_to_success:  5.0<br />Play_type: Rush<br />Success: Successful<br />Play_text: Nick Fitzgerald run for 12 yds to the MisSt 17 for a 1ST down<br />O_drive_number: 4", "Offense_play_count: 39<br />Yards_to_success:  4.2<br />Play_type: Rush<br />Success: Successful<br />Play_text: Nick Fitzgerald run for 5 yds to the MisSt 39<br />O_drive_number: 5", "Offense_play_count: 40<br />Yards_to_success:  1.0<br />Play_type: Rush<br />Success: Successful<br />Play_text: Kylin Hill run for 3 yds to the MisSt 42 for a 1ST down<br />O_drive_number: 5", "Offense_play_count: 47<br />Yards_to_success:  4.2<br />Play_type: Rush<br />Success: Successful<br />Play_text: Nick Fitzgerald run for 8 yds to the MisSt 43 for a 1ST down<br />O_drive_number: 7", "Offense_play_count: 48<br />Yards_to_success:  5.0<br />Play_type: Rush<br />Success: Successful<br />Play_text: Aeris Williams run for 7 yds to the 50 yard line<br />O_drive_number: 7", "Offense_play_count: 54<br />Yards_to_success: 10.0<br />Play_type: Rush<br />Success: Successful<br />Play_text: Nick Fitzgerald run for 13 yds to the Alab 15 for a 1ST down<br />O_drive_number: 7", "Offense_play_count: 56<br />Yards_to_success:  4.9<br />Play_type: Rush<br />Success: Successful<br />Play_text: Aeris Williams run for 9 yds to the Alab 3 for a 1ST down<br />O_drive_number: 7", "Offense_play_count: 69<br />Yards_to_success:  5.0<br />Play_type: Rush<br />Success: Successful<br />Play_text: Aeris Williams run for 8 yds to the MisSt 48<br />O_drive_number: 9", "Offense_play_count: 70<br />Yards_to_success:  1.4<br />Play_type: Rush<br />Success: Successful<br />Play_text: Aeris Williams run for 3 yds to the Alab 49 for a 1ST down<br />O_drive_number: 9"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,100,0,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "circle",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(0,100,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Successful,Rush)",
+      "legendgroup": "(Successful,Rush)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [20, 32, 58],
+      "y": [4.9, 2.5, 1.4],
+      "text": ["Offense_play_count: 20<br />Yards_to_success:  4.9<br />Play_type: Rushing Touchdown<br />Success: Successful<br />Play_text: Aeris Williams run for 11 yds for a TD, (Jace Christmann KICK)<br />O_drive_number: 2", "Offense_play_count: 32<br />Yards_to_success:  2.5<br />Play_type: Rushing Touchdown<br />Success: Successful<br />Play_text: Aeris Williams run for 5 yds for a TD, (Jace Christmann KICK)<br />O_drive_number: 3", "Offense_play_count: 58<br />Yards_to_success:  1.4<br />Play_type: Rushing Touchdown<br />Success: Successful<br />Play_text: Nick Fitzgerald run for 2 yds for a TD, (Jace Christmann KICK)<br />O_drive_number: 7"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,100,0,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "circle-cross-open",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(0,100,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Successful,Rushing Touchdown)",
+      "legendgroup": "(Successful,Rushing Touchdown)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 2, 34, 43, 52, 53, 67, 76, 80, 81, 83],
+      "y": [5, 7, 5, 7, 5, 7, 7, 6.3, 5, 7, 5],
+      "text": ["Offense_play_count:  1<br />Yards_to_success:  5.0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Nick Fitzgerald pass incomplete to Keith Mixon<br />O_drive_number: 1", "Offense_play_count:  2<br />Yards_to_success:  7.0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Nick Fitzgerald pass incomplete to Jordan Thomas<br />O_drive_number: 1", "Offense_play_count: 34<br />Yards_to_success:  5.0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Nick Fitzgerald pass incomplete to Jordan Thomas<br />O_drive_number: 4", "Offense_play_count: 43<br />Yards_to_success:  7.0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Nick Fitzgerald pass incomplete to Reginald Todd<br />O_drive_number: 5", "Offense_play_count: 52<br />Yards_to_success:  5.0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Nick Fitzgerald pass incomplete to Jamal Couch<br />O_drive_number: 7", "Offense_play_count: 53<br />Yards_to_success:  7.0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Nick Fitzgerald pass incomplete to Jesse Jackson<br />O_drive_number: 7", "Offense_play_count: 67<br />Yards_to_success:  7.0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Nick Fitzgerald pass incomplete to Jordan Thomas<br />O_drive_number: 8", "Offense_play_count: 76<br />Yards_to_success:  6.3<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Nick Fitzgerald pass incomplete to Deddrick Thomas<br />O_drive_number: 10", "Offense_play_count: 80<br />Yards_to_success:  5.0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Nick Fitzgerald pass incomplete to Reginald Todd<br />O_drive_number: 11", "Offense_play_count: 81<br />Yards_to_success:  7.0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Nick Fitzgerald pass incomplete to Jordan Thomas<br />O_drive_number: 11", "Offense_play_count: 83<br />Yards_to_success:  5.0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Nick Fitzgerald pass incomplete to Reginald Todd<br />O_drive_number: 11"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(139,26,26,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "triangle-up-open",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(139,26,26,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Unsuccessful,Pass Incompletion)",
+      "legendgroup": "(Unsuccessful,Pass Incompletion)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [22, 73, 75],
+      "y": [4.9, 8, 5],
+      "text": ["Offense_play_count: 22<br />Yards_to_success:  4.9<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Nick Fitzgerald pass complete to Kylin Hill for 2 yds to the MisSt 32<br />O_drive_number: 3", "Offense_play_count: 73<br />Yards_to_success:  8.0<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Nick Fitzgerald pass complete to Deddrick Thomas for 5 yds to the Alab 42<br />O_drive_number: 9", "Offense_play_count: 75<br />Yards_to_success:  5.0<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Nick Fitzgerald pass complete to Farrod Green for 1 yd to the MisSt 24<br />O_drive_number: 10"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(139,26,26,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(139,26,26,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Unsuccessful,Pass Reception)",
+      "legendgroup": "(Unsuccessful,Pass Reception)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [6, 8, 11, 12, 19, 21, 24, 26, 27, 29, 35, 36, 38, 41, 42, 45, 46, 50, 55, 57, 59, 60, 62, 63, 65, 66, 71, 72, 77],
+      "y": [1.4, 5, 1.4, 2, 5, 5, 5, 5, 5.6, 5, 7, 13, 5, 5, 7, 5, 5, 5, 5, 1.5, 5, 7, 5, 4.9, 5, 5.6, 5, 5.6, 9],
+      "text": ["Offense_play_count:  6<br />Yards_to_success:  1.4<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Aeris Williams run for 1 yd to the MisSt 39<br />O_drive_number: 1", "Offense_play_count:  8<br />Yards_to_success:  5.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Nick Fitzgerald run for 3 yds to the MisSt 47<br />O_drive_number: 1", "Offense_play_count: 11<br />Yards_to_success:  1.4<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Aeris Williams run for no gain to the Alab 36<br />O_drive_number: 1", "Offense_play_count: 12<br />Yards_to_success:  2.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Aeris Williams run for no gain to the Alab 36<br />O_drive_number: 1", "Offense_play_count: 19<br />Yards_to_success:  5.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Aeris Williams run for 3 yds to the Alab 11<br />O_drive_number: 2", "Offense_play_count: 21<br />Yards_to_success:  5.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Nick Fitzgerald run for 3 yds to the MisSt 30<br />O_drive_number: 3", "Offense_play_count: 24<br />Yards_to_success:  5.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Kylin Hill run for no gain to the MisSt 42<br />O_drive_number: 3", "Offense_play_count: 26<br />Yards_to_success:  5.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Aeris Williams run for 2 yds to the Alab 44<br />O_drive_number: 3", "Offense_play_count: 27<br />Yards_to_success:  5.6<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Aeris Williams run for 1 yd to the Alab 43<br />O_drive_number: 3", "Offense_play_count: 29<br />Yards_to_success:  5.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Aeris Williams run for a loss of 1 yard to the Alab 37<br />O_drive_number: 3", "Offense_play_count: 35<br />Yards_to_success:  7.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Nick Fitzgerald run for a loss of 3 yards to the MisSt 14<br />O_drive_number: 4", "Offense_play_count: 36<br />Yards_to_success: 13.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Nick Fitzgerald run for 6 yds to the MisSt 20<br />O_drive_number: 4", "Offense_play_count: 38<br />Yards_to_success:  5.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Kylin Hill run for 4 yds to the MisSt 34<br />O_drive_number: 5", "Offense_play_count: 41<br />Yards_to_success:  5.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Kylin Hill run for no gain to the MisSt 42<br />O_drive_number: 5", "Offense_play_count: 42<br />Yards_to_success:  7.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Nick Fitzgerald run for 3 yds to the MisSt 45<br />O_drive_number: 5", "Offense_play_count: 45<br />Yards_to_success:  5.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: TEAM run for a loss of 2 yards to the MisSt 26<br />O_drive_number: 6", "Offense_play_count: 46<br />Yards_to_success:  5.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Nick Fitzgerald run for 4 yds to the MisSt 35<br />O_drive_number: 7", "Offense_play_count: 50<br />Yards_to_success:  5.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Nick Gibson run for 4 yds to the Alab 37<br />O_drive_number: 7", "Offense_play_count: 55<br />Yards_to_success:  5.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Nick Fitzgerald run for 3 yds to the Alab 12<br />O_drive_number: 7", "Offense_play_count: 57<br />Yards_to_success:  1.5<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Nick Fitzgerald run for 1 yd to the Alab 2<br />O_drive_number: 7", "Offense_play_count: 59<br />Yards_to_success:  5.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Nick Fitzgerald run for no gain to the MisSt 36<br />O_drive_number: 8", "Offense_play_count: 60<br />Yards_to_success:  7.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Nick Fitzgerald run for 2 yds to the MisSt 38<br />O_drive_number: 8", "Offense_play_count: 62<br />Yards_to_success:  5.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Aeris Williams run for 3 yds to the Alab 39<br />O_drive_number: 8", "Offense_play_count: 63<br />Yards_to_success:  4.9<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Aeris Williams run for 3 yds to the Alab 36<br />O_drive_number: 8", "Offense_play_count: 65<br />Yards_to_success:  5.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Aeris Williams run for 2 yds to the Alab 9<br />O_drive_number: 8", "Offense_play_count: 66<br />Yards_to_success:  5.6<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Nick Fitzgerald run for 1 yd to the Alab 8<br />O_drive_number: 8", "Offense_play_count: 71<br />Yards_to_success:  5.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Aeris Williams run for 2 yds to the Alab 47<br />O_drive_number: 9", "Offense_play_count: 72<br />Yards_to_success:  5.6<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Nick Fitzgerald run for no gain to the Alab 47<br />O_drive_number: 9", "Offense_play_count: 77<br />Yards_to_success:  9.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Nick Fitzgerald run for a loss of 2 yards to the MisSt 22<br />O_drive_number: 10"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(139,26,26,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "circle",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(139,26,26,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Unsuccessful,Rush)",
+      "legendgroup": "(Unsuccessful,Rush)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [3],
+      "y": [10],
+      "text": "Offense_play_count:  3<br />Yards_to_success: 10.0<br />Play_type: Sack<br />Success: Unsuccessful<br />Play_text: Nick Fitzgerald sacked by Rashaan Evans for a loss of 10 yards to the MisSt 15<br />O_drive_number: 1",
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(139,26,26,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "triangle-down-open",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(139,26,26,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Unsuccessful,Sack)",
+      "legendgroup": "(Unsuccessful,Sack)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    }
+  ],
+  layout: {
+    "margin": {
+      "t": 43.2754946727549,
+      "r": 7.30593607305936,
+      "b": 39.6955859969559,
+      "l": 37.2602739726027
+    },
+    "plot_bgcolor": "rgba(229,229,229,1)",
+    "paper_bgcolor": "rgba(255,255,255,1)",
+    "font": {
+      "color": "rgba(0,0,0,1)",
+      "family": "",
+      "size": 14.6118721461187
+    },
+    "title": {
+      "text": "Mississippi State[24]: Yards to success<br> <sup>2017: wk11 vs Alabama[31]<\/sup>",
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 17.5342465753425
+      },
+      "x": 0,
+      "xref": "paper",
+      "xanchor": "left"
+    },
+    "xaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [-3.1, 87.1],
+      "tickmode": "array",
+      "ticktext": ["0", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55", "60", "65", "70", "75", "80", "85"],
+      "tickvals": [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85],
+      "categoryorder": "array",
+      "categoryarray": ["0", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55", "60", "65", "70", "75", "80", "85"],
+      "nticks": null,
+      "ticks": "outside",
+      "tickcolor": "rgba(51,51,51,1)",
+      "ticklen": 3.65296803652968,
+      "tickwidth": 0.66417600664176,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "tickangle": -0,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": "rgba(204,204,204,1)",
+      "gridwidth": 0.66417600664176,
+      "zeroline": false,
+      "anchor": "y",
+      "title": {
+        "text": "Offensive play count including penalties",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "yaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [-1, 21],
+      "tickmode": "array",
+      "ticktext": ["0", "5", "10", "15", "20"],
+      "tickvals": [0, 5, 10, 15, 20],
+      "categoryorder": "array",
+      "categoryarray": ["0", "5", "10", "15", "20"],
+      "nticks": null,
+      "ticks": "outside",
+      "tickcolor": "rgba(51,51,51,1)",
+      "ticklen": 3.65296803652968,
+      "tickwidth": 0.66417600664176,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "tickangle": -0,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": "rgba(204,204,204,1)",
+      "gridwidth": 0.66417600664176,
+      "zeroline": false,
+      "anchor": "x",
+      "title": {
+        "text": "Yards needed to be successful",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "shapes": [
+      {
+        "type": "rect",
+        "fillcolor": null,
+        "line": {
+          "color": null,
+          "width": 0,
+          "linetype": []
+        },
+        "yref": "paper",
+        "xref": "paper",
+        "x0": 0,
+        "x1": 1,
+        "y0": 0,
+        "y1": 1
+      }
+    ],
+    "showlegend": true,
+    "legend": {
+      "bgcolor": "rgba(255,255,255,1)",
+      "bordercolor": "transparent",
+      "borderwidth": 1.88976377952756,
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "title": {
+        "text": "Success/Drive number<br />Play type",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      }
+    },
+    "hovermode": "closest",
+    "barmode": "relative"
+  },
+  config: {
+    "doubleClick": "reset",
+    "modeBarButtonsToAdd": ["hoverclosest", "hovercompare"],
+    "showSendToCloud": false
+  },
+  source: "A",
+  attrs: {
+    "2f1849bb73cf": {
+      "yintercept": {},
+      "type": "scatter"
+    },
+    "2f1857435028": {
+      "xintercept": {}
+    },
+    "2f18140a1a00": {
+      "x": {},
+      "y": {},
+      "colour": {}
+    },
+    "2f18c8b3fdb": {
+      "x": {},
+      "y": {},
+      "shape": {},
+      "colour": {},
+      "label": {}
+    }
+  },
+  cur_data: "2f1849bb73cf",
+  visdat: {
+    "2f1849bb73cf": ["function (y) ", "x"],
+    "2f1857435028": ["function (y) ", "x"],
+    "2f18140a1a00": ["function (y) ", "x"],
+    "2f18c8b3fdb": ["function (y) ", "x"]
+  },
+  highlight: {
+    "on": "plotly_click",
+    "persistent": false,
+    "dynamic": false,
+    "selectize": false,
+    "opacityDim": 0.2,
+    "selected": {
+      "opacity": 1
+    },
+    "debounce": 0
+  },
+  shinyEvents: ["plotly_hover", "plotly_click", "plotly_selected", "plotly_relayout", "plotly_brushed", "plotly_brushing", "plotly_clickannotation", "plotly_doubleclick", "plotly_deselect", "plotly_afterplot", "plotly_sunburstclick"],
+  base_url: "https://plot.ly"
+}

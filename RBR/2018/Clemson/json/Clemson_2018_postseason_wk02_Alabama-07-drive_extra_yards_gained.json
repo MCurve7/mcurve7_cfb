@@ -1,0 +1,765 @@
+{
+  data: [
+    {
+      "x": [null, null, null, null, null],
+      "y": [15, null, null, 15, 15],
+      "text": "",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "transparent",
+        "dash": "solid"
+      },
+      "fill": "toself",
+      "fillcolor": "rgba(255,48,48,0.2)",
+      "hoveron": "fills",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [null, null, null, null, null],
+      "y": [null, 0, 0, null, null],
+      "text": "",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "transparent",
+        "dash": "solid"
+      },
+      "fill": "toself",
+      "fillcolor": "rgba(153,153,153,0.2)",
+      "hoveron": "fills",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [-2.45, 73.45],
+      "y": [0, 0],
+      "text": "yintercept: 0",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(0,0,0,0.2)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [37.5, 37.5],
+      "y": [-23.25, 70.25],
+      "text": "xintercept: 37.5",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(0,0,0,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [13.5, 13.5, null, 52.5, 52.5],
+      "y": [-23.25, 70.25, null, -23.25, 70.25],
+      "text": ["xintercept: 13.5", "xintercept: 13.5", null, "xintercept: 52.5", "xintercept: 52.5"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(0,0,0,1)",
+        "dash": "dash"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 2, 3, 4],
+      "y": [-5, -4, -7, -7],
+      "text": ["Offense_play_count:  1<br />Extra_yards_gained:  -5<br />factor(O_drive_number): 1", "Offense_play_count:  2<br />Extra_yards_gained:  -4<br />factor(O_drive_number): 1", "Offense_play_count:  3<br />Extra_yards_gained:  -7<br />factor(O_drive_number): 1", "Offense_play_count:  4<br />Extra_yards_gained:  -7<br />factor(O_drive_number): 1"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 3.77952755905512,
+        "color": "rgba(245,102,0,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "1",
+      "legendgroup": "1",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [5, 6, 7, 8, 9],
+      "y": [-5, -19, -7, 48, 12],
+      "text": ["Offense_play_count:  5<br />Extra_yards_gained:  -5<br />factor(O_drive_number): 2", "Offense_play_count:  6<br />Extra_yards_gained: -19<br />factor(O_drive_number): 2", "Offense_play_count:  7<br />Extra_yards_gained:  -7<br />factor(O_drive_number): 2", "Offense_play_count:  8<br />Extra_yards_gained:  48<br />factor(O_drive_number): 2", "Offense_play_count:  9<br />Extra_yards_gained:  12<br />factor(O_drive_number): 2"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 3.77952755905512,
+        "color": "rgba(82,45,128,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(2,1)",
+      "legendgroup": "(2,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [10, 11, 12, 13],
+      "y": [-5, -11, -14, -7],
+      "text": ["Offense_play_count: 10<br />Extra_yards_gained:  -5<br />factor(O_drive_number): 3", "Offense_play_count: 11<br />Extra_yards_gained: -11<br />factor(O_drive_number): 3", "Offense_play_count: 12<br />Extra_yards_gained: -14<br />factor(O_drive_number): 3", "Offense_play_count: 13<br />Extra_yards_gained:  -7<br />factor(O_drive_number): 3"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 3.77952755905512,
+        "color": "rgba(245,102,0,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(3,1)",
+      "legendgroup": "(3,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [14, 15, 16, 17, 18, 19, 20],
+      "y": [10, 21, -4, -2, 9, 2, 0],
+      "text": ["Offense_play_count: 14<br />Extra_yards_gained:  10<br />factor(O_drive_number): 4", "Offense_play_count: 15<br />Extra_yards_gained:  21<br />factor(O_drive_number): 4", "Offense_play_count: 16<br />Extra_yards_gained:  -4<br />factor(O_drive_number): 4", "Offense_play_count: 17<br />Extra_yards_gained:  -2<br />factor(O_drive_number): 4", "Offense_play_count: 18<br />Extra_yards_gained:   9<br />factor(O_drive_number): 4", "Offense_play_count: 19<br />Extra_yards_gained:   2<br />factor(O_drive_number): 4", "Offense_play_count: 20<br />Extra_yards_gained:   0<br />factor(O_drive_number): 4"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 3.77952755905512,
+        "color": "rgba(82,45,128,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(4,1)",
+      "legendgroup": "(4,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [21, 22, 23, 24, 25, 26, 27, 28],
+      "y": [-2, 0, 3, -5, -4, 19, -2, 2],
+      "text": ["Offense_play_count: 21<br />Extra_yards_gained:  -2<br />factor(O_drive_number): 5", "Offense_play_count: 22<br />Extra_yards_gained:   0<br />factor(O_drive_number): 5", "Offense_play_count: 23<br />Extra_yards_gained:   3<br />factor(O_drive_number): 5", "Offense_play_count: 24<br />Extra_yards_gained:  -5<br />factor(O_drive_number): 5", "Offense_play_count: 25<br />Extra_yards_gained:  -4<br />factor(O_drive_number): 5", "Offense_play_count: 26<br />Extra_yards_gained:  19<br />factor(O_drive_number): 5", "Offense_play_count: 27<br />Extra_yards_gained:  -2<br />factor(O_drive_number): 5", "Offense_play_count: 28<br />Extra_yards_gained:   2<br />factor(O_drive_number): 5"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 3.77952755905512,
+        "color": "rgba(245,102,0,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(5,1)",
+      "legendgroup": "(5,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [29, 30, 31, 32, 33, 34, 35, 36, 37],
+      "y": [14, -5, 20, 0, 10, -7, -8, -12, 24],
+      "text": ["Offense_play_count: 29<br />Extra_yards_gained:  14<br />factor(O_drive_number): 6", "Offense_play_count: 30<br />Extra_yards_gained:  -5<br />factor(O_drive_number): 6", "Offense_play_count: 31<br />Extra_yards_gained:  20<br />factor(O_drive_number): 6", "Offense_play_count: 32<br />Extra_yards_gained:   0<br />factor(O_drive_number): 6", "Offense_play_count: 33<br />Extra_yards_gained:  10<br />factor(O_drive_number): 6", "Offense_play_count: 34<br />Extra_yards_gained:  -7<br />factor(O_drive_number): 6", "Offense_play_count: 35<br />Extra_yards_gained:  -8<br />factor(O_drive_number): 6", "Offense_play_count: 36<br />Extra_yards_gained: -12<br />factor(O_drive_number): 6", "Offense_play_count: 37<br />Extra_yards_gained:  24<br />factor(O_drive_number): 6"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 3.77952755905512,
+        "color": "rgba(82,45,128,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(6,1)",
+      "legendgroup": "(6,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [38, 39, 40],
+      "y": [-7, -4, 66],
+      "text": ["Offense_play_count: 38<br />Extra_yards_gained:  -7<br />factor(O_drive_number): 7", "Offense_play_count: 39<br />Extra_yards_gained:  -4<br />factor(O_drive_number): 7", "Offense_play_count: 40<br />Extra_yards_gained:  66<br />factor(O_drive_number): 7"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 3.77952755905512,
+        "color": "rgba(245,102,0,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(7,1)",
+      "legendgroup": "(7,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52],
+      "y": [-1, 8, -7, -8, 25, -5, -6, 8, 6, -2, -3, 0],
+      "text": ["Offense_play_count: 41<br />Extra_yards_gained:  -1<br />factor(O_drive_number): 8", "Offense_play_count: 42<br />Extra_yards_gained:   8<br />factor(O_drive_number): 8", "Offense_play_count: 43<br />Extra_yards_gained:  -7<br />factor(O_drive_number): 8", "Offense_play_count: 44<br />Extra_yards_gained:  -8<br />factor(O_drive_number): 8", "Offense_play_count: 45<br />Extra_yards_gained:  25<br />factor(O_drive_number): 8", "Offense_play_count: 46<br />Extra_yards_gained:  -5<br />factor(O_drive_number): 8", "Offense_play_count: 47<br />Extra_yards_gained:  -6<br />factor(O_drive_number): 8", "Offense_play_count: 48<br />Extra_yards_gained:   8<br />factor(O_drive_number): 8", "Offense_play_count: 49<br />Extra_yards_gained:   6<br />factor(O_drive_number): 8", "Offense_play_count: 50<br />Extra_yards_gained:  -2<br />factor(O_drive_number): 8", "Offense_play_count: 51<br />Extra_yards_gained:  -3<br />factor(O_drive_number): 8", "Offense_play_count: 52<br />Extra_yards_gained:   0<br />factor(O_drive_number): 8"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 3.77952755905512,
+        "color": "rgba(82,45,128,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(8,1)",
+      "legendgroup": "(8,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [53, 54, 55, 56],
+      "y": [-6, -8, -11, -11],
+      "text": ["Offense_play_count: 53<br />Extra_yards_gained:  -6<br />factor(O_drive_number): 9", "Offense_play_count: 54<br />Extra_yards_gained:  -8<br />factor(O_drive_number): 9", "Offense_play_count: 55<br />Extra_yards_gained: -11<br />factor(O_drive_number): 9", "Offense_play_count: 56<br />Extra_yards_gained: -11<br />factor(O_drive_number): 9"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 3.77952755905512,
+        "color": "rgba(245,102,0,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(9,1)",
+      "legendgroup": "(9,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70],
+      "y": [-3, 1, 6, -3, 32, -1, -4, 2, -3, 6, -1, -2, -5, 2],
+      "text": ["Offense_play_count: 57<br />Extra_yards_gained:  -3<br />factor(O_drive_number): 10", "Offense_play_count: 58<br />Extra_yards_gained:   1<br />factor(O_drive_number): 10", "Offense_play_count: 59<br />Extra_yards_gained:   6<br />factor(O_drive_number): 10", "Offense_play_count: 60<br />Extra_yards_gained:  -3<br />factor(O_drive_number): 10", "Offense_play_count: 61<br />Extra_yards_gained:  32<br />factor(O_drive_number): 10", "Offense_play_count: 62<br />Extra_yards_gained:  -1<br />factor(O_drive_number): 10", "Offense_play_count: 63<br />Extra_yards_gained:  -4<br />factor(O_drive_number): 10", "Offense_play_count: 64<br />Extra_yards_gained:   2<br />factor(O_drive_number): 10", "Offense_play_count: 65<br />Extra_yards_gained:  -3<br />factor(O_drive_number): 10", "Offense_play_count: 66<br />Extra_yards_gained:   6<br />factor(O_drive_number): 10", "Offense_play_count: 67<br />Extra_yards_gained:  -1<br />factor(O_drive_number): 10", "Offense_play_count: 68<br />Extra_yards_gained:  -2<br />factor(O_drive_number): 10", "Offense_play_count: 69<br />Extra_yards_gained:  -5<br />factor(O_drive_number): 10", "Offense_play_count: 70<br />Extra_yards_gained:   2<br />factor(O_drive_number): 10"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 3.77952755905512,
+        "color": "rgba(82,45,128,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(10,1)",
+      "legendgroup": "(10,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [37],
+      "y": [24],
+      "text": "Offense_play_count: 37<br />Extra_yards_gained:  24<br />Play_type: Field Goal Good<br />Success: Field Goal<br />Play_text: Greg Huegel 36 yd FG GOOD<br />O_drive_number: 6",
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(127,127,127,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "square-cross-open",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(127,127,127,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Field Goal,Field Goal Good)",
+      "legendgroup": "(Field Goal,Field Goal Good)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [6, 14, 32],
+      "y": [-19, 10, 0],
+      "text": ["Offense_play_count:  6<br />Extra_yards_gained: -19<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: Lawrence,T. pass complete to Ross for 6 yards to the CU31, out-of-bounds (Surtain,Patrick), PENALTY CU personal foul (Simpson) 12 yards to the CU13, NO PLAY.<br />O_drive_number: 2", "Offense_play_count: 14<br />Extra_yards_gained:  10<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: Lawrence,T. pass incomplete to Higgins, PENALTY UA pass interference (Smith,Saivion) 15 yards to the 50 yardline, 1ST DOWN CU, NO PLAY.<br />O_drive_number: 4", "Offense_play_count: 32<br />Extra_yards_gained:   0<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: Clock 01:48, Lawrence,T. pass incomplete to Renfrow,H., PENALTY UA offside defense (Jennings,A.) 5 yards to the UA28, NO PLAY.<br />O_drive_number: 6"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(255,0,255,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "hexagram-open",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(255,0,255,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "Penalty",
+      "legendgroup": "Penalty",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [4, 13, 56],
+      "y": [-7, -7, -11],
+      "text": ["Offense_play_count:  4<br />Extra_yards_gained:  -7<br />Play_type: Punt<br />Success: Punt<br />Play_text: Will Spiers punt for 51 yds, fair catch by Jaylen Waddle at the Alab 21<br />O_drive_number: 1", "Offense_play_count: 13<br />Extra_yards_gained:  -7<br />Play_type: Punt<br />Success: Punt<br />Play_text: Will Spiers punt for 38 yds, punt out-of-bounds at the Alab 48 , Jaylen Waddle returns for 7 yds to the Alab 48<br />O_drive_number: 3", "Offense_play_count: 56<br />Extra_yards_gained: -11<br />Play_type: Punt<br />Success: Punt<br />Play_text: Will Spiers punt for 44 yds, downed at the Alab 48<br />O_drive_number: 9"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(127,127,127,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "diamond",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(127,127,127,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "Punt",
+      "legendgroup": "Punt",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [8, 15, 18, 22, 23, 26, 29, 31, 33, 42, 45, 48],
+      "y": [48, 21, 9, 0, 3, 19, 14, 20, 10, 8, 25, 8],
+      "text": ["Offense_play_count:  8<br />Extra_yards_gained:  48<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Trevor Lawrence pass complete to Tee Higgins for 62 yds to the Alab 17 for a 1ST down<br />O_drive_number: 2", "Offense_play_count: 15<br />Extra_yards_gained:  21<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Trevor Lawrence pass complete to Tavien Feaster for 26 yds to the Alab 24 for a 1ST down<br />O_drive_number: 4", "Offense_play_count: 18<br />Extra_yards_gained:   9<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Trevor Lawrence pass complete to Tee Higgins for 14 yds to the Alab 5 for a 1ST down<br />O_drive_number: 4", "Offense_play_count: 22<br />Extra_yards_gained:   0<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Trevor Lawrence pass complete to Hunter Renfrow for 5 yds to the Alab 39<br />O_drive_number: 5", "Offense_play_count: 23<br />Extra_yards_gained:   3<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Trevor Lawrence pass complete to Hunter Renfrow for 5 yds to the Alab 34 for a 1ST down<br />O_drive_number: 5", "Offense_play_count: 26<br />Extra_yards_gained:  19<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Trevor Lawrence pass complete to Amari Rodgers for 26 yds to the Alab 5 for a 1ST down<br />O_drive_number: 5", "Offense_play_count: 29<br />Extra_yards_gained:  14<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Trevor Lawrence pass complete to Trevion Thompson for 19 yds to the Clem 40 for a 1ST down<br />O_drive_number: 6", "Offense_play_count: 31<br />Extra_yards_gained:  20<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Trevor Lawrence pass complete to Justyn Ross for 12 yds to the ALABAMA 48 for a 1ST down ALABAMA Penalty, personal foul (Xavier McKinney) to the Alab 33 for a 1ST down<br />O_drive_number: 6", "Offense_play_count: 33<br />Extra_yards_gained:  10<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Trevor Lawrence pass complete to Justyn Ross for 12 yds to the Alab 16 for a 1ST down<br />O_drive_number: 6", "Offense_play_count: 42<br />Extra_yards_gained:   8<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Trevor Lawrence pass complete to Diondre Overton for 12 yds to the Clem 27 for a 1ST down<br />O_drive_number: 8", "Offense_play_count: 45<br />Extra_yards_gained:  25<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Trevor Lawrence pass complete to Justyn Ross for 37 yds to the Alab 38 for a 1ST down<br />O_drive_number: 8", "Offense_play_count: 48<br />Extra_yards_gained:   8<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Trevor Lawrence pass complete to Justyn Ross for 17 yds to the Alab 20 for a 1ST down<br />O_drive_number: 8"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,100,0,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(0,100,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Successful,Pass Reception)",
+      "legendgroup": "(Successful,Pass Reception)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [28, 40, 52],
+      "y": [2, 66, 0],
+      "text": ["Offense_play_count: 28<br />Extra_yards_gained:   2<br />Play_type: Passing Touchdown<br />Success: Successful<br />Play_text: Trevor Lawrence pass complete to Travis Etienne for 5 yds for a TD, (Greg Huegel KICK)<br />O_drive_number: 5", "Offense_play_count: 40<br />Extra_yards_gained:  66<br />Play_type: Passing Touchdown<br />Success: Successful<br />Play_text: Trevor Lawrence pass complete to Justyn Ross for 74 yds for a TD (Greg Huegel PAT MISSED)<br />O_drive_number: 7", "Offense_play_count: 52<br />Extra_yards_gained:   0<br />Play_type: Passing Touchdown<br />Success: Successful<br />Play_text: Trevor Lawrence pass complete to Tee Higgins for 5 yds for a TD (Greg Huegel KICK)<br />O_drive_number: 8"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,100,0,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "square-open-dot",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(0,100,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Successful,Passing Touchdown)",
+      "legendgroup": "(Successful,Passing Touchdown)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [19, 49, 58, 59, 61, 64, 66, 70],
+      "y": [2, 6, 1, 6, 32, 2, 6, 2],
+      "text": ["Offense_play_count: 19<br />Extra_yards_gained:   2<br />Play_type: Rush<br />Success: Successful<br />Play_text: Travis Etienne run for 4 yds to the Alab 1<br />O_drive_number: 4", "Offense_play_count: 49<br />Extra_yards_gained:   6<br />Play_type: Rush<br />Success: Successful<br />Play_text: Travis Etienne run for 11 yds to the Alab 9 for a 1ST down<br />O_drive_number: 8", "Offense_play_count: 58<br />Extra_yards_gained:   1<br />Play_type: Rush<br />Success: Successful<br />Play_text: Trevor Lawrence run for 7 yds to the Clem 10<br />O_drive_number: 10", "Offense_play_count: 59<br />Extra_yards_gained:   6<br />Play_type: Rush<br />Success: Successful<br />Play_text: Travis Etienne run for 7 yds to the Clem 17 for a 1ST down<br />O_drive_number: 10", "Offense_play_count: 61<br />Extra_yards_gained:  32<br />Play_type: Rush<br />Success: Successful<br />Play_text: Travis Etienne run for 38 yds to the Alab 43 for a 1ST down<br />O_drive_number: 10", "Offense_play_count: 64<br />Extra_yards_gained:   2<br />Play_type: Rush<br />Success: Successful<br />Play_text: Trevor Lawrence run for 8 yds to the Alab 31 for a 1ST down<br />O_drive_number: 10", "Offense_play_count: 66<br />Extra_yards_gained:   6<br />Play_type: Rush<br />Success: Successful<br />Play_text: Trevor Lawrence run for 12 yds to the Alab 17 for a 1ST down<br />O_drive_number: 10", "Offense_play_count: 70<br />Extra_yards_gained:   2<br />Play_type: Rush<br />Success: Successful<br />Play_text: Adam Choice run for 7 yds to the Alab 5 for a 1ST down<br />O_drive_number: 10"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,100,0,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "circle",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(0,100,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Successful,Rush)",
+      "legendgroup": "(Successful,Rush)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [9, 20],
+      "y": [12, 0],
+      "text": ["Offense_play_count:  9<br />Extra_yards_gained:  12<br />Play_type: Rushing Touchdown<br />Success: Successful<br />Play_text: Travis Etienne run for 17 yds for a TD, (Greg Huegel KICK)<br />O_drive_number: 2", "Offense_play_count: 20<br />Extra_yards_gained:   0<br />Play_type: Rushing Touchdown<br />Success: Successful<br />Play_text: Travis Etienne run for 1 yd for a TD, (Greg Huegel KICK)<br />O_drive_number: 4"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,100,0,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "circle-cross-open",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(0,100,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Successful,Rushing Touchdown)",
+      "legendgroup": "(Successful,Rushing Touchdown)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 3, 5, 10, 12, 24, 30, 35, 36, 44, 54, 55],
+      "y": [-5, -7, -5, -5, -14, -5, -5, -8, -12, -8, -8, -11],
+      "text": ["Offense_play_count:  1<br />Extra_yards_gained:  -5<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Trevor Lawrence pass incomplete to Travis Etienne, broken up by Anfernee Jennings<br />O_drive_number: 1", "Offense_play_count:  3<br />Extra_yards_gained:  -7<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Trevor Lawrence pass incomplete to Hunter Renfrow<br />O_drive_number: 1", "Offense_play_count:  5<br />Extra_yards_gained:  -5<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Trevor Lawrence pass incomplete to Justyn Ross<br />O_drive_number: 2", "Offense_play_count: 10<br />Extra_yards_gained:  -5<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Trevor Lawrence pass incomplete to Hunter Renfrow, broken up by Xavier McKinney<br />O_drive_number: 3", "Offense_play_count: 12<br />Extra_yards_gained: -14<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Trevor Lawrence pass incomplete to Hunter Renfrow<br />O_drive_number: 3", "Offense_play_count: 24<br />Extra_yards_gained:  -5<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Trevor Lawrence pass incomplete to Justyn Ross, broken up by Patrick Surtain II<br />O_drive_number: 5", "Offense_play_count: 30<br />Extra_yards_gained:  -5<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Trevor Lawrence pass incomplete to Amari Rodgers<br />O_drive_number: 6", "Offense_play_count: 35<br />Extra_yards_gained:  -8<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Trevor Lawrence pass incomplete to Tee Higgins<br />O_drive_number: 6", "Offense_play_count: 36<br />Extra_yards_gained: -12<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Trevor Lawrence pass incomplete to Adam Choice<br />O_drive_number: 6", "Offense_play_count: 44<br />Extra_yards_gained:  -8<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Trevor Lawrence pass incomplete to Justyn Ross<br />O_drive_number: 8", "Offense_play_count: 54<br />Extra_yards_gained:  -8<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Trevor Lawrence pass incomplete to Derion Kendrick<br />O_drive_number: 9", "Offense_play_count: 55<br />Extra_yards_gained: -11<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Trevor Lawrence pass incomplete to Justyn Ross, broken up by Josh Jobe<br />O_drive_number: 9"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(139,26,26,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "triangle-up-open",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(139,26,26,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Unsuccessful,Pass Incompletion)",
+      "legendgroup": "(Unsuccessful,Pass Incompletion)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [7, 25, 39, 47, 63],
+      "y": [-7, -4, -4, -6, -4],
+      "text": ["Offense_play_count:  7<br />Extra_yards_gained:  -7<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Trevor Lawrence pass complete to Trevion Thompson for 8 yds to the Clem 21<br />O_drive_number: 2", "Offense_play_count: 25<br />Extra_yards_gained:  -4<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Trevor Lawrence pass complete to Tavien Feaster for 3 yds to the Alab 31<br />O_drive_number: 5", "Offense_play_count: 39<br />Extra_yards_gained:  -4<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Trevor Lawrence pass complete to Amari Rodgers for 4 yds to the Clem 26<br />O_drive_number: 7", "Offense_play_count: 47<br />Extra_yards_gained:  -6<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Trevor Lawrence pass complete to Justyn Ross for 1 yd to the Alab 37<br />O_drive_number: 8", "Offense_play_count: 63<br />Extra_yards_gained:  -4<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Trevor Lawrence pass complete to T.J. Chase for no gain to the Alab 39<br />O_drive_number: 10"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(139,26,26,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(139,26,26,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Unsuccessful,Pass Reception)",
+      "legendgroup": "(Unsuccessful,Pass Reception)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2, 11, 16, 17, 21, 27, 34, 38, 41, 43, 46, 50, 51, 53, 57, 60, 62, 65, 67, 68, 69],
+      "y": [-4, -11, -4, -2, -2, -2, -7, -7, -1, -7, -5, -2, -3, -6, -3, -3, -1, -3, -1, -2, -5],
+      "text": ["Offense_play_count:  2<br />Extra_yards_gained:  -4<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Travis Etienne run for 3 yds to the Clem 28<br />O_drive_number: 1", "Offense_play_count: 11<br />Extra_yards_gained: -11<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Travis Etienne run for a loss of 4 yards to the Clem 21<br />O_drive_number: 3", "Offense_play_count: 16<br />Extra_yards_gained:  -4<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Trevor Lawrence run for 1 yd to the Alab 23<br />O_drive_number: 4", "Offense_play_count: 17<br />Extra_yards_gained:  -2<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Tavien Feaster run for 4 yds to the Alab 19<br />O_drive_number: 4", "Offense_play_count: 21<br />Extra_yards_gained:  -2<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Travis Etienne run for 3 yds to the Alab 44<br />O_drive_number: 5", "Offense_play_count: 27<br />Extra_yards_gained:  -2<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Travis Etienne run for no gain to the Alab 5<br />O_drive_number: 5", "Offense_play_count: 34<br />Extra_yards_gained:  -7<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Adam Choice run for a loss of 2 yards to the Alab 18<br />O_drive_number: 6", "Offense_play_count: 38<br />Extra_yards_gained:  -7<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Trevor Lawrence run for a loss of 2 yards to the Clem 22<br />O_drive_number: 7", "Offense_play_count: 41<br />Extra_yards_gained:  -1<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Travis Etienne run for 4 yds to the Clem 15<br />O_drive_number: 8", "Offense_play_count: 43<br />Extra_yards_gained:  -7<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Travis Etienne run for a loss of 2 yards to the Clem 25<br />O_drive_number: 8", "Offense_play_count: 46<br />Extra_yards_gained:  -5<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Adam Choice run for no gain to the Alab 38<br />O_drive_number: 8", "Offense_play_count: 50<br />Extra_yards_gained:  -2<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Tavien Feaster run for 3 yds to the Alab 6<br />O_drive_number: 8", "Offense_play_count: 51<br />Extra_yards_gained:  -3<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Trevor Lawrence run for 1 yd to the Alab 5<br />O_drive_number: 8", "Offense_play_count: 53<br />Extra_yards_gained:  -6<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Adam Choice run for a loss of 1 yard to the Clem 8<br />O_drive_number: 9", "Offense_play_count: 57<br />Extra_yards_gained:  -3<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Travis Etienne run for 2 yds to the Clem 3<br />O_drive_number: 10", "Offense_play_count: 60<br />Extra_yards_gained:  -3<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Travis Etienne run for 2 yds to the Clem 19<br />O_drive_number: 10", "Offense_play_count: 62<br />Extra_yards_gained:  -1<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Tavien Feaster run for 4 yds to the Alab 39<br />O_drive_number: 10", "Offense_play_count: 65<br />Extra_yards_gained:  -3<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Adam Choice run for 2 yds to the Alab 29<br />O_drive_number: 10", "Offense_play_count: 67<br />Extra_yards_gained:  -1<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Adam Choice run for 4 yds to the Alab 13<br />O_drive_number: 10", "Offense_play_count: 68<br />Extra_yards_gained:  -2<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Adam Choice run for 2 yds to the Alab 11<br />O_drive_number: 10", "Offense_play_count: 69<br />Extra_yards_gained:  -5<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Chase Brice run for a loss of 1 yard to the Alab 12<br />O_drive_number: 10"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(139,26,26,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "circle",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(139,26,26,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Unsuccessful,Rush)",
+      "legendgroup": "(Unsuccessful,Rush)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    }
+  ],
+  layout: {
+    "margin": {
+      "t": 43.2754946727549,
+      "r": 7.30593607305936,
+      "b": 39.6955859969559,
+      "l": 43.1050228310502
+    },
+    "plot_bgcolor": "rgba(229,229,229,1)",
+    "paper_bgcolor": "rgba(255,255,255,1)",
+    "font": {
+      "color": "rgba(0,0,0,1)",
+      "family": "",
+      "size": 14.6118721461187
+    },
+    "title": {
+      "text": "Clemson[44]: Extra yards gained = Yards gained - Yards to success<br> <sup>2018: wk02 vs Alabama[16]<\/sup>",
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 17.5342465753425
+      },
+      "x": 0,
+      "xref": "paper",
+      "xanchor": "left"
+    },
+    "xaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [-2.45, 73.45],
+      "tickmode": "array",
+      "ticktext": ["0", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55", "60", "65", "70"],
+      "tickvals": [4.44089209850063e-16, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70],
+      "categoryorder": "array",
+      "categoryarray": ["0", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55", "60", "65", "70"],
+      "nticks": null,
+      "ticks": "outside",
+      "tickcolor": "rgba(51,51,51,1)",
+      "ticklen": 3.65296803652968,
+      "tickwidth": 0.66417600664176,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "tickangle": -0,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": "rgba(204,204,204,1)",
+      "gridwidth": 0.66417600664176,
+      "zeroline": false,
+      "anchor": "y",
+      "title": {
+        "text": "Offensive play count including penalties",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "yaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [-23.25, 70.25],
+      "tickmode": "array",
+      "ticktext": ["-20", "-15", "-10", "-5", "0", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55", "60", "65", "70"],
+      "tickvals": [-20, -15, -10, -5, 0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70],
+      "categoryorder": "array",
+      "categoryarray": ["-20", "-15", "-10", "-5", "0", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55", "60", "65", "70"],
+      "nticks": null,
+      "ticks": "outside",
+      "tickcolor": "rgba(51,51,51,1)",
+      "ticklen": 3.65296803652968,
+      "tickwidth": 0.66417600664176,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "tickangle": -0,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": "rgba(204,204,204,1)",
+      "gridwidth": 0.66417600664176,
+      "zeroline": false,
+      "anchor": "x",
+      "title": {
+        "text": "Extra yards gained",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "shapes": [
+      {
+        "type": "rect",
+        "fillcolor": null,
+        "line": {
+          "color": null,
+          "width": 0,
+          "linetype": []
+        },
+        "yref": "paper",
+        "xref": "paper",
+        "x0": 0,
+        "x1": 1,
+        "y0": 0,
+        "y1": 1
+      }
+    ],
+    "showlegend": true,
+    "legend": {
+      "bgcolor": "rgba(255,255,255,1)",
+      "bordercolor": "transparent",
+      "borderwidth": 1.88976377952756,
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "title": {
+        "text": "Play type<br />Success/Drive number",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      }
+    },
+    "hovermode": "closest",
+    "barmode": "relative"
+  },
+  config: {
+    "doubleClick": "reset",
+    "modeBarButtonsToAdd": ["hoverclosest", "hovercompare"],
+    "showSendToCloud": false
+  },
+  source: "A",
+  attrs: {
+    "2f18458f2f69": {
+      "xmin": {},
+      "xmax": {},
+      "ymin": {},
+      "ymax": {},
+      "type": "scatter"
+    },
+    "2f182f61756a": {
+      "xmin": {},
+      "xmax": {},
+      "ymin": {},
+      "ymax": {}
+    },
+    "2f1824a1395": {
+      "yintercept": {}
+    },
+    "2f1846363cb7": {
+      "xintercept": {}
+    },
+    "2f185c082a25": {
+      "x": {},
+      "y": {},
+      "colour": {}
+    },
+    "2f182b1c5081": {
+      "x": {},
+      "y": {},
+      "shape": {},
+      "colour": {},
+      "label": {}
+    }
+  },
+  cur_data: "2f18458f2f69",
+  visdat: {
+    "2f18458f2f69": ["function (y) ", "x"],
+    "2f182f61756a": ["function (y) ", "x"],
+    "2f1824a1395": ["function (y) ", "x"],
+    "2f1846363cb7": ["function (y) ", "x"],
+    "2f185c082a25": ["function (y) ", "x"],
+    "2f182b1c5081": ["function (y) ", "x"]
+  },
+  highlight: {
+    "on": "plotly_click",
+    "persistent": false,
+    "dynamic": false,
+    "selectize": false,
+    "opacityDim": 0.2,
+    "selected": {
+      "opacity": 1
+    },
+    "debounce": 0
+  },
+  shinyEvents: ["plotly_hover", "plotly_click", "plotly_selected", "plotly_relayout", "plotly_brushed", "plotly_brushing", "plotly_clickannotation", "plotly_doubleclick", "plotly_deselect", "plotly_afterplot", "plotly_sunburstclick"],
+  base_url: "https://plot.ly"
+}

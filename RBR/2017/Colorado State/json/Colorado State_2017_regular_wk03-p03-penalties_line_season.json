@@ -1,0 +1,331 @@
+{
+  data: [
+    {
+      "x": [0.9, 3.1],
+      "y": [10.3333333333333, 10.3333333333333],
+      "text": "yintercept: 10.33333",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 3.77952755905512,
+        "color": "rgba(200,195,114,1)",
+        "dash": "dashdot"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [0.9, 3.1],
+      "y": [9.66666666666667, 9.66666666666667],
+      "text": "yintercept: 9.666667",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 3.77952755905512,
+        "color": "rgba(30,77,43,1)",
+        "dash": "dash"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 2, 3],
+      "y": [20, 8, 3],
+      "text": ["Game_number: 1<br />Opponent: Colorado<br />Penalty_all_count_nona: 20", "Game_number: 2<br />Opponent: Abilene Christian<br />Penalty_all_count_nona:  8", "Game_number: 3<br />Opponent: Alabama<br />Penalty_all_count_nona:  3"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(200,195,114,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 2, 3],
+      "y": [20, 8, 3],
+      "text": ["Game_number: 1<br />Opponent: Colorado<br />Penalty_all_count: 20", "Game_number: 2<br />Opponent: Abilene Christian<br />Penalty_all_count:  8", "Game_number: 3<br />Opponent: Alabama<br />Penalty_all_count:  3"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(200,195,114,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "circle",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(200,195,114,1)"
+        }
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 2, 3],
+      "y": [18, 8, 3],
+      "text": ["Game_number: 1<br />Opponent: Colorado<br />Penalty_enforced_count_nona: 18", "Game_number: 2<br />Opponent: Abilene Christian<br />Penalty_enforced_count_nona:  8", "Game_number: 3<br />Opponent: Alabama<br />Penalty_enforced_count_nona:  3"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(30,77,43,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 2, 3],
+      "y": [18, 8, 3],
+      "text": ["Game_number: 1<br />Opponent: Colorado<br />Penalty_enforced_count: 18", "Game_number: 2<br />Opponent: Abilene Christian<br />Penalty_enforced_count:  8", "Game_number: 3<br />Opponent: Alabama<br />Penalty_enforced_count:  3"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(30,77,43,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "circle",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(30,77,43,1)"
+        }
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "visible": false,
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    }
+  ],
+  layout: {
+    "margin": {
+      "t": 43.2754946727549,
+      "r": 7.30593607305936,
+      "b": 39.6955859969559,
+      "l": 37.2602739726027
+    },
+    "plot_bgcolor": "rgba(235,235,235,1)",
+    "paper_bgcolor": "rgba(255,255,255,1)",
+    "font": {
+      "color": "rgba(0,0,0,1)",
+      "family": "",
+      "size": 14.6118721461187
+    },
+    "title": {
+      "text": "Colorado State penalties for 2017; Average: enforced = 9.67 (primary team color), all = 10.33 (secondary team color)<br> <sup><\/sup>",
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 17.5342465753425
+      },
+      "x": 0,
+      "xref": "paper",
+      "xanchor": "left"
+    },
+    "xaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [0.9, 3.1],
+      "tickmode": "array",
+      "ticktext": ["Colorado", "Abilene Christian", "Alabama"],
+      "tickvals": [1, 2, 3],
+      "categoryorder": "array",
+      "categoryarray": ["Colorado", "Abilene Christian", "Alabama"],
+      "nticks": null,
+      "ticks": "outside",
+      "tickcolor": "rgba(51,51,51,1)",
+      "ticklen": 3.65296803652968,
+      "tickwidth": 0.66417600664176,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "tickangle": -0,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": "rgba(255,255,255,1)",
+      "gridwidth": 0.66417600664176,
+      "zeroline": false,
+      "anchor": "y",
+      "title": {
+        "text": "Opponent",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "yaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [-1, 21],
+      "tickmode": "array",
+      "ticktext": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"],
+      "tickvals": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
+      "categoryorder": "array",
+      "categoryarray": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"],
+      "nticks": null,
+      "ticks": "outside",
+      "tickcolor": "rgba(51,51,51,1)",
+      "ticklen": 3.65296803652968,
+      "tickwidth": 0.66417600664176,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "tickangle": -0,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": "rgba(255,255,255,1)",
+      "gridwidth": 0.66417600664176,
+      "zeroline": false,
+      "anchor": "x",
+      "title": {
+        "text": "Penalty Count: all (dotdashed line), enforced (dashed line)",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "shapes": [
+      {
+        "type": "rect",
+        "fillcolor": null,
+        "line": {
+          "color": null,
+          "width": 0,
+          "linetype": []
+        },
+        "yref": "paper",
+        "xref": "paper",
+        "x0": 0,
+        "x1": 1,
+        "y0": 0,
+        "y1": 1
+      }
+    ],
+    "showlegend": false,
+    "legend": {
+      "bgcolor": "rgba(255,255,255,1)",
+      "bordercolor": "transparent",
+      "borderwidth": 1.88976377952756,
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 11.689497716895
+      }
+    },
+    "hovermode": "closest",
+    "barmode": "relative"
+  },
+  config: {
+    "doubleClick": "reset",
+    "modeBarButtonsToAdd": ["hoverclosest", "hovercompare"],
+    "showSendToCloud": false
+  },
+  source: "A",
+  attrs: {
+    "2f18197a3a7d": {
+      "yintercept": {},
+      "type": "scatter"
+    },
+    "2f1819706918": {
+      "yintercept": {}
+    },
+    "2f1845f63c00": {
+      "x": {},
+      "label": {},
+      "y": {}
+    },
+    "2f1814fe6dd1": {
+      "x": {},
+      "label": {},
+      "y": {}
+    },
+    "2f18bb2336c": {
+      "x": {},
+      "label": {},
+      "y": {}
+    },
+    "2f18554c59e0": {
+      "x": {},
+      "label": {},
+      "y": {}
+    },
+    "2f1879bd3056": {
+      "y": {}
+    }
+  },
+  cur_data: "2f18197a3a7d",
+  visdat: {
+    "2f18197a3a7d": ["function (y) ", "x"],
+    "2f1819706918": ["function (y) ", "x"],
+    "2f1845f63c00": ["function (y) ", "x"],
+    "2f1814fe6dd1": ["function (y) ", "x"],
+    "2f18bb2336c": ["function (y) ", "x"],
+    "2f18554c59e0": ["function (y) ", "x"],
+    "2f1879bd3056": ["function (y) ", "x"]
+  },
+  highlight: {
+    "on": "plotly_click",
+    "persistent": false,
+    "dynamic": false,
+    "selectize": false,
+    "opacityDim": 0.2,
+    "selected": {
+      "opacity": 1
+    },
+    "debounce": 0
+  },
+  shinyEvents: ["plotly_hover", "plotly_click", "plotly_selected", "plotly_relayout", "plotly_brushed", "plotly_brushing", "plotly_clickannotation", "plotly_doubleclick", "plotly_deselect", "plotly_afterplot", "plotly_sunburstclick"],
+  base_url: "https://plot.ly"
+}

@@ -1,0 +1,816 @@
+{
+  data: [
+    {
+      "x": [null, null, null, null, null],
+      "y": [15, null, null, 15, 15],
+      "text": "",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "transparent",
+        "dash": "solid"
+      },
+      "fill": "toself",
+      "fillcolor": "rgba(255,48,48,0.2)",
+      "hoveron": "fills",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [null, null, null, null, null],
+      "y": [null, 0, 0, null, null],
+      "text": "",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "transparent",
+        "dash": "solid"
+      },
+      "fill": "toself",
+      "fillcolor": "rgba(153,153,153,0.5)",
+      "hoveron": "fills",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [-2.85, 81.85],
+      "y": [0, 0],
+      "text": "yintercept: 0",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(0,0,0,0.2)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [45.5, 45.5],
+      "y": [-15.1, 53.1],
+      "text": "xintercept: 45.5",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(0,0,0,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [21.5, 21.5, null, 60.5, 60.5],
+      "y": [-15.1, 53.1, null, -15.1, 53.1],
+      "text": ["xintercept: 21.5", "xintercept: 21.5", null, "xintercept: 60.5", "xintercept: 60.5"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(0,0,0,1)",
+        "dash": "dash"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 1, null, 8, 8, null, 16, 16, null, 21, 21, null, 30, 30, null, 46, 46, null, 55, 55, null, 65, 65, null, 70, 70],
+      "y": [0, 49.75, null, 0, 8.75, null, 0, 5.75, null, 0, 8.75, null, 0, 1.75, null, 0, 6.75, null, 0, -11.75, null, 0, 1.75, null, 0, 10.75],
+      "text": ["Offense_play_count:  1<br />y0: 0<br />Offense_play_count:  1<br />Yards_gained:  49.75", "Offense_play_count:  1<br />y0: 0<br />Offense_play_count:  1<br />Yards_gained:  49.75", null, "Offense_play_count:  8<br />y0: 0<br />Offense_play_count:  8<br />Yards_gained:   8.75", "Offense_play_count:  8<br />y0: 0<br />Offense_play_count:  8<br />Yards_gained:   8.75", null, "Offense_play_count: 16<br />y0: 0<br />Offense_play_count: 16<br />Yards_gained:   5.75", "Offense_play_count: 16<br />y0: 0<br />Offense_play_count: 16<br />Yards_gained:   5.75", null, "Offense_play_count: 21<br />y0: 0<br />Offense_play_count: 21<br />Yards_gained:   8.75", "Offense_play_count: 21<br />y0: 0<br />Offense_play_count: 21<br />Yards_gained:   8.75", null, "Offense_play_count: 30<br />y0: 0<br />Offense_play_count: 30<br />Yards_gained:   1.75", "Offense_play_count: 30<br />y0: 0<br />Offense_play_count: 30<br />Yards_gained:   1.75", null, "Offense_play_count: 46<br />y0: 0<br />Offense_play_count: 46<br />Yards_gained:   6.75", "Offense_play_count: 46<br />y0: 0<br />Offense_play_count: 46<br />Yards_gained:   6.75", null, "Offense_play_count: 55<br />y0: 0<br />Offense_play_count: 55<br />Yards_gained: -11.75", "Offense_play_count: 55<br />y0: 0<br />Offense_play_count: 55<br />Yards_gained: -11.75", null, "Offense_play_count: 65<br />y0: 0<br />Offense_play_count: 65<br />Yards_gained:   1.75", "Offense_play_count: 65<br />y0: 0<br />Offense_play_count: 65<br />Yards_gained:   1.75", null, "Offense_play_count: 70<br />y0: 0<br />Offense_play_count: 70<br />Yards_gained:  10.75", "Offense_play_count: 70<br />y0: 0<br />Offense_play_count: 70<br />Yards_gained:  10.75"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 3.77952755905512,
+        "color": "rgba(0,0,0,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 2, 3, 4, 5, 6, 7],
+      "y": [50, 1, 4, 15, 4, 0, 1],
+      "text": ["Offense_play_count:  1<br />Yards_gained:  50<br />factor(O_drive_number): 1", "Offense_play_count:  2<br />Yards_gained:   1<br />factor(O_drive_number): 1", "Offense_play_count:  3<br />Yards_gained:   4<br />factor(O_drive_number): 1", "Offense_play_count:  4<br />Yards_gained:  15<br />factor(O_drive_number): 1", "Offense_play_count:  5<br />Yards_gained:   4<br />factor(O_drive_number): 1", "Offense_play_count:  6<br />Yards_gained:   0<br />factor(O_drive_number): 1", "Offense_play_count:  7<br />Yards_gained:   1<br />factor(O_drive_number): 1"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 3.77952755905512,
+        "color": "rgba(158,27,50,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "1",
+      "legendgroup": "1",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [8, 9, 10, 11, 12, 13, 14, 15],
+      "y": [9, 1, 7, 13, 11, 6, -2, 10],
+      "text": ["Offense_play_count:  8<br />Yards_gained:   9<br />factor(O_drive_number): 2", "Offense_play_count:  9<br />Yards_gained:   1<br />factor(O_drive_number): 2", "Offense_play_count: 10<br />Yards_gained:   7<br />factor(O_drive_number): 2", "Offense_play_count: 11<br />Yards_gained:  13<br />factor(O_drive_number): 2", "Offense_play_count: 12<br />Yards_gained:  11<br />factor(O_drive_number): 2", "Offense_play_count: 13<br />Yards_gained:   6<br />factor(O_drive_number): 2", "Offense_play_count: 14<br />Yards_gained:  -2<br />factor(O_drive_number): 2", "Offense_play_count: 15<br />Yards_gained:  10<br />factor(O_drive_number): 2"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 3.77952755905512,
+        "color": "rgba(130,138,143,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(2,1)",
+      "legendgroup": "(2,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [16, 17, 18, 19, 20],
+      "y": [6, 40, 10, 4, 1],
+      "text": ["Offense_play_count: 16<br />Yards_gained:   6<br />factor(O_drive_number): 3", "Offense_play_count: 17<br />Yards_gained:  40<br />factor(O_drive_number): 3", "Offense_play_count: 18<br />Yards_gained:  10<br />factor(O_drive_number): 3", "Offense_play_count: 19<br />Yards_gained:   4<br />factor(O_drive_number): 3", "Offense_play_count: 20<br />Yards_gained:   1<br />factor(O_drive_number): 3"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 3.77952755905512,
+        "color": "rgba(158,27,50,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(3,1)",
+      "legendgroup": "(3,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [21, 22, 23, 24, 25],
+      "y": [9, 8, 0, 4, 27],
+      "text": ["Offense_play_count: 21<br />Yards_gained:   9<br />factor(O_drive_number): 4", "Offense_play_count: 22<br />Yards_gained:   8<br />factor(O_drive_number): 4", "Offense_play_count: 23<br />Yards_gained:   0<br />factor(O_drive_number): 4", "Offense_play_count: 24<br />Yards_gained:   4<br />factor(O_drive_number): 4", "Offense_play_count: 25<br />Yards_gained:  27<br />factor(O_drive_number): 4"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 3.77952755905512,
+        "color": "rgba(130,138,143,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(4,1)",
+      "legendgroup": "(4,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [26, 27, 28, 29],
+      "y": [0, 0, 0, 5],
+      "text": ["Offense_play_count: 26<br />Yards_gained:   0<br />factor(O_drive_number): 5", "Offense_play_count: 27<br />Yards_gained:   0<br />factor(O_drive_number): 5", "Offense_play_count: 28<br />Yards_gained:   0<br />factor(O_drive_number): 5", "Offense_play_count: 29<br />Yards_gained:   5<br />factor(O_drive_number): 5"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 3.77952755905512,
+        "color": "rgba(158,27,50,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(5,1)",
+      "legendgroup": "(5,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
+      "y": [2, 9, 7, -10, 12, 7, 11, 9, 4, 5, 4, -4, -5, 9, -5, 38],
+      "text": ["Offense_play_count: 30<br />Yards_gained:   2<br />factor(O_drive_number): 6", "Offense_play_count: 31<br />Yards_gained:   9<br />factor(O_drive_number): 6", "Offense_play_count: 32<br />Yards_gained:   7<br />factor(O_drive_number): 6", "Offense_play_count: 33<br />Yards_gained: -10<br />factor(O_drive_number): 6", "Offense_play_count: 34<br />Yards_gained:  12<br />factor(O_drive_number): 6", "Offense_play_count: 35<br />Yards_gained:   7<br />factor(O_drive_number): 6", "Offense_play_count: 36<br />Yards_gained:  11<br />factor(O_drive_number): 6", "Offense_play_count: 37<br />Yards_gained:   9<br />factor(O_drive_number): 6", "Offense_play_count: 38<br />Yards_gained:   4<br />factor(O_drive_number): 6", "Offense_play_count: 39<br />Yards_gained:   5<br />factor(O_drive_number): 6", "Offense_play_count: 40<br />Yards_gained:   4<br />factor(O_drive_number): 6", "Offense_play_count: 41<br />Yards_gained:  -4<br />factor(O_drive_number): 6", "Offense_play_count: 42<br />Yards_gained:  -5<br />factor(O_drive_number): 6", "Offense_play_count: 43<br />Yards_gained:   9<br />factor(O_drive_number): 6", "Offense_play_count: 44<br />Yards_gained:  -5<br />factor(O_drive_number): 6", "Offense_play_count: 45<br />Yards_gained:  38<br />factor(O_drive_number): 6"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 3.77952755905512,
+        "color": "rgba(130,138,143,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(6,1)",
+      "legendgroup": "(6,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [46, 47, 48, 49, 50, 51, 52, 53, 54],
+      "y": [7, 2, 6, 4, 9, -6, 6, 0, 0],
+      "text": ["Offense_play_count: 46<br />Yards_gained:   7<br />factor(O_drive_number): 7", "Offense_play_count: 47<br />Yards_gained:   2<br />factor(O_drive_number): 7", "Offense_play_count: 48<br />Yards_gained:   6<br />factor(O_drive_number): 7", "Offense_play_count: 49<br />Yards_gained:   4<br />factor(O_drive_number): 7", "Offense_play_count: 50<br />Yards_gained:   9<br />factor(O_drive_number): 7", "Offense_play_count: 51<br />Yards_gained:  -6<br />factor(O_drive_number): 7", "Offense_play_count: 52<br />Yards_gained:   6<br />factor(O_drive_number): 7", "Offense_play_count: 53<br />Yards_gained:   0<br />factor(O_drive_number): 7", "Offense_play_count: 54<br />Yards_gained:   0<br />factor(O_drive_number): 7"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 3.77952755905512,
+        "color": "rgba(158,27,50,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(7,1)",
+      "legendgroup": "(7,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [55, 56, 57, 58, 59, 60, 61, 62, 63, 64],
+      "y": [-12, 7, 4, 4, 16, 6, 21, 10, 9, 10],
+      "text": ["Offense_play_count: 55<br />Yards_gained: -12<br />factor(O_drive_number): 8", "Offense_play_count: 56<br />Yards_gained:   7<br />factor(O_drive_number): 8", "Offense_play_count: 57<br />Yards_gained:   4<br />factor(O_drive_number): 8", "Offense_play_count: 58<br />Yards_gained:   4<br />factor(O_drive_number): 8", "Offense_play_count: 59<br />Yards_gained:  16<br />factor(O_drive_number): 8", "Offense_play_count: 60<br />Yards_gained:   6<br />factor(O_drive_number): 8", "Offense_play_count: 61<br />Yards_gained:  21<br />factor(O_drive_number): 8", "Offense_play_count: 62<br />Yards_gained:  10<br />factor(O_drive_number): 8", "Offense_play_count: 63<br />Yards_gained:   9<br />factor(O_drive_number): 8", "Offense_play_count: 64<br />Yards_gained:  10<br />factor(O_drive_number): 8"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 3.77952755905512,
+        "color": "rgba(130,138,143,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(8,1)",
+      "legendgroup": "(8,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [65, 66, 67, 68, 69],
+      "y": [2, 16, 13, 2, 13],
+      "text": ["Offense_play_count: 65<br />Yards_gained:   2<br />factor(O_drive_number): 9", "Offense_play_count: 66<br />Yards_gained:  16<br />factor(O_drive_number): 9", "Offense_play_count: 67<br />Yards_gained:  13<br />factor(O_drive_number): 9", "Offense_play_count: 68<br />Yards_gained:   2<br />factor(O_drive_number): 9", "Offense_play_count: 69<br />Yards_gained:  13<br />factor(O_drive_number): 9"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 3.77952755905512,
+        "color": "rgba(158,27,50,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(9,1)",
+      "legendgroup": "(9,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [70, 71, 72, 73, 74, 75, 76, 77, 78],
+      "y": [11, 5, 2, 4, 2, 10, 19, -2, -2],
+      "text": ["Offense_play_count: 70<br />Yards_gained:  11<br />factor(O_drive_number): 10", "Offense_play_count: 71<br />Yards_gained:   5<br />factor(O_drive_number): 10", "Offense_play_count: 72<br />Yards_gained:   2<br />factor(O_drive_number): 10", "Offense_play_count: 73<br />Yards_gained:   4<br />factor(O_drive_number): 10", "Offense_play_count: 74<br />Yards_gained:   2<br />factor(O_drive_number): 10", "Offense_play_count: 75<br />Yards_gained:  10<br />factor(O_drive_number): 10", "Offense_play_count: 76<br />Yards_gained:  19<br />factor(O_drive_number): 10", "Offense_play_count: 77<br />Yards_gained:  -2<br />factor(O_drive_number): 10", "Offense_play_count: 78<br />Yards_gained:  -2<br />factor(O_drive_number): 10"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 3.77952755905512,
+        "color": "rgba(130,138,143,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(10,1)",
+      "legendgroup": "(10,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [45],
+      "y": [38],
+      "text": "Offense_play_count: 45<br />Yards_gained:  38<br />Play_type: Field Goal Good<br />Success: Field Goal<br />Play_text: Joseph Bulovas 38 Yd Field Goal <br />O_drive_number: 6",
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(127,127,127,1)",
+        "opacity": 1,
+        "size": 15.1181102362205,
+        "symbol": "square-cross-open",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(127,127,127,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Field Goal,Field Goal Good)",
+      "legendgroup": "(Field Goal,Field Goal Good)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [33, 41, 42, 44, 55],
+      "y": [-10, -4, -5, -5, -12],
+      "text": ["Offense_play_count: 33<br />Yards_gained: -10<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: Jacobs, Josh rush for 12 yards to the OKLAHOMA45, PENALTY ALABAMA holding (Wills Jr., Jedrick) 10 yards to the ALABAMA33, NO PLAY.<br />O_drive_number: 6", "Offense_play_count: 41<br />Yards_gained:  -4<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: ALABAMA Penalty, False Start (Jedrick Wills Jr.) to the Okla 19<br />O_drive_number: 6", "Offense_play_count: 42<br />Yards_gained:  -5<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: ALABAMA Penalty, Illegal Formation (Jedrick Wills Jr.) to the Okla 24<br />O_drive_number: 6", "Offense_play_count: 44<br />Yards_gained:  -5<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: ALABAMA Penalty, False Start (Damien Harris) to the Okla 20<br />O_drive_number: 6", "Offense_play_count: 55<br />Yards_gained: -12<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: ALABAMA Penalty, Personal Foul (-12 Yards) to the Alab 13<br />O_drive_number: 8"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(255,0,255,1)",
+        "opacity": 1,
+        "size": 15.1181102362205,
+        "symbol": "hexagram-open",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(255,0,255,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "Penalty",
+      "legendgroup": "Penalty",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [29, 54],
+      "y": [5, 0],
+      "text": ["Offense_play_count: 29<br />Yards_gained:   5<br />Play_type: Punt<br />Success: Punt<br />Play_text: Mike Bernier punt for 34 yds , CeeDee Lamb returns for 5 yds to the 50 yard line<br />O_drive_number: 5", "Offense_play_count: 54<br />Yards_gained:   0<br />Play_type: Punt<br />Success: Punt<br />Play_text: Mike Bernier punt for 22 yds, punt out-of-bounds at the Okla 25<br />O_drive_number: 7"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(127,127,127,1)",
+        "opacity": 1,
+        "size": 15.1181102362205,
+        "symbol": "diamond",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(127,127,127,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "Punt",
+      "legendgroup": "Punt",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 4, 8, 11, 12, 17, 18, 21, 34, 36, 37, 38, 40, 57, 59, 61, 63, 67],
+      "y": [50, 15, 9, 13, 11, 40, 10, 9, 12, 11, 9, 4, 4, 4, 16, 21, 9, 13],
+      "text": ["Offense_play_count:  1<br />Yards_gained:  50<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Tua Tagovailoa pass complete to DeVonta Smith for 50 yds to the Okla 25 for a 1ST down<br />O_drive_number: 1", "Offense_play_count:  4<br />Yards_gained:  15<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Tua Tagovailoa pass complete to Damien Harris for 15 yds to the Okla 5 for a 1ST down<br />O_drive_number: 1", "Offense_play_count:  8<br />Yards_gained:   9<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Tua Tagovailoa pass complete to DeVonta Smith for 9 yds to the Okla 46<br />O_drive_number: 2", "Offense_play_count: 11<br />Yards_gained:  13<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Tua Tagovailoa pass complete to Irv Smith Jr. for 13 yds to the Okla 25 for a 1ST down<br />O_drive_number: 2", "Offense_play_count: 12<br />Yards_gained:  11<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Tua Tagovailoa pass complete to Josh Jacobs for 11 yds to the Okla 14 for a 1ST down<br />O_drive_number: 2", "Offense_play_count: 17<br />Yards_gained:  40<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Tua Tagovailoa pass complete to Jerry Jeudy for 40 yds to the Okla 15 for a 1ST down<br />O_drive_number: 3", "Offense_play_count: 18<br />Yards_gained:  10<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Jalen Hurts pass complete to Damien Harris for 10 yds to the Okla 5 for a 1ST down<br />O_drive_number: 3", "Offense_play_count: 21<br />Yards_gained:   9<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Tua Tagovailoa pass complete to Jalen Hurts for 9 yds to the Okla 39<br />O_drive_number: 4", "Offense_play_count: 34<br />Yards_gained:  12<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Tua Tagovailoa pass complete to DeVonta Smith for 12 yds to the Alab 45<br />O_drive_number: 6", "Offense_play_count: 36<br />Yards_gained:  11<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Tua Tagovailoa pass complete to Jaylen Waddle for 11 yds to the Okla 37 for a 1ST down<br />O_drive_number: 6", "Offense_play_count: 37<br />Yards_gained:   9<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Tua Tagovailoa pass complete to Josh Jacobs for 9 yds to the Okla 28<br />O_drive_number: 6", "Offense_play_count: 38<br />Yards_gained:   4<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Tua Tagovailoa pass complete to Jerry Jeudy for 4 yds to the Okla 24 for a 1ST down<br />O_drive_number: 6", "Offense_play_count: 40<br />Yards_gained:   4<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Tua Tagovailoa pass complete to Najee Harris for 4 yds to the Okla 15<br />O_drive_number: 6", "Offense_play_count: 57<br />Yards_gained:   4<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Tua Tagovailoa pass complete to Henry Ruggs III for 4 yds to the Alab 24 for a 1ST down<br />O_drive_number: 8", "Offense_play_count: 59<br />Yards_gained:  16<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Tua Tagovailoa pass complete to Jerry Jeudy for 16 yds to the Alab 44 for a 1ST down<br />O_drive_number: 8", "Offense_play_count: 61<br />Yards_gained:  21<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Tua Tagovailoa pass complete to DeVonta Smith for 21 yds to the Okla 29 for a 1ST down<br />O_drive_number: 8", "Offense_play_count: 63<br />Yards_gained:   9<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Tua Tagovailoa pass complete to Jaylen Waddle for 9 yds to the Okla 10<br />O_drive_number: 8", "Offense_play_count: 67<br />Yards_gained:  13<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Tua Tagovailoa pass complete to Josh Jacobs for 13 yds to the Okla 15 for a 1ST down<br />O_drive_number: 9"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,100,0,1)",
+        "opacity": 1,
+        "size": 15.1181102362205,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(0,100,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Successful,Pass Reception)",
+      "legendgroup": "(Successful,Pass Reception)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [15, 25, 64, 69],
+      "y": [10, 27, 10, 13],
+      "text": ["Offense_play_count: 15<br />Yards_gained:  10<br />Play_type: Passing Touchdown<br />Success: Successful<br />Play_text: Henry Ruggs III 10 Yd pass from Tua Tagovailoa (Joseph Bulovas Kick)<br />O_drive_number: 2", "Offense_play_count: 25<br />Yards_gained:  27<br />Play_type: Passing Touchdown<br />Success: Successful<br />Play_text: Josh Jacobs 27 Yd pass from Tua Tagovailoa (Joseph Bulovas Kick)<br />O_drive_number: 4", "Offense_play_count: 64<br />Yards_gained:  10<br />Play_type: Passing Touchdown<br />Success: Successful<br />Play_text: DeVonta Smith 10 Yd pass from Tua Tagovailoa (Joseph Bulovas Kick)<br />O_drive_number: 8", "Offense_play_count: 69<br />Yards_gained:  13<br />Play_type: Passing Touchdown<br />Success: Successful<br />Play_text: Jerry Jeudy 13 Yd pass from Tua Tagovailoa (Joseph Bulovas Kick)<br />O_drive_number: 9"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,100,0,1)",
+        "opacity": 1,
+        "size": 15.1181102362205,
+        "symbol": "square-open-dot",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(0,100,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Successful,Passing Touchdown)",
+      "legendgroup": "(Successful,Passing Touchdown)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [5, 9, 10, 13, 16, 19, 22, 31, 32, 35, 39, 46, 48, 50, 56, 60, 62, 66, 70, 71, 73, 75, 76],
+      "y": [4, 1, 7, 6, 6, 4, 8, 9, 7, 7, 5, 7, 6, 9, 7, 6, 10, 16, 11, 5, 4, 10, 19],
+      "text": ["Offense_play_count:  5<br />Yards_gained:   4<br />Play_type: Rush<br />Success: Successful<br />Play_text: Damien Harris run for 4 yds to the Okla 1<br />O_drive_number: 1", "Offense_play_count:  9<br />Yards_gained:   1<br />Play_type: Rush<br />Success: Successful<br />Play_text: Josh Jacobs run for 1 yd to the Okla 45 for a 1ST down<br />O_drive_number: 2", "Offense_play_count: 10<br />Yards_gained:   7<br />Play_type: Rush<br />Success: Successful<br />Play_text: Josh Jacobs run for 7 yds to the Okla 38<br />O_drive_number: 2", "Offense_play_count: 13<br />Yards_gained:   6<br />Play_type: Rush<br />Success: Successful<br />Play_text: Najee Harris run for 6 yds to the Okla 8<br />O_drive_number: 2", "Offense_play_count: 16<br />Yards_gained:   6<br />Play_type: Rush<br />Success: Successful<br />Play_text: Najee Harris run for 6 yds to the Alab 45<br />O_drive_number: 3", "Offense_play_count: 19<br />Yards_gained:   4<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jalen Hurts run for 4 yds to the Okla 1<br />O_drive_number: 3", "Offense_play_count: 22<br />Yards_gained:   8<br />Play_type: Rush<br />Success: Successful<br />Play_text: Josh Jacobs run for 8 yds to the Okla 31 for a 1ST down<br />O_drive_number: 4", "Offense_play_count: 31<br />Yards_gained:   9<br />Play_type: Rush<br />Success: Successful<br />Play_text: Josh Jacobs run for 9 yds to the Alab 36 for a 1ST down<br />O_drive_number: 6", "Offense_play_count: 32<br />Yards_gained:   7<br />Play_type: Rush<br />Success: Successful<br />Play_text: Josh Jacobs run for 7 yds to the Alab 43<br />O_drive_number: 6", "Offense_play_count: 35<br />Yards_gained:   7<br />Play_type: Rush<br />Success: Successful<br />Play_text: Josh Jacobs run for 7 yds to the Okla 48 for a 1ST down<br />O_drive_number: 6", "Offense_play_count: 39<br />Yards_gained:   5<br />Play_type: Rush<br />Success: Successful<br />Play_text: Najee Harris run for 5 yds to the Okla 19<br />O_drive_number: 6", "Offense_play_count: 46<br />Yards_gained:   7<br />Play_type: Rush<br />Success: Successful<br />Play_text: Josh Jacobs run for 7 yds to the Alab 32<br />O_drive_number: 7", "Offense_play_count: 48<br />Yards_gained:   6<br />Play_type: Rush<br />Success: Successful<br />Play_text: Josh Jacobs run for 6 yds to the Alab 40 for a 1ST down<br />O_drive_number: 7", "Offense_play_count: 50<br />Yards_gained:   9<br />Play_type: Rush<br />Success: Successful<br />Play_text: Josh Jacobs run for 9 yds to the Okla 47 for a 1ST down<br />O_drive_number: 7", "Offense_play_count: 56<br />Yards_gained:   7<br />Play_type: Rush<br />Success: Successful<br />Play_text: Damien Harris run for 7 yds to the Alab 20<br />O_drive_number: 8", "Offense_play_count: 60<br />Yards_gained:   6<br />Play_type: Rush<br />Success: Successful<br />Play_text: Damien Harris run for 6 yds to the 50 yard line<br />O_drive_number: 8", "Offense_play_count: 62<br />Yards_gained:  10<br />Play_type: Rush<br />Success: Successful<br />Play_text: Najee Harris run for 10 yds to the Okla 19 for a 1ST down<br />O_drive_number: 8", "Offense_play_count: 66<br />Yards_gained:  16<br />Play_type: Rush<br />Success: Successful<br />Play_text: Najee Harris run for 16 yds to the Okla 28 for a 1ST down<br />O_drive_number: 9", "Offense_play_count: 70<br />Yards_gained:  11<br />Play_type: Rush<br />Success: Successful<br />Play_text: Damien Harris run for 11 yds to the Okla 48 for a 1ST down<br />O_drive_number: 10", "Offense_play_count: 71<br />Yards_gained:   5<br />Play_type: Rush<br />Success: Successful<br />Play_text: Damien Harris run for 5 yds to the Okla 43<br />O_drive_number: 10", "Offense_play_count: 73<br />Yards_gained:   4<br />Play_type: Rush<br />Success: Successful<br />Play_text: Tua Tagovailoa run for 4 yds to the Okla 37 for a 1ST down<br />O_drive_number: 10", "Offense_play_count: 75<br />Yards_gained:  10<br />Play_type: Rush<br />Success: Successful<br />Play_text: Josh Jacobs run for 10 yds to the Okla 25 for a 1ST down<br />O_drive_number: 10", "Offense_play_count: 76<br />Yards_gained:  19<br />Play_type: Rush<br />Success: Successful<br />Play_text: Josh Jacobs run for 19 yds to the Okla 6 for a 1ST down<br />O_drive_number: 10"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,100,0,1)",
+        "opacity": 1,
+        "size": 15.1181102362205,
+        "symbol": "circle",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(0,100,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Successful,Rush)",
+      "legendgroup": "(Successful,Rush)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [7, 20],
+      "y": [1, 1],
+      "text": ["Offense_play_count:  7<br />Yards_gained:   1<br />Play_type: Rushing Touchdown<br />Success: Successful<br />Play_text: Damien Harris 1 Yd Run (Joseph Bulovas Kick)<br />O_drive_number: 1", "Offense_play_count: 20<br />Yards_gained:   1<br />Play_type: Rushing Touchdown<br />Success: Successful<br />Play_text: Damien Harris 1 Yd Run (Joseph Bulovas Kick)<br />O_drive_number: 3"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,100,0,1)",
+        "opacity": 1,
+        "size": 15.1181102362205,
+        "symbol": "circle-cross-open",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(0,100,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Successful,Rushing Touchdown)",
+      "legendgroup": "(Successful,Rushing Touchdown)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [26, 28, 53],
+      "y": [0, 0, 0],
+      "text": ["Offense_play_count: 26<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Tua Tagovailoa pass incomplete to Jaylen Waddle<br />O_drive_number: 5", "Offense_play_count: 28<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Tua Tagovailoa pass incomplete to DeVonta Smith<br />O_drive_number: 5", "Offense_play_count: 53<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Tua Tagovailoa pass incomplete to Jerry Jeudy<br />O_drive_number: 7"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(139,26,26,1)",
+        "opacity": 1,
+        "size": 15.1181102362205,
+        "symbol": "triangle-up-open",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(139,26,26,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Unsuccessful,Pass Incompletion)",
+      "legendgroup": "(Unsuccessful,Pass Incompletion)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [27, 52, 68],
+      "y": [0, 6, 2],
+      "text": ["Offense_play_count: 27<br />Yards_gained:   0<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Tua Tagovailoa pass complete to Henry Ruggs III for no gain to the Alab 21<br />O_drive_number: 5", "Offense_play_count: 52<br />Yards_gained:   6<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Tua Tagovailoa pass complete to Irv Smith Jr. for 6 yds to the Okla 47<br />O_drive_number: 7", "Offense_play_count: 68<br />Yards_gained:   2<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Tua Tagovailoa pass complete to DeVonta Smith for 2 yds to the Okla 13<br />O_drive_number: 9"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(139,26,26,1)",
+        "opacity": 1,
+        "size": 15.1181102362205,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(139,26,26,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Unsuccessful,Pass Reception)",
+      "legendgroup": "(Unsuccessful,Pass Reception)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2, 3, 6, 23, 24, 30, 43, 47, 49, 51, 58, 65, 72, 74, 77, 78],
+      "y": [1, 4, 0, 0, 4, 2, 9, 2, 4, -6, 4, 2, 2, 2, -2, -2],
+      "text": ["Offense_play_count:  2<br />Yards_gained:   1<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Damien Harris run for 1 yd to the Okla 24<br />O_drive_number: 1", "Offense_play_count:  3<br />Yards_gained:   4<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Damien Harris run for 4 yds to the Okla 20<br />O_drive_number: 1", "Offense_play_count:  6<br />Yards_gained:   0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Damien Harris run for no gain to the Okla 1<br />O_drive_number: 1", "Offense_play_count: 23<br />Yards_gained:   0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Josh Jacobs run for no gain to the Okla 31<br />O_drive_number: 4", "Offense_play_count: 24<br />Yards_gained:   4<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Josh Jacobs run for 4 yds to the Okla 27<br />O_drive_number: 4", "Offense_play_count: 30<br />Yards_gained:   2<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Josh Jacobs run for 2 yds to the Alab 27<br />O_drive_number: 6", "Offense_play_count: 43<br />Yards_gained:   9<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Tua Tagovailoa run for 9 yds to the Okla 15<br />O_drive_number: 6", "Offense_play_count: 47<br />Yards_gained:   2<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Josh Jacobs run for 2 yds to the Alab 34<br />O_drive_number: 7", "Offense_play_count: 49<br />Yards_gained:   4<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Tua Tagovailoa run for 4 yds to the Alab 44<br />O_drive_number: 7", "Offense_play_count: 51<br />Yards_gained:  -6<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Tua Tagovailoa run for a loss of 6 yards to the Alab 47<br />O_drive_number: 7", "Offense_play_count: 58<br />Yards_gained:   4<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Damien Harris run for 4 yds to the Alab 28<br />O_drive_number: 8", "Offense_play_count: 65<br />Yards_gained:   2<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Najee Harris run for 2 yds to the Okla 44<br />O_drive_number: 9", "Offense_play_count: 72<br />Yards_gained:   2<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Damien Harris run for 2 yds to the Okla 41<br />O_drive_number: 10", "Offense_play_count: 74<br />Yards_gained:   2<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Damien Harris run for 2 yds to the Okla 35<br />O_drive_number: 10", "Offense_play_count: 77<br />Yards_gained:  -2<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: TEAM run for a loss of 2 yards to the Okla 8<br />O_drive_number: 10", "Offense_play_count: 78<br />Yards_gained:  -2<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: TEAM run for a loss of 2 yards to the Okla 10<br />O_drive_number: 10"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(139,26,26,1)",
+        "opacity": 1,
+        "size": 15.1181102362205,
+        "symbol": "circle",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(139,26,26,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Unsuccessful,Rush)",
+      "legendgroup": "(Unsuccessful,Rush)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [14],
+      "y": [-2],
+      "text": "Offense_play_count: 14<br />Yards_gained:  -2<br />Play_type: Sack<br />Success: Unsuccessful<br />Play_text: Tua Tagovailoa sacked by Kenneth Murray and Curtis Bolton for a loss of 2 yards to the Okla 10<br />O_drive_number: 2",
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(139,26,26,1)",
+        "opacity": 1,
+        "size": 15.1181102362205,
+        "symbol": "triangle-down-open",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(139,26,26,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Unsuccessful,Sack)",
+      "legendgroup": "(Unsuccessful,Sack)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    }
+  ],
+  layout: {
+    "margin": {
+      "t": 43.2754946727549,
+      "r": 7.30593607305936,
+      "b": 39.6955859969559,
+      "l": 43.1050228310502
+    },
+    "plot_bgcolor": "rgba(229,229,229,1)",
+    "paper_bgcolor": "rgba(255,255,255,1)",
+    "font": {
+      "color": "rgba(0,0,0,1)",
+      "family": "",
+      "size": 14.6118721461187
+    },
+    "title": {
+      "text": "Alabama[45]: Offense drives<br> <sup>2018: wk01 vs Oklahoma[34]<\/sup>",
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 17.5342465753425
+      },
+      "x": 0,
+      "xref": "paper",
+      "xanchor": "left"
+    },
+    "xaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [-2.85, 81.85],
+      "tickmode": "array",
+      "ticktext": ["0", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55", "60", "65", "70", "75", "80"],
+      "tickvals": [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80],
+      "categoryorder": "array",
+      "categoryarray": ["0", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55", "60", "65", "70", "75", "80"],
+      "nticks": null,
+      "ticks": "outside",
+      "tickcolor": "rgba(51,51,51,1)",
+      "ticklen": 3.65296803652968,
+      "tickwidth": 0.66417600664176,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "tickangle": -0,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": "rgba(204,204,204,1)",
+      "gridwidth": 0.66417600664176,
+      "zeroline": false,
+      "anchor": "y",
+      "title": {
+        "text": "Offensive play count including penalties",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "yaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [-15.1, 53.1],
+      "tickmode": "array",
+      "ticktext": ["-15", "-10", "-5", "0", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50"],
+      "tickvals": [-15, -10, -5, 0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50],
+      "categoryorder": "array",
+      "categoryarray": ["-15", "-10", "-5", "0", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50"],
+      "nticks": null,
+      "ticks": "outside",
+      "tickcolor": "rgba(51,51,51,1)",
+      "ticklen": 3.65296803652968,
+      "tickwidth": 0.66417600664176,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "tickangle": -0,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": "rgba(204,204,204,1)",
+      "gridwidth": 0.66417600664176,
+      "zeroline": false,
+      "anchor": "x",
+      "title": {
+        "text": "Yards gained (non-cumulative)",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "shapes": [
+      {
+        "type": "rect",
+        "fillcolor": null,
+        "line": {
+          "color": null,
+          "width": 0,
+          "linetype": []
+        },
+        "yref": "paper",
+        "xref": "paper",
+        "x0": 0,
+        "x1": 1,
+        "y0": 0,
+        "y1": 1
+      }
+    ],
+    "showlegend": true,
+    "legend": {
+      "bgcolor": "rgba(255,255,255,1)",
+      "bordercolor": "transparent",
+      "borderwidth": 1.88976377952756,
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "title": {
+        "text": "Play type<br />Success/Drive number",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      }
+    },
+    "hovermode": "closest",
+    "barmode": "relative"
+  },
+  config: {
+    "doubleClick": "reset",
+    "modeBarButtonsToAdd": ["hoverclosest", "hovercompare"],
+    "showSendToCloud": false
+  },
+  source: "A",
+  attrs: {
+    "2f1871f95641": {
+      "xmin": {},
+      "xmax": {},
+      "ymin": {},
+      "ymax": {},
+      "type": "scatter"
+    },
+    "2f184d386a1e": {
+      "xmin": {},
+      "xmax": {},
+      "ymin": {},
+      "ymax": {}
+    },
+    "2f18f7178fa": {
+      "yintercept": {}
+    },
+    "2f182ebd7407": {
+      "xintercept": {}
+    },
+    "2f18788763e4": {
+      "x": {},
+      "y": {},
+      "xend": {},
+      "yend": {}
+    },
+    "2f1820393287": {
+      "x": {},
+      "y": {},
+      "colour": {}
+    },
+    "2f18644b39bf": {
+      "x": {},
+      "y": {},
+      "shape": {},
+      "colour": {},
+      "label": {}
+    }
+  },
+  cur_data: "2f1871f95641",
+  visdat: {
+    "2f1871f95641": ["function (y) ", "x"],
+    "2f184d386a1e": ["function (y) ", "x"],
+    "2f18f7178fa": ["function (y) ", "x"],
+    "2f182ebd7407": ["function (y) ", "x"],
+    "2f18788763e4": ["function (y) ", "x"],
+    "2f1820393287": ["function (y) ", "x"],
+    "2f18644b39bf": ["function (y) ", "x"]
+  },
+  highlight: {
+    "on": "plotly_click",
+    "persistent": false,
+    "dynamic": false,
+    "selectize": false,
+    "opacityDim": 0.2,
+    "selected": {
+      "opacity": 1
+    },
+    "debounce": 0
+  },
+  shinyEvents: ["plotly_hover", "plotly_click", "plotly_selected", "plotly_relayout", "plotly_brushed", "plotly_brushing", "plotly_clickannotation", "plotly_doubleclick", "plotly_deselect", "plotly_afterplot", "plotly_sunburstclick"],
+  base_url: "https://plot.ly"
+}

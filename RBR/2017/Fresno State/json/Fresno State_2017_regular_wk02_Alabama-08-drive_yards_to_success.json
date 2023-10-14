@@ -1,0 +1,783 @@
+{
+  data: [
+    {
+      "x": [-2.55, 75.55],
+      "y": [0, 0],
+      "text": "yintercept: 0",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(0,0,0,0.2)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [34.5, 34.5],
+      "y": [-1.1, 23.1],
+      "text": "xintercept: 34.5",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(0,0,0,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [15.5, 15.5, null, 49.5, 49.5],
+      "y": [-1.1, 23.1, null, -1.1, 23.1],
+      "text": ["xintercept: 15.5", "xintercept: 15.5", null, "xintercept: 49.5", "xintercept: 49.5"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(0,0,0,1)",
+        "dash": "dash"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 2, 3, 4],
+      "y": [5, 2.8, 3, 3],
+      "text": ["Offense_play_count:  1<br />Yards_to_success:  5.0<br />factor(O_drive_number): 1", "Offense_play_count:  2<br />Yards_to_success:  2.8<br />factor(O_drive_number): 1", "Offense_play_count:  3<br />Yards_to_success:  3.0<br />factor(O_drive_number): 1", "Offense_play_count:  4<br />Yards_to_success:  3.0<br />factor(O_drive_number): 1"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(219,0,50,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "1",
+      "legendgroup": "1",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+      "y": [5, 5, 7, 10, 5, 5, 4.2, 5, 3.5, 1, 1],
+      "text": ["Offense_play_count:  5<br />Yards_to_success:  5.0<br />factor(O_drive_number): 2", "Offense_play_count:  6<br />Yards_to_success:  5.0<br />factor(O_drive_number): 2", "Offense_play_count:  7<br />Yards_to_success:  7.0<br />factor(O_drive_number): 2", "Offense_play_count:  8<br />Yards_to_success: 10.0<br />factor(O_drive_number): 2", "Offense_play_count:  9<br />Yards_to_success:  5.0<br />factor(O_drive_number): 2", "Offense_play_count: 10<br />Yards_to_success:  5.0<br />factor(O_drive_number): 2", "Offense_play_count: 11<br />Yards_to_success:  4.2<br />factor(O_drive_number): 2", "Offense_play_count: 12<br />Yards_to_success:  5.0<br />factor(O_drive_number): 2", "Offense_play_count: 13<br />Yards_to_success:  3.5<br />factor(O_drive_number): 2", "Offense_play_count: 14<br />Yards_to_success:  1.0<br />factor(O_drive_number): 2", "Offense_play_count: 15<br />Yards_to_success:  1.0<br />factor(O_drive_number): 2"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(0,46,109,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(2,1)",
+      "legendgroup": "(2,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [16, 17, 18, 19, 20, 21, 22, 23, 24],
+      "y": [5, 0.7, 5, 7, 3, 5, 6.3, 9, 22],
+      "text": ["Offense_play_count: 16<br />Yards_to_success:  5.0<br />factor(O_drive_number): 3", "Offense_play_count: 17<br />Yards_to_success:  0.7<br />factor(O_drive_number): 3", "Offense_play_count: 18<br />Yards_to_success:  5.0<br />factor(O_drive_number): 3", "Offense_play_count: 19<br />Yards_to_success:  7.0<br />factor(O_drive_number): 3", "Offense_play_count: 20<br />Yards_to_success:  3.0<br />factor(O_drive_number): 3", "Offense_play_count: 21<br />Yards_to_success:  5.0<br />factor(O_drive_number): 3", "Offense_play_count: 22<br />Yards_to_success:  6.3<br />factor(O_drive_number): 3", "Offense_play_count: 23<br />Yards_to_success:  9.0<br />factor(O_drive_number): 3", "Offense_play_count: 24<br />Yards_to_success: 22.0<br />factor(O_drive_number): 3"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(219,0,50,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(3,1)",
+      "legendgroup": "(3,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [25, 26, 27, 28, 29, 30, 31, 32],
+      "y": [5, 4.2, 5, 0.7, 5, 4.9, 6, 6],
+      "text": ["Offense_play_count: 25<br />Yards_to_success:  5.0<br />factor(O_drive_number): 4", "Offense_play_count: 26<br />Yards_to_success:  4.2<br />factor(O_drive_number): 4", "Offense_play_count: 27<br />Yards_to_success:  5.0<br />factor(O_drive_number): 4", "Offense_play_count: 28<br />Yards_to_success:  0.7<br />factor(O_drive_number): 4", "Offense_play_count: 29<br />Yards_to_success:  5.0<br />factor(O_drive_number): 4", "Offense_play_count: 30<br />Yards_to_success:  4.9<br />factor(O_drive_number): 4", "Offense_play_count: 31<br />Yards_to_success:  6.0<br />factor(O_drive_number): 4", "Offense_play_count: 32<br />Yards_to_success:  6.0<br />factor(O_drive_number): 4"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(0,46,109,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(4,1)",
+      "legendgroup": "(4,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [33, 34],
+      "y": [5, 6.3],
+      "text": ["Offense_play_count: 33<br />Yards_to_success:  5.0<br />factor(O_drive_number): 5", "Offense_play_count: 34<br />Yards_to_success:  6.3<br />factor(O_drive_number): 5"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(219,0,50,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(5,1)",
+      "legendgroup": "(5,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [35, 36, 37, 38, 39, 40, 41],
+      "y": [5, 1.4, 5, 5, 6.3, 8, 8],
+      "text": ["Offense_play_count: 35<br />Yards_to_success:  5.0<br />factor(O_drive_number): 6", "Offense_play_count: 36<br />Yards_to_success:  1.4<br />factor(O_drive_number): 6", "Offense_play_count: 37<br />Yards_to_success:  5.0<br />factor(O_drive_number): 6", "Offense_play_count: 38<br />Yards_to_success:  5.0<br />factor(O_drive_number): 6", "Offense_play_count: 39<br />Yards_to_success:  6.3<br />factor(O_drive_number): 6", "Offense_play_count: 40<br />Yards_to_success:  8.0<br />factor(O_drive_number): 6", "Offense_play_count: 41<br />Yards_to_success:  8.0<br />factor(O_drive_number): 6"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(0,46,109,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(6,1)",
+      "legendgroup": "(6,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [42, 43, 44, 45],
+      "y": [5, 8.4, 12, 7],
+      "text": ["Offense_play_count: 42<br />Yards_to_success:  5.0<br />factor(O_drive_number): 7", "Offense_play_count: 43<br />Yards_to_success:  8.4<br />factor(O_drive_number): 7", "Offense_play_count: 44<br />Yards_to_success: 12.0<br />factor(O_drive_number): 7", "Offense_play_count: 45<br />Yards_to_success:  7.0<br />factor(O_drive_number): 7"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(219,0,50,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(7,1)",
+      "legendgroup": "(7,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [46, 47, 48, 49, 50, 51, 52, 53, 54],
+      "y": [5, 3.5, 5, 3.5, 5, 5, 6.3, 9, 5],
+      "text": ["Offense_play_count: 46<br />Yards_to_success:  5.0<br />factor(O_drive_number): 8", "Offense_play_count: 47<br />Yards_to_success:  3.5<br />factor(O_drive_number): 8", "Offense_play_count: 48<br />Yards_to_success:  5.0<br />factor(O_drive_number): 8", "Offense_play_count: 49<br />Yards_to_success:  3.5<br />factor(O_drive_number): 8", "Offense_play_count: 50<br />Yards_to_success:  5.0<br />factor(O_drive_number): 8", "Offense_play_count: 51<br />Yards_to_success:  5.0<br />factor(O_drive_number): 8", "Offense_play_count: 52<br />Yards_to_success:  6.3<br />factor(O_drive_number): 8", "Offense_play_count: 53<br />Yards_to_success:  9.0<br />factor(O_drive_number): 8", "Offense_play_count: 54<br />Yards_to_success:  5.0<br />factor(O_drive_number): 8"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(0,46,109,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(8,1)",
+      "legendgroup": "(8,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [55, 56, 57, 58, 59],
+      "y": [5, 0.7, 5, 12.6, 12],
+      "text": ["Offense_play_count: 55<br />Yards_to_success:  5.0<br />factor(O_drive_number): 9", "Offense_play_count: 56<br />Yards_to_success:  0.7<br />factor(O_drive_number): 9", "Offense_play_count: 57<br />Yards_to_success:  5.0<br />factor(O_drive_number): 9", "Offense_play_count: 58<br />Yards_to_success: 12.6<br />factor(O_drive_number): 9", "Offense_play_count: 59<br />Yards_to_success: 12.0<br />factor(O_drive_number): 9"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(219,0,50,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(9,1)",
+      "legendgroup": "(9,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [60, 61, 62, 63],
+      "y": [5, 7, 10, 5],
+      "text": ["Offense_play_count: 60<br />Yards_to_success:  5.0<br />factor(O_drive_number): 10", "Offense_play_count: 61<br />Yards_to_success:  7.0<br />factor(O_drive_number): 10", "Offense_play_count: 62<br />Yards_to_success: 10.0<br />factor(O_drive_number): 10", "Offense_play_count: 63<br />Yards_to_success:  5.0<br />factor(O_drive_number): 10"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(0,46,109,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(10,1)",
+      "legendgroup": "(10,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [64, 65, 66, 67, 68, 69, 70, 71, 72],
+      "y": [5, 5, 7, 5, 2.1, 5, 7, 5, 0.7],
+      "text": ["Offense_play_count: 64<br />Yards_to_success:  5.0<br />factor(O_drive_number): 11", "Offense_play_count: 65<br />Yards_to_success:  5.0<br />factor(O_drive_number): 11", "Offense_play_count: 66<br />Yards_to_success:  7.0<br />factor(O_drive_number): 11", "Offense_play_count: 67<br />Yards_to_success:  5.0<br />factor(O_drive_number): 11", "Offense_play_count: 68<br />Yards_to_success:  2.1<br />factor(O_drive_number): 11", "Offense_play_count: 69<br />Yards_to_success:  5.0<br />factor(O_drive_number): 11", "Offense_play_count: 70<br />Yards_to_success:  7.0<br />factor(O_drive_number): 11", "Offense_play_count: 71<br />Yards_to_success:  5.0<br />factor(O_drive_number): 11", "Offense_play_count: 72<br />Yards_to_success:  0.7<br />factor(O_drive_number): 11"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(219,0,50,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(11,1)",
+      "legendgroup": "(11,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [15],
+      "y": [1],
+      "text": "Offense_play_count: 15<br />Yards_to_success:  1.0<br />Play_type: Field Goal Good<br />Success: Field Goal<br />Play_text: Jimmy Camacho 28 Yd Field Goal <br />O_drive_number: 2",
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(127,127,127,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "square-cross-open",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(127,127,127,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Field Goal,Field Goal Good)",
+      "legendgroup": "(Field Goal,Field Goal Good)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [8, 9],
+      "y": [10, 5],
+      "text": ["Offense_play_count:  8<br />Yards_to_success: 10.0<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: Virgil, Chason pass complete to Scott, Da'Mari for 7 yards to the FRESNOST45, PENALTY ALABAMA substitution infraction 5 yards to the FRESNOST43, NO PLAY.<br />O_drive_number: 2", "Offense_play_count:  9<br />Yards_to_success:  5.0<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: ALABAMA Penalty, Defensive Offside (Isaiah Buggs) to the FrsSt 48 for a 1ST down<br />O_drive_number: 2"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(255,0,255,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "hexagram-open",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(255,0,255,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "Penalty",
+      "legendgroup": "Penalty",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [4, 24, 32, 41, 45, 54],
+      "y": [3, 22, 6, 8, 7, 5],
+      "text": ["Offense_play_count:  4<br />Yards_to_success:  3.0<br />Play_type: Punt<br />Success: Punt<br />Play_text: Blake Cusick punt for 30 yds, punt out-of-bounds at the Alab 38<br />O_drive_number: 1", "Offense_play_count: 24<br />Yards_to_success: 22.0<br />Play_type: Punt<br />Success: Punt<br />Play_text: Blake Cusick punt for 30 yds , Trevon Diggs returns for 4 yds to the FrsSt 48<br />O_drive_number: 3", "Offense_play_count: 32<br />Yards_to_success:  6.0<br />Play_type: Punt<br />Success: Punt<br />Play_text: Blake Cusick punt for 34 yds, downed at the Alab 22<br />O_drive_number: 4", "Offense_play_count: 41<br />Yards_to_success:  8.0<br />Play_type: Punt<br />Success: Punt<br />Play_text: Blake Cusick punt for 33 yds, fair catch by Trevon Diggs at the Alab 10<br />O_drive_number: 6", "Offense_play_count: 45<br />Yards_to_success:  7.0<br />Play_type: Punt<br />Success: Punt<br />Play_text: Blake Cusick punt for 53 yds , Trevon Diggs returns for 8 yds to the Alab 41<br />O_drive_number: 7", "Offense_play_count: 54<br />Yards_to_success:  5.0<br />Play_type: Punt<br />Success: Punt<br />Play_text: Blake Cusick punt for 42 yds, downed at the Alab 8<br />O_drive_number: 8"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(127,127,127,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "diamond",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(127,127,127,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "Punt",
+      "legendgroup": "Punt",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 5, 11, 19, 20, 26, 28, 35, 36, 37, 46, 47, 48, 50, 55, 64, 67, 70, 71],
+      "y": [5, 5, 4.2, 7, 3, 4.2, 0.7, 5, 1.4, 5, 5, 3.5, 5, 5, 5, 5, 5, 7, 5],
+      "text": ["Offense_play_count:  1<br />Yards_to_success:  5.0<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Chason Virgil pass complete to KeeSean Johnson for 6 yds to the FrsSt 31<br />O_drive_number: 1", "Offense_play_count:  5<br />Yards_to_success:  5.0<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Chason Virgil pass complete to KeeSean Johnson for 17 yds to the FrsSt 38 for a 1ST down<br />O_drive_number: 2", "Offense_play_count: 11<br />Yards_to_success:  4.2<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Chason Virgil pass complete to Da'Mari Scott for 30 yds to the Alab 18 for a 1ST down<br />O_drive_number: 2", "Offense_play_count: 19<br />Yards_to_success:  7.0<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Chason Virgil pass complete to Da'Mari Scott for 7 yds to the FrsSt 24<br />O_drive_number: 3", "Offense_play_count: 20<br />Yards_to_success:  3.0<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Chason Virgil pass complete to Jared Rice for 10 yds to the FrsSt 34 for a 1ST down<br />O_drive_number: 3", "Offense_play_count: 26<br />Yards_to_success:  4.2<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Chason Virgil pass complete to KeeSean Johnson for 8 yds to the FrsSt 20 for a 1ST down<br />O_drive_number: 4", "Offense_play_count: 28<br />Yards_to_success:  0.7<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Chason Virgil pass complete to Kyle Riddering for 11 yds to the FrsSt 40 for a 1ST down<br />O_drive_number: 4", "Offense_play_count: 35<br />Yards_to_success:  5.0<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Chason Virgil pass complete to Da'Mari Scott for 8 yds to the FrsSt 33<br />O_drive_number: 6", "Offense_play_count: 36<br />Yards_to_success:  1.4<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Chason Virgil pass complete to Da'Mari Scott for 5 yds to the FrsSt 38 for a 1ST down<br />O_drive_number: 6", "Offense_play_count: 37<br />Yards_to_success:  5.0<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Chason Virgil pass complete to KeeSean Johnson for 2 yds to the FrsSt 40 for a 1ST down ALABAMA Penalty, Face Mask (15 yards) (Minkah Fitzpatrick) to the Alab 45 for a 1ST down<br />O_drive_number: 6", "Offense_play_count: 46<br />Yards_to_success:  5.0<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Chason Virgil pass complete to KeeSean Johnson for 5 yds to the FrsSt 26<br />O_drive_number: 8", "Offense_play_count: 47<br />Yards_to_success:  3.5<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Chason Virgil pass complete to KeeSean Johnson for 7 yds to the FrsSt 33 for a 1ST down<br />O_drive_number: 8", "Offense_play_count: 48<br />Yards_to_success:  5.0<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Chason Virgil pass complete to Dejonte O'Neal for 5 yds to the FrsSt 38<br />O_drive_number: 8", "Offense_play_count: 50<br />Yards_to_success:  5.0<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Chason Virgil pass complete to Jamire Jordan for 7 yds to the FrsSt 45 for a 1ST down<br />O_drive_number: 8", "Offense_play_count: 55<br />Yards_to_success:  5.0<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Chason Virgil pass complete to KeeSean Johnson for 9 yds to the FrsSt 19<br />O_drive_number: 9", "Offense_play_count: 64<br />Yards_to_success:  5.0<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Marcus McMaryion pass complete to Da'Mari Scott for 11 yds to the FrsSt 36 for a 1ST down<br />O_drive_number: 11", "Offense_play_count: 67<br />Yards_to_success:  5.0<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Marcus McMaryion pass complete to Jordan Mims for 7 yds to the Alab 42<br />O_drive_number: 11", "Offense_play_count: 70<br />Yards_to_success:  7.0<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Marcus McMaryion pass complete to Josh Hokit for 12 yds to the Alab 24 for a 1ST down<br />O_drive_number: 11", "Offense_play_count: 71<br />Yards_to_success:  5.0<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Marcus McMaryion pass complete to Kyle Riddering for 9 yds to the Alab 15<br />O_drive_number: 11"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,100,0,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(0,100,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Successful,Pass Reception)",
+      "legendgroup": "(Successful,Pass Reception)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [63],
+      "y": [5],
+      "text": "Offense_play_count: 63<br />Yards_to_success:  5.0<br />Play_type: Passing Touchdown<br />Success: Successful<br />Play_text: Chason Virgil pass complete to Derrion Grim for 26 yds for a TD, (Jimmy Camacho KICK)<br />O_drive_number: 10",
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,100,0,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "square-open-dot",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(0,100,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Successful,Passing Touchdown)",
+      "legendgroup": "(Successful,Passing Touchdown)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [12, 13, 16, 17, 27, 56, 62, 66, 68],
+      "y": [5, 3.5, 5, 0.7, 5, 0.7, 10, 7, 2.1],
+      "text": ["Offense_play_count: 12<br />Yards_to_success:  5.0<br />Play_type: Rush<br />Success: Successful<br />Play_text: Ronnie Rivers run for 5 yds to the Alab 13<br />O_drive_number: 2", "Offense_play_count: 13<br />Yards_to_success:  3.5<br />Play_type: Rush<br />Success: Successful<br />Play_text: Josh Hokit run for 4 yds to the Alab 9<br />O_drive_number: 2", "Offense_play_count: 16<br />Yards_to_success:  5.0<br />Play_type: Rush<br />Success: Successful<br />Play_text: Ronnie Rivers run for 9 yds to the FrsSt 15<br />O_drive_number: 3", "Offense_play_count: 17<br />Yards_to_success:  0.7<br />Play_type: Rush<br />Success: Successful<br />Play_text: Ronnie Rivers run for 2 yds to the FrsSt 17 for a 1ST down<br />O_drive_number: 3", "Offense_play_count: 27<br />Yards_to_success:  5.0<br />Play_type: Rush<br />Success: Successful<br />Play_text: Da'Mari Scott run for 9 yds to the FrsSt 29<br />O_drive_number: 4", "Offense_play_count: 56<br />Yards_to_success:  0.7<br />Play_type: Rush<br />Success: Successful<br />Play_text: Ronnie Rivers run for 3 yds to the FrsSt 22 for a 1ST down<br />O_drive_number: 9", "Offense_play_count: 62<br />Yards_to_success: 10.0<br />Play_type: Rush<br />Success: Successful<br />Play_text: Chason Virgil run for 11 yds to the Alab 26 for a 1ST down<br />O_drive_number: 10", "Offense_play_count: 66<br />Yards_to_success:  7.0<br />Play_type: Rush<br />Success: Successful<br />Play_text: Marcus McMaryion run for 15 yds to the Alab 49 for a 1ST down<br />O_drive_number: 11", "Offense_play_count: 68<br />Yards_to_success:  2.1<br />Play_type: Rush<br />Success: Successful<br />Play_text: Josh Hokit run for 6 yds to the Alab 36 for a 1ST down<br />O_drive_number: 11"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,100,0,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "circle",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(0,100,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Successful,Rush)",
+      "legendgroup": "(Successful,Rush)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [23],
+      "y": [9],
+      "text": "Offense_play_count: 23<br />Yards_to_success:  9.0<br />Play_type: Fumble Recovery (Own)<br />Success: Unsuccessful<br />Play_text: TEAM run for a loss of 13 yards to the FrsSt 22 TEAM fumbled, recovered by FrsSt David Patterson<br />O_drive_number: 3",
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(139,26,26,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "circle",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(139,26,26,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Unsuccessful,Fumble Recovery (Own))",
+      "legendgroup": "(Unsuccessful,Fumble Recovery (Own))",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [3, 6, 7, 18, 22, 31, 40, 43, 49, 52, 60, 61, 65, 69],
+      "y": [3, 5, 7, 5, 6.3, 6, 8, 8.4, 3.5, 6.3, 5, 7, 5, 5],
+      "text": ["Offense_play_count:  3<br />Yards_to_success:  3.0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Chason Virgil pass incomplete to Jared Rice<br />O_drive_number: 1", "Offense_play_count:  6<br />Yards_to_success:  5.0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Chason Virgil pass incomplete to Da'Mari Scott<br />O_drive_number: 2", "Offense_play_count:  7<br />Yards_to_success:  7.0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Chason Virgil pass incomplete to Ronnie Rivers<br />O_drive_number: 2", "Offense_play_count: 18<br />Yards_to_success:  5.0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Chason Virgil pass incomplete to KeeSean Johnson<br />O_drive_number: 3", "Offense_play_count: 22<br />Yards_to_success:  6.3<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Chason Virgil pass incomplete to Ronnie Rivers<br />O_drive_number: 3", "Offense_play_count: 31<br />Yards_to_success:  6.0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Chason Virgil pass incomplete to Jamire Jordan<br />O_drive_number: 4", "Offense_play_count: 40<br />Yards_to_success:  8.0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Chason Virgil pass incomplete to Jared Rice<br />O_drive_number: 6", "Offense_play_count: 43<br />Yards_to_success:  8.4<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Chason Virgil pass incomplete to Jamire Jordan<br />O_drive_number: 7", "Offense_play_count: 49<br />Yards_to_success:  3.5<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Chason Virgil pass incomplete to KeeSean Johnson<br />O_drive_number: 8", "Offense_play_count: 52<br />Yards_to_success:  6.3<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Chason Virgil pass incomplete to KeeSean Johnson<br />O_drive_number: 8", "Offense_play_count: 60<br />Yards_to_success:  5.0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Chason Virgil pass incomplete to Jamire Jordan<br />O_drive_number: 10", "Offense_play_count: 61<br />Yards_to_success:  7.0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Chason Virgil pass incomplete to Jamire Jordan<br />O_drive_number: 10", "Offense_play_count: 65<br />Yards_to_success:  5.0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Marcus McMaryion pass incomplete to Jordan Mims<br />O_drive_number: 11", "Offense_play_count: 69<br />Yards_to_success:  5.0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Marcus McMaryion pass incomplete to Josh Hokit<br />O_drive_number: 11"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(139,26,26,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "triangle-up-open",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(139,26,26,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Unsuccessful,Pass Incompletion)",
+      "legendgroup": "(Unsuccessful,Pass Incompletion)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [59],
+      "y": [12],
+      "text": "Offense_play_count: 59<br />Yards_to_success: 12.0<br />Play_type: Pass Interception Return<br />Success: Unsuccessful<br />Play_text: Chason Virgil pass intercepted Anthony Averett return for 30 yds to the FrsSt 4<br />O_drive_number: 9",
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(139,26,26,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "cross-thin-open",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(139,26,26,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Unsuccessful,Pass Interception Return)",
+      "legendgroup": "(Unsuccessful,Pass Interception Return)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [30, 39, 44, 53, 58, 72],
+      "y": [4.9, 6.3, 12, 9, 12.6, 0.7],
+      "text": ["Offense_play_count: 30<br />Yards_to_success:  4.9<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Chason Virgil pass complete to KeeSean Johnson for 1 yd to the FrsSt 44<br />O_drive_number: 4", "Offense_play_count: 39<br />Yards_to_success:  6.3<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Chason Virgil pass complete to Da'Mari Scott for 1 yd to the Alab 43<br />O_drive_number: 6", "Offense_play_count: 44<br />Yards_to_success: 12.0<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Chason Virgil pass complete to Da'Mari Scott for 5 yds to the FrsSt 14<br />O_drive_number: 7", "Offense_play_count: 53<br />Yards_to_success:  9.0<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Chason Virgil pass complete to Josh Hokit for 4 yds to the 50 yard line<br />O_drive_number: 8", "Offense_play_count: 58<br />Yards_to_success: 12.6<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Chason Virgil pass complete to Ronnie Rivers for 6 yds to the FrsSt 20<br />O_drive_number: 9", "Offense_play_count: 72<br />Yards_to_success:  0.7<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Marcus McMaryion pass complete to Derrion Grim for a loss of 3 yards to the Alab 18<br />O_drive_number: 11"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(139,26,26,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(139,26,26,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Unsuccessful,Pass Reception)",
+      "legendgroup": "(Unsuccessful,Pass Reception)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2, 10, 14, 21, 25, 29, 33, 34, 38, 42, 51],
+      "y": [2.8, 5, 1, 5, 5, 5, 5, 6.3, 5, 5, 5],
+      "text": ["Offense_play_count:  2<br />Yards_to_success:  2.8<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Ronnie Rivers run for 1 yd to the FrsSt 32<br />O_drive_number: 1", "Offense_play_count: 10<br />Yards_to_success:  5.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Ronnie Rivers run for 4 yds to the Alab 48<br />O_drive_number: 2", "Offense_play_count: 14<br />Yards_to_success:  1.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Chason Virgil run for no gain to the Alab 9<br />O_drive_number: 2", "Offense_play_count: 21<br />Yards_to_success:  5.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Da'Mari Scott run for 1 yd to the FrsSt 35<br />O_drive_number: 3", "Offense_play_count: 25<br />Yards_to_success:  5.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jordan Mims run for 4 yds to the FrsSt 12<br />O_drive_number: 4", "Offense_play_count: 29<br />Yards_to_success:  5.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Ronnie Rivers run for 3 yds to the FrsSt 43<br />O_drive_number: 4", "Offense_play_count: 33<br />Yards_to_success:  5.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Ronnie Rivers run for 1 yd to the FrsSt 26<br />O_drive_number: 5", "Offense_play_count: 34<br />Yards_to_success:  6.3<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Ronnie Rivers run for 1 yd to the FrsSt 27<br />O_drive_number: 5", "Offense_play_count: 38<br />Yards_to_success:  5.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Josh Hokit run for 1 yd to the Alab 44<br />O_drive_number: 6", "Offense_play_count: 42<br />Yards_to_success:  5.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jordan Mims run for a loss of 2 yards to the FrsSt 9<br />O_drive_number: 7", "Offense_play_count: 51<br />Yards_to_success:  5.0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Josh Hokit run for 1 yd to the FrsSt 46<br />O_drive_number: 8"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(139,26,26,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "circle",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(139,26,26,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Unsuccessful,Rush)",
+      "legendgroup": "(Unsuccessful,Rush)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [57],
+      "y": [5],
+      "text": "Offense_play_count: 57<br />Yards_to_success:  5.0<br />Play_type: Sack<br />Success: Unsuccessful<br />Play_text: Chason Virgil sacked by Johnny Dwight for a loss of 8 yards to the FrsSt 14<br />O_drive_number: 9",
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(139,26,26,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "triangle-down-open",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(139,26,26,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Unsuccessful,Sack)",
+      "legendgroup": "(Unsuccessful,Sack)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    }
+  ],
+  layout: {
+    "margin": {
+      "t": 43.2754946727549,
+      "r": 7.30593607305936,
+      "b": 39.6955859969559,
+      "l": 37.2602739726027
+    },
+    "plot_bgcolor": "rgba(229,229,229,1)",
+    "paper_bgcolor": "rgba(255,255,255,1)",
+    "font": {
+      "color": "rgba(0,0,0,1)",
+      "family": "",
+      "size": 14.6118721461187
+    },
+    "title": {
+      "text": "Fresno State[10]: Yards to success<br> <sup>2017: wk02 vs Alabama[41]<\/sup>",
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 17.5342465753425
+      },
+      "x": 0,
+      "xref": "paper",
+      "xanchor": "left"
+    },
+    "xaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [-2.55, 75.55],
+      "tickmode": "array",
+      "ticktext": ["0", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55", "60", "65", "70", "75"],
+      "tickvals": [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75],
+      "categoryorder": "array",
+      "categoryarray": ["0", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55", "60", "65", "70", "75"],
+      "nticks": null,
+      "ticks": "outside",
+      "tickcolor": "rgba(51,51,51,1)",
+      "ticklen": 3.65296803652968,
+      "tickwidth": 0.66417600664176,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "tickangle": -0,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": "rgba(204,204,204,1)",
+      "gridwidth": 0.66417600664176,
+      "zeroline": false,
+      "anchor": "y",
+      "title": {
+        "text": "Offensive play count including penalties",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "yaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [-1.1, 23.1],
+      "tickmode": "array",
+      "ticktext": ["0", "5", "10", "15", "20"],
+      "tickvals": [0, 5, 10, 15, 20],
+      "categoryorder": "array",
+      "categoryarray": ["0", "5", "10", "15", "20"],
+      "nticks": null,
+      "ticks": "outside",
+      "tickcolor": "rgba(51,51,51,1)",
+      "ticklen": 3.65296803652968,
+      "tickwidth": 0.66417600664176,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "tickangle": -0,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": "rgba(204,204,204,1)",
+      "gridwidth": 0.66417600664176,
+      "zeroline": false,
+      "anchor": "x",
+      "title": {
+        "text": "Yards needed to be successful",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "shapes": [
+      {
+        "type": "rect",
+        "fillcolor": null,
+        "line": {
+          "color": null,
+          "width": 0,
+          "linetype": []
+        },
+        "yref": "paper",
+        "xref": "paper",
+        "x0": 0,
+        "x1": 1,
+        "y0": 0,
+        "y1": 1
+      }
+    ],
+    "showlegend": true,
+    "legend": {
+      "bgcolor": "rgba(255,255,255,1)",
+      "bordercolor": "transparent",
+      "borderwidth": 1.88976377952756,
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "title": {
+        "text": "Success/Drive number<br />Play type",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      }
+    },
+    "hovermode": "closest",
+    "barmode": "relative"
+  },
+  config: {
+    "doubleClick": "reset",
+    "modeBarButtonsToAdd": ["hoverclosest", "hovercompare"],
+    "showSendToCloud": false
+  },
+  source: "A",
+  attrs: {
+    "2f181c3169b5": {
+      "yintercept": {},
+      "type": "scatter"
+    },
+    "2f1863923cd5": {
+      "xintercept": {}
+    },
+    "2f18247028e": {
+      "x": {},
+      "y": {},
+      "colour": {}
+    },
+    "2f1868c458f9": {
+      "x": {},
+      "y": {},
+      "shape": {},
+      "colour": {},
+      "label": {}
+    }
+  },
+  cur_data: "2f181c3169b5",
+  visdat: {
+    "2f181c3169b5": ["function (y) ", "x"],
+    "2f1863923cd5": ["function (y) ", "x"],
+    "2f18247028e": ["function (y) ", "x"],
+    "2f1868c458f9": ["function (y) ", "x"]
+  },
+  highlight: {
+    "on": "plotly_click",
+    "persistent": false,
+    "dynamic": false,
+    "selectize": false,
+    "opacityDim": 0.2,
+    "selected": {
+      "opacity": 1
+    },
+    "debounce": 0
+  },
+  shinyEvents: ["plotly_hover", "plotly_click", "plotly_selected", "plotly_relayout", "plotly_brushed", "plotly_brushing", "plotly_clickannotation", "plotly_doubleclick", "plotly_deselect", "plotly_afterplot", "plotly_sunburstclick"],
+  base_url: "https://plot.ly"
+}

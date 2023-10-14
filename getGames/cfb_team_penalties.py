@@ -70,6 +70,7 @@ def json2dict(data):
 
 header = ["year", "week", "school", "conference", "totalPenalties", "totalPenaltiesYards", "opponent", "season"]
 data = []
+errors = []
 
 #############################################################################################
 #Fix:
@@ -148,12 +149,19 @@ if arg_length == 4:
                         if 'totalPenaltiesYards' in json_dict:
                             if team_current not in teams_seen.keys():
                                 teams_seen[team_current] = [wk]
-                                num, yards = json_dict['totalPenaltiesYards'].split("-")
-                                data.append([year_get, wk, team_current, json_dict["conference"], num, yards, team_other, seasontype])
+                                try:
+                                    num, yards = json_dict['totalPenaltiesYards'].split("-")
+                                    data.append([year_get, wk, team_current, json_dict["conference"], num, yards, team_other, seasontype])
+                                except:
+                                    print("Error in num, yards")
+                                    errors.append([year_get, wk, team_current, json_dict["conference"], json_dict['totalPenaltiesYards'], 0, team_other, seasontype])
                             elif wk not in teams_seen[team_current]:
                                 teams_seen[team_current].append(wk)
-                                num, yards = json_dict['totalPenaltiesYards'].split("-")
-                                data.append([year_get, wk, team_current, json_dict["conference"], num, yards, team_other, seasontype])
+                                try:
+                                    num, yards = json_dict['totalPenaltiesYards'].split("-")
+                                    data.append([year_get, wk, team_current, json_dict["conference"], num, yards, team_other, seasontype])
+                                except:
+                                    errors.append([year_get, wk, team_current, json_dict["conference"], json_dict['totalPenaltiesYards'], 0, team_other, seasontype])
                     
                     # print("Didn't play week 0:", data)
 
@@ -225,6 +233,12 @@ if arg_length == 4:
     writer.writerow(header)
     writer.writerows(data)
     f.close()
+    if errors != []:
+        f = open ("../../data/team_stats/"+str(year_get)+'_'+seasontype+'_'+"penalties_yards-errors"+'.csv', 'w', newline='')
+        writer = csv.writer(f)
+        writer.writerow(header)
+        writer.writerows(errors)
+        f.close()
 
     # print("Data:")
     # print(data)
