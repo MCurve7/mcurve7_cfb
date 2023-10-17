@@ -76,11 +76,11 @@ dirContents = readdir("../../data/unprocessed", join=true)
 # dirContents[13628]
 #Appalachian State_2018_wk14_regular.csv
 
-i=findall(x->x=="../../data/unprocessed\\Alabama_2023_wk06_regular.csv", dirContents)[1]
+i=findall(x->x=="../../data/unprocessed\\Alabama_2023_wk07_regular.csv", dirContents)[1]
 dirContents[i]
 @time run_game(i)
 
-i=findall(x->x=="../../data/unprocessed\\Clemson_2018_wk02_postseason.csv", dirContents)[1]
+i=findall(x->x=="../../data/unprocessed\\Arkansas_2023_wk07_regular.csv", dirContents)[1]
 dirContents[i]
 @time run_game(i)
 ############################################################################################################

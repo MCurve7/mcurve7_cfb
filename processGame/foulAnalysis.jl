@@ -119,7 +119,7 @@ if DEBUG_PENALTY println("def_abbrv: $def_abbrv") end
     
     # name_regex = "(((?:[A-Z\\p{Lu}'-][a-z\\p{Ll}A-Z&\\p{Lu}'\\.-]+|(?:de))|(?:[A-Z\\p{Lu}-]\\.?)?\\s?)+)" #most general name regex
 
-
+    mypenalty_regex = r"MYPENALTY"
     penalties_regex_txt = "(?:Penalty|PENALTY)"
     offsetting_regex = r"[Oo]ff-?setting"
     declined_regex = r"[Dd]eclined"
@@ -135,8 +135,11 @@ if DEBUG_PENALTY println("def_abbrv: $def_abbrv") end
     foul_transgressor = Vector{String}()#[]
     if DEBUG_PENALTY println("I see ($quarter, $down, $drive_number, $play_number): $txt") end
   # println("Offense: $offense, Defense: $defense")
-    if occursin(offsetting_regex, txt)
-      if DEBUG_PENALTY println("Calling: offsetting_aux") end
+    if occursin(mypenalty_regex, txt)
+        if DEBUG_PENALTY println("Calling: mypenalty_regex") end
+        foul_type, foul_status, foul_team, foul_transgressor = mypenalty_regex_aux(txt)
+    elseif occursin(offsetting_regex, txt)
+        if DEBUG_PENALTY println("Calling: offsetting_aux") end
         foul_type, foul_status, foul_team, foul_transgressor = offsetting_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch, penalty_type_vec)
     elseif occursin(declined_regex, lowercase(txt)) && occursin(enforced_regex, lowercase(txt))
         if DEBUG_PENALTY println("Calling: declined_enforced_aux") end
@@ -233,6 +236,59 @@ function process_name(name)
 end
 
 ############################################################################################################################################################
+"""
+Hand added penalties: MYPENALTY<n, [type_1, status_1, team_1, transgressor_1], ..., [type_n, status_n, team_n, transgressor_n]>
+"""
+function mypenalty_regex_aux(txt)
+    foul_type = Vector{String}()#[]
+    foul_status = Vector{String}()#[]
+    foul_team = Vector{String}()#[]
+    foul_transgressor = Vector{String}()#[]
+
+    mypenalty_n_regex = r"MYPENALTY<(\d+)"
+    n = match(mypenalty_n_regex, txt)
+
+    if n[1] == "1"
+        mypenalty_1_regex = r"MYPENALTY<\d+,\s*\[(.+),\s*(enforced|declined|offseting),\s*(.+),\s*(.+)\]>"
+        m = match(mypenalty_1_regex, txt)
+        # println("m=\n $m")
+        push!(foul_type, m[1])
+        push!(foul_status, m[2])
+        push!(foul_team, m[3])
+        push!(foul_transgressor, m[4])
+    elseif n[1] == "2"
+        mypenalty_1_regex = r"MYPENALTY<\d+,\s*\[(.+),\s*(enforced|declined|offseting),\s*(.+),\s*(.+)\],\s*\[(.+),\s*(enforced|declined|offseting),\s*(.+),\s*(.+)\]>"
+        m = match(mypenalty_1_regex, txt)
+        push!(foul_type, m[1])
+        push!(foul_status, m[2])
+        push!(foul_team, m[3])
+        push!(foul_transgressor, m[4])
+        push!(foul_type, m[5])
+        push!(foul_status, m[6])
+        push!(foul_team, m[7])
+        push!(foul_transgressor, m[8])
+    elseif n[1] == "3"
+        mypenalty_1_regex = r"MYPENALTY<\d+,\s*\[(.+),\s*(enforced|declined|offseting),\s*(.+),\s*(.+)\],\s*\[(.+),\s*(enforced|declined|offseting),\s*(.+),\s*(.+)\],\s*(.+),\s*(.+)\],\s*\[(.+),\s*(enforced|declined|offseting),\s*(.+),\s*(.+)\]>"
+        m = match(mypenalty_1_regex, txt)
+        push!(foul_type, m[1])
+        push!(foul_status, m[2])
+        push!(foul_team, m[3])
+        push!(foul_transgressor, m[4])
+        push!(foul_type, m[5])
+        push!(foul_status, m[6])
+        push!(foul_team, m[7])
+        push!(foul_transgressor, m[8])
+        push!(foul_type, m[9])
+        push!(foul_status, m[10])
+        push!(foul_team, m[11])
+        push!(foul_transgressor, m[12])
+    else
+        println("ERROR: Need more conditions foulAanalysis ≈ 285")
+    end
+    foul_type, foul_status, foul_team, foul_transgressor
+end
+
+
 function declined_enforced_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch, off_abbrv, def_abbrv, penalty_type_vec)
 
     penalties_regex_txt = "(?:Penalty|PENALTY)"

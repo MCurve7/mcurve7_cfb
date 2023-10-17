@@ -1,0 +1,262 @@
+{
+  data: [
+    {
+      "x": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3],
+      "y": [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 15, 10, 10, 10, 5, 10, 10, 10, 10, 10, 10, 10, 6, 10, 7, 6, 17, 8, 9, 10, 9, 4, 19, 8, 8, 10, 8, 12, 4, 10, 11, 10, 1, 10, 5, 10, 7, 3, 9, 3, 6, 10, 4, 9, 8, 11, 6, 8],
+      "hoverinfo": "y",
+      "type": "box",
+      "fillcolor": "rgba(157,34,53,1)",
+      "marker": {
+        "opacity": null,
+        "outliercolor": "rgba(0,0,0,1)",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(0,0,0,1)"
+        },
+        "size": 5.66929133858268
+      },
+      "line": {
+        "color": "rgba(51,51,51,1)",
+        "width": 1.88976377952756
+      },
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": [1.15744268391281, 1.11089882301167, 1.06085186311975, 1.02783547444269, 0.999387542810291, 1.17747288607061, 0.811022631078959, 1.00132127124816, 1.07693656506017, 1.00085179517046, 1.01347219888121, 0.990357891190797, 1.0834551862441, 0.951426598895341, 0.860979995317757, 1.13276889240369, 1.12429938241839, 1.02057131407782, 0.950766185298562, 1.14433347806334, 0.84905719505623, 0.811386306211352, 0.821122209262103, 1.96839405447245, 1.97131842998788, 2.12769283223897, 2.09247042005882, 2.15432756897062, 2.11633761618286, 1.82181583987549, 2.09351555686444, 2.07135744141415, 2.17790084285662, 1.90351499235258, 2.12267530728132, 1.94247933123261, 2.14528434574604, 2.11449143309146, 2.13150688130409, 2.12963784169406, 1.9701823647134, 1.94248289773241, 2.13080199798569, 2.05023004701361, 2.04240242606029, 2.80953121362254, 3.1333297399804, 2.84532876769081, 2.93957740673795, 2.92767348038033, 3.1250839731656, 3.06189030678943, 2.89953689556569, 2.92753593530506, 2.90435592401773, 3.06094267601147, 2.87607519365847, 3.1590924333781],
+      "y": [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 15, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 6, 10, 7, 6, 17, 8, 9, 10, 9, 4, 19, 8, 8, 10, 8, 12, 4, 10, 11, 10, 1, 10, 5, 10, 7, 3, 9, 3, 6, 10, 4, 9, 8, 6, 8],
+      "text": ["Down: Down 1<br />Distance: 10<br />Scoring: FALSE", "Down: Down 1<br />Distance: 10<br />Scoring: FALSE", "Down: Down 1<br />Distance: 10<br />Scoring: FALSE", "Down: Down 1<br />Distance: 10<br />Scoring: FALSE", "Down: Down 1<br />Distance: 10<br />Scoring: FALSE", "Down: Down 1<br />Distance: 10<br />Scoring: FALSE", "Down: Down 1<br />Distance: 10<br />Scoring: FALSE", "Down: Down 1<br />Distance: 10<br />Scoring: FALSE", "Down: Down 1<br />Distance: 10<br />Scoring: FALSE", "Down: Down 1<br />Distance: 10<br />Scoring: FALSE", "Down: Down 1<br />Distance: 10<br />Scoring: FALSE", "Down: Down 1<br />Distance: 10<br />Scoring: FALSE", "Down: Down 1<br />Distance: 15<br />Scoring: FALSE", "Down: Down 1<br />Distance: 10<br />Scoring: FALSE", "Down: Down 1<br />Distance: 10<br />Scoring: FALSE", "Down: Down 1<br />Distance: 10<br />Scoring: FALSE", "Down: Down 1<br />Distance: 10<br />Scoring: FALSE", "Down: Down 1<br />Distance: 10<br />Scoring: FALSE", "Down: Down 1<br />Distance: 10<br />Scoring: FALSE", "Down: Down 1<br />Distance: 10<br />Scoring: FALSE", "Down: Down 1<br />Distance: 10<br />Scoring: FALSE", "Down: Down 1<br />Distance: 10<br />Scoring: FALSE", "Down: Down 1<br />Distance: 10<br />Scoring: FALSE", "Down: Down 2<br />Distance:  6<br />Scoring: FALSE", "Down: Down 2<br />Distance: 10<br />Scoring: FALSE", "Down: Down 2<br />Distance:  7<br />Scoring: FALSE", "Down: Down 2<br />Distance:  6<br />Scoring: FALSE", "Down: Down 2<br />Distance: 17<br />Scoring: FALSE", "Down: Down 2<br />Distance:  8<br />Scoring: FALSE", "Down: Down 2<br />Distance:  9<br />Scoring: FALSE", "Down: Down 2<br />Distance: 10<br />Scoring: FALSE", "Down: Down 2<br />Distance:  9<br />Scoring: FALSE", "Down: Down 2<br />Distance:  4<br />Scoring: FALSE", "Down: Down 2<br />Distance: 19<br />Scoring: FALSE", "Down: Down 2<br />Distance:  8<br />Scoring: FALSE", "Down: Down 2<br />Distance:  8<br />Scoring: FALSE", "Down: Down 2<br />Distance: 10<br />Scoring: FALSE", "Down: Down 2<br />Distance:  8<br />Scoring: FALSE", "Down: Down 2<br />Distance: 12<br />Scoring: FALSE", "Down: Down 2<br />Distance:  4<br />Scoring: FALSE", "Down: Down 2<br />Distance: 10<br />Scoring: FALSE", "Down: Down 2<br />Distance: 11<br />Scoring: FALSE", "Down: Down 2<br />Distance: 10<br />Scoring: FALSE", "Down: Down 2<br />Distance:  1<br />Scoring: FALSE", "Down: Down 2<br />Distance: 10<br />Scoring: FALSE", "Down: Down 3<br />Distance:  5<br />Scoring: FALSE", "Down: Down 3<br />Distance: 10<br />Scoring: FALSE", "Down: Down 3<br />Distance:  7<br />Scoring: FALSE", "Down: Down 3<br />Distance:  3<br />Scoring: FALSE", "Down: Down 3<br />Distance:  9<br />Scoring: FALSE", "Down: Down 3<br />Distance:  3<br />Scoring: FALSE", "Down: Down 3<br />Distance:  6<br />Scoring: FALSE", "Down: Down 3<br />Distance: 10<br />Scoring: FALSE", "Down: Down 3<br />Distance:  4<br />Scoring: FALSE", "Down: Down 3<br />Distance:  9<br />Scoring: FALSE", "Down: Down 3<br />Distance:  8<br />Scoring: FALSE", "Down: Down 3<br />Distance:  6<br />Scoring: FALSE", "Down: Down 3<br />Distance:  8<br />Scoring: FALSE"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,0,0,1)",
+        "opacity": 1,
+        "size": 7.55905511811024,
+        "symbol": "circle",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "FALSE",
+      "legendgroup": "FALSE",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [0.992568016424775, 2.99557669637725],
+      "y": [5, 11],
+      "text": ["Down: Down 1<br />Distance:  5<br />Scoring:  TRUE", "Down: Down 3<br />Distance: 11<br />Scoring:  TRUE"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(255,0,255,1)",
+        "opacity": 1,
+        "size": 7.55905511811024,
+        "symbol": "circle",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "TRUE",
+      "legendgroup": "TRUE",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    }
+  ],
+  layout: {
+    "margin": {
+      "t": 43.2754946727549,
+      "r": 7.30593607305936,
+      "b": 39.6955859969559,
+      "l": 37.2602739726027
+    },
+    "plot_bgcolor": "rgba(235,235,235,1)",
+    "paper_bgcolor": "rgba(255,255,255,1)",
+    "font": {
+      "color": "rgba(0,0,0,1)",
+      "family": "",
+      "size": 14.6118721461187
+    },
+    "title": {
+      "text": "Arkansas[21] Distance to 1st/TD: # Plays by down: (24, 22, 14, 0)<br> <sup>2023: wk07 vs Alabama[24]<\/sup>",
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 17.5342465753425
+      },
+      "x": 0,
+      "xref": "paper",
+      "xanchor": "left"
+    },
+    "xaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [0.4, 4.6],
+      "tickmode": "array",
+      "ticktext": ["Down 1", "Down 2", "Down 3", "Down 4"],
+      "tickvals": [1, 2, 3, 4],
+      "categoryorder": "array",
+      "categoryarray": ["Down 1", "Down 2", "Down 3", "Down 4"],
+      "nticks": null,
+      "ticks": "outside",
+      "tickcolor": "rgba(51,51,51,1)",
+      "ticklen": 3.65296803652968,
+      "tickwidth": 0.66417600664176,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "tickangle": -0,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": "rgba(255,255,255,1)",
+      "gridwidth": 0.66417600664176,
+      "zeroline": false,
+      "anchor": "y",
+      "title": {
+        "text": "Down",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "yaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [0.1, 19.9],
+      "tickmode": "array",
+      "ticktext": ["5", "10", "15"],
+      "tickvals": [5, 10, 15],
+      "categoryorder": "array",
+      "categoryarray": ["5", "10", "15"],
+      "nticks": null,
+      "ticks": "outside",
+      "tickcolor": "rgba(51,51,51,1)",
+      "ticklen": 3.65296803652968,
+      "tickwidth": 0.66417600664176,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "tickangle": -0,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": "rgba(255,255,255,1)",
+      "gridwidth": 0.66417600664176,
+      "zeroline": false,
+      "anchor": "x",
+      "title": {
+        "text": "Distance",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "shapes": [
+      {
+        "type": "rect",
+        "fillcolor": null,
+        "line": {
+          "color": null,
+          "width": 0,
+          "linetype": []
+        },
+        "yref": "paper",
+        "xref": "paper",
+        "x0": 0,
+        "x1": 1,
+        "y0": 0,
+        "y1": 1
+      }
+    ],
+    "showlegend": true,
+    "legend": {
+      "bgcolor": "rgba(255,255,255,1)",
+      "bordercolor": "transparent",
+      "borderwidth": 1.88976377952756,
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "title": {
+        "text": "Scoring",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      }
+    },
+    "hovermode": "closest",
+    "barmode": "relative"
+  },
+  config: {
+    "doubleClick": "reset",
+    "modeBarButtonsToAdd": ["hoverclosest", "hovercompare"],
+    "showSendToCloud": false
+  },
+  source: "A",
+  attrs: {
+    "43c85f45ebd": {
+      "x": {},
+      "y": {},
+      "type": "box"
+    },
+    "43c8459d7d4": {
+      "x": {},
+      "y": {},
+      "fill": {}
+    }
+  },
+  cur_data: "43c85f45ebd",
+  visdat: {
+    "43c85f45ebd": ["function (y) ", "x"],
+    "43c8459d7d4": ["function (y) ", "x"]
+  },
+  highlight: {
+    "on": "plotly_click",
+    "persistent": false,
+    "dynamic": false,
+    "selectize": false,
+    "opacityDim": 0.2,
+    "selected": {
+      "opacity": 1
+    },
+    "debounce": 0
+  },
+  shinyEvents: ["plotly_hover", "plotly_click", "plotly_selected", "plotly_relayout", "plotly_brushed", "plotly_brushing", "plotly_clickannotation", "plotly_doubleclick", "plotly_deselect", "plotly_afterplot", "plotly_sunburstclick"],
+  base_url: "https://plot.ly"
+}
