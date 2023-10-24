@@ -34,7 +34,7 @@ function run_all_games()
         game_file = last(game_split)
         #println("File name: $game_file")
         processed_game = split(game_file, ".")
-        println("Filename split: $processed_game")
+        # println("Filename split: $processed_game")
         processed_game = processed_game[1]*"-processed."*processed_game[2]
         #println("New filename split: $processed_game")
         if overwrite || !isfile(processed_directory*processed_game)
@@ -76,11 +76,11 @@ dirContents = readdir("../../data/unprocessed", join=true)
 # dirContents[13628]
 #Appalachian State_2018_wk14_regular.csv
 
-i=findall(x->x=="../../data/unprocessed\\Alabama_2023_wk07_regular.csv", dirContents)[1]
+i=findall(x->x=="../../data/unprocessed\\Alabama_2023_wk08_regular.csv", dirContents)[1]
 dirContents[i]
 @time run_game(i)
 
-i=findall(x->x=="../../data/unprocessed\\Arkansas_2023_wk07_regular.csv", dirContents)[1]
+i=findall(x->x=="../../data/unprocessed\\Tennessee_2023_wk08_regular.csv", dirContents)[1]
 dirContents[i]
 @time run_game(i)
 ############################################################################################################

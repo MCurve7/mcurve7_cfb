@@ -475,21 +475,27 @@ function scoredrive(df)
 end
 
 function turnover_column_generate(df)
-    turnover_bool = false
     turnover_vec = Bool[]
     drive_number_list = unique(df.Drive_number)
 
     for i in 1:length(drive_number_list)
+        turnover_bool = false
         if DEBUG_PROCESS_FUNCTION println("i = $i") end
         dfdrive = filter(:Drive_number => x->(x==drive_number_list[i]), df)
         if DEBUG_PROCESS_FUNCTION println("dfdrive:\n$dfdrive\n\n") end
-        if nrow(dfdrive) ≠ 1
+        if nrow(dfdrive) ≠ 1            
             last_play = dfdrive[end, :Play_type]
+            penultimate_play = dfdrive[end-1, :Play_type]
             if last_play ∈ ["End Period", "End of Half", "End of Game", "End of Regulation"]
                 last_play = dfdrive[end-1, :Play_type]
+                penultimate_play = dfdrive[end-2, :Play_type]
             end
             if last_play ∈ ["Fumble Recovery (Opponent)", "Fumble Return Touchdown", "Interception", "Interception Return Touchdown", "Pass Interception Return"]
                 turnover_bool = true
+            elseif last_play == "Timeout"
+                if penultimate_play ∈ ["Fumble Recovery (Opponent)", "Fumble Return Touchdown", "Interception", "Interception Return Touchdown", "Pass Interception Return"]
+                    turnover_bool = true
+                end
             else
                 turnover_bool = false
             end

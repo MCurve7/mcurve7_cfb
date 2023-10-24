@@ -1,0 +1,941 @@
+<title>Extra graphs 2023 week 08 regular vs Tennessee</title>
+
+<p>
+If you would like to see and play with the interactive version of these graphs you can find them at
+https://github.com/MCurve7/mcurve7_cfb/tree/main/RBR/2023
+You just need to download the Alabama_(year)_regular_wk??_(opponent).html file and open it in a web browser.
+</p>
+
+<p>
+Well that certainly wasn't a rollercoaster of emotions,
+but an elevator ride from the floor level to the subbasement up to the penthouse.
+There was a moment where it looked like we were "heading on up" on drives 5 and 6,
+but the end of our 6th drive landed us back into the subbasement.
+</p>
+
+<p>
+Comparing our SR by Drive charts the most obvious 1st half observations are our two turnovers
+and them bookending the half with TDs.
+I'm still not sure what to make of the mean SR by Drive vs the game SR,
+but our μ_game(SR by Drive) = 0.383 and SR = 0.397 which is clearly pretty close.
+Our μ_game(SR by Drive) = 0.383 was pretty close to our μ_season(SR by Drive) = 0.364
+and maybe this makes sense given that we played about the same way we play most games
+which is basically good half/bad half.
+</p>
+
+<p>
+They had a SR = 0.380, but μ_game(SR by Drive) = 0.268 which is a pretty big difference.
+For how uncomfortable that first half was,
+they really only had three drives (1, 3, 7) long drives and a short field on drive 4 due to a fumble.
+Their scoring drives had SRs of 0.625 and 0.600 and their 14 play third drive SR was down to 0.500 with the rest 0.250 or 0.
+So I'd say our defense was playing pretty well for the most part in the first half and kicked it up a notch in the second.
+</p>
+
+<div id="Alabama_2023_regular_wk08_Tennessee-01-success_drive_bar-copy" ></div><br />
+<table>
+  <caption style = "text-align: center;">Success by drive: Alabama, 2023, week 08, season regular, Opponent: Tennessee</caption>
+  <thead>
+    <tr class = "header headerLastRow">
+      <th style = "text-align: left;">Drive number</th>
+      <th style = "text-align: left;">Total</th>
+      <th style = "text-align: left;">Successful</th>
+      <th style = "text-align: left;">Unsuccessful</th>
+      <th style = "text-align: left;">Success rate</th>
+      <th style = "text-align: left;">Score/Turnover drive</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">0.333333</td>
+      <td style = "text-align: left;">Neither</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">0.5</td>
+      <td style = "text-align: left;">Neither</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0.0</td>
+      <td style = "text-align: left;">Turnover</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0.4</td>
+      <td style = "text-align: left;">Neither</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">9</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">0.444444</td>
+      <td style = "text-align: left;">Score</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">0.0</td>
+      <td style = "text-align: left;">Turnover</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">0.666667</td>
+      <td style = "text-align: left;">Neither</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">8</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">1.0</td>
+      <td style = "text-align: left;">Score</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">9</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0.4</td>
+      <td style = "text-align: left;">Neither</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">10</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">0.8</td>
+      <td style = "text-align: left;">Score</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">11</td>
+      <td style = "text-align: left;">14</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">8</td>
+      <td style = "text-align: left;">0.428571</td>
+      <td style = "text-align: left;">Neither</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">12</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0.0</td>
+      <td style = "text-align: left;">Neither</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">13</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0.0</td>
+      <td style = "text-align: left;">Neither</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+<div id="Tennessee_2023_regular_wk08_Alabama-01-success_drive_bar-copy" ></div><br />
+<table>
+  <caption style = "text-align: center;">Success by drive: Tennessee, 2023, week 08, season regular, Opponent: Alabama</caption>
+  <thead>
+    <tr class = "header headerLastRow">
+      <th style = "text-align: left;">Drive number</th>
+      <th style = "text-align: left;">Total</th>
+      <th style = "text-align: left;">Successful</th>
+      <th style = "text-align: left;">Unsuccessful</th>
+      <th style = "text-align: left;">Success rate</th>
+      <th style = "text-align: left;">Score/Turnover drive</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">8</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0.625</td>
+      <td style = "text-align: left;">Score</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0.0</td>
+      <td style = "text-align: left;">Neither</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">14</td>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">0.5</td>
+      <td style = "text-align: left;">Neither</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0.25</td>
+      <td style = "text-align: left;">Neither</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0.0</td>
+      <td style = "text-align: left;">Neither</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">0.0</td>
+      <td style = "text-align: left;">Neither</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">10</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">0.6</td>
+      <td style = "text-align: left;">Score</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">8</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0.0</td>
+      <td style = "text-align: left;">Neither</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">9</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">0.166667</td>
+      <td style = "text-align: left;">Neither</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">10</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0.0</td>
+      <td style = "text-align: left;">Neither</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">11</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">0.333333</td>
+      <td style = "text-align: left;">Neither</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">12</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">0.0</td>
+      <td style = "text-align: left;">Neither</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">13</td>
+      <td style = "text-align: left;">9</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">0.444444</td>
+      <td style = "text-align: left;">Neither</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">14</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">0.833333</td>
+      <td style = "text-align: left;">Neither</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+
+<table>
+  <caption style = "text-align: center;">Mean drive SR by week: Alabama, 2023, week 08, season regular, Opponent: Tennessee</caption>
+  <thead>
+    <tr class = "header headerLastRow">
+      <th style = "text-align: left;">Week</th>
+      <th style = "text-align: left;">Drive SR: mean</th>
+      <th style = "text-align: left;">SR</th>
+      <th style = "text-align: left;">XR</th>
+      <th style = "text-align: left;">Opponent</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style = "text-align: left;">wk01</td>
+      <td style = "text-align: left;">0.545</td>
+      <td style = "text-align: left;">0.562</td>
+      <td style = "text-align: left;">0.141</td>
+      <td style = "text-align: left;">Middle Tennessee</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">wk02</td>
+      <td style = "text-align: left;">0.286</td>
+      <td style = "text-align: left;">0.355</td>
+      <td style = "text-align: left;">0.145</td>
+      <td style = "text-align: left;">Texas</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">wk03</td>
+      <td style = "text-align: left;">0.336</td>
+      <td style = "text-align: left;">0.385</td>
+      <td style = "text-align: left;">0.077</td>
+      <td style = "text-align: left;">South Florida</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">wk04</td>
+      <td style = "text-align: left;">0.362</td>
+      <td style = "text-align: left;">0.446</td>
+      <td style = "text-align: left;">0.123</td>
+      <td style = "text-align: left;">Ole Miss</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">wk05</td>
+      <td style = "text-align: left;">0.395</td>
+      <td style = "text-align: left;">0.482</td>
+      <td style = "text-align: left;">0.161</td>
+      <td style = "text-align: left;">Mississippi State</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">wk06</td>
+      <td style = "text-align: left;">0.312</td>
+      <td style = "text-align: left;">0.344</td>
+      <td style = "text-align: left;">0.148</td>
+      <td style = "text-align: left;">Texas A&amp;M</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">wk07</td>
+      <td style = "text-align: left;">0.3</td>
+      <td style = "text-align: left;">0.375</td>
+      <td style = "text-align: left;">0.172</td>
+      <td style = "text-align: left;">Arkansas</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+<table>
+  <caption style = "text-align: center;">SR/XR: 2023, week 08, season regular: Alabama vs Tennessee</caption>
+  <thead>
+    <tr class = "header headerLastRow">
+      <th style = "text-align: left;">Team</th>
+      <th style = "text-align: left;">SR</th>
+      <th style = "text-align: left;">XR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">0.397</td>
+      <td style = "text-align: left;">0.143</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Tennessee</td>
+      <td style = "text-align: left;">0.38</td>
+      <td style = "text-align: left;">0.063</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+<div id="Alabama_2023_regular_wk08_Tennessee-02-drive_fac_down-copy" ></div><br />
+
+
+<table>
+  <caption style = "text-align: center;">Mean drive SR by week: Tennessee, 2023, week 08, season regular, Opponent: Alabama</caption>
+  <thead>
+    <tr class = "header headerLastRow">
+      <th style = "text-align: left;">Week</th>
+      <th style = "text-align: left;">Drive SR: mean</th>
+      <th style = "text-align: left;">SR</th>
+      <th style = "text-align: left;">XR</th>
+      <th style = "text-align: left;">Opponent</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style = "text-align: left;">wk01</td>
+      <td style = "text-align: left;">0.48</td>
+      <td style = "text-align: left;">0.576</td>
+      <td style = "text-align: left;">0.071</td>
+      <td style = "text-align: left;">Virginia</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">wk02</td>
+      <td style = "text-align: left;">0.468</td>
+      <td style = "text-align: left;">0.492</td>
+      <td style = "text-align: left;">0.169</td>
+      <td style = "text-align: left;">Austin Peay</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">wk03</td>
+      <td style = "text-align: left;">0.253</td>
+      <td style = "text-align: left;">0.312</td>
+      <td style = "text-align: left;">0.078</td>
+      <td style = "text-align: left;">Florida</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">wk04</td>
+      <td style = "text-align: left;">0.426</td>
+      <td style = "text-align: left;">0.446</td>
+      <td style = "text-align: left;">0.138</td>
+      <td style = "text-align: left;">UT San Antonio</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">wk05</td>
+      <td style = "text-align: left;">0.374</td>
+      <td style = "text-align: left;">0.507</td>
+      <td style = "text-align: left;">0.113</td>
+      <td style = "text-align: left;">South Carolina</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">wk07</td>
+      <td style = "text-align: left;">0.292</td>
+      <td style = "text-align: left;">0.329</td>
+      <td style = "text-align: left;">0.092</td>
+      <td style = "text-align: left;">Texas A&amp;M</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+<table>
+  <caption style = "text-align: center;">SR/XR: 2023, week 08, season regular: Alabama vs Tennessee</caption>
+  <thead>
+    <tr class = "header headerLastRow">
+      <th style = "text-align: left;">Team</th>
+      <th style = "text-align: left;">SR</th>
+      <th style = "text-align: left;">XR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">0.397</td>
+      <td style = "text-align: left;">0.143</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Tennessee</td>
+      <td style = "text-align: left;">0.38</td>
+      <td style = "text-align: left;">0.063</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+<div id="Tennessee_2023_regular_wk08_Alabama-02-drive_fac_down-copy" ></div><br />
+
+<p>
+I have run a few other seasons and hope to compare the Distance to 1st/TD, Yards gained statistics by Down results to what we're seeing this year.
+Just a cursory view of the historic data it looks like I'm not seeing the decreasing values like I thought I would.
+Unlike other recent games our mean/median distance to 1st/TD did decrease by down like I would think it should if you are having a good performance.
+Looking at the Yards to Success vs Yards Gained by Down 2nd down data and wow,
+we were only successful on 4 out of 20 plays!
+But looking at 1st down we were successful on 16/30 with 9 1st/TDs.
+On 3rd down we were 5/13.
+It almost makes me want to split all of these charts out by half just to see what it would look like.
+</p>
+<table>
+  <caption style = "text-align: center;">Success by down: Alabama, 2023, week 08, season regular, Opponent: Tennessee</caption>
+  <thead>
+    <tr class = "header headerLastRow">
+      <th style = "text-align: left;">Down</th>
+      <th style = "text-align: left;">Successful</th>
+      <th style = "text-align: left;">Unsuccessful</th>
+      <th style = "text-align: left;">Total</th>
+      <th style = "text-align: left;">TD/1st</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">16</td>
+      <td style = "text-align: left;">14</td>
+      <td style = "text-align: left;">30</td>
+      <td style = "text-align: left;">9</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">16</td>
+      <td style = "text-align: left;">20</td>
+      <td style = "text-align: left;">4</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">8</td>
+      <td style = "text-align: left;">13</td>
+      <td style = "text-align: left;">5</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">0</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+<table>
+  <caption style = "text-align: center;">Distance to 1st/TD, Yards gained statistics by down: Alabama, 2023, week 08, season regular, Opponent: Tennessee</caption>
+  <thead>
+    <tr class = "header headerLastRow">
+      <th style = "text-align: left;">Down</th>
+      <th style = "text-align: left;">Count</th>
+      <th style = "text-align: left;">Δ_plays</th>
+      <th style = "text-align: left;">Mean distance</th>
+      <th style = "text-align: left;">Std distance</th>
+      <th style = "text-align: left;">Median distance</th>
+      <th style = "text-align: left;">Mean gained</th>
+      <th style = "text-align: left;">Std gained</th>
+      <th style = "text-align: left;">Median gained</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">30</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">10.0</td>
+      <td style = "text-align: left;">1.31306</td>
+      <td style = "text-align: left;">10.0</td>
+      <td style = "text-align: left;">7.26667</td>
+      <td style = "text-align: left;">10.501</td>
+      <td style = "text-align: left;">5.0</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">20</td>
+      <td style = "text-align: left;">10</td>
+      <td style = "text-align: left;">6.7</td>
+      <td style = "text-align: left;">2.07998</td>
+      <td style = "text-align: left;">7.0</td>
+      <td style = "text-align: left;">4.15</td>
+      <td style = "text-align: left;">7.79524</td>
+      <td style = "text-align: left;">1.5</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">13</td>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">5.46154</td>
+      <td style = "text-align: left;">2.29548</td>
+      <td style = "text-align: left;">6.0</td>
+      <td style = "text-align: left;">4.69231</td>
+      <td style = "text-align: left;">10.1603</td>
+      <td style = "text-align: left;">2.0</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">13</td>
+      <td style = "text-align: left;">NaN</td>
+      <td style = "text-align: left;">NaN</td>
+      <td style = "text-align: left;">NaN</td>
+      <td style = "text-align: left;">NaN</td>
+      <td style = "text-align: left;">NaN</td>
+      <td style = "text-align: left;">NaN</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+<div id="Alabama_2023_regular_wk08_Tennessee-05-all4_downs_fac_noscale-copy" ></div><br />
+<div id="Alabama_2023_regular_wk08_Tennessee-e11-distance_downs_boxwhisker-copy" ></div><br />
+<div id="Alabama_2023_regular_wk08_Tennessee-e12-gained_downs_boxwhisker-copy" ></div><br />
+
+<p>
+Fortunately there isn't much to say about penalties this week other than there was only one Alabama penalty.
+Tennessee on the other hand had 8 penalties.
+Unfortunately the Tennessee game data isn't allowing me to pull their penalties out so I don't have a graph for them for the season.
+I do have an alternate source for the number of enforced penalties 
+and as can be seen from the table below they are the most penalized team in the SEC.
+So maybe Heupel should whine less and get his team to play more disciplined.
+Last season Tennessee finished with a <i>z</i>-score of 1.86 
+and this season now has a <i>z</i>-score of 1.69.
+</p>
+<p>
+I know everyone complains about our penalties but we have a <i>z</i>-score of -0.29 this season.
+This is down quite a bit from the <i>z</i>-score of 1.67 from last season.
+The 10 vs Texas and 14 vs Texas A&amp;M were quite a lot (everything is bigger when playing Texas?),
+but the rest of our games haven't been bad.
+I'd still love to see 0 penalties, 
+but the only SEC team with a 0 penalty game is Arkansas in week 5.
+</p>
+
+<div id="Alabama_2023_regular_wk08_Tennessee-p01-penalties_bar-copy" ></div><br />
+<table>
+  <caption style = "text-align: center;">Penalties: 2023, week 08, season regular</caption>
+  <thead>
+    <tr class = "header headerLastRow">
+      <th style = "text-align: left;">Team</th>
+      <th style = "text-align: left;">Type</th>
+      <th style = "text-align: left;">Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">Illegal Snap</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Tennessee</td>
+      <td style = "text-align: left;">Holding</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Tennessee</td>
+      <td style = "text-align: left;">Delay Of Game</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Tennessee</td>
+      <td style = "text-align: left;">Offside</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Tennessee</td>
+      <td style = "text-align: left;">Offside</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Tennessee</td>
+      <td style = "text-align: left;">Holding</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Tennessee</td>
+      <td style = "text-align: left;">Holding</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Tennessee</td>
+      <td style = "text-align: left;">False Start</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Tennessee</td>
+      <td style = "text-align: left;">False Start</td>
+      <td style = "text-align: left;">enforced</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+<div id="Alabama_2023_regular_wk08-p03-penalties_line_season-copy" ></div><br />
+
+<h4>SEC</h4>
+<table>
+  <thead>
+    <tr class = "header headerLastRow">
+      <th style = "text-align: left;">week</th>
+      <th style = "text-align: left;">Alabama</th>
+      <th style = "text-align: left;">Arkansas</th>
+      <th style = "text-align: left;">Auburn</th>
+      <th style = "text-align: left;">Florida</th>
+      <th style = "text-align: left;">Georgia</th>
+      <th style = "text-align: left;">Kentucky</th>
+      <th style = "text-align: left;">LSU</th>
+      <th style = "text-align: left;">Mississippi State</th>
+      <th style = "text-align: left;">Missouri</th>
+      <th style = "text-align: left;">Ole Miss</th>
+      <th style = "text-align: left;">South Carolina</th>
+      <th style = "text-align: left;">Tennessee</th>
+      <th style = "text-align: left;">Texas A&amp;M</th>
+      <th style = "text-align: left;">Vanderbilt</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">missing</td>
+      <td style = "text-align: left;">missing</td>
+      <td style = "text-align: left;">missing</td>
+      <td style = "text-align: left;">missing</td>
+      <td style = "text-align: left;">missing</td>
+      <td style = "text-align: left;">missing</td>
+      <td style = "text-align: left;">missing</td>
+      <td style = "text-align: left;">missing</td>
+      <td style = "text-align: left;">missing</td>
+      <td style = "text-align: left;">missing</td>
+      <td style = "text-align: left;">missing</td>
+      <td style = "text-align: left;">missing</td>
+      <td style = "text-align: left;">missing</td>
+      <td style = "text-align: left;">8</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">9</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">9</td>
+      <td style = "text-align: left;">missing</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">10</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">10</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">9</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">8</td>
+      <td style = "text-align: left;">10</td>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">5</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">14</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">11</td>
+      <td style = "text-align: left;">10</td>
+      <td style = "text-align: left;">8</td>
+      <td style = "text-align: left;">2</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">11</td>
+      <td style = "text-align: left;">10</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">10</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">8</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">7</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">10</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">9</td>
+      <td style = "text-align: left;">11</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">4</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">14</td>
+      <td style = "text-align: left;">10</td>
+      <td style = "text-align: left;">missing</td>
+      <td style = "text-align: left;">8</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">11</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">11</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">missing</td>
+      <td style = "text-align: left;">missing</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">5</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">14</td>
+      <td style = "text-align: left;">12</td>
+      <td style = "text-align: left;">missing</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">missing</td>
+      <td style = "text-align: left;">9</td>
+      <td style = "text-align: left;">12</td>
+      <td style = "text-align: left;">11</td>
+      <td style = "text-align: left;">5</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">8</td>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">5</td>
+      <td style = "text-align: left;">7</td>
+      <td style = "text-align: left;">missing</td>
+      <td style = "text-align: left;">missing</td>
+      <td style = "text-align: left;">missing</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">8</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">10</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">8</td>
+      <td style = "text-align: left;">missing</td>
+      <td style = "text-align: left;">missing</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+<table>
+  <thead>
+    <tr class = "header headerLastRow">
+      <th style = "text-align: left;">school</th>
+      <th style = "text-align: left;">sum</th>
+      <th style = "text-align: left;">mean</th>
+      <th style = "text-align: left;">z</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style = "text-align: left;">Tennessee</td>
+      <td style = "text-align: left;">56</td>
+      <td style = "text-align: left;">8.00</td>
+      <td style = "text-align: left;">1.36</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Kentucky</td>
+      <td style = "text-align: left;">54</td>
+      <td style = "text-align: left;">7.71</td>
+      <td style = "text-align: left;">1.11</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Texas A&amp;M</td>
+      <td style = "text-align: left;">52</td>
+      <td style = "text-align: left;">7.43</td>
+      <td style = "text-align: left;">0.86</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Ole Miss</td>
+      <td style = "text-align: left;">51</td>
+      <td style = "text-align: left;">7.29</td>
+      <td style = "text-align: left;">0.74</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Missouri</td>
+      <td style = "text-align: left;">57</td>
+      <td style = "text-align: left;">7.12</td>
+      <td style = "text-align: left;">0.64</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">South Carolina</td>
+      <td style = "text-align: left;">48</td>
+      <td style = "text-align: left;">6.86</td>
+      <td style = "text-align: left;">0.36</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Florida</td>
+      <td style = "text-align: left;">47</td>
+      <td style = "text-align: left;">6.71</td>
+      <td style = "text-align: left;">0.24</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Arkansas</td>
+      <td style = "text-align: left;">53</td>
+      <td style = "text-align: left;">6.62</td>
+      <td style = "text-align: left;">0.17</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">49</td>
+      <td style = "text-align: left;">6.12</td>
+      <td style = "text-align: left;">-0.29</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">LSU</td>
+      <td style = "text-align: left;">47</td>
+      <td style = "text-align: left;">5.88</td>
+      <td style = "text-align: left;">-0.53</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Auburn</td>
+      <td style = "text-align: left;">39</td>
+      <td style = "text-align: left;">5.57</td>
+      <td style = "text-align: left;">-0.76</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Mississippi State</td>
+      <td style = "text-align: left;">36</td>
+      <td style = "text-align: left;">5.14</td>
+      <td style = "text-align: left;">-1.13</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Vanderbilt</td>
+      <td style = "text-align: left;">36</td>
+      <td style = "text-align: left;">5.14</td>
+      <td style = "text-align: left;">-1.13</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Georgia</td>
+      <td style = "text-align: left;">32</td>
+      <td style = "text-align: left;">4.57</td>
+      <td style = "text-align: left;">-1.63</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+
+<p>
+That's all I got for this week.
+I hope the team has an awesome BYE week
+and comes out ready for what looks to be a tough LSU game.
+</p>
+
+<p>
+Roll Tide!
+</p>

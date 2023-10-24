@@ -1,0 +1,314 @@
+{
+  data: [
+    {
+      "x": [0.65, 8.35],
+      "y": [1.14285714285714, 1.14285714285714],
+      "text": "yintercept: 1.142857",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 3.77952755905512,
+        "color": "rgba(255,130,0,1)",
+        "dash": "dash"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 2, 3, 4, 5, 6, 7, 8],
+      "y": [0, 0, 0, 0, 0, 0, 0, 8],
+      "text": ["Game_number: 1<br />Opponent: Virginia<br />Penalty_all_count_nona: 0", "Game_number: 2<br />Opponent: Austin Peay<br />Penalty_all_count_nona: 0", "Game_number: 3<br />Opponent: Florida<br />Penalty_all_count_nona: 0", "Game_number: 4<br />Opponent: UT San Antonio<br />Penalty_all_count_nona: 0", "Game_number: 5<br />Opponent: South Carolina<br />Penalty_all_count_nona: 0", "Game_number: 6<br />Opponent: BYE<br />Penalty_all_count_nona: 0", "Game_number: 7<br />Opponent: Texas A&M<br />Penalty_all_count_nona: 0", "Game_number: 8<br />Opponent: Alabama<br />Penalty_all_count_nona: 8"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(88,89,91,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 2, 3, 4, 5, 6, 7, 8],
+      "y": [0, 0, 0, 0, 0, null, 0, 8],
+      "text": ["Game_number: 1<br />Opponent: Virginia<br />Penalty_all_count:  0", "Game_number: 2<br />Opponent: Austin Peay<br />Penalty_all_count:  0", "Game_number: 3<br />Opponent: Florida<br />Penalty_all_count:  0", "Game_number: 4<br />Opponent: UT San Antonio<br />Penalty_all_count:  0", "Game_number: 5<br />Opponent: South Carolina<br />Penalty_all_count:  0", "Game_number: 6<br />Opponent: BYE<br />Penalty_all_count: NA", "Game_number: 7<br />Opponent: Texas A&M<br />Penalty_all_count:  0", "Game_number: 8<br />Opponent: Alabama<br />Penalty_all_count:  8"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(88,89,91,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "circle",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(88,89,91,1)"
+        }
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 2, 3, 4, 5, 6, 7, 8],
+      "y": [0, 0, 0, 0, 0, 0, 0, 8],
+      "text": ["Game_number: 1<br />Opponent: Virginia<br />Penalty_enforced_count_nona: 0", "Game_number: 2<br />Opponent: Austin Peay<br />Penalty_enforced_count_nona: 0", "Game_number: 3<br />Opponent: Florida<br />Penalty_enforced_count_nona: 0", "Game_number: 4<br />Opponent: UT San Antonio<br />Penalty_enforced_count_nona: 0", "Game_number: 5<br />Opponent: South Carolina<br />Penalty_enforced_count_nona: 0", "Game_number: 6<br />Opponent: BYE<br />Penalty_enforced_count_nona: 0", "Game_number: 7<br />Opponent: Texas A&M<br />Penalty_enforced_count_nona: 0", "Game_number: 8<br />Opponent: Alabama<br />Penalty_enforced_count_nona: 8"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(255,130,0,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 2, 3, 4, 5, 6, 7, 8],
+      "y": [0, 0, 0, 0, 0, null, 0, 8],
+      "text": ["Game_number: 1<br />Opponent: Virginia<br />Penalty_enforced_count:  0", "Game_number: 2<br />Opponent: Austin Peay<br />Penalty_enforced_count:  0", "Game_number: 3<br />Opponent: Florida<br />Penalty_enforced_count:  0", "Game_number: 4<br />Opponent: UT San Antonio<br />Penalty_enforced_count:  0", "Game_number: 5<br />Opponent: South Carolina<br />Penalty_enforced_count:  0", "Game_number: 6<br />Opponent: BYE<br />Penalty_enforced_count: NA", "Game_number: 7<br />Opponent: Texas A&M<br />Penalty_enforced_count:  0", "Game_number: 8<br />Opponent: Alabama<br />Penalty_enforced_count:  8"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(255,130,0,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "circle",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(255,130,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "visible": false,
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "mode": "",
+      "frame": null
+    }
+  ],
+  layout: {
+    "margin": {
+      "t": 43.2754946727549,
+      "r": 7.30593607305936,
+      "b": 39.6955859969559,
+      "l": 31.4155251141553
+    },
+    "plot_bgcolor": "rgba(235,235,235,1)",
+    "paper_bgcolor": "rgba(255,255,255,1)",
+    "font": {
+      "color": "rgba(0,0,0,1)",
+      "family": "",
+      "size": 14.6118721461187
+    },
+    "title": {
+      "text": "Tennessee penalties for 2023; Average: enforced = 1.14 (primary team color), all = 1.14 (secondary team color)<br> <sup><\/sup>",
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 17.5342465753425
+      },
+      "x": 0,
+      "xref": "paper",
+      "xanchor": "left"
+    },
+    "xaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [0.65, 8.35],
+      "tickmode": "array",
+      "ticktext": ["Virginia", "Austin Peay", "Florida", "UT San Antonio", "South Carolina", "BYE", "Texas A&M", "Alabama"],
+      "tickvals": [1, 2, 3, 4, 5, 6, 7, 8],
+      "categoryorder": "array",
+      "categoryarray": ["Virginia", "Austin Peay", "Florida", "UT San Antonio", "South Carolina", "BYE", "Texas A&M", "Alabama"],
+      "nticks": null,
+      "ticks": "outside",
+      "tickcolor": "rgba(51,51,51,1)",
+      "ticklen": 3.65296803652968,
+      "tickwidth": 0.66417600664176,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "tickangle": -0,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": "rgba(255,255,255,1)",
+      "gridwidth": 0.66417600664176,
+      "zeroline": false,
+      "anchor": "y",
+      "title": {
+        "text": "Opponent",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "yaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [-0.4, 8.4],
+      "tickmode": "array",
+      "ticktext": ["0", "1", "2", "3", "4", "5", "6", "7", "8"],
+      "tickvals": [0, 1, 2, 3, 4, 5, 6, 7, 8],
+      "categoryorder": "array",
+      "categoryarray": ["0", "1", "2", "3", "4", "5", "6", "7", "8"],
+      "nticks": null,
+      "ticks": "outside",
+      "tickcolor": "rgba(51,51,51,1)",
+      "ticklen": 3.65296803652968,
+      "tickwidth": 0.66417600664176,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "tickangle": -0,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": "rgba(255,255,255,1)",
+      "gridwidth": 0.66417600664176,
+      "zeroline": false,
+      "anchor": "x",
+      "title": {
+        "text": "Penalty Count: all (dotdashed line), enforced (dashed line)",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "shapes": [
+      {
+        "type": "rect",
+        "fillcolor": null,
+        "line": {
+          "color": null,
+          "width": 0,
+          "linetype": []
+        },
+        "yref": "paper",
+        "xref": "paper",
+        "x0": 0,
+        "x1": 1,
+        "y0": 0,
+        "y1": 1
+      }
+    ],
+    "showlegend": false,
+    "legend": {
+      "bgcolor": "rgba(255,255,255,1)",
+      "bordercolor": "transparent",
+      "borderwidth": 1.88976377952756,
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 11.689497716895
+      }
+    },
+    "hovermode": "closest",
+    "barmode": "relative"
+  },
+  config: {
+    "doubleClick": "reset",
+    "modeBarButtonsToAdd": ["hoverclosest", "hovercompare"],
+    "showSendToCloud": false
+  },
+  source: "A",
+  attrs: {
+    "26805d044ef1": {
+      "yintercept": {},
+      "type": "scatter"
+    },
+    "268013853e38": {
+      "yintercept": {}
+    },
+    "268075761754": {
+      "x": {},
+      "label": {},
+      "y": {}
+    },
+    "2680a2d51": {
+      "x": {},
+      "label": {},
+      "y": {}
+    },
+    "268076425ec0": {
+      "x": {},
+      "label": {},
+      "y": {}
+    },
+    "26801a3e6cfc": {
+      "x": {},
+      "label": {},
+      "y": {}
+    },
+    "26804bc1429c": {
+      "y": {}
+    }
+  },
+  cur_data: "26805d044ef1",
+  visdat: {
+    "26805d044ef1": ["function (y) ", "x"],
+    "268013853e38": ["function (y) ", "x"],
+    "268075761754": ["function (y) ", "x"],
+    "2680a2d51": ["function (y) ", "x"],
+    "268076425ec0": ["function (y) ", "x"],
+    "26801a3e6cfc": ["function (y) ", "x"],
+    "26804bc1429c": ["function (y) ", "x"]
+  },
+  highlight: {
+    "on": "plotly_click",
+    "persistent": false,
+    "dynamic": false,
+    "selectize": false,
+    "opacityDim": 0.2,
+    "selected": {
+      "opacity": 1
+    },
+    "debounce": 0
+  },
+  shinyEvents: ["plotly_hover", "plotly_click", "plotly_selected", "plotly_relayout", "plotly_brushed", "plotly_brushing", "plotly_clickannotation", "plotly_doubleclick", "plotly_deselect", "plotly_afterplot", "plotly_sunburstclick"],
+  base_url: "https://plot.ly"
+}
