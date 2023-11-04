@@ -14,7 +14,7 @@
         "color": "rgba(158,27,50,1)",
         "line": {
           "width": 1.88976377952756,
-          "color": "transparent"
+          "color": "rgba(0,0,0,1)"
         }
       },
       "name": "Alabama",
@@ -39,7 +39,7 @@
         "color": "rgba(80,0,0,1)",
         "line": {
           "width": 1.88976377952756,
-          "color": "transparent"
+          "color": "rgba(0,0,0,1)"
         }
       },
       "name": "Texas A&M",
@@ -196,16 +196,16 @@
   },
   source: "A",
   attrs: {
-    "6c283c935339": {
+    "536c3c645f68": {
       "x": {},
       "y": {},
       "fill": {},
       "type": "bar"
     }
   },
-  cur_data: "6c283c935339",
+  cur_data: "536c3c645f68",
   visdat: {
-    "6c283c935339": ["function (y) ", "x"]
+    "536c3c645f68": ["function (y) ", "x"]
   },
   highlight: {
     "on": "plotly_click",

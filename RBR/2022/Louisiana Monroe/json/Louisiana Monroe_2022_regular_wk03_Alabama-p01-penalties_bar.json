@@ -14,7 +14,7 @@
         "color": "rgba(158,27,50,1)",
         "line": {
           "width": 1.88976377952756,
-          "color": "transparent"
+          "color": "rgba(0,0,0,1)"
         }
       },
       "name": "Alabama",
@@ -39,7 +39,7 @@
         "color": "rgba(132,0,41,1)",
         "line": {
           "width": 1.88976377952756,
-          "color": "transparent"
+          "color": "rgba(0,0,0,1)"
         }
       },
       "name": "Louisiana Monroe",
@@ -196,16 +196,16 @@
   },
   source: "A",
   attrs: {
-    "6c28272333e8": {
+    "536c9ee245f": {
       "x": {},
       "y": {},
       "fill": {},
       "type": "bar"
     }
   },
-  cur_data: "6c28272333e8",
+  cur_data: "536c9ee245f",
   visdat: {
-    "6c28272333e8": ["function (y) ", "x"]
+    "536c9ee245f": ["function (y) ", "x"]
   },
   highlight: {
     "on": "plotly_click",

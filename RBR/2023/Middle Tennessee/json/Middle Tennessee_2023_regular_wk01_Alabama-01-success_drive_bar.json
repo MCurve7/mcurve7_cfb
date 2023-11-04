@@ -8,6 +8,24 @@
       "mode": "lines",
       "line": {
         "width": 1.88976377952756,
+        "color": "rgba(0,0,0,1)",
+        "dash": "dashdot"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [-0.0449999999999999, 13.045],
+      "y": [null, null],
+      "text": "yintercept: NA",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
         "color": "rgba(0,102,204,1)",
         "dash": "dash"
       },
@@ -20,11 +38,11 @@
     },
     {
       "orientation": "v",
-      "width": [0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.899999999999999, 0.899999999999999, 0.899999999999999, 0.899999999999999],
-      "base": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-      "x": [1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12],
-      "y": [0, 0, 0.714285714285714, 0.333333333333333, 0.666666666666667, 0, 0.25, 0, 0, 0.333333333333333, 0.333333333333333],
-      "text": ["O_drive_number:  1<br />Success_rate: 0.0000000<br />Score_drive: FALSE<br />Total:  3", "O_drive_number:  2<br />Success_rate: 0.0000000<br />Score_drive: FALSE<br />Total:  3", "O_drive_number:  3<br />Success_rate: 0.7142857<br />Score_drive: FALSE<br />Total:  7", "O_drive_number:  4<br />Success_rate: 0.3333333<br />Score_drive: FALSE<br />Total:  9", "O_drive_number:  5<br />Success_rate: 0.6666667<br />Score_drive: FALSE<br />Total:  6", "O_drive_number:  6<br />Success_rate: 0.0000000<br />Score_drive: FALSE<br />Total:  3", "O_drive_number:  7<br />Success_rate: 0.2500000<br />Score_drive: FALSE<br />Total:  4", "O_drive_number:  8<br />Success_rate: 0.0000000<br />Score_drive: FALSE<br />Total:  3", "O_drive_number:  9<br />Success_rate: 0.0000000<br />Score_drive: FALSE<br />Total:  3", "O_drive_number: 11<br />Success_rate: 0.3333333<br />Score_drive: FALSE<br />Total:  3", "O_drive_number: 12<br />Success_rate: 0.3333333<br />Score_drive: FALSE<br />Total:  6"],
+      "width": [0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.899999999999999, 0.899999999999999, 0.899999999999999, 0.899999999999999],
+      "base": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "x": [1, 2, 3, 4, 6, 7, 8, 9, 11, 12],
+      "y": [0, 0, 0.714285714285714, 0.333333333333333, 0, 0.25, 0, 0, 0.333333333333333, 0.333333333333333],
+      "text": ["O_drive_number:  1<br />Success_rate: 0.0000000<br />Score_Turnover_drive: Neither<br />Total:  3<br />Score_Turnover_drive: Neither", "O_drive_number:  2<br />Success_rate: 0.0000000<br />Score_Turnover_drive: Neither<br />Total:  3<br />Score_Turnover_drive: Neither", "O_drive_number:  3<br />Success_rate: 0.7142857<br />Score_Turnover_drive: Neither<br />Total:  7<br />Score_Turnover_drive: Neither", "O_drive_number:  4<br />Success_rate: 0.3333333<br />Score_Turnover_drive: Neither<br />Total:  9<br />Score_Turnover_drive: Neither", "O_drive_number:  6<br />Success_rate: 0.0000000<br />Score_Turnover_drive: Neither<br />Total:  3<br />Score_Turnover_drive: Neither", "O_drive_number:  7<br />Success_rate: 0.2500000<br />Score_Turnover_drive: Neither<br />Total:  4<br />Score_Turnover_drive: Neither", "O_drive_number:  8<br />Success_rate: 0.0000000<br />Score_Turnover_drive: Neither<br />Total:  3<br />Score_Turnover_drive: Neither", "O_drive_number:  9<br />Success_rate: 0.0000000<br />Score_Turnover_drive: Neither<br />Total:  3<br />Score_Turnover_drive: Neither", "O_drive_number: 11<br />Success_rate: 0.3333333<br />Score_Turnover_drive: Neither<br />Total:  3<br />Score_Turnover_drive: Neither", "O_drive_number: 12<br />Success_rate: 0.3333333<br />Score_Turnover_drive: Neither<br />Total:  6<br />Score_Turnover_drive: Neither"],
       "type": "bar",
       "textposition": "none",
       "marker": {
@@ -35,13 +53,12 @@
           "color": "rgba(0,0,0,1)"
         }
       },
-      "name": "FALSE",
-      "legendgroup": "FALSE",
+      "name": "Neither",
+      "legendgroup": "Neither",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
       "hoverinfo": "text",
-      "mode": "",
       "frame": null
     },
     {
@@ -50,7 +67,7 @@
       "base": 0,
       "x": [10],
       "y": [0.636363636363636],
-      "text": "O_drive_number: 10<br />Success_rate: 0.6363636<br />Score_drive:  TRUE<br />Total: 11",
+      "text": "O_drive_number: 10<br />Success_rate: 0.6363636<br />Score_Turnover_drive: Score<br />Total: 11<br />Score_Turnover_drive: Score",
       "type": "bar",
       "textposition": "none",
       "marker": {
@@ -61,13 +78,55 @@
           "color": "rgba(0,0,0,1)"
         }
       },
-      "name": "TRUE",
-      "legendgroup": "TRUE",
+      "name": "Score",
+      "legendgroup": "Score",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
       "hoverinfo": "text",
-      "mode": "",
+      "frame": null
+    },
+    {
+      "orientation": "v",
+      "width": 0.9,
+      "base": 0,
+      "x": [5],
+      "y": [0.666666666666667],
+      "text": "O_drive_number:  5<br />Success_rate: 0.6666667<br />Score_Turnover_drive: Turnover<br />Total:  6<br />Score_Turnover_drive: Turnover",
+      "type": "bar",
+      "textposition": "none",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(255,0,255,1)",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(255,0,255,1)"
+        }
+      },
+      "name": "Turnover",
+      "legendgroup": "Turnover",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [7.5, 7.5],
+      "y": [-0.05, 1.05],
+      "text": "xintercept: 7.5",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(102,102,102,1)",
+        "dash": "longdash"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
       "frame": null
     },
     {
@@ -76,7 +135,6 @@
       "xaxis": "x",
       "yaxis": "y",
       "hoverinfo": "text",
-      "mode": "",
       "frame": null
     },
     {
@@ -113,7 +171,7 @@
       "size": 14.6118721461187
     },
     "title": {
-      "text": "Middle Tennessee[7]: Success rate by Drive with TD drive indicated and number of plays per drive; Mean: Game = 0.272 (dotdash), Season = 0.272 (dashed)<br> <sup>2023: wk01 vs Alabama[56]<\/sup>",
+      "text": "Middle Tennessee[7]: Success rate by Drive with TD drive indicated and number of plays per drive; Mean: Game = 0.272 (dotdash), Season = NaN (dashed)<br> <sup>2023: wk01 vs Alabama[56]<\/sup>",
       "font": {
         "color": "rgba(0,0,0,1)",
         "family": "",
@@ -251,35 +309,40 @@
   },
   source: "A",
   attrs: {
-    "4b7c561d2853": {
+    "536c79024b5c": {
       "yintercept": {},
       "type": "scatter"
     },
-    "4b7c22a33dfa": {
+    "536c70921c6b": {
       "yintercept": {}
     },
-    "4b7c64be101e": {
+    "536c23b42ea8": {
       "x": {},
       "y": {},
       "fill": {},
-      "label": {}
+      "label": {},
+      "colour": {}
     },
-    "4b7c46f915b": {
+    "536c4e1a59d5": {
+      "xintercept": {}
+    },
+    "536c36076a04": {
       "y": {}
     },
-    "4b7c4b1622ed": {
+    "536c90314e6": {
       "x": {},
       "y": {},
       "label": {}
     }
   },
-  cur_data: "4b7c561d2853",
+  cur_data: "536c79024b5c",
   visdat: {
-    "4b7c561d2853": ["function (y) ", "x"],
-    "4b7c22a33dfa": ["function (y) ", "x"],
-    "4b7c64be101e": ["function (y) ", "x"],
-    "4b7c46f915b": ["function (y) ", "x"],
-    "4b7c4b1622ed": ["function (y) ", "x"]
+    "536c79024b5c": ["function (y) ", "x"],
+    "536c70921c6b": ["function (y) ", "x"],
+    "536c23b42ea8": ["function (y) ", "x"],
+    "536c4e1a59d5": ["function (y) ", "x"],
+    "536c36076a04": ["function (y) ", "x"],
+    "536c90314e6": ["function (y) ", "x"]
   },
   highlight: {
     "on": "plotly_click",

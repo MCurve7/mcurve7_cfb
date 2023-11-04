@@ -2,8 +2,8 @@
   data: [
     {
       "x": [0.95, 2.05],
-      "y": [6.5, 6.5],
-      "text": "yintercept: 6.5",
+      "y": [6, 6],
+      "text": "yintercept: 6",
       "type": "scatter",
       "mode": "lines",
       "line": {
@@ -20,8 +20,8 @@
     },
     {
       "x": [0.95, 2.05],
-      "y": [6, 6],
-      "text": "yintercept: 6",
+      "y": [5.5, 5.5],
+      "text": "yintercept: 5.5",
       "type": "scatter",
       "mode": "lines",
       "line": {
@@ -38,8 +38,8 @@
     },
     {
       "x": [1, 2],
-      "y": [3, 10],
-      "text": ["Game_number: 1<br />Opponent: Middle Tennessee<br />Penalty_all_count_nona:  3", "Game_number: 2<br />Opponent: Texas<br />Penalty_all_count_nona: 10"],
+      "y": [2, 10],
+      "text": ["Game_number: 1<br />Opponent: Middle Tennessee<br />Penalty_all_count_nona:  2", "Game_number: 2<br />Opponent: Texas<br />Penalty_all_count_nona: 10"],
       "type": "scatter",
       "mode": "lines",
       "line": {
@@ -56,8 +56,8 @@
     },
     {
       "x": [1, 2],
-      "y": [3, 10],
-      "text": ["Game_number: 1<br />Opponent: Middle Tennessee<br />Penalty_all_count:  3", "Game_number: 2<br />Opponent: Texas<br />Penalty_all_count: 10"],
+      "y": [2, 10],
+      "text": ["Game_number: 1<br />Opponent: Middle Tennessee<br />Penalty_all_count:  2", "Game_number: 2<br />Opponent: Texas<br />Penalty_all_count: 10"],
       "type": "scatter",
       "mode": "markers",
       "marker": {
@@ -80,8 +80,8 @@
     },
     {
       "x": [1, 2],
-      "y": [2, 10],
-      "text": ["Game_number: 1<br />Opponent: Middle Tennessee<br />Penalty_enforced_count_nona:  2", "Game_number: 2<br />Opponent: Texas<br />Penalty_enforced_count_nona: 10"],
+      "y": [1, 10],
+      "text": ["Game_number: 1<br />Opponent: Middle Tennessee<br />Penalty_enforced_count_nona:  1", "Game_number: 2<br />Opponent: Texas<br />Penalty_enforced_count_nona: 10"],
       "type": "scatter",
       "mode": "lines",
       "line": {
@@ -98,8 +98,8 @@
     },
     {
       "x": [1, 2],
-      "y": [2, 10],
-      "text": ["Game_number: 1<br />Opponent: Middle Tennessee<br />Penalty_enforced_count:  2", "Game_number: 2<br />Opponent: Texas<br />Penalty_enforced_count: 10"],
+      "y": [1, 10],
+      "text": ["Game_number: 1<br />Opponent: Middle Tennessee<br />Penalty_enforced_count:  1", "Game_number: 2<br />Opponent: Texas<br />Penalty_enforced_count: 10"],
       "type": "scatter",
       "mode": "markers",
       "marker": {
@@ -144,7 +144,7 @@
       "size": 14.6118721461187
     },
     "title": {
-      "text": "Alabama penalties for 2023; Average: enforced = 6.00 (primary team color), all = 6.50 (secondary team color)<br> <sup><\/sup>",
+      "text": "Alabama penalties for 2023; Average: enforced = 5.50 (primary team color), all = 6.00 (secondary team color)<br> <sup><\/sup>",
       "font": {
         "color": "rgba(0,0,0,1)",
         "family": "",
@@ -274,46 +274,46 @@
   },
   source: "A",
   attrs: {
-    "5d6c678a1134": {
+    "536c53161688": {
       "yintercept": {},
       "type": "scatter"
     },
-    "5d6c5147d04": {
+    "536c55593ded": {
       "yintercept": {}
     },
-    "5d6c63461d9d": {
+    "536c2b821af1": {
       "x": {},
       "label": {},
       "y": {}
     },
-    "5d6c4cab4031": {
+    "536c79b46f0": {
       "x": {},
       "label": {},
       "y": {}
     },
-    "5d6c1e9076b9": {
+    "536c60ad4ceb": {
       "x": {},
       "label": {},
       "y": {}
     },
-    "5d6c722b37b7": {
+    "536c5eb9d64": {
       "x": {},
       "label": {},
       "y": {}
     },
-    "5d6c27fd4947": {
+    "536c194e75fe": {
       "y": {}
     }
   },
-  cur_data: "5d6c678a1134",
+  cur_data: "536c53161688",
   visdat: {
-    "5d6c678a1134": ["function (y) ", "x"],
-    "5d6c5147d04": ["function (y) ", "x"],
-    "5d6c63461d9d": ["function (y) ", "x"],
-    "5d6c4cab4031": ["function (y) ", "x"],
-    "5d6c1e9076b9": ["function (y) ", "x"],
-    "5d6c722b37b7": ["function (y) ", "x"],
-    "5d6c27fd4947": ["function (y) ", "x"]
+    "536c53161688": ["function (y) ", "x"],
+    "536c55593ded": ["function (y) ", "x"],
+    "536c2b821af1": ["function (y) ", "x"],
+    "536c79b46f0": ["function (y) ", "x"],
+    "536c60ad4ceb": ["function (y) ", "x"],
+    "536c5eb9d64": ["function (y) ", "x"],
+    "536c194e75fe": ["function (y) ", "x"]
   },
   highlight: {
     "on": "plotly_click",

@@ -14,7 +14,7 @@
         "color": "rgba(158,27,50,1)",
         "line": {
           "width": 1.88976377952756,
-          "color": "transparent"
+          "color": "rgba(0,0,0,1)"
         }
       },
       "name": "Alabama",
@@ -39,7 +39,7 @@
         "color": "rgba(206,17,38,1)",
         "line": {
           "width": 1.88976377952756,
-          "color": "transparent"
+          "color": "rgba(0,0,0,1)"
         }
       },
       "name": "Ole Miss",
@@ -196,16 +196,16 @@
   },
   source: "A",
   attrs: {
-    "6c28495b691c": {
+    "536c62df68b3": {
       "x": {},
       "y": {},
       "fill": {},
       "type": "bar"
     }
   },
-  cur_data: "6c28495b691c",
+  cur_data: "536c62df68b3",
   visdat: {
-    "6c28495b691c": ["function (y) ", "x"]
+    "536c62df68b3": ["function (y) ", "x"]
   },
   highlight: {
     "on": "plotly_click",

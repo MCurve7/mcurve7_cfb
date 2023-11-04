@@ -14,7 +14,7 @@
         "color": "rgba(158,27,50,1)",
         "line": {
           "width": 1.88976377952756,
-          "color": "transparent"
+          "color": "rgba(0,0,0,1)"
         }
       },
       "name": "Alabama",
@@ -39,7 +39,7 @@
         "color": "rgba(12,35,64,1)",
         "line": {
           "width": 1.88976377952756,
-          "color": "transparent"
+          "color": "rgba(0,0,0,1)"
         }
       },
       "name": "Auburn",
@@ -196,16 +196,16 @@
   },
   source: "A",
   attrs: {
-    "6c2868b47c5d": {
+    "536cc644f5a": {
       "x": {},
       "y": {},
       "fill": {},
       "type": "bar"
     }
   },
-  cur_data: "6c2868b47c5d",
+  cur_data: "536cc644f5a",
   visdat: {
-    "6c2868b47c5d": ["function (y) ", "x"]
+    "536cc644f5a": ["function (y) ", "x"]
   },
   highlight: {
     "on": "plotly_click",

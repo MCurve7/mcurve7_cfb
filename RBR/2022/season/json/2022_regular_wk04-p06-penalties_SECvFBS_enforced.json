@@ -20,8 +20,8 @@
     },
     {
       "x": [0.4, 14.6],
-      "y": [5.61795407098121, 5.61795407098121],
-      "text": "yintercept: 5.617954",
+      "y": [5.60204081632653, 5.60204081632653],
+      "text": "yintercept: 5.602041",
       "type": "scatter",
       "mode": "lines",
       "line": {
@@ -682,7 +682,7 @@
       "size": 14.6118721461187
     },
     "title": {
-      "text": "SEC v FBS team season average penalties: enforced<br> <sup>SEC average (green dashed) =  5.29 , FBS average (yellow dotdash) =  5.62<\/sup>",
+      "text": "SEC v FBS team season average penalties: enforced<br> <sup>SEC average (green dashed) =  5.29 , FBS average (yellow dotdash) =  5.60<\/sup>",
       "font": {
         "color": "rgba(0,0,0,1)",
         "family": "",
@@ -820,31 +820,31 @@
   },
   source: "A",
   attrs: {
-    "12f02ab8217b": {
+    "536c7c6d7ab0": {
       "yintercept": {},
       "type": "scatter"
     },
-    "12f0636169f2": {
+    "536c497b24f9": {
       "yintercept": {}
     },
-    "12f0752639ee": {
+    "536c5b4d4b31": {
       "x": {},
       "y": {},
       "fill": {}
     },
-    "12f07a013092": {
+    "536cfd273": {
       "x": {},
       "y": {},
       "fill": {},
       "label": {}
     }
   },
-  cur_data: "12f02ab8217b",
+  cur_data: "536c7c6d7ab0",
   visdat: {
-    "12f02ab8217b": ["function (y) ", "x"],
-    "12f0636169f2": ["function (y) ", "x"],
-    "12f0752639ee": ["function (y) ", "x"],
-    "12f07a013092": ["function (y) ", "x"]
+    "536c7c6d7ab0": ["function (y) ", "x"],
+    "536c497b24f9": ["function (y) ", "x"],
+    "536c5b4d4b31": ["function (y) ", "x"],
+    "536cfd273": ["function (y) ", "x"]
   },
   highlight: {
     "on": "plotly_click",

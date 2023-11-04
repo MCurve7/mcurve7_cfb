@@ -150,7 +150,7 @@ begin
                     # push!(teams_seen, (school1, 1))
                     # push!(teams_seen, (school2, 1))
                 else
-                    println("MISSED NOTHING PROCESSED")
+                    println("MISSED: NOTHING PROCESSED")
                 end
             end
             # println("teams_seen: $teams_seen")

@@ -597,7 +597,7 @@
       "frame": null
     },
     {
-      "x": [17.15, 13.85],
+      "x": [13.85, 17.15],
       "y": [0, 0],
       "text": "yintercept: 0",
       "type": "scatter",
@@ -615,7 +615,7 @@
       "frame": null
     },
     {
-      "x": [26.4, 17.6],
+      "x": [17.6, 26.4],
       "y": [0, 0],
       "text": "yintercept: 0",
       "type": "scatter",
@@ -669,7 +669,7 @@
       "frame": null
     },
     {
-      "x": [33.1, 30.9],
+      "x": [30.9, 33.1],
       "y": [0, 0],
       "text": "yintercept: 0",
       "type": "scatter",
@@ -687,7 +687,7 @@
       "frame": null
     },
     {
-      "x": [36.1, 33.9],
+      "x": [33.9, 36.1],
       "y": [0, 0],
       "text": "yintercept: 0",
       "type": "scatter",
@@ -741,7 +741,7 @@
       "frame": null
     },
     {
-      "x": [55.4, 46.6],
+      "x": [46.6, 55.4],
       "y": [0, 0],
       "text": "yintercept: 0",
       "type": "scatter",
@@ -759,7 +759,7 @@
       "frame": null
     },
     {
-      "x": [66.5, 55.5],
+      "x": [55.5, 66.5],
       "y": [0, 0],
       "text": "yintercept: 0",
       "type": "scatter",
@@ -4299,28 +4299,28 @@
   },
   source: "A",
   attrs: {
-    "6c2828e451a4": {
+    "536c6e02b6e": {
       "xmin": {},
       "xmax": {},
       "ymin": {},
       "ymax": {},
       "type": "scatter"
     },
-    "6c281945b98": {
+    "536c1cc6784d": {
       "xmin": {},
       "xmax": {},
       "ymin": {},
       "ymax": {}
     },
-    "6c287b545f0a": {
+    "536cc541900": {
       "yintercept": {}
     },
-    "6c2841a05fa4": {
+    "536cef34b80": {
       "x": {},
       "y": {},
       "colour": {}
     },
-    "6c2827e37f96": {
+    "536c1c9a1c66": {
       "x": {},
       "y": {},
       "shape": {},
@@ -4328,13 +4328,13 @@
       "label": {}
     }
   },
-  cur_data: "6c2828e451a4",
+  cur_data: "536c6e02b6e",
   visdat: {
-    "6c2828e451a4": ["function (y) ", "x"],
-    "6c281945b98": ["function (y) ", "x"],
-    "6c287b545f0a": ["function (y) ", "x"],
-    "6c2841a05fa4": ["function (y) ", "x"],
-    "6c2827e37f96": ["function (y) ", "x"]
+    "536c6e02b6e": ["function (y) ", "x"],
+    "536c1cc6784d": ["function (y) ", "x"],
+    "536cc541900": ["function (y) ", "x"],
+    "536cef34b80": ["function (y) ", "x"],
+    "536c1c9a1c66": ["function (y) ", "x"]
   },
   highlight: {
     "on": "plotly_click",

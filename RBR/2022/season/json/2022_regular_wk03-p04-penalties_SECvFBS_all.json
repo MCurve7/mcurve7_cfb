@@ -2,8 +2,8 @@
   data: [
     {
       "x": [0.4, 14.6],
-      "y": [5.52380952380952, 5.52380952380952],
-      "text": "yintercept: 5.52381",
+      "y": [5.57142857142857, 5.57142857142857],
+      "text": "yintercept: 5.571429",
       "type": "scatter",
       "mode": "lines",
       "line": {
@@ -20,8 +20,8 @@
     },
     {
       "x": [0.4, 14.6],
-      "y": [5.88315217391304, 5.88315217391304],
-      "text": "yintercept: 5.883152",
+      "y": [5.94565217391304, 5.94565217391304],
+      "text": "yintercept: 5.945652",
       "type": "scatter",
       "mode": "lines",
       "line": {
@@ -50,7 +50,7 @@
         "color": "rgba(158,27,50,1)",
         "line": {
           "width": 1.88976377952756,
-          "color": "transparent"
+          "color": "rgba(0,0,0,1)"
         }
       },
       "name": "Alabama",
@@ -75,7 +75,7 @@
         "color": "rgba(157,34,53,1)",
         "line": {
           "width": 1.88976377952756,
-          "color": "transparent"
+          "color": "rgba(0,0,0,1)"
         }
       },
       "name": "Arkansas",
@@ -100,7 +100,7 @@
         "color": "rgba(12,35,64,1)",
         "line": {
           "width": 1.88976377952756,
-          "color": "transparent"
+          "color": "rgba(0,0,0,1)"
         }
       },
       "name": "Auburn",
@@ -125,7 +125,7 @@
         "color": "rgba(0,33,165,1)",
         "line": {
           "width": 1.88976377952756,
-          "color": "transparent"
+          "color": "rgba(0,0,0,1)"
         }
       },
       "name": "Florida",
@@ -150,7 +150,7 @@
         "color": "rgba(186,12,47,1)",
         "line": {
           "width": 1.88976377952756,
-          "color": "transparent"
+          "color": "rgba(0,0,0,1)"
         }
       },
       "name": "Georgia",
@@ -175,7 +175,7 @@
         "color": "rgba(0,51,160,1)",
         "line": {
           "width": 1.88976377952756,
-          "color": "transparent"
+          "color": "rgba(0,0,0,1)"
         }
       },
       "name": "Kentucky",
@@ -200,7 +200,7 @@
         "color": "rgba(70,29,124,1)",
         "line": {
           "width": 1.88976377952756,
-          "color": "transparent"
+          "color": "rgba(0,0,0,1)"
         }
       },
       "name": "LSU",
@@ -225,7 +225,7 @@
         "color": "rgba(102,0,0,1)",
         "line": {
           "width": 1.88976377952756,
-          "color": "transparent"
+          "color": "rgba(0,0,0,1)"
         }
       },
       "name": "Mississippi State",
@@ -250,7 +250,7 @@
         "color": "rgba(0,0,0,1)",
         "line": {
           "width": 1.88976377952756,
-          "color": "transparent"
+          "color": "rgba(0,0,0,1)"
         }
       },
       "name": "Missouri",
@@ -275,7 +275,7 @@
         "color": "rgba(206,17,38,1)",
         "line": {
           "width": 1.88976377952756,
-          "color": "transparent"
+          "color": "rgba(0,0,0,1)"
         }
       },
       "name": "Ole Miss",
@@ -300,7 +300,7 @@
         "color": "rgba(115,0,10,1)",
         "line": {
           "width": 1.88976377952756,
-          "color": "transparent"
+          "color": "rgba(0,0,0,1)"
         }
       },
       "name": "South Carolina",
@@ -325,7 +325,7 @@
         "color": "rgba(255,130,0,1)",
         "line": {
           "width": 1.88976377952756,
-          "color": "transparent"
+          "color": "rgba(0,0,0,1)"
         }
       },
       "name": "Tennessee",
@@ -350,7 +350,7 @@
         "color": "rgba(80,0,0,1)",
         "line": {
           "width": 1.88976377952756,
-          "color": "transparent"
+          "color": "rgba(0,0,0,1)"
         }
       },
       "name": "Texas A&M",
@@ -366,8 +366,8 @@
       "width": 0.899999999999999,
       "base": 0,
       "x": [14],
-      "y": [3.25],
-      "text": "Team: Vanderbilt<br />Average: 3.250000<br />Team: Vanderbilt",
+      "y": [3.75],
+      "text": "Team: Vanderbilt<br />Average: 3.750000<br />Team: Vanderbilt",
       "type": "bar",
       "textposition": "none",
       "marker": {
@@ -375,7 +375,7 @@
         "color": "rgba(0,0,0,1)",
         "line": {
           "width": 1.88976377952756,
-          "color": "transparent"
+          "color": "rgba(0,0,0,1)"
         }
       },
       "name": "Vanderbilt",
@@ -648,9 +648,9 @@
     },
     {
       "x": [14],
-      "y": [3.25],
-      "text": "3.25",
-      "hovertext": "Team: Vanderbilt<br />Average: 3.250000<br />Team: Vanderbilt<br />sprintf(\"%2.2f\", Average): 3.25",
+      "y": [3.75],
+      "text": "3.75",
+      "hovertext": "Team: Vanderbilt<br />Average: 3.750000<br />Team: Vanderbilt<br />sprintf(\"%2.2f\", Average): 3.75",
       "textfont": {
         "size": 14.6645669291339,
         "color": "rgba(0,0,0,1)"
@@ -682,7 +682,7 @@
       "size": 14.6118721461187
     },
     "title": {
-      "text": "Penalties SEC v FBS teams, season average: enforced, declined, off-setting, ambiguous<br> <sup>SEC average (green dashed) =  5.52 , FBS average (yellow dotdash) =  5.88<\/sup>",
+      "text": "Penalties SEC v FBS teams, season average: enforced, declined, off-setting, ambiguous<br> <sup>SEC average (green dashed) =  5.57 , FBS average (yellow dotdash) =  5.95<\/sup>",
       "font": {
         "color": "rgba(0,0,0,1)",
         "family": "",
@@ -820,31 +820,31 @@
   },
   source: "A",
   attrs: {
-    "6c287f2e6b8b": {
+    "536c7b442679": {
       "yintercept": {},
       "type": "scatter"
     },
-    "6c28735f457c": {
+    "536c47f56c63": {
       "yintercept": {}
     },
-    "6c283d311a00": {
+    "536c2fd67024": {
       "x": {},
       "y": {},
       "fill": {}
     },
-    "6c2869045692": {
+    "536c103d4d30": {
       "x": {},
       "y": {},
       "fill": {},
       "label": {}
     }
   },
-  cur_data: "6c287f2e6b8b",
+  cur_data: "536c7b442679",
   visdat: {
-    "6c287f2e6b8b": ["function (y) ", "x"],
-    "6c28735f457c": ["function (y) ", "x"],
-    "6c283d311a00": ["function (y) ", "x"],
-    "6c2869045692": ["function (y) ", "x"]
+    "536c7b442679": ["function (y) ", "x"],
+    "536c47f56c63": ["function (y) ", "x"],
+    "536c2fd67024": ["function (y) ", "x"],
+    "536c103d4d30": ["function (y) ", "x"]
   },
   highlight: {
     "on": "plotly_click",

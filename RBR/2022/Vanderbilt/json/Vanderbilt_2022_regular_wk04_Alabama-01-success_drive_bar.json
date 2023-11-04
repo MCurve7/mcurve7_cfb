@@ -20,8 +20,8 @@
     },
     {
       "x": [-0.095, 14.095],
-      "y": [0.346737086987087, 0.346737086987087],
-      "text": "yintercept: 0.3467371",
+      "y": [0.409881065436621, 0.409881065436621],
+      "text": "yintercept: 0.4098811",
       "type": "scatter",
       "mode": "lines",
       "line": {
@@ -42,7 +42,7 @@
       "base": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "x": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
       "y": [0.333333333333333, 0.5, 0.25, 0, 0, 0, 0.25, 0.4, 0, 0, 0.4, 0.5, 1],
-      "text": ["O_drive_number:  1<br />Success_rate: 0.3333333<br />Score_Turnover_drive: Neither<br />Total:  3", "O_drive_number:  2<br />Success_rate: 0.5000000<br />Score_Turnover_drive: Neither<br />Total: 10", "O_drive_number:  3<br />Success_rate: 0.2500000<br />Score_Turnover_drive: Neither<br />Total:  4", "O_drive_number:  4<br />Success_rate: 0.0000000<br />Score_Turnover_drive: Neither<br />Total:  3", "O_drive_number:  5<br />Success_rate: 0.0000000<br />Score_Turnover_drive: Neither<br />Total:  3", "O_drive_number:  6<br />Success_rate: 0.0000000<br />Score_Turnover_drive: Neither<br />Total:  3", "O_drive_number:  7<br />Success_rate: 0.2500000<br />Score_Turnover_drive: Neither<br />Total:  4", "O_drive_number:  8<br />Success_rate: 0.4000000<br />Score_Turnover_drive: Neither<br />Total:  5", "O_drive_number:  9<br />Success_rate: 0.0000000<br />Score_Turnover_drive: Neither<br />Total:  4", "O_drive_number: 10<br />Success_rate: 0.0000000<br />Score_Turnover_drive: Neither<br />Total:  3", "O_drive_number: 11<br />Success_rate: 0.4000000<br />Score_Turnover_drive: Neither<br />Total:  5", "O_drive_number: 12<br />Success_rate: 0.5000000<br />Score_Turnover_drive: Neither<br />Total:  4", "O_drive_number: 13<br />Success_rate: 1.0000000<br />Score_Turnover_drive: Neither<br />Total:  1"],
+      "text": ["O_drive_number:  1<br />Success_rate: 0.3333333<br />Score_Turnover_drive: Neither<br />Total:  3<br />Score_Turnover_drive: Neither", "O_drive_number:  2<br />Success_rate: 0.5000000<br />Score_Turnover_drive: Neither<br />Total: 10<br />Score_Turnover_drive: Neither", "O_drive_number:  3<br />Success_rate: 0.2500000<br />Score_Turnover_drive: Neither<br />Total:  4<br />Score_Turnover_drive: Neither", "O_drive_number:  4<br />Success_rate: 0.0000000<br />Score_Turnover_drive: Neither<br />Total:  3<br />Score_Turnover_drive: Neither", "O_drive_number:  5<br />Success_rate: 0.0000000<br />Score_Turnover_drive: Neither<br />Total:  3<br />Score_Turnover_drive: Neither", "O_drive_number:  6<br />Success_rate: 0.0000000<br />Score_Turnover_drive: Neither<br />Total:  3<br />Score_Turnover_drive: Neither", "O_drive_number:  7<br />Success_rate: 0.2500000<br />Score_Turnover_drive: Neither<br />Total:  4<br />Score_Turnover_drive: Neither", "O_drive_number:  8<br />Success_rate: 0.4000000<br />Score_Turnover_drive: Neither<br />Total:  5<br />Score_Turnover_drive: Neither", "O_drive_number:  9<br />Success_rate: 0.0000000<br />Score_Turnover_drive: Neither<br />Total:  4<br />Score_Turnover_drive: Neither", "O_drive_number: 10<br />Success_rate: 0.0000000<br />Score_Turnover_drive: Neither<br />Total:  3<br />Score_Turnover_drive: Neither", "O_drive_number: 11<br />Success_rate: 0.4000000<br />Score_Turnover_drive: Neither<br />Total:  5<br />Score_Turnover_drive: Neither", "O_drive_number: 12<br />Success_rate: 0.5000000<br />Score_Turnover_drive: Neither<br />Total:  4<br />Score_Turnover_drive: Neither", "O_drive_number: 13<br />Success_rate: 1.0000000<br />Score_Turnover_drive: Neither<br />Total:  1<br />Score_Turnover_drive: Neither"],
       "type": "bar",
       "textposition": "none",
       "marker": {
@@ -56,6 +56,24 @@
       "name": "Neither",
       "legendgroup": "Neither",
       "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [7.5, 7.5],
+      "y": [-0.05, 1.05],
+      "text": "xintercept: 7.5",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(102,102,102,1)",
+        "dash": "longdash"
+      },
+      "hoveron": "points",
+      "showlegend": false,
       "xaxis": "x",
       "yaxis": "y",
       "hoverinfo": "text",
@@ -103,7 +121,7 @@
       "size": 14.6118721461187
     },
     "title": {
-      "text": "Vanderbilt[3]: Success rate by Drive with TD drive indicated and number of plays per drive; Mean: Game = 0.279 (dotdash), Season = 0.347 (dashed)<br> <sup>2022: wk04 vs Alabama[55]<\/sup>",
+      "text": "Vanderbilt[3]: Success rate by Drive with TD drive indicated and number of plays per drive; Mean: Game = 0.279 (dotdash), Season = 0.41 (dashed)<br> <sup>2022: wk04 vs Alabama[55]<\/sup>",
       "font": {
         "color": "rgba(0,0,0,1)",
         "family": "",
@@ -241,35 +259,40 @@
   },
   source: "A",
   attrs: {
-    "12f012d29d6": {
+    "536c7c7a74b": {
       "yintercept": {},
       "type": "scatter"
     },
-    "12f0139656c8": {
+    "536c56e6bbf": {
       "yintercept": {}
     },
-    "12f0453912cd": {
+    "536c72dc7a38": {
       "x": {},
       "y": {},
       "fill": {},
-      "label": {}
+      "label": {},
+      "colour": {}
     },
-    "12f01b4e6aee": {
+    "536c64334e54": {
+      "xintercept": {}
+    },
+    "536c4e0674": {
       "y": {}
     },
-    "12f03e715c64": {
+    "536cf1a80": {
       "x": {},
       "y": {},
       "label": {}
     }
   },
-  cur_data: "12f012d29d6",
+  cur_data: "536c7c7a74b",
   visdat: {
-    "12f012d29d6": ["function (y) ", "x"],
-    "12f0139656c8": ["function (y) ", "x"],
-    "12f0453912cd": ["function (y) ", "x"],
-    "12f01b4e6aee": ["function (y) ", "x"],
-    "12f03e715c64": ["function (y) ", "x"]
+    "536c7c7a74b": ["function (y) ", "x"],
+    "536c56e6bbf": ["function (y) ", "x"],
+    "536c72dc7a38": ["function (y) ", "x"],
+    "536c64334e54": ["function (y) ", "x"],
+    "536c4e0674": ["function (y) ", "x"],
+    "536cf1a80": ["function (y) ", "x"]
   },
   highlight: {
     "on": "plotly_click",

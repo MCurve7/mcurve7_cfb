@@ -14,7 +14,7 @@
         "color": "rgba(158,27,50,1)",
         "line": {
           "width": 1.88976377952756,
-          "color": "transparent"
+          "color": "rgba(0,0,0,1)"
         }
       },
       "name": "Alabama",
@@ -39,7 +39,7 @@
         "color": "rgba(191,87,0,1)",
         "line": {
           "width": 1.88976377952756,
-          "color": "transparent"
+          "color": "rgba(0,0,0,1)"
         }
       },
       "name": "Texas",
@@ -196,16 +196,16 @@
   },
   source: "A",
   attrs: {
-    "6c28222c530c": {
+    "536c47a7783d": {
       "x": {},
       "y": {},
       "fill": {},
       "type": "bar"
     }
   },
-  cur_data: "6c28222c530c",
+  cur_data: "536c47a7783d",
   visdat: {
-    "6c28222c530c": ["function (y) ", "x"]
+    "536c47a7783d": ["function (y) ", "x"]
   },
   highlight: {
     "on": "plotly_click",

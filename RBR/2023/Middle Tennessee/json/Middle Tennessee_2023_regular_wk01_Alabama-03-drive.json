@@ -355,7 +355,7 @@
     {
       "x": [31],
       "y": [32],
-      "text": "Offense_play_count: 31<br />Yards_gained:  32<br />Play_type: Field Goal Missed<br />Success: Field Goal<br />Play_text: Zeke Rankin 32 yd FG MISSED",
+      "text": "Offense_play_count: 31<br />Yards_gained:  32<br />Play_type: Field Goal Missed<br />Success: Field Goal<br />Play_text: Zeke Rankin 32 yd FG MISSED<br />O_drive_number: 4",
       "type": "scatter",
       "mode": "markers",
       "marker": {
@@ -381,7 +381,7 @@
     {
       "x": [3, 6, 13, 17, 27, 74],
       "y": [-5, -5, -5, -15, 9, -5],
-      "text": ["Offense_play_count:  3<br />Yards_gained:  -5<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: (14:25) PENALTY MT False Start (Peasant,Frank) 5 yards from MT 25 to MT 20. NO PLAY.", "Offense_play_count:  6<br />Yards_gained:  -5<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: (10:49) No Huddle-Shotgun Vattiato,Nicholas pass complete deep right to Metcalf,Elijah for 27 yards to the ALA48, out of bounds at ALA48 PENALTY MT Ineligible Downfield on Pass (Kelly,Wilson) 5 yards from MT 25 to MT 20. NO PLAY.", "Offense_play_count: 13<br />Yards_gained:  -5<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: PENALTY MT False Start (Graham,Jacqui) 5 yards from MT 36 to MT 31. NO PLAY.", "Offense_play_count: 17<br />Yards_gained: -15<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: (01:53) No Huddle-Shotgun Vattiato,Nicholas pass incomplete short left to Willis,Holden PENALTY MT Chop Block (Kelly,Wilson) 15 yards from ALA48 to MT 37. NO PLAY.", "Offense_play_count: 27<br />Yards_gained:   9<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: (09:43) No Huddle-Shotgun Vattiato,Nicholas pass incomplete short right to England-Chisolm,DJ PENALTY ALA Roughing The Passer (Oatis,Jaheim) 9 yards from ALA18 to ALA09, 1ST DOWN. NO PLAY.", "Offense_play_count: 74<br />Yards_gained:  -5<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: PENALTY MT False Start (Wilson,Simon) 5 yards from MT 30 to MT 25. NO PLAY."],
+      "text": ["Offense_play_count:  3<br />Yards_gained:  -5<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: (14:25) PENALTY MT False Start (Peasant,Frank) 5 yards from MT 25 to MT 20. NO PLAY.<br />O_drive_number: 1", "Offense_play_count:  6<br />Yards_gained:  -5<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: (10:49) No Huddle-Shotgun Vattiato,Nicholas pass complete deep right to Metcalf,Elijah for 27 yards to the ALA48, out of bounds at ALA48 PENALTY MT Ineligible Downfield on Pass (Kelly,Wilson) 5 yards from MT 25 to MT 20. NO PLAY.<br />O_drive_number: 2", "Offense_play_count: 13<br />Yards_gained:  -5<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: PENALTY MT False Start (Graham,Jacqui) 5 yards from MT 36 to MT 31. NO PLAY.<br />O_drive_number: 3", "Offense_play_count: 17<br />Yards_gained: -15<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: (01:53) No Huddle-Shotgun Vattiato,Nicholas pass incomplete short left to Willis,Holden PENALTY MT Chop Block (Kelly,Wilson) 15 yards from ALA48 to MT 37. NO PLAY.<br />O_drive_number: 3", "Offense_play_count: 27<br />Yards_gained:   9<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: (09:43) No Huddle-Shotgun Vattiato,Nicholas pass incomplete short right to England-Chisolm,DJ PENALTY ALA Roughing The Passer (Oatis,Jaheim) 9 yards from ALA18 to ALA09, 1ST DOWN. NO PLAY.<br />O_drive_number: 4", "Offense_play_count: 74<br />Yards_gained:  -5<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: PENALTY MT False Start (Wilson,Simon) 5 yards from MT 30 to MT 25. NO PLAY.<br />O_drive_number: 12"],
       "type": "scatter",
       "mode": "markers",
       "marker": {
@@ -407,7 +407,7 @@
     {
       "x": [5, 10, 20, 41, 46, 50, 54, 76],
       "y": [1, 21, 0, 6, 0, 33, 5, 1],
-      "text": ["Offense_play_count:  5<br />Yards_gained:   1<br />Play_type: Punt<br />Success: Punt<br />Play_text: Miles Tillman punt for 59 yds for a 1ST down , Kool-Aid McKinstry returns for 1 yd to the ALA 37 for a 1ST down", "Offense_play_count: 10<br />Yards_gained:  21<br />Play_type: Punt<br />Success: Punt<br />Play_text: Trey Turk punt for 41 yds , Kool-Aid McKinstry returns for 21 yds to the MTSU 47", "Offense_play_count: 20<br />Yards_gained:   0<br />Play_type: Punt<br />Success: Punt<br />Play_text: Miles Tillman punt for 52 yds, punt out-of-bounds at the ALA 10", "Offense_play_count: 41<br />Yards_gained:   6<br />Play_type: Punt<br />Success: Punt<br />Play_text: Trey Turk punt for 40 yds , Kool-Aid McKinstry returns for 6 yds to the MTSU 47", "Offense_play_count: 46<br />Yards_gained:   0<br />Play_type: Punt<br />Success: Punt<br />Play_text: Miles Tillman punt for 48 yds, fair catch by Kool-Aid McKinstry at the ALA 12", "Offense_play_count: 50<br />Yards_gained:  33<br />Play_type: Punt<br />Success: Punt<br />Play_text: Miles Tillman punt for 58 yds , Kool-Aid McKinstry returns for 33 yds to the MTSU 34", "Offense_play_count: 54<br />Yards_gained:   5<br />Play_type: Punt<br />Success: Punt<br />Play_text: Trey Turk punt for 51 yds ,  returns for 5 yds to the ALA 25", "Offense_play_count: 76<br />Yards_gained:   1<br />Play_type: Punt<br />Success: Punt<br />Play_text: Miles Tillman punt for 51 yds , Isaiah Bond returns for 1 yd to the ALA 11, PENALTY ALA Holding"],
+      "text": ["Offense_play_count:  5<br />Yards_gained:   1<br />Play_type: Punt<br />Success: Punt<br />Play_text: Miles Tillman punt for 59 yds for a 1ST down , Kool-Aid McKinstry returns for 1 yd to the ALA 37 for a 1ST down<br />O_drive_number: 1", "Offense_play_count: 10<br />Yards_gained:  21<br />Play_type: Punt<br />Success: Punt<br />Play_text: Trey Turk punt for 41 yds , Kool-Aid McKinstry returns for 21 yds to the MTSU 47<br />O_drive_number: 2", "Offense_play_count: 20<br />Yards_gained:   0<br />Play_type: Punt<br />Success: Punt<br />Play_text: Miles Tillman punt for 52 yds, punt out-of-bounds at the ALA 10<br />O_drive_number: 3", "Offense_play_count: 41<br />Yards_gained:   6<br />Play_type: Punt<br />Success: Punt<br />Play_text: Trey Turk punt for 40 yds , Kool-Aid McKinstry returns for 6 yds to the MTSU 47<br />O_drive_number: 6", "Offense_play_count: 46<br />Yards_gained:   0<br />Play_type: Punt<br />Success: Punt<br />Play_text: Miles Tillman punt for 48 yds, fair catch by Kool-Aid McKinstry at the ALA 12<br />O_drive_number: 7", "Offense_play_count: 50<br />Yards_gained:  33<br />Play_type: Punt<br />Success: Punt<br />Play_text: Miles Tillman punt for 58 yds , Kool-Aid McKinstry returns for 33 yds to the MTSU 34<br />O_drive_number: 8", "Offense_play_count: 54<br />Yards_gained:   5<br />Play_type: Punt<br />Success: Punt<br />Play_text: Trey Turk punt for 51 yds ,  returns for 5 yds to the ALA 25<br />O_drive_number: 9", "Offense_play_count: 76<br />Yards_gained:   1<br />Play_type: Punt<br />Success: Punt<br />Play_text: Miles Tillman punt for 51 yds , Isaiah Bond returns for 1 yd to the ALA 11, PENALTY ALA Holding<br />O_drive_number: 12"],
       "type": "scatter",
       "mode": "markers",
       "marker": {
@@ -433,7 +433,7 @@
     {
       "x": [68],
       "y": [3],
-      "text": "Offense_play_count: 68<br />Yards_gained:   3<br />Play_type: Fumble Recovery (Own)<br />Success: Successful<br />Play_text: DJ Riles pass complete to Jacob Coleman for 3 yds Jacob Coleman fumbled, recovered by ALA Kendrick Blackshire",
+      "text": "Offense_play_count: 68<br />Yards_gained:   3<br />Play_type: Fumble Recovery (Own)<br />Success: Successful<br />Play_text: DJ Riles pass complete to Jacob Coleman for 3 yds Jacob Coleman fumbled, recovered by ALA Kendrick Blackshire<br />O_drive_number: 11",
       "type": "scatter",
       "mode": "markers",
       "marker": {
@@ -459,7 +459,7 @@
     {
       "x": [12, 14, 26, 33, 35, 56, 57, 59, 60, 62],
       "y": [6, 14, 4, 6, 8, 21, 10, 3, 7, 12],
-      "text": ["Offense_play_count: 12<br />Yards_gained:   6<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Nicholas Vattiato pass complete to Justin Olson for 6 yds to the MTSU 36 for a 1ST down", "Offense_play_count: 14<br />Yards_gained:  14<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Nicholas Vattiato pass complete to Jaiden Credle for 14 yds to the MTSU 45", "Offense_play_count: 26<br />Yards_gained:   4<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Nicholas Vattiato pass complete to DJ England-Chisolm for 4 yds to the ALA 18 for a 1ST down", "Offense_play_count: 33<br />Yards_gained:   6<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Nicholas Vattiato pass complete to Jaiden Credle for 6 yds to the MTSU 28 for a 1ST down", "Offense_play_count: 35<br />Yards_gained:   8<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Nicholas Vattiato pass complete to DJ England-Chisolm for 8 yds to the MTSU 37", "Offense_play_count: 56<br />Yards_gained:  21<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Nicholas Vattiato pass complete to Jekail Middlebrook for 21 yds to the ALA 48 for a 1ST down", "Offense_play_count: 57<br />Yards_gained:  10<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Nicholas Vattiato pass complete to Jacob Coleman for 10 yds to the ALA 38 for a 1ST down", "Offense_play_count: 59<br />Yards_gained:   3<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Nicholas Vattiato pass complete to Bryce Bailey for 3 yds to the ALA 29", "Offense_play_count: 60<br />Yards_gained:   7<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Nicholas Vattiato pass complete to AJ Toney for 7 yds to the ALA 22 for a 1ST down", "Offense_play_count: 62<br />Yards_gained:  12<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Nicholas Vattiato pass complete to Holden Willis for 12 yds to the ALA 8 for a 1ST down"],
+      "text": ["Offense_play_count: 12<br />Yards_gained:   6<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Nicholas Vattiato pass complete to Justin Olson for 6 yds to the MTSU 36 for a 1ST down<br />O_drive_number: 3", "Offense_play_count: 14<br />Yards_gained:  14<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Nicholas Vattiato pass complete to Jaiden Credle for 14 yds to the MTSU 45<br />O_drive_number: 3", "Offense_play_count: 26<br />Yards_gained:   4<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Nicholas Vattiato pass complete to DJ England-Chisolm for 4 yds to the ALA 18 for a 1ST down<br />O_drive_number: 4", "Offense_play_count: 33<br />Yards_gained:   6<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Nicholas Vattiato pass complete to Jaiden Credle for 6 yds to the MTSU 28 for a 1ST down<br />O_drive_number: 5", "Offense_play_count: 35<br />Yards_gained:   8<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Nicholas Vattiato pass complete to DJ England-Chisolm for 8 yds to the MTSU 37<br />O_drive_number: 5", "Offense_play_count: 56<br />Yards_gained:  21<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Nicholas Vattiato pass complete to Jekail Middlebrook for 21 yds to the ALA 48 for a 1ST down<br />O_drive_number: 10", "Offense_play_count: 57<br />Yards_gained:  10<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Nicholas Vattiato pass complete to Jacob Coleman for 10 yds to the ALA 38 for a 1ST down<br />O_drive_number: 10", "Offense_play_count: 59<br />Yards_gained:   3<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Nicholas Vattiato pass complete to Bryce Bailey for 3 yds to the ALA 29<br />O_drive_number: 10", "Offense_play_count: 60<br />Yards_gained:   7<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Nicholas Vattiato pass complete to AJ Toney for 7 yds to the ALA 22 for a 1ST down<br />O_drive_number: 10", "Offense_play_count: 62<br />Yards_gained:  12<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Nicholas Vattiato pass complete to Holden Willis for 12 yds to the ALA 8 for a 1ST down<br />O_drive_number: 10"],
       "type": "scatter",
       "mode": "markers",
       "marker": {
@@ -485,7 +485,7 @@
     {
       "x": [65],
       "y": [7],
-      "text": "Offense_play_count: 65<br />Yards_gained:   7<br />Play_type: Passing Touchdown<br />Success: Successful<br />Play_text: Nicholas Vattiato pass complete to Bryce Bailey for 7 yds for a TD (Zeke Rankin KICK)",
+      "text": "Offense_play_count: 65<br />Yards_gained:   7<br />Play_type: Passing Touchdown<br />Success: Successful<br />Play_text: Nicholas Vattiato pass complete to Bryce Bailey for 7 yds for a TD (Zeke Rankin KICK)<br />O_drive_number: 10",
       "type": "scatter",
       "mode": "markers",
       "marker": {
@@ -511,7 +511,7 @@
     {
       "x": [11, 15, 16, 21, 23, 32, 36, 42, 58, 70, 71],
       "y": [5, 1, 6, 9, 30, 5, 3, 11, 6, 6, 3],
-      "text": ["Offense_play_count: 11<br />Yards_gained:   5<br />Play_type: Rush<br />Success: Successful<br />Play_text: Nicholas Vattiato run for 5 yds to the MTSU 30", "Offense_play_count: 15<br />Yards_gained:   1<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jaiden Credle run for 1 yd to the MTSU 46 for a 1ST down", "Offense_play_count: 16<br />Yards_gained:   6<br />Play_type: Rush<br />Success: Successful<br />Play_text: Nicholas Vattiato run for 6 yds to the ALA 48", "Offense_play_count: 21<br />Yards_gained:   9<br />Play_type: Rush<br />Success: Successful<br />Play_text: Frank Peasant run for 9 yds to the MTSU 40", "Offense_play_count: 23<br />Yards_gained:  30<br />Play_type: Rush<br />Success: Successful<br />Play_text: Nicholas Vattiato run for 30 yds to the ALA 30 for a 1ST down", "Offense_play_count: 32<br />Yards_gained:   5<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jaiden Credle run for 5 yds to the MTSU 22", "Offense_play_count: 36<br />Yards_gained:   3<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jekail Middlebrook run for 3 yds to the MTSU 40 for a 1ST down", "Offense_play_count: 42<br />Yards_gained:  11<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jekail Middlebrook run for 11 yds to the MTSU 36 for a 1ST down", "Offense_play_count: 58<br />Yards_gained:   6<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jekail Middlebrook run for 6 yds to the ALA 32", "Offense_play_count: 70<br />Yards_gained:   6<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jekail Middlebrook run for 6 yds to the MTSU 26", "Offense_play_count: 71<br />Yards_gained:   3<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jekail Middlebrook run for 3 yds to the MTSU 29 for a 1ST down"],
+      "text": ["Offense_play_count: 11<br />Yards_gained:   5<br />Play_type: Rush<br />Success: Successful<br />Play_text: Nicholas Vattiato run for 5 yds to the MTSU 30<br />O_drive_number: 3", "Offense_play_count: 15<br />Yards_gained:   1<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jaiden Credle run for 1 yd to the MTSU 46 for a 1ST down<br />O_drive_number: 3", "Offense_play_count: 16<br />Yards_gained:   6<br />Play_type: Rush<br />Success: Successful<br />Play_text: Nicholas Vattiato run for 6 yds to the ALA 48<br />O_drive_number: 3", "Offense_play_count: 21<br />Yards_gained:   9<br />Play_type: Rush<br />Success: Successful<br />Play_text: Frank Peasant run for 9 yds to the MTSU 40<br />O_drive_number: 4", "Offense_play_count: 23<br />Yards_gained:  30<br />Play_type: Rush<br />Success: Successful<br />Play_text: Nicholas Vattiato run for 30 yds to the ALA 30 for a 1ST down<br />O_drive_number: 4", "Offense_play_count: 32<br />Yards_gained:   5<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jaiden Credle run for 5 yds to the MTSU 22<br />O_drive_number: 5", "Offense_play_count: 36<br />Yards_gained:   3<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jekail Middlebrook run for 3 yds to the MTSU 40 for a 1ST down<br />O_drive_number: 5", "Offense_play_count: 42<br />Yards_gained:  11<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jekail Middlebrook run for 11 yds to the MTSU 36 for a 1ST down<br />O_drive_number: 7", "Offense_play_count: 58<br />Yards_gained:   6<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jekail Middlebrook run for 6 yds to the ALA 32<br />O_drive_number: 10", "Offense_play_count: 70<br />Yards_gained:   6<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jekail Middlebrook run for 6 yds to the MTSU 26<br />O_drive_number: 12", "Offense_play_count: 71<br />Yards_gained:   3<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jekail Middlebrook run for 3 yds to the MTSU 29 for a 1ST down<br />O_drive_number: 12"],
       "type": "scatter",
       "mode": "markers",
       "marker": {
@@ -537,7 +537,7 @@
     {
       "x": [29],
       "y": [-5],
-      "text": "Offense_play_count: 29<br />Yards_gained:  -5<br />Play_type: Fumble Recovery (Own)<br />Success: Unsuccessful<br />Play_text: Nicholas Vattiato sacked by Chris Braswell for a loss of 5 yards to the ALA 14 Nicholas Vattiato fumbled, recovered by MTSU Devin Hayes , return for 0 yards",
+      "text": "Offense_play_count: 29<br />Yards_gained:  -5<br />Play_type: Fumble Recovery (Own)<br />Success: Unsuccessful<br />Play_text: Nicholas Vattiato sacked by Chris Braswell for a loss of 5 yards to the ALA 14 Nicholas Vattiato fumbled, recovered by MTSU Devin Hayes , return for 0 yards<br />O_drive_number: 4",
       "type": "scatter",
       "mode": "markers",
       "marker": {
@@ -563,7 +563,7 @@
     {
       "x": [37],
       "y": [0],
-      "text": "Offense_play_count: 37<br />Yards_gained:   0<br />Play_type: Interception<br />Success: Unsuccessful<br />Play_text: Nicholas Vattiato pass intercepted",
+      "text": "Offense_play_count: 37<br />Yards_gained:   0<br />Play_type: Interception<br />Success: Unsuccessful<br />Play_text: Nicholas Vattiato pass intercepted<br />O_drive_number: 5",
       "type": "scatter",
       "mode": "markers",
       "marker": {
@@ -589,7 +589,7 @@
     {
       "x": [1, 4, 9, 22, 28, 30, 38, 40, 45, 48],
       "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-      "text": ["Offense_play_count:  1<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Nicholas Vattiato pass incomplete to DJ England-Chisolm", "Offense_play_count:  4<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Nicholas Vattiato pass incomplete to Frank Peasant", "Offense_play_count:  9<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Nicholas Vattiato pass incomplete to Javonte Sherman", "Offense_play_count: 22<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Nicholas Vattiato pass incomplete to Braxton Crouse", "Offense_play_count: 28<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Nicholas Vattiato pass incomplete to Jeremy Tate Jr.", "Offense_play_count: 30<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Nicholas Vattiato pass incomplete to Kalani Norris", "Offense_play_count: 38<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Nicholas Vattiato pass incomplete to Braxton Crouse", "Offense_play_count: 40<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Nicholas Vattiato pass incomplete to Frank Peasant", "Offense_play_count: 45<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Nicholas Vattiato pass incomplete to Jeremy Tate Jr.", "Offense_play_count: 48<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Nicholas Vattiato pass incomplete to Frank Peasant"],
+      "text": ["Offense_play_count:  1<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Nicholas Vattiato pass incomplete to DJ England-Chisolm<br />O_drive_number: 1", "Offense_play_count:  4<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Nicholas Vattiato pass incomplete to Frank Peasant<br />O_drive_number: 1", "Offense_play_count:  9<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Nicholas Vattiato pass incomplete to Javonte Sherman<br />O_drive_number: 2", "Offense_play_count: 22<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Nicholas Vattiato pass incomplete to Braxton Crouse<br />O_drive_number: 4", "Offense_play_count: 28<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Nicholas Vattiato pass incomplete to Jeremy Tate Jr.<br />O_drive_number: 4", "Offense_play_count: 30<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Nicholas Vattiato pass incomplete to Kalani Norris<br />O_drive_number: 4", "Offense_play_count: 38<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Nicholas Vattiato pass incomplete to Braxton Crouse<br />O_drive_number: 6", "Offense_play_count: 40<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Nicholas Vattiato pass incomplete to Frank Peasant<br />O_drive_number: 6", "Offense_play_count: 45<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Nicholas Vattiato pass incomplete to Jeremy Tate Jr.<br />O_drive_number: 7", "Offense_play_count: 48<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Nicholas Vattiato pass incomplete to Frank Peasant<br />O_drive_number: 8"],
       "type": "scatter",
       "mode": "markers",
       "marker": {
@@ -615,7 +615,7 @@
     {
       "x": [2, 7, 8, 18, 24, 25, 34, 51, 52, 53, 67, 72],
       "y": [0, 3, 4, 9, 4, 4, 1, 3, 2, 3, 4, 1],
-      "text": ["Offense_play_count:  2<br />Yards_gained:   0<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Nicholas Vattiato pass complete to Elijah Metcalf for no gain to the MTSU 25", "Offense_play_count:  7<br />Yards_gained:   3<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Nicholas Vattiato pass complete to Jeremy Tate Jr. for 3 yds to the MTSU 23", "Offense_play_count:  8<br />Yards_gained:   4<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Nicholas Vattiato pass complete to DJ England-Chisolm for 4 yds to the MTSU 27", "Offense_play_count: 18<br />Yards_gained:   9<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Nicholas Vattiato pass complete to Elijah Metcalf for 9 yds to the MTSU 46", "Offense_play_count: 24<br />Yards_gained:   4<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Nicholas Vattiato pass complete to Javonte Sherman for 4 yds to the ALA 26", "Offense_play_count: 25<br />Yards_gained:   4<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Nicholas Vattiato pass complete to Jeremy Tate Jr. for 4 yds to the ALA 22", "Offense_play_count: 34<br />Yards_gained:   1<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Nicholas Vattiato pass complete to Jaiden Credle for 1 yd to the MTSU 29", "Offense_play_count: 51<br />Yards_gained:   3<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Nicholas Vattiato pass complete to Elijah Metcalf for 3 yds to the MTSU 28", "Offense_play_count: 52<br />Yards_gained:   2<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Nicholas Vattiato pass complete to Kalani Norris for 2 yds to the MTSU 26", "Offense_play_count: 53<br />Yards_gained:   3<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Nicholas Vattiato pass complete to Holden Willis for 3 yds to the MTSU 29", "Offense_play_count: 67<br />Yards_gained:   4<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: DJ Riles pass complete to Jaiden Credle for 4 yds to the MTSU 32", "Offense_play_count: 72<br />Yards_gained:   1<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Kyle Lowe pass complete to AJ Toney for 1 yd to the MTSU 28"],
+      "text": ["Offense_play_count:  2<br />Yards_gained:   0<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Nicholas Vattiato pass complete to Elijah Metcalf for no gain to the MTSU 25<br />O_drive_number: 1", "Offense_play_count:  7<br />Yards_gained:   3<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Nicholas Vattiato pass complete to Jeremy Tate Jr. for 3 yds to the MTSU 23<br />O_drive_number: 2", "Offense_play_count:  8<br />Yards_gained:   4<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Nicholas Vattiato pass complete to DJ England-Chisolm for 4 yds to the MTSU 27<br />O_drive_number: 2", "Offense_play_count: 18<br />Yards_gained:   9<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Nicholas Vattiato pass complete to Elijah Metcalf for 9 yds to the MTSU 46<br />O_drive_number: 3", "Offense_play_count: 24<br />Yards_gained:   4<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Nicholas Vattiato pass complete to Javonte Sherman for 4 yds to the ALA 26<br />O_drive_number: 4", "Offense_play_count: 25<br />Yards_gained:   4<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Nicholas Vattiato pass complete to Jeremy Tate Jr. for 4 yds to the ALA 22<br />O_drive_number: 4", "Offense_play_count: 34<br />Yards_gained:   1<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Nicholas Vattiato pass complete to Jaiden Credle for 1 yd to the MTSU 29<br />O_drive_number: 5", "Offense_play_count: 51<br />Yards_gained:   3<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Nicholas Vattiato pass complete to Elijah Metcalf for 3 yds to the MTSU 28<br />O_drive_number: 9", "Offense_play_count: 52<br />Yards_gained:   2<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Nicholas Vattiato pass complete to Kalani Norris for 2 yds to the MTSU 26<br />O_drive_number: 9", "Offense_play_count: 53<br />Yards_gained:   3<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Nicholas Vattiato pass complete to Holden Willis for 3 yds to the MTSU 29<br />O_drive_number: 9", "Offense_play_count: 67<br />Yards_gained:   4<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: DJ Riles pass complete to Jaiden Credle for 4 yds to the MTSU 32<br />O_drive_number: 11", "Offense_play_count: 72<br />Yards_gained:   1<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Kyle Lowe pass complete to AJ Toney for 1 yd to the MTSU 28<br />O_drive_number: 12"],
       "type": "scatter",
       "mode": "markers",
       "marker": {
@@ -641,7 +641,7 @@
     {
       "x": [43, 44, 47, 49, 55, 61, 63, 64, 66, 69, 73, 75],
       "y": [2, 2, 2, 3, 1, 2, 0, 1, 3, 2, 2, 4],
-      "text": ["Offense_play_count: 43<br />Yards_gained:   2<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jekail Middlebrook run for 2 yds to the MTSU 38", "Offense_play_count: 44<br />Yards_gained:   2<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jekail Middlebrook run for 2 yds to the MTSU 40", "Offense_play_count: 47<br />Yards_gained:   2<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Frank Peasant run for 2 yds to the MTSU 6", "Offense_play_count: 49<br />Yards_gained:   3<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Frank Peasant run for 3 yds to the MTSU 9", "Offense_play_count: 55<br />Yards_gained:   1<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jekail Middlebrook run for 1 yd to the MTSU 31", "Offense_play_count: 61<br />Yards_gained:   2<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jaiden Credle run for 2 yds to the ALA 20", "Offense_play_count: 63<br />Yards_gained:   0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jaiden Credle run for no gain to the ALA 8", "Offense_play_count: 64<br />Yards_gained:   1<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Braxton Crouse run for 1 yd to the ALA 7", "Offense_play_count: 66<br />Yards_gained:   3<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: DJ Riles run for 3 yds to the MTSU 28", "Offense_play_count: 69<br />Yards_gained:   2<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Kyle Lowe run for 2 yds to the MTSU 20", "Offense_play_count: 73<br />Yards_gained:   2<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Raymond Banner run for 2 yds to the MTSU 30", "Offense_play_count: 75<br />Yards_gained:   4<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Raymond Banner run for 4 yds to the MTSU 29"],
+      "text": ["Offense_play_count: 43<br />Yards_gained:   2<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jekail Middlebrook run for 2 yds to the MTSU 38<br />O_drive_number: 7", "Offense_play_count: 44<br />Yards_gained:   2<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jekail Middlebrook run for 2 yds to the MTSU 40<br />O_drive_number: 7", "Offense_play_count: 47<br />Yards_gained:   2<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Frank Peasant run for 2 yds to the MTSU 6<br />O_drive_number: 8", "Offense_play_count: 49<br />Yards_gained:   3<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Frank Peasant run for 3 yds to the MTSU 9<br />O_drive_number: 8", "Offense_play_count: 55<br />Yards_gained:   1<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jekail Middlebrook run for 1 yd to the MTSU 31<br />O_drive_number: 10", "Offense_play_count: 61<br />Yards_gained:   2<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jaiden Credle run for 2 yds to the ALA 20<br />O_drive_number: 10", "Offense_play_count: 63<br />Yards_gained:   0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jaiden Credle run for no gain to the ALA 8<br />O_drive_number: 10", "Offense_play_count: 64<br />Yards_gained:   1<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Braxton Crouse run for 1 yd to the ALA 7<br />O_drive_number: 10", "Offense_play_count: 66<br />Yards_gained:   3<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: DJ Riles run for 3 yds to the MTSU 28<br />O_drive_number: 11", "Offense_play_count: 69<br />Yards_gained:   2<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Kyle Lowe run for 2 yds to the MTSU 20<br />O_drive_number: 12", "Offense_play_count: 73<br />Yards_gained:   2<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Raymond Banner run for 2 yds to the MTSU 30<br />O_drive_number: 12", "Offense_play_count: 75<br />Yards_gained:   4<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Raymond Banner run for 4 yds to the MTSU 29<br />O_drive_number: 12"],
       "type": "scatter",
       "mode": "markers",
       "marker": {
@@ -667,7 +667,7 @@
     {
       "x": [19, 39],
       "y": [-8, -12],
-      "text": ["Offense_play_count: 19<br />Yards_gained:  -8<br />Play_type: Sack<br />Success: Unsuccessful<br />Play_text: Nicholas Vattiato sacked by Quandarrius Robinson for a loss of 8 yards to the MTSU 38", "Offense_play_count: 39<br />Yards_gained: -12<br />Play_type: Sack<br />Success: Unsuccessful<br />Play_text: Nicholas Vattiato sacked by Deontae Lawson for a loss of 12 yards to the MTSU 13"],
+      "text": ["Offense_play_count: 19<br />Yards_gained:  -8<br />Play_type: Sack<br />Success: Unsuccessful<br />Play_text: Nicholas Vattiato sacked by Quandarrius Robinson for a loss of 8 yards to the MTSU 38<br />O_drive_number: 3", "Offense_play_count: 39<br />Yards_gained: -12<br />Play_type: Sack<br />Success: Unsuccessful<br />Play_text: Nicholas Vattiato sacked by Deontae Lawson for a loss of 12 yards to the MTSU 13<br />O_drive_number: 6"],
       "type": "scatter",
       "mode": "markers",
       "marker": {
@@ -844,52 +844,53 @@
   },
   source: "A",
   attrs: {
-    "4b7c4aa52d02": {
+    "536c66ce2cd4": {
       "xmin": {},
       "xmax": {},
       "ymin": {},
       "ymax": {},
       "type": "scatter"
     },
-    "4b7c5fa620e3": {
+    "536c23db61d3": {
       "xmin": {},
       "xmax": {},
       "ymin": {},
       "ymax": {}
     },
-    "4b7c54f1321a": {
+    "536c3ced7aad": {
       "yintercept": {}
     },
-    "4b7c97da83": {
+    "536c719a9ba": {
       "xintercept": {}
     },
-    "4b7cd167fb3": {
+    "536cd907452": {
       "x": {},
       "y": {},
       "xend": {},
       "yend": {}
     },
-    "4b7c1036788d": {
+    "536c645e2c5a": {
       "x": {},
       "y": {},
       "colour": {}
     },
-    "4b7c1b853c40": {
+    "536c4cb4357": {
       "x": {},
       "y": {},
       "shape": {},
-      "colour": {}
+      "colour": {},
+      "label": {}
     }
   },
-  cur_data: "4b7c4aa52d02",
+  cur_data: "536c66ce2cd4",
   visdat: {
-    "4b7c4aa52d02": ["function (y) ", "x"],
-    "4b7c5fa620e3": ["function (y) ", "x"],
-    "4b7c54f1321a": ["function (y) ", "x"],
-    "4b7c97da83": ["function (y) ", "x"],
-    "4b7cd167fb3": ["function (y) ", "x"],
-    "4b7c1036788d": ["function (y) ", "x"],
-    "4b7c1b853c40": ["function (y) ", "x"]
+    "536c66ce2cd4": ["function (y) ", "x"],
+    "536c23db61d3": ["function (y) ", "x"],
+    "536c3ced7aad": ["function (y) ", "x"],
+    "536c719a9ba": ["function (y) ", "x"],
+    "536cd907452": ["function (y) ", "x"],
+    "536c645e2c5a": ["function (y) ", "x"],
+    "536c4cb4357": ["function (y) ", "x"]
   },
   highlight: {
     "on": "plotly_click",

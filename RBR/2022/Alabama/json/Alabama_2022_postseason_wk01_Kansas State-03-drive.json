@@ -375,7 +375,7 @@
     {
       "x": [54],
       "y": [49],
-      "text": "Offense_play_count: 54<br />Yards_gained:  49<br />Play_type: Field Goal Good<br />Success: Field Goal<br />Play_text: Will Reichard 49 yd FG GOOD",
+      "text": "Offense_play_count: 54<br />Yards_gained:  49<br />Play_type: Field Goal Good<br />Success: Field Goal<br />Play_text: Will Reichard 49 yd FG GOOD<br />O_drive_number: 11",
       "type": "scatter",
       "mode": "markers",
       "marker": {
@@ -401,7 +401,7 @@
     {
       "x": [41, 48],
       "y": [-10, 5],
-      "text": ["Offense_play_count: 41<br />Yards_gained: -10<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: ALABAMA Penalty, Offensive Holding (Tyler Booker) to the Alab 40", "Offense_play_count: 48<br />Yards_gained:   5<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: KANSAS ST Penalty, Illegal Formation (5 Yards) to the KanSt 45"],
+      "text": ["Offense_play_count: 41<br />Yards_gained: -10<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: ALABAMA Penalty, Offensive Holding (Tyler Booker) to the Alab 40<br />O_drive_number: 9", "Offense_play_count: 48<br />Yards_gained:   5<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: KANSAS ST Penalty, Illegal Formation (5 Yards) to the KanSt 45<br />O_drive_number: 11"],
       "type": "scatter",
       "mode": "markers",
       "marker": {
@@ -427,7 +427,7 @@
     {
       "x": [4, 11, 38, 44, 58],
       "y": [0, 0, 1, 0, 0],
-      "text": ["Offense_play_count:  4<br />Yards_gained:   0<br />Play_type: Punt<br />Success: Punt<br />Play_text: James Burnip punt for 40 yds, fair catch by Phillip Brooks at the KanSt 39", "Offense_play_count: 11<br />Yards_gained:   0<br />Play_type: Punt<br />Success: Punt<br />Play_text: James Burnip punt for 37 yds, fair catch by Phillip Brooks at the KanSt 12", "Offense_play_count: 38<br />Yards_gained:   1<br />Play_type: Punt<br />Success: Punt<br />Play_text: James Burnip punt for 38 yds , Phillip Brooks returns for 1 yd to the KanSt 36", "Offense_play_count: 44<br />Yards_gained:   0<br />Play_type: Punt<br />Success: Punt<br />Play_text: James Burnip punt for 39 yds, fair catch by Phillip Brooks at the KanSt 20", "Offense_play_count: 58<br />Yards_gained:   0<br />Play_type: Punt<br />Success: Punt<br />Play_text: James Burnip punt for 38 yds, fair catch by Phillip Brooks at the KanSt 29"],
+      "text": ["Offense_play_count:  4<br />Yards_gained:   0<br />Play_type: Punt<br />Success: Punt<br />Play_text: James Burnip punt for 40 yds, fair catch by Phillip Brooks at the KanSt 39<br />O_drive_number: 1", "Offense_play_count: 11<br />Yards_gained:   0<br />Play_type: Punt<br />Success: Punt<br />Play_text: James Burnip punt for 37 yds, fair catch by Phillip Brooks at the KanSt 12<br />O_drive_number: 2", "Offense_play_count: 38<br />Yards_gained:   1<br />Play_type: Punt<br />Success: Punt<br />Play_text: James Burnip punt for 38 yds , Phillip Brooks returns for 1 yd to the KanSt 36<br />O_drive_number: 8", "Offense_play_count: 44<br />Yards_gained:   0<br />Play_type: Punt<br />Success: Punt<br />Play_text: James Burnip punt for 39 yds, fair catch by Phillip Brooks at the KanSt 20<br />O_drive_number: 9", "Offense_play_count: 58<br />Yards_gained:   0<br />Play_type: Punt<br />Success: Punt<br />Play_text: James Burnip punt for 38 yds, fair catch by Phillip Brooks at the KanSt 29<br />O_drive_number: 12"],
       "type": "scatter",
       "mode": "markers",
       "marker": {
@@ -453,7 +453,7 @@
     {
       "x": [5, 7, 14, 21, 28, 29, 31, 39],
       "y": [6, 19, 60, 47, 28, 22, 5, 23],
-      "text": ["Offense_play_count:  5<br />Yards_gained:   6<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Bryce Young pass complete to Jahmyr Gibbs for 6 yds to the Alab 31", "Offense_play_count:  7<br />Yards_gained:  19<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Bryce Young pass complete to Ja'Corey Brooks for 19 yds to the 50 yard line for a 1ST down", "Offense_play_count: 14<br />Yards_gained:  60<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Bryce Young pass complete to Jahmyr Gibbs for 60 yds to the KanSt 9 for a 1ST down", "Offense_play_count: 21<br />Yards_gained:  47<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Bryce Young pass complete to Jermaine Burton for 47 yds to the KanSt 2 for a 1ST down", "Offense_play_count: 28<br />Yards_gained:  28<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Bryce Young pass complete to Jermaine Burton for 28 yds to the KanSt 34 for a 1ST down", "Offense_play_count: 29<br />Yards_gained:  22<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Bryce Young pass complete to Cameron Latu for 22 yds to the KanSt 12 for a 1ST down", "Offense_play_count: 31<br />Yards_gained:   5<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Bryce Young pass complete to Cameron Latu for 5 yds to the KanSt 41", "Offense_play_count: 39<br />Yards_gained:  23<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Bryce Young pass complete to Cameron Latu for 23 yds to the Alab 48 for a 1ST down"],
+      "text": ["Offense_play_count:  5<br />Yards_gained:   6<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Bryce Young pass complete to Jahmyr Gibbs for 6 yds to the Alab 31<br />O_drive_number: 2", "Offense_play_count:  7<br />Yards_gained:  19<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Bryce Young pass complete to Ja'Corey Brooks for 19 yds to the 50 yard line for a 1ST down<br />O_drive_number: 2", "Offense_play_count: 14<br />Yards_gained:  60<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Bryce Young pass complete to Jahmyr Gibbs for 60 yds to the KanSt 9 for a 1ST down<br />O_drive_number: 3", "Offense_play_count: 21<br />Yards_gained:  47<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Bryce Young pass complete to Jermaine Burton for 47 yds to the KanSt 2 for a 1ST down<br />O_drive_number: 4", "Offense_play_count: 28<br />Yards_gained:  28<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Bryce Young pass complete to Jermaine Burton for 28 yds to the KanSt 34 for a 1ST down<br />O_drive_number: 5", "Offense_play_count: 29<br />Yards_gained:  22<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Bryce Young pass complete to Cameron Latu for 22 yds to the KanSt 12 for a 1ST down<br />O_drive_number: 5", "Offense_play_count: 31<br />Yards_gained:   5<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Bryce Young pass complete to Cameron Latu for 5 yds to the KanSt 41<br />O_drive_number: 6", "Offense_play_count: 39<br />Yards_gained:  23<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Bryce Young pass complete to Cameron Latu for 23 yds to the Alab 48 for a 1ST down<br />O_drive_number: 9"],
       "type": "scatter",
       "mode": "markers",
       "marker": {
@@ -479,7 +479,7 @@
     {
       "x": [17, 23, 30, 33, 47],
       "y": [6, 1, 12, 32, 47],
-      "text": ["Offense_play_count: 17<br />Yards_gained:   6<br />Play_type: Passing Touchdown<br />Success: Successful<br />Play_text: Bryce Young pass complete to Isaiah Bond for 6 yds for a TD (Will Reichard KICK)", "Offense_play_count: 23<br />Yards_gained:   1<br />Play_type: Passing Touchdown<br />Success: Successful<br />Play_text: Bryce Young pass complete to Cameron Latu for 1 yd for a TD (Will Reichard KICK)", "Offense_play_count: 30<br />Yards_gained:  12<br />Play_type: Passing Touchdown<br />Success: Successful<br />Play_text: Bryce Young pass complete to Jermaine Burton for 12 yds for a TD (Will Reichard KICK)", "Offense_play_count: 33<br />Yards_gained:  32<br />Play_type: Passing Touchdown<br />Success: Successful<br />Play_text: Bryce Young pass complete to Ja'Corey Brooks for 32 yds for a TD (Will Reichard KICK)", "Offense_play_count: 47<br />Yards_gained:  47<br />Play_type: Passing Touchdown<br />Success: Successful<br />Play_text: Bryce Young pass complete to Kobe Prentice for 47 yds for a TD (Will Reichard KICK)"],
+      "text": ["Offense_play_count: 17<br />Yards_gained:   6<br />Play_type: Passing Touchdown<br />Success: Successful<br />Play_text: Bryce Young pass complete to Isaiah Bond for 6 yds for a TD (Will Reichard KICK)<br />O_drive_number: 3", "Offense_play_count: 23<br />Yards_gained:   1<br />Play_type: Passing Touchdown<br />Success: Successful<br />Play_text: Bryce Young pass complete to Cameron Latu for 1 yd for a TD (Will Reichard KICK)<br />O_drive_number: 4", "Offense_play_count: 30<br />Yards_gained:  12<br />Play_type: Passing Touchdown<br />Success: Successful<br />Play_text: Bryce Young pass complete to Jermaine Burton for 12 yds for a TD (Will Reichard KICK)<br />O_drive_number: 5", "Offense_play_count: 33<br />Yards_gained:  32<br />Play_type: Passing Touchdown<br />Success: Successful<br />Play_text: Bryce Young pass complete to Ja'Corey Brooks for 32 yds for a TD (Will Reichard KICK)<br />O_drive_number: 6", "Offense_play_count: 47<br />Yards_gained:  47<br />Play_type: Passing Touchdown<br />Success: Successful<br />Play_text: Bryce Young pass complete to Kobe Prentice for 47 yds for a TD (Will Reichard KICK)<br />O_drive_number: 10"],
       "type": "scatter",
       "mode": "markers",
       "marker": {
@@ -505,7 +505,7 @@
     {
       "x": [19, 22, 25, 27, 32, 35, 36, 49, 59, 60, 62],
       "y": [10, 1, 22, 12, 9, 6, 3, 11, 8, 12, 38],
-      "text": ["Offense_play_count: 19<br />Yards_gained:  10<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jahmyr Gibbs run for 10 yds to the Alab 49 for a 1ST down", "Offense_play_count: 22<br />Yards_gained:   1<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jase McClellan run for 1 yd to the KanSt 1", "Offense_play_count: 25<br />Yards_gained:  22<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jahmyr Gibbs run for 22 yds to the Alab 26 for a 1ST down", "Offense_play_count: 27<br />Yards_gained:  12<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jase McClellan run for 12 yds to the Alab 38 for a 1ST down", "Offense_play_count: 32<br />Yards_gained:   9<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jahmyr Gibbs run for 9 yds to the KanSt 32 for a 1ST down", "Offense_play_count: 35<br />Yards_gained:   6<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jahmyr Gibbs run for 6 yds to the Alab 24", "Offense_play_count: 36<br />Yards_gained:   3<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jahmyr Gibbs run for 3 yds to the Alab 27", "Offense_play_count: 49<br />Yards_gained:  11<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jase McClellan run for 11 yds to the KanSt 34 for a 1ST down", "Offense_play_count: 59<br />Yards_gained:   8<br />Play_type: Rush<br />Success: Successful<br />Play_text: Roydell Williams run for 8 yds to the Alab 24", "Offense_play_count: 60<br />Yards_gained:  12<br />Play_type: Rush<br />Success: Successful<br />Play_text: Roydell Williams run for 12 yds to the Alab 36 for a 1ST down", "Offense_play_count: 62<br />Yards_gained:  38<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jamarion Miller run for 38 yds to the KanSt 23 for a 1ST down"],
+      "text": ["Offense_play_count: 19<br />Yards_gained:  10<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jahmyr Gibbs run for 10 yds to the Alab 49 for a 1ST down<br />O_drive_number: 4", "Offense_play_count: 22<br />Yards_gained:   1<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jase McClellan run for 1 yd to the KanSt 1<br />O_drive_number: 4", "Offense_play_count: 25<br />Yards_gained:  22<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jahmyr Gibbs run for 22 yds to the Alab 26 for a 1ST down<br />O_drive_number: 5", "Offense_play_count: 27<br />Yards_gained:  12<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jase McClellan run for 12 yds to the Alab 38 for a 1ST down<br />O_drive_number: 5", "Offense_play_count: 32<br />Yards_gained:   9<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jahmyr Gibbs run for 9 yds to the KanSt 32 for a 1ST down<br />O_drive_number: 6", "Offense_play_count: 35<br />Yards_gained:   6<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jahmyr Gibbs run for 6 yds to the Alab 24<br />O_drive_number: 8", "Offense_play_count: 36<br />Yards_gained:   3<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jahmyr Gibbs run for 3 yds to the Alab 27<br />O_drive_number: 8", "Offense_play_count: 49<br />Yards_gained:  11<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jase McClellan run for 11 yds to the KanSt 34 for a 1ST down<br />O_drive_number: 11", "Offense_play_count: 59<br />Yards_gained:   8<br />Play_type: Rush<br />Success: Successful<br />Play_text: Roydell Williams run for 8 yds to the Alab 24<br />O_drive_number: 13", "Offense_play_count: 60<br />Yards_gained:  12<br />Play_type: Rush<br />Success: Successful<br />Play_text: Roydell Williams run for 12 yds to the Alab 36 for a 1ST down<br />O_drive_number: 13", "Offense_play_count: 62<br />Yards_gained:  38<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jamarion Miller run for 38 yds to the KanSt 23 for a 1ST down<br />O_drive_number: 13"],
       "type": "scatter",
       "mode": "markers",
       "marker": {
@@ -531,7 +531,7 @@
     {
       "x": [34],
       "y": [17],
-      "text": "Offense_play_count: 34<br />Yards_gained:  17<br />Play_type: Rushing Touchdown<br />Success: Successful<br />Play_text: Jase McClellan run for 17 yds for a TD (Will Reichard KICK)",
+      "text": "Offense_play_count: 34<br />Yards_gained:  17<br />Play_type: Rushing Touchdown<br />Success: Successful<br />Play_text: Jase McClellan run for 17 yds for a TD (Will Reichard KICK)<br />O_drive_number: 7",
       "type": "scatter",
       "mode": "markers",
       "marker": {
@@ -557,7 +557,7 @@
     {
       "x": [2, 3, 6, 12, 26, 53, 57],
       "y": [0, 0, 0, 0, 0, 0, 0],
-      "text": ["Offense_play_count:  2<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Bryce Young pass incomplete", "Offense_play_count:  3<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Bryce Young pass incomplete to Jermaine Burton", "Offense_play_count:  6<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Bryce Young pass incomplete to Jermaine Burton", "Offense_play_count: 12<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Bryce Young pass incomplete to Jermaine Burton", "Offense_play_count: 26<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Bryce Young pass incomplete to Ja'Corey Brooks", "Offense_play_count: 53<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Bryce Young pass incomplete", "Offense_play_count: 57<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Jalen Milroe pass incomplete"],
+      "text": ["Offense_play_count:  2<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Bryce Young pass incomplete<br />O_drive_number: 1", "Offense_play_count:  3<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Bryce Young pass incomplete to Jermaine Burton<br />O_drive_number: 1", "Offense_play_count:  6<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Bryce Young pass incomplete to Jermaine Burton<br />O_drive_number: 2", "Offense_play_count: 12<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Bryce Young pass incomplete to Jermaine Burton<br />O_drive_number: 3", "Offense_play_count: 26<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Bryce Young pass incomplete to Ja'Corey Brooks<br />O_drive_number: 5", "Offense_play_count: 53<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Bryce Young pass incomplete<br />O_drive_number: 11", "Offense_play_count: 57<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Jalen Milroe pass incomplete<br />O_drive_number: 12"],
       "type": "scatter",
       "mode": "markers",
       "marker": {
@@ -583,7 +583,7 @@
     {
       "x": [10, 45],
       "y": [10, 3],
-      "text": ["Offense_play_count: 10<br />Yards_gained:  10<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Bryce Young pass complete to Jase McClellan for 10 yds to the KanSt 49", "Offense_play_count: 45<br />Yards_gained:   3<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Bryce Young pass complete to Cameron Latu for 3 yds to the KanSt 48"],
+      "text": ["Offense_play_count: 10<br />Yards_gained:  10<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Bryce Young pass complete to Jase McClellan for 10 yds to the KanSt 49<br />O_drive_number: 2", "Offense_play_count: 45<br />Yards_gained:   3<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Bryce Young pass complete to Cameron Latu for 3 yds to the KanSt 48<br />O_drive_number: 10"],
       "type": "scatter",
       "mode": "markers",
       "marker": {
@@ -609,7 +609,7 @@
     {
       "x": [1, 8, 13, 15, 16, 18, 20, 24, 37, 40, 42, 46, 50, 51, 52, 55, 56, 61, 63],
       "y": [0, 2, 0, -2, 5, 2, 2, 2, 0, 2, 5, 1, -3, 6, 0, 0, 3, 3, 3],
-      "text": ["Offense_play_count:  1<br />Yards_gained:   0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jahmyr Gibbs run for no gain to the Alab 21", "Offense_play_count:  8<br />Yards_gained:   2<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jahmyr Gibbs run for 2 yds to the KanSt 48", "Offense_play_count: 13<br />Yards_gained:   0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jase McClellan run for no gain to the Alab 31", "Offense_play_count: 15<br />Yards_gained:  -2<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jahmyr Gibbs run for a loss of 2 yards to the KanSt 11", "Offense_play_count: 16<br />Yards_gained:   5<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jahmyr Gibbs run for 5 yds to the KanSt 6", "Offense_play_count: 18<br />Yards_gained:   2<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jahmyr Gibbs run for 2 yds to the Alab 39", "Offense_play_count: 20<br />Yards_gained:   2<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jahmyr Gibbs run for 2 yds to the KanSt 49", "Offense_play_count: 24<br />Yards_gained:   2<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jahmyr Gibbs run for 2 yds to the Alab 4", "Offense_play_count: 37<br />Yards_gained:   0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jase McClellan run for no gain to the Alab 27", "Offense_play_count: 40<br />Yards_gained:   2<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jahmyr Gibbs run for 2 yds to the 50 yard line", "Offense_play_count: 42<br />Yards_gained:   5<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Bryce Young run for 5 yds to the Alab 45", "Offense_play_count: 46<br />Yards_gained:   1<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jase McClellan run for 1 yd to the KanSt 47", "Offense_play_count: 50<br />Yards_gained:  -3<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jahmyr Gibbs run for 7 yds to the KanSt 27 ALABAMA Penalty, Illegal Use of Hands (-10 Yards) to the KanSt 37", "Offense_play_count: 51<br />Yards_gained:   6<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jahmyr Gibbs run for 6 yds to the KanSt 31", "Offense_play_count: 52<br />Yards_gained:   0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Roydell Williams run for no gain to the KanSt 31", "Offense_play_count: 55<br />Yards_gained:   0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Roydell Williams run for no gain to the Alab 30", "Offense_play_count: 56<br />Yards_gained:   3<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Roydell Williams run for 3 yds to the Alab 33", "Offense_play_count: 61<br />Yards_gained:   3<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jamarion Miller run for 3 yds to the Alab 39", "Offense_play_count: 63<br />Yards_gained:   3<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jamarion Miller run for 3 yds to the KanSt 20"],
+      "text": ["Offense_play_count:  1<br />Yards_gained:   0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jahmyr Gibbs run for no gain to the Alab 21<br />O_drive_number: 1", "Offense_play_count:  8<br />Yards_gained:   2<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jahmyr Gibbs run for 2 yds to the KanSt 48<br />O_drive_number: 2", "Offense_play_count: 13<br />Yards_gained:   0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jase McClellan run for no gain to the Alab 31<br />O_drive_number: 3", "Offense_play_count: 15<br />Yards_gained:  -2<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jahmyr Gibbs run for a loss of 2 yards to the KanSt 11<br />O_drive_number: 3", "Offense_play_count: 16<br />Yards_gained:   5<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jahmyr Gibbs run for 5 yds to the KanSt 6<br />O_drive_number: 3", "Offense_play_count: 18<br />Yards_gained:   2<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jahmyr Gibbs run for 2 yds to the Alab 39<br />O_drive_number: 4", "Offense_play_count: 20<br />Yards_gained:   2<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jahmyr Gibbs run for 2 yds to the KanSt 49<br />O_drive_number: 4", "Offense_play_count: 24<br />Yards_gained:   2<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jahmyr Gibbs run for 2 yds to the Alab 4<br />O_drive_number: 5", "Offense_play_count: 37<br />Yards_gained:   0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jase McClellan run for no gain to the Alab 27<br />O_drive_number: 8", "Offense_play_count: 40<br />Yards_gained:   2<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jahmyr Gibbs run for 2 yds to the 50 yard line<br />O_drive_number: 9", "Offense_play_count: 42<br />Yards_gained:   5<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Bryce Young run for 5 yds to the Alab 45<br />O_drive_number: 9", "Offense_play_count: 46<br />Yards_gained:   1<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jase McClellan run for 1 yd to the KanSt 47<br />O_drive_number: 10", "Offense_play_count: 50<br />Yards_gained:  -3<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jahmyr Gibbs run for 7 yds to the KanSt 27 ALABAMA Penalty, Illegal Use of Hands (-10 Yards) to the KanSt 37<br />O_drive_number: 11", "Offense_play_count: 51<br />Yards_gained:   6<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jahmyr Gibbs run for 6 yds to the KanSt 31<br />O_drive_number: 11", "Offense_play_count: 52<br />Yards_gained:   0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Roydell Williams run for no gain to the KanSt 31<br />O_drive_number: 11", "Offense_play_count: 55<br />Yards_gained:   0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Roydell Williams run for no gain to the Alab 30<br />O_drive_number: 12", "Offense_play_count: 56<br />Yards_gained:   3<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Roydell Williams run for 3 yds to the Alab 33<br />O_drive_number: 12", "Offense_play_count: 61<br />Yards_gained:   3<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jamarion Miller run for 3 yds to the Alab 39<br />O_drive_number: 13", "Offense_play_count: 63<br />Yards_gained:   3<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jamarion Miller run for 3 yds to the KanSt 20<br />O_drive_number: 13"],
       "type": "scatter",
       "mode": "markers",
       "marker": {
@@ -635,7 +635,7 @@
     {
       "x": [9, 43],
       "y": [-11, -4],
-      "text": ["Offense_play_count:  9<br />Yards_gained: -11<br />Play_type: Sack<br />Success: Unsuccessful<br />Play_text: Bryce Young sacked by Daniel Green for a loss of 11 yards to the Alab 41", "Offense_play_count: 43<br />Yards_gained:  -4<br />Play_type: Sack<br />Success: Unsuccessful<br />Play_text: Bryce Young sacked by VJ Payne for a loss of 4 yards to the Alab 41"],
+      "text": ["Offense_play_count:  9<br />Yards_gained: -11<br />Play_type: Sack<br />Success: Unsuccessful<br />Play_text: Bryce Young sacked by Daniel Green for a loss of 11 yards to the Alab 41<br />O_drive_number: 2", "Offense_play_count: 43<br />Yards_gained:  -4<br />Play_type: Sack<br />Success: Unsuccessful<br />Play_text: Bryce Young sacked by VJ Payne for a loss of 4 yards to the Alab 41<br />O_drive_number: 9"],
       "type": "scatter",
       "mode": "markers",
       "marker": {
@@ -812,52 +812,53 @@
   },
   source: "A",
   attrs: {
-    "9f0455bd31": {
+    "536c7134bbd": {
       "xmin": {},
       "xmax": {},
       "ymin": {},
       "ymax": {},
       "type": "scatter"
     },
-    "9f041d9e7f2b": {
+    "536c462d13db": {
       "xmin": {},
       "xmax": {},
       "ymin": {},
       "ymax": {}
     },
-    "9f047bcd6742": {
+    "536c10ad6616": {
       "yintercept": {}
     },
-    "9f046797874": {
+    "536c51922520": {
       "xintercept": {}
     },
-    "9f04d444f19": {
+    "536c69a75b8b": {
       "x": {},
       "y": {},
       "xend": {},
       "yend": {}
     },
-    "9f046b2e2a5e": {
+    "536c1366d6e": {
       "x": {},
       "y": {},
       "colour": {}
     },
-    "9f045d4392": {
+    "536c6d1e2c36": {
       "x": {},
       "y": {},
       "shape": {},
-      "colour": {}
+      "colour": {},
+      "label": {}
     }
   },
-  cur_data: "9f0455bd31",
+  cur_data: "536c7134bbd",
   visdat: {
-    "9f0455bd31": ["function (y) ", "x"],
-    "9f041d9e7f2b": ["function (y) ", "x"],
-    "9f047bcd6742": ["function (y) ", "x"],
-    "9f046797874": ["function (y) ", "x"],
-    "9f04d444f19": ["function (y) ", "x"],
-    "9f046b2e2a5e": ["function (y) ", "x"],
-    "9f045d4392": ["function (y) ", "x"]
+    "536c7134bbd": ["function (y) ", "x"],
+    "536c462d13db": ["function (y) ", "x"],
+    "536c10ad6616": ["function (y) ", "x"],
+    "536c51922520": ["function (y) ", "x"],
+    "536c69a75b8b": ["function (y) ", "x"],
+    "536c1366d6e": ["function (y) ", "x"],
+    "536c6d1e2c36": ["function (y) ", "x"]
   },
   highlight: {
     "on": "plotly_click",

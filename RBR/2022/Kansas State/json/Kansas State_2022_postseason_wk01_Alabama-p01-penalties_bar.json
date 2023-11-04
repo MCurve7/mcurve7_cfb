@@ -14,7 +14,7 @@
         "color": "rgba(158,27,50,1)",
         "line": {
           "width": 1.88976377952756,
-          "color": "transparent"
+          "color": "rgba(0,0,0,1)"
         }
       },
       "name": "Alabama",
@@ -39,7 +39,7 @@
         "color": "rgba(81,40,136,1)",
         "line": {
           "width": 1.88976377952756,
-          "color": "transparent"
+          "color": "rgba(0,0,0,1)"
         }
       },
       "name": "Kansas State",
@@ -196,16 +196,16 @@
   },
   source: "A",
   attrs: {
-    "9f04201c61a0": {
+    "536c4f5c2236": {
       "x": {},
       "y": {},
       "fill": {},
       "type": "bar"
     }
   },
-  cur_data: "9f04201c61a0",
+  cur_data: "536c4f5c2236",
   visdat: {
-    "9f04201c61a0": ["function (y) ", "x"]
+    "536c4f5c2236": ["function (y) ", "x"]
   },
   highlight: {
     "on": "plotly_click",

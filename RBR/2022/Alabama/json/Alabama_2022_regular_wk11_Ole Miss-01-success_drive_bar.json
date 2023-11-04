@@ -1,12 +1,48 @@
 {
   data: [
     {
+      "x": [-0.095, 14.095],
+      "y": [0.265567765567766, 0.265567765567766],
+      "text": "yintercept: 0.2655678",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(158,27,50,1)",
+        "dash": "dashdot"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [-0.095, 14.095],
+      "y": [0.419600662234591, 0.419600662234591],
+      "text": "yintercept: 0.4196007",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(130,138,143,1)",
+        "dash": "dash"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
       "orientation": "v",
       "width": [0.9, 0.9, 0.9, 0.9, 0.9, 0.899999999999999, 0.899999999999999, 0.899999999999999, 0.899999999999999, 0.899999999999999],
       "base": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "x": [1, 2, 3, 5, 6, 8, 10, 11, 12, 13],
       "y": [0.166666666666667, 0, 0, 0, 0, 0.333333333333333, 0.571428571428571, 0, 0.5, 0],
-      "text": ["O_drive_number:  1<br />Success_rate: 0.1666667<br />Score_drive: FALSE<br />Total:  6", "O_drive_number:  2<br />Success_rate: 0.0000000<br />Score_drive: FALSE<br />Total:  3", "O_drive_number:  3<br />Success_rate: 0.0000000<br />Score_drive: FALSE<br />Total:  4", "O_drive_number:  5<br />Success_rate: 0.0000000<br />Score_drive: FALSE<br />Total:  1", "O_drive_number:  6<br />Success_rate: 0.0000000<br />Score_drive: FALSE<br />Total:  3", "O_drive_number:  8<br />Success_rate: 0.3333333<br />Score_drive: FALSE<br />Total:  6", "O_drive_number: 10<br />Success_rate: 0.5714286<br />Score_drive: FALSE<br />Total:  7", "O_drive_number: 11<br />Success_rate: 0.0000000<br />Score_drive: FALSE<br />Total:  2", "O_drive_number: 12<br />Success_rate: 0.5000000<br />Score_drive: FALSE<br />Total:  8", "O_drive_number: 13<br />Success_rate: 0.0000000<br />Score_drive: FALSE<br />Total:  2"],
+      "text": ["O_drive_number:  1<br />Success_rate: 0.1666667<br />Score_Turnover_drive: Neither<br />Total:  6<br />Score_Turnover_drive: Neither", "O_drive_number:  2<br />Success_rate: 0.0000000<br />Score_Turnover_drive: Neither<br />Total:  3<br />Score_Turnover_drive: Neither", "O_drive_number:  3<br />Success_rate: 0.0000000<br />Score_Turnover_drive: Neither<br />Total:  4<br />Score_Turnover_drive: Neither", "O_drive_number:  5<br />Success_rate: 0.0000000<br />Score_Turnover_drive: Neither<br />Total:  1<br />Score_Turnover_drive: Neither", "O_drive_number:  6<br />Success_rate: 0.0000000<br />Score_Turnover_drive: Neither<br />Total:  3<br />Score_Turnover_drive: Neither", "O_drive_number:  8<br />Success_rate: 0.3333333<br />Score_Turnover_drive: Neither<br />Total:  6<br />Score_Turnover_drive: Neither", "O_drive_number: 10<br />Success_rate: 0.5714286<br />Score_Turnover_drive: Neither<br />Total:  7<br />Score_Turnover_drive: Neither", "O_drive_number: 11<br />Success_rate: 0.0000000<br />Score_Turnover_drive: Neither<br />Total:  2<br />Score_Turnover_drive: Neither", "O_drive_number: 12<br />Success_rate: 0.5000000<br />Score_Turnover_drive: Neither<br />Total:  8<br />Score_Turnover_drive: Neither", "O_drive_number: 13<br />Success_rate: 0.0000000<br />Score_Turnover_drive: Neither<br />Total:  2<br />Score_Turnover_drive: Neither"],
       "type": "bar",
       "textposition": "none",
       "marker": {
@@ -14,11 +50,11 @@
         "color": "rgba(130,138,143,1)",
         "line": {
           "width": 1.88976377952756,
-          "color": "transparent"
+          "color": "rgba(0,0,0,1)"
         }
       },
-      "name": "FALSE",
-      "legendgroup": "FALSE",
+      "name": "Neither",
+      "legendgroup": "Neither",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -31,7 +67,7 @@
       "base": [0, 0, 0],
       "x": [4, 7, 9],
       "y": [0.666666666666667, 0.5, 0.714285714285714],
-      "text": ["O_drive_number:  4<br />Success_rate: 0.6666667<br />Score_drive:  TRUE<br />Total:  6", "O_drive_number:  7<br />Success_rate: 0.5000000<br />Score_drive:  TRUE<br />Total:  6", "O_drive_number:  9<br />Success_rate: 0.7142857<br />Score_drive:  TRUE<br />Total: 14"],
+      "text": ["O_drive_number:  4<br />Success_rate: 0.6666667<br />Score_Turnover_drive: Score<br />Total:  6<br />Score_Turnover_drive: Score", "O_drive_number:  7<br />Success_rate: 0.5000000<br />Score_Turnover_drive: Score<br />Total:  6<br />Score_Turnover_drive: Score", "O_drive_number:  9<br />Success_rate: 0.7142857<br />Score_Turnover_drive: Score<br />Total: 14<br />Score_Turnover_drive: Score"],
       "type": "bar",
       "textposition": "none",
       "marker": {
@@ -39,12 +75,30 @@
         "color": "rgba(158,27,50,1)",
         "line": {
           "width": 1.88976377952756,
-          "color": "transparent"
+          "color": "rgba(0,0,0,1)"
         }
       },
-      "name": "TRUE",
-      "legendgroup": "TRUE",
+      "name": "Score",
+      "legendgroup": "Score",
       "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [7.5, 7.5],
+      "y": [-0.05, 1.05],
+      "text": "xintercept: 7.5",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(102,102,102,1)",
+        "dash": "longdash"
+      },
+      "hoveron": "points",
+      "showlegend": false,
       "xaxis": "x",
       "yaxis": "y",
       "hoverinfo": "text",
@@ -92,7 +146,7 @@
       "size": 14.6118721461187
     },
     "title": {
-      "text": "Alabama[30]: Success rate by Drive with TD drive indicated and number of plays per drive<br> <sup>2022: wk11 vs Ole Miss[24]<\/sup>",
+      "text": "Alabama[30]: Success rate by Drive with TD drive indicated and number of plays per drive; Mean: Game = 0.266 (dotdash), Season = 0.42 (dashed)<br> <sup>2022: wk11 vs Ole Miss[24]<\/sup>",
       "font": {
         "color": "rgba(0,0,0,1)",
         "family": "",
@@ -230,27 +284,40 @@
   },
   source: "A",
   attrs: {
-    "6c2811622fda": {
+    "536c94d49a": {
+      "yintercept": {},
+      "type": "scatter"
+    },
+    "536c5c72259a": {
+      "yintercept": {}
+    },
+    "536c1c2133e1": {
       "x": {},
       "y": {},
       "fill": {},
       "label": {},
-      "type": "bar"
+      "colour": {}
     },
-    "6c28713525c0": {
+    "536c2773067": {
+      "xintercept": {}
+    },
+    "536c1c943dd1": {
       "y": {}
     },
-    "6c2848c01add": {
+    "536c13d81d8a": {
       "x": {},
       "y": {},
       "label": {}
     }
   },
-  cur_data: "6c2811622fda",
+  cur_data: "536c94d49a",
   visdat: {
-    "6c2811622fda": ["function (y) ", "x"],
-    "6c28713525c0": ["function (y) ", "x"],
-    "6c2848c01add": ["function (y) ", "x"]
+    "536c94d49a": ["function (y) ", "x"],
+    "536c5c72259a": ["function (y) ", "x"],
+    "536c1c2133e1": ["function (y) ", "x"],
+    "536c2773067": ["function (y) ", "x"],
+    "536c1c943dd1": ["function (y) ", "x"],
+    "536c13d81d8a": ["function (y) ", "x"]
   },
   highlight: {
     "on": "plotly_click",

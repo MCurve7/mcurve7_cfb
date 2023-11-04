@@ -355,7 +355,7 @@
     {
       "x": [19, 41, 50],
       "y": [42, 30, 51],
-      "text": ["Offense_play_count: 19<br />Yards_gained:  42<br />Play_type: Field Goal Good<br />Success: Field Goal<br />Play_text: Will Reichard 42 yd FG GOOD", "Offense_play_count: 41<br />Yards_gained:  30<br />Play_type: Field Goal Good<br />Success: Field Goal<br />Play_text: Will Reichard 30 yd FG GOOD", "Offense_play_count: 50<br />Yards_gained:  51<br />Play_type: Field Goal Good<br />Success: Field Goal<br />Play_text: Will Reichard 51 yd FG GOOD"],
+      "text": ["Offense_play_count: 19<br />Yards_gained:  42<br />Play_type: Field Goal Good<br />Success: Field Goal<br />Play_text: Will Reichard 42 yd FG GOOD<br />O_drive_number: 2", "Offense_play_count: 41<br />Yards_gained:  30<br />Play_type: Field Goal Good<br />Success: Field Goal<br />Play_text: Will Reichard 30 yd FG GOOD<br />O_drive_number: 5", "Offense_play_count: 50<br />Yards_gained:  51<br />Play_type: Field Goal Good<br />Success: Field Goal<br />Play_text: Will Reichard 51 yd FG GOOD<br />O_drive_number: 6"],
       "type": "scatter",
       "mode": "markers",
       "marker": {
@@ -381,7 +381,7 @@
     {
       "x": [38, 39, 46, 47, 51, 58],
       "y": [-5, -5, -10, -5, 15, -5],
-      "text": ["Offense_play_count: 38<br />Yards_gained:  -5<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: Milroe, Jalen pass complete to Burton, Jermaine for 15 yards to the TEXAS0, PENALTY ALABAMA ineligible downfield on pass (Dalcourt, Darrian) 5 yards to the TEXAS20, NO PLAY.", "Offense_play_count: 39<br />Yards_gained:  -5<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: Alabama Penalty, Illegal Snap (Seth McLaughlin) to the TEX 25", "Offense_play_count: 46<br />Yards_gained: -10<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: Milroe, Jalen pass complete to Burton, Jermaine for 32 yards to the TEXAS0, PENALTY ALABAMA holding (Proctor, Kadyn) 10 yards to the TEXAS42, NO PLAY.", "Offense_play_count: 47<br />Yards_gained:  -5<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: Alabama Penalty, Illegal Snap (Seth McLaughlin) to the TEX 47", "Offense_play_count: 51<br />Yards_gained:  15<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: Milroe, Jalen pass incomplete to Bond, Isaiah, PENALTY TEXAS pass interference (Holmes, Gavin) 15 yards to the ALABAMA35, NO PLAY, 1ST DOWN ALABAMA.", "Offense_play_count: 58<br />Yards_gained:  -5<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: Alabama Penalty, False Start (JC Latham) to the ALA 19"],
+      "text": ["Offense_play_count: 38<br />Yards_gained:  -5<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: Milroe, Jalen pass complete to Burton, Jermaine for 15 yards to the TEXAS0, PENALTY ALABAMA ineligible downfield on pass (Dalcourt, Darrian) 5 yards to the TEXAS20, NO PLAY.<br />O_drive_number: 5", "Offense_play_count: 39<br />Yards_gained:  -5<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: Alabama Penalty, Illegal Snap (Seth McLaughlin) to the TEX 25<br />O_drive_number: 5", "Offense_play_count: 46<br />Yards_gained: -10<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: Milroe, Jalen pass complete to Burton, Jermaine for 32 yards to the TEXAS0, PENALTY ALABAMA holding (Proctor, Kadyn) 10 yards to the TEXAS42, NO PLAY.<br />O_drive_number: 6", "Offense_play_count: 47<br />Yards_gained:  -5<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: Alabama Penalty, Illegal Snap (Seth McLaughlin) to the TEX 47<br />O_drive_number: 6", "Offense_play_count: 51<br />Yards_gained:  15<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: Milroe, Jalen pass incomplete to Bond, Isaiah, PENALTY TEXAS pass interference (Holmes, Gavin) 15 yards to the ALABAMA35, NO PLAY, 1ST DOWN ALABAMA.<br />O_drive_number: 7", "Offense_play_count: 58<br />Yards_gained:  -5<br />Play_type: Penalty<br />Success: Penalty<br />Play_text: Alabama Penalty, False Start (JC Latham) to the ALA 19<br />O_drive_number: 8"],
       "type": "scatter",
       "mode": "markers",
       "marker": {
@@ -407,7 +407,7 @@
     {
       "x": [26, 31, 55, 60, 76],
       "y": [0, 0, 0, 0, 0],
-      "text": ["Offense_play_count: 26<br />Yards_gained:   0<br />Play_type: Punt<br />Success: Punt<br />Play_text: James Burnip punt for 61 yds, downed at the TEX 7", "Offense_play_count: 31<br />Yards_gained:   0<br />Play_type: Punt<br />Success: Punt<br />Play_text: James Burnip punt for 44 yds, downed at the TEX 9", "Offense_play_count: 55<br />Yards_gained:   0<br />Play_type: Punt<br />Success: Punt<br />Play_text: James Burnip punt for 53 yds, fair catch by Xavier Worthy at the TEX 6", "Offense_play_count: 60<br />Yards_gained:   0<br />Play_type: Punt<br />Success: Punt<br />Play_text: James Burnip punt for 47 yds, punt out-of-bounds at the TEX 39", "Offense_play_count: 76<br />Yards_gained:   0<br />Play_type: Punt<br />Success: Punt<br />Play_text: James Burnip punt for 58 yds, punt out-of-bounds at the TEX 30"],
+      "text": ["Offense_play_count: 26<br />Yards_gained:   0<br />Play_type: Punt<br />Success: Punt<br />Play_text: James Burnip punt for 61 yds, downed at the TEX 7<br />O_drive_number: 3", "Offense_play_count: 31<br />Yards_gained:   0<br />Play_type: Punt<br />Success: Punt<br />Play_text: James Burnip punt for 44 yds, downed at the TEX 9<br />O_drive_number: 4", "Offense_play_count: 55<br />Yards_gained:   0<br />Play_type: Punt<br />Success: Punt<br />Play_text: James Burnip punt for 53 yds, fair catch by Xavier Worthy at the TEX 6<br />O_drive_number: 7", "Offense_play_count: 60<br />Yards_gained:   0<br />Play_type: Punt<br />Success: Punt<br />Play_text: James Burnip punt for 47 yds, punt out-of-bounds at the TEX 39<br />O_drive_number: 8", "Offense_play_count: 76<br />Yards_gained:   0<br />Play_type: Punt<br />Success: Punt<br />Play_text: James Burnip punt for 58 yds, punt out-of-bounds at the TEX 30<br />O_drive_number: 12"],
       "type": "scatter",
       "mode": "markers",
       "marker": {
@@ -433,7 +433,7 @@
     {
       "x": [4, 13, 14, 22, 34, 35, 36, 44, 69, 70],
       "y": [12, 6, 6, 9, 28, 15, 5, 34, 27, 17],
-      "text": ["Offense_play_count:  4<br />Yards_gained:  12<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Jalen Milroe pass complete to Jase McClellan for 12 yds to the ALA 29 for a 1ST down", "Offense_play_count: 13<br />Yards_gained:   6<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Jalen Milroe pass complete to Malik Benson for 6 yds to the TEX 36 for a 1ST down", "Offense_play_count: 14<br />Yards_gained:   6<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Jalen Milroe pass complete to Amari Niblack for 6 yds to the TEX 30", "Offense_play_count: 22<br />Yards_gained:   9<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Jalen Milroe pass complete to Jermaine Burton for 9 yds to the ALA 39 for a 1ST down", "Offense_play_count: 34<br />Yards_gained:  28<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Jalen Milroe pass complete to Kobe Prentice for 28 yds to the TEX 32 for a 1ST down", "Offense_play_count: 35<br />Yards_gained:  15<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Jalen Milroe pass complete to Kobe Prentice for 15 yds to the TEX 17 for a 1ST down", "Offense_play_count: 36<br />Yards_gained:   5<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Jalen Milroe pass complete to Roydell Williams for 5 yds to the TEX 12", "Offense_play_count: 44<br />Yards_gained:  34<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Jalen Milroe pass complete to Isaiah Bond for 34 yds to the TEX 35 for a 1ST down", "Offense_play_count: 69<br />Yards_gained:  27<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Jalen Milroe pass complete to Malik Benson for 27 yds to the ALA 45 for a 1ST down", "Offense_play_count: 70<br />Yards_gained:  17<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Jalen Milroe pass complete to Kobe Prentice for 17 yds to the TEX 38 for a 1ST down"],
+      "text": ["Offense_play_count:  4<br />Yards_gained:  12<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Jalen Milroe pass complete to Jase McClellan for 12 yds to the ALA 29 for a 1ST down<br />O_drive_number: 1", "Offense_play_count: 13<br />Yards_gained:   6<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Jalen Milroe pass complete to Malik Benson for 6 yds to the TEX 36 for a 1ST down<br />O_drive_number: 2", "Offense_play_count: 14<br />Yards_gained:   6<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Jalen Milroe pass complete to Amari Niblack for 6 yds to the TEX 30<br />O_drive_number: 2", "Offense_play_count: 22<br />Yards_gained:   9<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Jalen Milroe pass complete to Jermaine Burton for 9 yds to the ALA 39 for a 1ST down<br />O_drive_number: 3", "Offense_play_count: 34<br />Yards_gained:  28<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Jalen Milroe pass complete to Kobe Prentice for 28 yds to the TEX 32 for a 1ST down<br />O_drive_number: 5", "Offense_play_count: 35<br />Yards_gained:  15<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Jalen Milroe pass complete to Kobe Prentice for 15 yds to the TEX 17 for a 1ST down<br />O_drive_number: 5", "Offense_play_count: 36<br />Yards_gained:   5<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Jalen Milroe pass complete to Roydell Williams for 5 yds to the TEX 12<br />O_drive_number: 5", "Offense_play_count: 44<br />Yards_gained:  34<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Jalen Milroe pass complete to Isaiah Bond for 34 yds to the TEX 35 for a 1ST down<br />O_drive_number: 6", "Offense_play_count: 69<br />Yards_gained:  27<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Jalen Milroe pass complete to Malik Benson for 27 yds to the ALA 45 for a 1ST down<br />O_drive_number: 11", "Offense_play_count: 70<br />Yards_gained:  17<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Jalen Milroe pass complete to Kobe Prentice for 17 yds to the TEX 38 for a 1ST down<br />O_drive_number: 11"],
       "type": "scatter",
       "mode": "markers",
       "marker": {
@@ -459,7 +459,7 @@
     {
       "x": [65, 72],
       "y": [49, 39],
-      "text": ["Offense_play_count: 65<br />Yards_gained:  49<br />Play_type: Passing Touchdown<br />Success: Successful<br />Play_text: Jalen Milroe pass complete to Jermaine Burton for 49 yds for a TD (Will Reichard KICK)", "Offense_play_count: 72<br />Yards_gained:  39<br />Play_type: Passing Touchdown<br />Success: Successful<br />Play_text: Jalen Milroe pass complete to Amari Niblack for 39 yds for a TD Timeout Texas, clock 11:08 (Jalen Milroe pass  to Isaiah Bond for Two-Point Conversion)"],
+      "text": ["Offense_play_count: 65<br />Yards_gained:  49<br />Play_type: Passing Touchdown<br />Success: Successful<br />Play_text: Jalen Milroe pass complete to Jermaine Burton for 49 yds for a TD (Will Reichard KICK)<br />O_drive_number: 9", "Offense_play_count: 72<br />Yards_gained:  39<br />Play_type: Passing Touchdown<br />Success: Successful<br />Play_text: Jalen Milroe pass complete to Amari Niblack for 39 yds for a TD Timeout Texas, clock 11:08 (Jalen Milroe pass  to Isaiah Bond for Two-Point Conversion)<br />O_drive_number: 11"],
       "type": "scatter",
       "mode": "markers",
       "marker": {
@@ -485,7 +485,7 @@
     {
       "x": [1, 2, 5, 8, 9, 15, 20, 27, 52, 63],
       "y": [9, 5, 12, 11, 15, 6, 5, 20, 5, 8],
-      "text": ["Offense_play_count:  1<br />Yards_gained:   9<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jase McClellan run for 9 yds to the ALA 12", "Offense_play_count:  2<br />Yards_gained:   5<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jase McClellan run for 5 yds to the ALA 17 for a 1ST down", "Offense_play_count:  5<br />Yards_gained:  12<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jalen Milroe run for 12 yds to the ALA 41 for a 1ST down", "Offense_play_count:  8<br />Yards_gained:  11<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jalen Milroe run for 11 yds to the ALA 36 for a 1ST down", "Offense_play_count:  9<br />Yards_gained:  15<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jase McClellan run for 15 yds to the TEX 49 for a 1ST down", "Offense_play_count: 15<br />Yards_gained:   6<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jase McClellan run for 6 yds to the TEX 24 for a 1ST down", "Offense_play_count: 20<br />Yards_gained:   5<br />Play_type: Rush<br />Success: Successful<br />Play_text: Roydell Williams run for 5 yds to the ALA 30", "Offense_play_count: 27<br />Yards_gained:  20<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jalen Milroe run for 20 yds to the ALA 45 for a 1ST down", "Offense_play_count: 52<br />Yards_gained:   5<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jam Miller run for 5 yds to the ALA 40", "Offense_play_count: 63<br />Yards_gained:   8<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jalen Milroe run for 8 yds to the TEX 48 for a 1ST down"],
+      "text": ["Offense_play_count:  1<br />Yards_gained:   9<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jase McClellan run for 9 yds to the ALA 12<br />O_drive_number: 1", "Offense_play_count:  2<br />Yards_gained:   5<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jase McClellan run for 5 yds to the ALA 17 for a 1ST down<br />O_drive_number: 1", "Offense_play_count:  5<br />Yards_gained:  12<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jalen Milroe run for 12 yds to the ALA 41 for a 1ST down<br />O_drive_number: 1", "Offense_play_count:  8<br />Yards_gained:  11<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jalen Milroe run for 11 yds to the ALA 36 for a 1ST down<br />O_drive_number: 2", "Offense_play_count:  9<br />Yards_gained:  15<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jase McClellan run for 15 yds to the TEX 49 for a 1ST down<br />O_drive_number: 2", "Offense_play_count: 15<br />Yards_gained:   6<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jase McClellan run for 6 yds to the TEX 24 for a 1ST down<br />O_drive_number: 2", "Offense_play_count: 20<br />Yards_gained:   5<br />Play_type: Rush<br />Success: Successful<br />Play_text: Roydell Williams run for 5 yds to the ALA 30<br />O_drive_number: 3", "Offense_play_count: 27<br />Yards_gained:  20<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jalen Milroe run for 20 yds to the ALA 45 for a 1ST down<br />O_drive_number: 4", "Offense_play_count: 52<br />Yards_gained:   5<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jam Miller run for 5 yds to the ALA 40<br />O_drive_number: 7", "Offense_play_count: 63<br />Yards_gained:   8<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jalen Milroe run for 8 yds to the TEX 48 for a 1ST down<br />O_drive_number: 9"],
       "type": "scatter",
       "mode": "markers",
       "marker": {
@@ -511,7 +511,7 @@
     {
       "x": [3, 6, 17, 18, 21, 29, 54, 56, 67, 73, 74],
       "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-      "text": ["Offense_play_count:  3<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Jalen Milroe pass incomplete to Amari Niblack", "Offense_play_count:  6<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Jalen Milroe pass incomplete", "Offense_play_count: 17<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Jalen Milroe pass incomplete to Ja'Corey Brooks", "Offense_play_count: 18<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Jalen Milroe pass incomplete to Roydell Williams", "Offense_play_count: 21<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Jalen Milroe pass incomplete to Jase McClellan", "Offense_play_count: 29<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Jalen Milroe pass incomplete", "Offense_play_count: 54<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Jalen Milroe pass incomplete to Jase McClellan", "Offense_play_count: 56<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Jalen Milroe pass incomplete to Kobe Prentice", "Offense_play_count: 67<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Jalen Milroe pass incomplete to Isaiah Bond", "Offense_play_count: 73<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Jalen Milroe pass incomplete to Isaiah Bond", "Offense_play_count: 74<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Jalen Milroe pass incomplete to Amari Niblack"],
+      "text": ["Offense_play_count:  3<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Jalen Milroe pass incomplete to Amari Niblack<br />O_drive_number: 1", "Offense_play_count:  6<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Jalen Milroe pass incomplete<br />O_drive_number: 1", "Offense_play_count: 17<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Jalen Milroe pass incomplete to Ja'Corey Brooks<br />O_drive_number: 2", "Offense_play_count: 18<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Jalen Milroe pass incomplete to Roydell Williams<br />O_drive_number: 2", "Offense_play_count: 21<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Jalen Milroe pass incomplete to Jase McClellan<br />O_drive_number: 3", "Offense_play_count: 29<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Jalen Milroe pass incomplete<br />O_drive_number: 4", "Offense_play_count: 54<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Jalen Milroe pass incomplete to Jase McClellan<br />O_drive_number: 7", "Offense_play_count: 56<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Jalen Milroe pass incomplete to Kobe Prentice<br />O_drive_number: 8", "Offense_play_count: 67<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Jalen Milroe pass incomplete to Isaiah Bond<br />O_drive_number: 11", "Offense_play_count: 73<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Jalen Milroe pass incomplete to Isaiah Bond<br />O_drive_number: 12", "Offense_play_count: 74<br />Yards_gained:   0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful<br />Play_text: Jalen Milroe pass incomplete to Amari Niblack<br />O_drive_number: 12"],
       "type": "scatter",
       "mode": "markers",
       "marker": {
@@ -537,7 +537,7 @@
     {
       "x": [7, 66],
       "y": [16, 32],
-      "text": ["Offense_play_count:  7<br />Yards_gained:  16<br />Play_type: Pass Interception Return<br />Success: Unsuccessful<br />Play_text: Jalen Milroe pass intercepted Jahdae Barron return for 16 yds to the ALA 30", "Offense_play_count: 66<br />Yards_gained:  32<br />Play_type: Pass Interception Return<br />Success: Unsuccessful<br />Play_text: Jalen Milroe pass intercepted Jerrin Thompson return for 32 yds to the ALA 5"],
+      "text": ["Offense_play_count:  7<br />Yards_gained:  16<br />Play_type: Pass Interception Return<br />Success: Unsuccessful<br />Play_text: Jalen Milroe pass intercepted Jahdae Barron return for 16 yds to the ALA 30<br />O_drive_number: 1", "Offense_play_count: 66<br />Yards_gained:  32<br />Play_type: Pass Interception Return<br />Success: Unsuccessful<br />Play_text: Jalen Milroe pass intercepted Jerrin Thompson return for 32 yds to the ALA 5<br />O_drive_number: 10"],
       "type": "scatter",
       "mode": "markers",
       "marker": {
@@ -563,7 +563,7 @@
     {
       "x": [32, 48],
       "y": [-1, 9],
-      "text": ["Offense_play_count: 32<br />Yards_gained:  -1<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Jalen Milroe pass complete to Kobe Prentice for a loss of 1 yard to the ALA 37", "Offense_play_count: 48<br />Yards_gained:   9<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Jalen Milroe pass complete to Kobe Prentice for 9 yds to the TEX 38"],
+      "text": ["Offense_play_count: 32<br />Yards_gained:  -1<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Jalen Milroe pass complete to Kobe Prentice for a loss of 1 yard to the ALA 37<br />O_drive_number: 5", "Offense_play_count: 48<br />Yards_gained:   9<br />Play_type: Pass Reception<br />Success: Unsuccessful<br />Play_text: Jalen Milroe pass complete to Kobe Prentice for 9 yds to the TEX 38<br />O_drive_number: 6"],
       "type": "scatter",
       "mode": "markers",
       "marker": {
@@ -589,7 +589,7 @@
     {
       "x": [10, 11, 12, 16, 23, 24, 28, 30, 33, 37, 40, 42, 43, 45, 49, 53, 57, 61, 62, 71],
       "y": [1, 5, 1, 0, 0, 3, -1, 3, 3, -3, 13, 3, 3, 3, 5, 1, 0, 1, 2, -1],
-      "text": ["Offense_play_count: 10<br />Yards_gained:   1<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jase McClellan run for 1 yd to the TEX 48", "Offense_play_count: 11<br />Yards_gained:   5<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Roydell Williams run for 5 yds to the TEX 43", "Offense_play_count: 12<br />Yards_gained:   1<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Roydell Williams run for 1 yd to the TEX 42", "Offense_play_count: 16<br />Yards_gained:   0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jase McClellan run for no gain to the TEX 24", "Offense_play_count: 23<br />Yards_gained:   0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Roydell Williams run for no gain to the ALA 39", "Offense_play_count: 24<br />Yards_gained:   3<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jalen Milroe run for 3 yds to the ALA 42", "Offense_play_count: 28<br />Yards_gained:  -1<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jase McClellan run for a loss of 1 yard to the ALA 44", "Offense_play_count: 30<br />Yards_gained:   3<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jalen Milroe run for 3 yds to the ALA 47", "Offense_play_count: 33<br />Yards_gained:   3<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jalen Milroe run for 3 yds to the ALA 40", "Offense_play_count: 37<br />Yards_gained:  -3<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jalen Milroe run for a loss of 3 yards to the TEX 15", "Offense_play_count: 40<br />Yards_gained:  13<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jalen Milroe run for 13 yds to the TEX 12", "Offense_play_count: 42<br />Yards_gained:   3<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jase McClellan run for 3 yds to the ALA 28", "Offense_play_count: 43<br />Yards_gained:   3<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jase McClellan run for 3 yds to the ALA 31", "Offense_play_count: 45<br />Yards_gained:   3<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jase McClellan run for 3 yds to the TEX 32", "Offense_play_count: 49<br />Yards_gained:   5<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jalen Milroe run for 5 yds to the TEX 33", "Offense_play_count: 53<br />Yards_gained:   1<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jam Miller run for 1 yd to the ALA 41", "Offense_play_count: 57<br />Yards_gained:   0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Roydell Williams run for no gain to the ALA 24", "Offense_play_count: 61<br />Yards_gained:   1<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Roydell Williams run for 1 yd to the ALA 42", "Offense_play_count: 62<br />Yards_gained:   2<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jase McClellan run for 2 yds to the ALA 44", "Offense_play_count: 71<br />Yards_gained:  -1<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jase McClellan run for a loss of 1 yard to the TEX 39"],
+      "text": ["Offense_play_count: 10<br />Yards_gained:   1<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jase McClellan run for 1 yd to the TEX 48<br />O_drive_number: 2", "Offense_play_count: 11<br />Yards_gained:   5<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Roydell Williams run for 5 yds to the TEX 43<br />O_drive_number: 2", "Offense_play_count: 12<br />Yards_gained:   1<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Roydell Williams run for 1 yd to the TEX 42<br />O_drive_number: 2", "Offense_play_count: 16<br />Yards_gained:   0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jase McClellan run for no gain to the TEX 24<br />O_drive_number: 2", "Offense_play_count: 23<br />Yards_gained:   0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Roydell Williams run for no gain to the ALA 39<br />O_drive_number: 3", "Offense_play_count: 24<br />Yards_gained:   3<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jalen Milroe run for 3 yds to the ALA 42<br />O_drive_number: 3", "Offense_play_count: 28<br />Yards_gained:  -1<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jase McClellan run for a loss of 1 yard to the ALA 44<br />O_drive_number: 4", "Offense_play_count: 30<br />Yards_gained:   3<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jalen Milroe run for 3 yds to the ALA 47<br />O_drive_number: 4", "Offense_play_count: 33<br />Yards_gained:   3<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jalen Milroe run for 3 yds to the ALA 40<br />O_drive_number: 5", "Offense_play_count: 37<br />Yards_gained:  -3<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jalen Milroe run for a loss of 3 yards to the TEX 15<br />O_drive_number: 5", "Offense_play_count: 40<br />Yards_gained:  13<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jalen Milroe run for 13 yds to the TEX 12<br />O_drive_number: 5", "Offense_play_count: 42<br />Yards_gained:   3<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jase McClellan run for 3 yds to the ALA 28<br />O_drive_number: 6", "Offense_play_count: 43<br />Yards_gained:   3<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jase McClellan run for 3 yds to the ALA 31<br />O_drive_number: 6", "Offense_play_count: 45<br />Yards_gained:   3<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jase McClellan run for 3 yds to the TEX 32<br />O_drive_number: 6", "Offense_play_count: 49<br />Yards_gained:   5<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jalen Milroe run for 5 yds to the TEX 33<br />O_drive_number: 6", "Offense_play_count: 53<br />Yards_gained:   1<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jam Miller run for 1 yd to the ALA 41<br />O_drive_number: 7", "Offense_play_count: 57<br />Yards_gained:   0<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Roydell Williams run for no gain to the ALA 24<br />O_drive_number: 8", "Offense_play_count: 61<br />Yards_gained:   1<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Roydell Williams run for 1 yd to the ALA 42<br />O_drive_number: 9", "Offense_play_count: 62<br />Yards_gained:   2<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jase McClellan run for 2 yds to the ALA 44<br />O_drive_number: 9", "Offense_play_count: 71<br />Yards_gained:  -1<br />Play_type: Rush<br />Success: Unsuccessful<br />Play_text: Jase McClellan run for a loss of 1 yard to the TEX 39<br />O_drive_number: 11"],
       "type": "scatter",
       "mode": "markers",
       "marker": {
@@ -615,7 +615,7 @@
     {
       "x": [25, 59, 64, 68, 75],
       "y": [-10, -5, -1, -7, -8],
-      "text": ["Offense_play_count: 25<br />Yards_gained: -10<br />Play_type: Sack<br />Success: Unsuccessful<br />Play_text: Jalen Milroe sacked by David Gbenda for a loss of 10 yards to the ALA 32", "Offense_play_count: 59<br />Yards_gained:  -5<br />Play_type: Sack<br />Success: Unsuccessful<br />Play_text: Jalen Milroe sacked by Anthony Hill Jr. for a loss of 5 yards to the ALA 14", "Offense_play_count: 64<br />Yards_gained:  -1<br />Play_type: Sack<br />Success: Unsuccessful<br />Play_text: Jalen Milroe sacked by T'Vondre Sweat for a loss of 1 yard to the TEX 49", "Offense_play_count: 68<br />Yards_gained:  -7<br />Play_type: Sack<br />Success: Unsuccessful<br />Play_text: Jalen Milroe sacked by Ethan Burke for a loss of 7 yards to the ALA 18", "Offense_play_count: 75<br />Yards_gained:  -8<br />Play_type: Sack<br />Success: Unsuccessful<br />Play_text: Jalen Milroe sacked by Anthony Hill Jr. and Jaray Bledsoe for a loss of 8 yards to the ALA 12"],
+      "text": ["Offense_play_count: 25<br />Yards_gained: -10<br />Play_type: Sack<br />Success: Unsuccessful<br />Play_text: Jalen Milroe sacked by David Gbenda for a loss of 10 yards to the ALA 32<br />O_drive_number: 3", "Offense_play_count: 59<br />Yards_gained:  -5<br />Play_type: Sack<br />Success: Unsuccessful<br />Play_text: Jalen Milroe sacked by Anthony Hill Jr. for a loss of 5 yards to the ALA 14<br />O_drive_number: 8", "Offense_play_count: 64<br />Yards_gained:  -1<br />Play_type: Sack<br />Success: Unsuccessful<br />Play_text: Jalen Milroe sacked by T'Vondre Sweat for a loss of 1 yard to the TEX 49<br />O_drive_number: 9", "Offense_play_count: 68<br />Yards_gained:  -7<br />Play_type: Sack<br />Success: Unsuccessful<br />Play_text: Jalen Milroe sacked by Ethan Burke for a loss of 7 yards to the ALA 18<br />O_drive_number: 11", "Offense_play_count: 75<br />Yards_gained:  -8<br />Play_type: Sack<br />Success: Unsuccessful<br />Play_text: Jalen Milroe sacked by Anthony Hill Jr. and Jaray Bledsoe for a loss of 8 yards to the ALA 12<br />O_drive_number: 12"],
       "type": "scatter",
       "mode": "markers",
       "marker": {
@@ -792,52 +792,53 @@
   },
   source: "A",
   attrs: {
-    "5d6c18f539c2": {
+    "536c52cc4d93": {
       "xmin": {},
       "xmax": {},
       "ymin": {},
       "ymax": {},
       "type": "scatter"
     },
-    "5d6c5fe356cd": {
+    "536cf6c76c3": {
       "xmin": {},
       "xmax": {},
       "ymin": {},
       "ymax": {}
     },
-    "5d6c34323df5": {
+    "536c1a21197a": {
       "yintercept": {}
     },
-    "5d6c5adf6ad1": {
+    "536c32d52ae8": {
       "xintercept": {}
     },
-    "5d6c64736f24": {
+    "536c46cb54f5": {
       "x": {},
       "y": {},
       "xend": {},
       "yend": {}
     },
-    "5d6c4679fe1": {
+    "536c6b7216d9": {
       "x": {},
       "y": {},
       "colour": {}
     },
-    "5d6c29cb273a": {
+    "536c310b3f09": {
       "x": {},
       "y": {},
       "shape": {},
-      "colour": {}
+      "colour": {},
+      "label": {}
     }
   },
-  cur_data: "5d6c18f539c2",
+  cur_data: "536c52cc4d93",
   visdat: {
-    "5d6c18f539c2": ["function (y) ", "x"],
-    "5d6c5fe356cd": ["function (y) ", "x"],
-    "5d6c34323df5": ["function (y) ", "x"],
-    "5d6c5adf6ad1": ["function (y) ", "x"],
-    "5d6c64736f24": ["function (y) ", "x"],
-    "5d6c4679fe1": ["function (y) ", "x"],
-    "5d6c29cb273a": ["function (y) ", "x"]
+    "536c52cc4d93": ["function (y) ", "x"],
+    "536cf6c76c3": ["function (y) ", "x"],
+    "536c1a21197a": ["function (y) ", "x"],
+    "536c32d52ae8": ["function (y) ", "x"],
+    "536c46cb54f5": ["function (y) ", "x"],
+    "536c6b7216d9": ["function (y) ", "x"],
+    "536c310b3f09": ["function (y) ", "x"]
   },
   highlight: {
     "on": "plotly_click",

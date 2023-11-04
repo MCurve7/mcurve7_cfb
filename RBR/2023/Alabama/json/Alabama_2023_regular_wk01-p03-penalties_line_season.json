@@ -2,8 +2,8 @@
   data: [
     {
       "x": [0.95, 1.05],
-      "y": [3, 3],
-      "text": "yintercept: 3",
+      "y": [2, 2],
+      "text": "yintercept: 2",
       "type": "scatter",
       "mode": "lines",
       "line": {
@@ -20,8 +20,8 @@
     },
     {
       "x": [0.95, 1.05],
-      "y": [2, 2],
-      "text": "yintercept: 2",
+      "y": [1, 1],
+      "text": "yintercept: 1",
       "type": "scatter",
       "mode": "lines",
       "line": {
@@ -38,8 +38,8 @@
     },
     {
       "x": [1],
-      "y": [3],
-      "text": "Game_number: 1<br />Opponent: Middle Tennessee<br />Penalty_all_count_nona: 3",
+      "y": [2],
+      "text": "Game_number: 1<br />Opponent: Middle Tennessee<br />Penalty_all_count_nona: 2",
       "type": "scatter",
       "mode": "lines",
       "line": {
@@ -56,8 +56,8 @@
     },
     {
       "x": [1],
-      "y": [3],
-      "text": "Game_number: 1<br />Opponent: Middle Tennessee<br />Penalty_all_count: 3",
+      "y": [2],
+      "text": "Game_number: 1<br />Opponent: Middle Tennessee<br />Penalty_all_count: 2",
       "type": "scatter",
       "mode": "markers",
       "marker": {
@@ -80,8 +80,8 @@
     },
     {
       "x": [1],
-      "y": [2],
-      "text": "Game_number: 1<br />Opponent: Middle Tennessee<br />Penalty_enforced_count_nona: 2",
+      "y": [1],
+      "text": "Game_number: 1<br />Opponent: Middle Tennessee<br />Penalty_enforced_count_nona: 1",
       "type": "scatter",
       "mode": "lines",
       "line": {
@@ -98,8 +98,8 @@
     },
     {
       "x": [1],
-      "y": [2],
-      "text": "Game_number: 1<br />Opponent: Middle Tennessee<br />Penalty_enforced_count: 2",
+      "y": [1],
+      "text": "Game_number: 1<br />Opponent: Middle Tennessee<br />Penalty_enforced_count: 1",
       "type": "scatter",
       "mode": "markers",
       "marker": {
@@ -144,7 +144,7 @@
       "size": 14.6118721461187
     },
     "title": {
-      "text": "Alabama penalties for 2023; Average: enforced = 2.00 (primary team color), all = 3.00 (secondary team color)<br> <sup><\/sup>",
+      "text": "Alabama penalties for 2023; Average: enforced = 1.00 (primary team color), all = 2.00 (secondary team color)<br> <sup><\/sup>",
       "font": {
         "color": "rgba(0,0,0,1)",
         "family": "",
@@ -200,12 +200,12 @@
       "automargin": true,
       "type": "linear",
       "autorange": false,
-      "range": [-0.15, 3.15],
+      "range": [-0.1, 2.1],
       "tickmode": "array",
-      "ticktext": ["0", "1", "2", "3"],
-      "tickvals": [0, 1, 2, 3],
+      "ticktext": ["0", "1", "2"],
+      "tickvals": [0, 1, 2],
       "categoryorder": "array",
-      "categoryarray": ["0", "1", "2", "3"],
+      "categoryarray": ["0", "1", "2"],
       "nticks": null,
       "ticks": "outside",
       "tickcolor": "rgba(51,51,51,1)",
@@ -274,46 +274,46 @@
   },
   source: "A",
   attrs: {
-    "4b7c442e4245": {
+    "536c712f1b": {
       "yintercept": {},
       "type": "scatter"
     },
-    "4b7ca28c3b": {
+    "536c777e5a1d": {
       "yintercept": {}
     },
-    "4b7c3b6bfd3": {
+    "536c363b25da": {
       "x": {},
       "label": {},
       "y": {}
     },
-    "4b7c14811206": {
+    "536c5ac065ee": {
       "x": {},
       "label": {},
       "y": {}
     },
-    "4b7c7c422e0": {
+    "536c2cf43d39": {
       "x": {},
       "label": {},
       "y": {}
     },
-    "4b7c266d10d2": {
+    "536c551f4a7e": {
       "x": {},
       "label": {},
       "y": {}
     },
-    "4b7c4c0a2b66": {
+    "536c7f94f35": {
       "y": {}
     }
   },
-  cur_data: "4b7c442e4245",
+  cur_data: "536c712f1b",
   visdat: {
-    "4b7c442e4245": ["function (y) ", "x"],
-    "4b7ca28c3b": ["function (y) ", "x"],
-    "4b7c3b6bfd3": ["function (y) ", "x"],
-    "4b7c14811206": ["function (y) ", "x"],
-    "4b7c7c422e0": ["function (y) ", "x"],
-    "4b7c266d10d2": ["function (y) ", "x"],
-    "4b7c4c0a2b66": ["function (y) ", "x"]
+    "536c712f1b": ["function (y) ", "x"],
+    "536c777e5a1d": ["function (y) ", "x"],
+    "536c363b25da": ["function (y) ", "x"],
+    "536c5ac065ee": ["function (y) ", "x"],
+    "536c2cf43d39": ["function (y) ", "x"],
+    "536c551f4a7e": ["function (y) ", "x"],
+    "536c7f94f35": ["function (y) ", "x"]
   },
   highlight: {
     "on": "plotly_click",

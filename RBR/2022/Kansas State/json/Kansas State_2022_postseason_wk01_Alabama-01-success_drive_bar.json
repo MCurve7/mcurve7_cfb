@@ -1,12 +1,48 @@
 {
   data: [
     {
+      "x": [-0.095, 14.095],
+      "y": [0.27960927960928, 0.27960927960928],
+      "text": "yintercept: 0.2796093",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(81,40,136,1)",
+        "dash": "dashdot"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [-0.095, 14.095],
+      "y": [0.388451509812269, 0.388451509812269],
+      "text": "yintercept: 0.3884515",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(209,209,209,1)",
+        "dash": "dash"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
       "orientation": "v",
-      "width": [0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.899999999999999, 0.899999999999999, 0.899999999999999, 0.899999999999999, 0.899999999999999],
-      "base": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-      "x": [1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-      "y": [0.571428571428571, 0.4, 0, 0.277777777777778, 0, 0, 0, 0.285714285714286, 0.4, 0, 0],
-      "text": ["O_drive_number:  1<br />Success_rate: 0.5714286<br />Score_drive: FALSE<br />Total:  7", "O_drive_number:  2<br />Success_rate: 0.4000000<br />Score_drive: FALSE<br />Total: 10", "O_drive_number:  4<br />Success_rate: 0.0000000<br />Score_drive: FALSE<br />Total:  3", "O_drive_number:  5<br />Success_rate: 0.2777778<br />Score_drive: FALSE<br />Total: 18", "O_drive_number:  6<br />Success_rate: 0.0000000<br />Score_drive: FALSE<br />Total:  1", "O_drive_number:  7<br />Success_rate: 0.0000000<br />Score_drive: FALSE<br />Total:  3", "O_drive_number:  8<br />Success_rate: 0.0000000<br />Score_drive: FALSE<br />Total:  3", "O_drive_number:  9<br />Success_rate: 0.2857143<br />Score_drive: FALSE<br />Total:  7", "O_drive_number: 10<br />Success_rate: 0.4000000<br />Score_drive: FALSE<br />Total:  5", "O_drive_number: 11<br />Success_rate: 0.0000000<br />Score_drive: FALSE<br />Total:  3", "O_drive_number: 12<br />Success_rate: 0.0000000<br />Score_drive: FALSE<br />Total:  3"],
+      "width": [0.9, 0.9, 0.9, 0.9, 0.899999999999999, 0.899999999999999, 0.899999999999999, 0.899999999999999, 0.899999999999999],
+      "base": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "x": [2, 4, 5, 6, 8, 9, 10, 11, 12],
+      "y": [0.4, 0, 0.277777777777778, 0, 0, 0.285714285714286, 0.4, 0, 0],
+      "text": ["O_drive_number:  2<br />Success_rate: 0.4000000<br />Score_Turnover_drive: Neither<br />Total: 10<br />Score_Turnover_drive: Neither", "O_drive_number:  4<br />Success_rate: 0.0000000<br />Score_Turnover_drive: Neither<br />Total:  3<br />Score_Turnover_drive: Neither", "O_drive_number:  5<br />Success_rate: 0.2777778<br />Score_Turnover_drive: Neither<br />Total: 18<br />Score_Turnover_drive: Neither", "O_drive_number:  6<br />Success_rate: 0.0000000<br />Score_Turnover_drive: Neither<br />Total:  1<br />Score_Turnover_drive: Neither", "O_drive_number:  8<br />Success_rate: 0.0000000<br />Score_Turnover_drive: Neither<br />Total:  3<br />Score_Turnover_drive: Neither", "O_drive_number:  9<br />Success_rate: 0.2857143<br />Score_Turnover_drive: Neither<br />Total:  7<br />Score_Turnover_drive: Neither", "O_drive_number: 10<br />Success_rate: 0.4000000<br />Score_Turnover_drive: Neither<br />Total:  5<br />Score_Turnover_drive: Neither", "O_drive_number: 11<br />Success_rate: 0.0000000<br />Score_Turnover_drive: Neither<br />Total:  3<br />Score_Turnover_drive: Neither", "O_drive_number: 12<br />Success_rate: 0.0000000<br />Score_Turnover_drive: Neither<br />Total:  3<br />Score_Turnover_drive: Neither"],
       "type": "bar",
       "textposition": "none",
       "marker": {
@@ -14,11 +50,11 @@
         "color": "rgba(209,209,209,1)",
         "line": {
           "width": 1.88976377952756,
-          "color": "transparent"
+          "color": "rgba(0,0,0,1)"
         }
       },
-      "name": "FALSE",
-      "legendgroup": "FALSE",
+      "name": "Neither",
+      "legendgroup": "Neither",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -31,7 +67,7 @@
       "base": [0, 0],
       "x": [3, 13],
       "y": [1, 0.7],
-      "text": ["O_drive_number:  3<br />Success_rate: 1.0000000<br />Score_drive:  TRUE<br />Total:  1", "O_drive_number: 13<br />Success_rate: 0.7000000<br />Score_drive:  TRUE<br />Total: 10"],
+      "text": ["O_drive_number:  3<br />Success_rate: 1.0000000<br />Score_Turnover_drive: Score<br />Total:  1<br />Score_Turnover_drive: Score", "O_drive_number: 13<br />Success_rate: 0.7000000<br />Score_Turnover_drive: Score<br />Total: 10<br />Score_Turnover_drive: Score"],
       "type": "bar",
       "textposition": "none",
       "marker": {
@@ -39,12 +75,55 @@
         "color": "rgba(81,40,136,1)",
         "line": {
           "width": 1.88976377952756,
-          "color": "transparent"
+          "color": "rgba(0,0,0,1)"
         }
       },
-      "name": "TRUE",
-      "legendgroup": "TRUE",
+      "name": "Score",
+      "legendgroup": "Score",
       "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "orientation": "v",
+      "width": [0.9, 0.9],
+      "base": [0, 0],
+      "x": [1, 7],
+      "y": [0.571428571428571, 0],
+      "text": ["O_drive_number:  1<br />Success_rate: 0.5714286<br />Score_Turnover_drive: Turnover<br />Total:  7<br />Score_Turnover_drive: Turnover", "O_drive_number:  7<br />Success_rate: 0.0000000<br />Score_Turnover_drive: Turnover<br />Total:  3<br />Score_Turnover_drive: Turnover"],
+      "type": "bar",
+      "textposition": "none",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(255,0,255,1)",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(255,0,255,1)"
+        }
+      },
+      "name": "Turnover",
+      "legendgroup": "Turnover",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [6.5, 6.5],
+      "y": [-0.05, 1.05],
+      "text": "xintercept: 6.5",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(102,102,102,1)",
+        "dash": "longdash"
+      },
+      "hoveron": "points",
+      "showlegend": false,
       "xaxis": "x",
       "yaxis": "y",
       "hoverinfo": "text",
@@ -92,7 +171,7 @@
       "size": 14.6118721461187
     },
     "title": {
-      "text": "Kansas State[20]: Success rate by Drive with TD drive indicated and number of plays per drive<br> <sup>2022: wk01 vs Alabama[45]<\/sup>",
+      "text": "Kansas State[20]: Success rate by Drive with TD drive indicated and number of plays per drive; Mean: Game = 0.28 (dotdash), Season = 0.388 (dashed)<br> <sup>2022: wk01 vs Alabama[45]<\/sup>",
       "font": {
         "color": "rgba(0,0,0,1)",
         "family": "",
@@ -230,27 +309,40 @@
   },
   source: "A",
   attrs: {
-    "9f0475a6639f": {
+    "536c6a612525": {
+      "yintercept": {},
+      "type": "scatter"
+    },
+    "536c705d65a6": {
+      "yintercept": {}
+    },
+    "536c7f01256": {
       "x": {},
       "y": {},
       "fill": {},
       "label": {},
-      "type": "bar"
+      "colour": {}
     },
-    "9f047e773fb9": {
+    "536c785f566b": {
+      "xintercept": {}
+    },
+    "536c699f2898": {
       "y": {}
     },
-    "9f042bdb5309": {
+    "536c57cc35a0": {
       "x": {},
       "y": {},
       "label": {}
     }
   },
-  cur_data: "9f0475a6639f",
+  cur_data: "536c6a612525",
   visdat: {
-    "9f0475a6639f": ["function (y) ", "x"],
-    "9f047e773fb9": ["function (y) ", "x"],
-    "9f042bdb5309": ["function (y) ", "x"]
+    "536c6a612525": ["function (y) ", "x"],
+    "536c705d65a6": ["function (y) ", "x"],
+    "536c7f01256": ["function (y) ", "x"],
+    "536c785f566b": ["function (y) ", "x"],
+    "536c699f2898": ["function (y) ", "x"],
+    "536c57cc35a0": ["function (y) ", "x"]
   },
   highlight: {
     "on": "plotly_click",

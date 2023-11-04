@@ -56,7 +56,7 @@
     },
     {
       "x": [1, 2, 3, 4, 5, 6],
-      "y": [0, 1.4, -5.5, 0, -0.7, 0],
+      "y": [0, 1.4, -5.5, 0, -0.699999999999999, 0],
       "text": ["Offense_play_count:  1<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 1", "Offense_play_count:  2<br />Delta_yards_to_success:   1.4<br />factor(O_drive_number): 1", "Offense_play_count:  3<br />Delta_yards_to_success:  -5.5<br />factor(O_drive_number): 1", "Offense_play_count:  4<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 1", "Offense_play_count:  5<br />Delta_yards_to_success:  -0.7<br />factor(O_drive_number): 1", "Offense_play_count:  6<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 1"],
       "type": "scatter",
       "mode": "lines",
@@ -76,7 +76,7 @@
     },
     {
       "x": [7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17],
-      "y": [0, 0, 0.5, 0, -0.7, 0.5, 0, 2.8, 1, 2.1, 0.5],
+      "y": [0, 0, 0.5, 0, -0.699999999999999, 0.5, 0, 2.8, 1, 2.1, 0.5],
       "text": ["Offense_play_count:  7<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 2", "Offense_play_count:  8<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 2", "Offense_play_count:  9<br />Delta_yards_to_success:   0.5<br />factor(O_drive_number): 2", "Offense_play_count: 10<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 2", "Offense_play_count: 11<br />Delta_yards_to_success:  -0.7<br />factor(O_drive_number): 2", "Offense_play_count: 12<br />Delta_yards_to_success:   0.5<br />factor(O_drive_number): 2", "Offense_play_count: 13<br />Delta_yards_to_success:   0.0<br />factor(O_drive_number): 2", "Offense_play_count: 14<br />Delta_yards_to_success:   2.8<br />factor(O_drive_number): 2", "Offense_play_count: 15<br />Delta_yards_to_success:   1.0<br />factor(O_drive_number): 2", "Offense_play_count: 16<br />Delta_yards_to_success:   2.1<br />factor(O_drive_number): 2", "Offense_play_count: 17<br />Delta_yards_to_success:   0.5<br />factor(O_drive_number): 2"],
       "type": "scatter",
       "mode": "lines",
@@ -368,7 +368,7 @@
     },
     {
       "x": [1, 3, 8, 11, 13, 14, 26, 46, 54, 57, 68],
-      "y": [0, -5.5, 0, -0.7, 0, 2.8, -3.5, 0, -2.1, -2.5, 2],
+      "y": [0, -5.5, 0, -0.699999999999999, 0, 2.8, -3.5, 0, -2.1, -2.5, 2],
       "text": ["Offense_play_count:  1<br />Delta_yards_to_success:   0.0<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Jalen Milroe pass complete to Isaiah Bond for 7 yds to the ALA 44<br />O_drive_number: 1", "Offense_play_count:  3<br />Delta_yards_to_success:  -5.5<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Jalen Milroe pass complete to Isaiah Bond for 15 yds to the MTSU 45 for a 1ST down<br />O_drive_number: 1", "Offense_play_count:  8<br />Delta_yards_to_success:   0.0<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Jalen Milroe pass complete to Roydell Williams for 4 yds to the MTSU 38<br />O_drive_number: 2", "Offense_play_count: 11<br />Delta_yards_to_success:  -0.7<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Jalen Milroe pass complete to CJ Dippre for 5 yds to the MTSU 27<br />O_drive_number: 2", "Offense_play_count: 13<br />Delta_yards_to_success:   0.0<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Jalen Milroe pass complete to Jermaine Burton for 9 yds to the MTSU 15<br />O_drive_number: 2", "Offense_play_count: 14<br />Delta_yards_to_success:   2.8<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Jalen Milroe pass complete to Kobe Prentice for 7 yds to the MTSU 8 for a 1ST down<br />O_drive_number: 2", "Offense_play_count: 26<br />Delta_yards_to_success:  -3.5<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Jalen Milroe pass complete to Kobe Prentice for 9 yds to the ALA 29<br />O_drive_number: 4", "Offense_play_count: 46<br />Delta_yards_to_success:   0.0<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Jalen Milroe pass complete to Isaiah Bond for 5 yds to the MTSU 29<br />O_drive_number: 9", "Offense_play_count: 54<br />Delta_yards_to_success:  -2.1<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Tyler Buchner pass complete to Amari Niblack for 20 yds to the ALA 45 for a 1ST down<br />O_drive_number: 11", "Offense_play_count: 57<br />Delta_yards_to_success:  -2.5<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Tyler Buchner pass complete to Jermaine Burton for 5 yds to the MTSU 44 for a 1ST down<br />O_drive_number: 11", "Offense_play_count: 68<br />Delta_yards_to_success:   2.0<br />Play_type: Pass Reception<br />Success: Successful<br />Play_text: Ty Simpson pass complete to Jalen Hale for 5 yds to the MTSU 1<br />O_drive_number: 12"],
       "type": "scatter",
       "mode": "markers",
@@ -420,7 +420,7 @@
     },
     {
       "x": [2, 5, 7, 9, 12, 15, 18, 20, 27, 37, 38, 42, 58, 61, 62, 64, 67],
-      "y": [1.4, -0.7, 0, 0.5, 0.5, 1, 0, 0.5, 0.5, 0, 0, -8.5, 0, 0, 0, 0, -3.5],
+      "y": [1.4, -0.699999999999999, 0, 0.5, 0.5, 1, 0, 0.5, 0.5, 0, 0, -8.5, 0, 0, 0, 0, -3.5],
       "text": ["Offense_play_count:  2<br />Delta_yards_to_success:   1.4<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jase McClellan run for 4 yds to the ALA 40<br />O_drive_number: 1", "Offense_play_count:  5<br />Delta_yards_to_success:  -0.7<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jase McClellan run for 20 yds to the MTSU 21 for a 1ST down<br />O_drive_number: 1", "Offense_play_count:  7<br />Delta_yards_to_success:   0.0<br />Play_type: Rush<br />Success: Successful<br />Play_text: Roydell Williams run for 5 yds to the MTSU 42<br />O_drive_number: 2", "Offense_play_count:  9<br />Delta_yards_to_success:   0.5<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jalen Milroe run for 2 yds to the MTSU 36 for a 1ST down<br />O_drive_number: 2", "Offense_play_count: 12<br />Delta_yards_to_success:   0.5<br />Play_type: Rush<br />Success: Successful<br />Play_text: Roydell Williams run for 3 yds to the MTSU 24 for a 1ST down<br />O_drive_number: 2", "Offense_play_count: 15<br />Delta_yards_to_success:   1.0<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jase McClellan run for 6 yds to the MTSU 2<br />O_drive_number: 2", "Offense_play_count: 18<br />Delta_yards_to_success:   0.0<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jase McClellan run for 7 yds to the ALA 17<br />O_drive_number: 3", "Offense_play_count: 20<br />Delta_yards_to_success:   0.5<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jase McClellan run for 2 yds to the ALA 21 for a 1ST down<br />O_drive_number: 3", "Offense_play_count: 27<br />Delta_yards_to_success:   0.5<br />Play_type: Rush<br />Success: Successful<br />Play_text: Roydell Williams run for 8 yds to the ALA 37 for a 1ST down<br />O_drive_number: 4", "Offense_play_count: 37<br />Delta_yards_to_success:   0.0<br />Play_type: Rush<br />Success: Successful<br />Play_text: Roydell Williams run for 5 yds to the ALA 17<br />O_drive_number: 7", "Offense_play_count: 38<br />Delta_yards_to_success:   0.0<br />Play_type: Rush<br />Success: Successful<br />Play_text: Roydell Williams run for 11 yds to the ALA 28 for a 1ST down<br />O_drive_number: 7", "Offense_play_count: 42<br />Delta_yards_to_success:  -8.5<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jalen Milroe run for 25 yds to the 50 yard line for a 1ST down<br />O_drive_number: 8", "Offense_play_count: 58<br />Delta_yards_to_success:   0.0<br />Play_type: Rush<br />Success: Successful<br />Play_text: Jam Miller run for 6 yds to the MTSU 38<br />O_drive_number: 11", "Offense_play_count: 61<br />Delta_yards_to_success:   0.0<br />Play_type: Rush<br />Success: Successful<br />Play_text: Justice Haynes run for 16 yds to the MTSU 17 for a 1ST down<br />O_drive_number: 11", "Offense_play_count: 62<br />Delta_yards_to_success:   0.0<br />Play_type: Rush<br />Success: Successful<br />Play_text: Justice Haynes run for 8 yds to the MTSU 9<br />O_drive_number: 11", "Offense_play_count: 64<br />Delta_yards_to_success:   0.0<br />Play_type: Rush<br />Success: Successful<br />Play_text: Richard Young run for 11 yds to the MTSU 22 for a 1ST down<br />O_drive_number: 12", "Offense_play_count: 67<br />Delta_yards_to_success:  -3.5<br />Play_type: Rush<br />Success: Successful<br />Play_text: Ty Simpson run for 11 yds to the MTSU 6 for a 1ST down<br />O_drive_number: 12"],
       "type": "scatter",
       "mode": "markers",
@@ -746,38 +746,38 @@
   },
   source: "A",
   attrs: {
-    "4b7c68c763a5": {
+    "536c1ad93089": {
       "yintercept": {},
       "type": "scatter"
     },
-    "4b7c422025dc": {
+    "536c49c8baf": {
       "xintercept": {}
     },
-    "4b7c66ef7f9": {
+    "536c75e63ddf": {
       "x": {},
       "y": {},
       "colour": {}
     },
-    "4b7c42b7773c": {
+    "536c290a729d": {
       "x": {},
       "y": {},
       "shape": {},
       "colour": {},
       "label": {}
     },
-    "4b7c6fae1f58": {
+    "536c52a66f3c": {
       "x": {},
       "y": {},
       "label": {}
     }
   },
-  cur_data: "4b7c68c763a5",
+  cur_data: "536c1ad93089",
   visdat: {
-    "4b7c68c763a5": ["function (y) ", "x"],
-    "4b7c422025dc": ["function (y) ", "x"],
-    "4b7c66ef7f9": ["function (y) ", "x"],
-    "4b7c42b7773c": ["function (y) ", "x"],
-    "4b7c6fae1f58": ["function (y) ", "x"]
+    "536c1ad93089": ["function (y) ", "x"],
+    "536c49c8baf": ["function (y) ", "x"],
+    "536c75e63ddf": ["function (y) ", "x"],
+    "536c290a729d": ["function (y) ", "x"],
+    "536c52a66f3c": ["function (y) ", "x"]
   },
   highlight: {
     "on": "plotly_click",

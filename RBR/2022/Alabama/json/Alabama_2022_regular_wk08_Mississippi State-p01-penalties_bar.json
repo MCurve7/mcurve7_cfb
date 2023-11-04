@@ -14,7 +14,7 @@
         "color": "rgba(158,27,50,1)",
         "line": {
           "width": 1.88976377952756,
-          "color": "transparent"
+          "color": "rgba(0,0,0,1)"
         }
       },
       "name": "Alabama",
@@ -39,7 +39,7 @@
         "color": "rgba(102,0,0,1)",
         "line": {
           "width": 1.88976377952756,
-          "color": "transparent"
+          "color": "rgba(0,0,0,1)"
         }
       },
       "name": "Mississippi State",
@@ -196,16 +196,16 @@
   },
   source: "A",
   attrs: {
-    "6c281ca2f77": {
+    "536c6b0e6dbe": {
       "x": {},
       "y": {},
       "fill": {},
       "type": "bar"
     }
   },
-  cur_data: "6c281ca2f77",
+  cur_data: "536c6b0e6dbe",
   visdat: {
-    "6c281ca2f77": ["function (y) ", "x"]
+    "536c6b0e6dbe": ["function (y) ", "x"]
   },
   highlight: {
     "on": "plotly_click",

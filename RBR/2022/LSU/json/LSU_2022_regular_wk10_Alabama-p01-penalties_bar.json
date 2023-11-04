@@ -14,7 +14,7 @@
         "color": "rgba(158,27,50,1)",
         "line": {
           "width": 1.88976377952756,
-          "color": "transparent"
+          "color": "rgba(0,0,0,1)"
         }
       },
       "name": "Alabama",
@@ -39,7 +39,7 @@
         "color": "rgba(70,29,124,1)",
         "line": {
           "width": 1.88976377952756,
-          "color": "transparent"
+          "color": "rgba(0,0,0,1)"
         }
       },
       "name": "LSU",
@@ -196,16 +196,16 @@
   },
   source: "A",
   attrs: {
-    "6c285de467f0": {
+    "536c2f9420b8": {
       "x": {},
       "y": {},
       "fill": {},
       "type": "bar"
     }
   },
-  cur_data: "6c285de467f0",
+  cur_data: "536c2f9420b8",
   visdat: {
-    "6c285de467f0": ["function (y) ", "x"]
+    "536c2f9420b8": ["function (y) ", "x"]
   },
   highlight: {
     "on": "plotly_click",

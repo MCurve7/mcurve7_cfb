@@ -20,8 +20,8 @@
     },
     {
       "x": [-0.0449999999999999, 13.045],
-      "y": [0.420909090909091, 0.420909090909091],
-      "text": "yintercept: 0.4209091",
+      "y": [0.544988344988345, 0.544988344988345],
+      "text": "yintercept: 0.5449883",
       "type": "scatter",
       "mode": "lines",
       "line": {
@@ -38,11 +38,11 @@
     },
     {
       "orientation": "v",
-      "width": [0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.899999999999999, 0.899999999999999, 0.899999999999999],
-      "base": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-      "x": [1, 2, 3, 4, 5, 6, 7, 8, 10, 12],
-      "y": [0.571428571428571, 0.454545454545455, 0.333333333333333, 0.25, 0.428571428571429, 0.166666666666667, 0.333333333333333, 0, 0, 0],
-      "text": ["O_drive_number:  1<br />Success_rate: 0.5714286<br />Score_drive: FALSE<br />Total:  7", "O_drive_number:  2<br />Success_rate: 0.4545455<br />Score_drive: FALSE<br />Total: 11", "O_drive_number:  3<br />Success_rate: 0.3333333<br />Score_drive: FALSE<br />Total:  6", "O_drive_number:  4<br />Success_rate: 0.2500000<br />Score_drive: FALSE<br />Total:  4", "O_drive_number:  5<br />Success_rate: 0.4285714<br />Score_drive: FALSE<br />Total:  7", "O_drive_number:  6<br />Success_rate: 0.1666667<br />Score_drive: FALSE<br />Total:  6", "O_drive_number:  7<br />Success_rate: 0.3333333<br />Score_drive: FALSE<br />Total:  3", "O_drive_number:  8<br />Success_rate: 0.0000000<br />Score_drive: FALSE<br />Total:  3", "O_drive_number: 10<br />Success_rate: 0.0000000<br />Score_drive: FALSE<br />Total:  1", "O_drive_number: 12<br />Success_rate: 0.0000000<br />Score_drive: FALSE<br />Total:  3"],
+      "width": [0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.899999999999999, 0.899999999999999],
+      "base": [0, 0, 0, 0, 0, 0, 0, 0],
+      "x": [2, 3, 4, 5, 6, 7, 8, 12],
+      "y": [0.454545454545455, 0.333333333333333, 0.25, 0.428571428571429, 0.166666666666667, 0.333333333333333, 0, 0],
+      "text": ["O_drive_number:  2<br />Success_rate: 0.4545455<br />Score_Turnover_drive: Neither<br />Total: 11<br />Score_Turnover_drive: Neither", "O_drive_number:  3<br />Success_rate: 0.3333333<br />Score_Turnover_drive: Neither<br />Total:  6<br />Score_Turnover_drive: Neither", "O_drive_number:  4<br />Success_rate: 0.2500000<br />Score_Turnover_drive: Neither<br />Total:  4<br />Score_Turnover_drive: Neither", "O_drive_number:  5<br />Success_rate: 0.4285714<br />Score_Turnover_drive: Neither<br />Total:  7<br />Score_Turnover_drive: Neither", "O_drive_number:  6<br />Success_rate: 0.1666667<br />Score_Turnover_drive: Neither<br />Total:  6<br />Score_Turnover_drive: Neither", "O_drive_number:  7<br />Success_rate: 0.3333333<br />Score_Turnover_drive: Neither<br />Total:  3<br />Score_Turnover_drive: Neither", "O_drive_number:  8<br />Success_rate: 0.0000000<br />Score_Turnover_drive: Neither<br />Total:  3<br />Score_Turnover_drive: Neither", "O_drive_number: 12<br />Success_rate: 0.0000000<br />Score_Turnover_drive: Neither<br />Total:  3<br />Score_Turnover_drive: Neither"],
       "type": "bar",
       "textposition": "none",
       "marker": {
@@ -53,8 +53,8 @@
           "color": "rgba(0,0,0,1)"
         }
       },
-      "name": "FALSE",
-      "legendgroup": "FALSE",
+      "name": "Neither",
+      "legendgroup": "Neither",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -67,7 +67,7 @@
       "base": [0, 0],
       "x": [9, 11],
       "y": [0.4, 0.5],
-      "text": ["O_drive_number:  9<br />Success_rate: 0.4000000<br />Score_drive:  TRUE<br />Total:  5", "O_drive_number: 11<br />Success_rate: 0.5000000<br />Score_drive:  TRUE<br />Total:  6"],
+      "text": ["O_drive_number:  9<br />Success_rate: 0.4000000<br />Score_Turnover_drive: Score<br />Total:  5<br />Score_Turnover_drive: Score", "O_drive_number: 11<br />Success_rate: 0.5000000<br />Score_Turnover_drive: Score<br />Total:  6<br />Score_Turnover_drive: Score"],
       "type": "bar",
       "textposition": "none",
       "marker": {
@@ -78,9 +78,52 @@
           "color": "rgba(0,0,0,1)"
         }
       },
-      "name": "TRUE",
-      "legendgroup": "TRUE",
+      "name": "Score",
+      "legendgroup": "Score",
       "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "orientation": "v",
+      "width": [0.9, 0.899999999999999],
+      "base": [0, 0],
+      "x": [1, 10],
+      "y": [0.571428571428571, 0],
+      "text": ["O_drive_number:  1<br />Success_rate: 0.5714286<br />Score_Turnover_drive: Turnover<br />Total:  7<br />Score_Turnover_drive: Turnover", "O_drive_number: 10<br />Success_rate: 0.0000000<br />Score_Turnover_drive: Turnover<br />Total:  1<br />Score_Turnover_drive: Turnover"],
+      "type": "bar",
+      "textposition": "none",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(255,0,255,1)",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(255,0,255,1)"
+        }
+      },
+      "name": "Turnover",
+      "legendgroup": "Turnover",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [5.5, 5.5],
+      "y": [-0.05, 1.05],
+      "text": "xintercept: 5.5",
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(102,102,102,1)",
+        "dash": "longdash"
+      },
+      "hoveron": "points",
+      "showlegend": false,
       "xaxis": "x",
       "yaxis": "y",
       "hoverinfo": "text",
@@ -128,7 +171,7 @@
       "size": 14.6118721461187
     },
     "title": {
-      "text": "Alabama[24]: Success rate by Drive with TD drive indicated and number of plays per drive; Mean: Game = 0.286 (dotdash), Season = 0.421 (dashed)<br> <sup>2023: wk02 vs Texas[34]<\/sup>",
+      "text": "Alabama[24]: Success rate by Drive with TD drive indicated and number of plays per drive; Mean: Game = 0.286 (dotdash), Season = 0.545 (dashed)<br> <sup>2023: wk02 vs Texas[34]<\/sup>",
       "font": {
         "color": "rgba(0,0,0,1)",
         "family": "",
@@ -266,35 +309,40 @@
   },
   source: "A",
   attrs: {
-    "5d6c3a21258": {
+    "536c13f465e4": {
       "yintercept": {},
       "type": "scatter"
     },
-    "5d6c61a85233": {
+    "536c7712509a": {
       "yintercept": {}
     },
-    "5d6c2fdd2a7a": {
+    "536c1e8d1b9f": {
       "x": {},
       "y": {},
       "fill": {},
-      "label": {}
+      "label": {},
+      "colour": {}
     },
-    "5d6c30576fdd": {
+    "536c53675ab2": {
+      "xintercept": {}
+    },
+    "536c2b522e09": {
       "y": {}
     },
-    "5d6c10d25aac": {
+    "536c33513999": {
       "x": {},
       "y": {},
       "label": {}
     }
   },
-  cur_data: "5d6c3a21258",
+  cur_data: "536c13f465e4",
   visdat: {
-    "5d6c3a21258": ["function (y) ", "x"],
-    "5d6c61a85233": ["function (y) ", "x"],
-    "5d6c2fdd2a7a": ["function (y) ", "x"],
-    "5d6c30576fdd": ["function (y) ", "x"],
-    "5d6c10d25aac": ["function (y) ", "x"]
+    "536c13f465e4": ["function (y) ", "x"],
+    "536c7712509a": ["function (y) ", "x"],
+    "536c1e8d1b9f": ["function (y) ", "x"],
+    "536c53675ab2": ["function (y) ", "x"],
+    "536c2b522e09": ["function (y) ", "x"],
+    "536c33513999": ["function (y) ", "x"]
   },
   highlight: {
     "on": "plotly_click",

@@ -2,8 +2,8 @@
   data: [
     {
       "x": [0.4, 14.6],
-      "y": [5.68627450980392, 5.68627450980392],
-      "text": "yintercept: 5.686275",
+      "y": [5.70588235294118, 5.70588235294118],
+      "text": "yintercept: 5.705882",
       "type": "scatter",
       "mode": "lines",
       "line": {
@@ -20,8 +20,8 @@
     },
     {
       "x": [0.4, 14.6],
-      "y": [5.55240174672489, 5.55240174672489],
-      "text": "yintercept: 5.552402",
+      "y": [5.5938864628821, 5.5938864628821],
+      "text": "yintercept: 5.593886",
       "type": "scatter",
       "mode": "lines",
       "line": {
@@ -50,7 +50,7 @@
         "color": "rgba(158,27,50,1)",
         "line": {
           "width": 1.88976377952756,
-          "color": "transparent"
+          "color": "rgba(0,0,0,1)"
         }
       },
       "name": "Alabama",
@@ -75,7 +75,7 @@
         "color": "rgba(157,34,53,1)",
         "line": {
           "width": 1.88976377952756,
-          "color": "transparent"
+          "color": "rgba(0,0,0,1)"
         }
       },
       "name": "Arkansas",
@@ -100,7 +100,7 @@
         "color": "rgba(12,35,64,1)",
         "line": {
           "width": 1.88976377952756,
-          "color": "transparent"
+          "color": "rgba(0,0,0,1)"
         }
       },
       "name": "Auburn",
@@ -125,7 +125,7 @@
         "color": "rgba(0,33,165,1)",
         "line": {
           "width": 1.88976377952756,
-          "color": "transparent"
+          "color": "rgba(0,0,0,1)"
         }
       },
       "name": "Florida",
@@ -150,7 +150,7 @@
         "color": "rgba(186,12,47,1)",
         "line": {
           "width": 1.88976377952756,
-          "color": "transparent"
+          "color": "rgba(0,0,0,1)"
         }
       },
       "name": "Georgia",
@@ -175,7 +175,7 @@
         "color": "rgba(0,51,160,1)",
         "line": {
           "width": 1.88976377952756,
-          "color": "transparent"
+          "color": "rgba(0,0,0,1)"
         }
       },
       "name": "Kentucky",
@@ -200,7 +200,7 @@
         "color": "rgba(70,29,124,1)",
         "line": {
           "width": 1.88976377952756,
-          "color": "transparent"
+          "color": "rgba(0,0,0,1)"
         }
       },
       "name": "LSU",
@@ -225,7 +225,7 @@
         "color": "rgba(102,0,0,1)",
         "line": {
           "width": 1.88976377952756,
-          "color": "transparent"
+          "color": "rgba(0,0,0,1)"
         }
       },
       "name": "Mississippi State",
@@ -250,7 +250,7 @@
         "color": "rgba(0,0,0,1)",
         "line": {
           "width": 1.88976377952756,
-          "color": "transparent"
+          "color": "rgba(0,0,0,1)"
         }
       },
       "name": "Missouri",
@@ -275,7 +275,7 @@
         "color": "rgba(206,17,38,1)",
         "line": {
           "width": 1.88976377952756,
-          "color": "transparent"
+          "color": "rgba(0,0,0,1)"
         }
       },
       "name": "Ole Miss",
@@ -300,7 +300,7 @@
         "color": "rgba(115,0,10,1)",
         "line": {
           "width": 1.88976377952756,
-          "color": "transparent"
+          "color": "rgba(0,0,0,1)"
         }
       },
       "name": "South Carolina",
@@ -325,7 +325,7 @@
         "color": "rgba(255,130,0,1)",
         "line": {
           "width": 1.88976377952756,
-          "color": "transparent"
+          "color": "rgba(0,0,0,1)"
         }
       },
       "name": "Tennessee",
@@ -350,7 +350,7 @@
         "color": "rgba(80,0,0,1)",
         "line": {
           "width": 1.88976377952756,
-          "color": "transparent"
+          "color": "rgba(0,0,0,1)"
         }
       },
       "name": "Texas A&M",
@@ -366,8 +366,8 @@
       "width": 0.899999999999999,
       "base": 0,
       "x": [14],
-      "y": [3.375],
-      "text": "Team: Vanderbilt<br />Average: 3.375000<br />Team: Vanderbilt",
+      "y": [3.625],
+      "text": "Team: Vanderbilt<br />Average: 3.625000<br />Team: Vanderbilt",
       "type": "bar",
       "textposition": "none",
       "marker": {
@@ -375,7 +375,7 @@
         "color": "rgba(0,0,0,1)",
         "line": {
           "width": 1.88976377952756,
-          "color": "transparent"
+          "color": "rgba(0,0,0,1)"
         }
       },
       "name": "Vanderbilt",
@@ -648,9 +648,9 @@
     },
     {
       "x": [14],
-      "y": [3.375],
-      "text": "3.38",
-      "hovertext": "Team: Vanderbilt<br />Average: 3.375000<br />Team: Vanderbilt<br />sprintf(\"%2.2f\", Average): 3.38",
+      "y": [3.625],
+      "text": "3.62",
+      "hovertext": "Team: Vanderbilt<br />Average: 3.625000<br />Team: Vanderbilt<br />sprintf(\"%2.2f\", Average): 3.62",
       "textfont": {
         "size": 14.6645669291339,
         "color": "rgba(0,0,0,1)"
@@ -682,7 +682,7 @@
       "size": 14.6118721461187
     },
     "title": {
-      "text": "SEC v FBS team season average penalties: enforced<br> <sup>SEC average (green dashed) =  5.69 , FBS average (yellow dotdash) =  5.55<\/sup>",
+      "text": "SEC v FBS team season average penalties: enforced<br> <sup>SEC average (green dashed) =  5.71 , FBS average (yellow dotdash) =  5.59<\/sup>",
       "font": {
         "color": "rgba(0,0,0,1)",
         "family": "",
@@ -820,31 +820,31 @@
   },
   source: "A",
   attrs: {
-    "6c281d9b268f": {
+    "536c22e23024": {
       "yintercept": {},
       "type": "scatter"
     },
-    "6c28224d7b11": {
+    "536c53441029": {
       "yintercept": {}
     },
-    "6c283a83176d": {
+    "536c5c7416d3": {
       "x": {},
       "y": {},
       "fill": {}
     },
-    "6c2838594113": {
+    "536c593d75da": {
       "x": {},
       "y": {},
       "fill": {},
       "label": {}
     }
   },
-  cur_data: "6c281d9b268f",
+  cur_data: "536c22e23024",
   visdat: {
-    "6c281d9b268f": ["function (y) ", "x"],
-    "6c28224d7b11": ["function (y) ", "x"],
-    "6c283a83176d": ["function (y) ", "x"],
-    "6c2838594113": ["function (y) ", "x"]
+    "536c22e23024": ["function (y) ", "x"],
+    "536c53441029": ["function (y) ", "x"],
+    "536c5c7416d3": ["function (y) ", "x"],
+    "536c593d75da": ["function (y) ", "x"]
   },
   highlight: {
     "on": "plotly_click",

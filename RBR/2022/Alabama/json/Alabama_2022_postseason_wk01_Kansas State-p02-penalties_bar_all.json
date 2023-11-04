@@ -6,7 +6,7 @@
       "base": 0,
       "x": [1],
       "y": [4],
-      "text": "Penalty_team: Alabama<br />Count: 4<br />Penalty_status: enforced<br />Penalty_team: Alabama<br />Penalty_team: Alabama",
+      "text": "Penalty_team: Alabama<br />Count: 4<br />Penalty_status: enforced<br />Penalty_team: black<br />Penalty_team: Alabama",
       "type": "bar",
       "textposition": "none",
       "marker": {
@@ -14,11 +14,11 @@
         "color": "rgba(255,62,150,1)",
         "line": {
           "width": 11.3385826771654,
-          "color": "rgba(158,27,50,1)"
+          "color": "rgba(0,0,0,1)"
         }
       },
-      "name": "(enforced,Alabama)",
-      "legendgroup": "(enforced,Alabama)",
+      "name": "(enforced,Alabama,1)",
+      "legendgroup": "(enforced,Alabama,1)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -31,7 +31,7 @@
       "base": 0,
       "x": [2],
       "y": [6],
-      "text": "Penalty_team: Kansas State<br />Count: 6<br />Penalty_status: enforced<br />Penalty_team: Kansas State<br />Penalty_team: Kansas State",
+      "text": "Penalty_team: Kansas State<br />Count: 6<br />Penalty_status: enforced<br />Penalty_team: black<br />Penalty_team: Kansas State",
       "type": "bar",
       "textposition": "none",
       "marker": {
@@ -39,11 +39,11 @@
         "color": "rgba(255,62,150,1)",
         "line": {
           "width": 11.3385826771654,
-          "color": "rgba(81,40,136,1)"
+          "color": "rgba(0,0,0,1)"
         }
       },
-      "name": "(enforced,Kansas State)",
-      "legendgroup": "(enforced,Kansas State)",
+      "name": "(enforced,Kansas State,1)",
+      "legendgroup": "(enforced,Kansas State,1)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -186,7 +186,7 @@
         "size": 11.689497716895
       },
       "title": {
-        "text": "Team<br />Penalty Status",
+        "text": "Penalty Status",
         "font": {
           "color": "rgba(0,0,0,1)",
           "family": "",
@@ -204,7 +204,7 @@
   },
   source: "A",
   attrs: {
-    "9f0468482706": {
+    "536c890fb6": {
       "x": {},
       "y": {},
       "fill": {},
@@ -213,9 +213,9 @@
       "type": "bar"
     }
   },
-  cur_data: "9f0468482706",
+  cur_data: "536c890fb6",
   visdat: {
-    "9f0468482706": ["function (y) ", "x"]
+    "536c890fb6": ["function (y) ", "x"]
   },
   highlight: {
     "on": "plotly_click",

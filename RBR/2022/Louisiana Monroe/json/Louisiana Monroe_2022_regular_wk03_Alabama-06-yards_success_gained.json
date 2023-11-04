@@ -1,8 +1,8 @@
 {
   data: [
     {
-      "x": [0.286786064822227, 15.8009672448598],
-      "y": [0.286786064822227, 15.8009672448598],
+      "x": [0.314080936722457, 15.6899210549146],
+      "y": [0.314080936722457, 15.6899210549146],
       "text": "intercept: 0<br />slope: 1",
       "type": "scatter",
       "mode": "lines",
@@ -19,59 +19,7 @@
       "frame": null
     },
     {
-      "x": [11.1474804615602],
-      "y": [3],
-      "text": "Yards_to_success: 11.0<br />Yards_gained:  3<br />Play_type: Blocked Punt Touchdown<br />Success: Punt",
-      "type": "scatter",
-      "mode": "markers",
-      "marker": {
-        "autocolorscale": false,
-        "color": "rgba(127,127,127,1)",
-        "opacity": 1,
-        "size": 11.3385826771654,
-        "symbol": "square-x-open",
-        "line": {
-          "width": 1.88976377952756,
-          "color": "rgba(127,127,127,1)"
-        }
-      },
-      "hoveron": "points",
-      "name": "(Punt,Blocked Punt Touchdown)",
-      "legendgroup": "(Punt,Blocked Punt Touchdown)",
-      "showlegend": true,
-      "xaxis": "x",
-      "yaxis": "y",
-      "hoverinfo": "text",
-      "frame": null
-    },
-    {
-      "x": [1.81494393208995],
-      "y": [68],
-      "text": "Yards_to_success:  2.0<br />Yards_gained: 68<br />Play_type: Punt Return Touchdown<br />Success: Punt",
-      "type": "scatter",
-      "mode": "markers",
-      "marker": {
-        "autocolorscale": false,
-        "color": "rgba(127,127,127,1)",
-        "opacity": 1,
-        "size": 11.3385826771654,
-        "symbol": "asterisk-open",
-        "line": {
-          "width": 1.88976377952756,
-          "color": "rgba(127,127,127,1)"
-        }
-      },
-      "hoveron": "points",
-      "name": "(Punt,Punt Return Touchdown)",
-      "legendgroup": "(Punt,Punt Return Touchdown)",
-      "showlegend": true,
-      "xaxis": "x",
-      "yaxis": "y",
-      "hoverinfo": "text",
-      "frame": null
-    },
-    {
-      "x": [4.85060471128672, 6.96887841578573, 6.4908117480576, 2.90968061797321, 5.19684607470408, 4.80711622163653, 4.95617599133402],
+      "x": [5.09123249445111, 6.85204199831933, 6.18206046232954, 3.10519201718271, 4.99524418637156, 5.08466241350397, 4.98388127274811],
       "y": [12, 11, 13, 11, 9, 5, 16],
       "text": ["Yards_to_success:  5.0<br />Yards_gained: 12<br />Play_type: Pass Reception<br />Success: Successful", "Yards_to_success:  7.0<br />Yards_gained: 11<br />Play_type: Pass Reception<br />Success: Successful", "Yards_to_success:  6.3<br />Yards_gained: 13<br />Play_type: Pass Reception<br />Success: Successful", "Yards_to_success:  3.0<br />Yards_gained: 11<br />Play_type: Pass Reception<br />Success: Successful", "Yards_to_success:  5.0<br />Yards_gained:  9<br />Play_type: Pass Reception<br />Success: Successful", "Yards_to_success:  5.0<br />Yards_gained:  5<br />Play_type: Pass Reception<br />Success: Successful", "Yards_to_success:  5.0<br />Yards_gained: 16<br />Play_type: Pass Reception<br />Success: Successful"],
       "type": "scatter",
@@ -97,7 +45,7 @@
       "frame": null
     },
     {
-      "x": [8.8707481244579, 4.13324992582202, 5.10276955133304, 4.98136629778892, 4.28585702329874, 0.991976118460298, 3.36375012481585, 1.03281083032489, 4.86262749014422, 5.06908276919276, 4.75331138204783],
+      "x": [8.94103701431304, 4.29003106411546, 4.9860389447771, 5.19200048958883, 4.05337582333013, 1.09312833780423, 3.38000454492867, 1.01298276027665, 5.07547059189528, 5.01863353038207, 4.95086070941761],
       "y": [15, 10, 6, 13, 5, 2, 4, 1, 5, 5, 6],
       "text": ["Yards_to_success:  9.0<br />Yards_gained: 15<br />Play_type: Rush<br />Success: Successful", "Yards_to_success:  4.2<br />Yards_gained: 10<br />Play_type: Rush<br />Success: Successful", "Yards_to_success:  5.0<br />Yards_gained:  6<br />Play_type: Rush<br />Success: Successful", "Yards_to_success:  5.0<br />Yards_gained: 13<br />Play_type: Rush<br />Success: Successful", "Yards_to_success:  4.2<br />Yards_gained:  5<br />Play_type: Rush<br />Success: Successful", "Yards_to_success:  1.0<br />Yards_gained:  2<br />Play_type: Rush<br />Success: Successful", "Yards_to_success:  3.5<br />Yards_gained:  4<br />Play_type: Rush<br />Success: Successful", "Yards_to_success:  1.0<br />Yards_gained:  1<br />Play_type: Rush<br />Success: Successful", "Yards_to_success:  4.9<br />Yards_gained:  5<br />Play_type: Rush<br />Success: Successful", "Yards_to_success:  5.0<br />Yards_gained:  5<br />Play_type: Rush<br />Success: Successful", "Yards_to_success:  4.9<br />Yards_gained:  6<br />Play_type: Rush<br />Success: Successful"],
       "type": "scatter",
@@ -123,7 +71,7 @@
       "frame": null
     },
     {
-      "x": [5.12192372241989],
+      "x": [4.84687501899898],
       "y": [11],
       "text": "Yards_to_success:  5.0<br />Yards_gained: 11<br />Play_type: Rushing Touchdown<br />Success: Successful",
       "type": "scatter",
@@ -149,7 +97,7 @@
       "frame": null
     },
     {
-      "x": [9.17469787998125],
+      "x": [9.28625183468685],
       "y": [25],
       "text": "Yards_to_success:  9.1<br />Yards_gained: 25<br />Play_type: Interception Return Touchdown<br />Success: Unsuccessful",
       "type": "scatter",
@@ -175,7 +123,7 @@
       "frame": null
     },
     {
-      "x": [6.96879008179531, 9.99076414313167, 5.08169775810093, 8.05758053380996, 5.02872955249622, 4.88135039359331, 4.81582148857415, 4.71033414565027, 6.80888924794272, 9.11780240563676, 5.48400647006929],
+      "x": [7.04070246918127, 10.1187457647175, 5.16279434962198, 8.07838814835995, 4.71583357769996, 4.81802725940943, 5.10886385785416, 4.99925002697855, 7.06388764884323, 9.18206445714459, 5.47843080293387],
       "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "text": ["Yards_to_success:  7.0<br />Yards_gained:  0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful", "Yards_to_success: 10.0<br />Yards_gained:  0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful", "Yards_to_success:  5.0<br />Yards_gained:  0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful", "Yards_to_success:  8.0<br />Yards_gained:  0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful", "Yards_to_success:  4.9<br />Yards_gained:  0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful", "Yards_to_success:  5.0<br />Yards_gained:  0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful", "Yards_to_success:  5.0<br />Yards_gained:  0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful", "Yards_to_success:  4.9<br />Yards_gained:  0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful", "Yards_to_success:  7.0<br />Yards_gained:  0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful", "Yards_to_success:  9.0<br />Yards_gained:  0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful", "Yards_to_success:  5.6<br />Yards_gained:  0<br />Play_type: Pass Incompletion<br />Success: Unsuccessful"],
       "type": "scatter",
@@ -201,7 +149,7 @@
       "frame": null
     },
     {
-      "x": [15.0957771912217, 9.29621865972877, 6.85009354269132, 6.96546607306227, 7.91036869520322],
+      "x": [14.9910192313604, 9.0498061160557, 7.01337175965309, 6.86964263385162, 8.14678119216114],
       "y": [4, 4, 6, 5, -5],
       "text": ["Yards_to_success: 15.0<br />Yards_gained:  4<br />Play_type: Pass Reception<br />Success: Unsuccessful", "Yards_to_success:  9.1<br />Yards_gained:  4<br />Play_type: Pass Reception<br />Success: Unsuccessful", "Yards_to_success:  7.0<br />Yards_gained:  6<br />Play_type: Pass Reception<br />Success: Unsuccessful", "Yards_to_success:  7.0<br />Yards_gained:  5<br />Play_type: Pass Reception<br />Success: Unsuccessful", "Yards_to_success:  8.0<br />Yards_gained: -5<br />Play_type: Pass Reception<br />Success: Unsuccessful"],
       "type": "scatter",
@@ -227,7 +175,7 @@
       "frame": null
     },
     {
-      "x": [5.19624013127759, 11.2063332560472, 5.18527723960578, 7.16079283403233, 5.00205883644521, 6.9020421971567, 5.08849380146712, 4.99409881848842, 2.68059152802452, 13.8477187007666, 4.81470606541261, 4.9314378073439, 5.12121495576575, 4.9073745906353, 8.43107930812985, 10.0885407343507, 3.30802509337664, 1.89046364370733, 5.05289900498465, 1.19253274276853, 5.08480810699984, 7.83661575438455, 5.09077488901094, 4.81483577443287],
+      "x": [5.05465926919132, 11.3339822521433, 5.01302486211061, 6.83964308276772, 5.19977876618505, 7.07167261289433, 5.03419750696048, 4.984487920627, 2.71119801495224, 13.8439947298728, 4.96477750819176, 4.80150497620925, 5.18334355950356, 5.09469777354971, 8.36678336625919, 9.8121222101152, 3.38612005859613, 2.14358133524656, 4.99207923151553, 1.12112939096987, 5.18777394397184, 7.64269543970004, 4.84799434458837, 5.08008608138189],
       "y": [0, 1, -3, 2, 3, 1, 4, 1, 1, 2, 3, 3, 0, -2, 2, 7, 3, 1, 3, -1, -1, 2, 2, -1],
       "text": ["Yards_to_success:  5.0<br />Yards_gained:  0<br />Play_type: Rush<br />Success: Unsuccessful", "Yards_to_success: 11.2<br />Yards_gained:  1<br />Play_type: Rush<br />Success: Unsuccessful", "Yards_to_success:  5.0<br />Yards_gained: -3<br />Play_type: Rush<br />Success: Unsuccessful", "Yards_to_success:  7.0<br />Yards_gained:  2<br />Play_type: Rush<br />Success: Unsuccessful", "Yards_to_success:  5.0<br />Yards_gained:  3<br />Play_type: Rush<br />Success: Unsuccessful", "Yards_to_success:  7.0<br />Yards_gained:  1<br />Play_type: Rush<br />Success: Unsuccessful", "Yards_to_success:  5.0<br />Yards_gained:  4<br />Play_type: Rush<br />Success: Unsuccessful", "Yards_to_success:  5.0<br />Yards_gained:  1<br />Play_type: Rush<br />Success: Unsuccessful", "Yards_to_success:  2.8<br />Yards_gained:  1<br />Play_type: Rush<br />Success: Unsuccessful", "Yards_to_success: 14.0<br />Yards_gained:  2<br />Play_type: Rush<br />Success: Unsuccessful", "Yards_to_success:  5.0<br />Yards_gained:  3<br />Play_type: Rush<br />Success: Unsuccessful", "Yards_to_success:  5.0<br />Yards_gained:  3<br />Play_type: Rush<br />Success: Unsuccessful", "Yards_to_success:  5.0<br />Yards_gained:  0<br />Play_type: Rush<br />Success: Unsuccessful", "Yards_to_success:  5.0<br />Yards_gained: -2<br />Play_type: Rush<br />Success: Unsuccessful", "Yards_to_success:  8.4<br />Yards_gained:  2<br />Play_type: Rush<br />Success: Unsuccessful", "Yards_to_success: 10.0<br />Yards_gained:  7<br />Play_type: Rush<br />Success: Unsuccessful", "Yards_to_success:  3.5<br />Yards_gained:  3<br />Play_type: Rush<br />Success: Unsuccessful", "Yards_to_success:  2.0<br />Yards_gained:  1<br />Play_type: Rush<br />Success: Unsuccessful", "Yards_to_success:  5.0<br />Yards_gained:  3<br />Play_type: Rush<br />Success: Unsuccessful", "Yards_to_success:  1.0<br />Yards_gained: -1<br />Play_type: Rush<br />Success: Unsuccessful", "Yards_to_success:  5.0<br />Yards_gained: -1<br />Play_type: Rush<br />Success: Unsuccessful", "Yards_to_success:  7.7<br />Yards_gained:  2<br />Play_type: Rush<br />Success: Unsuccessful", "Yards_to_success:  5.0<br />Yards_gained:  2<br />Play_type: Rush<br />Success: Unsuccessful", "Yards_to_success:  5.0<br />Yards_gained: -1<br />Play_type: Rush<br />Success: Unsuccessful"],
       "type": "scatter",
@@ -253,7 +201,7 @@
       "frame": null
     },
     {
-      "x": [4.88369578439742, 5.07396123139188, 8.84137281645089, 9.83723422288895],
+      "x": [4.8171288122423, 4.88569383407012, 9.01879325686023, 9.95735378628597],
       "y": [-3, -6, -5, -9],
       "text": ["Yards_to_success:  5.0<br />Yards_gained: -3<br />Play_type: Sack<br />Success: Unsuccessful", "Yards_to_success:  5.0<br />Yards_gained: -6<br />Play_type: Sack<br />Success: Unsuccessful", "Yards_to_success:  9.0<br />Yards_gained: -5<br />Play_type: Sack<br />Success: Unsuccessful", "Yards_to_success: 10.0<br />Yards_gained: -9<br />Play_type: Sack<br />Success: Unsuccessful"],
       "type": "scatter",
@@ -349,7 +297,7 @@
       "automargin": true,
       "type": "linear",
       "autorange": false,
-      "range": [0.286786064822227, 15.8009672448598],
+      "range": [0.314080936722457, 15.6899210549146],
       "tickmode": "array",
       "ticktext": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"],
       "tickvals": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
@@ -390,12 +338,12 @@
       "automargin": true,
       "type": "linear",
       "autorange": false,
-      "range": [-12.85, 71.85],
+      "range": [-10.7, 26.7],
       "tickmode": "array",
-      "ticktext": ["-10", "-5", "0", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55", "60", "65", "70"],
-      "tickvals": [-10, -5, 0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70],
+      "ticktext": ["-10", "-5", "0", "5", "10", "15", "20", "25"],
+      "tickvals": [-10, -5, 0, 5, 10, 15, 20, 25],
       "categoryorder": "array",
-      "categoryarray": ["-10", "-5", "0", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55", "60", "65", "70"],
+      "categoryarray": ["-10", "-5", "0", "5", "10", "15", "20", "25"],
       "nticks": null,
       "ticks": "outside",
       "tickcolor": "rgba(51,51,51,1)",
@@ -472,36 +420,36 @@
   },
   source: "A",
   attrs: {
-    "6c283ffc3b4a": {
+    "536c4a973129": {
       "intercept": {},
       "slope": {},
       "type": "scatter"
     },
-    "6c286f38613": {
+    "536c345b35da": {
       "x": {},
       "y": {},
       "shape": {},
       "colour": {}
     },
-    "6c285fb519bf": {
+    "536c562c32c": {
       "xmin": {},
       "xmax": {},
       "ymin": {},
       "ymax": {}
     },
-    "6c2891e16e1": {
+    "536c1a51387": {
       "xmin": {},
       "xmax": {},
       "ymin": {},
       "ymax": {}
     }
   },
-  cur_data: "6c283ffc3b4a",
+  cur_data: "536c4a973129",
   visdat: {
-    "6c283ffc3b4a": ["function (y) ", "x"],
-    "6c286f38613": ["function (y) ", "x"],
-    "6c285fb519bf": ["function (y) ", "x"],
-    "6c2891e16e1": ["function (y) ", "x"]
+    "536c4a973129": ["function (y) ", "x"],
+    "536c345b35da": ["function (y) ", "x"],
+    "536c562c32c": ["function (y) ", "x"],
+    "536c1a51387": ["function (y) ", "x"]
   },
   highlight: {
     "on": "plotly_click",

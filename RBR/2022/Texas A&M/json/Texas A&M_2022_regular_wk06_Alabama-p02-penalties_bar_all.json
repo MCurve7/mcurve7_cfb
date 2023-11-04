@@ -6,7 +6,7 @@
       "base": 0,
       "x": [1],
       "y": [5],
-      "text": "Penalty_team: Alabama<br />Count: 5<br />Penalty_status: enforced<br />Penalty_team: Alabama<br />Penalty_team: Alabama",
+      "text": "Penalty_team: Alabama<br />Count: 5<br />Penalty_status: enforced<br />Penalty_team: black<br />Penalty_team: Alabama",
       "type": "bar",
       "textposition": "none",
       "marker": {
@@ -14,11 +14,11 @@
         "color": "rgba(255,62,150,1)",
         "line": {
           "width": 11.3385826771654,
-          "color": "rgba(158,27,50,1)"
+          "color": "rgba(0,0,0,1)"
         }
       },
-      "name": "(enforced,Alabama)",
-      "legendgroup": "(enforced,Alabama)",
+      "name": "(enforced,Alabama,1)",
+      "legendgroup": "(enforced,Alabama,1)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -31,7 +31,7 @@
       "base": 0,
       "x": [2],
       "y": [8],
-      "text": "Penalty_team: Texas A&M<br />Count: 8<br />Penalty_status: enforced<br />Penalty_team: Texas A&M<br />Penalty_team: Texas A&M",
+      "text": "Penalty_team: Texas A&M<br />Count: 8<br />Penalty_status: enforced<br />Penalty_team: black<br />Penalty_team: Texas A&M",
       "type": "bar",
       "textposition": "none",
       "marker": {
@@ -39,11 +39,11 @@
         "color": "rgba(255,62,150,1)",
         "line": {
           "width": 11.3385826771654,
-          "color": "rgba(80,0,0,1)"
+          "color": "rgba(0,0,0,1)"
         }
       },
-      "name": "(enforced,Texas A&M)",
-      "legendgroup": "(enforced,Texas A&M)",
+      "name": "(enforced,Texas A&M,1)",
+      "legendgroup": "(enforced,Texas A&M,1)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -186,7 +186,7 @@
         "size": 11.689497716895
       },
       "title": {
-        "text": "Team<br />Penalty Status",
+        "text": "Penalty Status",
         "font": {
           "color": "rgba(0,0,0,1)",
           "family": "",
@@ -204,7 +204,7 @@
   },
   source: "A",
   attrs: {
-    "6c283bed13f3": {
+    "536c1b6036e8": {
       "x": {},
       "y": {},
       "fill": {},
@@ -213,9 +213,9 @@
       "type": "bar"
     }
   },
-  cur_data: "6c283bed13f3",
+  cur_data: "536c1b6036e8",
   visdat: {
-    "6c283bed13f3": ["function (y) ", "x"]
+    "536c1b6036e8": ["function (y) ", "x"]
   },
   highlight: {
     "on": "plotly_click",
