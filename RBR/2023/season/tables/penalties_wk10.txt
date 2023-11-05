@@ -1,0 +1,937 @@
+<table>
+  <thead>
+    <tr class = "header headerLastRow">
+      <th class = "rowNumber">Row</th>
+      <th style = "text-align: left;">school</th>
+      <th style = "text-align: left;">sum</th>
+      <th style = "text-align: left;">mean</th>
+      <th style = "text-align: left;">z</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class = "rowNumber">1</td>
+      <td style = "text-align: left;">Colorado</td>
+      <td style = "text-align: left;">76</td>
+      <td style = "text-align: left;">9.50</td>
+      <td style = "text-align: left;">3.62</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">2</td>
+      <td style = "text-align: left;">New Mexico</td>
+      <td style = "text-align: left;">83</td>
+      <td style = "text-align: left;">9.22</td>
+      <td style = "text-align: left;">3.54</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">3</td>
+      <td style = "text-align: left;">Pittsburgh</td>
+      <td style = "text-align: left;">78</td>
+      <td style = "text-align: left;">8.67</td>
+      <td style = "text-align: left;">2.94</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">4</td>
+      <td style = "text-align: left;">Tennessee</td>
+      <td style = "text-align: left;">76</td>
+      <td style = "text-align: left;">8.44</td>
+      <td style = "text-align: left;">2.70</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">5</td>
+      <td style = "text-align: left;">UMass</td>
+      <td style = "text-align: left;">84</td>
+      <td style = "text-align: left;">8.40</td>
+      <td style = "text-align: left;">2.79</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">6</td>
+      <td style = "text-align: left;">USC</td>
+      <td style = "text-align: left;">80</td>
+      <td style = "text-align: left;">8.00</td>
+      <td style = "text-align: left;">2.33</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">7</td>
+      <td style = "text-align: left;">Colorado State</td>
+      <td style = "text-align: left;">70</td>
+      <td style = "text-align: left;">7.78</td>
+      <td style = "text-align: left;">1.97</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">8</td>
+      <td style = "text-align: left;">Louisiana Tech</td>
+      <td style = "text-align: left;">69</td>
+      <td style = "text-align: left;">7.67</td>
+      <td style = "text-align: left;">1.85</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">9</td>
+      <td style = "text-align: left;">South Florida</td>
+      <td style = "text-align: left;">68</td>
+      <td style = "text-align: left;">7.56</td>
+      <td style = "text-align: left;">1.73</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">10</td>
+      <td style = "text-align: left;">Michigan State</td>
+      <td style = "text-align: left;">67</td>
+      <td style = "text-align: left;">7.44</td>
+      <td style = "text-align: left;">1.61</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">11</td>
+      <td style = "text-align: left;">Washington</td>
+      <td style = "text-align: left;">67</td>
+      <td style = "text-align: left;">7.44</td>
+      <td style = "text-align: left;">1.61</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">12</td>
+      <td style = "text-align: left;">South Carolina</td>
+      <td style = "text-align: left;">66</td>
+      <td style = "text-align: left;">7.33</td>
+      <td style = "text-align: left;">1.49</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">13</td>
+      <td style = "text-align: left;">UTEP</td>
+      <td style = "text-align: left;">58</td>
+      <td style = "text-align: left;">7.25</td>
+      <td style = "text-align: left;">1.32</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">14</td>
+      <td style = "text-align: left;">Middle Tennessee</td>
+      <td style = "text-align: left;">65</td>
+      <td style = "text-align: left;">7.22</td>
+      <td style = "text-align: left;">1.37</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">15</td>
+      <td style = "text-align: left;">Missouri</td>
+      <td style = "text-align: left;">65</td>
+      <td style = "text-align: left;">7.22</td>
+      <td style = "text-align: left;">1.37</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">16</td>
+      <td style = "text-align: left;">Ole Miss</td>
+      <td style = "text-align: left;">65</td>
+      <td style = "text-align: left;">7.22</td>
+      <td style = "text-align: left;">1.37</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">17</td>
+      <td style = "text-align: left;">Oregon</td>
+      <td style = "text-align: left;">65</td>
+      <td style = "text-align: left;">7.22</td>
+      <td style = "text-align: left;">1.37</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">18</td>
+      <td style = "text-align: left;">Syracuse</td>
+      <td style = "text-align: left;">65</td>
+      <td style = "text-align: left;">7.22</td>
+      <td style = "text-align: left;">1.37</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">19</td>
+      <td style = "text-align: left;">Boston College</td>
+      <td style = "text-align: left;">64</td>
+      <td style = "text-align: left;">7.11</td>
+      <td style = "text-align: left;">1.25</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">20</td>
+      <td style = "text-align: left;">Bowling Green</td>
+      <td style = "text-align: left;">64</td>
+      <td style = "text-align: left;">7.11</td>
+      <td style = "text-align: left;">1.25</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">21</td>
+      <td style = "text-align: left;">Oklahoma</td>
+      <td style = "text-align: left;">64</td>
+      <td style = "text-align: left;">7.11</td>
+      <td style = "text-align: left;">1.25</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">22</td>
+      <td style = "text-align: left;">Arizona</td>
+      <td style = "text-align: left;">56</td>
+      <td style = "text-align: left;">7.00</td>
+      <td style = "text-align: left;">1.07</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">23</td>
+      <td style = "text-align: left;">Charlotte</td>
+      <td style = "text-align: left;">63</td>
+      <td style = "text-align: left;">7.00</td>
+      <td style = "text-align: left;">1.13</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">24</td>
+      <td style = "text-align: left;">Florida State</td>
+      <td style = "text-align: left;">63</td>
+      <td style = "text-align: left;">7.00</td>
+      <td style = "text-align: left;">1.13</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">25</td>
+      <td style = "text-align: left;">North Carolina</td>
+      <td style = "text-align: left;">63</td>
+      <td style = "text-align: left;">7.00</td>
+      <td style = "text-align: left;">1.13</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">26</td>
+      <td style = "text-align: left;">Texas A&amp;M</td>
+      <td style = "text-align: left;">63</td>
+      <td style = "text-align: left;">7.00</td>
+      <td style = "text-align: left;">1.13</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">27</td>
+      <td style = "text-align: left;">Toledo</td>
+      <td style = "text-align: left;">63</td>
+      <td style = "text-align: left;">7.00</td>
+      <td style = "text-align: left;">1.13</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">28</td>
+      <td style = "text-align: left;">Western Michigan</td>
+      <td style = "text-align: left;">63</td>
+      <td style = "text-align: left;">7.00</td>
+      <td style = "text-align: left;">1.13</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">29</td>
+      <td style = "text-align: left;">Kentucky</td>
+      <td style = "text-align: left;">62</td>
+      <td style = "text-align: left;">6.89</td>
+      <td style = "text-align: left;">1.01</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">30</td>
+      <td style = "text-align: left;">Liberty</td>
+      <td style = "text-align: left;">62</td>
+      <td style = "text-align: left;">6.89</td>
+      <td style = "text-align: left;">1.01</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">31</td>
+      <td style = "text-align: left;">Stanford</td>
+      <td style = "text-align: left;">55</td>
+      <td style = "text-align: left;">6.88</td>
+      <td style = "text-align: left;">0.94</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">32</td>
+      <td style = "text-align: left;">UCLA</td>
+      <td style = "text-align: left;">55</td>
+      <td style = "text-align: left;">6.88</td>
+      <td style = "text-align: left;">0.94</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">33</td>
+      <td style = "text-align: left;">Akron</td>
+      <td style = "text-align: left;">61</td>
+      <td style = "text-align: left;">6.78</td>
+      <td style = "text-align: left;">0.89</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">34</td>
+      <td style = "text-align: left;">South Alabama</td>
+      <td style = "text-align: left;">61</td>
+      <td style = "text-align: left;">6.78</td>
+      <td style = "text-align: left;">0.89</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">35</td>
+      <td style = "text-align: left;">UNLV</td>
+      <td style = "text-align: left;">61</td>
+      <td style = "text-align: left;">6.78</td>
+      <td style = "text-align: left;">0.89</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">36</td>
+      <td style = "text-align: left;">Utah State</td>
+      <td style = "text-align: left;">61</td>
+      <td style = "text-align: left;">6.78</td>
+      <td style = "text-align: left;">0.89</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">37</td>
+      <td style = "text-align: left;">Miami</td>
+      <td style = "text-align: left;">53</td>
+      <td style = "text-align: left;">6.62</td>
+      <td style = "text-align: left;">0.69</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">38</td>
+      <td style = "text-align: left;">Arkansas</td>
+      <td style = "text-align: left;">59</td>
+      <td style = "text-align: left;">6.56</td>
+      <td style = "text-align: left;">0.65</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">39</td>
+      <td style = "text-align: left;">Texas State</td>
+      <td style = "text-align: left;">59</td>
+      <td style = "text-align: left;">6.56</td>
+      <td style = "text-align: left;">0.65</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">40</td>
+      <td style = "text-align: left;">East Carolina</td>
+      <td style = "text-align: left;">58</td>
+      <td style = "text-align: left;">6.44</td>
+      <td style = "text-align: left;">0.53</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">41</td>
+      <td style = "text-align: left;">Illinois</td>
+      <td style = "text-align: left;">58</td>
+      <td style = "text-align: left;">6.44</td>
+      <td style = "text-align: left;">0.53</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">42</td>
+      <td style = "text-align: left;">Virginia Tech</td>
+      <td style = "text-align: left;">58</td>
+      <td style = "text-align: left;">6.44</td>
+      <td style = "text-align: left;">0.53</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">43</td>
+      <td style = "text-align: left;">NC State</td>
+      <td style = "text-align: left;">51</td>
+      <td style = "text-align: left;">6.38</td>
+      <td style = "text-align: left;">0.43</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">44</td>
+      <td style = "text-align: left;">Central Michigan</td>
+      <td style = "text-align: left;">57</td>
+      <td style = "text-align: left;">6.33</td>
+      <td style = "text-align: left;">0.41</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">45</td>
+      <td style = "text-align: left;">Ohio State</td>
+      <td style = "text-align: left;">57</td>
+      <td style = "text-align: left;">6.33</td>
+      <td style = "text-align: left;">0.41</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">46</td>
+      <td style = "text-align: left;">Purdue</td>
+      <td style = "text-align: left;">57</td>
+      <td style = "text-align: left;">6.33</td>
+      <td style = "text-align: left;">0.41</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">47</td>
+      <td style = "text-align: left;">Southern Mississippi</td>
+      <td style = "text-align: left;">57</td>
+      <td style = "text-align: left;">6.33</td>
+      <td style = "text-align: left;">0.41</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">48</td>
+      <td style = "text-align: left;">TCU</td>
+      <td style = "text-align: left;">57</td>
+      <td style = "text-align: left;">6.33</td>
+      <td style = "text-align: left;">0.41</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">49</td>
+      <td style = "text-align: left;">Florida</td>
+      <td style = "text-align: left;">56</td>
+      <td style = "text-align: left;">6.22</td>
+      <td style = "text-align: left;">0.29</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">50</td>
+      <td style = "text-align: left;">Nevada</td>
+      <td style = "text-align: left;">56</td>
+      <td style = "text-align: left;">6.22</td>
+      <td style = "text-align: left;">0.29</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">51</td>
+      <td style = "text-align: left;">UAB</td>
+      <td style = "text-align: left;">56</td>
+      <td style = "text-align: left;">6.22</td>
+      <td style = "text-align: left;">0.29</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">52</td>
+      <td style = "text-align: left;">UCF</td>
+      <td style = "text-align: left;">56</td>
+      <td style = "text-align: left;">6.22</td>
+      <td style = "text-align: left;">0.29</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">53</td>
+      <td style = "text-align: left;">Oregon State</td>
+      <td style = "text-align: left;">49</td>
+      <td style = "text-align: left;">6.12</td>
+      <td style = "text-align: left;">0.18</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">54</td>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">55</td>
+      <td style = "text-align: left;">6.11</td>
+      <td style = "text-align: left;">0.17</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">55</td>
+      <td style = "text-align: left;">Arizona State</td>
+      <td style = "text-align: left;">55</td>
+      <td style = "text-align: left;">6.11</td>
+      <td style = "text-align: left;">0.17</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">56</td>
+      <td style = "text-align: left;">Arkansas State</td>
+      <td style = "text-align: left;">55</td>
+      <td style = "text-align: left;">6.11</td>
+      <td style = "text-align: left;">0.17</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">57</td>
+      <td style = "text-align: left;">LSU</td>
+      <td style = "text-align: left;">55</td>
+      <td style = "text-align: left;">6.11</td>
+      <td style = "text-align: left;">0.17</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">58</td>
+      <td style = "text-align: left;">Louisville</td>
+      <td style = "text-align: left;">55</td>
+      <td style = "text-align: left;">6.11</td>
+      <td style = "text-align: left;">0.17</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">59</td>
+      <td style = "text-align: left;">Connecticut</td>
+      <td style = "text-align: left;">54</td>
+      <td style = "text-align: left;">6.00</td>
+      <td style = "text-align: left;">0.05</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">60</td>
+      <td style = "text-align: left;">Eastern Michigan</td>
+      <td style = "text-align: left;">54</td>
+      <td style = "text-align: left;">6.00</td>
+      <td style = "text-align: left;">0.05</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">61</td>
+      <td style = "text-align: left;">Florida International</td>
+      <td style = "text-align: left;">48</td>
+      <td style = "text-align: left;">6.00</td>
+      <td style = "text-align: left;">0.05</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">62</td>
+      <td style = "text-align: left;">New Mexico State</td>
+      <td style = "text-align: left;">54</td>
+      <td style = "text-align: left;">6.00</td>
+      <td style = "text-align: left;">0.05</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">63</td>
+      <td style = "text-align: left;">Old Dominion</td>
+      <td style = "text-align: left;">54</td>
+      <td style = "text-align: left;">6.00</td>
+      <td style = "text-align: left;">0.05</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">64</td>
+      <td style = "text-align: left;">Wisconsin</td>
+      <td style = "text-align: left;">54</td>
+      <td style = "text-align: left;">6.00</td>
+      <td style = "text-align: left;">0.05</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">65</td>
+      <td style = "text-align: left;">Cincinnati</td>
+      <td style = "text-align: left;">53</td>
+      <td style = "text-align: left;">5.89</td>
+      <td style = "text-align: left;">-0.07</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">66</td>
+      <td style = "text-align: left;">Mississippi State</td>
+      <td style = "text-align: left;">53</td>
+      <td style = "text-align: left;">5.89</td>
+      <td style = "text-align: left;">-0.07</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">67</td>
+      <td style = "text-align: left;">Notre Dame</td>
+      <td style = "text-align: left;">58</td>
+      <td style = "text-align: left;">5.80</td>
+      <td style = "text-align: left;">-0.17</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">68</td>
+      <td style = "text-align: left;">Georgia Tech</td>
+      <td style = "text-align: left;">52</td>
+      <td style = "text-align: left;">5.78</td>
+      <td style = "text-align: left;">-0.19</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">69</td>
+      <td style = "text-align: left;">Marshall</td>
+      <td style = "text-align: left;">52</td>
+      <td style = "text-align: left;">5.78</td>
+      <td style = "text-align: left;">-0.19</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">70</td>
+      <td style = "text-align: left;">Rice</td>
+      <td style = "text-align: left;">52</td>
+      <td style = "text-align: left;">5.78</td>
+      <td style = "text-align: left;">-0.19</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">71</td>
+      <td style = "text-align: left;">Texas</td>
+      <td style = "text-align: left;">52</td>
+      <td style = "text-align: left;">5.78</td>
+      <td style = "text-align: left;">-0.19</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">72</td>
+      <td style = "text-align: left;">Troy</td>
+      <td style = "text-align: left;">52</td>
+      <td style = "text-align: left;">5.78</td>
+      <td style = "text-align: left;">-0.19</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">73</td>
+      <td style = "text-align: left;">Fresno State</td>
+      <td style = "text-align: left;">46</td>
+      <td style = "text-align: left;">5.75</td>
+      <td style = "text-align: left;">-0.21</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">74</td>
+      <td style = "text-align: left;">Auburn</td>
+      <td style = "text-align: left;">51</td>
+      <td style = "text-align: left;">5.67</td>
+      <td style = "text-align: left;">-0.31</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">75</td>
+      <td style = "text-align: left;">Coastal Carolina</td>
+      <td style = "text-align: left;">51</td>
+      <td style = "text-align: left;">5.67</td>
+      <td style = "text-align: left;">-0.31</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">76</td>
+      <td style = "text-align: left;">Georgia State</td>
+      <td style = "text-align: left;">51</td>
+      <td style = "text-align: left;">5.67</td>
+      <td style = "text-align: left;">-0.31</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">77</td>
+      <td style = "text-align: left;">Hawai&apos;i</td>
+      <td style = "text-align: left;">51</td>
+      <td style = "text-align: left;">5.67</td>
+      <td style = "text-align: left;">-0.31</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">78</td>
+      <td style = "text-align: left;">Louisiana</td>
+      <td style = "text-align: left;">51</td>
+      <td style = "text-align: left;">5.67</td>
+      <td style = "text-align: left;">-0.31</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">79</td>
+      <td style = "text-align: left;">Northwestern</td>
+      <td style = "text-align: left;">51</td>
+      <td style = "text-align: left;">5.67</td>
+      <td style = "text-align: left;">-0.31</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">80</td>
+      <td style = "text-align: left;">Texas Tech</td>
+      <td style = "text-align: left;">51</td>
+      <td style = "text-align: left;">5.67</td>
+      <td style = "text-align: left;">-0.31</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">81</td>
+      <td style = "text-align: left;">UT San Antonio</td>
+      <td style = "text-align: left;">51</td>
+      <td style = "text-align: left;">5.67</td>
+      <td style = "text-align: left;">-0.31</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">82</td>
+      <td style = "text-align: left;">Ohio</td>
+      <td style = "text-align: left;">45</td>
+      <td style = "text-align: left;">5.62</td>
+      <td style = "text-align: left;">-0.33</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">83</td>
+      <td style = "text-align: left;">Washington State</td>
+      <td style = "text-align: left;">45</td>
+      <td style = "text-align: left;">5.62</td>
+      <td style = "text-align: left;">-0.33</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">84</td>
+      <td style = "text-align: left;">Ball State</td>
+      <td style = "text-align: left;">50</td>
+      <td style = "text-align: left;">5.56</td>
+      <td style = "text-align: left;">-0.43</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">85</td>
+      <td style = "text-align: left;">Buffalo</td>
+      <td style = "text-align: left;">50</td>
+      <td style = "text-align: left;">5.56</td>
+      <td style = "text-align: left;">-0.43</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">86</td>
+      <td style = "text-align: left;">Duke</td>
+      <td style = "text-align: left;">50</td>
+      <td style = "text-align: left;">5.56</td>
+      <td style = "text-align: left;">-0.43</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">87</td>
+      <td style = "text-align: left;">Houston</td>
+      <td style = "text-align: left;">50</td>
+      <td style = "text-align: left;">5.56</td>
+      <td style = "text-align: left;">-0.43</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">88</td>
+      <td style = "text-align: left;">Miami (OH)</td>
+      <td style = "text-align: left;">50</td>
+      <td style = "text-align: left;">5.56</td>
+      <td style = "text-align: left;">-0.43</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">89</td>
+      <td style = "text-align: left;">Tulane</td>
+      <td style = "text-align: left;">50</td>
+      <td style = "text-align: left;">5.56</td>
+      <td style = "text-align: left;">-0.43</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">90</td>
+      <td style = "text-align: left;">Virginia</td>
+      <td style = "text-align: left;">50</td>
+      <td style = "text-align: left;">5.56</td>
+      <td style = "text-align: left;">-0.43</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">91</td>
+      <td style = "text-align: left;">San Diego State</td>
+      <td style = "text-align: left;">44</td>
+      <td style = "text-align: left;">5.50</td>
+      <td style = "text-align: left;">-0.46</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">92</td>
+      <td style = "text-align: left;">Georgia Southern</td>
+      <td style = "text-align: left;">49</td>
+      <td style = "text-align: left;">5.44</td>
+      <td style = "text-align: left;">-0.55</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">93</td>
+      <td style = "text-align: left;">Kent State</td>
+      <td style = "text-align: left;">49</td>
+      <td style = "text-align: left;">5.44</td>
+      <td style = "text-align: left;">-0.55</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">94</td>
+      <td style = "text-align: left;">Penn State</td>
+      <td style = "text-align: left;">49</td>
+      <td style = "text-align: left;">5.44</td>
+      <td style = "text-align: left;">-0.55</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">95</td>
+      <td style = "text-align: left;">Northern Illinois</td>
+      <td style = "text-align: left;">48</td>
+      <td style = "text-align: left;">5.33</td>
+      <td style = "text-align: left;">-0.67</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">96</td>
+      <td style = "text-align: left;">BYU</td>
+      <td style = "text-align: left;">47</td>
+      <td style = "text-align: left;">5.22</td>
+      <td style = "text-align: left;">-0.79</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">97</td>
+      <td style = "text-align: left;">James Madison</td>
+      <td style = "text-align: left;">47</td>
+      <td style = "text-align: left;">5.22</td>
+      <td style = "text-align: left;">-0.79</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">98</td>
+      <td style = "text-align: left;">Louisiana Monroe</td>
+      <td style = "text-align: left;">47</td>
+      <td style = "text-align: left;">5.22</td>
+      <td style = "text-align: left;">-0.79</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">99</td>
+      <td style = "text-align: left;">Nebraska</td>
+      <td style = "text-align: left;">47</td>
+      <td style = "text-align: left;">5.22</td>
+      <td style = "text-align: left;">-0.79</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">100</td>
+      <td style = "text-align: left;">Oklahoma State</td>
+      <td style = "text-align: left;">47</td>
+      <td style = "text-align: left;">5.22</td>
+      <td style = "text-align: left;">-0.79</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">101</td>
+      <td style = "text-align: left;">California</td>
+      <td style = "text-align: left;">45</td>
+      <td style = "text-align: left;">5.00</td>
+      <td style = "text-align: left;">-1.03</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">102</td>
+      <td style = "text-align: left;">Indiana</td>
+      <td style = "text-align: left;">45</td>
+      <td style = "text-align: left;">5.00</td>
+      <td style = "text-align: left;">-1.03</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">103</td>
+      <td style = "text-align: left;">Jacksonville State</td>
+      <td style = "text-align: left;">45</td>
+      <td style = "text-align: left;">5.00</td>
+      <td style = "text-align: left;">-1.03</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">104</td>
+      <td style = "text-align: left;">Navy</td>
+      <td style = "text-align: left;">40</td>
+      <td style = "text-align: left;">5.00</td>
+      <td style = "text-align: left;">-0.97</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">105</td>
+      <td style = "text-align: left;">Sam Houston State</td>
+      <td style = "text-align: left;">45</td>
+      <td style = "text-align: left;">5.00</td>
+      <td style = "text-align: left;">-1.03</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">106</td>
+      <td style = "text-align: left;">West Virginia</td>
+      <td style = "text-align: left;">45</td>
+      <td style = "text-align: left;">5.00</td>
+      <td style = "text-align: left;">-1.03</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">107</td>
+      <td style = "text-align: left;">Iowa State</td>
+      <td style = "text-align: left;">44</td>
+      <td style = "text-align: left;">4.89</td>
+      <td style = "text-align: left;">-1.15</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">108</td>
+      <td style = "text-align: left;">Kansas State</td>
+      <td style = "text-align: left;">44</td>
+      <td style = "text-align: left;">4.89</td>
+      <td style = "text-align: left;">-1.15</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">109</td>
+      <td style = "text-align: left;">Maryland</td>
+      <td style = "text-align: left;">44</td>
+      <td style = "text-align: left;">4.89</td>
+      <td style = "text-align: left;">-1.15</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">110</td>
+      <td style = "text-align: left;">Tulsa</td>
+      <td style = "text-align: left;">44</td>
+      <td style = "text-align: left;">4.89</td>
+      <td style = "text-align: left;">-1.15</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">111</td>
+      <td style = "text-align: left;">Utah</td>
+      <td style = "text-align: left;">44</td>
+      <td style = "text-align: left;">4.89</td>
+      <td style = "text-align: left;">-1.15</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">112</td>
+      <td style = "text-align: left;">Vanderbilt</td>
+      <td style = "text-align: left;">44</td>
+      <td style = "text-align: left;">4.89</td>
+      <td style = "text-align: left;">-1.15</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">113</td>
+      <td style = "text-align: left;">Western Kentucky</td>
+      <td style = "text-align: left;">39</td>
+      <td style = "text-align: left;">4.88</td>
+      <td style = "text-align: left;">-1.10</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">114</td>
+      <td style = "text-align: left;">SMU</td>
+      <td style = "text-align: left;">43</td>
+      <td style = "text-align: left;">4.78</td>
+      <td style = "text-align: left;">-1.27</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">115</td>
+      <td style = "text-align: left;">Wyoming</td>
+      <td style = "text-align: left;">43</td>
+      <td style = "text-align: left;">4.78</td>
+      <td style = "text-align: left;">-1.27</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">116</td>
+      <td style = "text-align: left;">Kansas</td>
+      <td style = "text-align: left;">42</td>
+      <td style = "text-align: left;">4.67</td>
+      <td style = "text-align: left;">-1.39</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">117</td>
+      <td style = "text-align: left;">Memphis</td>
+      <td style = "text-align: left;">42</td>
+      <td style = "text-align: left;">4.67</td>
+      <td style = "text-align: left;">-1.39</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">118</td>
+      <td style = "text-align: left;">Appalachian State</td>
+      <td style = "text-align: left;">39</td>
+      <td style = "text-align: left;">4.33</td>
+      <td style = "text-align: left;">-1.75</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">119</td>
+      <td style = "text-align: left;">Baylor</td>
+      <td style = "text-align: left;">39</td>
+      <td style = "text-align: left;">4.33</td>
+      <td style = "text-align: left;">-1.75</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">120</td>
+      <td style = "text-align: left;">Clemson</td>
+      <td style = "text-align: left;">39</td>
+      <td style = "text-align: left;">4.33</td>
+      <td style = "text-align: left;">-1.75</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">121</td>
+      <td style = "text-align: left;">Georgia</td>
+      <td style = "text-align: left;">39</td>
+      <td style = "text-align: left;">4.33</td>
+      <td style = "text-align: left;">-1.75</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">122</td>
+      <td style = "text-align: left;">Rutgers</td>
+      <td style = "text-align: left;">39</td>
+      <td style = "text-align: left;">4.33</td>
+      <td style = "text-align: left;">-1.75</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">123</td>
+      <td style = "text-align: left;">Temple</td>
+      <td style = "text-align: left;">38</td>
+      <td style = "text-align: left;">4.22</td>
+      <td style = "text-align: left;">-1.87</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">124</td>
+      <td style = "text-align: left;">Boise State</td>
+      <td style = "text-align: left;">33</td>
+      <td style = "text-align: left;">4.12</td>
+      <td style = "text-align: left;">-1.86</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">125</td>
+      <td style = "text-align: left;">Wake Forest</td>
+      <td style = "text-align: left;">37</td>
+      <td style = "text-align: left;">4.11</td>
+      <td style = "text-align: left;">-1.99</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">126</td>
+      <td style = "text-align: left;">North Texas</td>
+      <td style = "text-align: left;">36</td>
+      <td style = "text-align: left;">4.00</td>
+      <td style = "text-align: left;">-2.11</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">127</td>
+      <td style = "text-align: left;">Florida Atlantic</td>
+      <td style = "text-align: left;">35</td>
+      <td style = "text-align: left;">3.89</td>
+      <td style = "text-align: left;">-2.23</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">128</td>
+      <td style = "text-align: left;">Army</td>
+      <td style = "text-align: left;">31</td>
+      <td style = "text-align: left;">3.44</td>
+      <td style = "text-align: left;">-2.71</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">129</td>
+      <td style = "text-align: left;">Iowa</td>
+      <td style = "text-align: left;">31</td>
+      <td style = "text-align: left;">3.44</td>
+      <td style = "text-align: left;">-2.71</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">130</td>
+      <td style = "text-align: left;">Minnesota</td>
+      <td style = "text-align: left;">30</td>
+      <td style = "text-align: left;">3.33</td>
+      <td style = "text-align: left;">-2.83</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">131</td>
+      <td style = "text-align: left;">Air Force</td>
+      <td style = "text-align: left;">29</td>
+      <td style = "text-align: left;">3.22</td>
+      <td style = "text-align: left;">-2.95</td>
+    </tr>
+    <tr>
+      <td class = "rowNumber">132</td>
+      <td style = "text-align: left;">Michigan</td>
+      <td style = "text-align: left;">24</td>
+      <td style = "text-align: left;">2.67</td>
+      <td style = "text-align: left;">-3.55</td>
+    </tr>
+  </tbody>
+</table>
