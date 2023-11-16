@@ -7,7 +7,7 @@ using JSONTables
 # run(`$(PyCall.python) -m pip install --upgrade cython`)
 # run(`$(PyCall.python) -m pip install cfbd`)
 
-team_get = "Alabama" #input("Team=")
+# team_get = "Alabama" #input("Team=")
 year_get = 2023 #int(input("Year="))
 week_get = 1 #int(input("Week [1-16]="))
 seasontype_entry = "regular" #input("Season type [regular/postseason/both/preseason]=")
@@ -116,6 +116,57 @@ function get_stats(data, week)
     df, team1_data["school"], team2_data["school"]
 end
 
+df = DataFrame(Year = Int8[], Week = Int8[], School = String[], Conference = String[], TotalPenalties = Int8[], TotalPenaltiesYards = Int8[], Opponent = String[], HomeAway = String[], Season = String[])
+df0 = DataFrame(Year = Int8[], Week = Int8[], School = String[], Conference = String[], TotalPenalties = Int8[], TotalPenaltiesYards = Int8[], Opponent = String[], HomeAway = String[], Season = String[])
+for team in team_names
+    for week in 1:week_get+1
+        json_team_data = py"api_instance.get_team_game_stats"(season_type = seasontype_entry, year = year_get, week = week, team = team)
+    end
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#11/11/2023 old code#################################################################################################################################
 begin
     df = DataFrame(Year = Int8[], Week = Int8[], School = String[], Conference = String[], TotalPenalties = Int8[], TotalPenaltiesYards = Int8[], Opponent = String[], HomeAway = String[], Season = String[])
     df0 = DataFrame(Year = Int8[], Week = Int8[], School = String[], Conference = String[], TotalPenalties = Int8[], TotalPenaltiesYards = Int8[], Opponent = String[], HomeAway = String[], Season = String[])

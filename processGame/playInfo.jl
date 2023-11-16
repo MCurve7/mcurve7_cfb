@@ -139,7 +139,7 @@ function play_info(cols)
     elseif play_type == "Interception Return Touchdown"
         passer, interceptor, PAT_kicker,  PAT_type, two_point, two_point_type, two_point_runner, two_point_passer, two_point_receiver = play_interception_return_td(play_text)
     elseif play_type == "Sack"
-        passer, tackler = play_sack(play_text)
+        passer, tackler = play_sack(play_text) #Need to check for fumbles on each play too.
 
     #Kickoffs
     elseif play_type == "Kickoff" || play_type == "Kickoff Return (Offense)"
@@ -890,7 +890,7 @@ function play_sack(cols)
         elseif occursin(tackler_specialcase2_regex, play_text)
             tackler = "ERROR in DATA?"
         else
-            tackler = strip(match(tackler_regex, play_text)[1])
+            tackler = "No Data"#strip(match(tackler_regex, play_text)[1])
         end
     end
 

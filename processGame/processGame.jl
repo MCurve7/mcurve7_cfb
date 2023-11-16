@@ -488,7 +488,9 @@ function turnover_column_generate(df)
             penultimate_play = dfdrive[end-1, :Play_type]
             if last_play ∈ ["End Period", "End of Half", "End of Game", "End of Regulation"]
                 last_play = dfdrive[end-1, :Play_type]
-                penultimate_play = dfdrive[end-2, :Play_type]
+                if nrow(dfdrive) ≥ 3
+                    penultimate_play = dfdrive[end-2, :Play_type] #dfdrive must be 2 rows hence indexing row 0. Fix?
+                end
             end
             if last_play ∈ ["Fumble Recovery (Opponent)", "Fumble Return Touchdown", "Interception", "Interception Return Touchdown", "Pass Interception Return"]
                 turnover_bool = true

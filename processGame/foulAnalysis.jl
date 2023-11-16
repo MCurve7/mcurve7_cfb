@@ -249,7 +249,7 @@ function mypenalty_regex_aux(txt)
     n = match(mypenalty_n_regex, txt)
 
     if n[1] == "1"
-        mypenalty_1_regex = r"MYPENALTY<\d+,\s*\[(.+),\s*(enforced|declined|offseting),\s*(.+),\s*(.+)\]>"
+        mypenalty_1_regex = r"MYPENALTY<\d+,\s*\[(.+),\s*(enforced|declined|off-?setting),\s*(.+),\s*(.+)\]>"
         m = match(mypenalty_1_regex, txt)
         # println("m=\n $m")
         push!(foul_type, m[1])
@@ -257,8 +257,9 @@ function mypenalty_regex_aux(txt)
         push!(foul_team, m[3])
         push!(foul_transgressor, m[4])
     elseif n[1] == "2"
-        mypenalty_1_regex = r"MYPENALTY<\d+,\s*\[(.+),\s*(enforced|declined|offseting),\s*(.+),\s*(.+)\],\s*\[(.+),\s*(enforced|declined|offseting),\s*(.+),\s*(.+)\]>"
+        mypenalty_1_regex = r"MYPENALTY<\d+,\s*\[(.+),\s*(enforced|declined|off-?setting),\s*(.+),\s*(.+)\],\s*\[(.+),\s*(enforced|declined|off-?setting),\s*(.+),\s*(.+)\]>"
         m = match(mypenalty_1_regex, txt)
+        if DEBUG_PENALTY println("  MYPENALTY(n=2): m->$m") end
         push!(foul_type, m[1])
         push!(foul_status, m[2])
         push!(foul_team, m[3])
@@ -268,7 +269,7 @@ function mypenalty_regex_aux(txt)
         push!(foul_team, m[7])
         push!(foul_transgressor, m[8])
     elseif n[1] == "3"
-        mypenalty_1_regex = r"MYPENALTY<\d+,\s*\[(.+),\s*(enforced|declined|offseting),\s*(.+),\s*(.+)\],\s*\[(.+),\s*(enforced|declined|offseting),\s*(.+),\s*(.+)\],\s*(.+),\s*(.+)\],\s*\[(.+),\s*(enforced|declined|offseting),\s*(.+),\s*(.+)\]>"
+        mypenalty_1_regex = r"MYPENALTY<\d+,\s*\[(.+),\s*(enforced|declined|off-?setting),\s*(.+),\s*(.+)\],\s*\[(.+),\s*(enforced|declined|off-?setting),\s*(.+),\s*(.+)\],\s*(.+),\s*(.+)\],\s*\[(.+),\s*(enforced|declined|off-?setting),\s*(.+),\s*(.+)\]>"
         m = match(mypenalty_1_regex, txt)
         push!(foul_type, m[1])
         push!(foul_status, m[2])
@@ -4424,8 +4425,8 @@ function specialcase_aux(txt, offense, defense, off_abbrv_catch, def_abbrv_catch
             if !isnothing(m)
                 push!(foul_type, m[1])
                 push!(foul_type, m[1])
-                push!(foul_status, "offseting")
-                push!(foul_status, "offseting")
+                push!(foul_status, "offsetting")
+                push!(foul_status, "offsetting")
                 push!(foul_team, offense)
                 push!(foul_team, defense)
                 GET_NAMES && add_names_df!(names_df, "No data", txt)
