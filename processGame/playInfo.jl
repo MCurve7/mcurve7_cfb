@@ -801,10 +801,12 @@ function play_interception_return_td(cols)
     two_point_receiver = missing # Player name
 
     td_return_regex = r"TD return for no gain for"
+    no_gain_td_passer_returner_regex = Regex("$(name_regex) pass intercepted $(name_regex) return for no gain for a TD")
     td_return_passer_regex = Regex("$(name_regex)pass intercepted")
     td_return_name_regex = r"return for no gain for a TD"
     td_return_name_passer_regex = Regex("$(name_regex)pass intercepted for a TD")
     td_return_name_intercepter_regex = Regex("$(name_regex)return for \\d+ yds for a TD")
+    td_return_no_gain_name_intercepter_regex = Regex("$(name_regex)return for no gain for a TD")
     td_return_noname_intercepter_regex = Regex("TD return for no gain for a TD")
     pass_intercepted_regex = r"pass intercepted"
     pass_intercepted_passer_by_regex = Regex("^$(name_regex)pass intercepted for a TD (?:by)?")
@@ -818,6 +820,10 @@ function play_interception_return_td(cols)
     if occursin(td_return_regex, play_text)
         passer = strip(match(td_return_passer_regex, play_text)[1])
         interceptor = "No data"
+        PAT_kicker,  PAT_type, two_point, two_point_type, two_point_runner, two_point_passer, two_point_receiver = points_after(play_text)
+    elseif occursin(no_gain_td_passer_returner_regex, play_text)
+        passer = strip(match(pass_intercepted_passer_regex, play_text)[1])
+        interceptor = strip(match(td_return_no_gain_name_intercepter_regex, play_text)[1])
         PAT_kicker,  PAT_type, two_point, two_point_type, two_point_runner, two_point_passer, two_point_receiver = points_after(play_text)
     elseif occursin(td_return_name_regex, play_text)
         passer = strip(match(td_return_name_passer_regex, play_text)[1])
