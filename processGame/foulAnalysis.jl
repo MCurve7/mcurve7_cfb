@@ -236,6 +236,7 @@ function process_name(name)
 end
 
 ############################################################################################################################################################
+#; MYPENALTY<1, [type, status, team, transgressor]>
 """
 Hand added penalties: MYPENALTY<n, [type_1, status_1, team_1, transgressor_1], ..., [type_n, status_n, team_n, transgressor_n]>
 """

@@ -4,7 +4,7 @@ using CSV
 #Goto https://www.espn.com/college-football/schedule before games begin, copy/paste starting with MATCHUP to end of that day into a text file called: copy_paste_$(year)_$week.txt
 
 year = 2023
-week = "13"
+week = "14"
 open("copy_paste_$(year)_$week.txt") do f
  
     readline(f)
