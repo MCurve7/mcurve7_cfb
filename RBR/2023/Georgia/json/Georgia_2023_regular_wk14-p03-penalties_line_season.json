@@ -2,8 +2,8 @@
   data: [
     {
       "x": [0.35, 14.65],
-      "y": [3.83333333333333, 3.83333333333333],
-      "text": "yintercept: 3.833333",
+      "y": [4.38461538461539, 4.38461538461539],
+      "text": "yintercept: 4.384615",
       "type": "scatter",
       "mode": "lines",
       "line": {
@@ -20,8 +20,8 @@
     },
     {
       "x": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
-      "y": [5, 3, 6, 3, 3, 6, 2, 2, 2, 4, 4, 2, 6, null],
-      "text": ["Game_number:  1<br />Opponent: UT Martin<br />Penalty_all_count_nona:  5", "Game_number:  2<br />Opponent: Ball State<br />Penalty_all_count_nona:  3", "Game_number:  3<br />Opponent: South Carolina<br />Penalty_all_count_nona:  6", "Game_number:  4<br />Opponent: UAB<br />Penalty_all_count_nona:  3", "Game_number:  5<br />Opponent: Auburn<br />Penalty_all_count_nona:  3", "Game_number:  6<br />Opponent: Kentucky<br />Penalty_all_count_nona:  6", "Game_number:  7<br />Opponent: Vanderbilt<br />Penalty_all_count_nona:  2", "Game_number:  8<br />Opponent: BYE<br />Penalty_all_count_nona:  2", "Game_number:  9<br />Opponent: Florida<br />Penalty_all_count_nona:  2", "Game_number: 10<br />Opponent: Missouri<br />Penalty_all_count_nona:  4", "Game_number: 11<br />Opponent: Ole Miss<br />Penalty_all_count_nona:  4", "Game_number: 12<br />Opponent: Tennessee<br />Penalty_all_count_nona:  2", "Game_number: 13<br />Opponent: Georgia Tech<br />Penalty_all_count_nona:  6", "Game_number: 14<br />Opponent: BYE<br />Penalty_all_count_nona: NA"],
+      "y": [5, 3, 6, 5, 3, 6, 4, 3, 2, 5, 5, 2, 6, 5],
+      "text": ["Week:  1<br />Opponent: UT Martin<br />Penalty_all_count_nona: 5", "Week:  2<br />Opponent: Ball State<br />Penalty_all_count_nona: 3", "Week:  3<br />Opponent: South Carolina<br />Penalty_all_count_nona: 6", "Week:  4<br />Opponent: UAB<br />Penalty_all_count_nona: 5", "Week:  5<br />Opponent: Auburn<br />Penalty_all_count_nona: 3", "Week:  6<br />Opponent: Kentucky<br />Penalty_all_count_nona: 6", "Week:  7<br />Opponent: Vanderbilt<br />Penalty_all_count_nona: 4", "Week:  8<br />Opponent: BYE<br />Penalty_all_count_nona: 3", "Week:  9<br />Opponent: Florida<br />Penalty_all_count_nona: 2", "Week: 10<br />Opponent: Missouri<br />Penalty_all_count_nona: 5", "Week: 11<br />Opponent: Ole Miss<br />Penalty_all_count_nona: 5", "Week: 12<br />Opponent: Tennessee<br />Penalty_all_count_nona: 2", "Week: 13<br />Opponent: Georgia Tech<br />Penalty_all_count_nona: 6", "Week: 14<br />Opponent: Alabama<br />Penalty_all_count_nona: 5"],
       "type": "scatter",
       "mode": "lines",
       "line": {
@@ -37,9 +37,9 @@
       "frame": null
     },
     {
-      "x": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
-      "y": [5, 3, 6, 3, 3, 6, 2, null, 2, 4, 4, 2, 6, null],
-      "text": ["Game_number:  1<br />Opponent: UT Martin<br />Penalty_all_count:  5", "Game_number:  2<br />Opponent: Ball State<br />Penalty_all_count:  3", "Game_number:  3<br />Opponent: South Carolina<br />Penalty_all_count:  6", "Game_number:  4<br />Opponent: UAB<br />Penalty_all_count:  3", "Game_number:  5<br />Opponent: Auburn<br />Penalty_all_count:  3", "Game_number:  6<br />Opponent: Kentucky<br />Penalty_all_count:  6", "Game_number:  7<br />Opponent: Vanderbilt<br />Penalty_all_count:  2", "Game_number:  8<br />Opponent: BYE<br />Penalty_all_count: NA", "Game_number:  9<br />Opponent: Florida<br />Penalty_all_count:  2", "Game_number: 10<br />Opponent: Missouri<br />Penalty_all_count:  4", "Game_number: 11<br />Opponent: Ole Miss<br />Penalty_all_count:  4", "Game_number: 12<br />Opponent: Tennessee<br />Penalty_all_count:  2", "Game_number: 13<br />Opponent: Georgia Tech<br />Penalty_all_count:  6", "Game_number: 14<br />Opponent: BYE<br />Penalty_all_count: NA"],
+      "x": [5, 7, 9, 12, 13, 14],
+      "y": [3, 4, 2, 2, 6, 5],
+      "text": ["Week:  5<br />Opponent: Auburn<br />AllPenalties:  3<br />HomeAway: away", "Week:  7<br />Opponent: Vanderbilt<br />AllPenalties:  4<br />HomeAway: away", "Week:  9<br />Opponent: Florida<br />AllPenalties:  2<br />HomeAway: away", "Week: 12<br />Opponent: Tennessee<br />AllPenalties:  2<br />HomeAway: away", "Week: 13<br />Opponent: Georgia Tech<br />AllPenalties:  6<br />HomeAway: away", "Week: 14<br />Opponent: Alabama<br />AllPenalties:  5<br />HomeAway: away"],
       "type": "scatter",
       "mode": "markers",
       "marker": {
@@ -47,55 +47,163 @@
         "color": "rgba(0,0,0,1)",
         "opacity": 1,
         "size": 11.3385826771654,
-        "symbol": "circle",
-        "line": {
-          "width": 1.88976377952756,
-          "color": "rgba(0,0,0,1)"
-        }
-      },
-      "hoveron": "points",
-      "showlegend": false,
-      "xaxis": "x",
-      "yaxis": "y",
-      "hoverinfo": "text",
-      "frame": null
-    },
-    {
-      "x": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
-      "y": [5, 3, 6, 3, 3, 6, 2, 2, 2, 4, 4, 2, 6, null],
-      "text": ["Game_number:  1<br />Opponent: UT Martin<br />Penalty_enforced_count_nona:  5", "Game_number:  2<br />Opponent: Ball State<br />Penalty_enforced_count_nona:  3", "Game_number:  3<br />Opponent: South Carolina<br />Penalty_enforced_count_nona:  6", "Game_number:  4<br />Opponent: UAB<br />Penalty_enforced_count_nona:  3", "Game_number:  5<br />Opponent: Auburn<br />Penalty_enforced_count_nona:  3", "Game_number:  6<br />Opponent: Kentucky<br />Penalty_enforced_count_nona:  6", "Game_number:  7<br />Opponent: Vanderbilt<br />Penalty_enforced_count_nona:  2", "Game_number:  8<br />Opponent: BYE<br />Penalty_enforced_count_nona:  2", "Game_number:  9<br />Opponent: Florida<br />Penalty_enforced_count_nona:  2", "Game_number: 10<br />Opponent: Missouri<br />Penalty_enforced_count_nona:  4", "Game_number: 11<br />Opponent: Ole Miss<br />Penalty_enforced_count_nona:  4", "Game_number: 12<br />Opponent: Tennessee<br />Penalty_enforced_count_nona:  2", "Game_number: 13<br />Opponent: Georgia Tech<br />Penalty_enforced_count_nona:  6", "Game_number: 14<br />Opponent: BYE<br />Penalty_enforced_count_nona: NA"],
-      "type": "scatter",
-      "mode": "lines",
-      "line": {
-        "width": 1.88976377952756,
-        "color": "rgba(186,12,47,1)",
-        "dash": "solid"
-      },
-      "hoveron": "points",
-      "showlegend": false,
-      "xaxis": "x",
-      "yaxis": "y",
-      "hoverinfo": "text",
-      "frame": null
-    },
-    {
-      "x": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
-      "y": [5, 3, 6, 3, 3, 6, 2, null, 2, 4, 4, 2, 6, null],
-      "text": ["Game_number:  1<br />Opponent: UT Martin<br />Penalty_enforced_count:  5", "Game_number:  2<br />Opponent: Ball State<br />Penalty_enforced_count:  3", "Game_number:  3<br />Opponent: South Carolina<br />Penalty_enforced_count:  6", "Game_number:  4<br />Opponent: UAB<br />Penalty_enforced_count:  3", "Game_number:  5<br />Opponent: Auburn<br />Penalty_enforced_count:  3", "Game_number:  6<br />Opponent: Kentucky<br />Penalty_enforced_count:  6", "Game_number:  7<br />Opponent: Vanderbilt<br />Penalty_enforced_count:  2", "Game_number:  8<br />Opponent: BYE<br />Penalty_enforced_count: NA", "Game_number:  9<br />Opponent: Florida<br />Penalty_enforced_count:  2", "Game_number: 10<br />Opponent: Missouri<br />Penalty_enforced_count:  4", "Game_number: 11<br />Opponent: Ole Miss<br />Penalty_enforced_count:  4", "Game_number: 12<br />Opponent: Tennessee<br />Penalty_enforced_count:  2", "Game_number: 13<br />Opponent: Georgia Tech<br />Penalty_enforced_count:  6", "Game_number: 14<br />Opponent: BYE<br />Penalty_enforced_count: NA"],
-      "type": "scatter",
-      "mode": "markers",
-      "marker": {
-        "autocolorscale": false,
-        "color": "rgba(186,12,47,1)",
-        "opacity": 1,
-        "size": 11.3385826771654,
-        "symbol": "circle",
+        "symbol": "triangle-up",
         "line": {
           "width": 1.88976377952756,
           "color": "rgba(186,12,47,1)"
         }
       },
       "hoveron": "points",
+      "name": "away",
+      "legendgroup": "away",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 2, 3, 4, 6, 10, 11],
+      "y": [5, 3, 6, 5, 6, 5, 5],
+      "text": ["Week:  1<br />Opponent: UT Martin<br />AllPenalties:  5<br />HomeAway: home", "Week:  2<br />Opponent: Ball State<br />AllPenalties:  3<br />HomeAway: home", "Week:  3<br />Opponent: South Carolina<br />AllPenalties:  6<br />HomeAway: home", "Week:  4<br />Opponent: UAB<br />AllPenalties:  5<br />HomeAway: home", "Week:  6<br />Opponent: Kentucky<br />AllPenalties:  6<br />HomeAway: home", "Week: 10<br />Opponent: Missouri<br />AllPenalties:  5<br />HomeAway: home", "Week: 11<br />Opponent: Ole Miss<br />AllPenalties:  5<br />HomeAway: home"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,0,0,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "square",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(186,12,47,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "home",
+      "legendgroup": "home",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [8],
+      "y": [null],
+      "text": "Week:  8<br />Opponent: BYE<br />AllPenalties: NA<br />HomeAway: NA",
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(186,12,47,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": null,
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(186,12,47,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "NA",
+      "legendgroup": "NA",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
+      "y": [5, 3, 6, 5, 3, 6, 4, 3, 2, 5, 5, 2, 6, 5],
+      "text": ["Week:  1<br />Opponent: UT Martin<br />Penalty_enforced_count_nona: 5", "Week:  2<br />Opponent: Ball State<br />Penalty_enforced_count_nona: 3", "Week:  3<br />Opponent: South Carolina<br />Penalty_enforced_count_nona: 6", "Week:  4<br />Opponent: UAB<br />Penalty_enforced_count_nona: 5", "Week:  5<br />Opponent: Auburn<br />Penalty_enforced_count_nona: 3", "Week:  6<br />Opponent: Kentucky<br />Penalty_enforced_count_nona: 6", "Week:  7<br />Opponent: Vanderbilt<br />Penalty_enforced_count_nona: 4", "Week:  8<br />Opponent: BYE<br />Penalty_enforced_count_nona: 3", "Week:  9<br />Opponent: Florida<br />Penalty_enforced_count_nona: 2", "Week: 10<br />Opponent: Missouri<br />Penalty_enforced_count_nona: 5", "Week: 11<br />Opponent: Ole Miss<br />Penalty_enforced_count_nona: 5", "Week: 12<br />Opponent: Tennessee<br />Penalty_enforced_count_nona: 2", "Week: 13<br />Opponent: Georgia Tech<br />Penalty_enforced_count_nona: 6", "Week: 14<br />Opponent: Alabama<br />Penalty_enforced_count_nona: 5"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(186,12,47,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [5, 7, 9, 12, 13, 14],
+      "y": [3, 4, 2, 2, 6, 5],
+      "text": ["Week:  5<br />Opponent: Auburn<br />TotalPenalties:  3<br />HomeAway: away", "Week:  7<br />Opponent: Vanderbilt<br />TotalPenalties:  4<br />HomeAway: away", "Week:  9<br />Opponent: Florida<br />TotalPenalties:  2<br />HomeAway: away", "Week: 12<br />Opponent: Tennessee<br />TotalPenalties:  2<br />HomeAway: away", "Week: 13<br />Opponent: Georgia Tech<br />TotalPenalties:  6<br />HomeAway: away", "Week: 14<br />Opponent: Alabama<br />TotalPenalties:  5<br />HomeAway: away"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(186,12,47,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "away",
+      "legendgroup": "away",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 2, 3, 4, 6, 10, 11],
+      "y": [5, 3, 6, 5, 6, 5, 5],
+      "text": ["Week:  1<br />Opponent: UT Martin<br />TotalPenalties:  5<br />HomeAway: home", "Week:  2<br />Opponent: Ball State<br />TotalPenalties:  3<br />HomeAway: home", "Week:  3<br />Opponent: South Carolina<br />TotalPenalties:  6<br />HomeAway: home", "Week:  4<br />Opponent: UAB<br />TotalPenalties:  5<br />HomeAway: home", "Week:  6<br />Opponent: Kentucky<br />TotalPenalties:  6<br />HomeAway: home", "Week: 10<br />Opponent: Missouri<br />TotalPenalties:  5<br />HomeAway: home", "Week: 11<br />Opponent: Ole Miss<br />TotalPenalties:  5<br />HomeAway: home"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(186,12,47,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "square",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "home",
+      "legendgroup": "home",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [8],
+      "y": [null],
+      "text": "Week:  8<br />Opponent: BYE<br />TotalPenalties: NA<br />HomeAway: NA",
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,0,0,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": null,
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "NA",
+      "legendgroup": "NA",
       "showlegend": false,
       "xaxis": "x",
       "yaxis": "y",
@@ -127,7 +235,7 @@
       "size": 14.6118721461187
     },
     "title": {
-      "text": "Georgia penalties for 2023; Average: enforced = 3.83 (primary team color), all = 3.83 (secondary team color)<br> <sup><\/sup>",
+      "text": "Georgia penalties for 2023; Average: enforced = 4.38 (primary team color), all = 4.38 (secondary team color)<br> <sup><\/sup>",
       "font": {
         "color": "rgba(0,0,0,1)",
         "family": "",
@@ -144,10 +252,10 @@
       "autorange": false,
       "range": [0.35, 14.65],
       "tickmode": "array",
-      "ticktext": ["UT Martin", "Ball State", "South Carolina", "UAB", "Auburn", "Kentucky", "Vanderbilt", "BYE", "Florida", "Missouri", "Ole Miss", "Tennessee", "Georgia Tech", "BYE"],
+      "ticktext": ["UT Martin", "Ball State", "South Carolina", "UAB", "Auburn", "Kentucky", "Vanderbilt", "BYE", "Florida", "Missouri", "Ole Miss", "Tennessee", "Georgia Tech", "Alabama"],
       "tickvals": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
       "categoryorder": "array",
-      "categoryarray": ["UT Martin", "Ball State", "South Carolina", "UAB", "Auburn", "Kentucky", "Vanderbilt", "BYE", "Florida", "Missouri", "Ole Miss", "Tennessee", "Georgia Tech", "BYE"],
+      "categoryarray": ["UT Martin", "Ball State", "South Carolina", "UAB", "Auburn", "Kentucky", "Vanderbilt", "BYE", "Florida", "Missouri", "Ole Miss", "Tennessee", "Georgia Tech", "Alabama"],
       "nticks": null,
       "ticks": "outside",
       "tickcolor": "rgba(51,51,51,1)",
@@ -236,7 +344,7 @@
         "y1": 1
       }
     ],
-    "showlegend": false,
+    "showlegend": true,
     "legend": {
       "bgcolor": "rgba(255,255,255,1)",
       "bordercolor": "transparent",
@@ -245,6 +353,14 @@
         "color": "rgba(0,0,0,1)",
         "family": "",
         "size": 11.689497716895
+      },
+      "title": {
+        "text": "HomeAway",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
       }
     },
     "hovermode": "closest",
@@ -257,46 +373,48 @@
   },
   source: "A",
   attrs: {
-    "1db44601264a": {
+    "32f4463a1b63": {
       "yintercept": {},
       "type": "scatter"
     },
-    "1db45d41a5a": {
+    "32f451d639e1": {
       "yintercept": {}
     },
-    "1db46840256b": {
+    "32f44fb92ec": {
       "x": {},
       "label": {},
       "y": {}
     },
-    "1db421a673f6": {
+    "32f43d92858": {
+      "x": {},
+      "label": {},
+      "y": {},
+      "shape": {}
+    },
+    "32f413e919ea": {
       "x": {},
       "label": {},
       "y": {}
     },
-    "1db4729b7dce": {
+    "32f4454ef87": {
       "x": {},
       "label": {},
-      "y": {}
+      "y": {},
+      "shape": {}
     },
-    "1db450ded99": {
-      "x": {},
-      "label": {},
-      "y": {}
-    },
-    "1db45eba900": {
+    "32f42be039c6": {
       "y": {}
     }
   },
-  cur_data: "1db44601264a",
+  cur_data: "32f4463a1b63",
   visdat: {
-    "1db44601264a": ["function (y) ", "x"],
-    "1db45d41a5a": ["function (y) ", "x"],
-    "1db46840256b": ["function (y) ", "x"],
-    "1db421a673f6": ["function (y) ", "x"],
-    "1db4729b7dce": ["function (y) ", "x"],
-    "1db450ded99": ["function (y) ", "x"],
-    "1db45eba900": ["function (y) ", "x"]
+    "32f4463a1b63": ["function (y) ", "x"],
+    "32f451d639e1": ["function (y) ", "x"],
+    "32f44fb92ec": ["function (y) ", "x"],
+    "32f43d92858": ["function (y) ", "x"],
+    "32f413e919ea": ["function (y) ", "x"],
+    "32f4454ef87": ["function (y) ", "x"],
+    "32f42be039c6": ["function (y) ", "x"]
   },
   highlight: {
     "on": "plotly_click",

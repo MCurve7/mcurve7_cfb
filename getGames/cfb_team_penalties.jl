@@ -4,17 +4,13 @@ using DataFramesMeta
 using CSV
 using JSONTables
 
+# import FloatingTableView
+
 # run(`$(PyCall.python) -m pip install --upgrade cython`)
 # run(`$(PyCall.python) -m pip install cfbd`)
 
-# team_get = "Alabama" #input("Team=")
 year_get = 2023 #int(input("Year="))
-week_get = 1 #int(input("Week [1-16]="))
-seasontype_entry = "regular" #input("Season type [regular/postseason/both/preseason]=")
-
-# team_get = "Vanderbilt" #input("Team=")
-year_get = 2023 #int(input("Year="))
-week_get = 2 #int(input("Week [1-16]="))
+week_get = 14 #int(input("Week [1-16]="))
 seasontype_entry = "regular" #input("Season type [regular/postseason/both/preseason]=")
 
 py"""
@@ -29,11 +25,6 @@ configuration = cfbd.Configuration()
 configuration.api_key['Authorization'] = Authorization
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 configuration.api_key_prefix['Authorization'] = 'Bearer'
-
-# if seasontype_entry == "preseason":
-#     seasontype = "regular"
-# else:
-#     seasontype = seasontype_entry
     
 api_instance = cfbd.GamesApi(cfbd.ApiClient(configuration))
 """
@@ -72,201 +63,145 @@ function json2dict(data)
     team1, team2
 end
 
-# json2dict(stats_json[1].teams)
-
-# ## Test getting json season_type = seasontype, year = year_get, week = wk, team = team_get
-# stats_json = py"api_instance.get_team_game_stats"(season_type = seasontype_entry, year = year_get, week = week_get, team = team_get)
-# stats_json
-# stats_json[2].teams
-
-# t = stats_json[1].teams
-# t[1]["school"]
-
-# keys(stats_json[1].teams)
-# stats_json[1].teams[1]
-
-# team1 = stats_json[1].teams[1]
-# stats_json[1].teams[1]["school"]
-# team1["school"]
-
-# team1["stats"]
-# keys(team1["stats"])
-# team1["stats"][1]
-
-# t = json2dict(stats_json[1].teams[1])
-# t["school"]
-# t["totalPenaltiesYards"]
-# a, b = split(t["totalPenaltiesYards"], "-")
-# parse(Int, a)
-# b
-# ## END testing region
-
-
-# school_colors = CSV.File("../school_colors/teams-fbs-$year_get.csv", delim = ";") |> DataFrame
-team_names = CSV.File("../school_colors/teams-fbs-$year_get.csv", delim = ";") |> DataFrame
-# team_names[:, :School]
-
 function get_stats(data, week)
     df = DataFrame(Year = Int8[], Week = Int8[], School = String[], Conference = String[], TotalPenalties = Int8[], TotalPenaltiesYards = Int8[], Opponent = String[], HomeAway = String[], Season = String[])
+    team1 = missing
+    team2 = missing
     team1_data, team2_data = json2dict(data)
-    tot_penalties_yards = split(team1_data["totalPenaltiesYards"], "-")
-    df = vcat(df, DataFrame(Year = year_get, Week = week, School = team1_data["school"], Conference = team1_data["conference"], TotalPenalties = parse(Int, tot_penalties_yards[1]), TotalPenaltiesYards = parse(Int, tot_penalties_yards[2]), Opponent = team1_data["opponent"], HomeAway = team1_data["homeAway"], Season = seasontype_entry))
-    tot_penalties_yards = split(team2_data["totalPenaltiesYards"], "-")
-    df = vcat(df, DataFrame(Year = year_get, Week = week, School = team2_data["school"], Conference = team2_data["conference"], TotalPenalties = parse(Int, tot_penalties_yards[1]), TotalPenaltiesYards = parse(Int, tot_penalties_yards[2]), Opponent = team2_data["opponent"], HomeAway = team2_data["homeAway"], Season = seasontype_entry))
-    df, team1_data["school"], team2_data["school"]
-end
-
-df = DataFrame(Year = Int8[], Week = Int8[], School = String[], Conference = String[], TotalPenalties = Int8[], TotalPenaltiesYards = Int8[], Opponent = String[], HomeAway = String[], Season = String[])
-df0 = DataFrame(Year = Int8[], Week = Int8[], School = String[], Conference = String[], TotalPenalties = Int8[], TotalPenaltiesYards = Int8[], Opponent = String[], HomeAway = String[], Season = String[])
-for team in team_names
-    for week in 1:week_get+1
-        json_team_data = py"api_instance.get_team_game_stats"(season_type = seasontype_entry, year = year_get, week = week, team = team)
+    if team1_data["school"] ∈ team_names.School
+        tot_penalties_yards = split(team1_data["totalPenaltiesYards"], "-")
+        df = vcat(df, DataFrame(Year = year_get, Week = week, School = team1_data["school"], Conference = team1_data["conference"], TotalPenalties = parse(Int, tot_penalties_yards[1]), TotalPenaltiesYards = parse(Int, tot_penalties_yards[2]), Opponent = team1_data["opponent"], HomeAway = team1_data["homeAway"], Season = seasontype_entry))
+        team1 = team1_data["school"]
     end
+    if team2_data["school"] ∈ team_names.School
+        tot_penalties_yards = split(team2_data["totalPenaltiesYards"], "-")
+        df = vcat(df, DataFrame(Year = year_get, Week = week, School = team2_data["school"], Conference = team2_data["conference"], TotalPenalties = parse(Int, tot_penalties_yards[1]), TotalPenaltiesYards = parse(Int, tot_penalties_yards[2]), Opponent = team2_data["opponent"], HomeAway = team2_data["homeAway"], Season = seasontype_entry))
+        team2 = team2_data["school"]
+    end
+    df, team1, team2
 end
 
+# team_names = CSV.File("../school_colors/teams-fbs-$year_get.csv", delim = ";") |> DataFrame
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#11/11/2023 old code#################################################################################################################################
+#################################################################################################################################
 begin
+    team_names = CSV.File("../school_colors/teams-fbs-$year_get.csv", delim = ";") |> DataFrame
     df = DataFrame(Year = Int8[], Week = Int8[], School = String[], Conference = String[], TotalPenalties = Int8[], TotalPenaltiesYards = Int8[], Opponent = String[], HomeAway = String[], Season = String[])
     df0 = DataFrame(Year = Int8[], Week = Int8[], School = String[], Conference = String[], TotalPenalties = Int8[], TotalPenaltiesYards = Int8[], Opponent = String[], HomeAway = String[], Season = String[])
-    # teams_seen = (String, Int)[]
     teams_seen = Tuple{String, Int}[]
     for week in 1:week_get
-        # teams_seen = String[]
-        
+        week_str = string(week)
+        println("Working on week $(lpad(week_str, 2, " "))")
         for team in team_names[:, :School]
-            # if team in teams_seen
-            if (team, week) in teams_seen
-                println("Seen $team already in week $week")
+            json_team_data = py"api_instance.get_team_game_stats"(season_type = seasontype_entry, year = year_get, week = week, team = team)
+            # println("json_team_data:$json_team_data")
+
+            if length(json_team_data) == 1
+                df_temp, school1, school2 = get_stats(json_team_data[1].teams, week)
+                df = vcat(df, df_temp)
+                !ismissing(school1) ? push!(teams_seen, (school1, week)) : "school1 not FBS"
+                !ismissing(school2) ? push!(teams_seen, (school2, week)) : "school2 not FBS"
+            elseif length(json_team_data) == 2
+                df_temp, school1, school2 = get_stats(json_team_data[1].teams, -1)
+                df0 = vcat(df0, df_temp)
+                !ismissing(school1) ? push!(teams_seen, (school1, -1)) : "school1 not FBS"
+                !ismissing(school2) ? push!(teams_seen, (school2, -1)) : "school2 not FBS"
+                ##########################################################################
+                df_temp, school1, school2 = get_stats(json_team_data[2].teams, -2)
+                df0 = vcat(df0, df_temp)
+                !ismissing(school1) ? push!(teams_seen, (school1, -2)) : "school1 not FBS"
+                !ismissing(school2) ? push!(teams_seen, (school2, -2)) : "school2 not FBS"
             else
-                println("Working on: $team")
-                
-                # json_team_data = py"api_instance.get_team_game_stats"(season_type = seasontype_entry, year = year_get, week = week_get, team = team)
-                json_team_data = py"api_instance.get_team_game_stats"(season_type = seasontype_entry, year = year_get, week = week, team = team)
-                # println("json_team_data:$json_team_data")
-                if length(json_team_data) == 1
-                    df_temp, school1, school2 = get_stats(json_team_data[1].teams, week)
-                    df = vcat(df, df_temp)
-                    push!(teams_seen, (school1, week))
-                    push!(teams_seen, (school2, week))
-                elseif length(json_team_data) == 2
-                    df_temp, school1, school2 = get_stats(json_team_data[1].teams, -1)
-                    df0 = vcat(df0, df_temp)
-                    # push!(teams_seen, (school1, 0))
-                    # push!(teams_seen, (school2, 0))
-                    ##########################################################################
-                    df_temp, school1, school2 = get_stats(json_team_data[2].teams, -2)
-                    df0 = vcat(df0, df_temp)
-                    # push!(teams_seen, (school1, 1))
-                    # push!(teams_seen, (school2, 1))
-                else
-                    println("MISSED: NOTHING PROCESSED")
-                end
+                println("BYE: $team")
             end
             # println("teams_seen: $teams_seen")
         end
     end
     df0 = unique(df0)
-end
 
-println(df)
-println(df0)
-# df_backup = df
-# df0_backup = df0
-df = df_backup
-df0 = df0_backup
-
-no_wk0_teams_df = df[:, Not(:Week)]
-wk0_teams_df = df0[:, Not(:Week)]
-
-#teams in both the week 0/1 data and in the week 1 data
-wk01_teams = DataFrame(intersect(eachrow.([no_wk0_teams_df, wk0_teams_df])...))
-
-game_pair01 = [i for i in zip(wk01_teams[:, :School], wk01_teams[:, :Opponent])]
-dft = filter(:Opponent => !=(game_pair01[1][2]) , filter(:School => ==(game_pair01[1][1]), df0))
-#Adds teams that are in the week 1 df that also show up in week 0 df to df01
-df01 = DataFrame(Year = Int8[], Week = Int8[], School = String[], Conference = String[], TotalPenalties = Int8[], TotalPenaltiesYards = Int8[], Opponent = String[], HomeAway = String[], Season = String[])
-for i in 1:nrow(df0)
-    if df0[i, :School] ∈ wk01_teams[:, :School] && (df0[i, :School], df0[i, :Opponent]) ∉ game_pair01
-        println("i = $i, $(df0[i, :])")
-        df = vcat(df, DataFrame(Year = df0[i,:Year], Week = 0, School = df0[i,:School], Conference = df0[i,:Conference], TotalPenalties = df0[i,:TotalPenalties], TotalPenaltiesYards = df0[i,:TotalPenaltiesYards], Opponent = df0[i,:Opponent], HomeAway = df0[i,:HomeAway], Season = df0[i,:Season]))
-    else
-        df01 = vcat(df01, DataFrame(Year = df0[i,:Year], Week = df0[i,:Week], School = df0[i,:School], Conference = df0[i,:Conference], TotalPenalties = df0[i,:TotalPenalties], TotalPenaltiesYards = df0[i,:TotalPenaltiesYards], Opponent = df0[i,:Opponent], HomeAway = df0[i,:HomeAway], Season = df0[i,:Season]))
+    # df_backup = deepcopy(df)
+    # df0_backup = deepcopy(df0)
+# end
+# begin
+    ######################
+    #For development only
+    # if @isdefined(df_backup)
+    #     println("Restore df/df0 from backup.")
+    #     df = deepcopy(df_backup)
+    #     df0 = deepcopy(df0_backup)
+    # else
+    #     println("Set df/df0 to backup.")
+    #     df_backup = deepcopy(df)
+    #     df0_backup = deepcopy(df0)
+    # end
+    ######################
+    #Get schools in df0 that played against a team in df in week 1 and add week 0 game
+    for i in 1:nrow(df0)
+        for j in 1:nrow(df)
+            # println("i = $(lpad(i, 3, " ")), j = $(lpad(j, 3, " "))")
+            if df0[i,:School] == df[j,:School] && df0[i,:Opponent] == df[j,:Opponent] && df[j,:Week] == 1
+                dftemp = df0[(df0.School .== df0[i,:School]) .& (df0.Opponent .!= df0[i,:Opponent]), :]
+                if !isempty(dftemp)
+                    dftemp[1, :Week] = 0
+                    df = vcat(df, dftemp)
+                end
+            end
+        end
     end
-end
-df
-
-
-# df0[(df0.School .== "Vanderbilt") .& (df0.Opponent .== "Hawai'i"), :Week] = [-1]
-# df0[(df0.School .== "Vanderbilt") .& (df0.Opponent .== "Hawai'i"), :]
-wk1_schools_opponents = [i for i ∈ zip(filter(:Week => ==(1), df)[:, :School], filter(:Week => ==(1), df)[:, :Opponent])]
-df01t = DataFrame(Year = Int8[], Week = Int8[], School = String[], Conference = String[], TotalPenalties = Int8[], TotalPenaltiesYards = Int8[], Opponent = String[], HomeAway = String[], Season = String[])
-for i in 1:nrow(df01)
-    team = df01[i, :School]
-    opponent = df01[i, :Opponent]
-    if (opponent, team) ∈ wk1_schools_opponents
-        df[(df.School .== team) .& (df.Opponent .== opponent), :Week] = [1]
-    else
-        df01t = vcat(df01, DataFrame(Year = df01[i,:Year], Week = df01[i,:Week], School = df01[i,:School], Conference = df01[i,:Conference], TotalPenalties = df01[i,:TotalPenalties], TotalPenaltiesYards = df01[i,:TotalPenaltiesYards], Opponent = df01[i,:Opponent], HomeAway = df01[i,:HomeAway], Season = df01[i,:Season]))
+    unique!(df) # Needed for the next step:
+    #Now check if two teams that played in df0 played each other and add games, BUT check that they aren't already in df
+    for i in 1:nrow(df0)-1
+        for j in i:nrow(df0)
+            school_i = df0[i,:School]            
+            opponenet_i = df0[i,:Opponent]
+            school_j = df0[j,:School]
+            opponenet_j = df0[j,:Opponent]
+            if school_i == opponenet_j && opponenet_i == school_j
+                df_school_i = df[(df.School .== school_i) .& (df.Opponent .== opponenet_i), :]
+                df_school_j = df[(df.School .== school_j) .& (df.Opponent .== opponenet_j), :]
+                println("$school_i vs $opponenet_i: $(isempty(df_school_i))\n$school_j vs $opponenet_j: $(isempty(df_school_j))")
+                if isempty(df_school_i) 
+                    # println("$(df[j, :]), $(df[j, :Week])")
+                    df0temp_i = df0[(df0.School .== school_i) .& (df0.Opponent .== opponenet_i), :]
+                    df0temp_j = df0[(df0.School .== school_j) .& (df0.Opponent .== opponenet_j), :]
+                    df0temp_i[1, :Week] = 0
+                    df0temp_j[1, :Week] = 0
+                    df = vcat(df, df0temp_i)
+                    df = vcat(df, df0temp_j)
+                elseif isempty(df_school_j)
+                    df0temp_j = df0[(df0.School .== school_j) .& (df0.Opponent .== opponenet_j), :]
+                    df0temp_j[1, :Week] = 0
+                    df = vcat(df, df0temp_j)
+                end
+            end
+        end
     end
-end
-df
-df01 = df01t
-
-seen_teams = String[]
-for i in 1:nrow(df01)
-    if df01[i, :School] ∉ seen_teams
-        df = vcat(df, DataFrame(Year = df01[i,:Year], Week = 0, School = df01[i,:School], Conference = df01[i,:Conference], TotalPenalties = df01[i,:TotalPenalties], TotalPenaltiesYards = df01[i,:TotalPenaltiesYards], Opponent = df01[i,:Opponent], HomeAway = df01[i,:HomeAway], Season = df01[i,:Season]))
-    else
-        df = vcat(df, DataFrame(Year = df01[i,:Year], Week = 1, School = df01[i,:School], Conference = df01[i,:Conference], TotalPenalties = df01[i,:TotalPenalties], TotalPenaltiesYards = df01[i,:TotalPenaltiesYards], Opponent = df01[i,:Opponent], HomeAway = df01[i,:HomeAway], Season = df01[i,:Season]))
+    unique!(df)
+    #### Finally add the rest of the teams in order that they are in df0 since there is no way to place them correctly
+    for school in unique(df0[:, :School])
+        df_school = df[(df.School .== school) .& (df.Week .<= 1), :]
+        df0_school = df0[df0.School .== school, :]
+        if nrow(df_school) == 0
+            df0_school[1, :Week] = 0
+            df0_school[2, :Week] = 1
+            df = vcat(df, df0_school)
+        elseif (nrow(df_school) == 1) && (nrow(df0_school) > 1)
+            week_seen = df_school[1, :Week]
+            opp_seen = df_school[1, :Opponent]
+            df0_school = df0[(df0.School .== school) .& (df0.Opponent .!= opp_seen), :]
+            df0_school[1, :Week] = (week_seen == 0 ? 1 : 0)
+            df = vcat(df, df0_school)
+        end
     end
-end
-df
-#open ("../../data/team_stats/"+str(year_get)+'_'+seasontype+'_'+"penalties_yards"+'.csv', 'w', newline='')
-CSV.write("../../data/team_stats/$(year_get)_$(seasontype_entry)_penalties_yards_julia.csv", vcat(df), append=false)
-CSV.write("../../data/team_stats/$(year_get)_$(seasontype_entry)_penalties_yards_julia.csv", df, append=false)
 
+    unique!(df)
+
+    # CSV.write("./temp/df.csv", df)
+    # CSV.write("./temp/df0.csv", df0)
+    # CSV.write("../../data/team_stats/$(year_get)_$(seasontype_entry)_penalties_yards_julia.csv", vcat(df), append=false)
+    CSV.write("../../data/team_stats/$(year_get)_$(seasontype_entry)_penalties_yards_where.csv", df, append=false)
+end
 
 
 
