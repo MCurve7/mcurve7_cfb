@@ -20,8 +20,8 @@
     },
     {
       "x": [0.35, 14.65],
-      "y": [5.84615384615385, 5.84615384615385],
-      "text": "yintercept: 5.846154",
+      "y": [5.76923076923077, 5.76923076923077],
+      "text": "yintercept: 5.769231",
       "type": "scatter",
       "mode": "lines",
       "line": {
@@ -39,7 +39,7 @@
     {
       "x": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
       "y": [2, 10, 5, 8, 6, 15, 5, 1, 4, 7, 8, 3, 8, 4],
-      "text": ["Game_number:  1<br />Opponent: Middle Tennessee<br />Penalty_all_count_nona:  2", "Game_number:  2<br />Opponent: Texas<br />Penalty_all_count_nona: 10", "Game_number:  3<br />Opponent: South Florida<br />Penalty_all_count_nona:  5", "Game_number:  4<br />Opponent: Ole Miss<br />Penalty_all_count_nona:  8", "Game_number:  5<br />Opponent: Mississippi State<br />Penalty_all_count_nona:  6", "Game_number:  6<br />Opponent: Texas A&M<br />Penalty_all_count_nona: 15", "Game_number:  7<br />Opponent: Arkansas<br />Penalty_all_count_nona:  5", "Game_number:  8<br />Opponent: Tennessee<br />Penalty_all_count_nona:  1", "Game_number:  9<br />Opponent: BYE<br />Penalty_all_count_nona:  4", "Game_number: 10<br />Opponent: LSU<br />Penalty_all_count_nona:  7", "Game_number: 11<br />Opponent: Kentucky<br />Penalty_all_count_nona:  8", "Game_number: 12<br />Opponent: Chattanooga<br />Penalty_all_count_nona:  3", "Game_number: 13<br />Opponent: Auburn<br />Penalty_all_count_nona:  8", "Game_number: 14<br />Opponent: Georgia<br />Penalty_all_count_nona:  4"],
+      "text": ["Week:  1<br />Opponent: Middle Tennessee<br />Penalty_all_count_nona:  2", "Week:  2<br />Opponent: Texas<br />Penalty_all_count_nona: 10", "Week:  3<br />Opponent: South Florida<br />Penalty_all_count_nona:  5", "Week:  4<br />Opponent: Ole Miss<br />Penalty_all_count_nona:  8", "Week:  5<br />Opponent: Mississippi State<br />Penalty_all_count_nona:  6", "Week:  6<br />Opponent: Texas A&M<br />Penalty_all_count_nona: 15", "Week:  7<br />Opponent: Arkansas<br />Penalty_all_count_nona:  5", "Week:  8<br />Opponent: Tennessee<br />Penalty_all_count_nona:  1", "Week:  9<br />Opponent: BYE<br />Penalty_all_count_nona:  4", "Week: 10<br />Opponent: LSU<br />Penalty_all_count_nona:  7", "Week: 11<br />Opponent: Kentucky<br />Penalty_all_count_nona:  8", "Week: 12<br />Opponent: Chattanooga<br />Penalty_all_count_nona:  3", "Week: 13<br />Opponent: Auburn<br />Penalty_all_count_nona:  8", "Week: 14<br />Opponent: Georgia<br />Penalty_all_count_nona:  4"],
       "type": "scatter",
       "mode": "lines",
       "line": {
@@ -55,9 +55,9 @@
       "frame": null
     },
     {
-      "x": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
-      "y": [2, 10, 5, 8, 6, 15, 5, 1, null, 7, 8, 3, 8, 4],
-      "text": ["Game_number:  1<br />Opponent: Middle Tennessee<br />Penalty_all_count:  2", "Game_number:  2<br />Opponent: Texas<br />Penalty_all_count: 10", "Game_number:  3<br />Opponent: South Florida<br />Penalty_all_count:  5", "Game_number:  4<br />Opponent: Ole Miss<br />Penalty_all_count:  8", "Game_number:  5<br />Opponent: Mississippi State<br />Penalty_all_count:  6", "Game_number:  6<br />Opponent: Texas A&M<br />Penalty_all_count: 15", "Game_number:  7<br />Opponent: Arkansas<br />Penalty_all_count:  5", "Game_number:  8<br />Opponent: Tennessee<br />Penalty_all_count:  1", "Game_number:  9<br />Opponent: BYE<br />Penalty_all_count: NA", "Game_number: 10<br />Opponent: LSU<br />Penalty_all_count:  7", "Game_number: 11<br />Opponent: Kentucky<br />Penalty_all_count:  8", "Game_number: 12<br />Opponent: Chattanooga<br />Penalty_all_count:  3", "Game_number: 13<br />Opponent: Auburn<br />Penalty_all_count:  8", "Game_number: 14<br />Opponent: Georgia<br />Penalty_all_count:  4"],
+      "x": [3, 5, 6, 11, 13],
+      "y": [5, 6, 15, 8, 8],
+      "text": ["Week:  3<br />Opponent: South Florida<br />AllPenalties:  5<br />HomeAway: away", "Week:  5<br />Opponent: Mississippi State<br />AllPenalties:  6<br />HomeAway: away", "Week:  6<br />Opponent: Texas A&M<br />AllPenalties: 15<br />HomeAway: away", "Week: 11<br />Opponent: Kentucky<br />AllPenalties:  8<br />HomeAway: away", "Week: 13<br />Opponent: Auburn<br />AllPenalties:  8<br />HomeAway: away"],
       "type": "scatter",
       "mode": "markers",
       "marker": {
@@ -65,55 +65,163 @@
         "color": "rgba(130,138,143,1)",
         "opacity": 1,
         "size": 11.3385826771654,
-        "symbol": "circle",
-        "line": {
-          "width": 1.88976377952756,
-          "color": "rgba(130,138,143,1)"
-        }
-      },
-      "hoveron": "points",
-      "showlegend": false,
-      "xaxis": "x",
-      "yaxis": "y",
-      "hoverinfo": "text",
-      "frame": null
-    },
-    {
-      "x": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
-      "y": [1, 10, 5, 8, 6, 14, 5, 1, 3.5, 6, 6, 3, 8, 3],
-      "text": ["Game_number:  1<br />Opponent: Middle Tennessee<br />Penalty_enforced_count_nona:  1.0", "Game_number:  2<br />Opponent: Texas<br />Penalty_enforced_count_nona: 10.0", "Game_number:  3<br />Opponent: South Florida<br />Penalty_enforced_count_nona:  5.0", "Game_number:  4<br />Opponent: Ole Miss<br />Penalty_enforced_count_nona:  8.0", "Game_number:  5<br />Opponent: Mississippi State<br />Penalty_enforced_count_nona:  6.0", "Game_number:  6<br />Opponent: Texas A&M<br />Penalty_enforced_count_nona: 14.0", "Game_number:  7<br />Opponent: Arkansas<br />Penalty_enforced_count_nona:  5.0", "Game_number:  8<br />Opponent: Tennessee<br />Penalty_enforced_count_nona:  1.0", "Game_number:  9<br />Opponent: BYE<br />Penalty_enforced_count_nona:  3.5", "Game_number: 10<br />Opponent: LSU<br />Penalty_enforced_count_nona:  6.0", "Game_number: 11<br />Opponent: Kentucky<br />Penalty_enforced_count_nona:  6.0", "Game_number: 12<br />Opponent: Chattanooga<br />Penalty_enforced_count_nona:  3.0", "Game_number: 13<br />Opponent: Auburn<br />Penalty_enforced_count_nona:  8.0", "Game_number: 14<br />Opponent: Georgia<br />Penalty_enforced_count_nona:  3.0"],
-      "type": "scatter",
-      "mode": "lines",
-      "line": {
-        "width": 1.88976377952756,
-        "color": "rgba(158,27,50,1)",
-        "dash": "solid"
-      },
-      "hoveron": "points",
-      "showlegend": false,
-      "xaxis": "x",
-      "yaxis": "y",
-      "hoverinfo": "text",
-      "frame": null
-    },
-    {
-      "x": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
-      "y": [1, 10, 5, 8, 6, 14, 5, 1, null, 6, 6, 3, 8, 3],
-      "text": ["Game_number:  1<br />Opponent: Middle Tennessee<br />Penalty_enforced_count:  1", "Game_number:  2<br />Opponent: Texas<br />Penalty_enforced_count: 10", "Game_number:  3<br />Opponent: South Florida<br />Penalty_enforced_count:  5", "Game_number:  4<br />Opponent: Ole Miss<br />Penalty_enforced_count:  8", "Game_number:  5<br />Opponent: Mississippi State<br />Penalty_enforced_count:  6", "Game_number:  6<br />Opponent: Texas A&M<br />Penalty_enforced_count: 14", "Game_number:  7<br />Opponent: Arkansas<br />Penalty_enforced_count:  5", "Game_number:  8<br />Opponent: Tennessee<br />Penalty_enforced_count:  1", "Game_number:  9<br />Opponent: BYE<br />Penalty_enforced_count: NA", "Game_number: 10<br />Opponent: LSU<br />Penalty_enforced_count:  6", "Game_number: 11<br />Opponent: Kentucky<br />Penalty_enforced_count:  6", "Game_number: 12<br />Opponent: Chattanooga<br />Penalty_enforced_count:  3", "Game_number: 13<br />Opponent: Auburn<br />Penalty_enforced_count:  8", "Game_number: 14<br />Opponent: Georgia<br />Penalty_enforced_count:  3"],
-      "type": "scatter",
-      "mode": "markers",
-      "marker": {
-        "autocolorscale": false,
-        "color": "rgba(158,27,50,1)",
-        "opacity": 1,
-        "size": 11.3385826771654,
-        "symbol": "circle",
+        "symbol": "triangle-up",
         "line": {
           "width": 1.88976377952756,
           "color": "rgba(158,27,50,1)"
         }
       },
       "hoveron": "points",
+      "name": "away",
+      "legendgroup": "away",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 2, 4, 7, 8, 10, 12, 14],
+      "y": [2, 10, 8, 5, 1, 7, 3, 4],
+      "text": ["Week:  1<br />Opponent: Middle Tennessee<br />AllPenalties:  2<br />HomeAway: home", "Week:  2<br />Opponent: Texas<br />AllPenalties: 10<br />HomeAway: home", "Week:  4<br />Opponent: Ole Miss<br />AllPenalties:  8<br />HomeAway: home", "Week:  7<br />Opponent: Arkansas<br />AllPenalties:  5<br />HomeAway: home", "Week:  8<br />Opponent: Tennessee<br />AllPenalties:  1<br />HomeAway: home", "Week: 10<br />Opponent: LSU<br />AllPenalties:  7<br />HomeAway: home", "Week: 12<br />Opponent: Chattanooga<br />AllPenalties:  3<br />HomeAway: home", "Week: 14<br />Opponent: Georgia<br />AllPenalties:  4<br />HomeAway: home"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(130,138,143,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "square",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(158,27,50,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "home",
+      "legendgroup": "home",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [9],
+      "y": [null],
+      "text": "Week:  9<br />Opponent: BYE<br />AllPenalties: NA<br />HomeAway: NA",
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(158,27,50,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": null,
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(158,27,50,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "NA",
+      "legendgroup": "NA",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
+      "y": [2, 10, 5, 6, 6, 14, 5, 1, 3.5, 6, 6, 3, 8, 3],
+      "text": ["Week:  1<br />Opponent: Middle Tennessee<br />Penalty_enforced_count_nona:  2.0", "Week:  2<br />Opponent: Texas<br />Penalty_enforced_count_nona: 10.0", "Week:  3<br />Opponent: South Florida<br />Penalty_enforced_count_nona:  5.0", "Week:  4<br />Opponent: Ole Miss<br />Penalty_enforced_count_nona:  6.0", "Week:  5<br />Opponent: Mississippi State<br />Penalty_enforced_count_nona:  6.0", "Week:  6<br />Opponent: Texas A&M<br />Penalty_enforced_count_nona: 14.0", "Week:  7<br />Opponent: Arkansas<br />Penalty_enforced_count_nona:  5.0", "Week:  8<br />Opponent: Tennessee<br />Penalty_enforced_count_nona:  1.0", "Week:  9<br />Opponent: BYE<br />Penalty_enforced_count_nona:  3.5", "Week: 10<br />Opponent: LSU<br />Penalty_enforced_count_nona:  6.0", "Week: 11<br />Opponent: Kentucky<br />Penalty_enforced_count_nona:  6.0", "Week: 12<br />Opponent: Chattanooga<br />Penalty_enforced_count_nona:  3.0", "Week: 13<br />Opponent: Auburn<br />Penalty_enforced_count_nona:  8.0", "Week: 14<br />Opponent: Georgia<br />Penalty_enforced_count_nona:  3.0"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.88976377952756,
+        "color": "rgba(158,27,50,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [3, 5, 6, 11, 13],
+      "y": [5, 6, 14, 6, 8],
+      "text": ["Week:  3<br />Opponent: South Florida<br />TotalPenalties:  5<br />HomeAway: away", "Week:  5<br />Opponent: Mississippi State<br />TotalPenalties:  6<br />HomeAway: away", "Week:  6<br />Opponent: Texas A&M<br />TotalPenalties: 14<br />HomeAway: away", "Week: 11<br />Opponent: Kentucky<br />TotalPenalties:  6<br />HomeAway: away", "Week: 13<br />Opponent: Auburn<br />TotalPenalties:  8<br />HomeAway: away"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(158,27,50,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(130,138,143,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "away",
+      "legendgroup": "away",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [1, 2, 4, 7, 8, 10, 12, 14],
+      "y": [2, 10, 6, 5, 1, 6, 3, 3],
+      "text": ["Week:  1<br />Opponent: Middle Tennessee<br />TotalPenalties:  2<br />HomeAway: home", "Week:  2<br />Opponent: Texas<br />TotalPenalties: 10<br />HomeAway: home", "Week:  4<br />Opponent: Ole Miss<br />TotalPenalties:  6<br />HomeAway: home", "Week:  7<br />Opponent: Arkansas<br />TotalPenalties:  5<br />HomeAway: home", "Week:  8<br />Opponent: Tennessee<br />TotalPenalties:  1<br />HomeAway: home", "Week: 10<br />Opponent: LSU<br />TotalPenalties:  6<br />HomeAway: home", "Week: 12<br />Opponent: Chattanooga<br />TotalPenalties:  3<br />HomeAway: home", "Week: 14<br />Opponent: Georgia<br />TotalPenalties:  3<br />HomeAway: home"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(158,27,50,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": "square",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(130,138,143,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "home",
+      "legendgroup": "home",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [9],
+      "y": [null],
+      "text": "Week:  9<br />Opponent: BYE<br />TotalPenalties: NA<br />HomeAway: NA",
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(130,138,143,1)",
+        "opacity": 1,
+        "size": 11.3385826771654,
+        "symbol": null,
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(130,138,143,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "NA",
+      "legendgroup": "NA",
       "showlegend": false,
       "xaxis": "x",
       "yaxis": "y",
@@ -144,7 +252,7 @@
       "size": 14.6118721461187
     },
     "title": {
-      "text": "Alabama penalties for 2023; Average: enforced = 5.85 (primary team color), all = 6.31 (secondary team color)<br> <sup><\/sup>",
+      "text": "Alabama penalties for 2023; Average: enforced = 5.77 (primary team color), all = 6.31 (secondary team color)<br> <sup><\/sup>",
       "font": {
         "color": "rgba(0,0,0,1)",
         "family": "",
@@ -253,7 +361,7 @@
         "y1": 1
       }
     ],
-    "showlegend": false,
+    "showlegend": true,
     "legend": {
       "bgcolor": "rgba(255,255,255,1)",
       "bordercolor": "transparent",
@@ -262,6 +370,14 @@
         "color": "rgba(0,0,0,1)",
         "family": "",
         "size": 11.689497716895
+      },
+      "title": {
+        "text": "HomeAway",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
       }
     },
     "hovermode": "closest",
@@ -274,46 +390,48 @@
   },
   source: "A",
   attrs: {
-    "1db44a9354c": {
+    "32f41385606b": {
       "yintercept": {},
       "type": "scatter"
     },
-    "1db44671771": {
+    "32f4aa043b5": {
       "yintercept": {}
     },
-    "1db41d0a259b": {
+    "32f472da539d": {
       "x": {},
       "label": {},
       "y": {}
     },
-    "1db446087ba6": {
+    "32f469e76c34": {
+      "x": {},
+      "label": {},
+      "y": {},
+      "shape": {}
+    },
+    "32f4350826b5": {
       "x": {},
       "label": {},
       "y": {}
     },
-    "1db43807556e": {
+    "32f46c7a488b": {
       "x": {},
       "label": {},
-      "y": {}
+      "y": {},
+      "shape": {}
     },
-    "1db46e0188c": {
-      "x": {},
-      "label": {},
-      "y": {}
-    },
-    "1db4266238ca": {
+    "32f47b885779": {
       "y": {}
     }
   },
-  cur_data: "1db44a9354c",
+  cur_data: "32f41385606b",
   visdat: {
-    "1db44a9354c": ["function (y) ", "x"],
-    "1db44671771": ["function (y) ", "x"],
-    "1db41d0a259b": ["function (y) ", "x"],
-    "1db446087ba6": ["function (y) ", "x"],
-    "1db43807556e": ["function (y) ", "x"],
-    "1db46e0188c": ["function (y) ", "x"],
-    "1db4266238ca": ["function (y) ", "x"]
+    "32f41385606b": ["function (y) ", "x"],
+    "32f4aa043b5": ["function (y) ", "x"],
+    "32f472da539d": ["function (y) ", "x"],
+    "32f469e76c34": ["function (y) ", "x"],
+    "32f4350826b5": ["function (y) ", "x"],
+    "32f46c7a488b": ["function (y) ", "x"],
+    "32f47b885779": ["function (y) ", "x"]
   },
   highlight: {
     "on": "plotly_click",
