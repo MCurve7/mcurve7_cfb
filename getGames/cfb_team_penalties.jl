@@ -9,8 +9,12 @@ using JSONTables
 # run(`$(PyCall.python) -m pip install --upgrade cython`)
 # run(`$(PyCall.python) -m pip install cfbd`)
 
-year_get = 2023 #int(input("Year="))
-week_get = 14 #int(input("Week [1-16]="))
+# year_get = 2023 #int(input("Year="))
+# week_get = 14 #int(input("Week [1-16]="))
+# seasontype_entry = "regular" #input("Season type [regular/postseason/both/preseason]=")
+
+year_get = 2024 #int(input("Year="))
+week_get = 1 #int(input("Week [1-16]="))
 seasontype_entry = "regular" #input("Season type [regular/postseason/both/preseason]=")
 
 py"""

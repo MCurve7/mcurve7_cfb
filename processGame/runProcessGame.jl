@@ -80,6 +80,10 @@ i=findall(x->x=="../../data/unprocessed\\Alabama_2023_wk14_regular.csv", dirCont
 dirContents[i]
 @time run_game(i)
 
+i=findall(x->x=="../../data/unprocessed\\Alabama_2023_wk01_postseason.csv", dirContents)[1]
+dirContents[i]
+@time run_game(i)
+
 i=findall(x->x=="../../data/unprocessed\\Kentucky_2023_wk11_regular.csv", dirContents)[1]
 dirContents[i]
 @time run_game(i)

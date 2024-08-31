@@ -1,96 +1,102 @@
 <table>
   <thead>
-    <tr class = "header headerLastRow">
+    <tr class = "header">
       <th style = "text-align: left;">school</th>
       <th style = "text-align: left;">sum</th>
       <th style = "text-align: left;">mean</th>
       <th style = "text-align: left;">z</th>
     </tr>
+    <tr class = "subheader headerLastRow">
+      <th style = "text-align: left;">String31</th>
+      <th style = "text-align: left;">Int64</th>
+      <th style = "text-align: left;">String</th>
+      <th style = "text-align: left;">Any</th>
+    </tr>
   </thead>
   <tbody>
     <tr>
-      <td style = "text-align: left;">South Alabama</td>
-      <td style = "text-align: left;">49</td>
-      <td style = "text-align: left;">7.00</td>
-      <td style = "text-align: left;">1.09</td>
-    </tr>
-    <tr>
       <td style = "text-align: left;">Texas State</td>
-      <td style = "text-align: left;">46</td>
-      <td style = "text-align: left;">6.57</td>
-      <td style = "text-align: left;">0.66</td>
+      <td style = "text-align: left;">94</td>
+      <td style = "text-align: left;">7.23</td>
+      <td style = "text-align: left;">0.49</td>
     </tr>
     <tr>
-      <td style = "text-align: left;">Arkansas State</td>
-      <td style = "text-align: left;">45</td>
-      <td style = "text-align: left;">6.43</td>
-      <td style = "text-align: left;">0.52</td>
-    </tr>
-    <tr>
-      <td style = "text-align: left;">Georgia State</td>
-      <td style = "text-align: left;">44</td>
-      <td style = "text-align: left;">6.29</td>
-      <td style = "text-align: left;">0.38</td>
-    </tr>
-    <tr>
-      <td style = "text-align: left;">Southern Mississippi</td>
-      <td style = "text-align: left;">44</td>
-      <td style = "text-align: left;">6.29</td>
-      <td style = "text-align: left;">0.38</td>
-    </tr>
-    <tr>
-      <td style = "text-align: left;">Coastal Carolina</td>
-      <td style = "text-align: left;">43</td>
-      <td style = "text-align: left;">6.14</td>
-      <td style = "text-align: left;">0.23</td>
-    </tr>
-    <tr>
-      <td style = "text-align: left;">Troy</td>
-      <td style = "text-align: left;">42</td>
-      <td style = "text-align: left;">6.00</td>
-      <td style = "text-align: left;">0.09</td>
-    </tr>
-    <tr>
-      <td style = "text-align: left;">Georgia Southern</td>
-      <td style = "text-align: left;">41</td>
-      <td style = "text-align: left;">5.86</td>
-      <td style = "text-align: left;">-0.05</td>
-    </tr>
-    <tr>
-      <td style = "text-align: left;">Louisiana</td>
-      <td style = "text-align: left;">41</td>
-      <td style = "text-align: left;">5.86</td>
-      <td style = "text-align: left;">-0.05</td>
-    </tr>
-    <tr>
-      <td style = "text-align: left;">Old Dominion</td>
-      <td style = "text-align: left;">41</td>
-      <td style = "text-align: left;">5.86</td>
-      <td style = "text-align: left;">-0.05</td>
-    </tr>
-    <tr>
-      <td style = "text-align: left;">James Madison</td>
-      <td style = "text-align: left;">40</td>
-      <td style = "text-align: left;">5.71</td>
-      <td style = "text-align: left;">-0.19</td>
+      <td style = "text-align: left;">South Alabama</td>
+      <td style = "text-align: left;">87</td>
+      <td style = "text-align: left;">6.69</td>
+      <td style = "text-align: left;">0.27</td>
     </tr>
     <tr>
       <td style = "text-align: left;">Marshall</td>
-      <td style = "text-align: left;">39</td>
-      <td style = "text-align: left;">5.57</td>
-      <td style = "text-align: left;">-0.34</td>
+      <td style = "text-align: left;">85</td>
+      <td style = "text-align: left;">6.54</td>
+      <td style = "text-align: left;">0.21</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Old Dominion</td>
+      <td style = "text-align: left;">84</td>
+      <td style = "text-align: left;">6.46</td>
+      <td style = "text-align: left;">0.18</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Georgia State</td>
+      <td style = "text-align: left;">83</td>
+      <td style = "text-align: left;">6.38</td>
+      <td style = "text-align: left;">0.15</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Southern Mississippi</td>
+      <td style = "text-align: left;">75</td>
+      <td style = "text-align: left;">6.25</td>
+      <td style = "text-align: left;">0.10</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Arkansas State</td>
+      <td style = "text-align: left;">80</td>
+      <td style = "text-align: left;">6.15</td>
+      <td style = "text-align: left;">0.06</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Louisiana</td>
+      <td style = "text-align: left;">79</td>
+      <td style = "text-align: left;">6.08</td>
+      <td style = "text-align: left;">0.03</td>
     </tr>
     <tr>
       <td style = "text-align: left;">Louisiana Monroe</td>
-      <td style = "text-align: left;">33</td>
-      <td style = "text-align: left;">4.71</td>
-      <td style = "text-align: left;">-1.19</td>
+      <td style = "text-align: left;">71</td>
+      <td style = "text-align: left;">5.92</td>
+      <td style = "text-align: left;">-0.03</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Georgia Southern</td>
+      <td style = "text-align: left;">76</td>
+      <td style = "text-align: left;">5.85</td>
+      <td style = "text-align: left;">-0.06</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Coastal Carolina</td>
+      <td style = "text-align: left;">73</td>
+      <td style = "text-align: left;">5.62</td>
+      <td style = "text-align: left;">-0.15</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">James Madison</td>
+      <td style = "text-align: left;">72</td>
+      <td style = "text-align: left;">5.54</td>
+      <td style = "text-align: left;">-0.18</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Troy</td>
+      <td style = "text-align: left;">72</td>
+      <td style = "text-align: left;">5.14</td>
+      <td style = "text-align: left;">-0.34</td>
     </tr>
     <tr>
       <td style = "text-align: left;">Appalachian State</td>
-      <td style = "text-align: left;">31</td>
-      <td style = "text-align: left;">4.43</td>
-      <td style = "text-align: left;">-1.47</td>
+      <td style = "text-align: left;">61</td>
+      <td style = "text-align: left;">4.36</td>
+      <td style = "text-align: left;">-0.65</td>
     </tr>
   </tbody>
 </table>

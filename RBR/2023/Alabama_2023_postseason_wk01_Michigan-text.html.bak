@@ -1,0 +1,265 @@
+<title>Extra graphs 2023 week 01 postseason vs Michigan</title>
+
+<p>
+If you would like to see and play with the interactive version of these graphs you can find them at
+https://github.com/MCurve7/mcurve7_cfb/tree/main/RBR/2023
+You just need to download the Alabama_(year)_regular_wk??_(opponent).html (or Alabama_(year)_postseason_wk??_(opponent).html) file and open it in a web browser.
+</p>
+
+<p>
+Man is this thing late. It took so long that Saban had time to retire before I could finish working on it.
+</p>
+<img src="https://media1.tenor.com/m/7ggULOq7LuwAAAAC/made-myself-sad-futurama.gif">
+
+<p>
+This is as far as I got in doing my analysis and writing this up.
+It's incomplete and I didn't make notes.
+So to complete it I would have to rewatch the game and I'd rather not.
+I'm sure there are typos and incomplete thoughts,
+but maybe something is better than nothing.
+Besides it's really really late!
+</p>
+
+<p>
+In terms of SR both teams had very similar numbers: Alabama 0.364 vs Michigan 0.356.
+The SR by drive average was somewhat in our favor: Alabama 0.304 vs Michigan 0.267.
+Given the interpretation I've been going with says both teams fairly were inconsistent.
+So that doesn't seem to explain why Michigan won.
+Let's drill down a bit and look at each drive's SR and play a game.
+Whose SR by drive is whose in the table below?
+</p>
+
+<table>
+<tbody>
+  <tr>
+    <td>Team/Drive</td>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+    <td>5</td>
+    <td>6</td>
+    <td>7</td>
+    <td>8</td>
+    <td>9</td>
+    <td>10</td>
+    <td>11</td>
+    <td>12</td>
+    <td>13</td>
+  </tr>
+  <tr>
+    <td>A</td>
+    <td>0.000</td>
+    <td>0.000</td>
+    <td>0.000</td>
+    <td>0.000</td>
+    <td>0.000</td>
+    <td>0.167</td>
+    <td>0.250</td>
+    <td>0.400</td>
+    <td>0.444</td>
+    <td>0.444</td>
+    <td>0.500</td>
+    <td>0.750</td>
+    <td>1.000</td>
+  </tr>
+  <tr>
+    <td>B</td>
+    <td>0.000</td>
+    <td>0.000</td>
+    <td>0.000</td>
+    <td>0.000</td>
+    <td>0.000</td>
+    <td>0.000</td>
+    <td>0.167</td>
+    <td>0.250</td>
+    <td>0.333</td>
+    <td>0.500</td>
+    <td>0.600</td>
+    <td>0.625</td>
+    <td>1.000</td>
+  </tr>
+</tbody>
+</table>
+<br />
+
+<p>
+Team A is of course... Alabama? 
+I'm a bit surprised by this given what my brain thinks it saw. 
+I would have though Michigan would have had the better SR by drive though they are fairly close.
+But this does correspond to the mean SR_drive values we saw above: Alabama 0.304 vs Michigan 0.267.
+One of the things that is not captured in this table is our turnover on drive 10 which had a SR of 0.5.
+So far we are looking just a bit better than Michigan since we can view their muffed punt as a turnover which evens that up.
+...
+</p>
+
+<div id="Alabama_2023_postseason_wk01_Michigan-01-success_drive_bar-copy" ></div><br />
+<div id="Michigan_2023_postseason_wk01_Alabama-01-success_drive_bar-copy" ></div><br />
+
+<p>
+What else can we look at?
+Well since I did decide to start calculating XR I guess we might as well go ahead and look at that.
+They had a mean XR of 0.132 (stdev = 0.060) and against us that went up to 0.153 which is 0.351 standard deviations above their mean.
+That doesn't seem to be that much of jump especially given that they had some really low XRs strewn about their schedule: 
+0.091 Bowling Green, 0.093 Penn State, 0.030 Maryland, and 0.016 Iowa.
+They did have 5 games with a higher XR than vs us:
+0.171 Purdue, 0.177 East Carolina, 0.193 Minnesota, 0.194 Michigan State, and 0.217 UNLV.
+And it was almost the exact same as they had against Ohio St: 0.150.
+</p>
+
+<p>
+Our season average XR was 0.147 (stdev = 0.030) and we had an XR of 0.091.
+That is -1.873 standard deviations below our mean!
+And that is what I (amongst many others) would say was what lost us this game,
+we couldn't manufacture the boom plays and were stuck with lots of busts.
+</p>
+
+<table>
+  <caption style = "text-align: center;">SR/XR, Mean SR/XR: 2023, season: postseason after week 01, Alabama vs Michigan</caption>
+  <thead>
+    <tr class = "header headerLastRow">
+      <th style = "text-align: left;">Team</th>
+      <th style = "text-align: left;">SR</th>
+      <th style = "text-align: left;">SR_mean</th>
+      <th style = "text-align: left;">XR</th>
+      <th style = "text-align: left;">XR_mean</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style = "text-align: left;">Alabama</td>
+      <td style = "text-align: left;">0.364</td>
+      <td style = "text-align: left;">0.452</td>
+      <td style = "text-align: left;">0.091</td>
+      <td style = "text-align: left;">0.147</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">Michigan</td>
+      <td style = "text-align: left;">0.356</td>
+      <td style = "text-align: left;">0.492</td>
+      <td style = "text-align: left;">0.153</td>
+      <td style = "text-align: left;">0.132</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+
+<p>
+
+</p>
+
+<table>
+  <caption style = "text-align: center;">Success by down: Alabama, 2023, week 01, season postseason, Opponent: Michigan</caption>
+  <thead>
+    <tr class = "header headerLastRow">
+      <th style = "text-align: left;">Down</th>
+      <th style = "text-align: left;">Successful</th>
+      <th style = "text-align: left;">Unsuccessful</th>
+      <th style = "text-align: left;">Total</th>
+      <th style = "text-align: left;">TD/1st</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">10</td>
+      <td style = "text-align: left;">19</td>
+      <td style = "text-align: left;">29</td>
+      <td style = "text-align: left;">5</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">11</td>
+      <td style = "text-align: left;">12</td>
+      <td style = "text-align: left;">23</td>
+      <td style = "text-align: left;">10</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">10</td>
+      <td style = "text-align: left;">13</td>
+      <td style = "text-align: left;">3</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">0</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+<table>
+  <caption style = "text-align: center;">Distance to 1st/TD, Yards gained statistics by down: Alabama, 2023, week 01, season postseason, Opponent: Michigan</caption>
+  <thead>
+    <tr class = "header headerLastRow">
+      <th style = "text-align: left;">Down</th>
+      <th style = "text-align: left;">Count</th>
+      <th style = "text-align: left;">Δ_plays</th>
+      <th style = "text-align: left;">Mean distance</th>
+      <th style = "text-align: left;">Std distance</th>
+      <th style = "text-align: left;">Median distance</th>
+      <th style = "text-align: left;">Mean gained</th>
+      <th style = "text-align: left;">Std gained</th>
+      <th style = "text-align: left;">Median gained</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">29</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">10.069</td>
+      <td style = "text-align: left;">1.88852</td>
+      <td style = "text-align: left;">10.0</td>
+      <td style = "text-align: left;">3.96552</td>
+      <td style = "text-align: left;">9.57856</td>
+      <td style = "text-align: left;">3.0</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">23</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">9.69565</td>
+      <td style = "text-align: left;">5.95006</td>
+      <td style = "text-align: left;">9.0</td>
+      <td style = "text-align: left;">5.78261</td>
+      <td style = "text-align: left;">7.12841</td>
+      <td style = "text-align: left;">5.0</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">13</td>
+      <td style = "text-align: left;">10</td>
+      <td style = "text-align: left;">10.1538</td>
+      <td style = "text-align: left;">8.18379</td>
+      <td style = "text-align: left;">9.0</td>
+      <td style = "text-align: left;">3.0</td>
+      <td style = "text-align: left;">7.30297</td>
+      <td style = "text-align: left;">5.0</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">12</td>
+      <td style = "text-align: left;">3.0</td>
+      <td style = "text-align: left;">NaN</td>
+      <td style = "text-align: left;">3.0</td>
+      <td style = "text-align: left;">1.0</td>
+      <td style = "text-align: left;">NaN</td>
+      <td style = "text-align: left;">1.0</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+
+<div id="Alabama_2023_postseason_wk01_Michigan-05-all4_downs_fac_noscale" ></div><br />
+<div id="Alabama_2023_postseason_wk01_Michigan-e05-distance_success_down_game" ></div><br />
+<div id="Alabama_2023_postseason_wk01_Michigan-e10-distance_success_downs_all4" ></div><br />
+<div id="Alabama_2023_postseason_wk01_Michigan-e11-distance_downs_boxwhisker" ></div><br />
+<div id="Alabama_2023_postseason_wk01_Michigan-e12-gained_downs_boxwhisker" ></div><br />
+
+
+
