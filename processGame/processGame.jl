@@ -16,6 +16,7 @@ using Plots
 using Random
 using StatsPlots
 using Statistics
+includet("../aux_functions/aux_functions.jl")
 
 using Revise
 includet("foulAnalysis.jl")
@@ -92,13 +93,13 @@ GET_NAMES = false
 function process_game(game)
     DEBUG_PROCESS_FUNCTION && println("Read CSV")
     df = CSV.read(game, DataFrame; normalizenames=true, types = Dict(:Scoring => Bool, :Distance => Int8, :Yards_gained => Int8))
-    for i in 1:nrow(df)
-        DEBUG_PROCESS_FUNCTION && println("Offense: $(df[i, :Offense])")
-        if df[i, :Offense] == "San Jos� State" 
-            df[i, :Offense] = "San José State"
-        end
-        # df[i, :Offense] = decode(encode((df[i, :Offense]), "UTF-8"), "UTF-8")        
-    end
+    # for i in 1:nrow(df)
+    #     DEBUG_PROCESS_FUNCTION && println("Offense: $(df[i, :Offense])")
+    #     if df[i, :Offense] == "San Jos� State" 
+    #         df[i, :Offense] = "San José State"
+    #     end
+    #     # df[i, :Offense] = decode(encode((df[i, :Offense]), "UTF-8"), "UTF-8")        
+    # end
 
     DEBUG_PROCESS_FUNCTION && println("Remove PPA")
     df = select(df, Not(:PPA))
@@ -173,6 +174,7 @@ end
 Covert {'minutes': 15, 'seconds': 0} to 15:00
 """
 function clock_reformat(time)
+    # println("clock_reformat: time=$time")
     clock = JSON.parse(replace(time, "'" => '"'))
     "$(clock["minutes"]):$(@sprintf("%02d",clock["seconds"]))"
 end

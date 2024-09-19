@@ -3,11 +3,24 @@ using CSV
 
 #Goto https://www.espn.com/college-football/schedule before games begin, copy/paste starting with MATCHUP to end of that day into a text file called: copy_paste_$(year)_$week.txt
 
-year = 2023
-# week = "14"
-week = "bowls"
+## Pattern
+# Villanova
+#   @  
+
+# Maryland
+# 11:00 AM	
+# BTN
+# Tickets as low as $5	
+# SECU Stadium, College Park, MD
+# Line:
+# O/U:
+
+year = 2024
+week = "04"
+# week = "bowls"
 open("copy_paste_$(year)_$week.txt") do f
  
+    readline(f)
     readline(f)
     readline(f)
     readline(f)
@@ -52,7 +65,8 @@ open("copy_paste_$(year)_$week.txt") do f
                     tv = tv*"/"*line
                     i -= 1
                 end
-            elseif i == 9
+            # elseif i == 9
+            elseif i == 11
                 println("RESET: i = $i, line = $line \n")
                 i = 0
                 df = vcat(df, DataFrame(Matchup = ["$team1 @ $team2"], Time = [tv_time], TV = String[tv]))
@@ -94,7 +108,8 @@ open("copy_paste_$(year)_$week.txt") do f
                     tv = tv*"/"*line
                     i -= 1
                 end
-            elseif i == 10
+            # elseif i == 10
+            elseif i == 12
                 println("RESET: i = $i, line = $line \n")
                 i = 0
                 df = vcat(df, DataFrame(Matchup = ["$team1 @ $team2"], Time = [tv_time], TV = String[tv], Bowl = [bowl]))

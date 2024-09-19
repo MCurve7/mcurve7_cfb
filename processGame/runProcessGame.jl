@@ -31,6 +31,7 @@ function run_all_games()
     # @threads for game in dirContents
         game_split = split(game, r"[\\/]")
         #println("Split directory: $game_split")
+        # year_game = split(game_split[end], '_')[2] #get year of game for trabslating team names... or do I need this?
         game_file = last(game_split)
         #println("File name: $game_file")
         processed_game = split(game_file, ".")
@@ -45,6 +46,7 @@ function run_all_games()
 
     end
 end
+### Need to make function for reading school_colors since had to add duplicate code to foulAanalysis and playInfo files for UMass
 @time run_all_games()
 
 ############################################################################################################
@@ -55,7 +57,8 @@ function run_game(n)
     processed_directory = "..\\..\\data\\"
     game = dirContents[n]
     game_split = split(game, r"[\\/]")
-    #println("Split directory: $game_split")
+    # println("Split directory: $game_split")
+    # year_game = split(game_split[end], '_')[2] #get year of game for trabslating team names... or do I need this?
     game_file = last(game_split)
     #println("File name: $game_file")
     processed_game = split(game_file, ".")
@@ -76,7 +79,7 @@ dirContents = readdir("../../data/unprocessed", join=true)
 # dirContents[13628]
 #Appalachian State_2018_wk14_regular.csv
 
-i=findall(x->x=="../../data/unprocessed\\Alabama_2023_wk14_regular.csv", dirContents)[1]
+i=findall(x->x=="../../data/unprocessed\\Alabama_2024_wk02_regular.csv", dirContents)[1]
 dirContents[i]
 @time run_game(i)
 
@@ -84,7 +87,7 @@ i=findall(x->x=="../../data/unprocessed\\Alabama_2023_wk01_postseason.csv", dirC
 dirContents[i]
 @time run_game(i)
 
-i=findall(x->x=="../../data/unprocessed\\Kentucky_2023_wk11_regular.csv", dirContents)[1]
+i=findall(x->x=="../../data/unprocessed\\Texas_2024_wk03_regular.csv", dirContents)[1]
 dirContents[i]
 @time run_game(i)
 ############################################################################################################

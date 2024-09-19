@@ -6,10 +6,49 @@
 
 # HAVE TO ADD declined declined see Alabama_2023_wk04_regular.csv
 
+# team_name_translation_dictionary = Dict(
+#     "Massachusetts" => "UMass",
+#     "UConn" => "Connecticut",
+#     "App State" => "Appalachian State",
+#     "Sam Houston" => "Sam Houston State",
+#     "Prairie View A&M" => "Prairie View",
+#     "Southern Miss" => "Southern Mississippi",
+#     "UTSA" => "UT San Antonio"
+# )
+
+# function translate_team_name(name) #may not need
+#     team_name_translation_dictionary[name]
+# end
+
 function foul_analysis(cols)
     txt = cols[1]
     offense = cols[2]
     defense = cols[3]
+
+    # ESPN name change of UMass to Massachusetts, etc, but don't want new line in school_colors
+    # offense = offense ∈ keys(team_name_translation_dictionary) ? team_name_translation_dictionary[offense] : offense
+    # defense = defense ∈ keys(team_name_translation_dictionary) ? team_name_translation_dictionary[defense] : defense
+
+    # println("Pre:: offense: $offense, defense: $defense")
+    offense ∈ keys(team_name_translation_dictionary) && (offense = translate_team_name(offense))
+    defense ∈ keys(team_name_translation_dictionary) && (defense = translate_team_name(defense))
+    # println("Post:: offense: $offense, defense: $defense")
+
+    # offense = offense == "Massachusetts" ? "UMass" : offense
+    # defense = defense == "Massachusetts" ? "UMass" : defense
+    # offense = offense == "UConn" ? "Connecticut" : offense
+    # defense = defense == "UConn" ? "Connecticut" : defense
+    # offense = offense == "App State" ? "Appalachian State" : offense
+    # defense = defense == "App State" ? "Appalachian State" : defense
+    # offense = offense == "Sam Houston" ? "Sam Houston State" : offense
+    # defense = defense == "Sam Houston" ? "Sam Houston State" : defense
+    # offense = offense == "Prairie View A&M" ? "Prairie View" : offense
+    # defense = defense == "Prairie View A&M" ? "Prairie View" : defense
+    # offense = offense == "Southern Miss" ? "Southern Mississippi" : offense
+    # defense = defense == "Southern Miss" ? "Southern Mississippi" : defense
+    # offense = offense == "UTSA" ? "UT San Antonio" : offense
+    # defense = defense == "UTSA" ? "UT San Antonio" : defense
+
     quarter = cols[4]
     down = cols[5]
     drive_number = cols[6]
@@ -248,11 +287,12 @@ function mypenalty_regex_aux(txt)
 
     mypenalty_n_regex = r"MYPENALTY<(\d+)"
     n = match(mypenalty_n_regex, txt)
+    println("n=\n $n")
 
     if n[1] == "1"
         mypenalty_1_regex = r"MYPENALTY<\d+,\s*\[(.+),\s*(enforced|declined|off-?setting),\s*(.+),\s*(.+)\]>"
         m = match(mypenalty_1_regex, txt)
-        # println("m=\n $m")
+        println("m=\n $m")
         push!(foul_type, m[1])
         push!(foul_status, m[2])
         push!(foul_team, m[3])

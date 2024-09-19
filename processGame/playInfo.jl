@@ -1,3 +1,17 @@
+# team_name_translation_dictionary = Dict(
+#         "Massachusetts" => "UMass",
+#         "UConn" => "Connecticut",
+#         "App State" => "Appalachian State",
+#         "Sam Houston" => "Sam Houston State",
+#         "Prairie View A&M" => "Prairie View",
+#         "Southern Miss" => "Southern Mississippi",
+#         "UTSA" => "UT San Antonio"
+#     )
+    
+# function translate_team_name(name) #may not need
+    
+# end
+
 function play_info(cols)
     # Plays to get: 
     #  Blocked Field Goal Touchdown (need more examples to make regexs for more than the main case) 
@@ -12,10 +26,31 @@ function play_info(cols)
 
     #Have I accounted for Onside kicks? Don't see it.
 
+    
+
     play_text = cols[1]
     play_type = cols[2]
     offense  = cols[3]
     defense  = cols[4]
+
+    # ESPN name change of UMass to Massachusetts, etc, but don't want new line in school_colors
+    offense ∈ keys(team_name_translation_dictionary) && (offense = translate_team_name(offense))
+    defense ∈ keys(team_name_translation_dictionary) && (defense = translate_team_name(defense))
+    # offense = offense == "Massachusetts" ? "UMass" : offense
+    # defense = defense == "Massachusetts" ? "UMass" : defense
+    # offense = offense == "UConn" ? "Connecticut" : offense
+    # defense = defense == "UConn" ? "Connecticut" : defense
+    # offense = offense == "App State" ? "Appalachian State" : offense
+    # defense = defense == "App State" ? "Appalachian State" : defense
+    # offense = offense == "Sam Houston" ? "Sam Houston State" : offense
+    # defense = defense == "Sam Houston" ? "Sam Houston State" : defense
+    # offense = offense == "Prairie View A&M" ? "Prairie View" : offense
+    # defense = defense == "Prairie View A&M" ? "Prairie View" : defense
+    # offense = offense == "Southern Miss" ? "Southern Mississippi" : offense
+    # defense = defense == "Southern Miss" ? "Southern Mississippi" : defense
+    # offense = offense == "UTSA" ? "UT San Antonio" : offense
+    # defense = defense == "UTSA" ? "UT San Antonio" : defense
+    
     if DEBUG_PLAY_INFO println("offense from cols: $offense") end
     if DEBUG_PLAY_INFO println("defense from cols: $defense") end
 

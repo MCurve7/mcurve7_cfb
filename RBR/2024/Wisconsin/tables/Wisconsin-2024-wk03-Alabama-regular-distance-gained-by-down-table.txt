@@ -1,0 +1,73 @@
+<table>
+  <caption style = "text-align: center;">Distance to 1st/TD, Yards gained statistics by down: Wisconsin, 2024, week 03, season regular, Opponent: Alabama</caption>
+  <thead>
+    <tr class = "header">
+      <th style = "text-align: left;">Down</th>
+      <th style = "text-align: left;">Count</th>
+      <th style = "text-align: left;">Δ_plays</th>
+      <th style = "text-align: left;">Mean distance</th>
+      <th style = "text-align: left;">Std distance</th>
+      <th style = "text-align: left;">Median distance</th>
+      <th style = "text-align: left;">Mean gained</th>
+      <th style = "text-align: left;">Std gained</th>
+      <th style = "text-align: left;">Median gained</th>
+    </tr>
+    <tr class = "subheader headerLastRow">
+      <th style = "text-align: left;">Int64</th>
+      <th style = "text-align: left;">Int64</th>
+      <th style = "text-align: left;">Int64</th>
+      <th style = "text-align: left;">Float64</th>
+      <th style = "text-align: left;">Float64</th>
+      <th style = "text-align: left;">Float64</th>
+      <th style = "text-align: left;">Float64</th>
+      <th style = "text-align: left;">Float64</th>
+      <th style = "text-align: left;">Float64</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style = "text-align: left;">1</td>
+      <td style = "text-align: left;">30</td>
+      <td style = "text-align: left;">0</td>
+      <td style = "text-align: left;">10.4667</td>
+      <td style = "text-align: left;">2.48767</td>
+      <td style = "text-align: left;">10.0</td>
+      <td style = "text-align: left;">4.73333</td>
+      <td style = "text-align: left;">5.89525</td>
+      <td style = "text-align: left;">3.0</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">2</td>
+      <td style = "text-align: left;">24</td>
+      <td style = "text-align: left;">6</td>
+      <td style = "text-align: left;">7.54167</td>
+      <td style = "text-align: left;">4.64364</td>
+      <td style = "text-align: left;">8.0</td>
+      <td style = "text-align: left;">3.79167</td>
+      <td style = "text-align: left;">6.7822</td>
+      <td style = "text-align: left;">2.0</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">3</td>
+      <td style = "text-align: left;">14</td>
+      <td style = "text-align: left;">10</td>
+      <td style = "text-align: left;">7.14286</td>
+      <td style = "text-align: left;">6.56163</td>
+      <td style = "text-align: left;">5.0</td>
+      <td style = "text-align: left;">3.28571</td>
+      <td style = "text-align: left;">4.4795</td>
+      <td style = "text-align: left;">1.5</td>
+    </tr>
+    <tr>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">4</td>
+      <td style = "text-align: left;">10</td>
+      <td style = "text-align: left;">2.25</td>
+      <td style = "text-align: left;">1.5</td>
+      <td style = "text-align: left;">2.0</td>
+      <td style = "text-align: left;">2.75</td>
+      <td style = "text-align: left;">2.06155</td>
+      <td style = "text-align: left;">3.0</td>
+    </tr>
+  </tbody>
+</table>
