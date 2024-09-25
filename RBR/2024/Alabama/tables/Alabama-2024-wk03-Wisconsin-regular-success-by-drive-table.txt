@@ -1,21 +1,13 @@
 <table>
   <caption style = "text-align: center;">Success by drive: Alabama, 2024, week 03, season regular, Opponent: Wisconsin</caption>
   <thead>
-    <tr class = "header">
+    <tr class = "header headerLastRow">
       <th style = "text-align: left;">Drive number</th>
       <th style = "text-align: left;">Total</th>
       <th style = "text-align: left;">Successful</th>
       <th style = "text-align: left;">Unsuccessful</th>
       <th style = "text-align: left;">Success rate</th>
       <th style = "text-align: left;">Score/Turnover drive</th>
-    </tr>
-    <tr class = "subheader headerLastRow">
-      <th style = "text-align: left;">Int8</th>
-      <th style = "text-align: left;">Int64?</th>
-      <th style = "text-align: left;">Int64?</th>
-      <th style = "text-align: left;">Int64?</th>
-      <th style = "text-align: left;">Float64</th>
-      <th style = "text-align: left;">String</th>
     </tr>
   </thead>
   <tbody>

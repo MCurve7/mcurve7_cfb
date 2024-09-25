@@ -1,9 +1,9 @@
 {
   data: [
     {
-      "x": [0.4, 14.6],
-      "y": [3.66666666666667, 3.66666666666667],
-      "text": "yintercept: 3.666667",
+      "x": [0.4, 16.6],
+      "y": [3.60416666666667, 3.60416666666667],
+      "text": "yintercept: 3.604167",
       "type": "scatter",
       "mode": "lines",
       "line": {
@@ -19,7 +19,7 @@
       "frame": null
     },
     {
-      "x": [0.4, 14.6],
+      "x": [0.4, 16.6],
       "y": [3.22375690607735, 3.22375690607735],
       "text": "yintercept: 3.223757",
       "type": "scatter",
@@ -42,7 +42,7 @@
       "base": 0,
       "x": [1],
       "y": [8.66666666666667],
-      "text": "Team: Alabama<br />Average: 8.666667<br />Team: Alabama",
+      "text": "Team: Alabama<br />Average: 8.6666667<br />Team: Alabama",
       "type": "bar",
       "textposition": "none",
       "marker": {
@@ -67,7 +67,7 @@
       "base": 0,
       "x": [2],
       "y": [2.33333333333333],
-      "text": "Team: Arkansas<br />Average: 2.333333<br />Team: Arkansas",
+      "text": "Team: Arkansas<br />Average: 2.3333333<br />Team: Arkansas",
       "type": "bar",
       "textposition": "none",
       "marker": {
@@ -92,7 +92,7 @@
       "base": 0,
       "x": [3],
       "y": [3],
-      "text": "Team: Auburn<br />Average: 3.000000<br />Team: Auburn",
+      "text": "Team: Auburn<br />Average: 3.0000000<br />Team: Auburn",
       "type": "bar",
       "textposition": "none",
       "marker": {
@@ -117,7 +117,7 @@
       "base": 0,
       "x": [4],
       "y": [1.33333333333333],
-      "text": "Team: Florida<br />Average: 1.333333<br />Team: Florida",
+      "text": "Team: Florida<br />Average: 1.3333333<br />Team: Florida",
       "type": "bar",
       "textposition": "none",
       "marker": {
@@ -142,7 +142,7 @@
       "base": 0,
       "x": [5],
       "y": [9],
-      "text": "Team: Georgia<br />Average: 9.000000<br />Team: Georgia",
+      "text": "Team: Georgia<br />Average: 9.0000000<br />Team: Georgia",
       "type": "bar",
       "textposition": "none",
       "marker": {
@@ -167,7 +167,7 @@
       "base": 0,
       "x": [6],
       "y": [3],
-      "text": "Team: Kentucky<br />Average: 3.000000<br />Team: Kentucky",
+      "text": "Team: Kentucky<br />Average: 3.0000000<br />Team: Kentucky",
       "type": "bar",
       "textposition": "none",
       "marker": {
@@ -192,7 +192,7 @@
       "base": 0,
       "x": [7],
       "y": [8.33333333333333],
-      "text": "Team: LSU<br />Average: 8.333333<br />Team: LSU",
+      "text": "Team: LSU<br />Average: 8.3333333<br />Team: LSU",
       "type": "bar",
       "textposition": "none",
       "marker": {
@@ -217,7 +217,7 @@
       "base": 0,
       "x": [8],
       "y": [2],
-      "text": "Team: Mississippi State<br />Average: 2.000000<br />Team: Mississippi State",
+      "text": "Team: Mississippi State<br />Average: 2.0000000<br />Team: Mississippi State",
       "type": "bar",
       "textposition": "none",
       "marker": {
@@ -242,7 +242,7 @@
       "base": 0,
       "x": [9],
       "y": [4],
-      "text": "Team: Missouri<br />Average: 4.000000<br />Team: Missouri",
+      "text": "Team: Missouri<br />Average: 4.0000000<br />Team: Missouri",
       "type": "bar",
       "textposition": "none",
       "marker": {
@@ -266,8 +266,33 @@
       "width": 0.899999999999999,
       "base": 0,
       "x": [10],
+      "y": [0.666666666666667],
+      "text": "Team: Oklahoma<br />Average: 0.6666667<br />Team: Oklahoma",
+      "type": "bar",
+      "textposition": "none",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(132,22,23,1)",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "name": "Oklahoma",
+      "legendgroup": "Oklahoma",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "orientation": "v",
+      "width": 0.899999999999999,
+      "base": 0,
+      "x": [11],
       "y": [5],
-      "text": "Team: Ole Miss<br />Average: 5.000000<br />Team: Ole Miss",
+      "text": "Team: Ole Miss<br />Average: 5.0000000<br />Team: Ole Miss",
       "type": "bar",
       "textposition": "none",
       "marker": {
@@ -290,9 +315,9 @@
       "orientation": "v",
       "width": 0.899999999999999,
       "base": 0,
-      "x": [11],
+      "x": [12],
       "y": [2],
-      "text": "Team: South Carolina<br />Average: 2.000000<br />Team: South Carolina",
+      "text": "Team: South Carolina<br />Average: 2.0000000<br />Team: South Carolina",
       "type": "bar",
       "textposition": "none",
       "marker": {
@@ -315,9 +340,9 @@
       "orientation": "v",
       "width": 0.899999999999999,
       "base": 0,
-      "x": [12],
+      "x": [13],
       "y": [0],
-      "text": "Team: Tennessee<br />Average: 0.000000<br />Team: Tennessee",
+      "text": "Team: Tennessee<br />Average: 0.0000000<br />Team: Tennessee",
       "type": "bar",
       "textposition": "none",
       "marker": {
@@ -340,9 +365,34 @@
       "orientation": "v",
       "width": 0.899999999999999,
       "base": 0,
-      "x": [13],
+      "x": [14],
+      "y": [5.66666666666667],
+      "text": "Team: Texas<br />Average: 5.6666667<br />Team: Texas",
+      "type": "bar",
+      "textposition": "none",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(191,87,0,1)",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "name": "Texas",
+      "legendgroup": "Texas",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "orientation": "v",
+      "width": 0.899999999999999,
+      "base": 0,
+      "x": [15],
       "y": [0],
-      "text": "Team: Texas A&M<br />Average: 0.000000<br />Team: Texas A&M",
+      "text": "Team: Texas A&M<br />Average: 0.0000000<br />Team: Texas A&M",
       "type": "bar",
       "textposition": "none",
       "marker": {
@@ -365,9 +415,9 @@
       "orientation": "v",
       "width": 0.899999999999999,
       "base": 0,
-      "x": [14],
+      "x": [16],
       "y": [2.66666666666667],
-      "text": "Team: Vanderbilt<br />Average: 2.666667<br />Team: Vanderbilt",
+      "text": "Team: Vanderbilt<br />Average: 2.6666667<br />Team: Vanderbilt",
       "type": "bar",
       "textposition": "none",
       "marker": {
@@ -390,7 +440,7 @@
       "x": [1],
       "y": [8.66666666666667],
       "text": "8.67",
-      "hovertext": "Team: Alabama<br />Average: 8.666667<br />Team: Alabama<br />sprintf(\"%2.2f\", Average): 8.67",
+      "hovertext": "Team: Alabama<br />Average: 8.6666667<br />Team: Alabama<br />sprintf(\"%2.2f\", Average): 8.67",
       "textfont": {
         "size": 14.6645669291339,
         "color": "rgba(0,0,0,1)"
@@ -410,7 +460,7 @@
       "x": [2],
       "y": [2.33333333333333],
       "text": "2.33",
-      "hovertext": "Team: Arkansas<br />Average: 2.333333<br />Team: Arkansas<br />sprintf(\"%2.2f\", Average): 2.33",
+      "hovertext": "Team: Arkansas<br />Average: 2.3333333<br />Team: Arkansas<br />sprintf(\"%2.2f\", Average): 2.33",
       "textfont": {
         "size": 14.6645669291339,
         "color": "rgba(0,0,0,1)"
@@ -430,7 +480,7 @@
       "x": [3],
       "y": [3],
       "text": "3.00",
-      "hovertext": "Team: Auburn<br />Average: 3.000000<br />Team: Auburn<br />sprintf(\"%2.2f\", Average): 3.00",
+      "hovertext": "Team: Auburn<br />Average: 3.0000000<br />Team: Auburn<br />sprintf(\"%2.2f\", Average): 3.00",
       "textfont": {
         "size": 14.6645669291339,
         "color": "rgba(0,0,0,1)"
@@ -450,7 +500,7 @@
       "x": [4],
       "y": [1.33333333333333],
       "text": "1.33",
-      "hovertext": "Team: Florida<br />Average: 1.333333<br />Team: Florida<br />sprintf(\"%2.2f\", Average): 1.33",
+      "hovertext": "Team: Florida<br />Average: 1.3333333<br />Team: Florida<br />sprintf(\"%2.2f\", Average): 1.33",
       "textfont": {
         "size": 14.6645669291339,
         "color": "rgba(0,0,0,1)"
@@ -470,7 +520,7 @@
       "x": [5],
       "y": [9],
       "text": "9.00",
-      "hovertext": "Team: Georgia<br />Average: 9.000000<br />Team: Georgia<br />sprintf(\"%2.2f\", Average): 9.00",
+      "hovertext": "Team: Georgia<br />Average: 9.0000000<br />Team: Georgia<br />sprintf(\"%2.2f\", Average): 9.00",
       "textfont": {
         "size": 14.6645669291339,
         "color": "rgba(0,0,0,1)"
@@ -490,7 +540,7 @@
       "x": [6],
       "y": [3],
       "text": "3.00",
-      "hovertext": "Team: Kentucky<br />Average: 3.000000<br />Team: Kentucky<br />sprintf(\"%2.2f\", Average): 3.00",
+      "hovertext": "Team: Kentucky<br />Average: 3.0000000<br />Team: Kentucky<br />sprintf(\"%2.2f\", Average): 3.00",
       "textfont": {
         "size": 14.6645669291339,
         "color": "rgba(0,0,0,1)"
@@ -510,7 +560,7 @@
       "x": [7],
       "y": [8.33333333333333],
       "text": "8.33",
-      "hovertext": "Team: LSU<br />Average: 8.333333<br />Team: LSU<br />sprintf(\"%2.2f\", Average): 8.33",
+      "hovertext": "Team: LSU<br />Average: 8.3333333<br />Team: LSU<br />sprintf(\"%2.2f\", Average): 8.33",
       "textfont": {
         "size": 14.6645669291339,
         "color": "rgba(0,0,0,1)"
@@ -530,7 +580,7 @@
       "x": [8],
       "y": [2],
       "text": "2.00",
-      "hovertext": "Team: Mississippi State<br />Average: 2.000000<br />Team: Mississippi State<br />sprintf(\"%2.2f\", Average): 2.00",
+      "hovertext": "Team: Mississippi State<br />Average: 2.0000000<br />Team: Mississippi State<br />sprintf(\"%2.2f\", Average): 2.00",
       "textfont": {
         "size": 14.6645669291339,
         "color": "rgba(0,0,0,1)"
@@ -550,7 +600,7 @@
       "x": [9],
       "y": [4],
       "text": "4.00",
-      "hovertext": "Team: Missouri<br />Average: 4.000000<br />Team: Missouri<br />sprintf(\"%2.2f\", Average): 4.00",
+      "hovertext": "Team: Missouri<br />Average: 4.0000000<br />Team: Missouri<br />sprintf(\"%2.2f\", Average): 4.00",
       "textfont": {
         "size": 14.6645669291339,
         "color": "rgba(0,0,0,1)"
@@ -568,9 +618,29 @@
     },
     {
       "x": [10],
+      "y": [0.666666666666667],
+      "text": "0.67",
+      "hovertext": "Team: Oklahoma<br />Average: 0.6666667<br />Team: Oklahoma<br />sprintf(\"%2.2f\", Average): 0.67",
+      "textfont": {
+        "size": 14.6645669291339,
+        "color": "rgba(0,0,0,1)"
+      },
+      "type": "scatter",
+      "mode": "text",
+      "hoveron": "points",
+      "name": "Oklahoma",
+      "legendgroup": "Oklahoma",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [11],
       "y": [5],
       "text": "5.00",
-      "hovertext": "Team: Ole Miss<br />Average: 5.000000<br />Team: Ole Miss<br />sprintf(\"%2.2f\", Average): 5.00",
+      "hovertext": "Team: Ole Miss<br />Average: 5.0000000<br />Team: Ole Miss<br />sprintf(\"%2.2f\", Average): 5.00",
       "textfont": {
         "size": 14.6645669291339,
         "color": "rgba(0,0,0,1)"
@@ -587,10 +657,10 @@
       "frame": null
     },
     {
-      "x": [11],
+      "x": [12],
       "y": [2],
       "text": "2.00",
-      "hovertext": "Team: South Carolina<br />Average: 2.000000<br />Team: South Carolina<br />sprintf(\"%2.2f\", Average): 2.00",
+      "hovertext": "Team: South Carolina<br />Average: 2.0000000<br />Team: South Carolina<br />sprintf(\"%2.2f\", Average): 2.00",
       "textfont": {
         "size": 14.6645669291339,
         "color": "rgba(0,0,0,1)"
@@ -607,10 +677,10 @@
       "frame": null
     },
     {
-      "x": [12],
+      "x": [13],
       "y": [0],
       "text": "0.00",
-      "hovertext": "Team: Tennessee<br />Average: 0.000000<br />Team: Tennessee<br />sprintf(\"%2.2f\", Average): 0.00",
+      "hovertext": "Team: Tennessee<br />Average: 0.0000000<br />Team: Tennessee<br />sprintf(\"%2.2f\", Average): 0.00",
       "textfont": {
         "size": 14.6645669291339,
         "color": "rgba(0,0,0,1)"
@@ -627,10 +697,30 @@
       "frame": null
     },
     {
-      "x": [13],
+      "x": [14],
+      "y": [5.66666666666667],
+      "text": "5.67",
+      "hovertext": "Team: Texas<br />Average: 5.6666667<br />Team: Texas<br />sprintf(\"%2.2f\", Average): 5.67",
+      "textfont": {
+        "size": 14.6645669291339,
+        "color": "rgba(0,0,0,1)"
+      },
+      "type": "scatter",
+      "mode": "text",
+      "hoveron": "points",
+      "name": "Texas",
+      "legendgroup": "Texas",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [15],
       "y": [0],
       "text": "0.00",
-      "hovertext": "Team: Texas A&M<br />Average: 0.000000<br />Team: Texas A&M<br />sprintf(\"%2.2f\", Average): 0.00",
+      "hovertext": "Team: Texas A&M<br />Average: 0.0000000<br />Team: Texas A&M<br />sprintf(\"%2.2f\", Average): 0.00",
       "textfont": {
         "size": 14.6645669291339,
         "color": "rgba(0,0,0,1)"
@@ -647,10 +737,10 @@
       "frame": null
     },
     {
-      "x": [14],
+      "x": [16],
       "y": [2.66666666666667],
       "text": "2.67",
-      "hovertext": "Team: Vanderbilt<br />Average: 2.666667<br />Team: Vanderbilt<br />sprintf(\"%2.2f\", Average): 2.67",
+      "hovertext": "Team: Vanderbilt<br />Average: 2.6666667<br />Team: Vanderbilt<br />sprintf(\"%2.2f\", Average): 2.67",
       "textfont": {
         "size": 14.6645669291339,
         "color": "rgba(0,0,0,1)"
@@ -682,7 +772,7 @@
       "size": 14.6118721461187
     },
     "title": {
-      "text": "Penalties SEC v FBS teams, season average: enforced, declined, off-setting, ambiguous<br> <sup>SEC average (green dashed) =  3.67 , FBS average (yellow dotdash) =  3.22<\/sup>",
+      "text": "Penalties SEC v FBS teams, season average: enforced, declined, off-setting, ambiguous<br> <sup>SEC average (green dashed) =  3.60 , FBS average (yellow dotdash) =  3.22<\/sup>",
       "font": {
         "color": "rgba(0,0,0,1)",
         "family": "",
@@ -697,12 +787,12 @@
       "automargin": true,
       "type": "linear",
       "autorange": false,
-      "range": [0.4, 14.6],
+      "range": [0.4, 16.6],
       "tickmode": "array",
-      "ticktext": ["Alabama", "Arkansas", "Auburn", "Florida", "Georgia", "Kentucky", "LSU", "Mississippi State", "Missouri", "Ole Miss", "South Carolina", "Tennessee", "Texas A&M", "Vanderbilt"],
-      "tickvals": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
+      "ticktext": ["Alabama", "Arkansas", "Auburn", "Florida", "Georgia", "Kentucky", "LSU", "Mississippi State", "Missouri", "Oklahoma", "Ole Miss", "South Carolina", "Tennessee", "Texas", "Texas A&M", "Vanderbilt"],
+      "tickvals": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
       "categoryorder": "array",
-      "categoryarray": ["Alabama", "Arkansas", "Auburn", "Florida", "Georgia", "Kentucky", "LSU", "Mississippi State", "Missouri", "Ole Miss", "South Carolina", "Tennessee", "Texas A&M", "Vanderbilt"],
+      "categoryarray": ["Alabama", "Arkansas", "Auburn", "Florida", "Georgia", "Kentucky", "LSU", "Mississippi State", "Missouri", "Oklahoma", "Ole Miss", "South Carolina", "Tennessee", "Texas", "Texas A&M", "Vanderbilt"],
       "nticks": null,
       "ticks": "outside",
       "tickcolor": "rgba(51,51,51,1)",
@@ -820,31 +910,31 @@
   },
   source: "A",
   attrs: {
-    "7004b3c380": {
+    "5d30788da1e": {
       "yintercept": {},
       "type": "scatter"
     },
-    "700455f3559c": {
+    "5d301e01155d": {
       "yintercept": {}
     },
-    "7004146669fc": {
+    "5d305674608c": {
       "x": {},
       "y": {},
       "fill": {}
     },
-    "70045d4c3083": {
+    "5d303b5a355": {
       "x": {},
       "y": {},
       "fill": {},
       "label": {}
     }
   },
-  cur_data: "7004b3c380",
+  cur_data: "5d30788da1e",
   visdat: {
-    "7004b3c380": ["function (y) ", "x"],
-    "700455f3559c": ["function (y) ", "x"],
-    "7004146669fc": ["function (y) ", "x"],
-    "70045d4c3083": ["function (y) ", "x"]
+    "5d30788da1e": ["function (y) ", "x"],
+    "5d301e01155d": ["function (y) ", "x"],
+    "5d305674608c": ["function (y) ", "x"],
+    "5d303b5a355": ["function (y) ", "x"]
   },
   highlight: {
     "on": "plotly_click",

@@ -16,7 +16,7 @@ using CSV
 # O/U:
 
 year = 2024
-week = "04"
+week = "05"
 # week = "bowls"
 open("copy_paste_$(year)_$week.txt") do f
  

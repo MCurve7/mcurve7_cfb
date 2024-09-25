@@ -88,7 +88,7 @@ function play_info(cols)
     # elseif offense == "San Jos� State"
     #     off_abbrv = replace(school_colors[school_colors.School .== "San Jos� State", :Abbreviation_regex][1], "("=>"(?:")
     # else
-        if offense == "San José State"
+    if offense == "San José State"
         # if DEBUG_PLAY_INFO println("school_colors.School:\n $(school_colors[:, :School])") end
         off_abbrv = replace(school_colors[school_colors.School .== "San Jos\xe9 State", :Abbreviation_regex][1], "("=>"(?:")
     else
