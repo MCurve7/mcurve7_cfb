@@ -2,8 +2,8 @@
   data: [
     {
       "x": [0.8, 5.2],
-      "y": [9.25, 9.25],
-      "text": "yintercept: 9.25",
+      "y": [10, 10],
+      "text": "yintercept: 10",
       "type": "scatter",
       "mode": "lines",
       "line": {
@@ -38,8 +38,8 @@
     },
     {
       "x": [1, 2, 3, 4, 5],
-      "y": [7, 14, 5, 8, 11],
-      "text": ["Game_number: 1<br />Opponent: Western Kentucky<br />Penalty_all_count_nona:  7", "Game_number: 2<br />Opponent: South Florida<br />Penalty_all_count_nona: 14", "Game_number: 3<br />Opponent: Wisconsin<br />Penalty_all_count_nona:  5", "Game_number: 4<br />Opponent: BYE<br />Penalty_all_count_nona:  8", "Game_number: 5<br />Opponent: Georgia<br />Penalty_all_count_nona: 11"],
+      "y": [7, 14, 5, 9.5, 14],
+      "text": ["Game_number: 1<br />Opponent: Western Kentucky<br />Penalty_all_count_nona:  7.0", "Game_number: 2<br />Opponent: South Florida<br />Penalty_all_count_nona: 14.0", "Game_number: 3<br />Opponent: Wisconsin<br />Penalty_all_count_nona:  5.0", "Game_number: 4<br />Opponent: BYE<br />Penalty_all_count_nona:  9.5", "Game_number: 5<br />Opponent: Georgia<br />Penalty_all_count_nona: 14.0"],
       "type": "scatter",
       "mode": "lines",
       "line": {
@@ -56,8 +56,8 @@
     },
     {
       "x": [1, 2, 3, 4, 5],
-      "y": [7, 14, 5, null, 11],
-      "text": ["Game_number: 1<br />Opponent: Western Kentucky<br />Penalty_all_count:  7", "Game_number: 2<br />Opponent: South Florida<br />Penalty_all_count: 14", "Game_number: 3<br />Opponent: Wisconsin<br />Penalty_all_count:  5", "Game_number: 4<br />Opponent: BYE<br />Penalty_all_count: NA", "Game_number: 5<br />Opponent: Georgia<br />Penalty_all_count: 11"],
+      "y": [7, 14, 5, null, 14],
+      "text": ["Game_number: 1<br />Opponent: Western Kentucky<br />Penalty_all_count:  7", "Game_number: 2<br />Opponent: South Florida<br />Penalty_all_count: 14", "Game_number: 3<br />Opponent: Wisconsin<br />Penalty_all_count:  5", "Game_number: 4<br />Opponent: BYE<br />Penalty_all_count: NA", "Game_number: 5<br />Opponent: Georgia<br />Penalty_all_count: 14"],
       "type": "scatter",
       "mode": "markers",
       "marker": {
@@ -144,7 +144,7 @@
       "size": 14.6118721461187
     },
     "title": {
-      "text": "Alabama penalties for 2024; Average: enforced = 8.75 (primary team color), all = 9.25 (secondary team color)<br> <sup><\/sup>",
+      "text": "Alabama penalties for 2024; Average: enforced = 8.75 (primary team color), all = 10.00 (secondary team color)<br> <sup><\/sup>",
       "font": {
         "color": "rgba(0,0,0,1)",
         "family": "",
@@ -274,46 +274,46 @@
   },
   source: "A",
   attrs: {
-    "21b038b3c66": {
+    "e507e434b1": {
       "yintercept": {},
       "type": "scatter"
     },
-    "21b050a7f8e": {
+    "e50754b4897": {
       "yintercept": {}
     },
-    "21b02cb718a": {
+    "e508069b8": {
       "x": {},
       "label": {},
       "y": {}
     },
-    "21b07f6b51ff": {
+    "e50481678cc": {
       "x": {},
       "label": {},
       "y": {}
     },
-    "21b043e37a40": {
+    "e504c73755": {
       "x": {},
       "label": {},
       "y": {}
     },
-    "21b0782e2e45": {
+    "e504a6b15fa": {
       "x": {},
       "label": {},
       "y": {}
     },
-    "21b062062276": {
+    "e505cf226f5": {
       "y": {}
     }
   },
-  cur_data: "21b038b3c66",
+  cur_data: "e507e434b1",
   visdat: {
-    "21b038b3c66": ["function (y) ", "x"],
-    "21b050a7f8e": ["function (y) ", "x"],
-    "21b02cb718a": ["function (y) ", "x"],
-    "21b07f6b51ff": ["function (y) ", "x"],
-    "21b043e37a40": ["function (y) ", "x"],
-    "21b0782e2e45": ["function (y) ", "x"],
-    "21b062062276": ["function (y) ", "x"]
+    "e507e434b1": ["function (y) ", "x"],
+    "e50754b4897": ["function (y) ", "x"],
+    "e508069b8": ["function (y) ", "x"],
+    "e50481678cc": ["function (y) ", "x"],
+    "e504c73755": ["function (y) ", "x"],
+    "e504a6b15fa": ["function (y) ", "x"],
+    "e505cf226f5": ["function (y) ", "x"]
   },
   highlight: {
     "on": "plotly_click",

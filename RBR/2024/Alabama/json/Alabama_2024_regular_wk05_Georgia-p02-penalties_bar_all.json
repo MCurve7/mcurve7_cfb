@@ -3,7 +3,57 @@
     {
       "orientation": "v",
       "width": 0.9,
-      "base": 0,
+      "base": 12,
+      "x": [1],
+      "y": [2],
+      "text": "Penalty_team: Alabama<br />Count:  2<br />Penalty_status: declined<br />Penalty_team: black<br />Penalty_team: Alabama",
+      "type": "bar",
+      "textposition": "none",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(238,238,0,1)",
+        "line": {
+          "width": 11.3385826771654,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "name": "(declined,Alabama,1)",
+      "legendgroup": "(declined,Alabama,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "orientation": "v",
+      "width": 0.9,
+      "base": 7,
+      "x": [2],
+      "y": [1],
+      "text": "Penalty_team: Georgia<br />Count:  1<br />Penalty_status: declined<br />Penalty_team: black<br />Penalty_team: Georgia",
+      "type": "bar",
+      "textposition": "none",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(238,238,0,1)",
+        "line": {
+          "width": 11.3385826771654,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "name": "(declined,Georgia,1)",
+      "legendgroup": "(declined,Georgia,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "orientation": "v",
+      "width": 0.9,
+      "base": 1,
       "x": [1],
       "y": [11],
       "text": "Penalty_team: Alabama<br />Count: 11<br />Penalty_status: enforced<br />Penalty_team: black<br />Penalty_team: Alabama",
@@ -28,10 +78,10 @@
     {
       "orientation": "v",
       "width": 0.9,
-      "base": 0,
+      "base": 1,
       "x": [2],
-      "y": [4],
-      "text": "Penalty_team: Georgia<br />Count:  4<br />Penalty_status: enforced<br />Penalty_team: black<br />Penalty_team: Georgia",
+      "y": [6],
+      "text": "Penalty_team: Georgia<br />Count:  6<br />Penalty_status: enforced<br />Penalty_team: black<br />Penalty_team: Georgia",
       "type": "bar",
       "textposition": "none",
       "marker": {
@@ -44,6 +94,56 @@
       },
       "name": "(enforced,Georgia,1)",
       "legendgroup": "(enforced,Georgia,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "orientation": "v",
+      "width": 0.9,
+      "base": 0,
+      "x": [1],
+      "y": [1],
+      "text": "Penalty_team: Alabama<br />Count:  1<br />Penalty_status: offsetting<br />Penalty_team: black<br />Penalty_team: Alabama",
+      "type": "bar",
+      "textposition": "none",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(127,127,127,1)",
+        "line": {
+          "width": 11.3385826771654,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "name": "(offsetting,Alabama,1)",
+      "legendgroup": "(offsetting,Alabama,1)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "orientation": "v",
+      "width": 0.9,
+      "base": 0,
+      "x": [2],
+      "y": [1],
+      "text": "Penalty_team: Georgia<br />Count:  1<br />Penalty_status: offsetting<br />Penalty_team: black<br />Penalty_team: Georgia",
+      "type": "bar",
+      "textposition": "none",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(127,127,127,1)",
+        "line": {
+          "width": 11.3385826771654,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "name": "(offsetting,Georgia,1)",
+      "legendgroup": "(offsetting,Georgia,1)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -122,12 +222,12 @@
       "automargin": true,
       "type": "linear",
       "autorange": false,
-      "range": [-0.55, 11.55],
+      "range": [-0.7, 14.7],
       "tickmode": "array",
-      "ticktext": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"],
-      "tickvals": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+      "ticktext": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14"],
+      "tickvals": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
       "categoryorder": "array",
-      "categoryarray": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"],
+      "categoryarray": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14"],
       "nticks": null,
       "ticks": "outside",
       "tickcolor": "rgba(51,51,51,1)",
@@ -204,7 +304,7 @@
   },
   source: "A",
   attrs: {
-    "21b044de2788": {
+    "e5038365144": {
       "x": {},
       "y": {},
       "fill": {},
@@ -213,9 +313,9 @@
       "type": "bar"
     }
   },
-  cur_data: "21b044de2788",
+  cur_data: "e5038365144",
   visdat: {
-    "21b044de2788": ["function (y) ", "x"]
+    "e5038365144": ["function (y) ", "x"]
   },
   highlight: {
     "on": "plotly_click",

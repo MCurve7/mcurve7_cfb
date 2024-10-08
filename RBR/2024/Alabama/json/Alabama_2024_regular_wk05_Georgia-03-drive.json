@@ -603,7 +603,7 @@
     {
       "x": [39],
       "y": [0],
-      "text": "Offense_play_count: 39<br />Yards_gained:   0<br />Play_type: Pass Interception Return<br />Success: Unsuccessful<br />Play_text: Jalen Milroe pass intercepted Dan Jackson return for no gain to the UGA 5<br />O_drive_number: 6",
+      "text": "Offense_play_count: 39<br />Yards_gained:   0<br />Play_type: Pass Interception Return<br />Success: Unsuccessful<br />Play_text: MYPENALTY<1, [Holding, declined, Alabama, 57]>, Jalen Milroe pass intercepted Dan Jackson return for no gain to the UGA 5<br />O_drive_number: 6",
       "type": "scatter",
       "mode": "markers",
       "marker": {
@@ -832,37 +832,37 @@
   },
   source: "A",
   attrs: {
-    "21b0b127b35": {
+    "e504bdd7fa5": {
       "xmin": {},
       "xmax": {},
       "ymin": {},
       "ymax": {},
       "type": "scatter"
     },
-    "21b051e6768a": {
+    "e50f8baac": {
       "xmin": {},
       "xmax": {},
       "ymin": {},
       "ymax": {}
     },
-    "21b05afd59b8": {
+    "e5058a279fe": {
       "yintercept": {}
     },
-    "21b0301419ad": {
+    "e506ee472a": {
       "xintercept": {}
     },
-    "21b039f867a9": {
+    "e501f8225b3": {
       "x": {},
       "y": {},
       "xend": {},
       "yend": {}
     },
-    "21b062195b93": {
+    "e5044525ed4": {
       "x": {},
       "y": {},
       "colour": {}
     },
-    "21b09ce2db4": {
+    "e5061926c6b": {
       "x": {},
       "y": {},
       "shape": {},
@@ -870,15 +870,15 @@
       "label": {}
     }
   },
-  cur_data: "21b0b127b35",
+  cur_data: "e504bdd7fa5",
   visdat: {
-    "21b0b127b35": ["function (y) ", "x"],
-    "21b051e6768a": ["function (y) ", "x"],
-    "21b05afd59b8": ["function (y) ", "x"],
-    "21b0301419ad": ["function (y) ", "x"],
-    "21b039f867a9": ["function (y) ", "x"],
-    "21b062195b93": ["function (y) ", "x"],
-    "21b09ce2db4": ["function (y) ", "x"]
+    "e504bdd7fa5": ["function (y) ", "x"],
+    "e50f8baac": ["function (y) ", "x"],
+    "e5058a279fe": ["function (y) ", "x"],
+    "e506ee472a": ["function (y) ", "x"],
+    "e501f8225b3": ["function (y) ", "x"],
+    "e5044525ed4": ["function (y) ", "x"],
+    "e5061926c6b": ["function (y) ", "x"]
   },
   highlight: {
     "on": "plotly_click",

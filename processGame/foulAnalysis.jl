@@ -2,6 +2,8 @@
 # foul_analysis #########################################################################################################################
 # Rewritten to find foul team, status, type, and transgressor to find enforced, declined, and offsetting and ambiguous for some cases.
 
+#; MYPENALTY<1, [type, status, team, transgressor]>
+
 #I might break this further apart into: offsetting_aux, declined_enforced_aux, declined_aux, enforced_aux, and rest_aux files
 
 # HAVE TO ADD declined declined see Alabama_2023_wk04_regular.csv
@@ -287,12 +289,12 @@ function mypenalty_regex_aux(txt)
 
     mypenalty_n_regex = r"MYPENALTY<(\d+)"
     n = match(mypenalty_n_regex, txt)
-    println("n=\n $n")
+    # println("n=\n $n")
 
     if n[1] == "1"
         mypenalty_1_regex = r"MYPENALTY<\d+,\s*\[(.+),\s*(enforced|declined|off-?setting),\s*(.+),\s*(.+)\]>"
         m = match(mypenalty_1_regex, txt)
-        println("m=\n $m")
+        # println("m=\n $m")
         push!(foul_type, m[1])
         push!(foul_status, m[2])
         push!(foul_team, m[3])

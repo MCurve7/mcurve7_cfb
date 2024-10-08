@@ -2,8 +2,8 @@
   data: [
     {
       "x": [0.8, 5.2],
-      "y": [8, 8],
-      "text": "yintercept: 8",
+      "y": [8.75, 8.75],
+      "text": "yintercept: 8.75",
       "type": "scatter",
       "mode": "lines",
       "line": {
@@ -20,8 +20,8 @@
     },
     {
       "x": [0.8, 5.2],
-      "y": [7.75, 7.75],
-      "text": "yintercept: 7.75",
+      "y": [8, 8],
+      "text": "yintercept: 8",
       "type": "scatter",
       "mode": "lines",
       "line": {
@@ -38,8 +38,8 @@
     },
     {
       "x": [1, 2, 3, 4, 5],
-      "y": [8, 10, 9, 7, 5],
-      "text": ["Game_number: 1<br />Opponent: Clemson<br />Penalty_all_count_nona:  8", "Game_number: 2<br />Opponent: Tennessee Tech<br />Penalty_all_count_nona: 10", "Game_number: 3<br />Opponent: Kentucky<br />Penalty_all_count_nona:  9", "Game_number: 4<br />Opponent: BYE<br />Penalty_all_count_nona:  7", "Game_number: 5<br />Opponent: Alabama<br />Penalty_all_count_nona:  5"],
+      "y": [8, 10, 9, 8.5, 8],
+      "text": ["Game_number: 1<br />Opponent: Clemson<br />Penalty_all_count_nona:  8.0", "Game_number: 2<br />Opponent: Tennessee Tech<br />Penalty_all_count_nona: 10.0", "Game_number: 3<br />Opponent: Kentucky<br />Penalty_all_count_nona:  9.0", "Game_number: 4<br />Opponent: BYE<br />Penalty_all_count_nona:  8.5", "Game_number: 5<br />Opponent: Alabama<br />Penalty_all_count_nona:  8.0"],
       "type": "scatter",
       "mode": "lines",
       "line": {
@@ -56,8 +56,8 @@
     },
     {
       "x": [1, 2, 3, 4, 5],
-      "y": [8, 10, 9, null, 5],
-      "text": ["Game_number: 1<br />Opponent: Clemson<br />Penalty_all_count:  8", "Game_number: 2<br />Opponent: Tennessee Tech<br />Penalty_all_count: 10", "Game_number: 3<br />Opponent: Kentucky<br />Penalty_all_count:  9", "Game_number: 4<br />Opponent: BYE<br />Penalty_all_count: NA", "Game_number: 5<br />Opponent: Alabama<br />Penalty_all_count:  5"],
+      "y": [8, 10, 9, null, 8],
+      "text": ["Game_number: 1<br />Opponent: Clemson<br />Penalty_all_count:  8", "Game_number: 2<br />Opponent: Tennessee Tech<br />Penalty_all_count: 10", "Game_number: 3<br />Opponent: Kentucky<br />Penalty_all_count:  9", "Game_number: 4<br />Opponent: BYE<br />Penalty_all_count: NA", "Game_number: 5<br />Opponent: Alabama<br />Penalty_all_count:  8"],
       "type": "scatter",
       "mode": "markers",
       "marker": {
@@ -80,8 +80,8 @@
     },
     {
       "x": [1, 2, 3, 4, 5],
-      "y": [8, 9, 9, 7, 5],
-      "text": ["Game_number: 1<br />Opponent: Clemson<br />Penalty_enforced_count_nona: 8", "Game_number: 2<br />Opponent: Tennessee Tech<br />Penalty_enforced_count_nona: 9", "Game_number: 3<br />Opponent: Kentucky<br />Penalty_enforced_count_nona: 9", "Game_number: 4<br />Opponent: BYE<br />Penalty_enforced_count_nona: 7", "Game_number: 5<br />Opponent: Alabama<br />Penalty_enforced_count_nona: 5"],
+      "y": [8, 9, 9, 7.5, 6],
+      "text": ["Game_number: 1<br />Opponent: Clemson<br />Penalty_enforced_count_nona: 8.0", "Game_number: 2<br />Opponent: Tennessee Tech<br />Penalty_enforced_count_nona: 9.0", "Game_number: 3<br />Opponent: Kentucky<br />Penalty_enforced_count_nona: 9.0", "Game_number: 4<br />Opponent: BYE<br />Penalty_enforced_count_nona: 7.5", "Game_number: 5<br />Opponent: Alabama<br />Penalty_enforced_count_nona: 6.0"],
       "type": "scatter",
       "mode": "lines",
       "line": {
@@ -98,8 +98,8 @@
     },
     {
       "x": [1, 2, 3, 4, 5],
-      "y": [8, 9, 9, null, 5],
-      "text": ["Game_number: 1<br />Opponent: Clemson<br />Penalty_enforced_count:  8", "Game_number: 2<br />Opponent: Tennessee Tech<br />Penalty_enforced_count:  9", "Game_number: 3<br />Opponent: Kentucky<br />Penalty_enforced_count:  9", "Game_number: 4<br />Opponent: BYE<br />Penalty_enforced_count: NA", "Game_number: 5<br />Opponent: Alabama<br />Penalty_enforced_count:  5"],
+      "y": [8, 9, 9, null, 6],
+      "text": ["Game_number: 1<br />Opponent: Clemson<br />Penalty_enforced_count:  8", "Game_number: 2<br />Opponent: Tennessee Tech<br />Penalty_enforced_count:  9", "Game_number: 3<br />Opponent: Kentucky<br />Penalty_enforced_count:  9", "Game_number: 4<br />Opponent: BYE<br />Penalty_enforced_count: NA", "Game_number: 5<br />Opponent: Alabama<br />Penalty_enforced_count:  6"],
       "type": "scatter",
       "mode": "markers",
       "marker": {
@@ -144,7 +144,7 @@
       "size": 14.6118721461187
     },
     "title": {
-      "text": "Georgia penalties for 2024; Average: enforced = 7.75 (primary team color), all = 8.00 (secondary team color)<br> <sup><\/sup>",
+      "text": "Georgia penalties for 2024; Average: enforced = 8.00 (primary team color), all = 8.75 (secondary team color)<br> <sup><\/sup>",
       "font": {
         "color": "rgba(0,0,0,1)",
         "family": "",
@@ -274,46 +274,46 @@
   },
   source: "A",
   attrs: {
-    "21b037a411d5": {
+    "e5057c2f34": {
       "yintercept": {},
       "type": "scatter"
     },
-    "21b0414d424": {
+    "e5062a546b": {
       "yintercept": {}
     },
-    "21b022c14c84": {
+    "e50638f75ca": {
       "x": {},
       "label": {},
       "y": {}
     },
-    "21b06cf13893": {
+    "e5012ab5296": {
       "x": {},
       "label": {},
       "y": {}
     },
-    "21b0411b7009": {
+    "e502d094862": {
       "x": {},
       "label": {},
       "y": {}
     },
-    "21b039514e06": {
+    "e505879769d": {
       "x": {},
       "label": {},
       "y": {}
     },
-    "21b0463349ff": {
+    "e50b18478b": {
       "y": {}
     }
   },
-  cur_data: "21b037a411d5",
+  cur_data: "e5057c2f34",
   visdat: {
-    "21b037a411d5": ["function (y) ", "x"],
-    "21b0414d424": ["function (y) ", "x"],
-    "21b022c14c84": ["function (y) ", "x"],
-    "21b06cf13893": ["function (y) ", "x"],
-    "21b0411b7009": ["function (y) ", "x"],
-    "21b039514e06": ["function (y) ", "x"],
-    "21b0463349ff": ["function (y) ", "x"]
+    "e5057c2f34": ["function (y) ", "x"],
+    "e5062a546b": ["function (y) ", "x"],
+    "e50638f75ca": ["function (y) ", "x"],
+    "e5012ab5296": ["function (y) ", "x"],
+    "e502d094862": ["function (y) ", "x"],
+    "e505879769d": ["function (y) ", "x"],
+    "e50b18478b": ["function (y) ", "x"]
   },
   highlight: {
     "on": "plotly_click",

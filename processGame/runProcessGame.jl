@@ -17,7 +17,7 @@ println("Number of threads: ", Threads.nthreads())
 #Runs process_game on all unprocessed files, but skips processed games if overwrite = false
 function run_all_games()
     dirContents = readdir("../../data/unprocessed", join=true)
-    setdiff!(dirContents, ["../../data/unprocessed\\corrected"])
+    setdiff!(dirContents, ["../../data/unprocessed\\corrected", "../../data/unprocessed\\other"])
     processed_directory = "..\\..\\data\\"
 
     # @Logging.configure(level=DEBUG)
@@ -30,7 +30,7 @@ function run_all_games()
     for game in dirContents
     # @threads for game in dirContents
         game_split = split(game, r"[\\/]")
-        #println("Split directory: $game_split")
+        # println("Split directory: $game_split")
         # year_game = split(game_split[end], '_')[2] #get year of game for trabslating team names... or do I need this?
         game_file = last(game_split)
         #println("File name: $game_file")
@@ -79,7 +79,7 @@ dirContents = readdir("../../data/unprocessed", join=true)
 # dirContents[13628]
 #Appalachian State_2018_wk14_regular.csv
 
-i=findall(x->x=="../../data/unprocessed\\Alabama_2024_wk05_regular.csv", dirContents)[1]
+i=findall(x->x=="../../data/unprocessed\\Alabama_2024_wk06_regular.csv", dirContents)[1]
 dirContents[i]
 @time run_game(i)
 

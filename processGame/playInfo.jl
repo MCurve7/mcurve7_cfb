@@ -1649,7 +1649,8 @@ function play_safety(cols)
 
     runner_regex = Regex("^$(name_regex)run for")
     runner_nodata_regex = Regex("^run for")
-    passer_regex = Regex("^$(name_regex)sacked (?:by|for)")
+    passer_regex = Regex("$(name_regex)sacked (?:by|for)")
+    # passer_regex = Regex("^$(name_regex)sacked (?:by|for)") If this breaks make regex prepended with MYPENALTY
     passer_lastfirst_regex = Regex("^$(name_lastfirst_regex) (?:sacked (?:by|for)|pass)")
     passer_caplastfirst_regex = Regex("^$(name_caplastfirst_regex) (?:sacked (?:by|for)|pass)")
     passer_specialcase1_regex = Regex("Illegal Forward Pass")

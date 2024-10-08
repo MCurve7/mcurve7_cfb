@@ -545,7 +545,7 @@
     {
       "x": [39],
       "y": [-4.2],
-      "text": "Offense_play_count: 39<br />Delta_yards_to_success:  -4.2<br />Play_type: Pass Interception Return<br />Success: Unsuccessful<br />Play_text: Jalen Milroe pass intercepted Dan Jackson return for no gain to the UGA 5<br />O_drive_number: 6",
+      "text": "Offense_play_count: 39<br />Delta_yards_to_success:  -4.2<br />Play_type: Pass Interception Return<br />Success: Unsuccessful<br />Play_text: MYPENALTY<1, [Holding, declined, Alabama, 57]>, Jalen Milroe pass intercepted Dan Jackson return for no gain to the UGA 5<br />O_drive_number: 6",
       "type": "scatter",
       "mode": "markers",
       "marker": {
@@ -792,38 +792,38 @@
   },
   source: "A",
   attrs: {
-    "21b057bc3395": {
+    "e5069477d02": {
       "yintercept": {},
       "type": "scatter"
     },
-    "21b0438b4c95": {
+    "e501783ec9": {
       "xintercept": {}
     },
-    "21b0325e31d7": {
+    "e506b122907": {
       "x": {},
       "y": {},
       "colour": {}
     },
-    "21b057453fb9": {
+    "e5012ba141a": {
       "x": {},
       "y": {},
       "shape": {},
       "colour": {},
       "label": {}
     },
-    "21b095d4c74": {
+    "e5018c01422": {
       "x": {},
       "y": {},
       "label": {}
     }
   },
-  cur_data: "21b057bc3395",
+  cur_data: "e5069477d02",
   visdat: {
-    "21b057bc3395": ["function (y) ", "x"],
-    "21b0438b4c95": ["function (y) ", "x"],
-    "21b0325e31d7": ["function (y) ", "x"],
-    "21b057453fb9": ["function (y) ", "x"],
-    "21b095d4c74": ["function (y) ", "x"]
+    "e5069477d02": ["function (y) ", "x"],
+    "e501783ec9": ["function (y) ", "x"],
+    "e506b122907": ["function (y) ", "x"],
+    "e5012ba141a": ["function (y) ", "x"],
+    "e5018c01422": ["function (y) ", "x"]
   },
   highlight: {
     "on": "plotly_click",
